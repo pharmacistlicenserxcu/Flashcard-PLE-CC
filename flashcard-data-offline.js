@@ -170,7 +170,7 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "5. Pharmaceutical Calc",
     "track": "Product",
-    "count": 4,
+    "count": 6,
     "subtopics": [
       "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "issolution & Release profile เครื่องมือที่ใช้ทดสอบ"
@@ -3655,6 +3655,30 @@ window.OFFLINE_CARDS = {
       "answer": "7.77 * 10^11 g/s",
       "answerImage": "",
       "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::7",
+      "itemNo": "5",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "5. Pharmaceutical Calc",
+      "track": "Product",
+      "question": "ยาเม็ดชนิด immediate-release ทั่วไป ต้องการทดสอบ dissolution ควรนึกถึง Apparatus ใดเป็นหลัก?",
+      "questionImage": "",
+      "answer": "Apparatus 2: Paddle<br>ใช้กับ general solid dosage forms",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::8",
+      "itemNo": "6",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "5. Pharmaceutical Calc",
+      "track": "Product",
+      "question": "",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
     }
   ],
   "6. Solid Dosage Forms": [],
@@ -7065,6 +7089,30 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "answer": "7.77 * 10^11 g/s",
       "answerImage": "",
       "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::7",
+      "itemNo": "5",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "5. Pharmaceutical Calc",
+      "track": "Product",
+      "question": "ยาเม็ดชนิด immediate-release ทั่วไป ต้องการทดสอบ dissolution ควรนึกถึง Apparatus ใดเป็นหลัก?",
+      "questionImage": "",
+      "answer": "Apparatus 2: Paddle<br>ใช้กับ general solid dosage forms",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::8",
+      "itemNo": "6",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "5. Pharmaceutical Calc",
+      "track": "Product",
+      "question": "",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
     }
   ],
   "sap": [],
@@ -10462,6 +10510,30 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "D = 8.0 × 10⁻⁹ cm²/s<br>K = 6.8 × 10⁻³<br>h = 1.4 × 10⁻² cm<br>S = 1 cm²<br>Cd = 0.02 g/cm³<br>Cr ≈ 0<br>จงคำนวณ rate of diffusion (dM/dt)<br>",
       "questionImage": "",
       "answer": "7.77 * 10^11 g/s",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::7",
+      "itemNo": "5",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "5. Pharmaceutical Calc",
+      "track": "Product",
+      "question": "ยาเม็ดชนิด immediate-release ทั่วไป ต้องการทดสอบ dissolution ควรนึกถึง Apparatus ใดเป็นหลัก?",
+      "questionImage": "",
+      "answer": "Apparatus 2: Paddle<br>ใช้กับ general solid dosage forms",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::8",
+      "itemNo": "6",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "5. Pharmaceutical Calc",
+      "track": "Product",
+      "question": "",
+      "questionImage": "",
+      "answer": "",
       "answerImage": "",
       "note": ""
     }
