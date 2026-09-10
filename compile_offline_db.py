@@ -133,7 +133,22 @@ PRODUCT_TAB_NAMES = [
   "11. Herbal Products", "12. Food Products & QA"
 ]
 
-all_tab_names = CLINIC_TAB_NAMES + PRODUCT_TAB_NAMES
+# Fetch metadata to dynamically detect all existing tabs in the spreadsheet
+meta_resp = service.spreadsheets().get(spreadsheetId=PRIVATE_SID).execute()
+existing_titles = [s['properties']['title'] for s in meta_resp.get('sheets', [])]
+
+# Auto-detect SAP tabs (any tab starting with 'SAP' or containing 'Social', 'Admin', 'Laws')
+SAP_TAB_NAMES = [
+    t for t in existing_titles
+    if (t.startswith('SAP') or 'Social' in t or 'Admin' in t or 'Laws' in t)
+    and t not in CLINIC_TAB_NAMES and t not in PRODUCT_TAB_NAMES
+]
+
+valid_clinic = [t for t in CLINIC_TAB_NAMES if t in existing_titles]
+valid_product = [t for t in PRODUCT_TAB_NAMES if t in existing_titles]
+valid_sap = [t for t in SAP_TAB_NAMES if t in existing_titles]
+
+all_tab_names = valid_clinic + valid_product + valid_sap
 sheet_meta = service.spreadsheets().get(
     spreadsheetId=PRIVATE_SID,
     ranges=[f"{t}!A1:H500" for t in all_tab_names],
@@ -141,7 +156,7 @@ sheet_meta = service.spreadsheets().get(
 ).execute()
 
 sheets_dict = {s['properties']['title']: s for s in sheet_meta.get('sheets', [])}
-print(f"Loaded {len(sheets_dict)} total sheets with full ranges from Google Sheets.")
+print(f"Loaded {len(sheets_dict)} total sheets with full ranges from Google Sheets (Clinic: {len(valid_clinic)}, Product: {len(valid_product)}, SAP: {len(valid_sap)}).")
 
 def escape_html(s):
     if not s:
@@ -388,7 +403,7 @@ offline_all_cards = {
 
 total_cards = 0
 
-all_ordered_tabs = [(t, 'Clinic') for t in CLINIC_TAB_NAMES] + [(t, 'Product') for t in PRODUCT_TAB_NAMES]
+all_ordered_tabs = [(t, 'Clinic') for t in valid_clinic] + [(t, 'Product') for t in valid_product] + [(t, 'SAP') for t in valid_sap]
 
 for title, track in all_ordered_tabs:
     sheet = sheets_dict.get(title)
@@ -461,12 +476,20 @@ for title, track in all_ordered_tabs:
             if not a_img_final:
                 a_img_final = in_cell_images_map.get((title, r_idx + 1, 4)) or in_cell_images_map.get((title, r_idx, 4), "")
 
+            track_col = get_val(7).strip()
+            actual_track = track
+            if track_col:
+                for valid_t in ['Clinic', 'Product', 'SAP']:
+                    if track_col.lower() == valid_t.lower():
+                        actual_track = valid_t
+                        break
+
             card_obj = {
                 "id": f"{title}::{r_idx + 1}",
                 "itemNo": colA if colA else str(len(cards_in_tab) + 1),
                 "group": title,
                 "subTopic": subtopic if subtopic else title,
-                "track": track,
+                "track": actual_track,
                 "question": q_html,
                 "questionImage": q_img_final,
                 "answer": a_html,
@@ -475,7 +498,7 @@ for title, track in all_ordered_tabs:
             }
             
             cards_in_tab.append(card_obj)
-            offline_all_cards[track.lower()].append(card_obj)
+            offline_all_cards[actual_track.lower()].append(card_obj)
             offline_all_cards['all'].append(card_obj)
 
     total_cards += len(cards_in_tab)
