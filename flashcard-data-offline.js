@@ -158,7 +158,7 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "3. Spectroscopy & Optics",
     "track": "Product",
-    "count": 71,
+    "count": 70,
     "subtopics": [
       "IR",
       "MS",
@@ -176,11 +176,10 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "5. Pharmaceutical Calc",
     "track": "Product",
-    "count": 42,
+    "count": 48,
     "subtopics": [
       "Compounding Adjustments",
-      "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
-      "issolution & Release profile เครื่องมือที่ใช้ทดสอบ"
+      "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ"
     ]
   },
   {
@@ -3582,18 +3581,6 @@ window.OFFLINE_CARDS = {
       "group": "3. Spectroscopy & Optics",
       "subTopic": "IR",
       "track": "Product",
-      "question": "ในการอ่าน IR spectrum ที่แสดงเป็น %Transmittance หากบริเวณหนึ่งดูดกลืนรังสีแรง ลักษณะบนกราฟควรเป็นอย่างไร และเหตุใด",
-      "questionImage": "",
-      "answer": "จะเห็น %Transmittance ลดลงเป็น trough ลึก เพราะตัวอย่างส่งผ่านรังสีที่ wavenumber นั้นได้น้อยเมื่อเกิดการดูดกลืนมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "3. Spectroscopy & Optics::29",
-      "itemNo": "19",
-      "group": "3. Spectroscopy & Optics",
-      "subTopic": "IR",
-      "track": "Product",
       "question": "IR เหมาะกับการใช้เป็น identification test ของวัตถุดิบมากกว่าการใช้หาปริมาณตัวยาแบบ routine เพราะคุณสมบัติใดของ spectrum",
       "questionImage": "",
       "answer": "เพราะ IR ให้ pattern ของการสั่นของพันธะและ fingerprint ที่มีความจำเพาะต่อโครงสร้าง จึงเด่นด้านการยืนยัน identity, การวิเคราะห์ปริมาณทำได้ในบางกรณีแต่ไม่ใช่จุดเด่นหลักของการใช้ IR ในข้อสอบลักษณะนี้",
@@ -3601,8 +3588,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::30",
-      "itemNo": "20",
+      "id": "3. Spectroscopy & Optics::29",
+      "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "IR",
       "track": "Product",
@@ -3613,7 +3600,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::31",
+      "id": "3. Spectroscopy & Optics::30",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3625,7 +3612,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::32",
+      "id": "3. Spectroscopy & Optics::31",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3637,7 +3624,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::33",
+      "id": "3. Spectroscopy & Optics::32",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3649,7 +3636,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::34",
+      "id": "3. Spectroscopy & Optics::33",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3661,7 +3648,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::35",
+      "id": "3. Spectroscopy & Optics::34",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3673,7 +3660,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::36",
+      "id": "3. Spectroscopy & Optics::35",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3681,11 +3668,11 @@ window.OFFLINE_CARDS = {
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::37",
+      "id": "3. Spectroscopy & Optics::36",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3693,11 +3680,11 @@ window.OFFLINE_CARDS = {
       "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
       "questionImage": "",
       "answer": "เดซิเมตร (dm)",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::38",
+      "id": "3. Spectroscopy & Optics::37",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3709,7 +3696,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::39",
+      "id": "3. Spectroscopy & Optics::38",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3721,7 +3708,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::40",
+      "id": "3. Spectroscopy & Optics::39",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -3733,7 +3720,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::41",
+      "id": "3. Spectroscopy & Optics::40",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3745,7 +3732,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::42",
+      "id": "3. Spectroscopy & Optics::41",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3757,7 +3744,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::43",
+      "id": "3. Spectroscopy & Optics::42",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3769,7 +3756,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::44",
+      "id": "3. Spectroscopy & Optics::43",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3781,7 +3768,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::45",
+      "id": "3. Spectroscopy & Optics::44",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3793,7 +3780,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::46",
+      "id": "3. Spectroscopy & Optics::45",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3805,7 +3792,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::47",
+      "id": "3. Spectroscopy & Optics::46",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3817,7 +3804,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::48",
+      "id": "3. Spectroscopy & Optics::47",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3829,7 +3816,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::49",
+      "id": "3. Spectroscopy & Optics::48",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3841,7 +3828,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::50",
+      "id": "3. Spectroscopy & Optics::49",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3853,7 +3840,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::51",
+      "id": "3. Spectroscopy & Optics::50",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3865,7 +3852,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::52",
+      "id": "3. Spectroscopy & Optics::51",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3877,7 +3864,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::53",
+      "id": "3. Spectroscopy & Optics::52",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3889,7 +3876,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::54",
+      "id": "3. Spectroscopy & Optics::53",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3901,7 +3888,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::55",
+      "id": "3. Spectroscopy & Optics::54",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3913,7 +3900,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::56",
+      "id": "3. Spectroscopy & Optics::55",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3925,7 +3912,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::57",
+      "id": "3. Spectroscopy & Optics::56",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3937,7 +3924,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::58",
+      "id": "3. Spectroscopy & Optics::57",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3949,7 +3936,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::59",
+      "id": "3. Spectroscopy & Optics::58",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3961,7 +3948,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::60",
+      "id": "3. Spectroscopy & Optics::59",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3973,7 +3960,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::61",
+      "id": "3. Spectroscopy & Optics::60",
       "itemNo": "21",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3985,7 +3972,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::62",
+      "id": "3. Spectroscopy & Optics::61",
       "itemNo": "22",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3997,7 +3984,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::63",
+      "id": "3. Spectroscopy & Optics::62",
       "itemNo": "23",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4009,7 +3996,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::64",
+      "id": "3. Spectroscopy & Optics::63",
       "itemNo": "24",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4021,7 +4008,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::65",
+      "id": "3. Spectroscopy & Optics::64",
       "itemNo": "25",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4033,7 +4020,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::66",
+      "id": "3. Spectroscopy & Optics::65",
       "itemNo": "26",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4045,7 +4032,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::67",
+      "id": "3. Spectroscopy & Optics::66",
       "itemNo": "27",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4057,7 +4044,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::68",
+      "id": "3. Spectroscopy & Optics::67",
       "itemNo": "28",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4069,7 +4056,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::69",
+      "id": "3. Spectroscopy & Optics::68",
       "itemNo": "29",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4081,7 +4068,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::70",
+      "id": "3. Spectroscopy & Optics::69",
       "itemNo": "30",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4093,7 +4080,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::71",
+      "id": "3. Spectroscopy & Optics::70",
       "itemNo": "31",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4105,7 +4092,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::72",
+      "id": "3. Spectroscopy & Optics::71",
       "itemNo": "32",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4117,7 +4104,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::73",
+      "id": "3. Spectroscopy & Optics::72",
       "itemNo": "33",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4159,7 +4146,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::5",
       "itemNo": "3",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "issolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ถ้ายาเม็ดถูกทำให้มี surface area (S) เพิ่มขึ้น แต่ไม่ได้เปลี่ยน D, Cs, C และ h จะเกิดอะไรขึ้นกับ dissolution rate? เพราะอะไร?",
       "questionImage": "",
@@ -4171,7 +4158,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::6",
       "itemNo": "4",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "issolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "D = 8.0 × 10⁻⁹ cm²/s<br>K = 6.8 × 10⁻³<br>h = 1.4 × 10⁻² cm<br>S = 1 cm²<br>Cd = 0.02 g/cm³<br>Cr ≈ 0<br>จงคำนวณ rate of diffusion (dM/dt)<br>",
       "questionImage": "",
@@ -4183,7 +4170,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::7",
       "itemNo": "5",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ยาเม็ดชนิด immediate-release ทั่วไป ต้องการทดสอบ dissolution ควรนึกถึง Apparatus ใดเป็นหลัก?",
       "questionImage": "",
@@ -4195,7 +4182,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::8",
       "itemNo": "6",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ยามี aqueous solubility ต่ำมาก และเกิด rapid degradation ใน medium ควรพิจารณา Apparatus ใด?",
       "questionImage": "",
@@ -4207,7 +4194,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::9",
       "itemNo": "7",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ถ้ายาเป็น beads และต้องการจำลองการเคลื่อนที่ขึ้น-ลงใน dissolution medium ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -4219,7 +4206,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::10",
       "itemNo": "8",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ต้องการทดสอบ dissolution/release ของ transdermal dosage form โดยให้แผ่นยาอยู่บน disc ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -4231,7 +4218,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::11",
       "itemNo": "9",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ต้องการทดสอบ non-disintegrating oral modified-release dosage form เช่น chewable formulation หรือ transdermal dosage form โดยใช้ disc ที่เคลื่อนที่ขึ้น-ลง ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -4243,7 +4230,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::12",
       "itemNo": "10",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "กำหนด dissolution medium ที่ 37.0°C แต่ทำการทดสอบจริงที่ 38.0°C ผลนี้ถือว่าตรงตาม condition หรือไม่?",
       "questionImage": "",
@@ -4255,7 +4242,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::13",
       "itemNo": "11",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "Q: IR tablet มี label claim 200 mg และ Q = 80%<br>S1 แต่ละเม็ดต้องมี drug dissolved อย่างน้อยกี่ mg?",
       "questionImage": "",
@@ -4267,7 +4254,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::14",
       "itemNo": "12",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "IR tablet Q = 80%<br>S1 ได้ผล 6 tablets =<br>88%, 90%, 86%, 84%, 91%, 87%<br>ผ่าน S1 หรือไม่?",
       "questionImage": "",
@@ -4279,7 +4266,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::15",
       "itemNo": "13",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ใน ER ถ้า monograph กำหนดว่า Time 1 ต้องละลาย 20–30% แต่ผลได้ 35% ใน 1 unit ที่ L1 จะผ่านหรือไม่?<br>",
       "questionImage": "",
@@ -4291,7 +4278,7 @@ window.OFFLINE_CARDS = {
       "id": "5. Pharmaceutical Calc::16",
       "itemNo": "14",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ER ที่ L2 รวม 12 units<br>stated range = 20–30%<br>average = 25%<br>แต่มี 2 units อยู่นอก range<br>ผ่าน L2 หรือไม่?",
       "questionImage": "",
@@ -4300,8 +4287,80 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Pharmaceutical Calc::18",
+      "id": "5. Pharmaceutical Calc::17",
       "itemNo": "15",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Delayed-release acid stage, A1 ทดสอบ 6 units<br>ผล dissolution = 5%, 7%, 9%, 10%, 8%, 11%<br>ผ่าน A1 หรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>A1 ต้อง ไม่มี individual unit &gt;10%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::18",
+      "itemNo": "16",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Acid stage A2 รวม 12 units<br>average = 11%<br>ไม่มี unit ใด &gt;25%<br>",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะ average ต้อง ≤10%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::19",
+      "itemNo": "17",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Acid stage A3 รวม 24 units<br>average = 9%<br>ทุก unit ≤25%<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ผ่าน<br>เพราะ A3:<br>Average ≤10% <br>ไม่มี individual &gt;25% ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::20",
+      "itemNo": "18",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B1 ของ delayed-release Q = 80%<br>ผล 6 units = 86%, 90%, 88%, 84%, 91%, 87%<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะมี 84% &lt;85%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::21",
+      "itemNo": "19",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B2 Q = 80%<br>รวม 12 units:<br>average = 83%<br>ต่ำกว่า 65% = 0 units<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ผ่าน<br>เพราะ:<br>Average ≥80% <br>ไม่มี unit &lt;65% ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::22",
+      "itemNo": "20",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B2 Q = 80%<br>average = 83% แต่มี 1 unit = 64% ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะ B2 ต้อง ไม่มี unit &lt; Q−15%<br>80−15 = 65%<br>64% → fail",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::23",
+      "itemNo": "1",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4312,8 +4371,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.21 Example 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::19",
-      "itemNo": "16",
+      "id": "5. Pharmaceutical Calc::24",
+      "itemNo": "2",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4324,8 +4383,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.22-23 Example 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::20",
-      "itemNo": "17",
+      "id": "5. Pharmaceutical Calc::25",
+      "itemNo": "3",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4336,8 +4395,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2561 & 2563"
     },
     {
-      "id": "5. Pharmaceutical Calc::21",
-      "itemNo": "18",
+      "id": "5. Pharmaceutical Calc::26",
+      "itemNo": "4",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4348,8 +4407,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.17 Monograph Check"
     },
     {
-      "id": "5. Pharmaceutical Calc::22",
-      "itemNo": "19",
+      "id": "5. Pharmaceutical Calc::27",
+      "itemNo": "5",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4360,8 +4419,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.3 Clinical Equivalency"
     },
     {
-      "id": "5. Pharmaceutical Calc::23",
-      "itemNo": "20",
+      "id": "5. Pharmaceutical Calc::28",
+      "itemNo": "6",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4372,8 +4431,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.3 Salt Comparison"
     },
     {
-      "id": "5. Pharmaceutical Calc::24",
-      "itemNo": "21",
+      "id": "5. Pharmaceutical Calc::29",
+      "itemNo": "7",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4384,8 +4443,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.29-30 HPLC Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::25",
-      "itemNo": "22",
+      "id": "5. Pharmaceutical Calc::30",
+      "itemNo": "8",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4396,8 +4455,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.29-31 Comprehensive Example"
     },
     {
-      "id": "5. Pharmaceutical Calc::26",
-      "itemNo": "23",
+      "id": "5. Pharmaceutical Calc::31",
+      "itemNo": "9",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4408,8 +4467,8 @@ window.OFFLINE_CARDS = {
       "note": "USP Monograph Aspirin Residual Titration"
     },
     {
-      "id": "5. Pharmaceutical Calc::27",
-      "itemNo": "24",
+      "id": "5. Pharmaceutical Calc::32",
+      "itemNo": "10",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4420,8 +4479,8 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.33-34 K2CO3 Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::28",
-      "itemNo": "25",
+      "id": "5. Pharmaceutical Calc::33",
+      "itemNo": "11",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4432,8 +4491,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.1 Exercise 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::29",
-      "itemNo": "26",
+      "id": "5. Pharmaceutical Calc::34",
+      "itemNo": "12",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4444,8 +4503,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.4 Exercise 5"
     },
     {
-      "id": "5. Pharmaceutical Calc::30",
-      "itemNo": "27",
+      "id": "5. Pharmaceutical Calc::35",
+      "itemNo": "13",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4456,8 +4515,8 @@ window.OFFLINE_CARDS = {
       "note": "Fundamental Pharmacy Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::31",
-      "itemNo": "28",
+      "id": "5. Pharmaceutical Calc::36",
+      "itemNo": "14",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4468,8 +4527,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::32",
-      "itemNo": "29",
+      "id": "5. Pharmaceutical Calc::37",
+      "itemNo": "15",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4480,8 +4539,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::33",
-      "itemNo": "30",
+      "id": "5. Pharmaceutical Calc::38",
+      "itemNo": "16",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4492,8 +4551,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.3 Exercise 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::34",
-      "itemNo": "31",
+      "id": "5. Pharmaceutical Calc::39",
+      "itemNo": "17",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4504,8 +4563,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2564 ข้อ 98"
     },
     {
-      "id": "5. Pharmaceutical Calc::35",
-      "itemNo": "32",
+      "id": "5. Pharmaceutical Calc::40",
+      "itemNo": "18",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4516,8 +4575,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.5 Exercise 7B"
     },
     {
-      "id": "5. Pharmaceutical Calc::36",
-      "itemNo": "33",
+      "id": "5. Pharmaceutical Calc::41",
+      "itemNo": "19",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4528,8 +4587,8 @@ window.OFFLINE_CARDS = {
       "note": "Clinical Fluid & Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::37",
-      "itemNo": "34",
+      "id": "5. Pharmaceutical Calc::42",
+      "itemNo": "20",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4540,8 +4599,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.4 Exercise 6a"
     },
     {
-      "id": "5. Pharmaceutical Calc::38",
-      "itemNo": "35",
+      "id": "5. Pharmaceutical Calc::43",
+      "itemNo": "21",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4552,8 +4611,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.4 Exercise 6b-c"
     },
     {
-      "id": "5. Pharmaceutical Calc::39",
-      "itemNo": "36",
+      "id": "5. Pharmaceutical Calc::44",
+      "itemNo": "22",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4564,8 +4623,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2558"
     },
     {
-      "id": "5. Pharmaceutical Calc::40",
-      "itemNo": "37",
+      "id": "5. Pharmaceutical Calc::45",
+      "itemNo": "23",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4576,8 +4635,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2567 ข้อ 12"
     },
     {
-      "id": "5. Pharmaceutical Calc::41",
-      "itemNo": "38",
+      "id": "5. Pharmaceutical Calc::46",
+      "itemNo": "24",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4588,8 +4647,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566 Day 2 ข้อ 47"
     },
     {
-      "id": "5. Pharmaceutical Calc::42",
-      "itemNo": "39",
+      "id": "5. Pharmaceutical Calc::47",
+      "itemNo": "25",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4600,8 +4659,8 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2565 ข้อ 90"
     },
     {
-      "id": "5. Pharmaceutical Calc::43",
-      "itemNo": "40",
+      "id": "5. Pharmaceutical Calc::48",
+      "itemNo": "26",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4612,8 +4671,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.6 Exercise 9"
     },
     {
-      "id": "5. Pharmaceutical Calc::44",
-      "itemNo": "41",
+      "id": "5. Pharmaceutical Calc::49",
+      "itemNo": "27",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -4624,8 +4683,8 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.5 Exercise 8"
     },
     {
-      "id": "5. Pharmaceutical Calc::45",
-      "itemNo": "42",
+      "id": "5. Pharmaceutical Calc::50",
+      "itemNo": "28",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -7967,18 +8026,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "3. Spectroscopy & Optics",
       "subTopic": "IR",
       "track": "Product",
-      "question": "ในการอ่าน IR spectrum ที่แสดงเป็น %Transmittance หากบริเวณหนึ่งดูดกลืนรังสีแรง ลักษณะบนกราฟควรเป็นอย่างไร และเหตุใด",
-      "questionImage": "",
-      "answer": "จะเห็น %Transmittance ลดลงเป็น trough ลึก เพราะตัวอย่างส่งผ่านรังสีที่ wavenumber นั้นได้น้อยเมื่อเกิดการดูดกลืนมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "3. Spectroscopy & Optics::29",
-      "itemNo": "19",
-      "group": "3. Spectroscopy & Optics",
-      "subTopic": "IR",
-      "track": "Product",
       "question": "IR เหมาะกับการใช้เป็น identification test ของวัตถุดิบมากกว่าการใช้หาปริมาณตัวยาแบบ routine เพราะคุณสมบัติใดของ spectrum",
       "questionImage": "",
       "answer": "เพราะ IR ให้ pattern ของการสั่นของพันธะและ fingerprint ที่มีความจำเพาะต่อโครงสร้าง จึงเด่นด้านการยืนยัน identity, การวิเคราะห์ปริมาณทำได้ในบางกรณีแต่ไม่ใช่จุดเด่นหลักของการใช้ IR ในข้อสอบลักษณะนี้",
@@ -7986,8 +8033,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::30",
-      "itemNo": "20",
+      "id": "3. Spectroscopy & Optics::29",
+      "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "IR",
       "track": "Product",
@@ -7998,7 +8045,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::31",
+      "id": "3. Spectroscopy & Optics::30",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8010,7 +8057,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::32",
+      "id": "3. Spectroscopy & Optics::31",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8022,7 +8069,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::33",
+      "id": "3. Spectroscopy & Optics::32",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8034,7 +8081,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::34",
+      "id": "3. Spectroscopy & Optics::33",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8046,7 +8093,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::35",
+      "id": "3. Spectroscopy & Optics::34",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8058,7 +8105,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::36",
+      "id": "3. Spectroscopy & Optics::35",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8066,11 +8113,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::37",
+      "id": "3. Spectroscopy & Optics::36",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8078,11 +8125,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
       "questionImage": "",
       "answer": "เดซิเมตร (dm)",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::38",
+      "id": "3. Spectroscopy & Optics::37",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8094,7 +8141,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::39",
+      "id": "3. Spectroscopy & Optics::38",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8106,7 +8153,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::40",
+      "id": "3. Spectroscopy & Optics::39",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -8118,7 +8165,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::41",
+      "id": "3. Spectroscopy & Optics::40",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8130,7 +8177,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::42",
+      "id": "3. Spectroscopy & Optics::41",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8142,7 +8189,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::43",
+      "id": "3. Spectroscopy & Optics::42",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8154,7 +8201,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::44",
+      "id": "3. Spectroscopy & Optics::43",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8166,7 +8213,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::45",
+      "id": "3. Spectroscopy & Optics::44",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8178,7 +8225,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::46",
+      "id": "3. Spectroscopy & Optics::45",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8190,7 +8237,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::47",
+      "id": "3. Spectroscopy & Optics::46",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8202,7 +8249,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::48",
+      "id": "3. Spectroscopy & Optics::47",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8214,7 +8261,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::49",
+      "id": "3. Spectroscopy & Optics::48",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8226,7 +8273,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::50",
+      "id": "3. Spectroscopy & Optics::49",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8238,7 +8285,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::51",
+      "id": "3. Spectroscopy & Optics::50",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8250,7 +8297,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::52",
+      "id": "3. Spectroscopy & Optics::51",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8262,7 +8309,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::53",
+      "id": "3. Spectroscopy & Optics::52",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8274,7 +8321,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::54",
+      "id": "3. Spectroscopy & Optics::53",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8286,7 +8333,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::55",
+      "id": "3. Spectroscopy & Optics::54",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8298,7 +8345,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::56",
+      "id": "3. Spectroscopy & Optics::55",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8310,7 +8357,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::57",
+      "id": "3. Spectroscopy & Optics::56",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8322,7 +8369,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::58",
+      "id": "3. Spectroscopy & Optics::57",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8334,7 +8381,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::59",
+      "id": "3. Spectroscopy & Optics::58",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8346,7 +8393,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::60",
+      "id": "3. Spectroscopy & Optics::59",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8358,7 +8405,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::61",
+      "id": "3. Spectroscopy & Optics::60",
       "itemNo": "21",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8370,7 +8417,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::62",
+      "id": "3. Spectroscopy & Optics::61",
       "itemNo": "22",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8382,7 +8429,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::63",
+      "id": "3. Spectroscopy & Optics::62",
       "itemNo": "23",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8394,7 +8441,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::64",
+      "id": "3. Spectroscopy & Optics::63",
       "itemNo": "24",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8406,7 +8453,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::65",
+      "id": "3. Spectroscopy & Optics::64",
       "itemNo": "25",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8418,7 +8465,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::66",
+      "id": "3. Spectroscopy & Optics::65",
       "itemNo": "26",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8430,7 +8477,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::67",
+      "id": "3. Spectroscopy & Optics::66",
       "itemNo": "27",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8442,7 +8489,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::68",
+      "id": "3. Spectroscopy & Optics::67",
       "itemNo": "28",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8454,7 +8501,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::69",
+      "id": "3. Spectroscopy & Optics::68",
       "itemNo": "29",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8466,7 +8513,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::70",
+      "id": "3. Spectroscopy & Optics::69",
       "itemNo": "30",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8478,7 +8525,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::71",
+      "id": "3. Spectroscopy & Optics::70",
       "itemNo": "31",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8490,7 +8537,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::72",
+      "id": "3. Spectroscopy & Optics::71",
       "itemNo": "32",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8502,7 +8549,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::73",
+      "id": "3. Spectroscopy & Optics::72",
       "itemNo": "33",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8541,7 +8588,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::5",
       "itemNo": "3",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "issolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ถ้ายาเม็ดถูกทำให้มี surface area (S) เพิ่มขึ้น แต่ไม่ได้เปลี่ยน D, Cs, C และ h จะเกิดอะไรขึ้นกับ dissolution rate? เพราะอะไร?",
       "questionImage": "",
@@ -8553,7 +8600,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::6",
       "itemNo": "4",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "issolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "D = 8.0 × 10⁻⁹ cm²/s<br>K = 6.8 × 10⁻³<br>h = 1.4 × 10⁻² cm<br>S = 1 cm²<br>Cd = 0.02 g/cm³<br>Cr ≈ 0<br>จงคำนวณ rate of diffusion (dM/dt)<br>",
       "questionImage": "",
@@ -8565,7 +8612,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::7",
       "itemNo": "5",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ยาเม็ดชนิด immediate-release ทั่วไป ต้องการทดสอบ dissolution ควรนึกถึง Apparatus ใดเป็นหลัก?",
       "questionImage": "",
@@ -8577,7 +8624,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::8",
       "itemNo": "6",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ยามี aqueous solubility ต่ำมาก และเกิด rapid degradation ใน medium ควรพิจารณา Apparatus ใด?",
       "questionImage": "",
@@ -8589,7 +8636,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::9",
       "itemNo": "7",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ถ้ายาเป็น beads และต้องการจำลองการเคลื่อนที่ขึ้น-ลงใน dissolution medium ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -8601,7 +8648,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::10",
       "itemNo": "8",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ต้องการทดสอบ dissolution/release ของ transdermal dosage form โดยให้แผ่นยาอยู่บน disc ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -8613,7 +8660,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::11",
       "itemNo": "9",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ต้องการทดสอบ non-disintegrating oral modified-release dosage form เช่น chewable formulation หรือ transdermal dosage form โดยใช้ disc ที่เคลื่อนที่ขึ้น-ลง ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -8625,7 +8672,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::12",
       "itemNo": "10",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "กำหนด dissolution medium ที่ 37.0°C แต่ทำการทดสอบจริงที่ 38.0°C ผลนี้ถือว่าตรงตาม condition หรือไม่?",
       "questionImage": "",
@@ -8637,7 +8684,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::13",
       "itemNo": "11",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "Q: IR tablet มี label claim 200 mg และ Q = 80%<br>S1 แต่ละเม็ดต้องมี drug dissolved อย่างน้อยกี่ mg?",
       "questionImage": "",
@@ -8649,7 +8696,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::14",
       "itemNo": "12",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "IR tablet Q = 80%<br>S1 ได้ผล 6 tablets =<br>88%, 90%, 86%, 84%, 91%, 87%<br>ผ่าน S1 หรือไม่?",
       "questionImage": "",
@@ -8661,7 +8708,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::15",
       "itemNo": "13",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ใน ER ถ้า monograph กำหนดว่า Time 1 ต้องละลาย 20–30% แต่ผลได้ 35% ใน 1 unit ที่ L1 จะผ่านหรือไม่?<br>",
       "questionImage": "",
@@ -8673,7 +8720,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::16",
       "itemNo": "14",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ER ที่ L2 รวม 12 units<br>stated range = 20–30%<br>average = 25%<br>แต่มี 2 units อยู่นอก range<br>ผ่าน L2 หรือไม่?",
       "questionImage": "",
@@ -8682,8 +8729,80 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Pharmaceutical Calc::18",
+      "id": "5. Pharmaceutical Calc::17",
       "itemNo": "15",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Delayed-release acid stage, A1 ทดสอบ 6 units<br>ผล dissolution = 5%, 7%, 9%, 10%, 8%, 11%<br>ผ่าน A1 หรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>A1 ต้อง ไม่มี individual unit &gt;10%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::18",
+      "itemNo": "16",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Acid stage A2 รวม 12 units<br>average = 11%<br>ไม่มี unit ใด &gt;25%<br>",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะ average ต้อง ≤10%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::19",
+      "itemNo": "17",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Acid stage A3 รวม 24 units<br>average = 9%<br>ทุก unit ≤25%<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ผ่าน<br>เพราะ A3:<br>Average ≤10% <br>ไม่มี individual &gt;25% ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::20",
+      "itemNo": "18",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B1 ของ delayed-release Q = 80%<br>ผล 6 units = 86%, 90%, 88%, 84%, 91%, 87%<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะมี 84% &lt;85%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::21",
+      "itemNo": "19",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B2 Q = 80%<br>รวม 12 units:<br>average = 83%<br>ต่ำกว่า 65% = 0 units<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ผ่าน<br>เพราะ:<br>Average ≥80% <br>ไม่มี unit &lt;65% ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::22",
+      "itemNo": "20",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B2 Q = 80%<br>average = 83% แต่มี 1 unit = 64% ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะ B2 ต้อง ไม่มี unit &lt; Q−15%<br>80−15 = 65%<br>64% → fail",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::23",
+      "itemNo": "1",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8694,8 +8813,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.21 Example 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::19",
-      "itemNo": "16",
+      "id": "5. Pharmaceutical Calc::24",
+      "itemNo": "2",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8706,8 +8825,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.22-23 Example 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::20",
-      "itemNo": "17",
+      "id": "5. Pharmaceutical Calc::25",
+      "itemNo": "3",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8718,8 +8837,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2561 & 2563"
     },
     {
-      "id": "5. Pharmaceutical Calc::21",
-      "itemNo": "18",
+      "id": "5. Pharmaceutical Calc::26",
+      "itemNo": "4",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8730,8 +8849,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.17 Monograph Check"
     },
     {
-      "id": "5. Pharmaceutical Calc::22",
-      "itemNo": "19",
+      "id": "5. Pharmaceutical Calc::27",
+      "itemNo": "5",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8742,8 +8861,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Clinical Equivalency"
     },
     {
-      "id": "5. Pharmaceutical Calc::23",
-      "itemNo": "20",
+      "id": "5. Pharmaceutical Calc::28",
+      "itemNo": "6",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8754,8 +8873,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Salt Comparison"
     },
     {
-      "id": "5. Pharmaceutical Calc::24",
-      "itemNo": "21",
+      "id": "5. Pharmaceutical Calc::29",
+      "itemNo": "7",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8766,8 +8885,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-30 HPLC Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::25",
-      "itemNo": "22",
+      "id": "5. Pharmaceutical Calc::30",
+      "itemNo": "8",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8778,8 +8897,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-31 Comprehensive Example"
     },
     {
-      "id": "5. Pharmaceutical Calc::26",
-      "itemNo": "23",
+      "id": "5. Pharmaceutical Calc::31",
+      "itemNo": "9",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8790,8 +8909,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "USP Monograph Aspirin Residual Titration"
     },
     {
-      "id": "5. Pharmaceutical Calc::27",
-      "itemNo": "24",
+      "id": "5. Pharmaceutical Calc::32",
+      "itemNo": "10",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8802,8 +8921,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.33-34 K2CO3 Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::28",
-      "itemNo": "25",
+      "id": "5. Pharmaceutical Calc::33",
+      "itemNo": "11",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8814,8 +8933,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.1 Exercise 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::29",
-      "itemNo": "26",
+      "id": "5. Pharmaceutical Calc::34",
+      "itemNo": "12",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8826,8 +8945,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 5"
     },
     {
-      "id": "5. Pharmaceutical Calc::30",
-      "itemNo": "27",
+      "id": "5. Pharmaceutical Calc::35",
+      "itemNo": "13",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8838,8 +8957,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Fundamental Pharmacy Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::31",
-      "itemNo": "28",
+      "id": "5. Pharmaceutical Calc::36",
+      "itemNo": "14",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8850,8 +8969,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::32",
-      "itemNo": "29",
+      "id": "5. Pharmaceutical Calc::37",
+      "itemNo": "15",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8862,8 +8981,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::33",
-      "itemNo": "30",
+      "id": "5. Pharmaceutical Calc::38",
+      "itemNo": "16",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8874,8 +8993,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.3 Exercise 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::34",
-      "itemNo": "31",
+      "id": "5. Pharmaceutical Calc::39",
+      "itemNo": "17",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8886,8 +9005,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2564 ข้อ 98"
     },
     {
-      "id": "5. Pharmaceutical Calc::35",
-      "itemNo": "32",
+      "id": "5. Pharmaceutical Calc::40",
+      "itemNo": "18",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8898,8 +9017,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 7B"
     },
     {
-      "id": "5. Pharmaceutical Calc::36",
-      "itemNo": "33",
+      "id": "5. Pharmaceutical Calc::41",
+      "itemNo": "19",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8910,8 +9029,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Clinical Fluid & Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::37",
-      "itemNo": "34",
+      "id": "5. Pharmaceutical Calc::42",
+      "itemNo": "20",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8922,8 +9041,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6a"
     },
     {
-      "id": "5. Pharmaceutical Calc::38",
-      "itemNo": "35",
+      "id": "5. Pharmaceutical Calc::43",
+      "itemNo": "21",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8934,8 +9053,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6b-c"
     },
     {
-      "id": "5. Pharmaceutical Calc::39",
-      "itemNo": "36",
+      "id": "5. Pharmaceutical Calc::44",
+      "itemNo": "22",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8946,8 +9065,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2558"
     },
     {
-      "id": "5. Pharmaceutical Calc::40",
-      "itemNo": "37",
+      "id": "5. Pharmaceutical Calc::45",
+      "itemNo": "23",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8958,8 +9077,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2567 ข้อ 12"
     },
     {
-      "id": "5. Pharmaceutical Calc::41",
-      "itemNo": "38",
+      "id": "5. Pharmaceutical Calc::46",
+      "itemNo": "24",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8970,8 +9089,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566 Day 2 ข้อ 47"
     },
     {
-      "id": "5. Pharmaceutical Calc::42",
-      "itemNo": "39",
+      "id": "5. Pharmaceutical Calc::47",
+      "itemNo": "25",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8982,8 +9101,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2565 ข้อ 90"
     },
     {
-      "id": "5. Pharmaceutical Calc::43",
-      "itemNo": "40",
+      "id": "5. Pharmaceutical Calc::48",
+      "itemNo": "26",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -8994,8 +9113,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.6 Exercise 9"
     },
     {
-      "id": "5. Pharmaceutical Calc::44",
-      "itemNo": "41",
+      "id": "5. Pharmaceutical Calc::49",
+      "itemNo": "27",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -9006,8 +9125,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 8"
     },
     {
-      "id": "5. Pharmaceutical Calc::45",
-      "itemNo": "42",
+      "id": "5. Pharmaceutical Calc::50",
+      "itemNo": "28",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -12338,18 +12457,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "3. Spectroscopy & Optics",
       "subTopic": "IR",
       "track": "Product",
-      "question": "ในการอ่าน IR spectrum ที่แสดงเป็น %Transmittance หากบริเวณหนึ่งดูดกลืนรังสีแรง ลักษณะบนกราฟควรเป็นอย่างไร และเหตุใด",
-      "questionImage": "",
-      "answer": "จะเห็น %Transmittance ลดลงเป็น trough ลึก เพราะตัวอย่างส่งผ่านรังสีที่ wavenumber นั้นได้น้อยเมื่อเกิดการดูดกลืนมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "3. Spectroscopy & Optics::29",
-      "itemNo": "19",
-      "group": "3. Spectroscopy & Optics",
-      "subTopic": "IR",
-      "track": "Product",
       "question": "IR เหมาะกับการใช้เป็น identification test ของวัตถุดิบมากกว่าการใช้หาปริมาณตัวยาแบบ routine เพราะคุณสมบัติใดของ spectrum",
       "questionImage": "",
       "answer": "เพราะ IR ให้ pattern ของการสั่นของพันธะและ fingerprint ที่มีความจำเพาะต่อโครงสร้าง จึงเด่นด้านการยืนยัน identity, การวิเคราะห์ปริมาณทำได้ในบางกรณีแต่ไม่ใช่จุดเด่นหลักของการใช้ IR ในข้อสอบลักษณะนี้",
@@ -12357,8 +12464,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::30",
-      "itemNo": "20",
+      "id": "3. Spectroscopy & Optics::29",
+      "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "IR",
       "track": "Product",
@@ -12369,7 +12476,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::31",
+      "id": "3. Spectroscopy & Optics::30",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12381,7 +12488,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::32",
+      "id": "3. Spectroscopy & Optics::31",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12393,7 +12500,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::33",
+      "id": "3. Spectroscopy & Optics::32",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12405,7 +12512,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::34",
+      "id": "3. Spectroscopy & Optics::33",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12417,7 +12524,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::35",
+      "id": "3. Spectroscopy & Optics::34",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12429,7 +12536,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::36",
+      "id": "3. Spectroscopy & Optics::35",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12437,11 +12544,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::37",
+      "id": "3. Spectroscopy & Optics::36",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12449,11 +12556,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
       "questionImage": "",
       "answer": "เดซิเมตร (dm)",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::38",
+      "id": "3. Spectroscopy & Optics::37",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12465,7 +12572,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::39",
+      "id": "3. Spectroscopy & Optics::38",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12477,7 +12584,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::40",
+      "id": "3. Spectroscopy & Optics::39",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "Polarimetry",
@@ -12489,7 +12596,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::41",
+      "id": "3. Spectroscopy & Optics::40",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12501,7 +12608,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::42",
+      "id": "3. Spectroscopy & Optics::41",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12513,7 +12620,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::43",
+      "id": "3. Spectroscopy & Optics::42",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12525,7 +12632,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::44",
+      "id": "3. Spectroscopy & Optics::43",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12537,7 +12644,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::45",
+      "id": "3. Spectroscopy & Optics::44",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12549,7 +12656,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::46",
+      "id": "3. Spectroscopy & Optics::45",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12561,7 +12668,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::47",
+      "id": "3. Spectroscopy & Optics::46",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12573,7 +12680,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::48",
+      "id": "3. Spectroscopy & Optics::47",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12585,7 +12692,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::49",
+      "id": "3. Spectroscopy & Optics::48",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12597,7 +12704,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::50",
+      "id": "3. Spectroscopy & Optics::49",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12609,7 +12716,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::51",
+      "id": "3. Spectroscopy & Optics::50",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12621,7 +12728,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::52",
+      "id": "3. Spectroscopy & Optics::51",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12633,7 +12740,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::53",
+      "id": "3. Spectroscopy & Optics::52",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12645,7 +12752,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::54",
+      "id": "3. Spectroscopy & Optics::53",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12657,7 +12764,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::55",
+      "id": "3. Spectroscopy & Optics::54",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12669,7 +12776,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::56",
+      "id": "3. Spectroscopy & Optics::55",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12681,7 +12788,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::57",
+      "id": "3. Spectroscopy & Optics::56",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12693,7 +12800,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::58",
+      "id": "3. Spectroscopy & Optics::57",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12705,7 +12812,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::59",
+      "id": "3. Spectroscopy & Optics::58",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12717,7 +12824,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::60",
+      "id": "3. Spectroscopy & Optics::59",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12729,7 +12836,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::61",
+      "id": "3. Spectroscopy & Optics::60",
       "itemNo": "21",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12741,7 +12848,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::62",
+      "id": "3. Spectroscopy & Optics::61",
       "itemNo": "22",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12753,7 +12860,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::63",
+      "id": "3. Spectroscopy & Optics::62",
       "itemNo": "23",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12765,7 +12872,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::64",
+      "id": "3. Spectroscopy & Optics::63",
       "itemNo": "24",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12777,7 +12884,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::65",
+      "id": "3. Spectroscopy & Optics::64",
       "itemNo": "25",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12789,7 +12896,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::66",
+      "id": "3. Spectroscopy & Optics::65",
       "itemNo": "26",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12801,7 +12908,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::67",
+      "id": "3. Spectroscopy & Optics::66",
       "itemNo": "27",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12813,7 +12920,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::68",
+      "id": "3. Spectroscopy & Optics::67",
       "itemNo": "28",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12825,7 +12932,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::69",
+      "id": "3. Spectroscopy & Optics::68",
       "itemNo": "29",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12837,7 +12944,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::70",
+      "id": "3. Spectroscopy & Optics::69",
       "itemNo": "30",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12849,7 +12956,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::71",
+      "id": "3. Spectroscopy & Optics::70",
       "itemNo": "31",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12861,7 +12968,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::72",
+      "id": "3. Spectroscopy & Optics::71",
       "itemNo": "32",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12873,7 +12980,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::73",
+      "id": "3. Spectroscopy & Optics::72",
       "itemNo": "33",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12912,7 +13019,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::5",
       "itemNo": "3",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "issolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ถ้ายาเม็ดถูกทำให้มี surface area (S) เพิ่มขึ้น แต่ไม่ได้เปลี่ยน D, Cs, C และ h จะเกิดอะไรขึ้นกับ dissolution rate? เพราะอะไร?",
       "questionImage": "",
@@ -12924,7 +13031,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::6",
       "itemNo": "4",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "issolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "D = 8.0 × 10⁻⁹ cm²/s<br>K = 6.8 × 10⁻³<br>h = 1.4 × 10⁻² cm<br>S = 1 cm²<br>Cd = 0.02 g/cm³<br>Cr ≈ 0<br>จงคำนวณ rate of diffusion (dM/dt)<br>",
       "questionImage": "",
@@ -12936,7 +13043,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::7",
       "itemNo": "5",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ยาเม็ดชนิด immediate-release ทั่วไป ต้องการทดสอบ dissolution ควรนึกถึง Apparatus ใดเป็นหลัก?",
       "questionImage": "",
@@ -12948,7 +13055,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::8",
       "itemNo": "6",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ยามี aqueous solubility ต่ำมาก และเกิด rapid degradation ใน medium ควรพิจารณา Apparatus ใด?",
       "questionImage": "",
@@ -12960,7 +13067,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::9",
       "itemNo": "7",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ถ้ายาเป็น beads และต้องการจำลองการเคลื่อนที่ขึ้น-ลงใน dissolution medium ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -12972,7 +13079,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::10",
       "itemNo": "8",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ต้องการทดสอบ dissolution/release ของ transdermal dosage form โดยให้แผ่นยาอยู่บน disc ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -12984,7 +13091,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::11",
       "itemNo": "9",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ต้องการทดสอบ non-disintegrating oral modified-release dosage form เช่น chewable formulation หรือ transdermal dosage form โดยใช้ disc ที่เคลื่อนที่ขึ้น-ลง ควรใช้ Apparatus ใด?",
       "questionImage": "",
@@ -12996,7 +13103,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::12",
       "itemNo": "10",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "กำหนด dissolution medium ที่ 37.0°C แต่ทำการทดสอบจริงที่ 38.0°C ผลนี้ถือว่าตรงตาม condition หรือไม่?",
       "questionImage": "",
@@ -13008,7 +13115,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::13",
       "itemNo": "11",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "Q: IR tablet มี label claim 200 mg และ Q = 80%<br>S1 แต่ละเม็ดต้องมี drug dissolved อย่างน้อยกี่ mg?",
       "questionImage": "",
@@ -13020,7 +13127,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::14",
       "itemNo": "12",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "IR tablet Q = 80%<br>S1 ได้ผล 6 tablets =<br>88%, 90%, 86%, 84%, 91%, 87%<br>ผ่าน S1 หรือไม่?",
       "questionImage": "",
@@ -13032,7 +13139,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::15",
       "itemNo": "13",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ใน ER ถ้า monograph กำหนดว่า Time 1 ต้องละลาย 20–30% แต่ผลได้ 35% ใน 1 unit ที่ L1 จะผ่านหรือไม่?<br>",
       "questionImage": "",
@@ -13044,7 +13151,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "5. Pharmaceutical Calc::16",
       "itemNo": "14",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
       "track": "Product",
       "question": "ER ที่ L2 รวม 12 units<br>stated range = 20–30%<br>average = 25%<br>แต่มี 2 units อยู่นอก range<br>ผ่าน L2 หรือไม่?",
       "questionImage": "",
@@ -13053,8 +13160,80 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Pharmaceutical Calc::18",
+      "id": "5. Pharmaceutical Calc::17",
       "itemNo": "15",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Delayed-release acid stage, A1 ทดสอบ 6 units<br>ผล dissolution = 5%, 7%, 9%, 10%, 8%, 11%<br>ผ่าน A1 หรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>A1 ต้อง ไม่มี individual unit &gt;10%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::18",
+      "itemNo": "16",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Acid stage A2 รวม 12 units<br>average = 11%<br>ไม่มี unit ใด &gt;25%<br>",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะ average ต้อง ≤10%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::19",
+      "itemNo": "17",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Acid stage A3 รวม 24 units<br>average = 9%<br>ทุก unit ≤25%<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ผ่าน<br>เพราะ A3:<br>Average ≤10% <br>ไม่มี individual &gt;25% ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::20",
+      "itemNo": "18",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B1 ของ delayed-release Q = 80%<br>ผล 6 units = 86%, 90%, 88%, 84%, 91%, 87%<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะมี 84% &lt;85%",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::21",
+      "itemNo": "19",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B2 Q = 80%<br>รวม 12 units:<br>average = 83%<br>ต่ำกว่า 65% = 0 units<br>ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ผ่าน<br>เพราะ:<br>Average ≥80% <br>ไม่มี unit &lt;65% ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::22",
+      "itemNo": "20",
+      "group": "5. Pharmaceutical Calc",
+      "subTopic": "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
+      "track": "Product",
+      "question": "Buffer stage B2 Q = 80%<br>average = 83% แต่มี 1 unit = 64% ผ่านหรือไม่?",
+      "questionImage": "",
+      "answer": "ไม่ผ่าน<br>เพราะ B2 ต้อง ไม่มี unit &lt; Q−15%<br>80−15 = 65%<br>64% → fail",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Pharmaceutical Calc::23",
+      "itemNo": "1",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13065,8 +13244,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.21 Example 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::19",
-      "itemNo": "16",
+      "id": "5. Pharmaceutical Calc::24",
+      "itemNo": "2",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13077,8 +13256,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.22-23 Example 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::20",
-      "itemNo": "17",
+      "id": "5. Pharmaceutical Calc::25",
+      "itemNo": "3",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13089,8 +13268,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2561 & 2563"
     },
     {
-      "id": "5. Pharmaceutical Calc::21",
-      "itemNo": "18",
+      "id": "5. Pharmaceutical Calc::26",
+      "itemNo": "4",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13101,8 +13280,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.17 Monograph Check"
     },
     {
-      "id": "5. Pharmaceutical Calc::22",
-      "itemNo": "19",
+      "id": "5. Pharmaceutical Calc::27",
+      "itemNo": "5",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13113,8 +13292,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Clinical Equivalency"
     },
     {
-      "id": "5. Pharmaceutical Calc::23",
-      "itemNo": "20",
+      "id": "5. Pharmaceutical Calc::28",
+      "itemNo": "6",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13125,8 +13304,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Salt Comparison"
     },
     {
-      "id": "5. Pharmaceutical Calc::24",
-      "itemNo": "21",
+      "id": "5. Pharmaceutical Calc::29",
+      "itemNo": "7",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13137,8 +13316,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-30 HPLC Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::25",
-      "itemNo": "22",
+      "id": "5. Pharmaceutical Calc::30",
+      "itemNo": "8",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13149,8 +13328,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-31 Comprehensive Example"
     },
     {
-      "id": "5. Pharmaceutical Calc::26",
-      "itemNo": "23",
+      "id": "5. Pharmaceutical Calc::31",
+      "itemNo": "9",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13161,8 +13340,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "USP Monograph Aspirin Residual Titration"
     },
     {
-      "id": "5. Pharmaceutical Calc::27",
-      "itemNo": "24",
+      "id": "5. Pharmaceutical Calc::32",
+      "itemNo": "10",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13173,8 +13352,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.33-34 K2CO3 Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::28",
-      "itemNo": "25",
+      "id": "5. Pharmaceutical Calc::33",
+      "itemNo": "11",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13185,8 +13364,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.1 Exercise 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::29",
-      "itemNo": "26",
+      "id": "5. Pharmaceutical Calc::34",
+      "itemNo": "12",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13197,8 +13376,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 5"
     },
     {
-      "id": "5. Pharmaceutical Calc::30",
-      "itemNo": "27",
+      "id": "5. Pharmaceutical Calc::35",
+      "itemNo": "13",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13209,8 +13388,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Fundamental Pharmacy Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::31",
-      "itemNo": "28",
+      "id": "5. Pharmaceutical Calc::36",
+      "itemNo": "14",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13221,8 +13400,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::32",
-      "itemNo": "29",
+      "id": "5. Pharmaceutical Calc::37",
+      "itemNo": "15",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13233,8 +13412,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::33",
-      "itemNo": "30",
+      "id": "5. Pharmaceutical Calc::38",
+      "itemNo": "16",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13245,8 +13424,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.3 Exercise 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::34",
-      "itemNo": "31",
+      "id": "5. Pharmaceutical Calc::39",
+      "itemNo": "17",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13257,8 +13436,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2564 ข้อ 98"
     },
     {
-      "id": "5. Pharmaceutical Calc::35",
-      "itemNo": "32",
+      "id": "5. Pharmaceutical Calc::40",
+      "itemNo": "18",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13269,8 +13448,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 7B"
     },
     {
-      "id": "5. Pharmaceutical Calc::36",
-      "itemNo": "33",
+      "id": "5. Pharmaceutical Calc::41",
+      "itemNo": "19",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13281,8 +13460,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Clinical Fluid & Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::37",
-      "itemNo": "34",
+      "id": "5. Pharmaceutical Calc::42",
+      "itemNo": "20",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13293,8 +13472,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6a"
     },
     {
-      "id": "5. Pharmaceutical Calc::38",
-      "itemNo": "35",
+      "id": "5. Pharmaceutical Calc::43",
+      "itemNo": "21",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13305,8 +13484,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6b-c"
     },
     {
-      "id": "5. Pharmaceutical Calc::39",
-      "itemNo": "36",
+      "id": "5. Pharmaceutical Calc::44",
+      "itemNo": "22",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13317,8 +13496,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2558"
     },
     {
-      "id": "5. Pharmaceutical Calc::40",
-      "itemNo": "37",
+      "id": "5. Pharmaceutical Calc::45",
+      "itemNo": "23",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13329,8 +13508,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2567 ข้อ 12"
     },
     {
-      "id": "5. Pharmaceutical Calc::41",
-      "itemNo": "38",
+      "id": "5. Pharmaceutical Calc::46",
+      "itemNo": "24",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13341,8 +13520,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566 Day 2 ข้อ 47"
     },
     {
-      "id": "5. Pharmaceutical Calc::42",
-      "itemNo": "39",
+      "id": "5. Pharmaceutical Calc::47",
+      "itemNo": "25",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13353,8 +13532,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2565 ข้อ 90"
     },
     {
-      "id": "5. Pharmaceutical Calc::43",
-      "itemNo": "40",
+      "id": "5. Pharmaceutical Calc::48",
+      "itemNo": "26",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13365,8 +13544,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.6 Exercise 9"
     },
     {
-      "id": "5. Pharmaceutical Calc::44",
-      "itemNo": "41",
+      "id": "5. Pharmaceutical Calc::49",
+      "itemNo": "27",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
@@ -13377,8 +13556,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 8"
     },
     {
-      "id": "5. Pharmaceutical Calc::45",
-      "itemNo": "42",
+      "id": "5. Pharmaceutical Calc::50",
+      "itemNo": "28",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
       "track": "Product",
