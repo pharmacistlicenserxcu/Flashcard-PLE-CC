@@ -158,11 +158,13 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "3. Spectroscopy & Optics",
     "track": "Product",
-    "count": 67,
+    "count": 71,
     "subtopics": [
+      "IR",
       "MS",
       "NMR",
-      "Polarimetry"
+      "Polarimetry",
+      "UV"
     ]
   },
   {
@@ -177,13 +179,7 @@ window.OFFLINE_CATEGORIES = [
     "count": 42,
     "subtopics": [
       "Compounding Adjustments",
-      "Compounding Practice Cases",
       "Dissolution & Release profile เครื่องมือที่ใช้ทดสอบ",
-      "HLB & Emulsion Blends",
-      "Instrumental Assay & Titer",
-      "Milliequivalents (mEq)",
-      "Osmolarity & Tonicity",
-      "Working Formula & Scaling",
       "issolution & Release profile เครื่องมือที่ใช้ทดสอบ"
     ]
   },
@@ -3284,7 +3280,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::3",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "การทดสอบ Content Uniformity ของยาเม็ดโดยใช้ UV-Vis Spectrophotometer มีวัตถุประสงค์เพื่ออะไร?",
       "questionImage": "",
@@ -3296,7 +3292,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::4",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "Isosbestic point มีความสำคัญในการวิเคราะห์ด้านใดมากที่สุด? ก. หาค่า Molecular weight ของสาร<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ข.</b> หาค่า pKa ของยาโดยอาศัยสมดุลระหว่างฟอร์ม ionized และ un-ionized<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ค.</b> หาค่า Limit of detection (LOD)<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ง.</b> หาค่า Refractive index ของตัวทำละลาย&quot;",
       "questionImage": "",
@@ -3308,7 +3304,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::5",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สาร A มีค่า A¹%1cm = 500 ที่ λmax และมีน้ำหนักโมเลกุล 250 g/mol ค่า molar absorptivity (ε) ของสาร A เท่ากับเท่าใด?",
       "questionImage": "",
@@ -3320,7 +3316,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::6",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สาเหตุของ &quot;Instrumental deviation&quot; จากกฎของเบียร์-แลมเบิร์ต?",
       "questionImage": "",
@@ -3332,7 +3328,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::7",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "เมื่อนำสารละลาย Phenol ไปปรับให้อยู่ในสภาวะเบส (pH สูง) จะเกิดการเปลี่ยนแปลงสเปกตรัมแบบใด และเพราะเหตุใด?",
       "questionImage": "",
@@ -3344,7 +3340,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::8",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สารประกอบชนิดหนึ่งเมื่อเปลี่ยนจาก cis-isomer เป็น trans-isomer จะพบการเปลี่ยนแปลงของสเปกตรัมอย่างไร?",
       "questionImage": "",
@@ -3356,7 +3352,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::9",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "หากทำการปรับ pH ของสารละลาย Phenol จาก pH 3 ให้กลายเป็น pH 10 จะเกิดการเปลี่ยนแปลงของค่าความยาวคลื่นสูงสุดและ Absorbance อย่างไร เพราะเหตุใด?",
       "questionImage": "",
@@ -3368,7 +3364,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::10",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "จุด Isosbestic point คืออะไร และมีความสำคัญอย่างไรในการวิเคราะห์เชิงปริมาณของตัวยาที่สามารถแตกตัวได้ตาม pH?",
       "questionImage": "",
@@ -3380,7 +3376,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::11",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันเด่นที่สุดของสาร และระบุบริเวณ peak ที่ใช้ตัดสิน",
       "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
@@ -3392,10 +3388,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::12",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันหลักของสาร และอธิบายว่าจุดใดใน spectrum ช่วยแยกสารนี้ออกจาก carboxylic acid",
-      "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r12_c2.png",
       "answer": "Alcohol, มี broad O–H stretching แถวประมาณ 3200–3600 cm⁻¹ แต่ไม่มี strong C=O แถวประมาณ 1700 cm⁻¹ จึงไม่เข้า pattern ของ carboxylic acid",
       "answerImage": "",
       "note": ""
@@ -3404,10 +3400,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::13",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงสรุปว่าสารนี้มีหมู่ฟังก์ชันใด โดยใช้ลักษณะของ peak อย่างน้อย 2 บริเวณประกอบคำตอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r13_c2.png",
       "answer": "Carboxylic acid, มี broad O–H ของกรดประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O ประมาณ 1700–1725 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -3416,10 +3412,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::14",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป มี peak หนึ่งที่ใช้บ่งชี้หมู่ฟังก์ชันได้ค่อนข้างจำเพาะ จงระบุหมู่ฟังก์ชันนั้นและช่วง wavenumber ที่ควรพบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r14_c2.png",
       "answer": "Nitrile (C≡N), ให้ sharp absorption บริเวณประมาณ 2210–2260 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -3428,10 +3424,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::15",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุว่าหมู่ amino ในสารนี้มีแนวโน้มเป็น primary หรือ secondary amine พร้อมบอกหลักฐานจาก spectrum",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r15_c2.png",
       "answer": "Primary amine, N–H stretching บริเวณประมาณ 3300–3500 cm⁻¹ มักเห็นเป็น 2 bands จาก asymmetric และ symmetric N–H stretching",
       "answerImage": "",
       "note": ""
@@ -3440,10 +3436,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::16",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป หากต้องแยกว่า carbonyl ในสารนี้เป็น aldehyde หรือ ketone ควรใช้ peak ใดประกอบการตัดสิน และสรุปว่าสารนี้เข้ากับชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r16_c2.png",
       "answer": "เข้ากับ aldehyde, นอกจาก C=O แล้วพบ aldehydic C–H stretching มักอยู่ใกล้ประมาณ 2720 และ 2820 cm⁻¹ ซึ่งช่วยแยกจาก ketone",
       "answerImage": "",
       "note": ""
@@ -3452,10 +3448,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::17",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุชนิดของ carbonyl compound ที่สอดคล้องที่สุด โดยใช้ข้อมูลจากทั้ง carbonyl region และ fingerprint region",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r17_c2.png",
       "answer": "Ester, มี strong ester C=O แถวประมาณ 1735–1750 cm⁻¹ และมี strong C–O stretching หลายแถบในช่วงประมาณ 1050–1300 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -3464,10 +3460,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::18",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันสำคัญที่พบอย่างน้อย 3 กลุ่ม และอธิบายว่าข้อมูลดังกล่าวสอดคล้องกับโครงสร้างของ acetaminophen อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "พบ O–H/N–H stretching บริเวณประมาณ 3100–3500 cm⁻¹, amide C=O แถวประมาณ 1650 cm⁻¹ และ aromatic ring bands แถวประมาณ 1500–1600 cm⁻¹ จึงสอดคล้องกับ phenolic OH + amide + aromatic ring ของ acetaminophen",
       "answerImage": "",
       "note": ""
@@ -3476,10 +3472,10 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::19",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ตัวอย่างกับ Reference Standard ให้ IR spectrum ที่มีตำแหน่ง functional-group peaks ใกล้เคียงกัน แต่บริเวณ fingerprint region แตกต่างกันชัดเจน ควรสรุปผลการ identification อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "ยังไม่ควรสรุปว่า identity ตรงกัน เพราะการยืนยันด้วย IR ต้องดูภาพรวมของ spectrum โดยเฉพาะ fingerprint region ไม่ใช่ดูเพียง functional-group peaks",
       "answerImage": "",
       "note": ""
@@ -3488,7 +3484,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::20",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "IR spectrum ของสารตัวอย่างพบ strong peak บริเวณประมาณ 1735 cm⁻¹ และมี strong bands ในช่วง 1050–1300 cm⁻¹ แต่ไม่พบ broad O–H จากข้อมูลนี้ควรสรุปว่าหมู่ carbonyl เป็นชนิดใด และใช้ peak ใดช่วยยืนยัน",
       "questionImage": "",
@@ -3500,7 +3496,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::21",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ในการตรวจรับ raw material ด้วย IR พบว่า spectrum ของตัวอย่างตรงกับ Reference Standard เกือบทั้งหมด แต่มี strong peak ใหม่บริเวณ carbonyl region ซึ่งไม่มีใน standard ควรตีความอย่างไร",
       "questionImage": "",
@@ -3512,7 +3508,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::22",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "สาร A มี broad band ประมาณ 3200–3600 cm⁻¹ แต่ไม่มี C=O ส่วนสาร B มี broad band กินช่วงประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O สาร A และ B น่าจะมีหมู่ฟังก์ชันใดตามลำดับ",
       "questionImage": "",
@@ -3524,7 +3520,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::23",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "สารชนิดหนึ่งมี strong C=O absorption และมี strong bands หลายแถบในช่วง 1050–1300 cm⁻¹ ข้อมูลนี้สนับสนุน ester มากกว่า ketone เพราะอะไร",
       "questionImage": "",
@@ -3536,7 +3532,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::24",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "พบ carbonyl absorption ที่ wavenumber ต่ำกว่าค่า ketone อิ่มตัวทั่วไป เช่นอยู่ใกล้ประมาณ 1685 cm⁻¹ ปัจจัยใดสามารถทำให้ C=O peak เลื่อนไปต่ำลงได้",
       "questionImage": "",
@@ -3548,7 +3544,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::25",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "เมื่อเปรียบเทียบ O–H stretching ของ alcohol ที่มี hydrogen bonding มากกับ alcohol ที่มี hydrogen bonding น้อย ลักษณะ peak มีแนวโน้มต่างกันอย่างไร",
       "questionImage": "",
@@ -3560,7 +3556,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::26",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก monograph ระบุให้ยืนยัน identity ของสารโดยเปรียบเทียบ IR spectrum ของตัวอย่างกับ Reference Standard จุดประสงค์หลักของการเปรียบเทียบนี้คืออะไร",
       "questionImage": "",
@@ -3572,7 +3568,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::27",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ถ้า IR spectrum ของสารสองชนิดมี C=O peak ใกล้เคียงกันมาก แต่ fingerprint region แตกต่างกัน การใช้ IR ยังช่วยแยกสารสองชนิดนี้ได้หรือไม่ เพราะอะไร",
       "questionImage": "",
@@ -3584,7 +3580,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::28",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ในการอ่าน IR spectrum ที่แสดงเป็น %Transmittance หากบริเวณหนึ่งดูดกลืนรังสีแรง ลักษณะบนกราฟควรเป็นอย่างไร และเหตุใด",
       "questionImage": "",
@@ -3596,7 +3592,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::29",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "IR เหมาะกับการใช้เป็น identification test ของวัตถุดิบมากกว่าการใช้หาปริมาณตัวยาแบบ routine เพราะคุณสมบัติใดของ spectrum",
       "questionImage": "",
@@ -3608,7 +3604,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::30",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "เมื่อตรวจ IR ของ aspirin พบว่า peak ที่สัมพันธ์กับ ester carbonyl ลดลงอย่างชัดเจน ขณะที่ยังพบสัญญาณของ carboxylic acid อยู่ การเปลี่ยนแปลงนี้ควรสงสัยอะไร",
       "questionImage": "",
@@ -3632,7 +3628,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::32",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารประเภทใดที่สามารถวัดด้วย Polarimeter ได้",
       "questionImage": "",
@@ -3644,7 +3640,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::33",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารที่หมุนระนาบแสงไปทางขวา (ตามเข็มนาฬิกา) เรียกว่าอะไร และใช้สัญลักษณ์ใด",
       "questionImage": "",
@@ -3656,7 +3652,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::34",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารที่หมุนระนาบแสงไปทางซ้าย (ทวนเข็มนาฬิกา) เรียกว่าอะไร และใช้สัญลักษณ์ใด",
       "questionImage": "",
@@ -3668,7 +3664,7 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::35",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "Racemix mixture คืออะไร และมีผลต่อการหมุนแสงอย่างไร",
       "questionImage": "",
@@ -3680,16 +3676,64 @@ window.OFFLINE_CARDS = {
       "id": "3. Spectroscopy & Optics::36",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::37",
+      "itemNo": "7",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
+      "questionImage": "",
+      "answer": "เดซิเมตร (dm)",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::38",
+      "itemNo": "8",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ความยาวคลื่นแสงมาตรฐานที่ใช้ใน Polarimetry มักมาจากแหล่งกำเนิดแสงใด และมีความยาวคลื่นเท่าใด",
+      "questionImage": "",
+      "answer": "Sodium D-line ความยาวคลื่น 589 nm",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "3. Spectroscopy & Optics::39",
+      "itemNo": "9",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ปัจจัยที่ส่งผลต่อการวัดค่า Specific rotation",
+      "questionImage": "",
+      "answer": "1. ความยาวคลื่นแสง 2. อุณหภูมิ 3. ตัวทำละลาย 4. ความเข้มข้นของสารละลาย 5. ความยาวหลอดใส่ตัวอย่างสารละลาย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::40",
+      "itemNo": "10",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "การประยุกต์ใช้ Polarimetry ในการตรวจ Purity คือการหาค่าอะไร",
+      "questionImage": "",
+      "answer": "Enantiomeric excess (%ee) เพื่อดูว่ายามีไอโซเมอร์อื่นปนเปื้อนหรือไม่",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::41",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3701,7 +3745,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::40",
+      "id": "3. Spectroscopy & Optics::42",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3713,7 +3757,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::41",
+      "id": "3. Spectroscopy & Optics::43",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3725,7 +3769,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::42",
+      "id": "3. Spectroscopy & Optics::44",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3737,7 +3781,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::43",
+      "id": "3. Spectroscopy & Optics::45",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3749,7 +3793,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::44",
+      "id": "3. Spectroscopy & Optics::46",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3761,7 +3805,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::45",
+      "id": "3. Spectroscopy & Optics::47",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3773,7 +3817,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::46",
+      "id": "3. Spectroscopy & Optics::48",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3785,7 +3829,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::47",
+      "id": "3. Spectroscopy & Optics::49",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3797,7 +3841,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::48",
+      "id": "3. Spectroscopy & Optics::50",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3809,7 +3853,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::49",
+      "id": "3. Spectroscopy & Optics::51",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3821,7 +3865,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::50",
+      "id": "3. Spectroscopy & Optics::52",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3833,7 +3877,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::51",
+      "id": "3. Spectroscopy & Optics::53",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3845,7 +3889,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::52",
+      "id": "3. Spectroscopy & Optics::54",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3857,7 +3901,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::53",
+      "id": "3. Spectroscopy & Optics::55",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -3869,7 +3913,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::54",
+      "id": "3. Spectroscopy & Optics::56",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3881,7 +3925,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::55",
+      "id": "3. Spectroscopy & Optics::57",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3893,7 +3937,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::56",
+      "id": "3. Spectroscopy & Optics::58",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3905,7 +3949,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::57",
+      "id": "3. Spectroscopy & Optics::59",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3917,7 +3961,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::58",
+      "id": "3. Spectroscopy & Optics::60",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3929,7 +3973,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::59",
+      "id": "3. Spectroscopy & Optics::61",
       "itemNo": "21",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3941,7 +3985,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::60",
+      "id": "3. Spectroscopy & Optics::62",
       "itemNo": "22",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3953,7 +3997,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::61",
+      "id": "3. Spectroscopy & Optics::63",
       "itemNo": "23",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3965,7 +4009,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::62",
+      "id": "3. Spectroscopy & Optics::64",
       "itemNo": "24",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3977,7 +4021,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::63",
+      "id": "3. Spectroscopy & Optics::65",
       "itemNo": "25",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -3989,7 +4033,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::64",
+      "id": "3. Spectroscopy & Optics::66",
       "itemNo": "26",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4001,7 +4045,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::65",
+      "id": "3. Spectroscopy & Optics::67",
       "itemNo": "27",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4013,7 +4057,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::66",
+      "id": "3. Spectroscopy & Optics::68",
       "itemNo": "28",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4025,7 +4069,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::67",
+      "id": "3. Spectroscopy & Optics::69",
       "itemNo": "29",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4037,7 +4081,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::68",
+      "id": "3. Spectroscopy & Optics::70",
       "itemNo": "30",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4049,7 +4093,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::69",
+      "id": "3. Spectroscopy & Optics::71",
       "itemNo": "31",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4061,7 +4105,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::70",
+      "id": "3. Spectroscopy & Optics::72",
       "itemNo": "32",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4073,7 +4117,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::71",
+      "id": "3. Spectroscopy & Optics::73",
       "itemNo": "33",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -4256,7 +4300,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Pharmaceutical Calc::17",
+      "id": "5. Pharmaceutical Calc::18",
       "itemNo": "15",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -4268,7 +4312,7 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.21 Example 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::18",
+      "id": "5. Pharmaceutical Calc::19",
       "itemNo": "16",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -4280,7 +4324,7 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.22-23 Example 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::19",
+      "id": "5. Pharmaceutical Calc::20",
       "itemNo": "17",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -4292,7 +4336,7 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2561 & 2563"
     },
     {
-      "id": "5. Pharmaceutical Calc::20",
+      "id": "5. Pharmaceutical Calc::21",
       "itemNo": "18",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -4304,7 +4348,7 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.17 Monograph Check"
     },
     {
-      "id": "5. Pharmaceutical Calc::21",
+      "id": "5. Pharmaceutical Calc::22",
       "itemNo": "19",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -4316,7 +4360,7 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.3 Clinical Equivalency"
     },
     {
-      "id": "5. Pharmaceutical Calc::22",
+      "id": "5. Pharmaceutical Calc::23",
       "itemNo": "20",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -4328,10 +4372,10 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.3 Salt Comparison"
     },
     {
-      "id": "5. Pharmaceutical Calc::23",
+      "id": "5. Pharmaceutical Calc::24",
       "itemNo": "21",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "ในการตรวจวิเคราะห์ปริมาณตัวยาสำคัญด้วย HPLC โดยวิธี One-point estimation สารละลายมาตรฐาน (Standard solution) ความเข้มข้น Cs = 0.050 mg/mL ให้พื้นที่ใต้พีค (rs) = 250,000 ส่วนสารละลายตัวอย่าง (Sample solution) ปริมาตรรวม 100 mL ให้พื้นที่ใต้พีค (ru) = 265,000 จงคำนวณหาความเข้มข้นตัวอย่าง (Cu) และปริมาณตัวยาสำคัญทั้งหมด (mg)?",
       "questionImage": "",
@@ -4340,10 +4384,10 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.29-30 HPLC Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::24",
+      "id": "5. Pharmaceutical Calc::25",
       "itemNo": "22",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">การตรวจหาปริมาณ </span><span style=\"color:#0284c7\"><b>Acetaminophen</b></span><span style=\"color:#1e293b\"> tablet 500 mg: Standard solution มี Cs = 0.01012 mg/mL ให้ peak area (rs) = 112,500; ส่วน Sample solution มีการเจือจางรวม Dilution Factor = 50,000 เท่า ให้ peak area (ru) = 122,000 จงหาปริมาณ </span><span style=\"color:#0284c7\"><b>Acetaminophen</b></span><span style=\"color:#1e293b\"> ในยาเม็ด และ % Labeled Amount?</span>",
       "questionImage": "",
@@ -4352,10 +4396,10 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.29-31 Comprehensive Example"
     },
     {
-      "id": "5. Pharmaceutical Calc::25",
+      "id": "5. Pharmaceutical Calc::26",
       "itemNo": "23",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบแนวสภาฯ / USP Monograph]</b></span><span style=\"color:#1e293b\"> การวิเคราะห์หา % Assay ของ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> (MW 180.16) ด้วย Residual titration กำหนดให้ Titer ของ 0.5 N NaOH ต่อ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> = 45.04 mg/mL ชั่งผง </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> มา 1,500.0 mg ใส่ 0.5 N NaOH 50.0 mL ต้ม 10 นาที ไทเทรต NaOH ส่วนเกินด้วย 0.5 N H2SO4 ใช้ไป 18.20 mL (Blank titration ใช้ 50.00 mL) จงหาปริมาณ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> และ % Assay?</span>",
       "questionImage": "",
@@ -4364,10 +4408,10 @@ window.OFFLINE_CARDS = {
       "note": "USP Monograph Aspirin Residual Titration"
     },
     {
-      "id": "5. Pharmaceutical Calc::26",
+      "id": "5. Pharmaceutical Calc::27",
       "itemNo": "24",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">การหาปริมาณ </span><span style=\"color:#0284c7\"><b>Potassium carbonate</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\">, MW 138.21) ตามปฏิกิริยา: </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> + 2HCl -&gt; 2KCl + H2O + CO2 จงหาค่า Titer ของ 1 N HCl ต่อ </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> (mg/mL) และถ้าชั่ง </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> มา 1,000 mg ไทเทรตด้วย 1 N HCl ใช้ไป 14.20 mL จงหา % Assay?</span>",
       "questionImage": "",
@@ -4376,10 +4420,10 @@ window.OFFLINE_CARDS = {
       "note": "IDQ1 Slide P.33-34 K2CO3 Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::27",
+      "id": "5. Pharmaceutical Calc::28",
       "itemNo": "25",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Working Formula & Scaling",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตร Master Formula ของ Oral Solution 100 mL ประกอบด้วย: </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 5 g, Sorbitol sol 30 mL, Saccharin sodium 0.02 g, Methylparaben 0.1 g, Propylparaben 0.01 g, Water qs 100 mL ถ้าต้องการเตรียมจริงเพียง 50 mL จงคำนวณ Working Formula?</span>",
       "questionImage": "",
@@ -4388,10 +4432,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.1 Exercise 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::28",
+      "id": "5. Pharmaceutical Calc::29",
       "itemNo": "26",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Working Formula & Scaling",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ต้องการเตรียมสารละลาย </span><span style=\"color:#0284c7\"><b>Sodium fluoride</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>NaF</b></span><span style=\"color:#1e293b\">) ปริมาตร 100 mL เป็น Stock solution เพื่อนำสารละลายนี้ 0.5 mL ไปเจือจางด้วยน้ำจนครบ 250 mL แล้วได้ความเข้มข้น 2 ppm จงคำนวณปริมาณ </span><span style=\"color:#0284c7\"><b>NaF</b></span><span style=\"color:#1e293b\"> ที่ต้องชั่งมาเตรียม Stock solution?</span>",
       "questionImage": "",
@@ -4400,10 +4444,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.4 Exercise 5"
     },
     {
-      "id": "5. Pharmaceutical Calc::29",
+      "id": "5. Pharmaceutical Calc::30",
       "itemNo": "27",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สารละลายเตรียมจาก </span><span style=\"color:#0284c7\"><b>Calcium chloride dihydrate</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>CaCl2.2H2O</b></span><span style=\"color:#1e293b\">, MW = 147.0) ปริมาณ 1.47 g ละลายในน้ำจนได้ปริมาตร 500 mL จงคำนวณหาปริมาณ Ca2+ ในหน่วย mmol และ mEq พร้อมทั้งหาความเข้มข้นของ Ca2+ และ Cl- ในหน่วย mEq/L?</span>",
       "questionImage": "",
@@ -4412,10 +4456,10 @@ window.OFFLINE_CARDS = {
       "note": "Fundamental Pharmacy Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::30",
+      "id": "5. Pharmaceutical Calc::31",
       "itemNo": "28",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> แพทย์สั่งจ่ายยา </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 40 mEq/tablespoon (15 mL) จำนวน 60 mL เภสัชกรต้องเตรียมผง </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> (MW = 74.5) กี่กรัม?</span>",
       "questionImage": "",
@@ -4424,10 +4468,10 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::31",
+      "id": "5. Pharmaceutical Calc::32",
       "itemNo": "29",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> พยาบาลผสม </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 40 mL (ซึ่งมี </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 80 mEq) ลงใน NSS 960 mL (ปริมาตรรวม 1,000 mL) แล้วปรับอัตราหยดยาทาง IV เท่ากับ 80 mL/hr ผู้ป่วยรายนี้จะได้รับ </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> กี่ mEq ต่อชั่วโมง?</span>",
       "questionImage": "",
@@ -4436,10 +4480,10 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::32",
+      "id": "5. Pharmaceutical Calc::33",
       "itemNo": "30",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">แพทย์สั่งจ่ายยาฉีด </span><span style=\"color:#0284c7\"><b>Potassium chloride</b></span><span style=\"color:#1e293b\"> ความเข้มข้น 40 mEq/L ให้แก่ผู้ป่วย โดยให้หยดทางหลอดเลือดดำ (IV infusion) อัตราเร็ว 10 mEq/ชั่วโมง เป็นเวลา 8 ชั่วโมง โดยใช้ IV set ชนิด 15 drops/mL จงหาอัตราเร็วเป็น mL/hr และ drops/min?</span>",
       "questionImage": "",
@@ -4448,10 +4492,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.3 Exercise 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::33",
+      "id": "5. Pharmaceutical Calc::34",
       "itemNo": "31",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2564]</b></span><span style=\"color:#1e293b\"> ตำรับยาหยอดตาปริมาตร 100 mL ประกอบด้วย: สาร A 0.05 g (E = 0.16), สาร B 0.04 g (E = 0.25), สาร C 0.01 g (E = 0.16) และน้ำกลั่นปรับปริมาตร หากต้องการปรับตำรับนี้ให้เป็นสารละลาย Isotonic จะต้องเติม </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> กี่กรัม?</span>",
       "questionImage": "",
@@ -4460,10 +4504,10 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2564 ข้อ 98"
     },
     {
-      "id": "5. Pharmaceutical Calc::34",
+      "id": "5. Pharmaceutical Calc::35",
       "itemNo": "32",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ผงเกลือแร่ ORS 1 ซอง ละลายน้ำ 750 mL ประกอบด้วย: Glucose anhydrous 10.125 g (MW 180, i=1), </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> 1.95 g (MW 58.5, i=2), </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 1.125 g (MW 74.5, i=2), </span><span style=\"color:#0284c7\"><b>CaCl2</b></span><span style=\"color:#1e293b\"> 1.5 g (MW 111, i=3), </span><span style=\"color:#0284c7\"><b>Sodium citrate dihydrate</b></span><span style=\"color:#1e293b\"> 2.175 g (MW 294.1, i=4) จงหาค่า Osmolarity รวมของสารละลายนี้ในหน่วย mOsmol/L?</span>",
       "questionImage": "",
@@ -4472,10 +4516,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.5 Exercise 7B"
     },
     {
-      "id": "5. Pharmaceutical Calc::35",
+      "id": "5. Pharmaceutical Calc::36",
       "itemNo": "33",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">จงคำนวณค่า Osmolarity ของน้ำเกลือมาตรฐาน 0.9% w/v Normal Saline (NSS, MW </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> = 58.44 g/mol) พร้อมแปลผลเปรียบเทียบกับค่าปกติของพลาสมา?</span>",
       "questionImage": "",
@@ -4484,10 +4528,10 @@ window.OFFLINE_CARDS = {
       "note": "Clinical Fluid & Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::36",
+      "id": "5. Pharmaceutical Calc::37",
       "itemNo": "34",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตรตำรับครีมอิมัลชันประกอบด้วย: </span><span style=\"color:#0284c7\"><b>Mineral oil</b></span><span style=\"color:#1e293b\"> 35% w/w (rHLB = 12), </span><span style=\"color:#0284c7\"><b>Wool fat</b></span><span style=\"color:#1e293b\"> 4% w/w (rHLB = 15), </span><span style=\"color:#0284c7\"><b>Stearyl alcohol</b></span><span style=\"color:#1e293b\"> 1% w/w (rHLB = 14), Emulsifiers 10% w/w, Water qs 100% w/w จงหาค่า Required HLB รวมของตำรับนี้?</span>",
       "questionImage": "",
@@ -4496,10 +4540,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.4 Exercise 6a"
     },
     {
-      "id": "5. Pharmaceutical Calc::37",
+      "id": "5. Pharmaceutical Calc::38",
       "itemNo": "35",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">จากตำรับเดิมที่ต้องการค่า Required HLB = 12.35 โดยใช้สารทำอิมัลชัน 10% w/w ที่เป็นส่วนผสมของ </span><span style=\"color:#0284c7\"><b>Tween 80</b></span><span style=\"color:#1e293b\"> (HLB = 15.0) และ </span><span style=\"color:#0284c7\"><b>Span 80</b></span><span style=\"color:#1e293b\"> (HLB = 4.3) จงคำนวณปริมาณ % w/w ของ </span><span style=\"color:#0284c7\"><b>Tween 80</b></span><span style=\"color:#1e293b\"> และ </span><span style=\"color:#0284c7\"><b>Span 80</b></span><span style=\"color:#1e293b\"> ที่ต้องใช้โดยวิธี Alligation?</span>",
       "questionImage": "",
@@ -4508,10 +4552,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.4 Exercise 6b-c"
     },
     {
-      "id": "5. Pharmaceutical Calc::38",
+      "id": "5. Pharmaceutical Calc::39",
       "itemNo": "36",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2558]</b></span><span style=\"color:#1e293b\"> ตำรับยาประกอบด้วย: </span><span style=\"color:#0284c7\"><b>Mineral oil</b></span><span style=\"color:#1e293b\"> 30 g (rHLB = 12), </span><span style=\"color:#0284c7\"><b>Wool fat</b></span><span style=\"color:#1e293b\"> 1.5 g (rHLB = 10), </span><span style=\"color:#0284c7\"><b>Cetyl alcohol</b></span><span style=\"color:#1e293b\"> 1.0 g (rHLB = 15) จงคำนวณหาค่า Required HLB รวมของตำรับนี้?</span>",
       "questionImage": "",
@@ -4520,10 +4564,10 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2558"
     },
     {
-      "id": "5. Pharmaceutical Calc::39",
+      "id": "5. Pharmaceutical Calc::40",
       "itemNo": "37",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2567]</b></span><span style=\"color:#1e293b\"> </span><span style=\"color:#0284c7\"><b>Aluminum hydroxide</b></span><span style=\"color:#1e293b\"> (AH) gel ปริมาตร 100 mL มี equivalent of </span><span style=\"color:#0284c7\"><b>Aluminum oxide</b></span><span style=\"color:#1e293b\"> อยู่ 4 g หากต้องการเตรียมตำรับ AH gel ปริมาตร 500 mL โดยใช้วัตถุดิบ </span><span style=\"color:#0284c7\"><b>AHC compress gel</b></span><span style=\"color:#1e293b\"> ที่มี </span><span style=\"color:#0284c7\"><b>Aluminum oxide</b></span><span style=\"color:#1e293b\"> 10% w/w จะต้องใช้ </span><span style=\"color:#0284c7\"><b>AHC compress gel</b></span><span style=\"color:#1e293b\"> กี่กรัม?</span>",
       "questionImage": "",
@@ -4532,10 +4576,10 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2567 ข้อ 12"
     },
     {
-      "id": "5. Pharmaceutical Calc::40",
+      "id": "5. Pharmaceutical Calc::41",
       "itemNo": "38",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> ยาเหน็บ </span><span style=\"color:#0284c7\"><b>Bisacodyl</b></span><span style=\"color:#1e293b\"> มีค่า Displacement factor (Dv) = 0.2 ต้องการผลิตยาเหน็บขนาด 10 mg จำนวน 10 แท่ง โดยแบบพิมพ์มีน้ำหนักเบสเปล่า 2.0 g ต่อแท่ง จงคำนวณน้ำหนักยาพื้น (Suppository base) รวมที่ต้องเตรียม?</span>",
       "questionImage": "",
@@ -4544,10 +4588,10 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566 Day 2 ข้อ 47"
     },
     {
-      "id": "5. Pharmaceutical Calc::41",
+      "id": "5. Pharmaceutical Calc::42",
       "itemNo": "39",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2565]</b></span><span style=\"color:#1e293b\"> ต้องการเตรียมสารละลาย </span><span style=\"color:#0284c7\"><b>D10W</b></span><span style=\"color:#1e293b\"> ปริมาตร 500 mL จาก 5% Dextrose in Water (</span><span style=\"color:#0284c7\"><b>D5W</b></span><span style=\"color:#1e293b\">) และ 50% Dextrose in Water (</span><span style=\"color:#0284c7\"><b>D50W</b></span><span style=\"color:#1e293b\">) จะต้องใช้สารละลายแต่ละชนิดอย่างละกี่ mL?</span>",
       "questionImage": "",
@@ -4556,10 +4600,10 @@ window.OFFLINE_CARDS = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2565 ข้อ 90"
     },
     {
-      "id": "5. Pharmaceutical Calc::42",
+      "id": "5. Pharmaceutical Calc::43",
       "itemNo": "40",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ผู้ป่วยเด็กน้ำหนัก 20 kg ได้รับ </span><span style=\"color:#0284c7\"><b>Favipiravir</b></span><span style=\"color:#1e293b\">: วันแรก 60 mg/kg/day แบ่ง bid, วันที่ 2-5 ให้ 20 mg/kg/day แบ่ง bid หากในห้องยามีเฉพาะยาเม็ด 200 mg เภสัชกรเตรียมยาน้ำแขวนตะกอน 70 mL (ความแรง 40 mg/mL) จงหา (1) ขนาดยาเม็ดที่ต้องใช้ทั้งหมด และ (2) ปริมาตรยาน้ำที่เด็กต้องรับประทานต่อครั้งในวันแรกและวันที่ 2-5?</span>",
       "questionImage": "",
@@ -4568,10 +4612,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.6 Exercise 9"
     },
     {
-      "id": "5. Pharmaceutical Calc::43",
+      "id": "5. Pharmaceutical Calc::44",
       "itemNo": "41",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตรยา Rx: </span><span style=\"color:#0284c7\"><b>Indomethacin</b></span><span style=\"color:#1e293b\"> 25 mg/tsp (5 mL) ปริมาตรรวม 125 mL โดยในห้องยามีเฉพาะ </span><span style=\"color:#0284c7\"><b>Indomethacin</b></span><span style=\"color:#1e293b\"> capsule 50 mg/cap ซึ่งแต่ละแคปซูลมีน้ำหนักผงยารวม (ตัวยา + สารเพิ่มปริมาณ) = 100 mg/cap (1) ต้องใช้ตัวยาทั้งหมดกี่แคปซูล (2) หากต้องแกะแคปซูลมาชั่ง ต้องชั่งผงยารวมมากี่ mg?</span>",
       "questionImage": "",
@@ -4580,10 +4624,10 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.5 Exercise 8"
     },
     {
-      "id": "5. Pharmaceutical Calc::44",
+      "id": "5. Pharmaceutical Calc::45",
       "itemNo": "42",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ต้องการเตรียม 50 mL </span><span style=\"color:#0284c7\"><b>Benzalkonium chloride</b></span><span style=\"color:#1e293b\"> solution ความเข้มข้น 1:5,000 โดยเตรียมจาก 0.5% w/v </span><span style=\"color:#0284c7\"><b>Benzalkonium chloride</b></span><span style=\"color:#1e293b\"> stock solution จงคำนวณปริมาตร stock solution ที่ต้องดูดมาเตรียม?</span>",
       "questionImage": "",
@@ -7621,7 +7665,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::3",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "การทดสอบ Content Uniformity ของยาเม็ดโดยใช้ UV-Vis Spectrophotometer มีวัตถุประสงค์เพื่ออะไร?",
       "questionImage": "",
@@ -7633,7 +7677,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::4",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "Isosbestic point มีความสำคัญในการวิเคราะห์ด้านใดมากที่สุด? ก. หาค่า Molecular weight ของสาร<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ข.</b> หาค่า pKa ของยาโดยอาศัยสมดุลระหว่างฟอร์ม ionized และ un-ionized<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ค.</b> หาค่า Limit of detection (LOD)<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ง.</b> หาค่า Refractive index ของตัวทำละลาย&quot;",
       "questionImage": "",
@@ -7645,7 +7689,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::5",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สาร A มีค่า A¹%1cm = 500 ที่ λmax และมีน้ำหนักโมเลกุล 250 g/mol ค่า molar absorptivity (ε) ของสาร A เท่ากับเท่าใด?",
       "questionImage": "",
@@ -7657,7 +7701,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::6",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สาเหตุของ &quot;Instrumental deviation&quot; จากกฎของเบียร์-แลมเบิร์ต?",
       "questionImage": "",
@@ -7669,7 +7713,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::7",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "เมื่อนำสารละลาย Phenol ไปปรับให้อยู่ในสภาวะเบส (pH สูง) จะเกิดการเปลี่ยนแปลงสเปกตรัมแบบใด และเพราะเหตุใด?",
       "questionImage": "",
@@ -7681,7 +7725,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::8",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สารประกอบชนิดหนึ่งเมื่อเปลี่ยนจาก cis-isomer เป็น trans-isomer จะพบการเปลี่ยนแปลงของสเปกตรัมอย่างไร?",
       "questionImage": "",
@@ -7693,7 +7737,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::9",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "หากทำการปรับ pH ของสารละลาย Phenol จาก pH 3 ให้กลายเป็น pH 10 จะเกิดการเปลี่ยนแปลงของค่าความยาวคลื่นสูงสุดและ Absorbance อย่างไร เพราะเหตุใด?",
       "questionImage": "",
@@ -7705,7 +7749,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::10",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "จุด Isosbestic point คืออะไร และมีความสำคัญอย่างไรในการวิเคราะห์เชิงปริมาณของตัวยาที่สามารถแตกตัวได้ตาม pH?",
       "questionImage": "",
@@ -7717,7 +7761,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::11",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันเด่นที่สุดของสาร และระบุบริเวณ peak ที่ใช้ตัดสิน",
       "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
@@ -7729,10 +7773,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::12",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันหลักของสาร และอธิบายว่าจุดใดใน spectrum ช่วยแยกสารนี้ออกจาก carboxylic acid",
-      "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r12_c2.png",
       "answer": "Alcohol, มี broad O–H stretching แถวประมาณ 3200–3600 cm⁻¹ แต่ไม่มี strong C=O แถวประมาณ 1700 cm⁻¹ จึงไม่เข้า pattern ของ carboxylic acid",
       "answerImage": "",
       "note": ""
@@ -7741,10 +7785,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::13",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงสรุปว่าสารนี้มีหมู่ฟังก์ชันใด โดยใช้ลักษณะของ peak อย่างน้อย 2 บริเวณประกอบคำตอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r13_c2.png",
       "answer": "Carboxylic acid, มี broad O–H ของกรดประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O ประมาณ 1700–1725 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -7753,10 +7797,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::14",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป มี peak หนึ่งที่ใช้บ่งชี้หมู่ฟังก์ชันได้ค่อนข้างจำเพาะ จงระบุหมู่ฟังก์ชันนั้นและช่วง wavenumber ที่ควรพบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r14_c2.png",
       "answer": "Nitrile (C≡N), ให้ sharp absorption บริเวณประมาณ 2210–2260 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -7765,10 +7809,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::15",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุว่าหมู่ amino ในสารนี้มีแนวโน้มเป็น primary หรือ secondary amine พร้อมบอกหลักฐานจาก spectrum",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r15_c2.png",
       "answer": "Primary amine, N–H stretching บริเวณประมาณ 3300–3500 cm⁻¹ มักเห็นเป็น 2 bands จาก asymmetric และ symmetric N–H stretching",
       "answerImage": "",
       "note": ""
@@ -7777,10 +7821,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::16",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป หากต้องแยกว่า carbonyl ในสารนี้เป็น aldehyde หรือ ketone ควรใช้ peak ใดประกอบการตัดสิน และสรุปว่าสารนี้เข้ากับชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r16_c2.png",
       "answer": "เข้ากับ aldehyde, นอกจาก C=O แล้วพบ aldehydic C–H stretching มักอยู่ใกล้ประมาณ 2720 และ 2820 cm⁻¹ ซึ่งช่วยแยกจาก ketone",
       "answerImage": "",
       "note": ""
@@ -7789,10 +7833,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::17",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุชนิดของ carbonyl compound ที่สอดคล้องที่สุด โดยใช้ข้อมูลจากทั้ง carbonyl region และ fingerprint region",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r17_c2.png",
       "answer": "Ester, มี strong ester C=O แถวประมาณ 1735–1750 cm⁻¹ และมี strong C–O stretching หลายแถบในช่วงประมาณ 1050–1300 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -7801,10 +7845,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::18",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันสำคัญที่พบอย่างน้อย 3 กลุ่ม และอธิบายว่าข้อมูลดังกล่าวสอดคล้องกับโครงสร้างของ acetaminophen อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "พบ O–H/N–H stretching บริเวณประมาณ 3100–3500 cm⁻¹, amide C=O แถวประมาณ 1650 cm⁻¹ และ aromatic ring bands แถวประมาณ 1500–1600 cm⁻¹ จึงสอดคล้องกับ phenolic OH + amide + aromatic ring ของ acetaminophen",
       "answerImage": "",
       "note": ""
@@ -7813,10 +7857,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::19",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ตัวอย่างกับ Reference Standard ให้ IR spectrum ที่มีตำแหน่ง functional-group peaks ใกล้เคียงกัน แต่บริเวณ fingerprint region แตกต่างกันชัดเจน ควรสรุปผลการ identification อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "ยังไม่ควรสรุปว่า identity ตรงกัน เพราะการยืนยันด้วย IR ต้องดูภาพรวมของ spectrum โดยเฉพาะ fingerprint region ไม่ใช่ดูเพียง functional-group peaks",
       "answerImage": "",
       "note": ""
@@ -7825,7 +7869,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::20",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "IR spectrum ของสารตัวอย่างพบ strong peak บริเวณประมาณ 1735 cm⁻¹ และมี strong bands ในช่วง 1050–1300 cm⁻¹ แต่ไม่พบ broad O–H จากข้อมูลนี้ควรสรุปว่าหมู่ carbonyl เป็นชนิดใด และใช้ peak ใดช่วยยืนยัน",
       "questionImage": "",
@@ -7837,7 +7881,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::21",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ในการตรวจรับ raw material ด้วย IR พบว่า spectrum ของตัวอย่างตรงกับ Reference Standard เกือบทั้งหมด แต่มี strong peak ใหม่บริเวณ carbonyl region ซึ่งไม่มีใน standard ควรตีความอย่างไร",
       "questionImage": "",
@@ -7849,7 +7893,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::22",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "สาร A มี broad band ประมาณ 3200–3600 cm⁻¹ แต่ไม่มี C=O ส่วนสาร B มี broad band กินช่วงประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O สาร A และ B น่าจะมีหมู่ฟังก์ชันใดตามลำดับ",
       "questionImage": "",
@@ -7861,7 +7905,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::23",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "สารชนิดหนึ่งมี strong C=O absorption และมี strong bands หลายแถบในช่วง 1050–1300 cm⁻¹ ข้อมูลนี้สนับสนุน ester มากกว่า ketone เพราะอะไร",
       "questionImage": "",
@@ -7873,7 +7917,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::24",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "พบ carbonyl absorption ที่ wavenumber ต่ำกว่าค่า ketone อิ่มตัวทั่วไป เช่นอยู่ใกล้ประมาณ 1685 cm⁻¹ ปัจจัยใดสามารถทำให้ C=O peak เลื่อนไปต่ำลงได้",
       "questionImage": "",
@@ -7885,7 +7929,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::25",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "เมื่อเปรียบเทียบ O–H stretching ของ alcohol ที่มี hydrogen bonding มากกับ alcohol ที่มี hydrogen bonding น้อย ลักษณะ peak มีแนวโน้มต่างกันอย่างไร",
       "questionImage": "",
@@ -7897,7 +7941,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::26",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก monograph ระบุให้ยืนยัน identity ของสารโดยเปรียบเทียบ IR spectrum ของตัวอย่างกับ Reference Standard จุดประสงค์หลักของการเปรียบเทียบนี้คืออะไร",
       "questionImage": "",
@@ -7909,7 +7953,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::27",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ถ้า IR spectrum ของสารสองชนิดมี C=O peak ใกล้เคียงกันมาก แต่ fingerprint region แตกต่างกัน การใช้ IR ยังช่วยแยกสารสองชนิดนี้ได้หรือไม่ เพราะอะไร",
       "questionImage": "",
@@ -7921,7 +7965,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::28",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ในการอ่าน IR spectrum ที่แสดงเป็น %Transmittance หากบริเวณหนึ่งดูดกลืนรังสีแรง ลักษณะบนกราฟควรเป็นอย่างไร และเหตุใด",
       "questionImage": "",
@@ -7933,7 +7977,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::29",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "IR เหมาะกับการใช้เป็น identification test ของวัตถุดิบมากกว่าการใช้หาปริมาณตัวยาแบบ routine เพราะคุณสมบัติใดของ spectrum",
       "questionImage": "",
@@ -7945,7 +7989,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::30",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "เมื่อตรวจ IR ของ aspirin พบว่า peak ที่สัมพันธ์กับ ester carbonyl ลดลงอย่างชัดเจน ขณะที่ยังพบสัญญาณของ carboxylic acid อยู่ การเปลี่ยนแปลงนี้ควรสงสัยอะไร",
       "questionImage": "",
@@ -7969,7 +8013,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::32",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารประเภทใดที่สามารถวัดด้วย Polarimeter ได้",
       "questionImage": "",
@@ -7981,7 +8025,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::33",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารที่หมุนระนาบแสงไปทางขวา (ตามเข็มนาฬิกา) เรียกว่าอะไร และใช้สัญลักษณ์ใด",
       "questionImage": "",
@@ -7993,7 +8037,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::34",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารที่หมุนระนาบแสงไปทางซ้าย (ทวนเข็มนาฬิกา) เรียกว่าอะไร และใช้สัญลักษณ์ใด",
       "questionImage": "",
@@ -8005,7 +8049,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::35",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "Racemix mixture คืออะไร และมีผลต่อการหมุนแสงอย่างไร",
       "questionImage": "",
@@ -8017,16 +8061,64 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::36",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::37",
+      "itemNo": "7",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
+      "questionImage": "",
+      "answer": "เดซิเมตร (dm)",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::38",
+      "itemNo": "8",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ความยาวคลื่นแสงมาตรฐานที่ใช้ใน Polarimetry มักมาจากแหล่งกำเนิดแสงใด และมีความยาวคลื่นเท่าใด",
+      "questionImage": "",
+      "answer": "Sodium D-line ความยาวคลื่น 589 nm",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "3. Spectroscopy & Optics::39",
+      "itemNo": "9",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ปัจจัยที่ส่งผลต่อการวัดค่า Specific rotation",
+      "questionImage": "",
+      "answer": "1. ความยาวคลื่นแสง 2. อุณหภูมิ 3. ตัวทำละลาย 4. ความเข้มข้นของสารละลาย 5. ความยาวหลอดใส่ตัวอย่างสารละลาย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::40",
+      "itemNo": "10",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "การประยุกต์ใช้ Polarimetry ในการตรวจ Purity คือการหาค่าอะไร",
+      "questionImage": "",
+      "answer": "Enantiomeric excess (%ee) เพื่อดูว่ายามีไอโซเมอร์อื่นปนเปื้อนหรือไม่",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::41",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8038,7 +8130,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::40",
+      "id": "3. Spectroscopy & Optics::42",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8050,7 +8142,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::41",
+      "id": "3. Spectroscopy & Optics::43",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8062,7 +8154,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::42",
+      "id": "3. Spectroscopy & Optics::44",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8074,7 +8166,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::43",
+      "id": "3. Spectroscopy & Optics::45",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8086,7 +8178,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::44",
+      "id": "3. Spectroscopy & Optics::46",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8098,7 +8190,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::45",
+      "id": "3. Spectroscopy & Optics::47",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8110,7 +8202,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::46",
+      "id": "3. Spectroscopy & Optics::48",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8122,7 +8214,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::47",
+      "id": "3. Spectroscopy & Optics::49",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8134,7 +8226,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::48",
+      "id": "3. Spectroscopy & Optics::50",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8146,7 +8238,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::49",
+      "id": "3. Spectroscopy & Optics::51",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8158,7 +8250,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::50",
+      "id": "3. Spectroscopy & Optics::52",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8170,7 +8262,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::51",
+      "id": "3. Spectroscopy & Optics::53",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8182,7 +8274,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::52",
+      "id": "3. Spectroscopy & Optics::54",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8194,7 +8286,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::53",
+      "id": "3. Spectroscopy & Optics::55",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -8206,7 +8298,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::54",
+      "id": "3. Spectroscopy & Optics::56",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8218,7 +8310,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::55",
+      "id": "3. Spectroscopy & Optics::57",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8230,7 +8322,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::56",
+      "id": "3. Spectroscopy & Optics::58",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8242,7 +8334,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::57",
+      "id": "3. Spectroscopy & Optics::59",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8254,7 +8346,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::58",
+      "id": "3. Spectroscopy & Optics::60",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8266,7 +8358,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::59",
+      "id": "3. Spectroscopy & Optics::61",
       "itemNo": "21",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8278,7 +8370,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::60",
+      "id": "3. Spectroscopy & Optics::62",
       "itemNo": "22",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8290,7 +8382,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::61",
+      "id": "3. Spectroscopy & Optics::63",
       "itemNo": "23",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8302,7 +8394,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::62",
+      "id": "3. Spectroscopy & Optics::64",
       "itemNo": "24",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8314,7 +8406,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::63",
+      "id": "3. Spectroscopy & Optics::65",
       "itemNo": "25",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8326,7 +8418,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::64",
+      "id": "3. Spectroscopy & Optics::66",
       "itemNo": "26",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8338,7 +8430,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::65",
+      "id": "3. Spectroscopy & Optics::67",
       "itemNo": "27",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8350,7 +8442,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::66",
+      "id": "3. Spectroscopy & Optics::68",
       "itemNo": "28",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8362,7 +8454,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::67",
+      "id": "3. Spectroscopy & Optics::69",
       "itemNo": "29",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8374,7 +8466,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::68",
+      "id": "3. Spectroscopy & Optics::70",
       "itemNo": "30",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8386,7 +8478,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::69",
+      "id": "3. Spectroscopy & Optics::71",
       "itemNo": "31",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8398,7 +8490,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::70",
+      "id": "3. Spectroscopy & Optics::72",
       "itemNo": "32",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8410,7 +8502,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::71",
+      "id": "3. Spectroscopy & Optics::73",
       "itemNo": "33",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -8590,7 +8682,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Pharmaceutical Calc::17",
+      "id": "5. Pharmaceutical Calc::18",
       "itemNo": "15",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -8602,7 +8694,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.21 Example 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::18",
+      "id": "5. Pharmaceutical Calc::19",
       "itemNo": "16",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -8614,7 +8706,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.22-23 Example 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::19",
+      "id": "5. Pharmaceutical Calc::20",
       "itemNo": "17",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -8626,7 +8718,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2561 & 2563"
     },
     {
-      "id": "5. Pharmaceutical Calc::20",
+      "id": "5. Pharmaceutical Calc::21",
       "itemNo": "18",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -8638,7 +8730,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.17 Monograph Check"
     },
     {
-      "id": "5. Pharmaceutical Calc::21",
+      "id": "5. Pharmaceutical Calc::22",
       "itemNo": "19",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -8650,7 +8742,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Clinical Equivalency"
     },
     {
-      "id": "5. Pharmaceutical Calc::22",
+      "id": "5. Pharmaceutical Calc::23",
       "itemNo": "20",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -8662,10 +8754,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Salt Comparison"
     },
     {
-      "id": "5. Pharmaceutical Calc::23",
+      "id": "5. Pharmaceutical Calc::24",
       "itemNo": "21",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "ในการตรวจวิเคราะห์ปริมาณตัวยาสำคัญด้วย HPLC โดยวิธี One-point estimation สารละลายมาตรฐาน (Standard solution) ความเข้มข้น Cs = 0.050 mg/mL ให้พื้นที่ใต้พีค (rs) = 250,000 ส่วนสารละลายตัวอย่าง (Sample solution) ปริมาตรรวม 100 mL ให้พื้นที่ใต้พีค (ru) = 265,000 จงคำนวณหาความเข้มข้นตัวอย่าง (Cu) และปริมาณตัวยาสำคัญทั้งหมด (mg)?",
       "questionImage": "",
@@ -8674,10 +8766,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-30 HPLC Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::24",
+      "id": "5. Pharmaceutical Calc::25",
       "itemNo": "22",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">การตรวจหาปริมาณ </span><span style=\"color:#0284c7\"><b>Acetaminophen</b></span><span style=\"color:#1e293b\"> tablet 500 mg: Standard solution มี Cs = 0.01012 mg/mL ให้ peak area (rs) = 112,500; ส่วน Sample solution มีการเจือจางรวม Dilution Factor = 50,000 เท่า ให้ peak area (ru) = 122,000 จงหาปริมาณ </span><span style=\"color:#0284c7\"><b>Acetaminophen</b></span><span style=\"color:#1e293b\"> ในยาเม็ด และ % Labeled Amount?</span>",
       "questionImage": "",
@@ -8686,10 +8778,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-31 Comprehensive Example"
     },
     {
-      "id": "5. Pharmaceutical Calc::25",
+      "id": "5. Pharmaceutical Calc::26",
       "itemNo": "23",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบแนวสภาฯ / USP Monograph]</b></span><span style=\"color:#1e293b\"> การวิเคราะห์หา % Assay ของ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> (MW 180.16) ด้วย Residual titration กำหนดให้ Titer ของ 0.5 N NaOH ต่อ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> = 45.04 mg/mL ชั่งผง </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> มา 1,500.0 mg ใส่ 0.5 N NaOH 50.0 mL ต้ม 10 นาที ไทเทรต NaOH ส่วนเกินด้วย 0.5 N H2SO4 ใช้ไป 18.20 mL (Blank titration ใช้ 50.00 mL) จงหาปริมาณ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> และ % Assay?</span>",
       "questionImage": "",
@@ -8698,10 +8790,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "USP Monograph Aspirin Residual Titration"
     },
     {
-      "id": "5. Pharmaceutical Calc::26",
+      "id": "5. Pharmaceutical Calc::27",
       "itemNo": "24",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">การหาปริมาณ </span><span style=\"color:#0284c7\"><b>Potassium carbonate</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\">, MW 138.21) ตามปฏิกิริยา: </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> + 2HCl -&gt; 2KCl + H2O + CO2 จงหาค่า Titer ของ 1 N HCl ต่อ </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> (mg/mL) และถ้าชั่ง </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> มา 1,000 mg ไทเทรตด้วย 1 N HCl ใช้ไป 14.20 mL จงหา % Assay?</span>",
       "questionImage": "",
@@ -8710,10 +8802,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.33-34 K2CO3 Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::27",
+      "id": "5. Pharmaceutical Calc::28",
       "itemNo": "25",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Working Formula & Scaling",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตร Master Formula ของ Oral Solution 100 mL ประกอบด้วย: </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 5 g, Sorbitol sol 30 mL, Saccharin sodium 0.02 g, Methylparaben 0.1 g, Propylparaben 0.01 g, Water qs 100 mL ถ้าต้องการเตรียมจริงเพียง 50 mL จงคำนวณ Working Formula?</span>",
       "questionImage": "",
@@ -8722,10 +8814,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.1 Exercise 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::28",
+      "id": "5. Pharmaceutical Calc::29",
       "itemNo": "26",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Working Formula & Scaling",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ต้องการเตรียมสารละลาย </span><span style=\"color:#0284c7\"><b>Sodium fluoride</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>NaF</b></span><span style=\"color:#1e293b\">) ปริมาตร 100 mL เป็น Stock solution เพื่อนำสารละลายนี้ 0.5 mL ไปเจือจางด้วยน้ำจนครบ 250 mL แล้วได้ความเข้มข้น 2 ppm จงคำนวณปริมาณ </span><span style=\"color:#0284c7\"><b>NaF</b></span><span style=\"color:#1e293b\"> ที่ต้องชั่งมาเตรียม Stock solution?</span>",
       "questionImage": "",
@@ -8734,10 +8826,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 5"
     },
     {
-      "id": "5. Pharmaceutical Calc::29",
+      "id": "5. Pharmaceutical Calc::30",
       "itemNo": "27",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สารละลายเตรียมจาก </span><span style=\"color:#0284c7\"><b>Calcium chloride dihydrate</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>CaCl2.2H2O</b></span><span style=\"color:#1e293b\">, MW = 147.0) ปริมาณ 1.47 g ละลายในน้ำจนได้ปริมาตร 500 mL จงคำนวณหาปริมาณ Ca2+ ในหน่วย mmol และ mEq พร้อมทั้งหาความเข้มข้นของ Ca2+ และ Cl- ในหน่วย mEq/L?</span>",
       "questionImage": "",
@@ -8746,10 +8838,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Fundamental Pharmacy Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::30",
+      "id": "5. Pharmaceutical Calc::31",
       "itemNo": "28",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> แพทย์สั่งจ่ายยา </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 40 mEq/tablespoon (15 mL) จำนวน 60 mL เภสัชกรต้องเตรียมผง </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> (MW = 74.5) กี่กรัม?</span>",
       "questionImage": "",
@@ -8758,10 +8850,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::31",
+      "id": "5. Pharmaceutical Calc::32",
       "itemNo": "29",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> พยาบาลผสม </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 40 mL (ซึ่งมี </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 80 mEq) ลงใน NSS 960 mL (ปริมาตรรวม 1,000 mL) แล้วปรับอัตราหยดยาทาง IV เท่ากับ 80 mL/hr ผู้ป่วยรายนี้จะได้รับ </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> กี่ mEq ต่อชั่วโมง?</span>",
       "questionImage": "",
@@ -8770,10 +8862,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::32",
+      "id": "5. Pharmaceutical Calc::33",
       "itemNo": "30",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">แพทย์สั่งจ่ายยาฉีด </span><span style=\"color:#0284c7\"><b>Potassium chloride</b></span><span style=\"color:#1e293b\"> ความเข้มข้น 40 mEq/L ให้แก่ผู้ป่วย โดยให้หยดทางหลอดเลือดดำ (IV infusion) อัตราเร็ว 10 mEq/ชั่วโมง เป็นเวลา 8 ชั่วโมง โดยใช้ IV set ชนิด 15 drops/mL จงหาอัตราเร็วเป็น mL/hr และ drops/min?</span>",
       "questionImage": "",
@@ -8782,10 +8874,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.3 Exercise 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::33",
+      "id": "5. Pharmaceutical Calc::34",
       "itemNo": "31",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2564]</b></span><span style=\"color:#1e293b\"> ตำรับยาหยอดตาปริมาตร 100 mL ประกอบด้วย: สาร A 0.05 g (E = 0.16), สาร B 0.04 g (E = 0.25), สาร C 0.01 g (E = 0.16) และน้ำกลั่นปรับปริมาตร หากต้องการปรับตำรับนี้ให้เป็นสารละลาย Isotonic จะต้องเติม </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> กี่กรัม?</span>",
       "questionImage": "",
@@ -8794,10 +8886,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2564 ข้อ 98"
     },
     {
-      "id": "5. Pharmaceutical Calc::34",
+      "id": "5. Pharmaceutical Calc::35",
       "itemNo": "32",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ผงเกลือแร่ ORS 1 ซอง ละลายน้ำ 750 mL ประกอบด้วย: Glucose anhydrous 10.125 g (MW 180, i=1), </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> 1.95 g (MW 58.5, i=2), </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 1.125 g (MW 74.5, i=2), </span><span style=\"color:#0284c7\"><b>CaCl2</b></span><span style=\"color:#1e293b\"> 1.5 g (MW 111, i=3), </span><span style=\"color:#0284c7\"><b>Sodium citrate dihydrate</b></span><span style=\"color:#1e293b\"> 2.175 g (MW 294.1, i=4) จงหาค่า Osmolarity รวมของสารละลายนี้ในหน่วย mOsmol/L?</span>",
       "questionImage": "",
@@ -8806,10 +8898,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 7B"
     },
     {
-      "id": "5. Pharmaceutical Calc::35",
+      "id": "5. Pharmaceutical Calc::36",
       "itemNo": "33",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">จงคำนวณค่า Osmolarity ของน้ำเกลือมาตรฐาน 0.9% w/v Normal Saline (NSS, MW </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> = 58.44 g/mol) พร้อมแปลผลเปรียบเทียบกับค่าปกติของพลาสมา?</span>",
       "questionImage": "",
@@ -8818,10 +8910,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Clinical Fluid & Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::36",
+      "id": "5. Pharmaceutical Calc::37",
       "itemNo": "34",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตรตำรับครีมอิมัลชันประกอบด้วย: </span><span style=\"color:#0284c7\"><b>Mineral oil</b></span><span style=\"color:#1e293b\"> 35% w/w (rHLB = 12), </span><span style=\"color:#0284c7\"><b>Wool fat</b></span><span style=\"color:#1e293b\"> 4% w/w (rHLB = 15), </span><span style=\"color:#0284c7\"><b>Stearyl alcohol</b></span><span style=\"color:#1e293b\"> 1% w/w (rHLB = 14), Emulsifiers 10% w/w, Water qs 100% w/w จงหาค่า Required HLB รวมของตำรับนี้?</span>",
       "questionImage": "",
@@ -8830,10 +8922,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6a"
     },
     {
-      "id": "5. Pharmaceutical Calc::37",
+      "id": "5. Pharmaceutical Calc::38",
       "itemNo": "35",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">จากตำรับเดิมที่ต้องการค่า Required HLB = 12.35 โดยใช้สารทำอิมัลชัน 10% w/w ที่เป็นส่วนผสมของ </span><span style=\"color:#0284c7\"><b>Tween 80</b></span><span style=\"color:#1e293b\"> (HLB = 15.0) และ </span><span style=\"color:#0284c7\"><b>Span 80</b></span><span style=\"color:#1e293b\"> (HLB = 4.3) จงคำนวณปริมาณ % w/w ของ </span><span style=\"color:#0284c7\"><b>Tween 80</b></span><span style=\"color:#1e293b\"> และ </span><span style=\"color:#0284c7\"><b>Span 80</b></span><span style=\"color:#1e293b\"> ที่ต้องใช้โดยวิธี Alligation?</span>",
       "questionImage": "",
@@ -8842,10 +8934,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6b-c"
     },
     {
-      "id": "5. Pharmaceutical Calc::38",
+      "id": "5. Pharmaceutical Calc::39",
       "itemNo": "36",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2558]</b></span><span style=\"color:#1e293b\"> ตำรับยาประกอบด้วย: </span><span style=\"color:#0284c7\"><b>Mineral oil</b></span><span style=\"color:#1e293b\"> 30 g (rHLB = 12), </span><span style=\"color:#0284c7\"><b>Wool fat</b></span><span style=\"color:#1e293b\"> 1.5 g (rHLB = 10), </span><span style=\"color:#0284c7\"><b>Cetyl alcohol</b></span><span style=\"color:#1e293b\"> 1.0 g (rHLB = 15) จงคำนวณหาค่า Required HLB รวมของตำรับนี้?</span>",
       "questionImage": "",
@@ -8854,10 +8946,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2558"
     },
     {
-      "id": "5. Pharmaceutical Calc::39",
+      "id": "5. Pharmaceutical Calc::40",
       "itemNo": "37",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2567]</b></span><span style=\"color:#1e293b\"> </span><span style=\"color:#0284c7\"><b>Aluminum hydroxide</b></span><span style=\"color:#1e293b\"> (AH) gel ปริมาตร 100 mL มี equivalent of </span><span style=\"color:#0284c7\"><b>Aluminum oxide</b></span><span style=\"color:#1e293b\"> อยู่ 4 g หากต้องการเตรียมตำรับ AH gel ปริมาตร 500 mL โดยใช้วัตถุดิบ </span><span style=\"color:#0284c7\"><b>AHC compress gel</b></span><span style=\"color:#1e293b\"> ที่มี </span><span style=\"color:#0284c7\"><b>Aluminum oxide</b></span><span style=\"color:#1e293b\"> 10% w/w จะต้องใช้ </span><span style=\"color:#0284c7\"><b>AHC compress gel</b></span><span style=\"color:#1e293b\"> กี่กรัม?</span>",
       "questionImage": "",
@@ -8866,10 +8958,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2567 ข้อ 12"
     },
     {
-      "id": "5. Pharmaceutical Calc::40",
+      "id": "5. Pharmaceutical Calc::41",
       "itemNo": "38",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> ยาเหน็บ </span><span style=\"color:#0284c7\"><b>Bisacodyl</b></span><span style=\"color:#1e293b\"> มีค่า Displacement factor (Dv) = 0.2 ต้องการผลิตยาเหน็บขนาด 10 mg จำนวน 10 แท่ง โดยแบบพิมพ์มีน้ำหนักเบสเปล่า 2.0 g ต่อแท่ง จงคำนวณน้ำหนักยาพื้น (Suppository base) รวมที่ต้องเตรียม?</span>",
       "questionImage": "",
@@ -8878,10 +8970,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566 Day 2 ข้อ 47"
     },
     {
-      "id": "5. Pharmaceutical Calc::41",
+      "id": "5. Pharmaceutical Calc::42",
       "itemNo": "39",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2565]</b></span><span style=\"color:#1e293b\"> ต้องการเตรียมสารละลาย </span><span style=\"color:#0284c7\"><b>D10W</b></span><span style=\"color:#1e293b\"> ปริมาตร 500 mL จาก 5% Dextrose in Water (</span><span style=\"color:#0284c7\"><b>D5W</b></span><span style=\"color:#1e293b\">) และ 50% Dextrose in Water (</span><span style=\"color:#0284c7\"><b>D50W</b></span><span style=\"color:#1e293b\">) จะต้องใช้สารละลายแต่ละชนิดอย่างละกี่ mL?</span>",
       "questionImage": "",
@@ -8890,10 +8982,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2565 ข้อ 90"
     },
     {
-      "id": "5. Pharmaceutical Calc::42",
+      "id": "5. Pharmaceutical Calc::43",
       "itemNo": "40",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ผู้ป่วยเด็กน้ำหนัก 20 kg ได้รับ </span><span style=\"color:#0284c7\"><b>Favipiravir</b></span><span style=\"color:#1e293b\">: วันแรก 60 mg/kg/day แบ่ง bid, วันที่ 2-5 ให้ 20 mg/kg/day แบ่ง bid หากในห้องยามีเฉพาะยาเม็ด 200 mg เภสัชกรเตรียมยาน้ำแขวนตะกอน 70 mL (ความแรง 40 mg/mL) จงหา (1) ขนาดยาเม็ดที่ต้องใช้ทั้งหมด และ (2) ปริมาตรยาน้ำที่เด็กต้องรับประทานต่อครั้งในวันแรกและวันที่ 2-5?</span>",
       "questionImage": "",
@@ -8902,10 +8994,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.6 Exercise 9"
     },
     {
-      "id": "5. Pharmaceutical Calc::43",
+      "id": "5. Pharmaceutical Calc::44",
       "itemNo": "41",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตรยา Rx: </span><span style=\"color:#0284c7\"><b>Indomethacin</b></span><span style=\"color:#1e293b\"> 25 mg/tsp (5 mL) ปริมาตรรวม 125 mL โดยในห้องยามีเฉพาะ </span><span style=\"color:#0284c7\"><b>Indomethacin</b></span><span style=\"color:#1e293b\"> capsule 50 mg/cap ซึ่งแต่ละแคปซูลมีน้ำหนักผงยารวม (ตัวยา + สารเพิ่มปริมาณ) = 100 mg/cap (1) ต้องใช้ตัวยาทั้งหมดกี่แคปซูล (2) หากต้องแกะแคปซูลมาชั่ง ต้องชั่งผงยารวมมากี่ mg?</span>",
       "questionImage": "",
@@ -8914,10 +9006,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 8"
     },
     {
-      "id": "5. Pharmaceutical Calc::44",
+      "id": "5. Pharmaceutical Calc::45",
       "itemNo": "42",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ต้องการเตรียม 50 mL </span><span style=\"color:#0284c7\"><b>Benzalkonium chloride</b></span><span style=\"color:#1e293b\"> solution ความเข้มข้น 1:5,000 โดยเตรียมจาก 0.5% w/v </span><span style=\"color:#0284c7\"><b>Benzalkonium chloride</b></span><span style=\"color:#1e293b\"> stock solution จงคำนวณปริมาตร stock solution ที่ต้องดูดมาเตรียม?</span>",
       "questionImage": "",
@@ -11944,7 +12036,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::3",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "การทดสอบ Content Uniformity ของยาเม็ดโดยใช้ UV-Vis Spectrophotometer มีวัตถุประสงค์เพื่ออะไร?",
       "questionImage": "",
@@ -11956,7 +12048,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::4",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "Isosbestic point มีความสำคัญในการวิเคราะห์ด้านใดมากที่สุด? ก. หาค่า Molecular weight ของสาร<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ข.</b> หาค่า pKa ของยาโดยอาศัยสมดุลระหว่างฟอร์ม ionized และ un-ionized<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ค.</b> หาค่า Limit of detection (LOD)<br><div style=\"margin:4px 0 4px 8px;\"><b style=\"color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;\">ง.</b> หาค่า Refractive index ของตัวทำละลาย&quot;",
       "questionImage": "",
@@ -11968,7 +12060,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::5",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สาร A มีค่า A¹%1cm = 500 ที่ λmax และมีน้ำหนักโมเลกุล 250 g/mol ค่า molar absorptivity (ε) ของสาร A เท่ากับเท่าใด?",
       "questionImage": "",
@@ -11980,7 +12072,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::6",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สาเหตุของ &quot;Instrumental deviation&quot; จากกฎของเบียร์-แลมเบิร์ต?",
       "questionImage": "",
@@ -11992,7 +12084,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::7",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "เมื่อนำสารละลาย Phenol ไปปรับให้อยู่ในสภาวะเบส (pH สูง) จะเกิดการเปลี่ยนแปลงสเปกตรัมแบบใด และเพราะเหตุใด?",
       "questionImage": "",
@@ -12004,7 +12096,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::8",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "สารประกอบชนิดหนึ่งเมื่อเปลี่ยนจาก cis-isomer เป็น trans-isomer จะพบการเปลี่ยนแปลงของสเปกตรัมอย่างไร?",
       "questionImage": "",
@@ -12016,7 +12108,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::9",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "หากทำการปรับ pH ของสารละลาย Phenol จาก pH 3 ให้กลายเป็น pH 10 จะเกิดการเปลี่ยนแปลงของค่าความยาวคลื่นสูงสุดและ Absorbance อย่างไร เพราะเหตุใด?",
       "questionImage": "",
@@ -12028,7 +12120,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::10",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "UV",
       "track": "Product",
       "question": "จุด Isosbestic point คืออะไร และมีความสำคัญอย่างไรในการวิเคราะห์เชิงปริมาณของตัวยาที่สามารถแตกตัวได้ตาม pH?",
       "questionImage": "",
@@ -12040,7 +12132,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::11",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันเด่นที่สุดของสาร และระบุบริเวณ peak ที่ใช้ตัดสิน",
       "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
@@ -12052,10 +12144,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::12",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันหลักของสาร และอธิบายว่าจุดใดใน spectrum ช่วยแยกสารนี้ออกจาก carboxylic acid",
-      "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r12_c2.png",
       "answer": "Alcohol, มี broad O–H stretching แถวประมาณ 3200–3600 cm⁻¹ แต่ไม่มี strong C=O แถวประมาณ 1700 cm⁻¹ จึงไม่เข้า pattern ของ carboxylic acid",
       "answerImage": "",
       "note": ""
@@ -12064,10 +12156,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::13",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงสรุปว่าสารนี้มีหมู่ฟังก์ชันใด โดยใช้ลักษณะของ peak อย่างน้อย 2 บริเวณประกอบคำตอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r13_c2.png",
       "answer": "Carboxylic acid, มี broad O–H ของกรดประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O ประมาณ 1700–1725 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -12076,10 +12168,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::14",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป มี peak หนึ่งที่ใช้บ่งชี้หมู่ฟังก์ชันได้ค่อนข้างจำเพาะ จงระบุหมู่ฟังก์ชันนั้นและช่วง wavenumber ที่ควรพบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r14_c2.png",
       "answer": "Nitrile (C≡N), ให้ sharp absorption บริเวณประมาณ 2210–2260 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -12088,10 +12180,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::15",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุว่าหมู่ amino ในสารนี้มีแนวโน้มเป็น primary หรือ secondary amine พร้อมบอกหลักฐานจาก spectrum",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r15_c2.png",
       "answer": "Primary amine, N–H stretching บริเวณประมาณ 3300–3500 cm⁻¹ มักเห็นเป็น 2 bands จาก asymmetric และ symmetric N–H stretching",
       "answerImage": "",
       "note": ""
@@ -12100,10 +12192,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::16",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป หากต้องแยกว่า carbonyl ในสารนี้เป็น aldehyde หรือ ketone ควรใช้ peak ใดประกอบการตัดสิน และสรุปว่าสารนี้เข้ากับชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r16_c2.png",
       "answer": "เข้ากับ aldehyde, นอกจาก C=O แล้วพบ aldehydic C–H stretching มักอยู่ใกล้ประมาณ 2720 และ 2820 cm⁻¹ ซึ่งช่วยแยกจาก ketone",
       "answerImage": "",
       "note": ""
@@ -12112,10 +12204,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::17",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุชนิดของ carbonyl compound ที่สอดคล้องที่สุด โดยใช้ข้อมูลจากทั้ง carbonyl region และ fingerprint region",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r17_c2.png",
       "answer": "Ester, มี strong ester C=O แถวประมาณ 1735–1750 cm⁻¹ และมี strong C–O stretching หลายแถบในช่วงประมาณ 1050–1300 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -12124,10 +12216,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::18",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันสำคัญที่พบอย่างน้อย 3 กลุ่ม และอธิบายว่าข้อมูลดังกล่าวสอดคล้องกับโครงสร้างของ acetaminophen อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "พบ O–H/N–H stretching บริเวณประมาณ 3100–3500 cm⁻¹, amide C=O แถวประมาณ 1650 cm⁻¹ และ aromatic ring bands แถวประมาณ 1500–1600 cm⁻¹ จึงสอดคล้องกับ phenolic OH + amide + aromatic ring ของ acetaminophen",
       "answerImage": "",
       "note": ""
@@ -12136,10 +12228,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::19",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ตัวอย่างกับ Reference Standard ให้ IR spectrum ที่มีตำแหน่ง functional-group peaks ใกล้เคียงกัน แต่บริเวณ fingerprint region แตกต่างกันชัดเจน ควรสรุปผลการ identification อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "ยังไม่ควรสรุปว่า identity ตรงกัน เพราะการยืนยันด้วย IR ต้องดูภาพรวมของ spectrum โดยเฉพาะ fingerprint region ไม่ใช่ดูเพียง functional-group peaks",
       "answerImage": "",
       "note": ""
@@ -12148,7 +12240,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::20",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "IR spectrum ของสารตัวอย่างพบ strong peak บริเวณประมาณ 1735 cm⁻¹ และมี strong bands ในช่วง 1050–1300 cm⁻¹ แต่ไม่พบ broad O–H จากข้อมูลนี้ควรสรุปว่าหมู่ carbonyl เป็นชนิดใด และใช้ peak ใดช่วยยืนยัน",
       "questionImage": "",
@@ -12160,7 +12252,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::21",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ในการตรวจรับ raw material ด้วย IR พบว่า spectrum ของตัวอย่างตรงกับ Reference Standard เกือบทั้งหมด แต่มี strong peak ใหม่บริเวณ carbonyl region ซึ่งไม่มีใน standard ควรตีความอย่างไร",
       "questionImage": "",
@@ -12172,7 +12264,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::22",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "สาร A มี broad band ประมาณ 3200–3600 cm⁻¹ แต่ไม่มี C=O ส่วนสาร B มี broad band กินช่วงประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O สาร A และ B น่าจะมีหมู่ฟังก์ชันใดตามลำดับ",
       "questionImage": "",
@@ -12184,7 +12276,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::23",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "สารชนิดหนึ่งมี strong C=O absorption และมี strong bands หลายแถบในช่วง 1050–1300 cm⁻¹ ข้อมูลนี้สนับสนุน ester มากกว่า ketone เพราะอะไร",
       "questionImage": "",
@@ -12196,7 +12288,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::24",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "พบ carbonyl absorption ที่ wavenumber ต่ำกว่าค่า ketone อิ่มตัวทั่วไป เช่นอยู่ใกล้ประมาณ 1685 cm⁻¹ ปัจจัยใดสามารถทำให้ C=O peak เลื่อนไปต่ำลงได้",
       "questionImage": "",
@@ -12208,7 +12300,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::25",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "เมื่อเปรียบเทียบ O–H stretching ของ alcohol ที่มี hydrogen bonding มากกับ alcohol ที่มี hydrogen bonding น้อย ลักษณะ peak มีแนวโน้มต่างกันอย่างไร",
       "questionImage": "",
@@ -12220,7 +12312,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::26",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "จาก monograph ระบุให้ยืนยัน identity ของสารโดยเปรียบเทียบ IR spectrum ของตัวอย่างกับ Reference Standard จุดประสงค์หลักของการเปรียบเทียบนี้คืออะไร",
       "questionImage": "",
@@ -12232,7 +12324,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::27",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ถ้า IR spectrum ของสารสองชนิดมี C=O peak ใกล้เคียงกันมาก แต่ fingerprint region แตกต่างกัน การใช้ IR ยังช่วยแยกสารสองชนิดนี้ได้หรือไม่ เพราะอะไร",
       "questionImage": "",
@@ -12244,7 +12336,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::28",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "ในการอ่าน IR spectrum ที่แสดงเป็น %Transmittance หากบริเวณหนึ่งดูดกลืนรังสีแรง ลักษณะบนกราฟควรเป็นอย่างไร และเหตุใด",
       "questionImage": "",
@@ -12256,7 +12348,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::29",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "IR เหมาะกับการใช้เป็น identification test ของวัตถุดิบมากกว่าการใช้หาปริมาณตัวยาแบบ routine เพราะคุณสมบัติใดของ spectrum",
       "questionImage": "",
@@ -12268,7 +12360,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::30",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "IR",
       "track": "Product",
       "question": "เมื่อตรวจ IR ของ aspirin พบว่า peak ที่สัมพันธ์กับ ester carbonyl ลดลงอย่างชัดเจน ขณะที่ยังพบสัญญาณของ carboxylic acid อยู่ การเปลี่ยนแปลงนี้ควรสงสัยอะไร",
       "questionImage": "",
@@ -12292,7 +12384,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::32",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารประเภทใดที่สามารถวัดด้วย Polarimeter ได้",
       "questionImage": "",
@@ -12304,7 +12396,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::33",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารที่หมุนระนาบแสงไปทางขวา (ตามเข็มนาฬิกา) เรียกว่าอะไร และใช้สัญลักษณ์ใด",
       "questionImage": "",
@@ -12316,7 +12408,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::34",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สารที่หมุนระนาบแสงไปทางซ้าย (ทวนเข็มนาฬิกา) เรียกว่าอะไร และใช้สัญลักษณ์ใด",
       "questionImage": "",
@@ -12328,7 +12420,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::35",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "Racemix mixture คืออะไร และมีผลต่อการหมุนแสงอย่างไร",
       "questionImage": "",
@@ -12340,16 +12432,64 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "3. Spectroscopy & Optics::36",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
-      "subTopic": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
       "track": "Product",
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::37",
+      "itemNo": "7",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
+      "questionImage": "",
+      "answer": "เดซิเมตร (dm)",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r36_c4.png",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::38",
+      "itemNo": "8",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ความยาวคลื่นแสงมาตรฐานที่ใช้ใน Polarimetry มักมาจากแหล่งกำเนิดแสงใด และมีความยาวคลื่นเท่าใด",
+      "questionImage": "",
+      "answer": "Sodium D-line ความยาวคลื่น 589 nm",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "3. Spectroscopy & Optics::39",
+      "itemNo": "9",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "ปัจจัยที่ส่งผลต่อการวัดค่า Specific rotation",
+      "questionImage": "",
+      "answer": "1. ความยาวคลื่นแสง 2. อุณหภูมิ 3. ตัวทำละลาย 4. ความเข้มข้นของสารละลาย 5. ความยาวหลอดใส่ตัวอย่างสารละลาย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::40",
+      "itemNo": "10",
+      "group": "3. Spectroscopy & Optics",
+      "subTopic": "Polarimetry",
+      "track": "Product",
+      "question": "การประยุกต์ใช้ Polarimetry ในการตรวจ Purity คือการหาค่าอะไร",
+      "questionImage": "",
+      "answer": "Enantiomeric excess (%ee) เพื่อดูว่ายามีไอโซเมอร์อื่นปนเปื้อนหรือไม่",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "3. Spectroscopy & Optics::41",
       "itemNo": "1",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12361,7 +12501,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::40",
+      "id": "3. Spectroscopy & Optics::42",
       "itemNo": "2",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12373,7 +12513,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::41",
+      "id": "3. Spectroscopy & Optics::43",
       "itemNo": "3",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12385,7 +12525,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::42",
+      "id": "3. Spectroscopy & Optics::44",
       "itemNo": "4",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12397,7 +12537,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::43",
+      "id": "3. Spectroscopy & Optics::45",
       "itemNo": "5",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12409,7 +12549,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::44",
+      "id": "3. Spectroscopy & Optics::46",
       "itemNo": "6",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12421,7 +12561,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::45",
+      "id": "3. Spectroscopy & Optics::47",
       "itemNo": "7",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12433,7 +12573,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::46",
+      "id": "3. Spectroscopy & Optics::48",
       "itemNo": "8",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12445,7 +12585,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::47",
+      "id": "3. Spectroscopy & Optics::49",
       "itemNo": "9",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12457,7 +12597,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::48",
+      "id": "3. Spectroscopy & Optics::50",
       "itemNo": "10",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12469,7 +12609,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::49",
+      "id": "3. Spectroscopy & Optics::51",
       "itemNo": "11",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12481,7 +12621,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::50",
+      "id": "3. Spectroscopy & Optics::52",
       "itemNo": "12",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12493,7 +12633,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::51",
+      "id": "3. Spectroscopy & Optics::53",
       "itemNo": "13",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12505,7 +12645,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::52",
+      "id": "3. Spectroscopy & Optics::54",
       "itemNo": "14",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12517,7 +12657,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::53",
+      "id": "3. Spectroscopy & Optics::55",
       "itemNo": "15",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "NMR",
@@ -12529,7 +12669,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::54",
+      "id": "3. Spectroscopy & Optics::56",
       "itemNo": "16",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12541,7 +12681,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::55",
+      "id": "3. Spectroscopy & Optics::57",
       "itemNo": "17",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12553,7 +12693,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::56",
+      "id": "3. Spectroscopy & Optics::58",
       "itemNo": "18",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12565,7 +12705,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::57",
+      "id": "3. Spectroscopy & Optics::59",
       "itemNo": "19",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12577,7 +12717,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::58",
+      "id": "3. Spectroscopy & Optics::60",
       "itemNo": "20",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12589,7 +12729,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::59",
+      "id": "3. Spectroscopy & Optics::61",
       "itemNo": "21",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12601,7 +12741,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::60",
+      "id": "3. Spectroscopy & Optics::62",
       "itemNo": "22",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12613,7 +12753,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::61",
+      "id": "3. Spectroscopy & Optics::63",
       "itemNo": "23",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12625,7 +12765,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::62",
+      "id": "3. Spectroscopy & Optics::64",
       "itemNo": "24",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12637,7 +12777,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::63",
+      "id": "3. Spectroscopy & Optics::65",
       "itemNo": "25",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12649,7 +12789,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::64",
+      "id": "3. Spectroscopy & Optics::66",
       "itemNo": "26",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12661,7 +12801,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::65",
+      "id": "3. Spectroscopy & Optics::67",
       "itemNo": "27",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12673,7 +12813,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::66",
+      "id": "3. Spectroscopy & Optics::68",
       "itemNo": "28",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12685,7 +12825,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::67",
+      "id": "3. Spectroscopy & Optics::69",
       "itemNo": "29",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12697,7 +12837,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::68",
+      "id": "3. Spectroscopy & Optics::70",
       "itemNo": "30",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12709,7 +12849,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::69",
+      "id": "3. Spectroscopy & Optics::71",
       "itemNo": "31",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12721,7 +12861,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::70",
+      "id": "3. Spectroscopy & Optics::72",
       "itemNo": "32",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12733,7 +12873,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "3. Spectroscopy & Optics::71",
+      "id": "3. Spectroscopy & Optics::73",
       "itemNo": "33",
       "group": "3. Spectroscopy & Optics",
       "subTopic": "MS",
@@ -12913,7 +13053,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Pharmaceutical Calc::17",
+      "id": "5. Pharmaceutical Calc::18",
       "itemNo": "15",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -12925,7 +13065,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.21 Example 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::18",
+      "id": "5. Pharmaceutical Calc::19",
       "itemNo": "16",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -12937,7 +13077,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.22-23 Example 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::19",
+      "id": "5. Pharmaceutical Calc::20",
       "itemNo": "17",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -12949,7 +13089,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2561 & 2563"
     },
     {
-      "id": "5. Pharmaceutical Calc::20",
+      "id": "5. Pharmaceutical Calc::21",
       "itemNo": "18",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -12961,7 +13101,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.17 Monograph Check"
     },
     {
-      "id": "5. Pharmaceutical Calc::21",
+      "id": "5. Pharmaceutical Calc::22",
       "itemNo": "19",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -12973,7 +13113,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Clinical Equivalency"
     },
     {
-      "id": "5. Pharmaceutical Calc::22",
+      "id": "5. Pharmaceutical Calc::23",
       "itemNo": "20",
       "group": "5. Pharmaceutical Calc",
       "subTopic": "Compounding Adjustments",
@@ -12985,10 +13125,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.3 Salt Comparison"
     },
     {
-      "id": "5. Pharmaceutical Calc::23",
+      "id": "5. Pharmaceutical Calc::24",
       "itemNo": "21",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "ในการตรวจวิเคราะห์ปริมาณตัวยาสำคัญด้วย HPLC โดยวิธี One-point estimation สารละลายมาตรฐาน (Standard solution) ความเข้มข้น Cs = 0.050 mg/mL ให้พื้นที่ใต้พีค (rs) = 250,000 ส่วนสารละลายตัวอย่าง (Sample solution) ปริมาตรรวม 100 mL ให้พื้นที่ใต้พีค (ru) = 265,000 จงคำนวณหาความเข้มข้นตัวอย่าง (Cu) และปริมาณตัวยาสำคัญทั้งหมด (mg)?",
       "questionImage": "",
@@ -12997,10 +13137,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-30 HPLC Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::24",
+      "id": "5. Pharmaceutical Calc::25",
       "itemNo": "22",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">การตรวจหาปริมาณ </span><span style=\"color:#0284c7\"><b>Acetaminophen</b></span><span style=\"color:#1e293b\"> tablet 500 mg: Standard solution มี Cs = 0.01012 mg/mL ให้ peak area (rs) = 112,500; ส่วน Sample solution มีการเจือจางรวม Dilution Factor = 50,000 เท่า ให้ peak area (ru) = 122,000 จงหาปริมาณ </span><span style=\"color:#0284c7\"><b>Acetaminophen</b></span><span style=\"color:#1e293b\"> ในยาเม็ด และ % Labeled Amount?</span>",
       "questionImage": "",
@@ -13009,10 +13149,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.29-31 Comprehensive Example"
     },
     {
-      "id": "5. Pharmaceutical Calc::25",
+      "id": "5. Pharmaceutical Calc::26",
       "itemNo": "23",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบแนวสภาฯ / USP Monograph]</b></span><span style=\"color:#1e293b\"> การวิเคราะห์หา % Assay ของ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> (MW 180.16) ด้วย Residual titration กำหนดให้ Titer ของ 0.5 N NaOH ต่อ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> = 45.04 mg/mL ชั่งผง </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> มา 1,500.0 mg ใส่ 0.5 N NaOH 50.0 mL ต้ม 10 นาที ไทเทรต NaOH ส่วนเกินด้วย 0.5 N H2SO4 ใช้ไป 18.20 mL (Blank titration ใช้ 50.00 mL) จงหาปริมาณ </span><span style=\"color:#0284c7\"><b>Aspirin</b></span><span style=\"color:#1e293b\"> และ % Assay?</span>",
       "questionImage": "",
@@ -13021,10 +13161,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "USP Monograph Aspirin Residual Titration"
     },
     {
-      "id": "5. Pharmaceutical Calc::26",
+      "id": "5. Pharmaceutical Calc::27",
       "itemNo": "24",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Instrumental Assay & Titer",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">การหาปริมาณ </span><span style=\"color:#0284c7\"><b>Potassium carbonate</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\">, MW 138.21) ตามปฏิกิริยา: </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> + 2HCl -&gt; 2KCl + H2O + CO2 จงหาค่า Titer ของ 1 N HCl ต่อ </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> (mg/mL) และถ้าชั่ง </span><span style=\"color:#0284c7\"><b>K2CO3</b></span><span style=\"color:#1e293b\"> มา 1,000 mg ไทเทรตด้วย 1 N HCl ใช้ไป 14.20 mL จงหา % Assay?</span>",
       "questionImage": "",
@@ -13033,10 +13173,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "IDQ1 Slide P.33-34 K2CO3 Assay"
     },
     {
-      "id": "5. Pharmaceutical Calc::27",
+      "id": "5. Pharmaceutical Calc::28",
       "itemNo": "25",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Working Formula & Scaling",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตร Master Formula ของ Oral Solution 100 mL ประกอบด้วย: </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 5 g, Sorbitol sol 30 mL, Saccharin sodium 0.02 g, Methylparaben 0.1 g, Propylparaben 0.01 g, Water qs 100 mL ถ้าต้องการเตรียมจริงเพียง 50 mL จงคำนวณ Working Formula?</span>",
       "questionImage": "",
@@ -13045,10 +13185,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.1 Exercise 1"
     },
     {
-      "id": "5. Pharmaceutical Calc::28",
+      "id": "5. Pharmaceutical Calc::29",
       "itemNo": "26",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Working Formula & Scaling",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ต้องการเตรียมสารละลาย </span><span style=\"color:#0284c7\"><b>Sodium fluoride</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>NaF</b></span><span style=\"color:#1e293b\">) ปริมาตร 100 mL เป็น Stock solution เพื่อนำสารละลายนี้ 0.5 mL ไปเจือจางด้วยน้ำจนครบ 250 mL แล้วได้ความเข้มข้น 2 ppm จงคำนวณปริมาณ </span><span style=\"color:#0284c7\"><b>NaF</b></span><span style=\"color:#1e293b\"> ที่ต้องชั่งมาเตรียม Stock solution?</span>",
       "questionImage": "",
@@ -13057,10 +13197,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 5"
     },
     {
-      "id": "5. Pharmaceutical Calc::29",
+      "id": "5. Pharmaceutical Calc::30",
       "itemNo": "27",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สารละลายเตรียมจาก </span><span style=\"color:#0284c7\"><b>Calcium chloride dihydrate</b></span><span style=\"color:#1e293b\"> (</span><span style=\"color:#0284c7\"><b>CaCl2.2H2O</b></span><span style=\"color:#1e293b\">, MW = 147.0) ปริมาณ 1.47 g ละลายในน้ำจนได้ปริมาตร 500 mL จงคำนวณหาปริมาณ Ca2+ ในหน่วย mmol และ mEq พร้อมทั้งหาความเข้มข้นของ Ca2+ และ Cl- ในหน่วย mEq/L?</span>",
       "questionImage": "",
@@ -13069,10 +13209,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Fundamental Pharmacy Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::30",
+      "id": "5. Pharmaceutical Calc::31",
       "itemNo": "28",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> แพทย์สั่งจ่ายยา </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 40 mEq/tablespoon (15 mL) จำนวน 60 mL เภสัชกรต้องเตรียมผง </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> (MW = 74.5) กี่กรัม?</span>",
       "questionImage": "",
@@ -13081,10 +13221,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::31",
+      "id": "5. Pharmaceutical Calc::32",
       "itemNo": "29",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> พยาบาลผสม </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 40 mL (ซึ่งมี </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 80 mEq) ลงใน NSS 960 mL (ปริมาตรรวม 1,000 mL) แล้วปรับอัตราหยดยาทาง IV เท่ากับ 80 mL/hr ผู้ป่วยรายนี้จะได้รับ </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> กี่ mEq ต่อชั่วโมง?</span>",
       "questionImage": "",
@@ -13093,10 +13233,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566"
     },
     {
-      "id": "5. Pharmaceutical Calc::32",
+      "id": "5. Pharmaceutical Calc::33",
       "itemNo": "30",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Milliequivalents (mEq)",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">แพทย์สั่งจ่ายยาฉีด </span><span style=\"color:#0284c7\"><b>Potassium chloride</b></span><span style=\"color:#1e293b\"> ความเข้มข้น 40 mEq/L ให้แก่ผู้ป่วย โดยให้หยดทางหลอดเลือดดำ (IV infusion) อัตราเร็ว 10 mEq/ชั่วโมง เป็นเวลา 8 ชั่วโมง โดยใช้ IV set ชนิด 15 drops/mL จงหาอัตราเร็วเป็น mL/hr และ drops/min?</span>",
       "questionImage": "",
@@ -13105,10 +13245,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.3 Exercise 2"
     },
     {
-      "id": "5. Pharmaceutical Calc::33",
+      "id": "5. Pharmaceutical Calc::34",
       "itemNo": "31",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2564]</b></span><span style=\"color:#1e293b\"> ตำรับยาหยอดตาปริมาตร 100 mL ประกอบด้วย: สาร A 0.05 g (E = 0.16), สาร B 0.04 g (E = 0.25), สาร C 0.01 g (E = 0.16) และน้ำกลั่นปรับปริมาตร หากต้องการปรับตำรับนี้ให้เป็นสารละลาย Isotonic จะต้องเติม </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> กี่กรัม?</span>",
       "questionImage": "",
@@ -13117,10 +13257,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2564 ข้อ 98"
     },
     {
-      "id": "5. Pharmaceutical Calc::34",
+      "id": "5. Pharmaceutical Calc::35",
       "itemNo": "32",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ผงเกลือแร่ ORS 1 ซอง ละลายน้ำ 750 mL ประกอบด้วย: Glucose anhydrous 10.125 g (MW 180, i=1), </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> 1.95 g (MW 58.5, i=2), </span><span style=\"color:#0284c7\"><b>KCl</b></span><span style=\"color:#1e293b\"> 1.125 g (MW 74.5, i=2), </span><span style=\"color:#0284c7\"><b>CaCl2</b></span><span style=\"color:#1e293b\"> 1.5 g (MW 111, i=3), </span><span style=\"color:#0284c7\"><b>Sodium citrate dihydrate</b></span><span style=\"color:#1e293b\"> 2.175 g (MW 294.1, i=4) จงหาค่า Osmolarity รวมของสารละลายนี้ในหน่วย mOsmol/L?</span>",
       "questionImage": "",
@@ -13129,10 +13269,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 7B"
     },
     {
-      "id": "5. Pharmaceutical Calc::35",
+      "id": "5. Pharmaceutical Calc::36",
       "itemNo": "33",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Osmolarity & Tonicity",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">จงคำนวณค่า Osmolarity ของน้ำเกลือมาตรฐาน 0.9% w/v Normal Saline (NSS, MW </span><span style=\"color:#0284c7\"><b>NaCl</b></span><span style=\"color:#1e293b\"> = 58.44 g/mol) พร้อมแปลผลเปรียบเทียบกับค่าปกติของพลาสมา?</span>",
       "questionImage": "",
@@ -13141,10 +13281,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Clinical Fluid & Electrolytes"
     },
     {
-      "id": "5. Pharmaceutical Calc::36",
+      "id": "5. Pharmaceutical Calc::37",
       "itemNo": "34",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตรตำรับครีมอิมัลชันประกอบด้วย: </span><span style=\"color:#0284c7\"><b>Mineral oil</b></span><span style=\"color:#1e293b\"> 35% w/w (rHLB = 12), </span><span style=\"color:#0284c7\"><b>Wool fat</b></span><span style=\"color:#1e293b\"> 4% w/w (rHLB = 15), </span><span style=\"color:#0284c7\"><b>Stearyl alcohol</b></span><span style=\"color:#1e293b\"> 1% w/w (rHLB = 14), Emulsifiers 10% w/w, Water qs 100% w/w จงหาค่า Required HLB รวมของตำรับนี้?</span>",
       "questionImage": "",
@@ -13153,10 +13293,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6a"
     },
     {
-      "id": "5. Pharmaceutical Calc::37",
+      "id": "5. Pharmaceutical Calc::38",
       "itemNo": "35",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">จากตำรับเดิมที่ต้องการค่า Required HLB = 12.35 โดยใช้สารทำอิมัลชัน 10% w/w ที่เป็นส่วนผสมของ </span><span style=\"color:#0284c7\"><b>Tween 80</b></span><span style=\"color:#1e293b\"> (HLB = 15.0) และ </span><span style=\"color:#0284c7\"><b>Span 80</b></span><span style=\"color:#1e293b\"> (HLB = 4.3) จงคำนวณปริมาณ % w/w ของ </span><span style=\"color:#0284c7\"><b>Tween 80</b></span><span style=\"color:#1e293b\"> และ </span><span style=\"color:#0284c7\"><b>Span 80</b></span><span style=\"color:#1e293b\"> ที่ต้องใช้โดยวิธี Alligation?</span>",
       "questionImage": "",
@@ -13165,10 +13305,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.4 Exercise 6b-c"
     },
     {
-      "id": "5. Pharmaceutical Calc::38",
+      "id": "5. Pharmaceutical Calc::39",
       "itemNo": "36",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "HLB & Emulsion Blends",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2558]</b></span><span style=\"color:#1e293b\"> ตำรับยาประกอบด้วย: </span><span style=\"color:#0284c7\"><b>Mineral oil</b></span><span style=\"color:#1e293b\"> 30 g (rHLB = 12), </span><span style=\"color:#0284c7\"><b>Wool fat</b></span><span style=\"color:#1e293b\"> 1.5 g (rHLB = 10), </span><span style=\"color:#0284c7\"><b>Cetyl alcohol</b></span><span style=\"color:#1e293b\"> 1.0 g (rHLB = 15) จงคำนวณหาค่า Required HLB รวมของตำรับนี้?</span>",
       "questionImage": "",
@@ -13177,10 +13317,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2558"
     },
     {
-      "id": "5. Pharmaceutical Calc::39",
+      "id": "5. Pharmaceutical Calc::40",
       "itemNo": "37",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2567]</b></span><span style=\"color:#1e293b\"> </span><span style=\"color:#0284c7\"><b>Aluminum hydroxide</b></span><span style=\"color:#1e293b\"> (AH) gel ปริมาตร 100 mL มี equivalent of </span><span style=\"color:#0284c7\"><b>Aluminum oxide</b></span><span style=\"color:#1e293b\"> อยู่ 4 g หากต้องการเตรียมตำรับ AH gel ปริมาตร 500 mL โดยใช้วัตถุดิบ </span><span style=\"color:#0284c7\"><b>AHC compress gel</b></span><span style=\"color:#1e293b\"> ที่มี </span><span style=\"color:#0284c7\"><b>Aluminum oxide</b></span><span style=\"color:#1e293b\"> 10% w/w จะต้องใช้ </span><span style=\"color:#0284c7\"><b>AHC compress gel</b></span><span style=\"color:#1e293b\"> กี่กรัม?</span>",
       "questionImage": "",
@@ -13189,10 +13329,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2567 ข้อ 12"
     },
     {
-      "id": "5. Pharmaceutical Calc::40",
+      "id": "5. Pharmaceutical Calc::41",
       "itemNo": "38",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2566]</b></span><span style=\"color:#1e293b\"> ยาเหน็บ </span><span style=\"color:#0284c7\"><b>Bisacodyl</b></span><span style=\"color:#1e293b\"> มีค่า Displacement factor (Dv) = 0.2 ต้องการผลิตยาเหน็บขนาด 10 mg จำนวน 10 แท่ง โดยแบบพิมพ์มีน้ำหนักเบสเปล่า 2.0 g ต่อแท่ง จงคำนวณน้ำหนักยาพื้น (Suppository base) รวมที่ต้องเตรียม?</span>",
       "questionImage": "",
@@ -13201,10 +13341,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2566 Day 2 ข้อ 47"
     },
     {
-      "id": "5. Pharmaceutical Calc::41",
+      "id": "5. Pharmaceutical Calc::42",
       "itemNo": "39",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#7c3aed\"><b>[ข้อสอบจริง PLE-CC 2565]</b></span><span style=\"color:#1e293b\"> ต้องการเตรียมสารละลาย </span><span style=\"color:#0284c7\"><b>D10W</b></span><span style=\"color:#1e293b\"> ปริมาตร 500 mL จาก 5% Dextrose in Water (</span><span style=\"color:#0284c7\"><b>D5W</b></span><span style=\"color:#1e293b\">) และ 50% Dextrose in Water (</span><span style=\"color:#0284c7\"><b>D50W</b></span><span style=\"color:#1e293b\">) จะต้องใช้สารละลายแต่ละชนิดอย่างละกี่ mL?</span>",
       "questionImage": "",
@@ -13213,10 +13353,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "ข้อสอบจริงสภาฯ PLE-CC 2565 ข้อ 90"
     },
     {
-      "id": "5. Pharmaceutical Calc::42",
+      "id": "5. Pharmaceutical Calc::43",
       "itemNo": "40",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ผู้ป่วยเด็กน้ำหนัก 20 kg ได้รับ </span><span style=\"color:#0284c7\"><b>Favipiravir</b></span><span style=\"color:#1e293b\">: วันแรก 60 mg/kg/day แบ่ง bid, วันที่ 2-5 ให้ 20 mg/kg/day แบ่ง bid หากในห้องยามีเฉพาะยาเม็ด 200 mg เภสัชกรเตรียมยาน้ำแขวนตะกอน 70 mL (ความแรง 40 mg/mL) จงหา (1) ขนาดยาเม็ดที่ต้องใช้ทั้งหมด และ (2) ปริมาตรยาน้ำที่เด็กต้องรับประทานต่อครั้งในวันแรกและวันที่ 2-5?</span>",
       "questionImage": "",
@@ -13225,10 +13365,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.6 Exercise 9"
     },
     {
-      "id": "5. Pharmaceutical Calc::43",
+      "id": "5. Pharmaceutical Calc::44",
       "itemNo": "41",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">สูตรยา Rx: </span><span style=\"color:#0284c7\"><b>Indomethacin</b></span><span style=\"color:#1e293b\"> 25 mg/tsp (5 mL) ปริมาตรรวม 125 mL โดยในห้องยามีเฉพาะ </span><span style=\"color:#0284c7\"><b>Indomethacin</b></span><span style=\"color:#1e293b\"> capsule 50 mg/cap ซึ่งแต่ละแคปซูลมีน้ำหนักผงยารวม (ตัวยา + สารเพิ่มปริมาณ) = 100 mg/cap (1) ต้องใช้ตัวยาทั้งหมดกี่แคปซูล (2) หากต้องแกะแคปซูลมาชั่ง ต้องชั่งผงยารวมมากี่ mg?</span>",
       "questionImage": "",
@@ -13237,10 +13377,10 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.5 Exercise 8"
     },
     {
-      "id": "5. Pharmaceutical Calc::44",
+      "id": "5. Pharmaceutical Calc::45",
       "itemNo": "42",
       "group": "5. Pharmaceutical Calc",
-      "subTopic": "Compounding Practice Cases",
+      "subTopic": "Compounding Adjustments",
       "track": "Product",
       "question": "<span style=\"color:#1e293b\">ต้องการเตรียม 50 mL </span><span style=\"color:#0284c7\"><b>Benzalkonium chloride</b></span><span style=\"color:#1e293b\"> solution ความเข้มข้น 1:5,000 โดยเตรียมจาก 0.5% w/v </span><span style=\"color:#0284c7\"><b>Benzalkonium chloride</b></span><span style=\"color:#1e293b\"> stock solution จงคำนวณปริมาตร stock solution ที่ต้องดูดมาเตรียม?</span>",
       "questionImage": "",
