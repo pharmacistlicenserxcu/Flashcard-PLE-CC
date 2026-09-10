@@ -470,11 +470,11 @@ for title, track in all_ordered_tabs:
 
             q_img_final = to_direct_image_url(q_url)
             if not q_img_final:
-                q_img_final = in_cell_images_map.get((title, r_idx + 1, 2)) or in_cell_images_map.get((title, r_idx, 2), "")
+                q_img_final = in_cell_images_map.get((title, r_idx + 1, 2), "")
 
             a_img_final = to_direct_image_url(a_url)
             if not a_img_final:
-                a_img_final = in_cell_images_map.get((title, r_idx + 1, 4)) or in_cell_images_map.get((title, r_idx, 4), "")
+                a_img_final = in_cell_images_map.get((title, r_idx + 1, 4), "")
 
             track_col = get_val(7).strip()
             actual_track = track

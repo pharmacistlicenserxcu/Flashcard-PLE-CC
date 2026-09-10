@@ -1689,7 +1689,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "Hypertension",
       "track": "Clinic",
       "question": "ทดสอ",
-      "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
+      "questionImage": "",
       "answer": "ทดสอบ",
       "answerImage": "",
       "note": ""
@@ -3474,7 +3474,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "ตัวอย่างกับ Reference Standard ให้ IR spectrum ที่มีตำแหน่ง functional-group peaks ใกล้เคียงกัน แต่บริเวณ fingerprint region แตกต่างกันชัดเจน ควรสรุปผลการ identification อย่างไร",
-      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
+      "questionImage": "",
       "answer": "ยังไม่ควรสรุปว่า identity ตรงกัน เพราะการยืนยันด้วย IR ต้องดูภาพรวมของ spectrum โดยเฉพาะ fingerprint region ไม่ใช่ดูเพียง functional-group peaks",
       "answerImage": "",
       "note": ""
@@ -3680,7 +3680,7 @@ window.OFFLINE_CARDS = {
       "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
       "questionImage": "",
       "answer": "เดซิเมตร (dm)",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
+      "answerImage": "",
       "note": ""
     },
     {
@@ -6165,7 +6165,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "Hypertension",
       "track": "Clinic",
       "question": "ทดสอ",
-      "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
+      "questionImage": "",
       "answer": "ทดสอบ",
       "answerImage": "",
       "note": ""
@@ -7919,7 +7919,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "ตัวอย่างกับ Reference Standard ให้ IR spectrum ที่มีตำแหน่ง functional-group peaks ใกล้เคียงกัน แต่บริเวณ fingerprint region แตกต่างกันชัดเจน ควรสรุปผลการ identification อย่างไร",
-      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
+      "questionImage": "",
       "answer": "ยังไม่ควรสรุปว่า identity ตรงกัน เพราะการยืนยันด้วย IR ต้องดูภาพรวมของ spectrum โดยเฉพาะ fingerprint region ไม่ใช่ดูเพียง functional-group peaks",
       "answerImage": "",
       "note": ""
@@ -8125,7 +8125,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
       "questionImage": "",
       "answer": "เดซิเมตร (dm)",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
+      "answerImage": "",
       "note": ""
     },
     {
@@ -10598,7 +10598,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "Hypertension",
       "track": "Clinic",
       "question": "ทดสอ",
-      "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
+      "questionImage": "",
       "answer": "ทดสอบ",
       "answerImage": "",
       "note": ""
@@ -12350,7 +12350,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "ตัวอย่างกับ Reference Standard ให้ IR spectrum ที่มีตำแหน่ง functional-group peaks ใกล้เคียงกัน แต่บริเวณ fingerprint region แตกต่างกันชัดเจน ควรสรุปผลการ identification อย่างไร",
-      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
+      "questionImage": "",
       "answer": "ยังไม่ควรสรุปว่า identity ตรงกัน เพราะการยืนยันด้วย IR ต้องดูภาพรวมของ spectrum โดยเฉพาะ fingerprint region ไม่ใช่ดูเพียง functional-group peaks",
       "answerImage": "",
       "note": ""
@@ -12556,7 +12556,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ในสูตรการคำนวณ Specific rotation ตัวแปร l (path length) ต้องใช้หน่วยอะไร",
       "questionImage": "",
       "answer": "เดซิเมตร (dm)",
-      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
+      "answerImage": "",
       "note": ""
     },
     {
