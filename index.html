@@ -132,7 +132,8 @@
       .kbd-hints-bar { display: none !important; }
       .study-viewport { padding: 8px 12px 14px !important; }
       .topbar { padding: 10px 12px !important; }
-      .card { padding: 18px 16px !important; min-height: 320px !important; }
+      .card { min-height: 320px !important; }
+      .card-face { padding: 18px 16px !important; }
       .question-text { font-size: 17.5px !important; line-height: 1.55 !important; }
       .action-btn { padding: 13px 0 !important; font-size: 14.5px !important; border-radius: 13px !important; }
       .study-mode-segmented { margin: 4px auto 6px !important; }
@@ -503,21 +504,49 @@
       display: flex; flex-direction: column; min-height: 0; align-items: center; flex: 1;
     }
     
-    .card-wrap { width: 100%; flex: 1; display: flex; align-items: stretch; min-height: 320px; }
+    .card-wrap {
+      width: 100%; flex: 1; display: flex; align-items: stretch; min-height: 320px;
+      perspective: 1200px;
+    }
 
     .card {
-      width: 100%; background: var(--card); border: 1px solid var(--border);
-      border-radius: var(--r-lg); padding: 22px 20px; display: flex; flex-direction: column;
-      cursor: pointer; box-shadow: var(--shadow-sm); position: relative; overflow-y: auto;
-      transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1), box-shadow 0.2s;
+      width: 100%; border-radius: var(--r-lg); cursor: pointer; position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.42s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.2s;
+      box-shadow: var(--shadow-sm);
     }
     .card:hover { box-shadow: var(--shadow-md); }
-    .card:active { transform: scale(0.993); }
+    .card:active { }
 
-    .card.anim-next { animation: cardSlideNext 0.2s cubic-bezier(0.2, 0.9, 0.3, 1); }
-    .card.anim-prev { animation: cardSlidePrev 0.2s cubic-bezier(0.2, 0.9, 0.3, 1); }
-    @keyframes cardSlideNext { from { opacity: 0.3; transform: translateX(18px) scale(0.98); } to { opacity: 1; transform: translateX(0) scale(1); } }
-    @keyframes cardSlidePrev { from { opacity: 0.3; transform: translateX(-18px) scale(0.98); } to { opacity: 1; transform: translateX(0) scale(1); } }
+    /* ── FRONT face (Question) ── */
+    .card-face {
+      position: absolute; inset: 0; border-radius: var(--r-lg);
+      backface-visibility: hidden; -webkit-backface-visibility: hidden;
+      overflow-y: auto; display: flex; flex-direction: column;
+      padding: 22px 20px;
+    }
+    .card-face-front {
+      background: var(--card); border: 1px solid var(--border);
+    }
+    /* ── BACK face (Answer) — rotated 180deg, light blue-tinted ── */
+    .card-face-back {
+      background: #F0F7FF; border: 1px solid #BFD9F9;
+      transform: rotateY(180deg);
+    }
+    [data-theme="dark"] .card-face-back { background: #1A2D42; border-color: #2A4460; }
+
+    /* ── Flipped state ── */
+    .card.flipped { transform: rotateY(180deg); }
+
+    /* ── Hide question content when flipped (safety net for content outside card-face) ── */
+    .card.flipped .question-text,
+    .card.flipped #qImgWrap { display: none !important; }
+
+    /* ── Slide animations for next/prev ── */
+    .card.anim-next { animation: cardSlideNext 0.22s cubic-bezier(0.2, 0.9, 0.3, 1); }
+    .card.anim-prev { animation: cardSlidePrev 0.22s cubic-bezier(0.2, 0.9, 0.3, 1); }
+    @keyframes cardSlideNext { from { opacity: 0.3; transform: translateX(18px) rotateY(0deg) scale(0.98); } to { opacity: 1; transform: translateX(0) rotateY(0deg) scale(1); } }
+    @keyframes cardSlidePrev { from { opacity: 0.3; transform: translateX(-18px) rotateY(0deg) scale(0.98); } to { opacity: 1; transform: translateX(0) rotateY(0deg) scale(1); } }
 
     .card-eyebrow {
       display: flex; align-items: center; justify-content: space-between;
@@ -553,14 +582,7 @@
     @keyframes fadeInAnswer { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
     .answer-label { font-size: 11px; font-weight: 700; color: var(--confident); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
     .answer-text { font-size: 16px; line-height: 1.65; color: var(--ink); font-weight: 500; }
-    .card.flipped .question-text,
-    .card.flipped #qImgWrap { display: none !important; }
 
-    .flip-hint {
-      text-align: center; padding-top: 12px; font-size: 11.5px; color: var(--ink-faint); font-weight: 500;
-      display: flex; align-items: center; justify-content: center; gap: 5px; flex-shrink: 0;
-    }
-    .card.flipped .flip-hint { display: none; }
 
     .celebration-box { text-align: center; padding: 10px 0; }
     .celebration-icon { font-size: 42px; margin-bottom: 6px; animation: bounce 0.6s infinite alternate ease-in-out; }
@@ -1135,37 +1157,60 @@
 
       <div class="stage">
         <div class="card-wrap">
-          <div class="card" id="flashcard" onclick="flipCard()">
-            <div class="card-eyebrow">
-              <span class="tag clinic-tag" id="cardTag">-</span>
-              <div class="eyebrow-right">
-                <button class="btn-report-card" id="btnReportCard" onclick="openReportCardModal(event)" title="แจ้งปัญหาข้อนี้ (ข้อสอบผิด/เฉลยไม่ตรง/รูปหาย)">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-                  <span>แจ้งปัญหา</span>
-                </button>
-                <div class="card-status-dot dot-new" id="cardStatusDot"></div>
+          <div class="card" id="flashcard" onclick="flipCard()" style="min-height:320px;">
+
+            <!-- ── FRONT FACE (Question) ── -->
+            <div class="card-face card-face-front">
+              <div class="card-eyebrow">
+                <span class="tag clinic-tag" id="cardTag">-</span>
+                <div class="eyebrow-right">
+                  <button class="btn-report-card" id="btnReportCard" onclick="openReportCardModal(event)" title="แจ้งปัญหาข้อนี้ (ข้อสอบผิด/เฉลยไม่ตรง/รูปหาย)">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    <span>แจ้งปัญหา</span>
+                  </button>
+                  <div class="card-status-dot dot-new" id="cardStatusDot"></div>
+                </div>
               </div>
-            </div>
-            
-            <div class="card-img-wrap" id="qImgWrap">
-              <img class="card-img" id="qImg" src="" alt="รูปคำถาม" onclick="openImgLightbox(this.src, event)">
+
+              <div class="card-img-wrap" id="qImgWrap">
+                <img class="card-img" id="qImg" src="" alt="รูปคำถาม" onclick="openImgLightbox(this.src, event)">
+              </div>
+
+              <div class="card-body">
+                <div class="question-text" id="questionText">กำลังโหลด Flashcard...</div>
+              </div>
+
+              <div class="flip-hint" id="flipHint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7-7 7 7"/></svg>
+                แตะการ์ดเพื่อดูคำตอบ
+              </div>
             </div>
 
-            <div class="card-body">
-              <div class="question-text" id="questionText">กำลังโหลด Flashcard...</div>
-              <div class="answer-block" id="answerBlock">
-                <div class="answer-label">คำตอบ</div>
-                <div class="card-img-wrap" id="aImgWrap">
-                  <img class="card-img" id="aImg" src="" alt="รูปคำตอบ" onclick="openImgLightbox(this.src, event)">
+            <!-- ── BACK FACE (Answer) ── -->
+            <div class="card-face card-face-back">
+              <div class="card-eyebrow" style="opacity:0.6;">
+                <span style="font-size:11px; font-weight:700; color:var(--confident); text-transform:uppercase; letter-spacing:0.5px;">✅ คำตอบ</span>
+                <div class="card-status-dot dot-new" id="cardStatusDotBack"></div>
+              </div>
+
+              <div class="card-img-wrap" id="aImgWrap">
+                <img class="card-img" id="aImg" src="" alt="รูปคำตอบ" onclick="openImgLightbox(this.src, event)">
+              </div>
+
+              <div class="card-body" style="padding: 8px 0;">
+                <div class="answer-block show" id="answerBlock">
+                  <div class="answer-label">คำตอบ</div>
+                  <div class="card-img-wrap" id="aImgWrap2" style="display:none;"></div>
+                  <div class="answer-text" id="answerText"></div>
                 </div>
-                <div class="answer-text" id="answerText"></div>
+              </div>
+
+              <div class="flip-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                แตะอีกครั้งเพื่อกลับ
               </div>
             </div>
-            
-            <div class="flip-hint" id="flipHint">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7-7 7 7"/></svg>
-              แตะการ์ดเพื่อดูคำตอบ
-            </div>
+
           </div>
         </div>
 
@@ -2766,7 +2811,6 @@ window.google.script.run = (function() {
     document.getElementById('studyDeckSub').textContent  = catObj ? `${catObj.count} ข้อ (${trackLabel})` : `(${trackLabel})`;
     document.getElementById('sheetCurrentGroupLabel').textContent = catName || 'ทั้งหมด';
 
-    document.getElementById('answerBlock').classList.remove('show');
     document.getElementById('flashcard').classList.remove('flipped');
 
     const cacheKey = catName ? (CACHE_KEY_DECK_PREFIX + catName) : (CACHE_KEY_ALL_CARDS + '_' + currentTrack);
@@ -2853,9 +2897,8 @@ window.google.script.run = (function() {
   function renderCard(direction) {
     isFlipped = false;
     const cardEl = document.getElementById('flashcard');
-    const ansEl  = document.getElementById('answerBlock');
     cardEl.classList.remove('flipped');
-    ansEl.classList.remove('show');
+    // Note: answerBlock is permanently visible on back face — no need to toggle .show
 
     if (direction === 'next') {
       cardEl.classList.remove('anim-next', 'anim-prev');
@@ -3011,11 +3054,13 @@ window.google.script.run = (function() {
   function flipCard() {
     if (isReviewFinished || (studyMethod === 'smart' && smartQueue.length === 0)) return;
     const card = document.getElementById('flashcard');
-    const ans  = document.getElementById('answerBlock');
     if (!viewCards.length) return;
     isFlipped = !isFlipped;
     card.classList.toggle('flipped', isFlipped);
-    ans.classList.toggle('show', isFlipped);
+    // Sync status dot to back face
+    const dotFront = document.getElementById('cardStatusDot');
+    const dotBack  = document.getElementById('cardStatusDotBack');
+    if (dotBack && dotFront) dotBack.className = dotFront.className;
   }
 
   function reinsertSmartCard(card, targetOffset = 5) {
