@@ -1858,7 +1858,7 @@ window.OFFLINE_CARDS = {
       "question": "การประเมิน Time to First Cigarette (TTFC) ส่งผลต่อการเลือกขนาดยา Fast-acting NRT อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบมวนแรก ≤ 30 นาทีหลังตื่นนอน (High dependence) → เลือกใช้ Nicotine Gum  ขนาด 4 mg<br> ▶ สูบมวนแรก &gt; 30 นาทีหลังตื่นนอน (Low-Moderate dependence) → เลือกใช้ Nicotine Gum ขนาด 2 mg",
-      "answerImage": "images/extracted_10__Psychiatric_r6_c4.png",
+      "answerImage": "",
       "note": ""
     },
     {
@@ -1882,7 +1882,7 @@ window.OFFLINE_CARDS = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดและจำนวนสูงสุดของ Nicotine Gum อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Gum 4 mg (ใช้ไม่เกิน 15 ชิ้น/วัน)<br> ▶ สูบ ≤ 20 มวน/วัน → เริ่มต้น Nicotine Gum 2 mg (ใช้ไม่เกิน 30 ชิ้น/วัน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r8_c4.png",
       "note": ""
     },
     {
@@ -7592,7 +7592,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมิน Time to First Cigarette (TTFC) ส่งผลต่อการเลือกขนาดยา Fast-acting NRT อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบมวนแรก ≤ 30 นาทีหลังตื่นนอน (High dependence) → เลือกใช้ Nicotine Gum  ขนาด 4 mg<br> ▶ สูบมวนแรก &gt; 30 นาทีหลังตื่นนอน (Low-Moderate dependence) → เลือกใช้ Nicotine Gum ขนาด 2 mg",
-      "answerImage": "images/extracted_10__Psychiatric_r6_c4.png",
+      "answerImage": "",
       "note": ""
     },
     {
@@ -7616,7 +7616,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดและจำนวนสูงสุดของ Nicotine Gum อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Gum 4 mg (ใช้ไม่เกิน 15 ชิ้น/วัน)<br> ▶ สูบ ≤ 20 มวน/วัน → เริ่มต้น Nicotine Gum 2 mg (ใช้ไม่เกิน 30 ชิ้น/วัน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r8_c4.png",
       "note": ""
     },
     {
@@ -13297,7 +13297,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมิน Time to First Cigarette (TTFC) ส่งผลต่อการเลือกขนาดยา Fast-acting NRT อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบมวนแรก ≤ 30 นาทีหลังตื่นนอน (High dependence) → เลือกใช้ Nicotine Gum  ขนาด 4 mg<br> ▶ สูบมวนแรก &gt; 30 นาทีหลังตื่นนอน (Low-Moderate dependence) → เลือกใช้ Nicotine Gum ขนาด 2 mg",
-      "answerImage": "images/extracted_10__Psychiatric_r6_c4.png",
+      "answerImage": "",
       "note": ""
     },
     {
@@ -13321,7 +13321,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดและจำนวนสูงสุดของ Nicotine Gum อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Gum 4 mg (ใช้ไม่เกิน 15 ชิ้น/วัน)<br> ▶ สูบ ≤ 20 มวน/วัน → เริ่มต้น Nicotine Gum 2 mg (ใช้ไม่เกิน 30 ชิ้น/วัน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r8_c4.png",
       "note": ""
     },
     {
