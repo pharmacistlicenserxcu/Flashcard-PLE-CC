@@ -119,6 +119,12 @@ function doPost(e) {
     if (action === 'updateCard' || action === 'updateQuestion') {
       return jsonResponse_(handleCardUpdate_(data));
     }
+    if (action === 'addCard' || action === 'createCard') {
+      return jsonResponse_(handleAddCard_(data));
+    }
+    if (action === 'deleteCard' || action === 'removeCard') {
+      return jsonResponse_(handleDeleteCard_(data));
+    }
     if (action === 'submitSubtopicEvaluation') {
       return jsonResponse_(handleSubtopicEvaluation_(data));
     }
@@ -144,6 +150,14 @@ function updateCard(data) {
 
 function updateQuestion(data) {
   return handleCardUpdate_(data);
+}
+
+function addCard(data) {
+  return handleAddCard_(data);
+}
+
+function deleteCard(data) {
+  return handleDeleteCard_(data);
 }
 
 function submitSubtopicEvaluation(data) {
@@ -335,6 +349,167 @@ function handleCardUpdate_(data) {
     };
   } catch (err) {
     return { success: false, error: 'บันทึกลง Google Sheet ล้มเหลว: ' + err.toString() };
+  }
+}
+
+/**
+ * ════════════════════════════════════════════════════════════════════════
+ * ➕ สร้าง Flashcard ใหม่ลงในหมวดหมู่ที่เลือก (Admin Only)
+ * ════════════════════════════════════════════════════════════════════════
+ */
+function handleAddCard_(data) {
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheetName = String(data.sheetName || data.group || data.category || '').trim();
+    if (!sheetName) {
+      return { success: false, error: 'กรุณาระบุชื่อชีตหมวดวิชาที่ต้องการเพิ่ม Flashcard' };
+    }
+
+    let targetSheet = ss.getSheetByName(sheetName);
+    if (!targetSheet) {
+      return { success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName };
+    }
+
+    const lastRow = targetSheet.getLastRow();
+    const actualRow = Math.max(lastRow + 1, 3);
+
+    // คำนวณ Item No ถัดไป
+    let nextItemNo = 1;
+    if (actualRow > 3) {
+      const prevVal = targetSheet.getRange(actualRow - 1, 1).getValue();
+      const parsed = parseInt(prevVal, 10);
+      nextItemNo = isNaN(parsed) ? (actualRow - 2) : (parsed + 1);
+    }
+    if (data.itemNo != null && String(data.itemNo).trim() !== '') {
+      nextItemNo = String(data.itemNo).trim();
+    }
+
+    const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+    const editor = String(data.editorName || data.editorUsername || 'Admin');
+    const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
+    const newAnswer = String(data.answer || data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
+    const newQImg = String(data.questionImage || '').trim();
+    const newAImg = String(data.answerImage || '').trim();
+    const newSubtopic = String(data.subtopic || data.subTopic || sheetName).replace(/\*\*/g, '').trim();
+    const newNote = String(data.note || '').replace(/\*\*/g, '').trim();
+    const newTrack = String(data.track || 'Clinic').trim();
+    const newCardId = `${sheetName}::${actualRow}`;
+
+    // บันทึกลง Log_Card_Edits
+    let logSheet = ss.getSheetByName('Log_Card_Edits');
+    if (!logSheet) {
+      logSheet = ss.insertSheet('Log_Card_Edits');
+      logSheet.appendRow([
+        "Timestamp (เวลาไทย)", "Editor", "Card ID", "Sheet Name", "Row Number",
+        "Old Question", "New Question", "Old Answer", "New Answer",
+        "Old Subtopic", "New Subtopic", "Status"
+      ]);
+      logSheet.getRange(1, 1, 1, 12).setFontWeight("bold").setBackground("#0284c7").setFontColor("#ffffff");
+      logSheet.setFrozenRows(1);
+    }
+
+    logSheet.appendRow([
+      thaiTimestamp,
+      editor,
+      newCardId,
+      sheetName,
+      actualRow,
+      "-",
+      newQuestion.substring(0, 200),
+      "-",
+      newAnswer.substring(0, 200),
+      "-",
+      newSubtopic,
+      "Created"
+    ]);
+
+    const newRow = [
+      nextItemNo,
+      newQuestion,
+      newQImg,
+      newAnswer,
+      newAImg,
+      newSubtopic,
+      newNote,
+      newTrack
+    ];
+
+    targetSheet.appendRow(newRow);
+
+    return {
+      success: true,
+      message: `สร้าง Flashcard ใหม่ในชีต ${sheetName} แถวที่ ${actualRow} สำเร็จแล้ว 🎉`,
+      cardId: newCardId,
+      sheet: sheetName,
+      row: actualRow,
+      itemNo: nextItemNo
+    };
+  } catch (err) {
+    return { success: false, error: 'สร้าง Flashcard ล้มเหลว: ' + err.toString() };
+  }
+}
+
+/**
+ * ════════════════════════════════════════════════════════════════════════
+ * 🗑️ ลบ Flashcard ออกจาก Google Sheet (Admin Only) พร้อม Audit Log
+ * ════════════════════════════════════════════════════════════════════════
+ */
+function handleDeleteCard_(data) {
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const cardId = String(data.cardId || data.id || '').trim();
+    if (!cardId || !cardId.includes('::')) {
+      return { success: false, error: 'Card ID รูปแบบไม่ถูกต้อง: ' + cardId };
+    }
+
+    const parts = cardId.split('::');
+    const sheetName = parts[0].trim();
+    const rowNum = parseInt(parts[1], 10);
+
+    if (isNaN(rowNum) || rowNum < 3) {
+      return { success: false, error: 'เลขแถวไม่ถูกต้อง (ต้อง >= 3): ' + rowNum };
+    }
+
+    const targetSheet = ss.getSheetByName(sheetName);
+    if (!targetSheet) {
+      return { success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName };
+    }
+
+    // ดึง Snapshot ข้อมูลเดิมก่อนลบ
+    const oldValues = targetSheet.getRange(rowNum, 1, 1, 8).getValues()[0];
+
+    let logSheet = ss.getSheetByName('Log_Card_Edits');
+    if (logSheet) {
+      const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+      const editor = String(data.editorName || data.editorUsername || 'Admin');
+      logSheet.appendRow([
+        thaiTimestamp,
+        editor,
+        cardId,
+        sheetName,
+        rowNum,
+        String(oldValues[1] || '').substring(0, 200),
+        "[DELETED]",
+        String(oldValues[3] || '').substring(0, 200),
+        "-",
+        String(oldValues[5] || ''),
+        "-",
+        "Deleted"
+      ]);
+    }
+
+    // ลบแถวออกจากชีต
+    targetSheet.deleteRow(rowNum);
+
+    return {
+      success: true,
+      message: `ลบ Flashcard รหัส ${cardId} ออกจาก Google Sheet เรียบร้อยแล้ว`,
+      cardId: cardId,
+      sheet: sheetName,
+      row: rowNum
+    };
+  } catch (err) {
+    return { success: false, error: 'ลบ Flashcard ล้มเหลว: ' + err.toString() };
   }
 }
 

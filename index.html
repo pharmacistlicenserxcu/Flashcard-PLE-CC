@@ -1095,6 +1095,24 @@
     .paper-btn-save:disabled {
       opacity: 0.6; cursor: not-allowed; transform: none;
     }
+    .paper-btn-delete {
+      padding: 9px 18px; border-radius: 10px; border: 1.5px solid #fecaca;
+      background: #fef2f2; color: #dc2626; font-family: inherit;
+      font-size: 13px; font-weight: 700; cursor: pointer; display: inline-flex;
+      align-items: center; gap: 6px; transition: all 0.15s ease;
+    }
+    .paper-btn-delete:hover {
+      background: #fee2e2; border-color: #ef4444; color: #b91c1c; transform: translateY(-1px);
+    }
+    .lobby-tool-btn.create-card-btn {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff; border-color: #059669; font-weight: 800;
+      box-shadow: 0 3px 10px rgba(16, 185, 129, 0.25);
+    }
+    .lobby-tool-btn.create-card-btn:hover {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4); transform: translateY(-1px);
+    }
 
     .btn-admin-edit-card {
       background: #fef3c7; border: 1px solid #fde68a; color: #92400e;
@@ -1287,6 +1305,10 @@
       <button class="lobby-tool-btn" onclick="openReportHistoryModal()" style="color:#1e40af; border-color:#bfdbfe; background:#eff6ff;">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         📋 ติดตามปัญหา
+      </button>
+      <button class="lobby-tool-btn create-card-btn" id="btnLobbyCreateCard" onclick="openCreateCardPaperModal()" style="display:none;" title="เพิ่ม Flashcard ใหม่ลงในชีต (Admin Only)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        ➕ สร้าง Flashcard ใหม่
       </button>
     </div>
 
@@ -1893,11 +1915,17 @@
         </div>
 
         <div class="paper-meta-strip">
-          <span class="paper-meta-pill">📍 ชีต: <b id="peSheetNameBadge">-</b></span>
+          <span class="paper-meta-pill" id="peSheetPillFixed">📍 ชีต: <b id="peSheetNameBadge">-</b></span>
+          <div id="peSheetSelectWrap" style="display:none; align-items:center; gap:6px;">
+            <span style="font-size:11px; font-weight:700; color:#0369a1;">📍 เลือกชีตหมวด:</span>
+            <select id="peSheetSelect" class="paper-input" style="padding:3px 8px; font-size:11.5px; font-weight:700; width:auto;" onchange="onPeSheetSelectChange()">
+              <!-- Dynamic options -->
+            </select>
+          </div>
           <span class="paper-meta-pill">🔢 แถวที่: <b id="peRowNumBadge">-</b></span>
           <span class="paper-meta-pill">📌 ข้อที่: <b id="peItemNoBadge">-</b></span>
           <span class="paper-meta-pill">🏷️ สายวิชา: <b id="peTrackBadge">Clinic</b></span>
-          <span class="paper-admin-pill">👑 Admin Flashcard Editor</span>
+          <span class="paper-admin-pill" id="peModePill">👑 Admin Flashcard Editor</span>
         </div>
       </div>
 
@@ -2058,6 +2086,10 @@
           <b id="peEditorNameDisplay">Maxnum (ประธานโครงการ)</b>
         </div>
         <div class="paper-btn-group">
+          <button type="button" class="paper-btn-delete" id="btnDeletePaperEditor" onclick="deleteCurrentEditingCard()" style="display:none;" title="ลบ Flashcard นี้ออกจาก Google Sheet">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+            <span id="btnDeletePaperEditorText">🗑️ ลบการ์ดนี้</span>
+          </button>
           <button type="button" class="paper-btn-cancel" onclick="closePaperEditorModal()">✕ ยกเลิก</button>
           <button type="button" class="paper-btn-save" id="btnSavePaperEditor" onclick="savePaperEditorData()">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
@@ -2986,6 +3018,11 @@ window.google.script.run = (function() {
       return d.getFullYear()===now.getFullYear() && d.getMonth()===now.getMonth() && d.getDate()===now.getDate();
     }).length;
     document.getElementById('lobbyStreakBadge').innerHTML = todayTotal > 0 ? `🔥 วันนี้ฝึกไปแล้ว ${todayTotal} ข้อ` : `📚 วันนี้ยังไม่ได้เริ่มฝึก มาลุยกัน!`;
+
+    // Show Create Card Button in Lobby for Admins Only
+    const isAdmin = (typeof isUserAllowedAdmin === 'function') && currentUser && isUserAllowedAdmin(currentUser.username);
+    const btnCreate = document.getElementById('btnLobbyCreateCard');
+    if (btnCreate) btnCreate.style.display = isAdmin ? 'inline-flex' : 'none';
 
     const sel = document.getElementById('lobbyCatSelect');
     sel.innerHTML = '<option value="">🗂 เลือกหมวดวิชาด่วน...</option>';
@@ -4402,7 +4439,9 @@ window.google.script.run = (function() {
       const fnName = payload.action === 'submitSubtopicEvaluation' ? 'submitSubtopicEvaluation' :
                      payload.action === 'reportCardIssue' ? 'reportCardIssue' :
                      payload.action === 'updateCard' ? 'updateCard' :
-                     payload.action === 'updateQuestion' ? 'updateQuestion' : null;
+                     payload.action === 'updateQuestion' ? 'updateQuestion' :
+                     payload.action === 'addCard' ? 'addCard' :
+                     payload.action === 'deleteCard' ? 'deleteCard' : null;
 
       if (fnName && typeof runner[fnName] === 'function') {
         try {
@@ -4703,9 +4742,125 @@ window.google.script.run = (function() {
     openCardPaperEditorModal(card);
   }
 
+  let isCreatingNewCard = false;
+
+  function openCreateCardPaperModal() {
+    if (!isUserAllowedAdmin(currentUser?.username)) {
+      showToast('⚠️ สิทธิ์ Admin เท่านั้นที่สามารถเพิ่ม Flashcard ได้');
+      return;
+    }
+    isCreatingNewCard = true;
+    currentEditingCard = null;
+
+    // Reset fields
+    const idInput = document.getElementById('peCardIdHidden');
+    if (idInput) idInput.value = '';
+
+    // Sheet dropdown setup
+    const sFixed = document.getElementById('peSheetPillFixed');
+    const sWrap = document.getElementById('peSheetSelectWrap');
+    const sSelect = document.getElementById('peSheetSelect');
+    if (sFixed) sFixed.style.display = 'none';
+    if (sWrap) sWrap.style.display = 'inline-flex';
+
+    if (sSelect) {
+      sSelect.innerHTML = '';
+      const visCats = (typeof getVisibleCategories === 'function') ? getVisibleCategories() : (categories || []);
+      const catsList = (visCats && visCats.length) ? visCats : (categories || []);
+      catsList.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.name;
+        opt.textContent = c.name;
+        sSelect.appendChild(opt);
+      });
+      if (sSelect.options.length > 0) {
+        sSelect.selectedIndex = 0;
+      }
+    }
+
+    const defaultSheet = sSelect ? sSelect.value : (currentCategory || (categories[0]?.name || '-'));
+    const targetCatObj = categories ? categories.find(c => c.name === defaultSheet) : null;
+    const defaultTrack = targetCatObj ? (targetCatObj.track || 'Clinic') : (currentTrack || 'Clinic');
+
+    const rBadge = document.getElementById('peRowNumBadge');
+    if (rBadge) rBadge.textContent = 'แถวใหม่ (+)';
+    const iBadge = document.getElementById('peItemNoBadge');
+    if (iBadge) iBadge.textContent = 'Auto (+)';
+    const tBadge = document.getElementById('peTrackBadge');
+    if (tBadge) tBadge.textContent = String(defaultTrack).toUpperCase();
+    const modePill = document.getElementById('peModePill');
+    if (modePill) modePill.textContent = '➕ สร้าง Flashcard ใหม่';
+
+    const itemInput = document.getElementById('peItemNoInput');
+    if (itemInput) itemInput.value = '';
+
+    const qInput = document.getElementById('peQuestionInput');
+    if (qInput) qInput.value = '';
+    const qImgInput = document.getElementById('peQuestionImgInput');
+    if (qImgInput) qImgInput.value = '';
+    updatePaperImagePreview('question');
+
+    const aInput = document.getElementById('peAnswerInput');
+    if (aInput) aInput.value = '';
+    const aImgInput = document.getElementById('peAnswerImgInput');
+    if (aImgInput) aImgInput.value = '';
+    updatePaperImagePreview('answer');
+
+    const subInput = document.getElementById('peSubtopicInput');
+    if (subInput) subInput.value = '';
+    populatePaperSubtopicDatalist(defaultSheet);
+
+    const trkSelect = document.getElementById('peTrackSelect');
+    if (trkSelect) {
+      const trkVal = String(defaultTrack).toLowerCase();
+      trkSelect.value = trkVal === 'product' ? 'Product' : (trkVal === 'sap' ? 'SAP' : 'Clinic');
+    }
+    const noteInput = document.getElementById('peNoteInput');
+    if (noteInput) noteInput.value = '';
+
+    const editorName = document.getElementById('peEditorNameDisplay');
+    if (editorName) {
+      editorName.textContent = currentUser?.displayName ? `${currentUser.displayName} (${currentUser.username})` : 'Maxnum (ประธานโครงการ)';
+    }
+
+    // Hide Delete button when creating new card
+    const btnDel = document.getElementById('btnDeletePaperEditor');
+    if (btnDel) btnDel.style.display = 'none';
+
+    const saveText = document.getElementById('btnSavePaperEditorText');
+    if (saveText) saveText.textContent = '💾 เพิ่ม Flashcard ลง Google Sheet';
+
+    const modal = document.getElementById('adminPaperEditorModal');
+    if (modal) {
+      modal.classList.add('show');
+      const paperSheet = modal.querySelector('.exam-paper-sheet');
+      if (paperSheet) paperSheet.scrollTop = 0;
+    }
+  }
+
+  function onPeSheetSelectChange() {
+    const sSelect = document.getElementById('peSheetSelect');
+    if (!sSelect) return;
+    const selectedSheet = sSelect.value;
+    const catObj = categories ? categories.find(c => c.name === selectedSheet) : null;
+    const trk = catObj ? (catObj.track || 'Clinic') : 'Clinic';
+
+    const tBadge = document.getElementById('peTrackBadge');
+    if (tBadge) tBadge.textContent = String(trk).toUpperCase();
+
+    const trkSelect = document.getElementById('peTrackSelect');
+    if (trkSelect) {
+      const trkVal = String(trk).toLowerCase();
+      trkSelect.value = trkVal === 'product' ? 'Product' : (trkVal === 'sap' ? 'SAP' : 'Clinic');
+    }
+
+    populatePaperSubtopicDatalist(selectedSheet);
+  }
+
   function openCardPaperEditorModal(card) {
     if (!card) return;
     try {
+      isCreatingNewCard = false;
       currentEditingCard = card;
 
       // Extract sheet and row
@@ -4717,6 +4872,12 @@ window.google.script.run = (function() {
         rowNum = parts[1] || '-';
       }
 
+      // Show fixed sheet badge, hide dropdown
+      const sFixed = document.getElementById('peSheetPillFixed');
+      const sWrap = document.getElementById('peSheetSelectWrap');
+      if (sFixed) sFixed.style.display = 'inline-flex';
+      if (sWrap) sWrap.style.display = 'none';
+
       const sBadge = document.getElementById('peSheetNameBadge');
       if (sBadge) sBadge.textContent = sheetName;
       const rBadge = document.getElementById('peRowNumBadge');
@@ -4725,6 +4886,8 @@ window.google.script.run = (function() {
       if (iBadge) iBadge.textContent = card.itemNo || '-';
       const tBadge = document.getElementById('peTrackBadge');
       if (tBadge) tBadge.textContent = (card.track || currentTrack || 'Clinic').toUpperCase();
+      const modePill = document.getElementById('peModePill');
+      if (modePill) modePill.textContent = '👑 Admin Flashcard Editor';
 
       const idInput = document.getElementById('peCardIdHidden');
       if (idInput) idInput.value = card.id || '';
@@ -4779,6 +4942,13 @@ window.google.script.run = (function() {
         editorName.textContent = currentUser?.displayName ? `${currentUser.displayName} (${currentUser.username})` : 'Maxnum (ประธานโครงการ)';
       }
 
+      // Show Delete button for existing card
+      const btnDel = document.getElementById('btnDeletePaperEditor');
+      if (btnDel) btnDel.style.display = 'inline-flex';
+
+      const saveText = document.getElementById('btnSavePaperEditorText');
+      if (saveText) saveText.textContent = '💾 บันทึก & ซิงค์ลง Google Sheet';
+
       const modal = document.getElementById('adminPaperEditorModal');
       if (modal) {
         modal.classList.add('show');
@@ -4795,6 +4965,77 @@ window.google.script.run = (function() {
     const modal = document.getElementById('adminPaperEditorModal');
     if (modal) modal.classList.remove('show');
     currentEditingCard = null;
+    isCreatingNewCard = false;
+  }
+
+  async function deleteCurrentEditingCard() {
+    if (!isUserAllowedAdmin(currentUser?.username)) {
+      showToast('⚠️ สิทธิ์ Admin เท่านั้นที่สามารถลบ Flashcard ได้');
+      return;
+    }
+
+    const card = currentEditingCard;
+    const cardId = document.getElementById('peCardIdHidden')?.value || (card?.id || '');
+    if (!cardId || !cardId.includes('::')) {
+      showToast('⚠️ ไม่พบรหัสการ์ดที่ต้องการลบ');
+      return;
+    }
+
+    const qPreview = (document.getElementById('peQuestionInput')?.value || card?.question || '').substring(0, 80);
+    const confirmMsg = `❗ ยืนยันการลบ Flashcard นี้ออกจาก Google Sheet ใช่หรือไม่?\n\nรหัส: ${cardId}\nโจทย์: "${qPreview}..."\n\n(ระบบจะบันทึก Snapshot ไว้ใน Log_Card_Edits เพื่อความปลอดภัย)`;
+    if (!confirm(confirmMsg)) return;
+
+    const delBtn = document.getElementById('btnDeletePaperEditor');
+    const origHtml = delBtn ? delBtn.innerHTML : '';
+    if (delBtn) {
+      delBtn.disabled = true;
+      delBtn.innerHTML = '⏳ กำลังลบ...';
+    }
+
+    const payload = {
+      action: 'deleteCard',
+      cardId: cardId,
+      editorUsername: currentUser?.username || 'admin',
+      editorName: currentUser?.displayName || 'Administrator'
+    };
+
+    // 1. Instant 0ms Local State Removal
+    const removeCardFromArr = (arr) => {
+      if (!Array.isArray(arr)) return;
+      const idx = arr.findIndex(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+      if (idx !== -1) arr.splice(idx, 1);
+    };
+
+    removeCardFromArr(viewCards);
+    removeCardFromArr(allCards);
+    removeCardFromArr(browseCardsCache);
+
+    // Refresh views
+    if (currentAppMode === 'study') {
+      if (currentIndex >= viewCards.length) {
+        currentIndex = Math.max(0, viewCards.length - 1);
+      }
+      renderCard();
+      renderProgress();
+    } else if (currentAppMode === 'browse') {
+      renderBrowseTable();
+    }
+
+    // 2. Remote GAS Sync
+    try {
+      await sendFeedbackToGAS(payload);
+      showToast(`🗑️ ลบ Flashcard ${cardId} สำเร็จเรียบร้อย`);
+      closePaperEditorModal();
+    } catch (err) {
+      console.error('Delete card sync error:', err);
+      showToast('⚠️ ลบการ์ดบนเว็บแล้ว แต่การลบใน Google Sheets ขัดข้อง: ' + err.message);
+      closePaperEditorModal();
+    } finally {
+      if (delBtn) {
+        delBtn.disabled = false;
+        delBtn.innerHTML = origHtml;
+      }
+    }
   }
 
   function updatePaperImagePreview(type) {
@@ -5054,7 +5295,30 @@ window.google.script.run = (function() {
     questionText = stripMarkdown(questionText);
     answerText = stripMarkdown(answerText);
 
-    const payload = {
+    let targetSheetName = '';
+    if (isCreatingNewCard) {
+      const sSelect = document.getElementById('peSheetSelect');
+      targetSheetName = sSelect ? sSelect.value : (currentCategory || (categories[0]?.name || ''));
+      if (!targetSheetName) {
+        showToast('⚠️ กรุณาเลือกชีตหมวดหมู่ที่ต้องการเพิ่มการ์ด');
+        return;
+      }
+    }
+
+    const payload = isCreatingNewCard ? {
+      action: 'addCard',
+      sheetName: targetSheetName,
+      itemNo: itemNo,
+      question: questionText,
+      questionImage: questionImg,
+      answer: answerText,
+      answerImage: answerImg,
+      subtopic: subtopic || targetSheetName,
+      track: track,
+      note: note,
+      editorUsername: currentUser?.username || 'admin',
+      editorName: currentUser?.displayName || 'Administrator'
+    } : {
       action: 'updateCard',
       cardId: cardId,
       itemNo: itemNo,
@@ -5070,37 +5334,74 @@ window.google.script.run = (function() {
     };
 
     // 1. Snappy Local State Update (0ms immediate render)
-    const patchCardObj = (target) => {
-      if (!target) return;
-      target.itemNo = itemNo;
-      target.question = questionText.replace(/\n/g, '<br>');
-      target.questionImage = questionImg;
-      target.answer = answerText.replace(/\n/g, '<br>');
-      target.answerImage = answerImg;
-      target.subTopic = subtopic;
-      target.track = track;
-      target.note = note;
-    };
+    if (isCreatingNewCard) {
+      const tempId = `${targetSheetName}::temp_${Date.now()}`;
+      const newCardObj = {
+        id: tempId,
+        itemNo: itemNo || String((allCards ? allCards.length : 0) + 1),
+        group: targetSheetName,
+        subTopic: subtopic || targetSheetName,
+        track: track,
+        question: questionText.replace(/\n/g, '<br>'),
+        questionImage: questionImg,
+        answer: answerText.replace(/\n/g, '<br>'),
+        answerImage: answerImg,
+        note: note
+      };
 
-    if (currentEditingCard) patchCardObj(currentEditingCard);
-    if (typeof viewCards !== 'undefined' && Array.isArray(viewCards)) {
-      const found = viewCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
-      if (found) patchCardObj(found);
-    }
-    if (typeof allCards !== 'undefined' && Array.isArray(allCards)) {
-      const found = allCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
-      if (found) patchCardObj(found);
-    }
-    if (typeof browseCardsCache !== 'undefined' && Array.isArray(browseCardsCache)) {
-      const found = browseCardsCache.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
-      if (found) patchCardObj(found);
+      if (typeof allCards !== 'undefined' && Array.isArray(allCards)) {
+        allCards.push(newCardObj);
+      }
+      if (typeof browseCardsCache !== 'undefined' && Array.isArray(browseCardsCache)) {
+        browseCardsCache.push(newCardObj);
+      }
+      if (typeof viewCards !== 'undefined' && Array.isArray(viewCards)) {
+        if (!currentCategory || currentCategory === targetSheetName) {
+          viewCards.push(newCardObj);
+        }
+      }
+
+      // Update category count in memory
+      if (categories && Array.isArray(categories)) {
+        const foundCat = categories.find(c => c.name === targetSheetName);
+        if (foundCat) foundCat.count = (foundCat.count || 0) + 1;
+      }
+    } else {
+      const patchCardObj = (target) => {
+        if (!target) return;
+        target.itemNo = itemNo;
+        target.question = questionText.replace(/\n/g, '<br>');
+        target.questionImage = questionImg;
+        target.answer = answerText.replace(/\n/g, '<br>');
+        target.answerImage = answerImg;
+        target.subTopic = subtopic;
+        target.track = track;
+        target.note = note;
+      };
+
+      if (currentEditingCard) patchCardObj(currentEditingCard);
+      if (typeof viewCards !== 'undefined' && Array.isArray(viewCards)) {
+        const found = viewCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+        if (found) patchCardObj(found);
+      }
+      if (typeof allCards !== 'undefined' && Array.isArray(allCards)) {
+        const found = allCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+        if (found) patchCardObj(found);
+      }
+      if (typeof browseCardsCache !== 'undefined' && Array.isArray(browseCardsCache)) {
+        const found = browseCardsCache.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+        if (found) patchCardObj(found);
+      }
     }
 
     // Refresh active views
     if (currentAppMode === 'study') {
       renderCard();
+      renderProgress();
     } else if (currentAppMode === 'browse') {
       renderBrowseTable();
+    } else if (currentAppMode === 'lobby') {
+      buildLobby();
     }
 
     // 2. Remote Google Apps Script Sync
@@ -5112,11 +5413,25 @@ window.google.script.run = (function() {
     }
 
     try {
-      await sendFeedbackToGAS(payload);
-      showToast('✅ อัปเดต Google Sheet และหน้าเว็บสำเร็จเรียบร้อย!');
+      const res = await sendFeedbackToGAS(payload);
+      if (isCreatingNewCard && res && res.cardId) {
+        // Update temp ID to actual row ID
+        const updateTempId = (arr) => {
+          if (!Array.isArray(arr)) return;
+          const tempFound = arr.find(c => c && c.id && c.id.startsWith(`${targetSheetName}::temp_`));
+          if (tempFound) {
+            tempFound.id = res.cardId;
+            if (res.itemNo) tempFound.itemNo = String(res.itemNo);
+          }
+        };
+        updateTempId(viewCards);
+        updateTempId(allCards);
+        updateTempId(browseCardsCache);
+      }
+      showToast(isCreatingNewCard ? '🎉 สร้าง Flashcard ใหม่ลง Google Sheet เรียบร้อย!' : '✅ อัปเดต Google Sheet และหน้าเว็บสำเร็จเรียบร้อย!');
       closePaperEditorModal();
     } catch (err) {
-      console.error('Error syncing card update to GAS:', err);
+      console.error('Error syncing card update/add to GAS:', err);
       showToast('⚠️ บันทึกในระบบเว็บแล้ว แต่การเชื่อมต่อ Google Sheets มีข้อขัดข้อง: ' + err.message);
       closePaperEditorModal();
     } finally {
