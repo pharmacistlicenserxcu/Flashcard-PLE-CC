@@ -646,13 +646,13 @@
     .app-copyright-footer a { color: var(--clinic); text-decoration: none; font-weight: 700; cursor: pointer; }
     .app-copyright-footer a:hover { text-decoration: underline; }
 
-    .sheet-scrim { position: absolute; inset: 0; background: var(--sheet-scrim); display: none; z-index: 50; backdrop-filter: blur(3px); }
+    .sheet-scrim { position: fixed; inset: 0; background: var(--sheet-scrim); display: none; z-index: 999; backdrop-filter: blur(3px); }
     .sheet-scrim.show { display: block; }
     .sheet {
-      position: absolute; left: 0; right: 0; bottom: 0; z-index: 60; background: var(--card);
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; background: var(--card);
       border-radius: 22px 22px 0 0; padding: 12px 20px 24px; transform: translateY(110%);
-      transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1); box-shadow: 0 -10px 30px rgba(0,0,0,0.14);
-      max-height: 80%; overflow-y: auto;
+      transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1); box-shadow: 0 -10px 30px rgba(0,0,0,0.18);
+      max-height: 80vh; overflow-y: auto; max-width: 680px; margin: 0 auto;
     }
     .sheet.show { transform: translateY(0); }
     .sheet-handle { width: 36px; height: 4px; background: var(--border-dark); border-radius: 3px; margin: 4px auto 14px; }
@@ -3718,8 +3718,13 @@ window.google.script.run = (function() {
   }
 
   function toggleSheet(open) {
-    document.getElementById('sheet').classList.toggle('show', open);
-    document.getElementById('scrim').classList.toggle('show', open);
+    const s = document.getElementById('sheet');
+    const sc = document.getElementById('scrim');
+    if (!s || !sc) return;
+    const shouldOpen = (typeof open === 'boolean') ? open : !s.classList.contains('show');
+    s.classList.toggle('show', shouldOpen);
+    sc.classList.toggle('show', shouldOpen);
+    document.body.style.overflow = shouldOpen ? 'hidden' : '';
   }
 
   function switchAppMode(mode) {
