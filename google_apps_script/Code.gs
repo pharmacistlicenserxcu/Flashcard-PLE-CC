@@ -17,6 +17,21 @@ function doGet(e) {
       return jsonResponse_({ success: true, message: 'PharmaCU Flashcard API is Live 🚀', timestamp: new Date().toISOString() });
     }
 
+    // 1.1 Action: แก้ไข/อัปเดต Flashcard (GET Fallback)
+    if (action === 'updateCard' || action === 'updateQuestion') {
+      return jsonResponse_(handleCardUpdate_(params));
+    }
+
+    // 1.2 Action: เพิ่ม Flashcard ใหม่ (GET Fallback)
+    if (action === 'addCard' || action === 'createCard') {
+      return jsonResponse_(handleAddCard_(params));
+    }
+
+    // 1.3 Action: ลบ Flashcard (GET Fallback)
+    if (action === 'deleteCard' || action === 'removeCard') {
+      return jsonResponse_(handleDeleteCard_(params));
+    }
+
     // 2. Action: ดึงข้อมูลการ์ดทั้งหมดในแผ่นชีตที่ระบุ (เร็วมาก < 1 วินาที)
     if (action === 'getCards') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -116,6 +131,9 @@ function doPost(e) {
     }
 
     const action = data.action || '';
+    if (action === 'ping') {
+      return jsonResponse_({ success: true, message: 'PharmaCU Flashcard API is Live 🚀 (POST)', timestamp: new Date().toISOString() });
+    }
     if (action === 'updateCard' || action === 'updateQuestion') {
       return jsonResponse_(handleCardUpdate_(data));
     }
