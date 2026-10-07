@@ -2473,6 +2473,7 @@ window.google.script.run = (function() {
       
       getCategories: function(bypassCache, trackFilter) {
         setTimeout(function() {
+          if (typeof applyAdminFCLocalOverrides === 'function') applyAdminFCLocalOverrides();
           var cats = window.OFFLINE_CATEGORIES || [];
           if (!trackFilter || trackFilter === 'all') {
             if (successFn) successFn(cats);
@@ -2495,6 +2496,7 @@ window.google.script.run = (function() {
       
       getFlashcards: function(catName, subTopic, bypassCache) {
         setTimeout(function() {
+          if (typeof applyAdminFCLocalOverrides === 'function') applyAdminFCLocalOverrides();
           var cards = (window.OFFLINE_CARDS && window.OFFLINE_CARDS[catName]) || [];
           if (subTopic && subTopic !== '__all__') {
             cards = cards.filter(function(c) {
@@ -2526,6 +2528,7 @@ window.google.script.run = (function() {
       
       getAllFlashcards: function(trackFilter) {
         setTimeout(function() {
+          if (typeof applyAdminFCLocalOverrides === 'function') applyAdminFCLocalOverrides();
           var allMap = window.OFFLINE_ALL_CARDS_BY_TRACK || {};
           var trackKey = trackFilter ? trackFilter.toLowerCase() : 'all';
           var list = allMap[trackKey] || allMap['all'] || [];
@@ -2620,6 +2623,127 @@ window.google.script.run = (function() {
 </script>
 
 <script>
+
+  // ─── ADMIN FLASHCARD LOCAL OVERRIDES STORAGE (Persistent Across Page Reloads) ───
+  const LS_ADMIN_FC_OVERRIDES = 'ple_fc_admin_overrides_v1';
+
+  function getAdminFCOverrides() {
+    try {
+      const raw = localStorage.getItem(LS_ADMIN_FC_OVERRIDES);
+      if (!raw) return { edits: {}, deleted: [] };
+      const parsed = JSON.parse(raw);
+      return {
+        edits: (parsed && typeof parsed.edits === 'object') ? parsed.edits : {},
+        deleted: (parsed && Array.isArray(parsed.deleted)) ? parsed.deleted : []
+      };
+    } catch(e) {
+      return { edits: {}, deleted: [] };
+    }
+  }
+
+  function saveAdminFCLocalOverride(cardObj) {
+    if (!cardObj || !cardObj.id) return;
+    try {
+      const data = getAdminFCOverrides();
+      data.deleted = (data.deleted || []).filter(id => id !== cardObj.id && String(id) !== String(cardObj.id));
+      data.edits[cardObj.id] = cardObj;
+      localStorage.setItem(LS_ADMIN_FC_OVERRIDES, JSON.stringify(data));
+      // Invalidate relevant deck caches so fresh overrides are served
+      if (cardObj.group) {
+        localStorage.removeItem(CACHE_KEY_DECK_PREFIX + cardObj.group);
+      }
+      clearAllLocalCache();
+    } catch(e) {
+      console.warn('saveAdminFCLocalOverride storage warning:', e);
+    }
+  }
+
+  function deleteAdminFCLocalOverride(cardId, cardGroup) {
+    if (!cardId) return;
+    try {
+      const data = getAdminFCOverrides();
+      if (data.edits && data.edits[cardId]) delete data.edits[cardId];
+      if (!data.deleted) data.deleted = [];
+      if (!data.deleted.includes(cardId)) data.deleted.push(cardId);
+      localStorage.setItem(LS_ADMIN_FC_OVERRIDES, JSON.stringify(data));
+      if (cardGroup) {
+        localStorage.removeItem(CACHE_KEY_DECK_PREFIX + cardGroup);
+      }
+      clearAllLocalCache();
+    } catch(e) {
+      console.warn('deleteAdminFCLocalOverride storage warning:', e);
+    }
+  }
+
+  function applyAdminFCLocalOverrides() {
+    try {
+      const overrides = getAdminFCOverrides();
+      if (!overrides) return;
+      const deletedSet = new Set(overrides.deleted || []);
+      const editsMap = overrides.edits || {};
+      const editedIds = Object.keys(editsMap);
+
+      if (deletedSet.size === 0 && editedIds.length === 0) return;
+
+      // 1. Apply to window.OFFLINE_CARDS (Deck-by-Deck map)
+      if (window.OFFLINE_CARDS && typeof window.OFFLINE_CARDS === 'object') {
+        for (const cat in window.OFFLINE_CARDS) {
+          if (Array.isArray(window.OFFLINE_CARDS[cat])) {
+            // A. Remove deleted cards
+            if (deletedSet.size > 0) {
+              window.OFFLINE_CARDS[cat] = window.OFFLINE_CARDS[cat].filter(c => c && !deletedSet.has(c.id) && !deletedSet.has(String(c.id)));
+            }
+            // B. Patch edited cards
+            window.OFFLINE_CARDS[cat].forEach(c => {
+              if (c && editsMap[c.id]) {
+                Object.assign(c, editsMap[c.id]);
+              }
+            });
+          }
+        }
+
+        // C. Inject newly added cards
+        for (const cId of editedIds) {
+          const editedCard = editsMap[cId];
+          if (!editedCard || !editedCard.group) continue;
+          if (!window.OFFLINE_CARDS[editedCard.group]) {
+            window.OFFLINE_CARDS[editedCard.group] = [];
+          }
+          const existing = window.OFFLINE_CARDS[editedCard.group].find(c => c && (c.id === cId || String(c.id) === String(cId)));
+          if (!existing) {
+            window.OFFLINE_CARDS[editedCard.group].push(editedCard);
+          }
+        }
+      }
+
+      // 2. Apply to window.OFFLINE_ALL_CARDS_BY_TRACK
+      if (window.OFFLINE_ALL_CARDS_BY_TRACK && typeof window.OFFLINE_ALL_CARDS_BY_TRACK === 'object') {
+        for (const tKey in window.OFFLINE_ALL_CARDS_BY_TRACK) {
+          if (Array.isArray(window.OFFLINE_ALL_CARDS_BY_TRACK[tKey])) {
+            if (deletedSet.size > 0) {
+              window.OFFLINE_ALL_CARDS_BY_TRACK[tKey] = window.OFFLINE_ALL_CARDS_BY_TRACK[tKey].filter(c => c && !deletedSet.has(c.id) && !deletedSet.has(String(c.id)));
+            }
+            window.OFFLINE_ALL_CARDS_BY_TRACK[tKey].forEach(c => {
+              if (c && editsMap[c.id]) {
+                Object.assign(c, editsMap[c.id]);
+              }
+            });
+          }
+        }
+      }
+
+      // 3. Update category counts in window.OFFLINE_CATEGORIES
+      if (window.OFFLINE_CATEGORIES && Array.isArray(window.OFFLINE_CATEGORIES)) {
+        window.OFFLINE_CATEGORIES.forEach(cat => {
+          if (window.OFFLINE_CARDS && Array.isArray(window.OFFLINE_CARDS[cat.name])) {
+            cat.count = window.OFFLINE_CARDS[cat.name].length;
+          }
+        });
+      }
+    } catch(err) {
+      console.warn('applyAdminFCLocalOverrides error:', err);
+    }
+  }
 
   // ─── HIGH-PERFORMANCE RESPONSIVE CACHE (SMART AUTO-INVALIDATION) ───
   const CACHE_TTL_MS = 2 * 60 * 1000; // 2 Minutes Responsive Cache (No more getting stuck on old data!)
@@ -2921,6 +3045,11 @@ window.google.script.run = (function() {
 
   // ─── LOAD APP DATA (INSTANT CACHE + BACKGROUND SYNC) ───
   function loadApp() {
+    // 0. Merge Persistent Admin Overrides first (Guarantees edits persist across F5!)
+    if (typeof applyAdminFCLocalOverrides === 'function') {
+      applyAdminFCLocalOverrides();
+    }
+
     // 1. Check local cache first for INSTANT 0ms render
     const cachedCats = getLocalCache(CACHE_KEY_CATS);
     if (cachedCats && Array.isArray(cachedCats) && cachedCats.length > 0) {
@@ -5049,6 +5178,9 @@ window.google.script.run = (function() {
     removeCardFromArr(allCards);
     removeCardFromArr(browseCardsCache);
 
+    // Save to persistent overrides so it stays deleted after reload!
+    deleteAdminFCLocalOverride(cardId, card?.group);
+
     // Refresh views
     if (currentAppMode === 'study') {
       if (currentIndex >= viewCards.length) {
@@ -5443,43 +5575,72 @@ window.google.script.run = (function() {
       buildLobby();
     }
 
-    // 2. Remote Google Apps Script Sync
-    const saveBtn = document.getElementById('btnSavePaperEditor');
-    const originalBtnHtml = saveBtn ? saveBtn.innerHTML : '';
-    if (saveBtn) {
-      saveBtn.disabled = true;
-      saveBtn.innerHTML = '⏳ กำลังบันทึกลง Google Sheets...';
-    }
-
-    try {
-      const res = await sendFeedbackToGAS(payload);
-      if (isCreatingNewCard && res && res.cardId) {
-        // Update temp ID to actual row ID
-        const updateTempId = (arr) => {
-          if (!Array.isArray(arr)) return;
-          const tempFound = arr.find(c => c && c.id && c.id.startsWith(`${targetSheetName}::temp_`));
-          if (tempFound) {
-            tempFound.id = res.cardId;
-            if (res.itemNo) tempFound.itemNo = String(res.itemNo);
-          }
+      if (isCreatingNewCard) {
+        saveAdminFCLocalOverride(newCardObj);
+      } else {
+        const updatedCopy = {
+          id: cardId,
+          itemNo: itemNo,
+          group: currentEditingCard?.group || (cardId.split('::')[0] || ''),
+          subTopic: subtopic,
+          track: track,
+          question: questionText.replace(/\n/g, '<br>'),
+          questionImage: questionImg,
+          answer: answerText.replace(/\n/g, '<br>'),
+          answerImage: answerImg,
+          note: note
         };
-        updateTempId(viewCards);
-        updateTempId(allCards);
-        updateTempId(browseCardsCache);
+        saveAdminFCLocalOverride(updatedCopy);
       }
-      showToast(isCreatingNewCard ? '🎉 สร้าง Flashcard ใหม่ลง Google Sheet เรียบร้อย!' : '✅ อัปเดต Google Sheet และหน้าเว็บสำเร็จเรียบร้อย!');
-      closePaperEditorModal();
-    } catch (err) {
-      console.error('Error syncing card update/add to GAS:', err);
-      showToast('⚠️ บันทึกในระบบเว็บแล้ว แต่การเชื่อมต่อ Google Sheets มีข้อขัดข้อง: ' + err.message);
-      closePaperEditorModal();
-    } finally {
+
+      // 2. Remote Google Apps Script Sync
+      const saveBtn = document.getElementById('btnSavePaperEditor');
+      const originalBtnHtml = saveBtn ? saveBtn.innerHTML : '';
       if (saveBtn) {
-        saveBtn.disabled = false;
-        saveBtn.innerHTML = originalBtnHtml;
+        saveBtn.disabled = true;
+        saveBtn.innerHTML = '⏳ กำลังบันทึกลง Google Sheets...';
+      }
+
+      try {
+        const res = await sendFeedbackToGAS(payload);
+        if (res && res.questionImage && res.questionImage.startsWith('http')) {
+          // If GAS returned hosted Google Drive image, replace Base64 to save local storage!
+          const targetCard = isCreatingNewCard ? newCardObj : currentEditingCard;
+          if (targetCard) {
+            targetCard.questionImage = res.questionImage;
+            if (res.answerImage) targetCard.answerImage = res.answerImage;
+            saveAdminFCLocalOverride(targetCard);
+          }
+        }
+
+        if (isCreatingNewCard && res && res.cardId) {
+          // Update temp ID to actual row ID
+          const updateTempId = (arr) => {
+            if (!Array.isArray(arr)) return;
+            const tempFound = arr.find(c => c && c.id && c.id.startsWith(`${targetSheetName}::temp_`));
+            if (tempFound) {
+              tempFound.id = res.cardId;
+              if (res.itemNo) tempFound.itemNo = String(res.itemNo);
+              saveAdminFCLocalOverride(tempFound);
+            }
+          };
+          updateTempId(viewCards);
+          updateTempId(allCards);
+          updateTempId(browseCardsCache);
+        }
+        showToast(isCreatingNewCard ? '🎉 สร้าง Flashcard ใหม่ลง Google Sheet เรียบร้อย!' : '✅ อัปเดต Google Sheet และหน้าเว็บสำเร็จเรียบร้อย!');
+        closePaperEditorModal();
+      } catch (err) {
+        console.error('Error syncing card update/add to GAS:', err);
+        showToast('⚠️ บันทึกในระบบเว็บแล้ว แต่การเชื่อมต่อ Google Sheets มีข้อขัดข้อง: ' + err.message);
+        closePaperEditorModal();
+      } finally {
+        if (saveBtn) {
+          saveBtn.disabled = false;
+          saveBtn.innerHTML = originalBtnHtml;
+        }
       }
     }
-  }
 </script>
 
 </body>

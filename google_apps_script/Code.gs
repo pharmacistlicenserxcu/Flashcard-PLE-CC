@@ -322,8 +322,17 @@ function handleCardUpdate_(data) {
     const editor = String(data.editorName || data.editorUsername || 'Admin');
     const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
     const newAnswer = String(data.answer || data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
-    const newQImg = String(data.questionImage || '').trim();
-    const newAImg = String(data.answerImage || '').trim();
+    let newQImg = String(data.questionImage || '').trim();
+    let newAImg = String(data.answerImage || '').trim();
+
+    // หากส่งรูปมาเป็น Base64 ให้เซฟลง Google Drive โฟลเดอร์ PLE_Flashcard_Images
+    if (newQImg.startsWith('data:image/')) {
+      newQImg = saveBase64ImageToDrive_(newQImg, sheetName, rowNum, 'Q');
+    }
+    if (newAImg.startsWith('data:image/')) {
+      newAImg = saveBase64ImageToDrive_(newAImg, sheetName, rowNum, 'A');
+    }
+
     const newSubtopic = String(data.subtopic || data.subTopic || '').replace(/\*\*/g, '').trim();
     const newNote = String(data.note || '').replace(/\*\*/g, '').trim();
     const newTrack = String(data.track || 'Clinic').trim();
@@ -344,13 +353,18 @@ function handleCardUpdate_(data) {
       "Updated"
     ]);
 
+    // Format for Google Sheets cell:
+    // If we have a direct URL, format as =IMAGE("url") so Google Sheets renders the real picture!
+    const qImgCellValue = (newQImg && newQImg.startsWith('http')) ? `=IMAGE("${newQImg}")` : newQImg;
+    const aImgCellValue = (newAImg && newAImg.startsWith('http')) ? `=IMAGE("${newAImg}")` : newAImg;
+
     // เขียนทับคอลัมน์ A ถึง H (8 คอลัมน์) ในแถวที่ระบุ
     const updateRow = [
       newItemNo,        // Col A (1): เลขข้อ
       newQuestion,      // Col B (2): คำถาม / โจทย์
-      newQImg,          // Col C (3): รูปคำถาม
+      qImgCellValue,    // Col C (3): รูปคำถาม
       newAnswer,        // Col D (4): คำตอบ
-      newAImg,          // Col E (5): รูปคำตอบ
+      aImgCellValue,    // Col E (5): รูปคำตอบ
       newSubtopic,      // Col F (6): หัวข้อย่อย
       newNote,          // Col G (7): หมายเหตุ
       newTrack          // Col H (8): สายวิชา (Clinic / Product / SAP)
@@ -363,7 +377,9 @@ function handleCardUpdate_(data) {
       message: `บันทึก Flashcard ลง Google Sheet แถวที่ ${rowNum} สำเร็จแล้ว`,
       cardId: cardId,
       sheet: sheetName,
-      row: rowNum
+      row: rowNum,
+      questionImage: newQImg,
+      answerImage: newAImg
     };
   } catch (err) {
     return { success: false, error: 'บันทึกลง Google Sheet ล้มเหลว: ' + err.toString() };
@@ -406,8 +422,17 @@ function handleAddCard_(data) {
     const editor = String(data.editorName || data.editorUsername || 'Admin');
     const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
     const newAnswer = String(data.answer || data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
-    const newQImg = String(data.questionImage || '').trim();
-    const newAImg = String(data.answerImage || '').trim();
+    let newQImg = String(data.questionImage || '').trim();
+    let newAImg = String(data.answerImage || '').trim();
+
+    // หากส่งรูปมาเป็น Base64 ให้เซฟลง Google Drive โฟลเดอร์ PLE_Flashcard_Images
+    if (newQImg.startsWith('data:image/')) {
+      newQImg = saveBase64ImageToDrive_(newQImg, sheetName, actualRow, 'Q');
+    }
+    if (newAImg.startsWith('data:image/')) {
+      newAImg = saveBase64ImageToDrive_(newAImg, sheetName, actualRow, 'A');
+    }
+
     const newSubtopic = String(data.subtopic || data.subTopic || sheetName).replace(/\*\*/g, '').trim();
     const newNote = String(data.note || '').replace(/\*\*/g, '').trim();
     const newTrack = String(data.track || 'Clinic').trim();
@@ -441,12 +466,15 @@ function handleAddCard_(data) {
       "Created"
     ]);
 
+    const qImgCellValue = (newQImg && newQImg.startsWith('http')) ? `=IMAGE("${newQImg}")` : newQImg;
+    const aImgCellValue = (newAImg && newAImg.startsWith('http')) ? `=IMAGE("${newAImg}")` : newAImg;
+
     const newRow = [
       nextItemNo,
       newQuestion,
-      newQImg,
+      qImgCellValue,
       newAnswer,
-      newAImg,
+      aImgCellValue,
       newSubtopic,
       newNote,
       newTrack
@@ -460,7 +488,9 @@ function handleAddCard_(data) {
       cardId: newCardId,
       sheet: sheetName,
       row: actualRow,
-      itemNo: nextItemNo
+      itemNo: nextItemNo,
+      questionImage: newQImg,
+      answerImage: newAImg
     };
   } catch (err) {
     return { success: false, error: 'สร้าง Flashcard ล้มเหลว: ' + err.toString() };
@@ -611,12 +641,66 @@ function resolveImageUrl_(val, sheetName, rowNum, colIdx, inCellImages) {
     return inCellImages[sheetName + '_r' + rowNum + '_c' + colIdx] || '';
   }
 
-  // 2. ถ้าเป็น URL หรือ Path ปกติ
+  // 2. ถ้าเป็นสูตร =IMAGE("url")
+  if (sVal.startsWith('=IMAGE(') || sVal.startsWith('=image(')) {
+    const match = sVal.match(/=IMAGE\s*\(\s*["']([^"']+)["']/i);
+    if (match && match[1]) return match[1];
+  }
+
+  // 3. ถ้าเป็น URL หรือ Path ปกติ
   if (sVal.indexOf('http') === 0 || sVal.indexOf('images/') === 0 || sVal.indexOf('drive.google') !== -1) {
     return sVal;
   }
 
   return inCellImages[sheetName + '_r' + rowNum + '_c' + colIdx] || '';
+}
+
+/**
+ * บันทึกรูปภาพ Base64 ลงใน Google Drive โฟลเดอร์ PLE_Flashcard_Images พร้อมตั้งสิทธิ์ Public View
+ * คืนค่าเป็น Direct Image URL: https://lh3.googleusercontent.com/d/{fileId}
+ */
+function saveBase64ImageToDrive_(base64Data, sheetName, rowNum, prefix) {
+  if (!base64Data) return '';
+  const s = String(base64Data).trim();
+  if (!s.startsWith('data:image/')) {
+    return s;
+  }
+
+  try {
+    const parts = s.split(',');
+    if (parts.length < 2) return '';
+    const header = parts[0];
+    const rawBase64 = parts[1];
+    const mimeMatch = header.match(/:(.*?);/);
+    const mimeType = mimeMatch ? mimeMatch[1] : 'image/jpeg';
+    const ext = (mimeType.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
+    const bytes = Utilities.base64Decode(rawBase64);
+    const fileName = `PLE_FC_${prefix}_${sheetName.replace(/[^\w]/g, '_')}_R${rowNum}_${Date.now()}.${ext}`;
+    const blob = Utilities.newBlob(bytes, mimeType, fileName);
+
+    let folder = null;
+    const folderName = 'PLE_Flashcard_Images';
+    const iter = DriveApp.getFoldersByName(folderName);
+    if (iter.hasNext()) {
+      folder = iter.next();
+    } else {
+      folder = DriveApp.createFolder(folderName);
+      try {
+        folder.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+      } catch(e) {}
+    }
+
+    const file = folder.createFile(blob);
+    try {
+      file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+    } catch(e) {}
+
+    const fileId = file.getId();
+    return `https://lh3.googleusercontent.com/d/${fileId}`;
+  } catch(err) {
+    console.error('Error saving image to Drive:', err);
+    return '';
+  }
 }
 
 /**
