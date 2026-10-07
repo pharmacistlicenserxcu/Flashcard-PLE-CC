@@ -1015,6 +1015,43 @@
       background: #e0f2fe; border-color: #7dd3fc; color: #0369a1;
     }
 
+    /* Rich Text Formatting Toolbar */
+    .paper-rich-toolbar {
+      display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
+      background: #f1f5f9; border: 1.5px solid #cbd5e1; border-bottom: none;
+      border-radius: 10px 10px 0 0; padding: 6px 10px; margin-top: 6px;
+    }
+    .paper-tool-btn {
+      min-width: 28px; height: 28px; padding: 2px 7px; border-radius: 6px;
+      border: 1px solid #cbd5e1; background: #ffffff; color: #1e293b;
+      font-size: 12.5px; font-weight: 700; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: all 0.12s ease; font-family: inherit;
+    }
+    .paper-tool-btn:hover {
+      background: #e2e8f0; border-color: #94a3b8; color: #0284c7;
+    }
+    .paper-tool-btn.active {
+      background: #0284c7; color: #ffffff; border-color: #0284c7;
+    }
+    .paper-tool-sep {
+      width: 1px; height: 18px; background: #cbd5e1; margin: 0 4px;
+    }
+    .paper-color-dot {
+      width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15);
+      cursor: pointer; transition: transform 0.12s ease; display: inline-block;
+    }
+    .paper-color-dot:hover { transform: scale(1.25); }
+
+    .paper-paste-zone {
+      border: 1.5px dashed #cbd5e1; border-radius: 9px; padding: 10px 14px;
+      background: #f8fafc; text-align: center; cursor: pointer;
+      transition: all 0.15s ease; margin-top: 6px;
+    }
+    .paper-paste-zone:hover, .paper-paste-zone.dragover {
+      background: #f0f9ff; border-color: #0284c7;
+    }
+
     .paper-img-preview-box {
       margin-top: 8px; padding: 8px; border-radius: 9px;
       border: 1px dashed #cbd5e1; background: #f8fafc;
@@ -1876,21 +1913,52 @@
             <input type="text" id="peItemNoInput" style="width:65px; padding:4px 8px; border:1.5px solid #cbd5e1; border-radius:6px; font-weight:700; font-size:12px; text-align:center;">
           </div>
         </div>
-        <textarea class="paper-textarea" id="peQuestionInput" rows="4" placeholder="พิมพ์ข้อความโจทย์หรือคำถามหน้าการ์ด..."></textarea>
 
-        <!-- Question Image Input & Live Preview -->
+        <!-- Question Rich Toolbar -->
+        <div class="paper-rich-toolbar">
+          <button type="button" class="paper-tool-btn" onclick="applyTextFormat('peQuestionInput', 'bold')" title="ตัวหนา"><b>B</b></button>
+          <button type="button" class="paper-tool-btn" onclick="applyTextFormat('peQuestionInput', 'italic')" title="ตัวเอียง"><i>I</i></button>
+          <button type="button" class="paper-tool-btn" onclick="applyTextFormat('peQuestionInput', 'underline')" title="ขีดเส้นใต้"><u>U</u></button>
+          <span class="paper-tool-sep"></span>
+          <span style="font-size:10.5px; color:#64748b; font-weight:600;">สี:</span>
+          <span class="paper-color-dot" style="background:#dc2626;" onclick="applyTextFormat('peQuestionInput', 'color', '#dc2626')" title="สีแดง"></span>
+          <span class="paper-color-dot" style="background:#2563eb;" onclick="applyTextFormat('peQuestionInput', 'color', '#2563eb')" title="สีน้ำเงิน"></span>
+          <span class="paper-color-dot" style="background:#16a34a;" onclick="applyTextFormat('peQuestionInput', 'color', '#16a34a')" title="สีเขียว"></span>
+          <span class="paper-color-dot" style="background:#ea580c;" onclick="applyTextFormat('peQuestionInput', 'color', '#ea580c')" title="สีส้ม"></span>
+          <span class="paper-color-dot" style="background:#7c3aed;" onclick="applyTextFormat('peQuestionInput', 'color', '#7c3aed')" title="สีม่วง"></span>
+          <span class="paper-tool-sep"></span>
+          <span style="font-size:10.5px; color:#64748b; font-weight:600;">ไฮไลต์:</span>
+          <button type="button" class="paper-tool-btn" style="background:#fef08a; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#fef08a')" title="ไฮไลต์เหลือง">🟡</button>
+          <button type="button" class="paper-tool-btn" style="background:#e0f2fe; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#e0f2fe')" title="ไฮไลต์ฟ้า">🔵</button>
+          <button type="button" class="paper-tool-btn" style="background:#dcfce7; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#dcfce7')" title="ไฮไลต์เขียว">🟢</button>
+        </div>
+        <textarea class="paper-textarea" id="peQuestionInput" rows="4" placeholder="พิมพ์ข้อความโจทย์หรือคำถามหน้าการ์ด..." style="border-radius:0 0 10px 10px;"></textarea>
+
+        <!-- Question Image Input & Live Preview & Upload/Paste -->
         <div style="margin-top:10px;">
-          <label class="paper-label">🖼️ รูปภาพคำถาม (URL หรือ Google Drive Link)</label>
-          <div style="display:flex; gap:8px;">
-            <input type="text" class="paper-input" id="peQuestionImgInput" placeholder="https://... หรือ drive.google.com/..." oninput="updatePaperImagePreview('question')">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+            <label class="paper-label" style="margin-bottom:0;">🖼️ รูปภาพคำถาม (URL, อัปโหลดไฟล์ หรือวางภาพ Ctrl+V)</label>
+            <span style="font-size:11px; color:#0284c7; font-weight:600;">💡 วางภาพด้วย Ctrl+V ได้ทันที</span>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+            <input type="text" class="paper-input" id="peQuestionImgInput" placeholder="https://... หรือ drive.google.com/... หรือวางภาพ" style="flex:1; min-width:200px;" oninput="updatePaperImagePreview('question')">
+            <input type="file" id="peQuestionFileInput" accept="image/*" style="display:none;" onchange="handleImageFileInput(this, 'question')">
+            <button type="button" class="paper-tool-btn" onclick="document.getElementById('peQuestionFileInput').click()" style="padding:6px 12px; height:auto; font-size:12px; background:#f0f9ff; border-color:#bae6fd; color:#0284c7;">📁 อัปโหลดรูป</button>
             <button type="button" class="paper-btn-cancel" onclick="clearPaperImage('question')" style="padding:6px 12px; font-size:11.5px;">ล้างรูป</button>
           </div>
+
+          <!-- Drag / Paste dropzone -->
+          <div class="paper-paste-zone" id="peQuestionPasteZone" tabindex="0" title="คลิกที่นี่แล้วกด Ctrl+V เพื่อวางรูปภาพทันที">
+            <span style="font-size:12px; color:#64748b;">📋 คลิกที่นี่แล้วกด <b>Ctrl + V</b> เพื่อวางรูปภาพที่แคปไว้ หรือลากไฟล์มาวาง</span>
+          </div>
+
           <div class="paper-img-preview-box" id="peQuestionImgPreviewWrap" style="display:none;">
             <img id="peQuestionImgPreview" src="" alt="พรีวิวรูปคำถาม">
-            <div>
+            <div style="flex:1;">
               <div style="font-size:11.5px; font-weight:700; color:#0f172a;">พรีวิวรูปคำถามสด</div>
-              <div style="font-size:10.5px; color:#64748b;">รูปจะแสดงผลบนหน้าการ์ดทันที</div>
+              <div style="font-size:10.5px; color:#64748b;" id="peQuestionImgMetaText">รูปจะแสดงผลบนหน้าการ์ดทันที</div>
             </div>
+            <button type="button" class="paper-tool-btn" onclick="clearPaperImage('question')" style="color:#ef4444; border-color:#fecaca;" title="ลบภาพ">✕</button>
           </div>
         </div>
       </div>
@@ -1910,21 +1978,51 @@
           <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('note')">+ ✦ หมายเหตุ / ข้อยกเว้น</button>
         </div>
 
-        <textarea class="paper-textarea" id="peAnswerInput" rows="7" placeholder="พิมพ์คำตอบ เฉลย หรือเนื้อหาทบทวนหลังการ์ด..."></textarea>
+        <!-- Answer Rich Toolbar -->
+        <div class="paper-rich-toolbar">
+          <button type="button" class="paper-tool-btn" onclick="applyTextFormat('peAnswerInput', 'bold')" title="ตัวหนา"><b>B</b></button>
+          <button type="button" class="paper-tool-btn" onclick="applyTextFormat('peAnswerInput', 'italic')" title="ตัวเอียง"><i>I</i></button>
+          <button type="button" class="paper-tool-btn" onclick="applyTextFormat('peAnswerInput', 'underline')" title="ขีดเส้นใต้"><u>U</u></button>
+          <span class="paper-tool-sep"></span>
+          <span style="font-size:10.5px; color:#64748b; font-weight:600;">สี:</span>
+          <span class="paper-color-dot" style="background:#dc2626;" onclick="applyTextFormat('peAnswerInput', 'color', '#dc2626')" title="สีแดง"></span>
+          <span class="paper-color-dot" style="background:#2563eb;" onclick="applyTextFormat('peAnswerInput', 'color', '#2563eb')" title="สีน้ำเงิน"></span>
+          <span class="paper-color-dot" style="background:#16a34a;" onclick="applyTextFormat('peAnswerInput', 'color', '#16a34a')" title="สีเขียว"></span>
+          <span class="paper-color-dot" style="background:#ea580c;" onclick="applyTextFormat('peAnswerInput', 'color', '#ea580c')" title="สีส้ม"></span>
+          <span class="paper-color-dot" style="background:#7c3aed;" onclick="applyTextFormat('peAnswerInput', 'color', '#7c3aed')" title="สีม่วง"></span>
+          <span class="paper-tool-sep"></span>
+          <span style="font-size:10.5px; color:#64748b; font-weight:600;">ไฮไลต์:</span>
+          <button type="button" class="paper-tool-btn" style="background:#fef08a; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#fef08a')" title="ไฮไลต์เหลือง">🟡</button>
+          <button type="button" class="paper-tool-btn" style="background:#e0f2fe; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#e0f2fe')" title="ไฮไลต์ฟ้า">🔵</button>
+          <button type="button" class="paper-tool-btn" style="background:#dcfce7; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#dcfce7')" title="ไฮไลต์เขียว">🟢</button>
+        </div>
+        <textarea class="paper-textarea" id="peAnswerInput" rows="7" placeholder="พิมพ์คำตอบ เฉลย หรือเนื้อหาทบทวนหลังการ์ด..." style="border-radius:0 0 10px 10px;"></textarea>
 
-        <!-- Answer Image Input & Live Preview -->
+        <!-- Answer Image Input & Live Preview & Upload/Paste -->
         <div style="margin-top:10px;">
-          <label class="paper-label">🖼️ รูปภาพเฉลย (URL หรือ Google Drive Link)</label>
-          <div style="display:flex; gap:8px;">
-            <input type="text" class="paper-input" id="peAnswerImgInput" placeholder="https://... หรือ drive.google.com/..." oninput="updatePaperImagePreview('answer')">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+            <label class="paper-label" style="margin-bottom:0;">🖼️ รูปภาพเฉลย (URL, อัปโหลดไฟล์ หรือวางภาพ Ctrl+V)</label>
+            <span style="font-size:11px; color:#0284c7; font-weight:600;">💡 วางภาพด้วย Ctrl+V ได้ทันที</span>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+            <input type="text" class="paper-input" id="peAnswerImgInput" placeholder="https://... หรือ drive.google.com/... หรือวางภาพ" style="flex:1; min-width:200px;" oninput="updatePaperImagePreview('answer')">
+            <input type="file" id="peAnswerFileInput" accept="image/*" style="display:none;" onchange="handleImageFileInput(this, 'answer')">
+            <button type="button" class="paper-tool-btn" onclick="document.getElementById('peAnswerFileInput').click()" style="padding:6px 12px; height:auto; font-size:12px; background:#f0f9ff; border-color:#bae6fd; color:#0284c7;">📁 อัปโหลดรูป</button>
             <button type="button" class="paper-btn-cancel" onclick="clearPaperImage('answer')" style="padding:6px 12px; font-size:11.5px;">ล้างรูป</button>
           </div>
+
+          <!-- Drag / Paste dropzone -->
+          <div class="paper-paste-zone" id="peAnswerPasteZone" tabindex="0" title="คลิกที่นี่แล้วกด Ctrl+V เพื่อวางรูปภาพทันที">
+            <span style="font-size:12px; color:#64748b;">📋 คลิกที่นี่แล้วกด <b>Ctrl + V</b> เพื่อวางรูปภาพที่แคปไว้ หรือลากไฟล์มาวาง</span>
+          </div>
+
           <div class="paper-img-preview-box" id="peAnswerImgPreviewWrap" style="display:none;">
             <img id="peAnswerImgPreview" src="" alt="พรีวิวรูปเฉลย">
-            <div>
+            <div style="flex:1;">
               <div style="font-size:11.5px; font-weight:700; color:#0f172a;">พรีวิวรูปเฉลยสด</div>
-              <div style="font-size:10.5px; color:#64748b;">รูปจะแสดงผลบนหลังการ์ดทันที</div>
+              <div style="font-size:10.5px; color:#64748b;" id="peAnswerImgMetaText">รูปจะแสดงผลบนหลังการ์ดทันที</div>
             </div>
+            <button type="button" class="paper-tool-btn" onclick="clearPaperImage('answer')" style="color:#ef4444; border-color:#fecaca;" title="ลบภาพ">✕</button>
           </div>
         </div>
       </div>
@@ -1934,8 +2032,9 @@
         <div style="font-size:12px; font-weight:700; color:#334155; margin-bottom:10px;">📑 ข้อมูลการจัดหมวดและการจำแนกข้อสอบ (Metadata)</div>
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:10px;">
           <div>
-            <label class="paper-label">หัวข้อย่อย / เรื่อง (Subtopic)</label>
-            <input type="text" class="paper-input" id="peSubtopicInput" placeholder="เช่น Gout, HTN, GMP">
+            <label class="paper-label">หัวข้อย่อย / เรื่อง (Subtopic - Searchable Dropdown)</label>
+            <input type="text" class="paper-input" id="peSubtopicInput" list="peSubtopicDatalist" placeholder="พิมพ์เพื่อค้นหา หรือเลือกหัวข้อ..." autocomplete="off">
+            <datalist id="peSubtopicDatalist"></datalist>
           </div>
           <div>
             <label class="paper-label">สายวิชา (Track)</label>
@@ -2671,6 +2770,7 @@ window.google.script.run = (function() {
   }
 
   window.addEventListener('load', () => {
+    if (typeof setupPaperPasteZones === 'function') setupPaperPasteZones();
     const savedTrack = localStorage.getItem(LS_TRACK);
     if (savedTrack) currentTrack = savedTrack;
 
@@ -4300,7 +4400,9 @@ window.google.script.run = (function() {
     if (window.google && google.script && google.script.run) {
       const runner = google.script.run;
       const fnName = payload.action === 'submitSubtopicEvaluation' ? 'submitSubtopicEvaluation' :
-                     payload.action === 'reportCardIssue' ? 'reportCardIssue' : null;
+                     payload.action === 'reportCardIssue' ? 'reportCardIssue' :
+                     payload.action === 'updateCard' ? 'updateCard' :
+                     payload.action === 'updateQuestion' ? 'updateQuestion' : null;
 
       if (fnName && typeof runner[fnName] === 'function') {
         try {
@@ -4662,6 +4764,8 @@ window.google.script.run = (function() {
       // Metadata
       const subInput = document.getElementById('peSubtopicInput');
       if (subInput) subInput.value = card.subTopic || card.group || '';
+      populatePaperSubtopicDatalist(sheetName);
+
       const trkSelect = document.getElementById('peTrackSelect');
       if (trkSelect) {
         const trkVal = (card.track || currentTrack || 'clinic').toLowerCase();
@@ -4712,7 +4816,186 @@ window.google.script.run = (function() {
   function clearPaperImage(type) {
     const urlInput = document.getElementById(type === 'question' ? 'peQuestionImgInput' : 'peAnswerImgInput');
     if (urlInput) urlInput.value = '';
+    const metaText = document.getElementById(type === 'question' ? 'peQuestionImgMetaText' : 'peAnswerImgMetaText');
+    if (metaText) metaText.textContent = type === 'question' ? 'รูปจะแสดงผลบนหน้าการ์ดทันที' : 'รูปจะแสดงผลบนหลังการ์ดทันที';
     updatePaperImagePreview(type);
+  }
+
+  // ─── RICH TEXT FORMATTING ENGINE (Bold, Italic, Underline, Color, Highlight) ───
+  function applyTextFormat(targetId, formatType, value) {
+    const textarea = document.getElementById(targetId);
+    if (!textarea) return;
+
+    const start = textarea.selectionStart || 0;
+    const end = textarea.selectionEnd || 0;
+    const text = textarea.value || '';
+    const selected = text.substring(start, end) || 'ข้อความ';
+
+    let formatted = '';
+    if (formatType === 'bold') {
+      formatted = `<b>${selected}</b>`;
+    } else if (formatType === 'italic') {
+      formatted = `<i>${selected}</i>`;
+    } else if (formatType === 'underline') {
+      formatted = `<u>${selected}</u>`;
+    } else if (formatType === 'color') {
+      formatted = `<span style="color:${value}; font-weight:600;">${selected}</span>`;
+    } else if (formatType === 'highlight') {
+      formatted = `<span style="background:${value}; padding:1px 4px; border-radius:3px;">${selected}</span>`;
+    }
+
+    textarea.value = text.substring(0, start) + formatted + text.substring(end);
+    textarea.selectionStart = start;
+    textarea.selectionEnd = start + formatted.length;
+    textarea.focus();
+  }
+
+  // ─── IMAGE UPLOAD & CLIPBOARD PASTE (Ctrl+V) ENGINE ───
+  function processUploadedImage(file, type) {
+    if (!file || !file.type.startsWith('image/')) {
+      showToast('⚠️ กรุณาเลือกไฟล์รูปภาพเท่านั้น (JPG, PNG, WebP)');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const dataUrl = e.target.result;
+      // Compress image via HTML5 Canvas (max 1200px, JPEG 0.82)
+      const img = new Image();
+      img.onload = function() {
+        const canvas = document.createElement('canvas');
+        const maxDim = 1200;
+        let w = img.width;
+        let h = img.height;
+        if (w > maxDim || h > maxDim) {
+          if (w > h) {
+            h = Math.round((h * maxDim) / w);
+            w = maxDim;
+          } else {
+            w = Math.round((w * maxDim) / h);
+            h = maxDim;
+          }
+        }
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.82);
+
+        const targetInput = document.getElementById(type === 'question' ? 'peQuestionImgInput' : 'peAnswerImgInput');
+        const metaText = document.getElementById(type === 'question' ? 'peQuestionImgMetaText' : 'peAnswerImgMetaText');
+        if (targetInput) targetInput.value = compressedDataUrl;
+        if (metaText) metaText.textContent = `รูปภาพอัปโหลดสำเร็จ (${w}x${h} px, ${Math.round(compressedDataUrl.length/1024)} KB)`;
+        updatePaperImagePreview(type);
+        showToast(`📸 แนบรูปภาพ${type === 'question' ? 'คำถาม' : 'เฉลย'}เรียบร้อย`);
+      };
+      img.src = dataUrl;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function handleImageFileInput(inputEl, type) {
+    if (inputEl.files && inputEl.files[0]) {
+      processUploadedImage(inputEl.files[0], type);
+      inputEl.value = '';
+    }
+  }
+
+  let paperPasteZonesInitialized = false;
+  function setupPaperPasteZones() {
+    if (paperPasteZonesInitialized) return;
+    paperPasteZonesInitialized = true;
+
+    ['question', 'answer'].forEach(type => {
+      const zone = document.getElementById(type === 'question' ? 'peQuestionPasteZone' : 'peAnswerPasteZone');
+      const input = document.getElementById(type === 'question' ? 'peQuestionImgInput' : 'peAnswerImgInput');
+      if (!zone) return;
+
+      // Paste handler on zone
+      zone.addEventListener('paste', (e) => {
+        const items = (e.clipboardData || e.originalEvent?.clipboardData)?.items;
+        if (!items) return;
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          if (item.kind === 'file' && item.type.startsWith('image/')) {
+            e.preventDefault();
+            const blob = item.getAsFile();
+            processUploadedImage(blob, type);
+            return;
+          }
+        }
+      });
+
+      // Paste handler on text input as well
+      if (input) {
+        input.addEventListener('paste', (e) => {
+          const items = (e.clipboardData || e.originalEvent?.clipboardData)?.items;
+          if (!items) return;
+          for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            if (item.kind === 'file' && item.type.startsWith('image/')) {
+              e.preventDefault();
+              const blob = item.getAsFile();
+              processUploadedImage(blob, type);
+              return;
+            }
+          }
+        });
+      }
+
+      // Drag and drop handlers
+      zone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        zone.classList.add('dragover');
+      });
+      zone.addEventListener('dragleave', () => zone.classList.remove('dragover'));
+      zone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        zone.classList.remove('dragover');
+        if (e.dataTransfer?.files && e.dataTransfer.files[0]) {
+          processUploadedImage(e.dataTransfer.files[0], type);
+        }
+      });
+    });
+  }
+
+  // ─── SEARCHABLE SUBTOPIC DATALIST (Autocomplete Engine) ───
+  function populatePaperSubtopicDatalist(catName) {
+    const dl = document.getElementById('peSubtopicDatalist');
+    if (!dl) return;
+    dl.innerHTML = '';
+
+    const subtopicsSet = new Set();
+
+    // 1. Collect from allCards
+    if (typeof allCards !== 'undefined' && Array.isArray(allCards)) {
+      allCards.forEach(c => {
+        const s = (c.subTopic || '').trim();
+        if (s && s !== 'หัวข้อย่อย' && s !== 'หัวข้อย่อย (SubTopic)') {
+          subtopicsSet.add(s);
+        }
+      });
+    }
+
+    // 2. Collect from browseCardsCache if exists
+    if (typeof browseCardsCache !== 'undefined' && Array.isArray(browseCardsCache)) {
+      browseCardsCache.forEach(c => {
+        if (!catName || c.group === catName || !c.group) {
+          const s = (c.subTopic || '').trim();
+          if (s && s !== 'หัวข้อย่อย' && s !== 'หัวข้อย่อย (SubTopic)') {
+            subtopicsSet.add(s);
+          }
+        }
+      });
+    }
+
+    // 3. Populate options
+    const sortedSubs = Array.from(subtopicsSet).sort((a, b) => a.localeCompare(b, 'th'));
+    sortedSubs.forEach(sub => {
+      const opt = document.createElement('option');
+      opt.value = sub;
+      dl.appendChild(opt);
+    });
   }
 
   function insertFlashcardTemplate(tmplKey) {
