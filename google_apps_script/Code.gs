@@ -116,6 +116,9 @@ function doPost(e) {
     }
 
     const action = data.action || '';
+    if (action === 'updateCard' || action === 'updateQuestion') {
+      return jsonResponse_(handleCardUpdate_(data));
+    }
     if (action === 'submitSubtopicEvaluation') {
       return jsonResponse_(handleSubtopicEvaluation_(data));
     }
@@ -135,6 +138,14 @@ function doPost(e) {
 /**
  * Public wrappers for google.script.run (cannot call functions with trailing underscore)
  */
+function updateCard(data) {
+  return handleCardUpdate_(data);
+}
+
+function updateQuestion(data) {
+  return handleCardUpdate_(data);
+}
+
 function submitSubtopicEvaluation(data) {
   return handleSubtopicEvaluation_(data);
 }
@@ -231,6 +242,100 @@ function handleSubtopicEvaluation_(data) {
     success: true,
     message: "บันทึกผลการประเมินเรียบร้อยแล้ว ขอบคุณสำหรับความคิดเห็นครับ! ⭐"
   };
+}
+
+/**
+ * ════════════════════════════════════════════════════════════════════════
+ * ✏️ อัปเดตและแก้ไข Flashcard แบบ Real-time (Admin Only) พร้อม Audit Trail
+ * ════════════════════════════════════════════════════════════════════════
+ */
+function handleCardUpdate_(data) {
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const cardId = String(data.cardId || data.id || data.questionId || '').trim();
+    if (!cardId || !cardId.includes('::')) {
+      return { success: false, error: 'Card ID รูปแบบไม่ถูกต้อง (ต้องเป็น SheetName::RowNumber): ' + cardId };
+    }
+
+    const parts = cardId.split('::');
+    const sheetName = parts[0].trim();
+    const rowNum = parseInt(parts[1], 10);
+
+    if (isNaN(rowNum) || rowNum < 3) {
+      return { success: false, error: 'เลขแถวไม่ถูกต้อง (ต้องเป็นแถวที่ 3 ขึ้นไป): ' + rowNum };
+    }
+
+    const targetSheet = ss.getSheetByName(sheetName);
+    if (!targetSheet) {
+      return { success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName };
+    }
+
+    // ดึงข้อมูลเดิมเพื่อทำ Audit Trail (คอลัมน์ A ถึง H)
+    const oldValues = targetSheet.getRange(rowNum, 1, 1, 8).getValues()[0];
+
+    // บันทึกลง Log_Card_Edits (Audit Trail)
+    let logSheet = ss.getSheetByName('Log_Card_Edits');
+    if (!logSheet) {
+      logSheet = ss.insertSheet('Log_Card_Edits');
+      logSheet.appendRow([
+        "Timestamp (เวลาไทย)", "Editor", "Card ID", "Sheet Name", "Row Number",
+        "Old Question", "New Question", "Old Answer", "New Answer",
+        "Old Subtopic", "New Subtopic", "Status"
+      ]);
+      logSheet.getRange(1, 1, 1, 12).setFontWeight("bold").setBackground("#0284c7").setFontColor("#ffffff");
+      logSheet.setFrozenRows(1);
+    }
+
+    const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+    const editor = String(data.editorName || data.editorUsername || 'Admin');
+    const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
+    const newAnswer = String(data.answer || data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
+    const newQImg = String(data.questionImage || '').trim();
+    const newAImg = String(data.answerImage || '').trim();
+    const newSubtopic = String(data.subtopic || data.subTopic || '').replace(/\*\*/g, '').trim();
+    const newNote = String(data.note || '').replace(/\*\*/g, '').trim();
+    const newTrack = String(data.track || 'Clinic').trim();
+    const newItemNo = (data.itemNo != null && String(data.itemNo).trim() !== '') ? String(data.itemNo).trim() : String(oldValues[0] || (rowNum - 2));
+
+    logSheet.appendRow([
+      thaiTimestamp,
+      editor,
+      cardId,
+      sheetName,
+      rowNum,
+      String(oldValues[1] || '').substring(0, 200),
+      newQuestion.substring(0, 200),
+      String(oldValues[3] || '').substring(0, 200),
+      newAnswer.substring(0, 200),
+      String(oldValues[5] || ''),
+      newSubtopic,
+      "Updated"
+    ]);
+
+    // เขียนทับคอลัมน์ A ถึง H (8 คอลัมน์) ในแถวที่ระบุ
+    const updateRow = [
+      newItemNo,        // Col A (1): เลขข้อ
+      newQuestion,      // Col B (2): คำถาม / โจทย์
+      newQImg,          // Col C (3): รูปคำถาม
+      newAnswer,        // Col D (4): คำตอบ
+      newAImg,          // Col E (5): รูปคำตอบ
+      newSubtopic,      // Col F (6): หัวข้อย่อย
+      newNote,          // Col G (7): หมายเหตุ
+      newTrack          // Col H (8): สายวิชา (Clinic / Product / SAP)
+    ];
+
+    targetSheet.getRange(rowNum, 1, 1, 8).setValues([updateRow]);
+
+    return {
+      success: true,
+      message: `บันทึก Flashcard ลง Google Sheet แถวที่ ${rowNum} สำเร็จแล้ว`,
+      cardId: cardId,
+      sheet: sheetName,
+      row: rowNum
+    };
+  } catch (err) {
+    return { success: false, error: 'บันทึกลง Google Sheet ล้มเหลว: ' + err.toString() };
+  }
 }
 
 /**

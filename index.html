@@ -891,6 +891,192 @@
       animation: spin 0.7s linear infinite; margin: 0 auto 10px;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ════ REALISTIC FLASHCARD PAPER SHEET MODAL (ADMIN) ════ */
+    .paper-modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(15, 23, 42, 0.78);
+      display: none; align-items: flex-start; justify-content: center;
+      z-index: 2000; padding: 24px 16px;
+      backdrop-filter: blur(6px);
+      overflow-y: auto;
+    }
+    .paper-modal-overlay.show { display: flex; }
+
+    .exam-paper-sheet {
+      background: #ffffff;
+      width: 100%; max-width: 820px;
+      margin: 10px auto 40px auto;
+      border-radius: 18px;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 25px 60px -12px rgba(15, 23, 42, 0.35), 0 0 0 1px rgba(15, 23, 42, 0.05);
+      padding: 30px 34px;
+      position: relative;
+      color: #0f172a;
+      font-family: 'Bai Jamjuree', sans-serif;
+      animation: paperFadeIn 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes paperFadeIn {
+      from { opacity: 0; transform: translateY(18px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @media (max-width: 640px) {
+      .exam-paper-sheet { padding: 20px 16px; border-radius: 14px; margin: 4px auto 24px auto; }
+    }
+
+    .paper-head {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .paper-head-top {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+    }
+    .paper-crest-title {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .paper-crest-icon { font-size: 26px; line-height: 1; }
+    .paper-crest-text h3 {
+      margin: 0; font-size: 15px; font-weight: 700; color: #0369a1;
+      letter-spacing: -0.2px;
+    }
+    .paper-crest-text p {
+      margin: 2px 0 0 0; font-size: 11.5px; color: #64748b; font-weight: 500;
+    }
+    .paper-close-btn {
+      background: #f1f5f9; border: 1px solid #cbd5e1; color: #475569;
+      width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 14px; font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .paper-close-btn:hover {
+      background: #fee2e2; border-color: #fca5a5; color: #dc2626;
+    }
+
+    .paper-meta-strip {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+      padding: 6px 12px; font-size: 11.8px; color: #334155;
+    }
+    .paper-meta-pill {
+      display: inline-flex; align-items: center; gap: 4px; font-weight: 600;
+    }
+    .paper-meta-pill b { color: #0284c7; }
+    .paper-admin-pill {
+      margin-left: auto; background: #fef3c7; color: #92400e;
+      border: 1px solid #fde68a; border-radius: 6px;
+      padding: 2px 8px; font-size: 10.5px; font-weight: 700;
+    }
+
+    .paper-sec-head {
+      font-size: 13.5px; font-weight: 700; color: #1e293b;
+      margin: 16px 0 8px 0; display: flex; align-items: center;
+      justify-content: space-between; gap: 8px; flex-wrap: wrap;
+    }
+    .paper-label {
+      font-size: 11.5px; font-weight: 700; color: #475569;
+      margin-bottom: 5px; display: block;
+    }
+    .paper-input {
+      width: 100%; padding: 8px 12px;
+      background: #f8fafc; border: 1.5px solid #cbd5e1;
+      border-radius: 9px; font-family: inherit; font-size: 13px;
+      color: #0f172a; outline: none; transition: all 0.15s ease;
+      box-sizing: border-box;
+    }
+    .paper-input:focus {
+      background: #ffffff; border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+    .paper-textarea {
+      width: 100%; padding: 12px 14px;
+      background: #f8fafc; border: 1.5px solid #cbd5e1;
+      border-radius: 10px; font-family: inherit; font-size: 14px;
+      line-height: 1.65; color: #0f172a; outline: none;
+      transition: all 0.15s ease; resize: vertical; box-sizing: border-box;
+    }
+    .paper-textarea:focus {
+      background: #ffffff; border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .paper-tmpl-bar {
+      display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px;
+    }
+    .paper-tmpl-chip {
+      background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 6px;
+      padding: 4px 8px; font-size: 11px; font-weight: 600; color: #334155;
+      cursor: pointer; transition: all 0.12s ease;
+    }
+    .paper-tmpl-chip:hover {
+      background: #e0f2fe; border-color: #7dd3fc; color: #0369a1;
+    }
+
+    .paper-img-preview-box {
+      margin-top: 8px; padding: 8px; border-radius: 9px;
+      border: 1px dashed #cbd5e1; background: #f8fafc;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .paper-img-preview-box img {
+      max-height: 80px; max-width: 140px; border-radius: 6px;
+      border: 1px solid #cbd5e1; object-fit: contain; background: #fff;
+    }
+
+    .paper-footer {
+      border-top: 2px solid #e2e8f0; padding-top: 18px; margin-top: 22px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; flex-wrap: wrap;
+    }
+    .paper-editor-sign {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; color: #475569;
+    }
+    .paper-editor-sign b { color: #0f172a; }
+    .paper-btn-group {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .paper-btn-cancel {
+      padding: 9px 18px; border-radius: 10px; border: 1.5px solid #cbd5e1;
+      background: #ffffff; color: #475569; font-family: inherit;
+      font-size: 13px; font-weight: 600; cursor: pointer;
+    }
+    .paper-btn-cancel:hover { background: #f1f5f9; }
+    .paper-btn-save {
+      padding: 9px 24px; border-radius: 10px; border: none;
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      color: #ffffff; font-family: inherit; font-size: 13px;
+      font-weight: 700; cursor: pointer; display: inline-flex;
+      align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.28);
+      transition: all 0.15s ease;
+    }
+    .paper-btn-save:hover {
+      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4); transform: translateY(-1px);
+    }
+    .paper-btn-save:disabled {
+      opacity: 0.6; cursor: not-allowed; transform: none;
+    }
+
+    .btn-admin-edit-card {
+      background: #fef3c7; border: 1px solid #fde68a; color: #92400e;
+      border-radius: var(--r-sm); padding: 3px 8px; font-size: 11px;
+      font-weight: 700; cursor: pointer; display: inline-flex;
+      align-items: center; gap: 4px; transition: all 0.15s ease;
+    }
+    .btn-admin-edit-card:hover {
+      background: #fde68a; border-color: #f59e0b;
+    }
+    .btn-admin-edit-browse {
+      background: #fef3c7; border: 1px solid #fde68a; color: #92400e;
+      border-radius: 6px; padding: 2px 7px; font-size: 11px;
+      font-weight: 700; cursor: pointer; display: inline-flex;
+      align-items: center; gap: 3px; transition: all 0.15s ease;
+    }
+    .btn-admin-edit-browse:hover {
+      background: #fde68a;
+    }
   </style>
 </head>
 <body>
@@ -1151,6 +1337,9 @@
               <div class="card-eyebrow">
                 <span class="tag clinic-tag" id="cardTag">-</span>
                 <div class="eyebrow-right">
+                  <button class="btn-admin-edit-card" id="btnAdminEditCardFront" onclick="openCardPaperEditorForCurrent(event)" title="✏️ แก้ไข Flashcard บนแผ่นกระดาษ (Admin)" style="display:none;">
+                    <span>✏️ แก้ไข</span>
+                  </button>
                   <button class="btn-report-card" id="btnReportCard" onclick="openReportCardModal(event)" title="แจ้งปัญหาข้อนี้ (ข้อสอบผิด/เฉลยไม่ตรง/รูปหาย)">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
                     <span>แจ้งปัญหา</span>
@@ -1175,9 +1364,14 @@
 
             <!-- ── BACK FACE (Answer) ── -->
             <div class="card-face card-face-back">
-              <div class="card-eyebrow" style="opacity:0.6;">
+              <div class="card-eyebrow" style="opacity:0.9;">
                 <span style="font-size:11px; font-weight:700; color:var(--confident); text-transform:uppercase; letter-spacing:0.5px;">✅ คำตอบ</span>
-                <div class="card-status-dot dot-new" id="cardStatusDotBack"></div>
+                <div class="eyebrow-right">
+                  <button class="btn-admin-edit-card" id="btnAdminEditCardBack" onclick="openCardPaperEditorForCurrent(event)" title="✏️ แก้ไข Flashcard บนแผ่นกระดาษ (Admin)" style="display:none;">
+                    <span>✏️ แก้ไข</span>
+                  </button>
+                  <div class="card-status-dot dot-new" id="cardStatusDotBack"></div>
+                </div>
               </div>
 
               <div class="card-img-wrap" id="aImgWrap">
@@ -1645,6 +1839,136 @@
       </div>
     </div>
   </div>
+  <!-- ══ REALISTIC FLASHCARD PAPER SHEET MODAL (ADMIN ONLY) ══ -->
+  <div class="paper-modal-overlay" id="adminPaperEditorModal">
+    <div class="exam-paper-sheet">
+      <!-- Paper Header -->
+      <div class="paper-head">
+        <div class="paper-head-top">
+          <div class="paper-crest-title">
+            <span class="paper-crest-icon">📝</span>
+            <div class="paper-crest-text">
+              <h3>คณะเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย · โครงการเตรียมสอบใบประกอบวิชาชีพ</h3>
+              <p>แผ่นกระดาษข้อสอบและเฉลย Flashcard (Official Flashcard Review & Edit Sheet)</p>
+            </div>
+          </div>
+          <button type="button" class="paper-close-btn" onclick="closePaperEditorModal()" title="ปิดหน้าต่าง">✕</button>
+        </div>
+
+        <div class="paper-meta-strip">
+          <span class="paper-meta-pill">📍 ชีต: <b id="peSheetNameBadge">-</b></span>
+          <span class="paper-meta-pill">🔢 แถวที่: <b id="peRowNumBadge">-</b></span>
+          <span class="paper-meta-pill">📌 ข้อที่: <b id="peItemNoBadge">-</b></span>
+          <span class="paper-meta-pill">🏷️ สายวิชา: <b id="peTrackBadge">Clinic</b></span>
+          <span class="paper-admin-pill">👑 Admin Flashcard Editor</span>
+        </div>
+      </div>
+
+      <!-- Hidden ID Field -->
+      <input type="hidden" id="peCardIdHidden" value="">
+
+      <!-- ① QUESTION / FRONT FACE SECTION (ข้อความโจทย์หน้าการ์ด) -->
+      <div style="margin-bottom:20px;">
+        <div class="paper-sec-head">
+          <span>📌 ข้อความคำถาม / โจทย์หน้าการ์ด (Question / Front Face)</span>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span style="font-size:11px; color:#64748b;">เลขข้อในชีต:</span>
+            <input type="text" id="peItemNoInput" style="width:65px; padding:4px 8px; border:1.5px solid #cbd5e1; border-radius:6px; font-weight:700; font-size:12px; text-align:center;">
+          </div>
+        </div>
+        <textarea class="paper-textarea" id="peQuestionInput" rows="4" placeholder="พิมพ์ข้อความโจทย์หรือคำถามหน้าการ์ด..."></textarea>
+
+        <!-- Question Image Input & Live Preview -->
+        <div style="margin-top:10px;">
+          <label class="paper-label">🖼️ รูปภาพคำถาม (URL หรือ Google Drive Link)</label>
+          <div style="display:flex; gap:8px;">
+            <input type="text" class="paper-input" id="peQuestionImgInput" placeholder="https://... หรือ drive.google.com/..." oninput="updatePaperImagePreview('question')">
+            <button type="button" class="paper-btn-cancel" onclick="clearPaperImage('question')" style="padding:6px 12px; font-size:11.5px;">ล้างรูป</button>
+          </div>
+          <div class="paper-img-preview-box" id="peQuestionImgPreviewWrap" style="display:none;">
+            <img id="peQuestionImgPreview" src="" alt="พรีวิวรูปคำถาม">
+            <div>
+              <div style="font-size:11.5px; font-weight:700; color:#0f172a;">พรีวิวรูปคำถามสด</div>
+              <div style="font-size:10.5px; color:#64748b;">รูปจะแสดงผลบนหน้าการ์ดทันที</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ② ANSWER / BACK FACE SECTION (คำตอบและเฉลยหลังการ์ด) -->
+      <div style="margin-bottom:20px;">
+        <div class="paper-sec-head">
+          <span>📖 คำตอบและเฉลยละเอียดหลังการ์ด (Answer / Back Face)</span>
+        </div>
+
+        <!-- Rule 3.6 Template Buttons -->
+        <div class="paper-tmpl-bar">
+          <span style="font-size:11px; color:#475569; font-weight:700; align-self:center;">แทรกโครงสร้าง:</span>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('correct')">+ 💡 คำอธิบายและจุดเน้น</button>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('topic')">+ ▶ หัวข้อย่อย</button>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('subitem')">+ ↳ ประเด็นสำคัญ</button>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('note')">+ ✦ หมายเหตุ / ข้อยกเว้น</button>
+        </div>
+
+        <textarea class="paper-textarea" id="peAnswerInput" rows="7" placeholder="พิมพ์คำตอบ เฉลย หรือเนื้อหาทบทวนหลังการ์ด..."></textarea>
+
+        <!-- Answer Image Input & Live Preview -->
+        <div style="margin-top:10px;">
+          <label class="paper-label">🖼️ รูปภาพเฉลย (URL หรือ Google Drive Link)</label>
+          <div style="display:flex; gap:8px;">
+            <input type="text" class="paper-input" id="peAnswerImgInput" placeholder="https://... หรือ drive.google.com/..." oninput="updatePaperImagePreview('answer')">
+            <button type="button" class="paper-btn-cancel" onclick="clearPaperImage('answer')" style="padding:6px 12px; font-size:11.5px;">ล้างรูป</button>
+          </div>
+          <div class="paper-img-preview-box" id="peAnswerImgPreviewWrap" style="display:none;">
+            <img id="peAnswerImgPreview" src="" alt="พรีวิวรูปเฉลย">
+            <div>
+              <div style="font-size:11.5px; font-weight:700; color:#0f172a;">พรีวิวรูปเฉลยสด</div>
+              <div style="font-size:10.5px; color:#64748b;">รูปจะแสดงผลบนหลังการ์ดทันที</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ③ METADATA SECTION (หัวข้อย่อย, สายวิชา, หมายเหตุ) -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px 16px; margin-bottom:20px;">
+        <div style="font-size:12px; font-weight:700; color:#334155; margin-bottom:10px;">📑 ข้อมูลการจัดหมวดและการจำแนกข้อสอบ (Metadata)</div>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:10px;">
+          <div>
+            <label class="paper-label">หัวข้อย่อย / เรื่อง (Subtopic)</label>
+            <input type="text" class="paper-input" id="peSubtopicInput" placeholder="เช่น Gout, HTN, GMP">
+          </div>
+          <div>
+            <label class="paper-label">สายวิชา (Track)</label>
+            <select class="paper-input" id="peTrackSelect">
+              <option value="Clinic">Clinic (คลินิก 16 กลุ่ม)</option>
+              <option value="Product">Product (ผลิตภัณฑ์ 12 กลุ่ม)</option>
+              <option value="SAP">SAP (สังคมและกฎหมาย)</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:10px;">
+          <label class="paper-label">หมายเหตุ (Note)</label>
+          <input type="text" class="paper-input" id="peNoteInput" placeholder="ข้อความหมายเหตุประกอบ">
+        </div>
+      </div>
+
+      <!-- ④ FOOTER & ACTIONS -->
+      <div class="paper-footer">
+        <div class="paper-editor-sign">
+          <span>👑 ผู้แก้ไข (Admin):</span>
+          <b id="peEditorNameDisplay">Maxnum (ประธานโครงการ)</b>
+        </div>
+        <div class="paper-btn-group">
+          <button type="button" class="paper-btn-cancel" onclick="closePaperEditorModal()">✕ ยกเลิก</button>
+          <button type="button" class="paper-btn-save" id="btnSavePaperEditor" onclick="savePaperEditorData()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+            <span id="btnSavePaperEditorText">💾 บันทึก & ซิงค์ลง Google Sheet</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="lightbox-overlay" id="imgLightboxModal" onclick="closeImgLightbox()">
     <img class="lightbox-img" id="lightboxImg" src="" alt="ขยายรูปภาพ" onclick="event.stopPropagation()">
   </div>
@@ -2952,6 +3276,12 @@ window.google.script.run = (function() {
     const dot = document.getElementById('cardStatusDot');
     dot.className = 'card-status-dot ' + (today && status === 'มั่นใจ' ? 'dot-confident' : today && status === 'ไม่มั่นใจ' ? 'dot-notconfident' : today ? 'dot-today' : status === 'มั่นใจ' ? 'dot-confident' : status === 'ไม่มั่นใจ' ? 'dot-notconfident' : 'dot-new');
 
+    const isAdmin = (typeof isUserAllowedAdmin === 'function') && currentUser && isUserAllowedAdmin(currentUser.username);
+    const btnEditF = document.getElementById('btnAdminEditCardFront');
+    const btnEditB = document.getElementById('btnAdminEditCardBack');
+    if (btnEditF) btnEditF.style.display = isAdmin ? 'inline-flex' : 'none';
+    if (btnEditB) btnEditB.style.display = isAdmin ? 'inline-flex' : 'none';
+
     updateNav();
   }
 
@@ -3269,6 +3599,7 @@ window.google.script.run = (function() {
               <span class="bt-tag">${card.group || ''}</span>
               ${subBadge}
               <span style="font-size:11px; font-weight:600; color:var(--ink-faint);">· ข้อ ${card.itemNo || i+1}</span>
+              ${(typeof isUserAllowedAdmin === 'function' && currentUser && isUserAllowedAdmin(currentUser.username)) ? `<button class="btn-admin-edit-browse" onclick="event.stopPropagation(); openCardPaperEditorById('${escapeAttr(card.id)}')" title="✏️ แก้ไข Flashcard บนแผ่นกระดาษ (Admin)">✏️ แก้ไข</button>` : ''}
             </div>
             <span class="card-status-dot ${dotCls}"></span>
           </div>
@@ -4219,6 +4550,298 @@ window.google.script.run = (function() {
     });
 
     listEl.innerHTML = html;
+  }
+
+  // ════════════════════════════════════════════════════════════════════════
+  // 📄 REALISTIC FLASHCARD PAPER SHEET CONTROLLER (ADMIN ONLY)
+  // ════════════════════════════════════════════════════════════════════════
+  const ALLOWED_ADMIN_USERS = ['maxnum', 'maxnux', 'thanadol', 'max', 'admin', 'administrator', 'root'];
+
+  function isUserAllowedAdmin(username) {
+    if (!username) return false;
+    const u = String(username).trim().toLowerCase();
+    return ALLOWED_ADMIN_USERS.includes(u);
+  }
+
+  let currentEditingCard = null;
+
+  function openCardPaperEditorForCurrent(e) {
+    if (e && e.stopPropagation) e.stopPropagation();
+    if (!isUserAllowedAdmin(currentUser?.username)) {
+      showToast('⚠️ สิทธิ์ Admin เท่านั้นที่สามารถแก้ไข Flashcard ได้');
+      return;
+    }
+    const card = (viewCards && viewCards[currentIndex]) || null;
+    if (!card) {
+      showToast('⚠️ ไม่พบข้อมูลการ์ดในขณะนี้');
+      return;
+    }
+    openCardPaperEditorModal(card);
+  }
+
+  function openCardPaperEditorById(cardId) {
+    if (!isUserAllowedAdmin(currentUser?.username)) {
+      showToast('⚠️ สิทธิ์ Admin เท่านั้นที่สามารถแก้ไข Flashcard ได้');
+      return;
+    }
+    let card = null;
+    if (typeof viewCards !== 'undefined' && Array.isArray(viewCards)) {
+      card = viewCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+    }
+    if (!card && typeof allCards !== 'undefined' && Array.isArray(allCards)) {
+      card = allCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+    }
+    if (!card && typeof browseCardsCache !== 'undefined' && Array.isArray(browseCardsCache)) {
+      card = browseCardsCache.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+    }
+    if (!card) {
+      showToast('⚠️ ไม่พบข้อมูล Flashcard รหัส ' + cardId);
+      return;
+    }
+    openCardPaperEditorModal(card);
+  }
+
+  function openCardPaperEditorModal(card) {
+    if (!card) return;
+    try {
+      currentEditingCard = card;
+
+      // Extract sheet and row
+      let sheetName = card.group || currentCategory || '-';
+      let rowNum = '-';
+      if (card.id && card.id.includes('::')) {
+        const parts = card.id.split('::');
+        sheetName = parts[0] || sheetName;
+        rowNum = parts[1] || '-';
+      }
+
+      const sBadge = document.getElementById('peSheetNameBadge');
+      if (sBadge) sBadge.textContent = sheetName;
+      const rBadge = document.getElementById('peRowNumBadge');
+      if (rBadge) rBadge.textContent = rowNum;
+      const iBadge = document.getElementById('peItemNoBadge');
+      if (iBadge) iBadge.textContent = card.itemNo || '-';
+      const tBadge = document.getElementById('peTrackBadge');
+      if (tBadge) tBadge.textContent = (card.track || currentTrack || 'Clinic').toUpperCase();
+
+      const idInput = document.getElementById('peCardIdHidden');
+      if (idInput) idInput.value = card.id || '';
+
+      const itemInput = document.getElementById('peItemNoInput');
+      if (itemInput) itemInput.value = card.itemNo || '';
+
+      // Clean HTML from text inputs for clear editing
+      const cleanHtmlForInput = (txt) => {
+        if (!txt) return '';
+        return String(txt)
+          .replace(/<br\s*\/?>/gi, '\n')
+          .replace(/<div[^>]*>/gi, '')
+          .replace(/<\/div>/gi, '\n')
+          .replace(/<span[^>]*>/gi, '')
+          .replace(/<\/span>/gi, '')
+          .replace(/<b[^>]*>/gi, '')
+          .replace(/<\/b>/gi, '')
+          .replace(/\*\*/g, '')
+          .trim();
+      };
+
+      // Question & Media
+      const qInput = document.getElementById('peQuestionInput');
+      if (qInput) qInput.value = cleanHtmlForInput(card.question);
+      const qImgInput = document.getElementById('peQuestionImgInput');
+      if (qImgInput) qImgInput.value = card.questionImage || '';
+      updatePaperImagePreview('question');
+
+      // Answer & Media
+      const aInput = document.getElementById('peAnswerInput');
+      if (aInput) aInput.value = cleanHtmlForInput(card.answer);
+      const aImgInput = document.getElementById('peAnswerImgInput');
+      if (aImgInput) aImgInput.value = card.answerImage || '';
+      updatePaperImagePreview('answer');
+
+      // Metadata
+      const subInput = document.getElementById('peSubtopicInput');
+      if (subInput) subInput.value = card.subTopic || card.group || '';
+      const trkSelect = document.getElementById('peTrackSelect');
+      if (trkSelect) {
+        const trkVal = (card.track || currentTrack || 'clinic').toLowerCase();
+        trkSelect.value = trkVal === 'product' ? 'Product' : (trkVal === 'sap' ? 'SAP' : 'Clinic');
+      }
+      const noteInput = document.getElementById('peNoteInput');
+      if (noteInput) noteInput.value = card.note || '';
+
+      const editorName = document.getElementById('peEditorNameDisplay');
+      if (editorName) {
+        editorName.textContent = currentUser?.displayName ? `${currentUser.displayName} (${currentUser.username})` : 'Maxnum (ประธานโครงการ)';
+      }
+
+      const modal = document.getElementById('adminPaperEditorModal');
+      if (modal) {
+        modal.classList.add('show');
+        const paperSheet = modal.querySelector('.exam-paper-sheet');
+        if (paperSheet) paperSheet.scrollTop = 0;
+      }
+    } catch (err) {
+      console.error('Error opening paper editor modal:', err);
+      showToast('⚠️ เกิดข้อผิดพลาดในการเปิดหน้าต่างแก้ไข: ' + err.message);
+    }
+  }
+
+  function closePaperEditorModal() {
+    const modal = document.getElementById('adminPaperEditorModal');
+    if (modal) modal.classList.remove('show');
+    currentEditingCard = null;
+  }
+
+  function updatePaperImagePreview(type) {
+    const urlInput = document.getElementById(type === 'question' ? 'peQuestionImgInput' : 'peAnswerImgInput');
+    const previewBox = document.getElementById(type === 'question' ? 'peQuestionImgPreviewWrap' : 'peAnswerImgPreviewWrap');
+    const imgElem = document.getElementById(type === 'question' ? 'peQuestionImgPreview' : 'peAnswerImgPreview');
+    if (!urlInput || !previewBox || !imgElem) return;
+
+    const url = (urlInput.value || '').trim();
+    if (url) {
+      imgElem.src = url;
+      previewBox.style.display = 'flex';
+    } else {
+      imgElem.src = '';
+      previewBox.style.display = 'none';
+    }
+  }
+
+  function clearPaperImage(type) {
+    const urlInput = document.getElementById(type === 'question' ? 'peQuestionImgInput' : 'peAnswerImgInput');
+    if (urlInput) urlInput.value = '';
+    updatePaperImagePreview(type);
+  }
+
+  function insertFlashcardTemplate(tmplKey) {
+    const aArea = document.getElementById('peAnswerInput');
+    if (!aArea) return;
+
+    const templates = {
+      correct: "💡 [คำอธิบายและจุดเน้นข้อสอบ]:\n\n",
+      topic: "\n▶ [หัวข้อย่อย]:\n",
+      subitem: "\n   ↳ [ประเด็นสำคัญ / กลไก / ข้อบ่งใช้]: \n",
+      note: "\n   ✦ หมายเหตุ / ข้อยกเว้น: \n"
+    };
+
+    const toInsert = templates[tmplKey] || '';
+    if (!toInsert) return;
+
+    const start = aArea.selectionStart || 0;
+    const end = aArea.selectionEnd || 0;
+    const currentVal = aArea.value || '';
+    aArea.value = currentVal.substring(0, start) + toInsert + currentVal.substring(end);
+    aArea.selectionStart = aArea.selectionEnd = start + toInsert.length;
+    aArea.focus();
+  }
+
+  async function savePaperEditorData() {
+    if (!isUserAllowedAdmin(currentUser?.username)) {
+      showToast('⚠️ สิทธิ์ Admin เท่านั้นที่สามารถบันทึก Flashcard ได้');
+      return;
+    }
+
+    const cardId = document.getElementById('peCardIdHidden')?.value || (currentEditingCard?.id || '');
+    const itemNo = (document.getElementById('peItemNoInput')?.value || '').trim();
+    let questionText = (document.getElementById('peQuestionInput')?.value || '').trim();
+    const questionImg = (document.getElementById('peQuestionImgInput')?.value || '').trim();
+    let answerText = (document.getElementById('peAnswerInput')?.value || '').trim();
+    const answerImg = (document.getElementById('peAnswerImgInput')?.value || '').trim();
+    const subtopic = (document.getElementById('peSubtopicInput')?.value || '').trim();
+    const track = (document.getElementById('peTrackSelect')?.value || 'Clinic').trim();
+    const note = (document.getElementById('peNoteInput')?.value || '').trim();
+
+    if (!questionText) {
+      showToast('⚠️ กรุณาระบุข้อความโจทย์หรือคำถามหน้าการ์ดก่อน');
+      return;
+    }
+    if (!answerText) {
+      showToast('⚠️ กรุณาระบุคำตอบหรือเนื้อหาหลังการ์ดก่อน');
+      return;
+    }
+
+    // Rule 3.6 Sanitizing: strip raw markdown asterisks
+    const stripMarkdown = (txt) => {
+      if (!txt) return '';
+      return txt.replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n');
+    };
+
+    questionText = stripMarkdown(questionText);
+    answerText = stripMarkdown(answerText);
+
+    const payload = {
+      action: 'updateCard',
+      cardId: cardId,
+      itemNo: itemNo,
+      question: questionText,
+      questionImage: questionImg,
+      answer: answerText,
+      answerImage: answerImg,
+      subtopic: subtopic,
+      track: track,
+      note: note,
+      editorUsername: currentUser?.username || 'admin',
+      editorName: currentUser?.displayName || 'Administrator'
+    };
+
+    // 1. Snappy Local State Update (0ms immediate render)
+    const patchCardObj = (target) => {
+      if (!target) return;
+      target.itemNo = itemNo;
+      target.question = questionText.replace(/\n/g, '<br>');
+      target.questionImage = questionImg;
+      target.answer = answerText.replace(/\n/g, '<br>');
+      target.answerImage = answerImg;
+      target.subTopic = subtopic;
+      target.track = track;
+      target.note = note;
+    };
+
+    if (currentEditingCard) patchCardObj(currentEditingCard);
+    if (typeof viewCards !== 'undefined' && Array.isArray(viewCards)) {
+      const found = viewCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+      if (found) patchCardObj(found);
+    }
+    if (typeof allCards !== 'undefined' && Array.isArray(allCards)) {
+      const found = allCards.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+      if (found) patchCardObj(found);
+    }
+    if (typeof browseCardsCache !== 'undefined' && Array.isArray(browseCardsCache)) {
+      const found = browseCardsCache.find(c => c && (c.id === cardId || String(c.id) === String(cardId)));
+      if (found) patchCardObj(found);
+    }
+
+    // Refresh active views
+    if (currentAppMode === 'study') {
+      renderCard();
+    } else if (currentAppMode === 'browse') {
+      renderBrowseTable();
+    }
+
+    // 2. Remote Google Apps Script Sync
+    const saveBtn = document.getElementById('btnSavePaperEditor');
+    const originalBtnHtml = saveBtn ? saveBtn.innerHTML : '';
+    if (saveBtn) {
+      saveBtn.disabled = true;
+      saveBtn.innerHTML = '⏳ กำลังบันทึกลง Google Sheets...';
+    }
+
+    try {
+      await sendFeedbackToGAS(payload);
+      showToast('✅ อัปเดต Google Sheet และหน้าเว็บสำเร็จเรียบร้อย!');
+      closePaperEditorModal();
+    } catch (err) {
+      console.error('Error syncing card update to GAS:', err);
+      showToast('⚠️ บันทึกในระบบเว็บแล้ว แต่การเชื่อมต่อ Google Sheets มีข้อขัดข้อง: ' + err.message);
+      closePaperEditorModal();
+    } finally {
+      if (saveBtn) {
+        saveBtn.disabled = false;
+        saveBtn.innerHTML = originalBtnHtml;
+      }
+    }
   }
 </script>
 
