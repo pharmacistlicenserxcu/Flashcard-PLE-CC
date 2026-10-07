@@ -74,61 +74,42 @@
     
     body {
       font-family: 'Bai Jamjuree', sans-serif;
-      background: #D4D2C8;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
       min-height: 100vh;
       min-height: 100dvh;
-      padding: 20px 12px;
-      color: var(--ink);
-      -webkit-font-smoothing: antialiased;
-      transition: background 0.3s ease, padding 0.3s ease;
-    }
-
-    /* ══ APP SHELL ══ */
-    .app-shell {
-      width: 100%;
-      max-width: 960px;
-      background: var(--bg);
-      border-radius: 28px;
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-      min-height: 820px;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
-      border: 1px solid var(--border);
-      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
+      align-items: stretch;
+      justify-content: flex-start;
+      -webkit-font-smoothing: antialiased;
     }
 
-    body.mode-phone { padding: 16px 8px; background: #C8C5BA; }
-    body.mode-phone .app-shell {
-      max-width: 420px !important;
-      border-radius: 36px !important;
-      min-height: 780px !important;
-      box-shadow: 0 0 0 8px #1E2320, 0 24px 50px rgba(0,0,0,0.25) !important;
-      border: 2px solid #333C37 !important;
+    /* ══ APP SHELL — Modern Fluid Full-Bleed Layout (OSPE Practice Hub Reference) ══ */
+    .app-shell {
+      width: 100%;
+      max-width: 100%;
+      background: var(--bg);
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      position: relative;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
     }
-    
-    .phone-notch {
-      display: none; width: 100px; height: 20px; background: #1E2320;
-      border-radius: 20px; margin: 8px auto 2px; z-index: 100; flex-shrink: 0;
-    }
-    body.mode-phone .phone-notch { display: block; }
 
     @media (max-width: 768px) {
-      body { padding: 0 !important; background: var(--bg) !important; }
-      body.mode-phone { padding: 0 !important; }
+      body { padding: 0 !important; margin: 0 !important; background: var(--bg) !important; }
       .app-shell {
         max-width: 100% !important; border-radius: 0 !important;
         min-height: 100dvh !important; box-shadow: none !important; border: none !important;
       }
-      body.mode-phone .app-shell {
-        max-width: 100% !important; border-radius: 0 !important;
-        min-height: 100dvh !important; box-shadow: none !important; border: none !important;
-      }
-      .phone-notch { display: none !important; }
       .kbd-hints-bar { display: none !important; }
       .study-viewport { padding: 8px 12px 14px !important; }
       .topbar { padding: 10px 12px !important; }
@@ -634,8 +615,6 @@
       background: var(--card); border: 1px solid var(--border); border-radius: 4px;
       padding: 2px 5px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--ink-soft); font-weight: 700;
     }
-    body.mode-phone .kbd-hints-bar { display: none !important; }
-
     .bottombar {
       display: flex; align-items: center; justify-content: space-between;
       width: 100%; max-width: 680px; margin: 0 auto; padding-top: 2px; flex-shrink: 0;
@@ -740,8 +719,19 @@
     .random-sub-item { display: flex; align-items: center; justify-content: space-between; padding: 4px 0; font-size: 12px; border-bottom: 1px solid #F0EFEA; }
     .random-sub-item:last-child { border-bottom: none; }
 
-    #lobbyView { padding: 20px 22px 24px; flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
-    body.mode-phone #lobbyView { padding: 14px 14px 20px; }
+    #lobbyView {
+      padding: 20px 22px 24px;
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      max-width: 1160px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    @media (max-width: 640px) {
+      #lobbyView { padding: 14px 14px 20px; }
+    }
 
     .lobby-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 8px; }
     .lobby-logo { display: flex; align-items: center; gap: 8px; }
@@ -782,7 +772,9 @@
     .lobby-dropdown-wrap svg { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); pointer-events: none; stroke: var(--ink-faint); }
 
     .deck-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-bottom: 20px; }
-    body.mode-phone .deck-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
+    @media (max-width: 640px) {
+      .deck-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
+    }
 
     .deck-card {
       background: var(--card); border: 1.5px solid var(--border); border-radius: 15px; padding: 14px 12px; cursor: pointer;
@@ -810,7 +802,9 @@
     .deck-bar-fill.sap-fill { background: var(--sap); }
 
     .lobby-quick-tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 18px; }
-    body.mode-phone .lobby-quick-tools { grid-template-columns: 1fr 1fr; }
+    @media (max-width: 640px) {
+      .lobby-quick-tools { grid-template-columns: 1fr 1fr; }
+    }
 
     .lobby-tool-btn {
       padding: 11px; border-radius: 12px; border: 1px solid var(--border);
@@ -902,7 +896,6 @@
 <body>
 
 <div class="app-shell" id="appShell">
-  <div class="phone-notch"></div>
 
   <!-- ══ AUTH OVERLAY ══ -->
   <div id="authOverlay">
@@ -998,9 +991,6 @@
         </div>
         <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
           <span style="font-size:13px;">📖</span>
-        </button>
-        <button class="icon-btn" id="toggleViewModeBtnLobby" onclick="toggleAppViewMode()" title="สลับโหมด Desktop / Mobile">
-          <span id="viewModeIconLobby">📱</span>
         </button>
         <button class="icon-btn" onclick="toggleFullscreen()" title="โหมดเต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
@@ -1106,9 +1096,6 @@
         </button>
         <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
           <span style="font-size:13px;">📖</span>
-        </button>
-        <button class="icon-btn" id="toggleViewModeBtnStudy" onclick="toggleAppViewMode()" title="สลับโหมด Desktop / Mobile">
-          <span id="viewModeIconStudy">📱</span>
         </button>
         <button class="icon-btn" onclick="toggleFullscreen()" title="เต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
@@ -1352,10 +1339,6 @@
     <div class="sheet-row" onclick="toggleSheet(false); toggleStats();">
       <span>📊 สถิติความจำของฉัน</span>
       <span class="r-right"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
-    </div>
-    <div class="sheet-row" onclick="toggleSheet(false); toggleAppViewMode();">
-      <span>📱 สลับโหมดหน้าจอ (Desktop / Mobile)</span>
-      <span class="r-right"><span id="sheetViewModeLabel">Desktop</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
     </div>
     <div class="sheet-row" onclick="doLogout();">
       <span>🚪 ออกจากระบบ</span>
@@ -2250,7 +2233,6 @@ window.google.script.run = (function() {
   let smartMasteredCount = 0;
 
   const LS_KEY = 'fc_session_token_ple';
-  const LS_VIEW_MODE = 'fc_view_mode';
   const LS_TRACK = 'fc_current_track';
 
   // ─── 1-to-1 TOPIC-MATCHED EMOJIS (ตรงกับ 16 กลุ่มโรคคลินิก และ 12 หมวดผลิตภัณฑ์) ───
@@ -2352,37 +2334,6 @@ window.google.script.run = (function() {
     }
   });
 
-  function initViewMode() {
-    const saved = localStorage.getItem(LS_VIEW_MODE);
-    const isPhone = (saved === 'phone');
-    if (isPhone) document.body.classList.add('mode-phone');
-    else document.body.classList.remove('mode-phone');
-    updateViewModeUI(isPhone);
-  }
-
-  function toggleAppViewMode() {
-    const isPhone = document.body.classList.toggle('mode-phone');
-    localStorage.setItem(LS_VIEW_MODE, isPhone ? 'phone' : 'desktop');
-    updateViewModeUI(isPhone);
-    showToast(isPhone ? '📱 สลับเป็น Smartphone View (420px Mockup)' : '🖥️ สลับเป็น Desktop Workspace View (960px)');
-  }
-
-  function updateViewModeUI(isPhone) {
-    const label = document.getElementById('sheetViewModeLabel');
-    if (label) label.textContent = isPhone ? 'Smartphone View' : 'Desktop View';
-
-    const iconL = document.getElementById('viewModeIconLobby');
-    if (iconL) iconL.textContent = isPhone ? '🖥️' : '📱';
-
-    const iconS = document.getElementById('viewModeIconStudy');
-    if (iconS) iconS.textContent = isPhone ? '🖥️' : '📱';
-    
-    const btnL = document.getElementById('toggleViewModeBtnLobby');
-    const btnS = document.getElementById('toggleViewModeBtnStudy');
-    if (btnL) btnL.classList.toggle('active', isPhone);
-    if (btnS) btnS.classList.toggle('active', isPhone);
-  }
-
   function openGuidelineModal() { document.getElementById('guidelineModal').classList.add('show'); }
   function closeGuidelineModal() { document.getElementById('guidelineModal').classList.remove('show'); }
 
@@ -2396,7 +2347,6 @@ window.google.script.run = (function() {
   }
 
   window.addEventListener('load', () => {
-    initViewMode();
     const savedTrack = localStorage.getItem(LS_TRACK);
     if (savedTrack) currentTrack = savedTrack;
 
