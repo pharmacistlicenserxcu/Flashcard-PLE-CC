@@ -2805,6 +2805,27 @@ window.google.script.run = (function() {
   let browseCardsCache = null;
   let isTreeExpanded  = false;
 
+  // ─── UTILITY STRING SANITIZERS ───
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function escapeAttr(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/'/g, '&#39;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
   // ─── SMART LEARNING STATE ───
   let studyMethod     = 'standard';
   let smartQueue      = [];
@@ -3745,28 +3766,63 @@ window.google.script.run = (function() {
   }
 
   // ─── BROWSE MODE ───
+  function renderBrowseTable() {
+    onBrowseFilterChange();
+  }
+
   function initBrowseMode() {
     const catSel = document.getElementById('browseCatSelect');
+    if (!catSel) return;
+
+    // Ensure categories is populated
+    if ((!categories || !categories.length) && window.OFFLINE_CATEGORIES) {
+      categories = window.OFFLINE_CATEGORIES;
+    }
+
     catSel.innerHTML = '<option value="__all__">🗂 ทุกหมวดวิชา</option>';
-    categories.forEach(c => {
+    (categories || []).forEach(c => {
       const norm = normalizeTrack(c.track);
       const trackBadge = norm === 'product' ? '🧪' : norm === 'sap' ? '💼' : '🩺';
       catSel.innerHTML += `<option value="${c.name}">${trackBadge} ${c.name} (${c.count} ข้อ)</option>`;
     });
 
-    if (currentCategory) catSel.value = currentCategory;
-    else catSel.value = '__all__';
+    if (currentCategory && [...catSel.options].some(o => o.value === currentCategory)) {
+      catSel.value = currentCategory;
+    } else {
+      catSel.value = '__all__';
+    }
 
+    // Direct synchronous load from offline database & admin overrides (0ms instant!)
     if (!browseCardsCache || !browseCardsCache.length) {
+      if (typeof applyAdminFCLocalOverrides === 'function') applyAdminFCLocalOverrides();
+      const allMap = window.OFFLINE_ALL_CARDS_BY_TRACK || {};
+      let list = allMap['all'] || [];
+      if (!list.length && window.OFFLINE_CARDS) {
+        list = Object.values(window.OFFLINE_CARDS).flat();
+      }
+
+      if (list && list.length > 0) {
+        browseCardsCache = list;
+        updateBrowseSubtopicsDropdown(currentSubTopic);
+        onBrowseFilterChange();
+        return;
+      }
+
       document.getElementById('browseTableContainer').innerHTML = '<div class="loading-wrap"><div class="spinner"></div>กำลังโหลดคลัง Flashcard...</div>';
-      google.script.run
-        .withSuccessHandler(cards => { 
-          browseCardsCache = cards || []; 
-          updateBrowseSubtopicsDropdown(currentSubTopic);
-          onBrowseFilterChange(); 
-        })
-        .withFailureHandler(err => { document.getElementById('browseTableContainer').innerHTML = '<div class="loading-wrap">เกิดข้อผิดพลาดในการโหลดคลัง Flashcard</div>'; })
-        .getAllFlashcards('all');
+      if (window.google && google.script && google.script.run && typeof google.script.run.getAllFlashcards === 'function') {
+        google.script.run
+          .withSuccessHandler(cards => { 
+            browseCardsCache = cards || []; 
+            updateBrowseSubtopicsDropdown(currentSubTopic);
+            onBrowseFilterChange(); 
+          })
+          .withFailureHandler(err => { 
+            document.getElementById('browseTableContainer').innerHTML = '<div class="loading-wrap">เกิดข้อผิดพลาดในการโหลดคลัง Flashcard</div>'; 
+          })
+          .getAllFlashcards('all');
+      } else {
+        document.getElementById('browseTableContainer').innerHTML = '<div class="loading-wrap">ไม่พบข้อมูลคลัง Flashcard</div>';
+      }
     } else {
       updateBrowseSubtopicsDropdown(currentSubTopic);
       onBrowseFilterChange();
@@ -3786,6 +3842,7 @@ window.google.script.run = (function() {
 
     const subMap = {};
     browseCardsCache.forEach(c => {
+      if (!c) return;
       if (catVal !== '__all__' && c.group !== catVal) return;
       const s = (c.subTopic || '').trim();
       if (s && s !== 'หัวข้อย่อย' && s !== 'หัวข้อย่อย (SubTopic)') {
@@ -3818,67 +3875,92 @@ window.google.script.run = (function() {
     onBrowseFilterChange();
   }
 
-  function clearBrowseSearch() { document.getElementById('browseSearchInput').value = ''; onBrowseFilterChange(); }
+  function clearBrowseSearch() { 
+    const input = document.getElementById('browseSearchInput');
+    if (input) input.value = ''; 
+    onBrowseFilterChange(); 
+  }
 
   function onBrowseFilterChange() {
     if (!browseCardsCache) return;
-    const query  = (document.getElementById('browseSearchInput').value || '').trim().toLowerCase();
-    const catVal = document.getElementById('browseCatSelect').value;
-    const subSel = document.getElementById('browseSubtopicSelect');
-    const subVal = subSel ? subSel.value : '__all__';
-    const statusVal = document.getElementById('browseStatusSelect').value;
-    document.getElementById('browseSearchClear').style.display = query ? 'block' : 'none';
+    try {
+      const queryInput = document.getElementById('browseSearchInput');
+      const query  = queryInput ? (queryInput.value || '').trim().toLowerCase() : '';
+      const catVal = document.getElementById('browseCatSelect') ? document.getElementById('browseCatSelect').value : '__all__';
+      const subSel = document.getElementById('browseSubtopicSelect');
+      const subVal = subSel ? subSel.value : '__all__';
+      const statusSelect = document.getElementById('browseStatusSelect');
+      const statusVal = statusSelect ? statusSelect.value : 'all';
+      
+      const clearBtn = document.getElementById('browseSearchClear');
+      if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
 
-    const filtered = browseCardsCache.filter(c => {
-      if (catVal !== '__all__' && c.group !== catVal) return false;
-      if (subVal !== '__all__' && !matchSubTopic(c.subTopic, subVal)) return false;
-      const st = cardStatus(c);
-      if (statusVal === 'confident' && st !== 'มั่นใจ') return false;
-      if (statusVal === 'notconfident' && st !== 'ไม่มั่นใจ') return false;
-      if (statusVal === 'new' && st !== null) return false;
+      const filtered = browseCardsCache.filter(c => {
+        if (!c) return false;
+        if (catVal !== '__all__' && c.group !== catVal) return false;
+        if (subVal !== '__all__' && !matchSubTopic(c.subTopic, subVal)) return false;
+        const st = cardStatus(c);
+        if (statusVal === 'confident' && st !== 'มั่นใจ') return false;
+        if (statusVal === 'notconfident' && st !== 'ไม่มั่นใจ') return false;
+        if (statusVal === 'new' && st !== null) return false;
 
-      if (query) {
-        const q = (c.question || '').replace(/<[^>]*>/g, '').toLowerCase();
-        const a = (c.answer || '').replace(/<[^>]*>/g, '').toLowerCase();
-        const s = (c.subTopic || '').toLowerCase();
-        return q.includes(query) || a.includes(query) || s.includes(query);
+        if (query) {
+          const q = (c.question || '').replace(/<[^>]*>/g, '').toLowerCase();
+          const a = (c.answer || '').replace(/<[^>]*>/g, '').toLowerCase();
+          const s = (c.subTopic || '').toLowerCase();
+          return q.includes(query) || a.includes(query) || s.includes(query);
+        }
+        return true;
+      });
+
+      const countEl = document.getElementById('browseResultCount');
+      if (countEl) countEl.textContent = `พบ ${filtered.length} ข้อ`;
+      const container = document.getElementById('browseTableContainer');
+      if (!container) return;
+
+      if (!filtered.length) {
+        container.innerHTML = '<div style="padding:20px; text-align:center; color:var(--ink-faint); font-size:13px; font-weight:600;">ไม่พบ Flashcard ที่ตรงตามเงื่อนไข</div>';
+        return;
       }
-      return true;
-    });
 
-    document.getElementById('browseResultCount').textContent = `พบ ${filtered.length} ข้อ`;
-    const container = document.getElementById('browseTableContainer');
-    if (!filtered.length) {
-      container.innerHTML = '<div style="padding:20px; text-align:center; color:var(--ink-faint); font-size:13px; font-weight:600;">ไม่พบ Flashcard ที่ตรงตามเงื่อนไข</div>';
-      return;
-    }
+      let html = '';
+      filtered.forEach((card, i) => {
+        if (!card) return;
+        const st = cardStatus(card);
+        const dotCls = st === 'มั่นใจ' ? 'dot-confident' : st === 'ไม่มั่นใจ' ? 'dot-notconfident' : 'dot-new';
+        const qImgHtml = card.questionImage ? `<div style="margin:6px 0;"><img src="${card.questionImage}" style="max-width:100%;max-height:140px;border-radius:8px;border:1px solid var(--border);object-fit:contain;cursor:pointer;" onclick="openImgLightbox(this.src, event)"></div>` : '';
+        const aImgHtml = card.answerImage ? `<div style="margin:6px 0;"><img src="${card.answerImage}" style="max-width:100%;max-height:140px;border-radius:8px;border:1px solid var(--border);object-fit:contain;cursor:pointer;" onclick="openImgLightbox(this.src, event)"></div>` : '';
+        const subBadge = (card.subTopic && card.subTopic !== card.group)
+          ? `<span class="bt-sub-tag">› ${escapeHtml(card.subTopic)}</span>`
+          : '';
 
-    let html = '';
-    filtered.forEach((card, i) => {
-      const st = cardStatus(card);
-      const dotCls = st === 'มั่นใจ' ? 'dot-confident' : st === 'ไม่มั่นใจ' ? 'dot-notconfident' : 'dot-new';
-      const qImgHtml = card.questionImage ? `<div style="margin:6px 0;"><img src="${card.questionImage}" style="max-width:100%;max-height:140px;border-radius:8px;border:1px solid var(--border);object-fit:contain;cursor:pointer;" onclick="openImgLightbox(this.src, event)"></div>` : '';
-      const aImgHtml = card.answerImage ? `<div style="margin:6px 0;"><img src="${card.answerImage}" style="max-width:100%;max-height:140px;border-radius:8px;border:1px solid var(--border);object-fit:contain;cursor:pointer;" onclick="openImgLightbox(this.src, event)"></div>` : '';
-      const subBadge = (card.subTopic && card.subTopic !== card.group)
-        ? `<span class="bt-sub-tag">› ${escapeHtml(card.subTopic)}</span>`
-        : '';
+        const adminEditBtn = (typeof isUserAllowedAdmin === 'function' && currentUser && isUserAllowedAdmin(currentUser.username))
+          ? `<button class="btn-admin-edit-browse" onclick="event.stopPropagation(); openCardPaperEditorById('${escapeAttr(card.id)}')" title="✏️ แก้ไข Flashcard บนแผ่นกระดาษ (Admin)">✏️ แก้ไข</button>`
+          : '';
 
-      html += `
-        <div class="browse-table-item" onclick="toggleBrowseItemAnswer(this)">
-          <div class="bt-head">
-            <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-              <span class="bt-tag">${card.group || ''}</span>
-              ${subBadge}
-              <span style="font-size:11px; font-weight:600; color:var(--ink-faint);">· ข้อ ${card.itemNo || i+1}</span>
-              ${(typeof isUserAllowedAdmin === 'function' && currentUser && isUserAllowedAdmin(currentUser.username)) ? `<button class="btn-admin-edit-browse" onclick="event.stopPropagation(); openCardPaperEditorById('${escapeAttr(card.id)}')" title="✏️ แก้ไข Flashcard บนแผ่นกระดาษ (Admin)">✏️ แก้ไข</button>` : ''}
+        html += `
+          <div class="browse-table-item" onclick="toggleBrowseItemAnswer(this)">
+            <div class="bt-head">
+              <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                <span class="bt-tag">${escapeHtml(card.group || '')}</span>
+                ${subBadge}
+                <span style="font-size:11px; font-weight:600; color:var(--ink-faint);">· ข้อ ${escapeHtml(card.itemNo || String(i+1))}</span>
+                ${adminEditBtn}
+              </div>
+              <span class="card-status-dot ${dotCls}"></span>
             </div>
-            <span class="card-status-dot ${dotCls}"></span>
-          </div>
-          <div class="bt-q">${card.question || ''}${qImgHtml}</div>
-          <div class="bt-a"><b style="color:var(--confident)">เฉลย:</b> ${card.answer || ''}${aImgHtml}</div>
-        </div>`;
-    });
-    container.innerHTML = html;
+            <div class="bt-q">${card.question || ''}${qImgHtml}</div>
+            <div class="bt-a"><b style="color:var(--confident)">เฉลย:</b> ${card.answer || ''}${aImgHtml}</div>
+          </div>`;
+      });
+      container.innerHTML = html;
+    } catch (err) {
+      console.error('Error in onBrowseFilterChange:', err);
+      const container = document.getElementById('browseTableContainer');
+      if (container) {
+        container.innerHTML = `<div style="padding:20px; text-align:center; color:#dc2626; font-size:13px; font-weight:600;">เกิดข้อผิดพลาดในการแสดงผลคลัง: ${escapeHtml(err.message)}</div>`;
+      }
+    }
   }
 
   function toggleBrowseItemAnswer(el) {
