@@ -80,7 +80,7 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "10. Psychiatric",
     "track": "Clinic",
-    "count": 51,
+    "count": 49,
     "subtopics": [
       "Anxiety",
       "Smoking Cessation"
@@ -749,7 +749,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ระยะของการเกิดโรคไมเกรน (Phases of a migraine attack) แบ่งออกเป็นกี่ระยะ อะไรบ้าง?",
       "questionImage": "",
-      "answer": "แบ่งเป็น 4 ระยะ คือ 1. Prodrome 2. Aura 3. Headache และ 4. Resolution",
+      "answer": "แบ่งเป็น 4 ระยะ คือ 1. ระยะอาการนำ (Prodrome Phase)<br> ช่วงเวลา: เกิดก่อนมีอาการปวดศีรษะประมาณ 24 ถึง 48 ชั่วโมง มีการเปลี่ยนแปลงทางอารมณ์ เพลีย เบื่ออาหาร 2. ระยะอาการเตือนทางระบบประสาท (Aura Phase)<br> ช่วงเวลา: เกิดขึ้นก่อนเข้าสู่ระยะปวดศีรษะประมาณ 5 ถึง 60 นาที และผู้ป่วยไมเกรนไม่ได้มีระยะนี้ทุกคน มีอาการ visual aura และชาซ่าๆยิบๆ 3. ระยะปวดศีรษะ (Headache Phase)<br> ช่วงเวลา: ปวดนานตั้งแต่ 4 ถึง 72 ชั่วโมง หากไม่ได้รับการรักษาหรือรักษาไม่สำเร็จ 4. ระยะฟื้นตัว (Postdrome Phase)<br> ช่วงเวลา: เกิดหลังจากอาการปวดศีรษะเริ่มบรรเทาลง กินเวลาประมาณ 24 ชั่วโมง  <br> ลักษณะอาการ: มีลักษณะคล้ายภาวะ Hangover effect คือ มึนงง สับสน เพลียมาก",
       "answerImage": "",
       "note": ""
     },
@@ -845,7 +845,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ในการเลือกใช้ NSAIDs สำหรับ Acute migraine ควรเลือกคุณสมบัติยาลักษณะใด?",
       "questionImage": "",
-      "answer": "ควรเลือก NSAIDs ที่มีค่า Tmaxสั้น (ดูดซึมเร็วไม่เกิน 2 ชั่วโมง) และหลีกเลี่ยงรูปแบบ Enteric-coated (EC) เพื่อให้ยาเริ่มออกฤทธิ์ระงับอาการปวดได้รวดเร็วภายใน 2 ชั่วโมง",
+      "answer": "ควรเลือก NSAIDs ที่มีค่า Tmaxสั้น (ดูดซึมเร็วไม่เกิน 2 ชั่วโมง) ได้แก่ Ibuprofen<br> Diclofenac (โดยเฉพาะรูปแบบ Potassium salt หรือ Dispersible/Liquid-filled capsule)  <br> Naproxen sodium ,Aspirin,Ketorolac และควรหลีกเลี่ยงยารูปแบบ Enteric-coated (EC) เนื่องจากจะทำให้การปลดปล่อยและดูดซึมยาเนิ่นออกไป ส่งผลให้ Tmaxนานขึ้นและออกฤทธิ์ระงับอาการปวดได้ช้าลง",
       "answerImage": "",
       "note": ""
     },
@@ -917,7 +917,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ข้อห้ามใช้ที่สำคัญอย่างยิ่งของยากลุ่ม Triptans และ Ergotamine มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "ผู้ป่วยโรคหลอดเลือดหัวใจ (CAD), ความดันโลหิตสูงที่ควบคุมไม่ได้ (Uncontrolled HT), โรคหลอดเลือดสมอง (Stroke/TIA) และ หญิงตั้งครรภ์ (Pregnancy Category X)",
+      "answer": "ผู้ป่วยโรคหลอดเลือดหัวใจ (CAD), ความดันโลหิตสูงที่ควบคุมไม่ได้ (Uncontrolled HT), โรคหลอดเลือดสมอง (Stroke/TIA), คนที่แพ้ sulfa และ หญิงตั้งครรภ์ (Pregnancy Category X)",
       "answerImage": "",
       "note": ""
     },
@@ -963,6 +963,18 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
+      "question": "ขนาดยาแนะนำและการบริหารยา Ergotamine ในผู้ใหญ่คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ขนาดยาเริ่มต้น: รับประทานครั้งแรก 1–2 เม็ด ทันทีเมื่อเริ่มมีอาการปวดศีรษะไมเกรน  <br> การรับประทานซ้ำ: หากอาการยังไม่ดีขึ้น สามารถรับประทานซ้ำได้ครั้งละ 1 เม็ด ทุกๆ 30 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::27",
+      "itemNo": "25",
+      "group": "9. Neurologic",
+      "subTopic": "Headache (migraine/tension)",
+      "track": "Clinic",
       "question": "ยา Ergotamine tartrate ออกฤทธิ์ผ่านตัวรับใดบ้าง และก่อให้เกิดผลข้างเคียงอย่างไรตามกลไก?",
       "questionImage": "",
       "answer": "กระตุ้น alpha1-receptor: ทำให้หลอดเลือดส่วนปลายหดตัว, ความดันโลหิตสูงขึ้น, ปลายมือปลายเท้าเย็น  <br> กระตุ้น D2-receptor: ทำให้เกิดอาการคลื่นไส้ อาเจียน  <br> กระตุ้น 5-HT 1B receptor: ทำให้เกิดอาการใจสั่น เจ็บหน้าอก",
@@ -970,8 +982,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::27",
-      "itemNo": "25",
+      "id": "9. Neurologic::28",
+      "itemNo": "26",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -982,8 +994,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::28",
-      "itemNo": "26",
+      "id": "9. Neurologic::29",
+      "itemNo": "27",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -994,8 +1006,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::29",
-      "itemNo": "27",
+      "id": "9. Neurologic::30",
+      "itemNo": "28",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1006,8 +1018,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::30",
-      "itemNo": "28",
+      "id": "9. Neurologic::31",
+      "itemNo": "29",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1018,8 +1030,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::31",
-      "itemNo": "29",
+      "id": "9. Neurologic::32",
+      "itemNo": "30",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1030,8 +1042,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::32",
-      "itemNo": "30",
+      "id": "9. Neurologic::33",
+      "itemNo": "31",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1042,8 +1054,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::33",
-      "itemNo": "31",
+      "id": "9. Neurologic::34",
+      "itemNo": "32",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1054,8 +1066,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::34",
-      "itemNo": "32",
+      "id": "9. Neurologic::35",
+      "itemNo": "33",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1066,8 +1078,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::35",
-      "itemNo": "33",
+      "id": "9. Neurologic::36",
+      "itemNo": "34",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1078,8 +1090,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::36",
-      "itemNo": "34",
+      "id": "9. Neurologic::37",
+      "itemNo": "35",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1090,8 +1102,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::37",
-      "itemNo": "35",
+      "id": "9. Neurologic::38",
+      "itemNo": "36",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -1102,32 +1114,32 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::38",
-      "itemNo": "36",
-      "group": "9. Neurologic",
-      "subTopic": "Parkinson disease",
-      "track": "Clinic",
-      "question": "เพราะเหตุใดจึงไม่สามารถใช้โดปามีน (Dopamine) โดยตรงในการรักษาโรคพาร์กินสันได้?",
-      "questionImage": "",
-      "answer": "เพราะโดปามีนไม่สามารถผ่านกั้นระหว่างเลือดกับสมอง (Blood-Brain Barrier: BBB) ได้",
-      "answerImage": "",
-      "note": ""
-    },
-    {
       "id": "9. Neurologic::39",
       "itemNo": "37",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "การรับประทานยา Levodopa พร้อมกับอาหารประเภทโปรตีนสูงจะส่งผลอย่างไรต่อเภสัชจลนศาสตร์ของยา?",
+      "question": "เพราะเหตุใดจึงไม่สามารถใช้โดปามีน (Dopamine) โดยตรงในการรักษาโรคพาร์กินสันได้?",
       "questionImage": "",
-      "answer": "ชะลอการดูดซึมและลด C max",
+      "answer": "เพราะโดปามีนไม่สามารถผ่าน Blood-Brain Barrier: BBB ได้",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "9. Neurologic::40",
       "itemNo": "38",
+      "group": "9. Neurologic",
+      "subTopic": "Parkinson disease",
+      "track": "Clinic",
+      "question": "การรับประทานยา Levodopa พร้อมกับอาหารประเภทโปรตีนสูงจะส่งผลอย่างไรต่อเภสัชจลนศาสตร์ของยา?",
+      "questionImage": "",
+      "answer": "ชะลอการดูดซึมและลด C max เนื่องจาก Levodopa ใช้ transporter ร่วมกับโปรตีน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::41",
+      "itemNo": "39",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
@@ -1138,8 +1150,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::41",
-      "itemNo": "39",
+      "id": "9. Neurologic::42",
+      "itemNo": "40",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
@@ -1150,7 +1162,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::42",
+      "id": "9. Neurologic::43",
       "itemNo": "40",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1162,7 +1174,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::43",
+      "id": "9. Neurologic::44",
       "itemNo": "41",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1174,7 +1186,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::44",
+      "id": "9. Neurologic::45",
       "itemNo": "42",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1186,7 +1198,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::45",
+      "id": "9. Neurologic::46",
       "itemNo": "43",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1198,7 +1210,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::46",
+      "id": "9. Neurologic::47",
       "itemNo": "44",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1210,7 +1222,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::47",
+      "id": "9. Neurologic::48",
       "itemNo": "45",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1222,7 +1234,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::48",
+      "id": "9. Neurologic::49",
       "itemNo": "46",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1234,7 +1246,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::49",
+      "id": "9. Neurologic::50",
       "itemNo": "47",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1246,7 +1258,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::50",
+      "id": "9. Neurologic::51",
       "itemNo": "48",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1258,7 +1270,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::51",
+      "id": "9. Neurologic::52",
       "itemNo": "49",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1270,7 +1282,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::52",
+      "id": "9. Neurologic::53",
       "itemNo": "50",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1282,7 +1294,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::53",
+      "id": "9. Neurologic::54",
       "itemNo": "51",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1294,31 +1306,31 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::54",
+      "id": "9. Neurologic::55",
       "itemNo": "52",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "Selegiline ถูก metabolism ได้อะไร",
+      "question": "Selegiline ถูก metabolism ได้อะไร ทำให้เกิดผลข้างเคียงตื่นตัว นอนไม่หลับ",
       "questionImage": "",
       "answer": "L-amphetamine และ L-methamphetamine",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "9. Neurologic::55",
+      "id": "9. Neurologic::56",
       "itemNo": "53",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "ข้อแนะนำในการบริหารยา Selegiline เพื่อลดปัญหาการนอนไม่หลับคืออะไร?",
+      "question": "ข้อแนะนำในการบริหารยา Selegiline เพื่อลดปัญหาการนอนไม่หลับคืออะไร",
       "questionImage": "",
       "answer": "หลีกเลี่ยงการรับประทานยามื้อเย็นหรือมื้อก่อนนอน",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "9. Neurologic::56",
+      "id": "9. Neurologic::57",
       "itemNo": "54",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1330,7 +1342,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::57",
+      "id": "9. Neurologic::58",
       "itemNo": "55",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -1338,18 +1350,6 @@ window.OFFLINE_CARDS = {
       "question": "COMT inhibitors ออกฤทธิ์อย่างไรเมื่อใช้ร่วมกับ Levodopa?",
       "questionImage": "",
       "answer": "ยับยั้งเอนไซม์ Catechol-O-methyltransferase เพื่อป้องกันการเปลี่ยน Levodopa ไปเป็น 3-O-methyldopa (3-OMD)",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "9. Neurologic::58",
-      "itemNo": "56",
-      "group": "9. Neurologic",
-      "subTopic": "Parkinson disease",
-      "track": "Clinic",
-      "question": "การให้ Levodopa ร่วมกับ COMT inhibitor มีวัตถุประสงค์หลักเพื่ออะไรในเชิงเภสัชจลนศาสตร์?",
-      "questionImage": "",
-      "answer": "ยืดค่าครึ่งชีวิตของ Levodopa และเพิ่มปริมาณ Levodopa เข้าสู่สมองอย่างสม่ำเสมอ",
       "answerImage": "",
       "note": ""
     },
@@ -1695,11 +1695,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia (ภาวะสมองเสื่อม) คืออะไร และก่อนวินิจฉัยต้องแยกภาวะใดออกก่อน?",
+      "question": "Dementia ต่างจาก Alzheimer&#039;s disease (AD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน Cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
+      "answer": "Dementia = กลุ่มอาการสมองเสื่อม เกิดได้หลายสาเหตุ<br>AD = สาเหตุที่พบบ่อยที่สุดของ dementia (60–80%) และรักษาไม่หาย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 50 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::88",
@@ -1707,11 +1707,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia กับ Alzheimer&#039;s disease (AD) ต่างกันอย่างไร?",
+      "question": "ก่อนวินิจฉัย dementia ต้องแยกภาวะใดออกก่อน?",
       "questionImage": "",
-      "answer": "▶ Dementia: เป็น &#039;กลุ่มอาการ&#039; เกิดได้จากหลายสาเหตุ มีทั้งแบบแก้ได้ (Reversible) และแก้ไม่ได้ (Irreversible)<br>▶ AD: เป็นสาเหตุหนึ่งของ Dementia และพบบ่อยที่สุด (60–80%) เป็นแบบ Irreversible อาการเด่นคือความจำเสื่อม (Memory loss)<br>▶ อายุ: ส่วนใหญ่พบในคนอายุ &gt; 65 ปี (มีราว 5% ที่เริ่มก่อน 65 ปี)",
+      "answer": "Delirium · ซึมเศร้า · โรคจิตเวชเรื้อรัง · วิตกกังวลรุนแรง",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 50"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
     },
     {
       "id": "9. Neurologic::89",
@@ -1719,11 +1719,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia ชนิดที่รักษาไม่หาย (Irreversible dementia) มีอะไรบ้าง?",
+      "question": "สมองเสื่อมจากสาเหตุใดที่แก้ไขได้ (reversible)?",
       "questionImage": "",
-      "answer": "▶ Alzheimer&#039;s disease (AD)<br>▶ Dementia with Lewy bodies (DLB)<br>▶ Frontotemporal dementia (FTD) — เด่นเรื่องพฤติกรรม บุคลิกภาพ ภาษา<br>▶ Dementia associated with Parkinson&#039;s disease<br>▶ Vascular dementia (VaD)",
+      "answer": "CNS infection · <b style=\"color:#dc2626;\">Hypothyroidism</b> · ขาด vitamin B12 · ซึมเศร้า<br>ยา anticholinergic, sedative-hypnotics, opioids",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 49"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 49"
     },
     {
       "id": "9. Neurologic::90",
@@ -1731,9 +1731,9 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยสูงอายุความจำแย่ลง ก่อนสรุปว่าเป็นสมองเสื่อม ควรมองหาสาเหตุที่แก้ไขได้ (Reversible dementia) อะไรบ้าง?",
+      "question": "Irreversible dementia มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ โรค/ภาวะ: CNS infections, <b style=\"color:#dc2626;\">Hypothyroidism</b>, ขาด Vitamin B12, Depression<br>▶ ยาที่ทำให้ความจำแย่ลง: ยากลุ่ม Anticholinergic, Sedative-hypnotics, Opiate analgesics",
+      "answer": "AD · Lewy bodies (DLB) · Frontotemporal (FTD) · Parkinson&#039;s disease dementia · Vascular (VaD)",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 49"
     },
@@ -1743,11 +1743,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Young onset dementia (YOD) คืออะไร และโอกาสเกิด Dementia เพิ่มขึ้นตามอายุแค่ไหน?",
+      "question": "เกณฑ์วินิจฉัย AD ทางคลินิก (ต้องครบทุกข้อ) มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ YOD: เริ่มมีอาการสมองเสื่อมก่อนอายุ 65 ปี<br>▶ อุบัติการณ์: อายุ &gt; 65 ปี พบได้ ~15% และอายุ &gt; 80 ปี พบได้ถึง ~45%<br>▶ ช่วงที่เริ่มมีอาการบ่อย: อายุ 70–80 ปี",
+      "answer": "1. ความจำเหตุการณ์เสื่อม (episodic memory loss)<br>2. มี aphasia, apraxia, agnosia หรือ executive dysfunction อย่างน้อย 1 อย่าง<br>3. เป็นนานกว่า 6 เดือน<br>4. แย่ลงเรื่อย ๆ<br>5. รบกวนชีวิตประจำวัน",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 50"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7"
     },
     {
       "id": "9. Neurologic::92",
@@ -1755,11 +1755,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "เกณฑ์วินิจฉัย Alzheimer&#039;s disease ทางคลินิก (ต้องมีครบทุกข้อ) มีอะไรบ้าง?",
+      "question": "ผู้ป่วย AD จะเสีย ADL ด้านไหนก่อน?",
       "questionImage": "",
-      "answer": "1. ความจำเหตุการณ์เสื่อม (Episodic memory loss) เช่น ถามซ้ำ ลืมว่าทานข้าวแล้ว ลืมนัด<br>2. มีอย่างน้อย 1 ข้อ: Aphasia / Apraxia / Agnosia / Executive dysfunction / Social cognition ถดถอย<br>3. เป็นมานานกว่า 6 เดือน<br>4. อาการแย่ลงเรื่อย ๆ (Progressive course)<br>5. รบกวนกิจวัตรประจำวันหรือการเข้าสังคม",
+      "answer": "IADL ก่อน เช่น ทำอาหาร จัดการเงิน ทานยาเอง<br>แล้วจึงเสีย basic ADL เช่น อาบน้ำ แต่งตัว ทานข้าว",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7 (แนวทางเวชปฏิบัติภาวะสมองเสื่อม สถาบันประสาทวิทยา 2563)"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 9"
     },
     {
       "id": "9. Neurologic::93",
@@ -1767,11 +1767,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Aphasia, Apraxia และ Agnosia ต่างกันอย่างไร?",
+      "question": "BPSD คืออะไร และพบมากในระยะใด?",
       "questionImage": "",
-      "answer": "▶ Aphasia: ใช้ภาษา/สื่อสารผิดปกติ เช่น เรียกชื่อสิ่งของไม่ถูก ทำตามที่สั่งไม่ได้<br>▶ Apraxia: สั่งกล้ามเนื้อให้ทำตามไม่ได้ ทั้งที่ไม่ได้อ่อนแรง<br>▶ Agnosia: จำสิ่งของที่เคยรู้จักไม่ได้ว่าคืออะไร",
+      "answer": "อาการด้านพฤติกรรม อารมณ์ และอาการทางจิตในผู้ป่วยสมองเสื่อม<br>พบได้ทุกระยะ แต่พบมากในระยะรุนแรง และเป็น ๆ หาย ๆ",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 10"
     },
     {
       "id": "9. Neurologic::94",
@@ -1779,11 +1779,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "อาการของ Alzheimer&#039;s disease แบ่งเป็นกี่ด้าน อะไรบ้าง?",
+      "question": "ยกตัวอย่างอาการ BPSD",
       "questionImage": "",
-      "answer": "แบ่งเป็น 3 ด้าน คือ<br>1. ปริชาน (Cognition)<br>2. การทำกิจวัตรประจำวัน (ADL)<br>3. ปัญหาพฤติกรรม อารมณ์ และอาการทางจิต (BPSD)",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 5"
+      "answer": "กระสับกระส่าย ก้าวร้าว เร่ร่อน นอนผิดปกติ (พฤติกรรม)<br>หงุดหงิด ซึมเศร้า วิตกกังวล ไร้อารมณ์ (อารมณ์)<br>หลงผิด จำญาติผิด ประสาทหลอน (อาการทางจิต)",
+      "answerImage": "https://lh3.googleusercontent.com/d/14k25fn-X0dP7MghU1nDYo3okvQ1M6Ml3",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 11"
     },
     {
       "id": "9. Neurologic::95",
@@ -1791,11 +1791,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Cognition (ปริชาน) แบ่งออกเป็น 6 ด้าน อะไรบ้าง?",
+      "question": "ระยะของ AD แบ่งตามคะแนน MMSE อย่างไร?",
       "questionImage": "",
-      "answer": "1. Complex attention — ใส่ใจได้ต่อเนื่อง<br>2. Executive function — วางแผน ตัดสินใจ Working memory<br>3. Learning and memory<br>4. Language — พูด ฟัง เรียกชื่อสิ่งของ<br>5. Visuoconstructional-perceptual — Perceptual-motor, Praxis<br>6. Social cognition",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 6"
+      "answer": "Mild 21–26 · Moderate 10–20 · Severe 0–9<br>คะแนนยิ่งต่ำ ยิ่งรุนแรง",
+      "answerImage": "https://lh3.googleusercontent.com/d/1NAtmto46PznZZu4yjZcVSaoA47AlfzLr",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83) · สภา 2564 ใช้คะแนน TMSE บอกว่าเป็น severe"
     },
     {
       "id": "9. Neurologic::96",
@@ -1803,11 +1803,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD จะเริ่มทำกิจวัตรประจำวัน (ADL) ด้านไหนไม่ได้ก่อน?",
+      "question": "อาการเด่นของ AD ระยะ moderate คืออะไร?",
       "questionImage": "",
-      "answer": "▶ เสียก่อน: IADL เช่น ทำอาหาร ใช้โทรศัพท์ เดินทาง ทำงานบ้าน จัดการเงิน ทานยาเอง<br>▶ เสียทีหลัง (เมื่อโรคเป็นมากขึ้น): Basic ADL เช่น ลุกจากเตียง ล้างหน้าแปรงฟัน ขับถ่าย อาบน้ำ แต่งตัว ทานข้าว",
+      "answer": "ต้องมีคนช่วยทำ ADL · ลืมชื่อคนในครอบครัว · สับสนวันเวลา · agitation และหลงผิดพบบ่อย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 9"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
     },
     {
       "id": "9. Neurologic::97",
@@ -1815,11 +1815,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "BPSD คืออะไร พบในระยะไหนของโรค และส่งผลอย่างไร?",
+      "question": "อาการเด่นของ AD ระยะ severe คืออะไร?",
       "questionImage": "",
-      "answer": "▶ ความหมาย: Behavioral and Psychological Symptoms of Dementia (เรียกอีกชื่อว่า Neuropsychiatric symptoms) แบ่งเป็น ปัญหาพฤติกรรม / อารมณ์ / อาการทางจิต<br>▶ ระยะที่พบ: พบได้ทุกระยะ แต่เจอมากในระยะรุนแรง อาการเป็น ๆ หาย ๆ และกลับมาซ้ำบ่อย<br>▶ ผลกระทบ: ทุพพลภาพมากขึ้น ค่ารักษาสูงขึ้น และต้องนอนโรงพยาบาลบ่อยขึ้น",
+      "answer": "พูด เดิน ทานข้าวเองไม่ได้ · กลั้นปัสสาวะ-อุจจาระไม่ได้ · ต้องมีคนดูแล 24 ชม.",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 10"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
     },
     {
       "id": "9. Neurologic::98",
@@ -1827,11 +1827,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "อาการ BPSD แต่ละกลุ่ม (พฤติกรรม / อารมณ์ / อาการทางจิต) มีอะไรบ้าง?",
+      "question": "แบบประเมิน MMSE-Thai ใช้วินิจฉัยสมองเสื่อมได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ปัญหาพฤติกรรม: กระสับกระส่าย (Agitation), ก้าวร้าว, เร่ร่อน (Wandering), ขาดความยับยั้งชั่งใจ (Disinhibition), นอนผิดปกติ, ทำซ้ำ ๆ<br>▶ ปัญหาอารมณ์: หงุดหงิด, วิตกกังวล, ซึมเศร้า, ไร้อารมณ์ (Apathy), อารมณ์เปลี่ยนง่าย<br>▶ อาการทางจิต: หลงผิด (Delusion), จำผิด (Misidentification) เช่น จำญาติผิด คิดว่าบ้านตัวเองไม่ใช่บ้าน, ประสาทหลอน (หูแว่ว เห็นภาพหลอน)",
-      "answerImage": "https://lh3.googleusercontent.com/d/14k25fn-X0dP7MghU1nDYo3okvQ1M6Ml3",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 11"
+      "answer": "ไม่ได้ ใช้คัดกรองเท่านั้น (11 ข้อ เต็ม 30)<br>ต่ำกว่าจุดตัด = สงสัยสมองเสื่อม ต้องส่งพบแพทย์",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 51"
     },
     {
       "id": "9. Neurologic::99",
@@ -1839,11 +1839,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ระยะของ AD แบ่งตามคะแนน MMSE อย่างไร และแต่ละระยะมีอาการเด่นอะไร?",
+      "question": "จุดตัดของ MMSE-Thai 2002 แต่ละระดับการศึกษาคือเท่าไร?",
       "questionImage": "",
-      "answer": "▶ Mild (MMSE 26–21): ลืมเรื่องที่เพิ่งเกิด อาจหลงทางตอนขับรถ จัดการเงิน/ทำอาหาร/งานบ้านได้แย่ลง เริ่มเลิกงานยากและงานอดิเรก<br>▶ Moderate (MMSE 20–10): ต้องมีคนช่วยทำ ADL ลืมชื่อคนในครอบครัว สับสนวันเวลา อาการขึ้น ๆ ลง ๆ รายวัน พบ Agitation/Paranoid/Delusion บ่อย<br>▶ Severe (MMSE 9–0): พูด เดิน ทานข้าวเองไม่ได้ กลั้นปัสสาวะ-อุจจาระไม่ได้ ต้องมีคนดูแล 24 ชม.",
-      "answerImage": "https://lh3.googleusercontent.com/d/1NAtmto46PznZZu4yjZcVSaoA47AlfzLr",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
+      "answer": "ไม่ได้เรียนหนังสือ ≤ 14 (เต็ม 23)<br>จบประถม ≤ 17<br>สูงกว่าประถม ≤ 22",
+      "answerImage": "https://lh3.googleusercontent.com/d/1VTrR1NWWIu8wIo_MDrfM3gs43iBeFevY",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
     },
     {
       "id": "9. Neurologic::100",
@@ -1851,11 +1851,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยารักษา Alzheimer&#039;s disease มีกี่กลุ่ม อะไรบ้าง?",
+      "question": "ยารักษา AD มีกี่กลุ่ม อะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ Acetylcholinesterase inhibitors (AChEIs): Donepezil, Rivastigmine, Galantamine<br>▶ NMDA receptor antagonist: Memantine",
+      "answer": "AChEIs ได้แก่ donepezil, rivastigmine, galantamine<br>NMDA antagonist ได้แก่ memantine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024 (กลไก rivastigmine)"
     },
     {
       "id": "9. Neurologic::101",
@@ -1863,9 +1863,9 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "เลือกยารักษา AD ตามระดับความรุนแรงของโรคอย่างไร?",
+      "question": "AD ระยะ mild–moderate เลือกยาใด?",
       "questionImage": "",
-      "answer": "▶ Mild–Moderate: AChEIs (3 ตัวประสิทธิภาพไม่ต่างกัน ช่วยทั้ง Cognition, ADL และ BPSD)<br>▶ Moderate–Severe: Memantine หรือ AChEI ขนาดสูง ได้แก่ Donepezil 23 mg (SR) หรือ Rivastigmine patch 13.3 mg/24 hr",
+      "answer": "AChEI ตัวใดก็ได้ ประสิทธิภาพไม่ต่างกัน",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 14, 36"
     },
@@ -1875,11 +1875,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD ระยะ Moderate–Severe ที่ใช้ AChEI อยู่ ปรับการรักษาได้กี่แบบ อะไรบ้าง?",
+      "question": "AD ระยะ moderate–severe เลือกยาใด?",
       "questionImage": "",
-      "answer": "1. ปรับเพิ่มขนาด AChEI<br>2. คง AChEI ขนาดเดิม แล้วเพิ่ม Memantine (Combination therapy)<br>3. เปลี่ยนจาก AChEI เป็น Memantine (Switch)",
+      "answer": "Memantine หรือ AChEI ขนาดสูง (donepezil 23 mg, rivastigmine patch 13.3 mg/24 hr)",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 37"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 14, 36 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::103",
@@ -1887,11 +1887,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเพิ่ม Memantine ให้ผู้ป่วยที่ใช้ AChEI อยู่ (Combination therapy) ต้องทำอย่างไร และได้ประโยชน์อะไร?",
+      "question": "ผู้ป่วย severe AD ใช้ galantamine อยู่แล้วอาการแย่ลง ควรเพิ่มยาใด?",
       "questionImage": "",
-      "answer": "▶ วิธีทำ: คง AChEI ขนาดเดิมไว้ แล้วเริ่ม Memantine และค่อย ๆ ปรับขนาด (5 → 10 → 15 → 20 mg/วัน เพิ่มทุก 1 สัปดาห์)<br>▶ ประโยชน์: ดีกว่าใช้ AChEI ตัวเดียว ทั้งด้าน Cognition, พฤติกรรม และ ADL",
+      "answer": "Memantine<br>คง galantamine ขนาดเดิม แล้วค่อย ๆ เพิ่ม memantine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 38"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 37–38 · ★ ออกสอบสภา PLE-PC1 2564 (เคส severe AD ใช้ galantamine)"
     },
     {
       "id": "9. Neurologic::104",
@@ -1899,9 +1899,9 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมไม่ควรหยุด AChEI ทันที?",
+      "question": "จะเปลี่ยนจาก AChEI เป็น memantine ต้องทำอย่างไร?",
       "questionImage": "",
-      "answer": "▶ วิธีทำ: ค่อย ๆ Taper AChEI โดยลดลงครึ่งหนึ่งทุก 2–4 สัปดาห์ จนถึงขนาดต่ำสุด คงไว้ช่วงหนึ่ง แล้วจึงหยุด<br>▶ ถ้าหยุดขนาดสูงทันที: อาจเกิด Withdrawal และ Cognition/อาการทางจิตประสาทแย่ลง<br>▶ ถ้าแย่ลงมาก: พิจารณากลับมาใช้ AChEI",
+      "answer": "ค่อย ๆ ลด AChEI ครึ่งหนึ่งทุก 2–4 สัปดาห์<br>ไม่หยุดทันที เพราะอาการอาจแย่ลง",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 39"
     },
@@ -1911,11 +1911,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงทางเดินอาหารของยากลุ่ม AChEIs คืออะไร และมีการจัดการอย่างไร?",
+      "question": "ยารักษา AD ช่วยลด BPSD ได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ผลข้างเคียง: คลื่นไส้ อาเจียน ท้องเสีย<br>▶ การจัดการ: ทานพร้อมอาหาร อาการมักเป็นช่วงสั้น ๆ ตอนเริ่มยาหรือตอนปรับเพิ่มขนาด และเป็นมากขึ้นตามขนาดยา",
+      "answer": "ได้ ทั้ง AChEIs และ memantine<br>ถ้ามีหลายอาการ ใช้ 2 กลุ่มร่วมกัน",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 33, 35 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83)"
     },
     {
       "id": "9. Neurologic::106",
@@ -1923,11 +1923,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยากลุ่ม AChEIs มีผลต่อหัวใจอย่างไร และต้องติดตามอะไร?",
+      "question": "หลักการเริ่มยารักษา AD คืออะไร?",
       "questionImage": "",
-      "answer": "▶ ผลต่อหัวใจ: หัวใจเต้นช้า (Bradycardia) จากฤทธิ์ Vagotonic และอาจวูบหมดสติ (Syncope)<br>▶ การติดตาม: จับชีพจรก่อนเริ่มยา และระหว่างปรับขนาดยา — เป็นข้อควรระวังของ AChEI ทุกตัว",
+      "answer": "เริ่มขนาดต่ำ แล้วค่อยเพิ่มเท่าที่ผู้ป่วยทนได้<br>ควรเริ่มยาให้เร็วที่สุด",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 44–46"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 33 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83)"
     },
     {
       "id": "9. Neurologic::107",
@@ -1935,11 +1935,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงด้านระบบประสาทและด้านอื่น ๆ ของยากลุ่ม AChEIs มีอะไรบ้าง?",
+      "question": "ผู้ป่วย AD แบบไหนถือว่าตอบสนองต่อยา?",
       "questionImage": "",
-      "answer": "▶ ระบบประสาท: เวียนศีรษะ, นอนไม่หลับ, ฝันสมจริง (Vivid dreams) — พบกับ Donepezil แก้ได้โดยเปลี่ยนมาทานตอนเช้า<br>▶ อื่น ๆ: น้ำหนักลด (คนน้ำหนัก &lt; 55 kg เสี่ยงมากขึ้น), ตะคริวที่ขา",
+      "answer": "อาการดีขึ้น หรือไม่แย่ลงจากก่อนเริ่มยา<br>ประเมินทุก 3–6 เดือนหลังได้ขนาดเป้าหมาย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 34"
     },
     {
       "id": "9. Neurologic::108",
@@ -1947,11 +1947,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยทาน Donepezil ก่อนนอนแล้วนอนไม่หลับและฝันร้าย ควรแนะนำอย่างไร? แล้ว AChEI ตัวอื่นควรทานเวลาไหน?",
+      "question": "ผลข้างเคียงที่พบบ่อยที่สุดของ AChEIs คืออะไร?",
       "questionImage": "",
-      "answer": "▶ Donepezil: ปกติให้ทานก่อนนอน (เพราะทำให้เวียนศีรษะ) แต่ถ้านอนไม่หลับ/ฝันร้าย ให้เปลี่ยนมาทานหลังอาหารเช้า<br>▶ Rivastigmine (ชนิดทาน): หลังอาหาร เช้า–เย็น<br>▶ Galantamine PR: ทานพร้อมอาหารเช้า วันละครั้ง",
+      "answer": "คลื่นไส้ อาเจียน ท้องเสีย<br>ทานพร้อมอาหาร มักเป็นช่วงเริ่มยาหรือปรับขนาด",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16, 29"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
     },
     {
       "id": "9. Neurologic::109",
@@ -1959,11 +1959,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "หลักการปรับขนาดยากลุ่ม AChEIs มีอะไรบ้าง?",
+      "question": "ผู้ป่วยใช้ galantamine แล้วทนยาไม่ได้ น่าจะเกิดจากผลข้างเคียงใด?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มขนาดต่ำ แล้วค่อย ๆ เพิ่มประมาณทุก 4 สัปดาห์<br>▶ ใช้ 2 ตัวร่วมกัน: ไม่แนะนำ แต่เปลี่ยนไปใช้ตัวอื่นได้ถ้าทนผลข้างเคียงของตัวเดิมไม่ไหว<br>▶ ขาดยาหลายวัน: ต้องแจ้งแพทย์ เพราะอาจต้องเริ่มปรับขนาดใหม่",
+      "answer": "คลื่นไส้ (ผลข้างเคียงทางเดินอาหาร)",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 46 · ★ ออกสอบสภา PLE-PC1 2564 (เคส severe AD ใช้ galantamine)"
     },
     {
       "id": "9. Neurologic::110",
@@ -1971,11 +1971,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil มีขนาดเริ่มต้น การปรับขนาด และขนาดสูงสุดเท่าไร?",
+      "question": "AChEIs มีผลต่อหัวใจอย่างไร?",
       "questionImage": "",
-      "answer": "▶ เริ่มต้น: 5 mg วันละครั้ง<br>▶ ปรับขนาด: เพิ่มครั้งละ 5 mg/วัน ทุก 4 สัปดาห์ (ระยะ Moderate–Severe เพิ่มได้ถึง 15–20 mg วันละครั้ง)<br>▶ ขนาดต่ำสุดที่ได้ผล: 5 mg/วัน · ขนาดสูงสุด: 20 mg/วัน<br>▶ ใช้ได้ตั้งแต่ระยะ Mild จนถึง Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/10XgyYb21KST4teHQvHhMdAD0CWibFjR1",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 44"
+      "answer": "หัวใจเต้นช้า วูบหมดสติ<br>จับชีพจรก่อนเริ่มยาและช่วงปรับขนาด",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
     },
     {
       "id": "9. Neurologic::111",
@@ -1983,11 +1983,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil มีรูปแบบยาอะไรบ้าง และยาเม็ดละลายในปาก (ODT) ต้องแนะนำผู้ป่วยอย่างไร?",
+      "question": "Donepezil ควรทานเวลาไหน?",
       "questionImage": "",
-      "answer": "▶ Tablet: 5, 10 mg (Aricept)<br>▶ ODT: 5, 10 mg (Aricept Evess) — วางบนลิ้นให้ละลายแล้วกลืน (ดื่มน้ำหรือไม่ก็ได้) หลังยาละลายแนะนำให้ดื่มน้ำตาม 1 แก้ว<br>▶ SR: 23 mg (เทียบเท่าขนาด 20 mg) ใช้ในระยะ Moderate–Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/1kRtz3rj75L-zY2jMIwZtsoh7bQ0zHXof",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 21–23, 44"
+      "answer": "ก่อนนอน<br>ถ้านอนไม่หลับหรือฝันร้าย ย้ายมาทานหลังอาหารเช้า",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
     },
     {
       "id": "9. Neurologic::112",
@@ -1995,11 +1995,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine ชนิดทาน มีรูปแบบ ขนาดเริ่มต้น การปรับขนาด และขนาดสูงสุดเท่าไร?",
+      "question": "Rivastigmine ชนิดทานควรทานอย่างไร?",
       "questionImage": "",
-      "answer": "▶ รูปแบบ: Capsule 1.5, 3, 4.5, 6 mg และ Solution 2 mg/mL<br>▶ เริ่มต้น: 1.5 mg วันละ 2 ครั้ง → เพิ่มครั้งละ 1.5–3 mg/วัน ทุก 4 สัปดาห์<br>▶ ขนาดต่ำสุดที่ได้ผล: 6 mg/วัน · ขนาดสูงสุด: 12 mg/วัน (ระยะ Mild–Moderate)<br>▶ ข้อควรระวัง: ผลข้างเคียงทางเดินอาหารเด่น (คลื่นไส้ อาเจียน ปวดท้อง เบื่ออาหาร น้ำหนักลด) → ปรับขนาดช้า ๆ และทานหลังอาหาร",
-      "answerImage": "https://lh3.googleusercontent.com/d/1LIN2GZyZpa2rO3LIBHL5rUEA61hJa65u",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 24, 45"
+      "answer": "หลังอาหาร เช้า–เย็น เพื่อลดคลื่นไส้",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16, 45"
     },
     {
       "id": "9. Neurologic::113",
@@ -2007,11 +2007,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine ชนิดน้ำ (Exelon oral solution) มีวิธีใช้อย่างไร?",
+      "question": "Galantamine PR ควรทานอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ความแรง: 2 mg/mL (ขวด 50 mL)<br>▶ วิธีตวง: ใช้ Syringe ที่ให้มากับขวด<br>▶ วิธีทาน: ให้จาก Syringe ได้เลย หรือผสมกับน้ำ น้ำผลไม้ หรือโซดาแก้วเล็ก ๆ คนให้เข้ากัน แล้วดื่มให้หมดภายใน 4 ชั่วโมงหลังผสม",
-      "answerImage": "https://lh3.googleusercontent.com/d/1nXW7OBhR9NrBVhUsAyoFw1ZKJW9ah0DG",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 25"
+      "answer": "วันละครั้ง พร้อมอาหารเช้า<br>กลืนทั้งแคปซูล ห้ามเคี้ยวหรือบด",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 29"
     },
     {
       "id": "9. Neurologic::114",
@@ -2019,11 +2019,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine patch (Exelon Patch) มีขนาดอะไรบ้าง และปรับขนาดอย่างไร?",
+      "question": "ใช้ AChEI 2 ตัวร่วมกันได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ขนาด: Exelon Patch 5 / 10 / 15 = 4.6 / 9.5 / 13.3 mg/24 hr<br>▶ เริ่มต้น: 4.6 mg/24 hr แปะวันละ 1 แผ่น → เพิ่มขนาดทุก 4 สัปดาห์<br>▶ ขนาดต่ำสุดที่ได้ผล: 9.5 mg/24 hr · ขนาดสูงสุด: 13.3 mg/24 hr (ใช้ในระยะ Moderate–Severe)<br>▶ ใช้ได้ตั้งแต่ระยะ Mild จนถึง Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/1P4ylhVYHGY4nuPzKndvDewr5J3DaT9LI",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 26, 45"
+      "answer": "ไม่แนะนำ<br>ถ้าทนตัวเดิมไม่ได้ ให้เปลี่ยนไปใช้ตัวอื่น",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
     },
     {
       "id": "9. Neurologic::115",
@@ -2031,11 +2031,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine patch แปะตรงไหนได้บ้าง และมีข้อควรระวังอะไร?",
+      "question": "Donepezil ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ตำแหน่งแปะ (ซ้ายหรือขวา): ต้นแขน, หน้าอก, หลังส่วนบน, หลังส่วนล่าง<br>▶ วิธีแปะ: แปะทีละ 1 แผ่นเท่านั้น ห้ามแปะหลายแผ่นพร้อมกัน และไม่ตัดแบ่งแผ่นยา<br>▶ ผลข้างเคียง: 10–20% เกิดปฏิกิริยาที่ผิวหนัง และระวังหัวใจเต้นช้า วูบหมดสติ",
-      "answerImage": "https://lh3.googleusercontent.com/d/1JZpAbXK6iJ2lUfhRsVxfTd9prBGGTG6T",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 27–28, 45"
+      "answer": "เริ่ม 5 mg วันละครั้ง เพิ่มทีละ 5 mg ทุก 4 สัปดาห์<br>สูงสุด 20 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/10XgyYb21KST4teHQvHhMdAD0CWibFjR1",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 44"
     },
     {
       "id": "9. Neurologic::116",
@@ -2043,11 +2043,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Galantamine มีรูปแบบ วิธีทาน และขนาดยาอย่างไร?",
+      "question": "Donepezil 23 mg ใช้ในผู้ป่วยกลุ่มไหน?",
       "questionImage": "",
-      "answer": "▶ รูปแบบ: Reminyl PR (Extended-release capsule) 8, 16 mg ทานวันละครั้ง<br>▶ วิธีทาน: กลืนทั้งแคปซูลพร้อมน้ำ ห้ามเคี้ยวหรือบด ทานพร้อมอาหาร ส่วนใหญ่แนะนำตอนเช้า<br>▶ ขนาดยา: เริ่ม 8 mg → เพิ่มครั้งละ 8 mg/วัน ทุก 4 สัปดาห์ · ขนาดต่ำสุดที่ได้ผล 16 mg · สูงสุด 24 mg/วัน (ระยะ Mild–Moderate)<br>▶ ผลข้างเคียง: เบื่ออาหาร คลื่นไส้ น้ำหนักลด ตะคริว หัวใจเต้นช้า วูบหมดสติ",
-      "answerImage": "https://lh3.googleusercontent.com/d/1uYuF983asgZT0Ri6XCpDapXxp2ByjkUP",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 29, 46"
+      "answer": "AD ระยะ moderate–severe (เทียบเท่า 20 mg)",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 23, 36"
     },
     {
       "id": "9. Neurologic::117",
@@ -2055,11 +2055,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร?",
+      "question": "Donepezil ชนิดละลายในปาก (ODT) แนะนำผู้ป่วยอย่างไร?",
       "questionImage": "",
-      "answer": "▶ MOA: NMDA receptor antagonist<br>▶ ข้อบ่งใช้: AD ระยะ Moderate–Severe ใช้เดี่ยวหรือใช้ร่วมกับ AChEI ก็ได้<br>▶ ข้อจำกัด: ไม่แนะนำให้ใช้เป็นยาเดี่ยวในระยะ Mild",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
+      "answer": "วางบนลิ้นให้ละลายแล้วกลืน แล้วดื่มน้ำตาม 1 แก้ว",
+      "answerImage": "https://lh3.googleusercontent.com/d/1kRtz3rj75L-zY2jMIwZtsoh7bQ0zHXof",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 22"
     },
     {
       "id": "9. Neurologic::118",
@@ -2067,11 +2067,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีการปรับขนาดยาและวิธีทานอย่างไร?",
+      "question": "Rivastigmine ชนิดทาน ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ปรับขนาด: เพิ่มครั้งละ 5 mg ทุก 1 สัปดาห์<br>สัปดาห์ 1: 5 mg → สัปดาห์ 2: 10 mg → สัปดาห์ 3: 15 mg → สัปดาห์ 4 เป็นต้นไป: 20 mg/วัน (ทานวันละครั้ง หรือแบ่ง 2 ครั้ง)<br>▶ ขนาดต่ำสุดที่ได้ผล: 10 mg/วัน · ขนาดสูงสุด: 20 mg/วัน<br>▶ วิธีทาน: ทานพร้อมหรือไม่พร้อมอาหารก็ได้ แต่ให้ทานเวลาเดิมทุกวัน<br>▶ ช่วยจำ: AChEI ปรับทุก 4 สัปดาห์ แต่ Memantine ปรับทุก 1 สัปดาห์",
-      "answerImage": "https://lh3.googleusercontent.com/d/1zZsZJ-2L2owRryEexpkGX4Rns54yS7eT",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 19, 47"
+      "answer": "เริ่ม 1.5 mg วันละ 2 ครั้ง เพิ่มทุก 4 สัปดาห์<br>สูงสุด 12 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/1LIN2GZyZpa2rO3LIBHL5rUEA61hJa65u",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 45"
     },
     {
       "id": "9. Neurologic::119",
@@ -2079,11 +2079,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงสำคัญของ Memantine มีอะไรบ้าง?",
+      "question": "Rivastigmine ยาน้ำผสมแล้วต้องดื่มให้หมดภายในกี่ชั่วโมง?",
       "questionImage": "",
-      "answer": "▶ ทางเดินอาหาร: ท้องผูก (มีรายงานท้องเสียได้บ้าง)<br>▶ ระบบประสาท: เวียนศีรษะ สับสน ปวดศีรษะ ประสาทหลอน — มักเป็นช่วงปรับขนาดยาและหายเองได้<br>▶ พบน้อย (&lt; 1%): Acute renal failure, <b style=\"color:#dc2626;\">Seizure</b>, Hepatitis<br>▶ ช่วยจำ: AChEI ทำให้ท้องเสีย ส่วน Memantine ทำให้ท้องผูก",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18"
+      "answer": "4 ชั่วโมง<br>ผสมน้ำ น้ำผลไม้ หรือโซดาได้",
+      "answerImage": "https://lh3.googleusercontent.com/d/1nXW7OBhR9NrBVhUsAyoFw1ZKJW9ah0DG",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 25"
     },
     {
       "id": "9. Neurologic::120",
@@ -2091,11 +2091,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine ต้องระวังในผู้ป่วยกลุ่มใดบ้าง?",
+      "question": "Rivastigmine patch มีขนาดอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ ไตบกพร่อง: ต้องปรับขนาดยาเมื่อ GFR &lt; 30 mL/min<br>▶ โรคลมชัก: ระวังในผู้ที่เพิ่งเป็นลมชัก หรือยังคุมอาการชักไม่ได้ภายใน 6 เดือน",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
+      "answer": "4.6 → 9.5 → 13.3 mg/24 hr<br>แปะวันละ 1 แผ่น เพิ่มขนาดทุก 4 สัปดาห์",
+      "answerImage": "https://lh3.googleusercontent.com/d/1P4ylhVYHGY4nuPzKndvDewr5J3DaT9LI",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 26, 45"
     },
     {
       "id": "9. Neurologic::121",
@@ -2103,11 +2103,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีรูปแบบยาอะไรบ้าง และยาน้ำ Ebixa แบบหัวปั๊มต้องแนะนำผู้ป่วยอย่างไร?",
+      "question": "Rivastigmine patch แปะตรงไหนได้บ้าง?",
       "questionImage": "",
-      "answer": "▶ Tablet: 10, 20 mg (กล่องละ 28 เม็ด)<br>▶ Ebixa oral solution: กด 1 ครั้ง = 5 mg (ขวด 50 mL) ทานวันละครั้ง<br>▶ เปิดขวดครั้งแรก: กดหัวปั๊ม 5 ครั้งแล้วทิ้งยาที่ได้ไป<br>▶ วิธีทาน: กดตามขนาดที่แพทย์สั่ง ผสมกับน้ำในปริมาณที่ผู้ป่วยทานหมด<br>▶ ขนาด 20 mg/วัน ใช้ได้ 25 วัน (ขนาด Maintenance 20 mg/วัน เริ่มสัปดาห์ที่ 4 วันที่ 22)",
-      "answerImage": "https://lh3.googleusercontent.com/d/18jnQxkzuOBhzna7KNRZ2yBzYZDTSDL6l",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 30–31, 47"
+      "answer": "ต้นแขน · หน้าอก · หลังส่วนบน · หลังส่วนล่าง<br>แปะทีละ 1 แผ่น ห้ามตัดแบ่ง",
+      "answerImage": "https://lh3.googleusercontent.com/d/1JZpAbXK6iJ2lUfhRsVxfTd9prBGGTG6T",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 27–28, 45"
     },
     {
       "id": "9. Neurologic::122",
@@ -2115,11 +2115,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "หลักการเริ่มยาและปรับขนาดยารักษา AD มีอะไรบ้าง?",
+      "question": "Galantamine PR ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 17, 33"
+      "answer": "เริ่ม 8 mg วันละครั้ง เพิ่มทุก 4 สัปดาห์<br>สูงสุด 24 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/1uYuF983asgZT0Ri6XCpDapXxp2ByjkUP",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 46"
     },
     {
       "id": "9. Neurologic::123",
@@ -2127,11 +2127,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ประเมินการตอบสนองต่อยารักษา AD เมื่อไร และแบบไหนเรียกว่า &#039;ตอบสนองต่อยา&#039;?",
+      "question": "Memantine ออกฤทธิ์อย่างไร?",
       "questionImage": "",
-      "answer": "▶ เวลาประเมิน: หลังได้ขนาดเป้าหมาย (หรือขนาดสูงสุดที่ทนได้) แล้วประเมินทุก 3–6 เดือน<br>▶ ตอบสนองต่อยา: Cognition, BPSD หรือ ADL ดีขึ้น หรือ &#039;ไม่แย่ลง&#039; จากก่อนเริ่มยา",
+      "answer": "NMDA receptor antagonist",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 34"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13, 18"
     },
     {
       "id": "9. Neurologic::124",
@@ -2139,11 +2139,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD มีอาการ BPSD หลายอย่าง ควรจัดการอย่างไร?",
+      "question": "Memantine ใช้ในผู้ป่วย AD ระยะไหน?",
       "questionImage": "",
-      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้าจำเป็น: เพิ่มยา Antipsychotics หรือ Antidepressants",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 35"
+      "answer": "Moderate–severe ใช้เดี่ยวหรือร่วมกับ AChEI ได้<br>ไม่แนะนำใช้เดี่ยวในระยะ mild",
+      "answerImage": "https://lh3.googleusercontent.com/d/18jnQxkzuOBhzna7KNRZ2yBzYZDTSDL6l",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::125",
@@ -2151,11 +2151,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยสมองเสื่อมมีอาการกระสับกระส่าย/หลงผิด ถ้าจะใช้ยา Antipsychotic ต้องยึดหลักอะไร?",
+      "question": "Memantine ปรับขนาดอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลองวิธีไม่ใช้ยาก่อน: ยาเป็นแค่ส่วนหนึ่งของแผนการดูแล<br>▶ ใช้ยาเมื่อ: อาการรุนแรง เป็นอันตราย หรือทำให้ผู้ป่วยทุกข์ทรมานมาก (กรณีไม่ฉุกเฉิน)<br>▶ ไม่ตอบสนองใน 4 สัปดาห์ (ขนาดยาเพียงพอแล้ว): ค่อย ๆ ลดยาแล้วหยุด<br>▶ ตอบสนองดี: พยายามลดและหยุดยาภายใน 4 เดือนหลังเริ่ม<br>▶ ไม่ควรใช้ Haloperidol เป็นตัวแรก (ถ้าไม่มี Delirium)",
-      "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: Reus VI, et al. The APA Practice Guideline on the Use of Antipsychotics to Treat Agitation or Psychosis in Patients With Dementia. Am J Psychiatry. 2016;173(5):543-6. doi:10.1176/appi.ajp.2015.173501"
+      "answer": "5 → 10 → 15 → 20 mg/วัน เพิ่มทุก 1 สัปดาห์<br>(AChEI เพิ่มทุก 4 สัปดาห์)",
+      "answerImage": "https://lh3.googleusercontent.com/d/1zZsZJ-2L2owRryEexpkGX4Rns54yS7eT",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 19, 47"
     },
     {
       "id": "9. Neurologic::126",
@@ -2163,11 +2163,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Black Box Warning ของยา Antipsychotic ในผู้สูงอายุที่เป็นสมองเสื่อมคืออะไร?",
+      "question": "ผลข้างเคียงทางเดินอาหารของ memantine ต่างจาก AChEI อย่างไร?",
       "questionImage": "",
-      "answer": "▶ คำเตือน: ผู้สูงอายุที่มีอาการทางจิตจากสมองเสื่อม (Dementia-related <b style=\"color:#dc2626;\">psychosis</b>) ถ้าได้ยา Antipsychotic จะเสี่ยงเสียชีวิตเพิ่มขึ้น ~1.6–1.7 เท่าของยาหลอก<br>▶ สาเหตุการเสียชีวิต: ส่วนใหญ่เป็นโรคหัวใจและหลอดเลือด (Heart failure, Sudden death) หรือติดเชื้อ (Pneumonia)<br>▶ เพิ่มเติม: ยาไม่ได้รับอนุมัติให้รักษา Dementia-related <b style=\"color:#dc2626;\">psychosis</b> และ Risperidone ยังพบ Stroke/TIA มากกว่ายาหลอกในผู้ป่วยกลุ่มนี้",
+      "answer": "Memantine → ท้องผูก<br>AChEI → ท้องเสีย",
       "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: ฉลากยา RISPERDAL (Janssen) Boxed Warning, section 5.1–5.2. DailyMed. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 18"
     },
     {
       "id": "9. Neurologic::127",
@@ -2175,11 +2175,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าใช้ AChEI ร่วมกับยาที่มีฤทธิ์ Anticholinergic จะเกิดอะไรขึ้น? ยกตัวอย่างยา",
+      "question": "Memantine มีผลข้างเคียงทางระบบประสาทอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ ผล: ยาไปขัดขวางไม่ให้ ACh จับกับ Muscarinic receptor ทำให้ AChEI ได้ผลน้อยลง และอาจเกิด Delirium<br>▶ ตัวอย่างยา: Antihistamines (Chlorpheniramine, Brompheniramine, Dimenhydrinate), Antispasmodics, TCA, Benztropine, Trihexyphenidyl, Orphenadrine, Antipsychotics",
-      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
+      "answer": "เวียนศีรษะ สับสน ปวดศีรษะ ประสาทหลอน<br>มักเป็นช่วงปรับยา แล้วหายเอง",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18 · ★ ออกสอบสภา 2562 (เคส memantine แล้วเกิดอาการทางระบบประสาท)"
     },
     {
       "id": "9. Neurologic::128",
@@ -2187,11 +2187,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าใช้ AChEI ร่วมกับยา Cholinergic เช่น Bethanechol (Urecholine) จะเกิดอะไรขึ้น?",
+      "question": "Memantine ต้องปรับขนาดเมื่อการทำงานของไตลดลงเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ผล: เกิดพิษจาก Cholinergic เกินขนาด (Cholinergic overdose)<br>▶ การดูแล: ควรติดตามอาการอย่างใกล้ชิดถ้าจำเป็นต้องใช้ร่วมกัน",
-      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
+      "answer": "GFR &lt; 30 mL/min",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 47"
     },
     {
       "id": "9. Neurologic::129",
@@ -2199,11 +2199,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "AChEI เกิดยาตีกันกับยาโรคหัวใจและยาที่ทำให้ QT ยาวอย่างไร?",
+      "question": "Memantine ต้องระวังในผู้ป่วยลมชักแบบไหน?",
       "questionImage": "",
-      "answer": "▶ β-blockers, Verapamil, Diltiazem, Digoxin: หัวใจเต้นช้า (Bradycardia) มากขึ้น<br>▶ ยาเสี่ยง <b style=\"color:#dc2626;\">QT prolongation</b> (Procainamide, Quinidine, Sotalol, Chlorpromazine, <b style=\"color:#0284c7;\">Erythromycin</b>, <b style=\"color:#0284c7;\">Levofloxacin</b>): เกิด <b style=\"color:#dc2626;\">QT prolongation</b> และ <b style=\"color:#dc2626;\">Torsades de pointes</b> ได้",
-      "answerImage": "https://lh3.googleusercontent.com/d/1v9vXaquXlOxaahwWIpZe5l-5gXzj_-88",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 41"
+      "answer": "เพิ่งเป็นลมชัก หรือยังคุมชักไม่ได้ภายใน 6 เดือน",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
     },
     {
       "id": "9. Neurologic::130",
@@ -2211,11 +2211,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil และ Galantamine เกิดยาตีกันผ่าน CYP อย่างไร?",
+      "question": "ใช้ AChEI ร่วมกับยาที่มีฤทธิ์ anticholinergic จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ CYP2D6/3A4 inducer (Carbamazepine, Phenytoin, <b style=\"color:#0284c7;\">Rifampin</b>): ฤทธิ์ยาลดลง<br>▶ CYP2D6 inhibitor (Fluoxetine, Paroxetine, Duloxetine, Quinidine): ฤทธิ์ยาเพิ่มขึ้น<br>▶ CYP3A4 inhibitor (<b style=\"color:#0284c7;\">Clarithromycin</b>, Ketoconazole, Itraconazole, Verapamil, Diltiazem, Ritonavir, Atazanavir): ฤทธิ์ยาเพิ่มขึ้น",
-      "answerImage": "https://lh3.googleusercontent.com/d/1yLv96aFO9FCSJO0R5MdNE5BUynw8hXI2",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 42"
+      "answer": "AChEI ได้ผลน้อยลง และอาจเกิด delirium<br>เช่น chlorpheniramine, TCA, trihexyphenidyl, antipsychotics",
+      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
     },
     {
       "id": "9. Neurologic::131",
@@ -2223,11 +2223,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยาที่มีฤทธิ์ Anticholinergic ที่ควรเลี่ยงในผู้ป่วยสมองเสื่อมมีอะไรบ้าง?",
+      "question": "ใช้ donepezil หรือ galantamine ร่วมกับ CYP2D6/3A4 inhibitor จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ Antihistamine รุ่นแรก<br>▶ TCA: Amitriptyline, Imipramine, Doxepin (&gt; 6 mg), Nortriptyline<br>▶ Skeletal muscle relaxant: Orphenadrine<br>▶ Antiparkinson: Benztropine, Trihexyphenidyl<br>▶ Antimuscarinic: Flavoxate, Oxybutynin, Solifenacin<br>▶ Antipsychotics: Chlorpromazine, Perphenazine, Thioridazine, Clozapine",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 43"
+      "answer": "ฤทธิ์ยาเพิ่มขึ้น<br>เช่น fluoxetine, paroxetine, <b style=\"color:#0284c7;\">clarithromycin</b>, ketoconazole",
+      "answerImage": "https://lh3.googleusercontent.com/d/1yLv96aFO9FCSJO0R5MdNE5BUynw8hXI2",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 42 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::132",
@@ -2235,11 +2235,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "SLUDGE คืออาการอะไร และเกี่ยวกับยา AChEI อย่างไร?",
+      "question": "ใช้ AChEI ร่วมกับ β-blocker, verapamil, diltiazem หรือ digoxin จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ คืออาการ Cholinergic เกิน (ฤทธิ์ Muscarinic) พบได้เมื่อ AChEI เกินขนาด หรือใช้ร่วมกับยา Cholinergic<br>S = Salivation (น้ำลายมาก)<br>L = Lacrimation (น้ำตาไหล)<br>U = Urination (ปัสสาวะบ่อย)<br>D = Defecation/Diarrhea (ท้องเสีย)<br>G = GI cramps (ปวดเกร็งท้อง)<br>E = Emesis (อาเจียน)<br>▶ อาจพบร่วม: หัวใจเต้นช้า (Bradycardia), รูม่านตาเล็ก (Miosis)",
-      "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: Adeyinka A, Patel A, Kondamudi NP. Cholinergic Crisis. StatPearls [Internet]. Updated 2025 Apr 6. https://www.ncbi.nlm.nih.gov/books/NBK482433/ (ส่วนยาตีกันกับยา Cholinergic อยู่ในสไลด์หน้า 40)"
+      "answer": "หัวใจเต้นช้า (bradycardia) มากขึ้น",
+      "answerImage": "https://lh3.googleusercontent.com/d/1v9vXaquXlOxaahwWIpZe5l-5gXzj_-88",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 41"
     },
     {
       "id": "9. Neurologic::133",
@@ -2247,11 +2247,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "แบบประเมิน MMSE-Thai มีลักษณะอย่างไร และแปลผลอย่างไร?",
+      "question": "ยากลุ่มใดที่ควรเลี่ยงในผู้ป่วยสมองเสื่อม เพราะมีฤทธิ์ anticholinergic?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: 11 ข้อ ประเมิน Cognition 6 ด้าน ได้แก่ Orientation, Registration, Attention/Calculation, Recall, Language, Visuoconstruction<br>▶ คะแนนเต็ม: 30 คะแนน ใช้เวลา 5–10 นาที<br>▶ จุดตัด: ต่างกันตามระดับการศึกษา<br>▶ แปลผล: เป็นแบบคัดกรอง ไม่ใช่การวินิจฉัย — ถ้าต่ำกว่าจุดตัด แปลว่า &#039;สงสัย/เสี่ยง&#039; สมองเสื่อม ต้องส่งพบแพทย์ประเมินต่อ",
+      "answer": "Antihistamine รุ่นแรก · TCA (amitriptyline) · oxybutynin · trihexyphenidyl · chlorpromazine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 51"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 43"
     },
     {
       "id": "9. Neurologic::134",
@@ -2259,11 +2259,11 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "จุดตัด (Cut-off) ของ MMSE-Thai 2002 แต่ละระดับการศึกษาคือเท่าไร?",
+      "question": "Black box warning ของ antipsychotic ในผู้สูงอายุสมองเสื่อมคืออะไร?",
       "questionImage": "",
-      "answer": "▶ ไม่ได้เรียนหนังสือ (อ่านไม่ออก): ≤ 14 คะแนน (เต็ม 23 เพราะตัดข้อ 4, 9, 10 ออก)<br>▶ จบประถมศึกษา: ≤ 17 คะแนน (เต็ม 30)<br>▶ สูงกว่าประถม: ≤ 22 คะแนน (เต็ม 30)",
-      "answerImage": "https://lh3.googleusercontent.com/d/1VTrR1NWWIu8wIo_MDrfM3gs43iBeFevY",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
+      "answer": "เพิ่มความเสี่ยงเสียชีวิต (~1.6–1.7 เท่า) ส่วนใหญ่จากหัวใจหรือปอดอักเสบ",
+      "answerImage": "",
+      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: ฉลากยา RISPERDAL (Janssen) Boxed Warning, section 5.1. DailyMed. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0"
     },
     {
       "id": "9. Neurologic::135",
@@ -2587,7 +2587,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Precontemplation (ยังไม่คิดเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ไม่มีความคิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า<br> ▶ แนวทางดูแล: ให้ข้อมูลประโยชน์ของการเลิกสั้นๆ ไม่กดดัน และใช้หลัก 5 R&#039;s (Relevance, Risks, Rewards, Roadblocks, Repetition) กระตุ้นแรงจูงใจ",
+      "answer": "ไม่มีความคิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า<br> ▶ แนวทางดูแล: ให้ข้อมูลประโยชน์ของการเลิกสั้นๆ ไม่กดดัน และใช้หลัก 5 R&#039;s (Relevance, Risks, Rewards, Roadblocks, Repetition) กระตุ้นแรงจูงใจ",
       "answerImage": "",
       "note": ""
     },
@@ -2599,7 +2599,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Contemplation (ลังเลใจ/เริ่มคิด) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: คิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า แต่ยังไม่พร้อมลงมือทำ<br> ▶ แนวทางดูแล: เสริมแรงจูงใจ ชั่งน้ำหนักข้อดี-ข้อเสีย (Decisional balance) และช่วยก้าวข้ามอุปสรรค",
+      "answer": "คิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า แต่ยังไม่พร้อมลงมือทำ<br> ▶ แนวทางดูแล: เสริมแรงจูงใจ ชั่งน้ำหนักข้อดี-ข้อเสีย (Decisional balance) และช่วยก้าวข้ามอุปสรรค",
       "answerImage": "",
       "note": ""
     },
@@ -2611,7 +2611,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Preparation (เตรียมตัวเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ตัดสินใจจะเลิกใน 30 วันข้างหน้า และเริ่มลดจำนวนมวนลงบ้างแล้ว<br> ▶ แนวทางดูแล: กำหนดวันเลิกเด็ดขาด (Target Quit Date: TQD) วางแผนรับมือสิ่งกระตุ้น และเลือกยาช่วยเลิกบุหรี่",
+      "answer": " ตัดสินใจจะเลิกใน 30 วันข้างหน้า และเริ่มลดจำนวนมวนลงบ้างแล้ว<br> ▶ แนวทางดูแล: กำหนดวันเลิกเด็ดขาด (Target Quit Date: TQD) วางแผนรับมือสิ่งกระตุ้น และเลือกยาช่วยเลิกบุหรี่",
       "answerImage": "",
       "note": ""
     },
@@ -2623,7 +2623,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Action (ลงมือเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: หยุดสูบบุหรี่เด็ดขาดต่อเนื่องในช่วง 0-6 เดือนแรก<br> ▶ แนวทางดูแล: ติดตามอาการถอนนิโคติน จัดการผลข้างเคียงจากยา และให้คำแนะนำป้องกันการกลับไปสูบซ้ำ",
+      "answer": "สูบบุหรี่เด็ดขาดต่อเนื่องในช่วง 0-6 เดือนแรก<br> ▶ แนวทางดูแล: ติดตามอาการถอนนิโคติน จัดการผลข้างเคียงจากยา และให้คำแนะนำป้องกันการกลับไปสูบซ้ำ",
       "answerImage": "",
       "note": ""
     },
@@ -2635,7 +2635,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Maintenance (คงการไม่สูบ) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ไม่สูบบุหรี่ต่อเนื่องเกิน 6 เดือนขึ้นไป<br> ▶ แนวทางดูแล: ให้กำลังใจเสริมพลังใจอย่างต่อเนื่อง และทบทวนทักษะการรับมือกับสถานการณ์เสี่ยงสูง",
+      "answer": "ไม่สูบบุหรี่ต่อเนื่องเกิน 6 เดือนขึ้นไป<br> ▶ แนวทางดูแล: ให้กำลังใจเสริมพลังใจอย่างต่อเนื่อง และทบทวนทักษะการรับมือกับสถานการณ์เสี่ยงสูง",
       "answerImage": "",
       "note": ""
     },
@@ -2647,7 +2647,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Relapse (กลับไปสูบซ้ำ) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: กลับมาสูบบุหรี่ใหม่หลังพยายามเลิก<br> ▶ แนวทางดูแล: ให้กำลังใจ ไม่ตำหนิ วิเคราะห์สาเหตุของการหลุดสูบ และเริ่มกระบวนการประเมินเพื่อวางแผนใหม่",
+      "answer": "กลับมาสูบบุหรี่ใหม่หลังพยายามเลิก<br> ▶ แนวทางดูแล: ให้กำลังใจ ไม่ตำหนิ วิเคราะห์สาเหตุของการหลุดสูบ และเริ่มกระบวนการประเมินเพื่อวางแผนใหม่",
       "answerImage": "",
       "note": ""
     },
@@ -2659,7 +2659,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Nicotine Patch มีคุณลักษณะการดูดซึม และวิธีแปะที่ถูกต้องอย่างไร?",
       "questionImage": "",
-      "answer": "▶ การดูดซึม: ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> ▶ วิธีแปะ: แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
+      "answer": " ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
       "answerImage": "images/extracted_10__Psychiatric_r17_c4.png",
       "note": ""
     },
@@ -2671,7 +2671,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญของ Nicotine Patch คืออะไร และมีการจัดการอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ผลข้างเคียง: ระคายเคืองผิวหนังบริเวณที่แปะ, นอนไม่หลับ (Insomnia) และฝันร้ายสมจริง (Vivid/Abnormal dreams)<br> ▶ การจัดการ: หากมีปัญหานอนไม่หลับ/ฝันร้าย ให้ลอกแผ่นแปะออกก่อนนอน (ใช้เฉพาะ 16 ชั่วโมงตอนกลางวัน)",
+      "answer": " ระคายเคืองผิวหนังบริเวณที่แปะ, นอนไม่หลับ (Insomnia) และฝันร้ายสมจริง (Vivid/Abnormal dreams)<br> ▶ การจัดการ: หากมีปัญหานอนไม่หลับ/ฝันร้าย ให้ลอกแผ่นแปะออกก่อนนอน (ใช้เฉพาะ 16 ชั่วโมงตอนกลางวัน)",
       "answerImage": "",
       "note": ""
     },
@@ -2701,30 +2701,18 @@ window.OFFLINE_CARDS = {
     },
     {
       "id": "10. Psychiatric::21",
-      "itemNo": "19",
-      "group": "10. Psychiatric",
-      "subTopic": "Smoking Cessation",
-      "track": "Clinic",
-      "question": "Nicotine Oral Spray มีขนาดการใช้ ข้อจำกัดการพ่น และวิธีใช้อย่างไร?",
-      "questionImage": "",
-      "answer": "▶ วิธีใช้: พ่นเข้ากระพุ้งแก้มหรือใต้ลิ้น กลั้นหายใจและงดกลืนน้ำลายทันที ห้ามสูดดมเข้าทางเดินหายใจ งดอาหาร/น้ำก่อนและหลังพ่น 15 นาที<br> ▶ Dosing: พ่น 1-2 sprays ทุก 30-60 นาที (ถ้าพ่น 1 spray แล้ว 2-3 นาทียังอยาก ให้พ่นซ้ำอีก 1 spray)<br> ▶ Max dose: ไม่เกิน 2 sprays/ครั้ง, ไม่เกิน 3-4 sprays/ชม., ไม่เกิน 48-64 sprays/วัน",
-      "answerImage": "images/extracted_10__Psychiatric_r21_c4.png",
-      "note": ""
-    },
-    {
-      "id": "10. Psychiatric::22",
       "itemNo": "20",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
-      "question": "ผลข้างเคียงเด่นของ Nicotine Gumิและ Oral Spray คืออะไร?",
+      "question": "ผลข้างเคียงเด่นของ Nicotine Gum และ Oral Spray คืออะไร?",
       "questionImage": "",
       "answer": "▶ Gum  คลื่นไส้, สะอึก, แสบร้อนยอดอก (Heartburn), ระคายเคืองช่องปากและคอ, ปวดกราม<br> ▶ Oral Spray: ระคายเคืองคอ, ไอ, จาม, น้ำตาไหล, คลื่นไส้ (เนื่องจากออกฤทธิ์เร็วมากใน 1-2 นาที)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::23",
+      "id": "10. Psychiatric::22",
       "itemNo": "21",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2736,19 +2724,19 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::24",
+      "id": "10. Psychiatric::23",
       "itemNo": "22",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Bupropion SR มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ (</b></span>เริ่มต้น 150 mg OD เช้า x 3 วัน → เพิ่มเป็น 150 mg BID ห่างกันอย่างน้อย 8 ชม. เลี่ยงมื้อเย็นก่อนนอน)",
-      "answerImage": "images/extracted_10__Psychiatric_r24_c4.png",
+      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ </b></span>",
+      "answerImage": "images/extracted_10__Psychiatric_r23_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::25",
+      "id": "10. Psychiatric::24",
       "itemNo": "23",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2760,7 +2748,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::26",
+      "id": "10. Psychiatric::25",
       "itemNo": "24",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2772,19 +2760,19 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::27",
+      "id": "10. Psychiatric::26",
       "itemNo": "25",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Cytisine มีกำหนด Target Quit Date (TQD) วันใด และมีคอร์สการรักษาอย่างไร?",
       "questionImage": "",
-      "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)<br> ▶<span style=\"color:#dc2626\"> Regimen: ไม่ต้องจำ</span><br> - วันที่ 1-3: 1 เม็ด (1.5 mg) ทุก 2 ชม. (6 เม็ด/วัน)<br> - วันที่ 4-12: 1 เม็ด ทุก 2.5 ชม. (5 เม็ด/วัน)<br> - วันที่ 13-16: 1 เม็ด ทุก 3 ชม. (4 เม็ด/วัน)<br> - วันที่ 17-20: 1 เม็ด ทุก 5 ชม. (3 เม็ด/วัน)<br> - วันที่ 21-25: วันละ 1-2 เม็ด แล้วหยุดยา",
-      "answerImage": "images/extracted_10__Psychiatric_r27_c4.png",
+      "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)",
+      "answerImage": "images/extracted_10__Psychiatric_r26_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::28",
+      "id": "10. Psychiatric::27",
       "itemNo": "26",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2796,7 +2784,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::29",
+      "id": "10. Psychiatric::28",
       "itemNo": "27",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2808,19 +2796,19 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::30",
+      "id": "10. Psychiatric::29",
       "itemNo": "28",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Varenicline มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> (วัน 1-3: 0.5 mg OD → วัน 4-7: 0.5 mg BID → วัน 8/TQD เป็นต้นไป: 1 mg BID นาน 12 สัปดาห์)",
-      "answerImage": "images/extracted_10__Psychiatric_r30_c4.png",
+      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> ",
+      "answerImage": "images/extracted_10__Psychiatric_r29_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::31",
+      "id": "10. Psychiatric::30",
       "itemNo": "29",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2832,19 +2820,19 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::32",
+      "id": "10. Psychiatric::31",
       "itemNo": "30",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Nortriptyline มี MOAอย่างไร?",
       "questionImage": "",
-      "answer": "▶ MOA: Non-specific Monoamine Reuptake Inhibitor (TCA) ยับยั้ง Reuptake ของ NE เป็นหลัก และ Serotonin บางส่วน ช่วยบรรเทาอาการถอนและอารมณ์ดิ่ง<br>",
+      "answer": "Non-specific Monoamine Reuptake Inhibitor (TCA) ยับยั้ง Reuptake ของ NE เป็นหลัก และ Serotonin บางส่วน ช่วยบรรเทาอาการถอนและอารมณ์ดิ่ง<br>",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::33",
+      "id": "10. Psychiatric::32",
       "itemNo": "31",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2852,47 +2840,47 @@ window.OFFLINE_CARDS = {
       "question": "Nortriptyline มีการเริ่มยา (TQD) สำหรับช่วยเลิกบุหรี่อย่างไร?",
       "questionImage": "",
       "answer": "<br> ▶ TQD: เริ่มทานก่อนวันเลิกบุหรี่ (TQD) 2-4 สัปดาห์ (10-28 วัน) เพื่อให้ระดับยาสะสมถึง Steady-state",
-      "answerImage": "images/extracted_10__Psychiatric_r33_c4.png",
+      "answerImage": "images/extracted_10__Psychiatric_r32_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::34",
+      "id": "10. Psychiatric::33",
       "itemNo": "32",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญ และข้อห้ามใช้ของ Nortriptyline มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ Key ADRs: Anticholinergic (ปากแห้ง ท้องผูก ตาพร่า ปัสสาวะขัด ง่วงซึม) และ Cardiovascular (Tachycardia, ความดันตกเวลายืน, <b style=\"color:#dc2626;\">QT prolongation</b>)<br> ❌ <b style=\"color:#dc2626;\">ข้อห้ามใช้</b>: Recent MI, Conduction block, ต้อหินมุมปิด, ต่อมลูกหมากโต (BPH), ใช้ MAOIs ใน 14 วัน",
+      "answer": "Anticholinergic (ปากแห้ง ท้องผูก ตาพร่า ปัสสาวะขัด ง่วงซึม) Cardiovascular (Tachycardia, ความดันตกเวลายืน, <b style=\"color:#dc2626;\">QT prolongation</b>)<br> ❌ <b style=\"color:#dc2626;\">ข้อห้ามใช้</b>: Recent MI, Conduction block, ต้อหินมุมปิด, ต่อมลูกหมากโต (BPH), ใช้ MAOIs ใน 14 วัน",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::35",
+      "id": "10. Psychiatric::34",
       "itemNo": "33",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ชาหญ้าดอกขาว มีสารสำคัญ MOA วิธีใช้ ",
       "questionImage": "",
-      "answer": "▶ สารสำคัญ &amp; MOA: มี Nitrate และ Flavonoids ทำให้ต่อมรับรสที่ลิ้นชา รู้สึกเหม็นควันบุหรี่และไม่อยากสูบ<br> ",
+      "answer": " มี Nitrate และ Flavonoids ทำให้ต่อมรับรสที่ลิ้นชา รู้สึกเหม็นควันบุหรี่และไม่อยากสูบ<br> ",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::36",
+      "id": "10. Psychiatric::35",
       "itemNo": "34",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ชาหญ้าดอกขาว มีระยะเวลาการดื่มอย่างไร?",
       "questionImage": "",
-      "answer": "<br> ▶ วิธีใช้: ชงดื่มหลังอาหารวันละ 3-4 ครั้ง ดื่มอย่างน้อย 7 วันก่อนวันเลิก (TQD) และดื่มต่ออีก 7 วัน (รวม 14 วัน)",
+      "answer": "<br>ชงดื่มหลังอาหารวันละ 3-4 ครั้ง ดื่มอย่างน้อย 7 วันก่อนวันเลิก (TQD) และดื่มต่ออีก 7 วัน (รวม 14 วัน)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::37",
+      "id": "10. Psychiatric::36",
       "itemNo": "35",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -2900,47 +2888,35 @@ window.OFFLINE_CARDS = {
       "question": "ข้อควรระวังสำคัญในการใช้ชาหญ้าดอกขาวคืออะไร?",
       "questionImage": "",
       "answer": "⚠️ ระวังในผู้ป่วย &#039;โรคหัวใจ&#039; และ &#039;โรคไต&#039; เนื่องจากหญ้าดอกขาวมีปริมาณโพแทสเซียม (Potassium) สูง",
-      "answerImage": "images/extracted_10__Psychiatric_r37_c4.png",
+      "answerImage": "images/extracted_10__Psychiatric_r36_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::38",
+      "id": "10. Psychiatric::37",
       "itemNo": "36",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "สารใดในควันบุหรี่ที่มีผลต่อเอนไซม์ตับ CYP1A2 และส่งผลอย่างไรขณะสูบบุหรี่?",
       "questionImage": "",
-      "answer": "▶ สารออกฤทธิ์: Polycyclic Aromatic Hydrocarbons (PAHs) ในควันบุหรี่ (ไม่ใช่ตัวนิโคติน) เป็น Potent CYP1A2 Inducer<br> ▶ ผลขณะสูบบุหรี่: PAHs จะกระตุ้นเอนไซม์ CYP1A2 ให้ทำงานเพิ่มขึ้น ทำให้ยาที่ผ่าน CYP1A2 ถูกกำจัดเร็ว จึงต้องใช้ขนาดยาสูงกว่าปกติ",
+      "answer": " Polycyclic Aromatic Hydrocarbons (PAHs) ในควันบุหรี่ (ไม่ใช่ตัวนิโคติน) เป็น Potent CYP1A2 Inducer<br> PAHs จะกระตุ้นเอนไซม์ CYP1A2 ให้ทำงานเพิ่มขึ้น ทำให้ยาที่ผ่าน CYP1A2 ถูกกำจัดเร็ว จึงต้องใช้ขนาดยาสูงกว่าปกติ",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::39",
+      "id": "10. Psychiatric::38",
       "itemNo": "37",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "เกิดอะไรขึ้นกับระดับยาในเลือดเมื่อผู้ป่วย &#039;หยุดสูบบุหรี่&#039; และยารายการใดที่ต้องปรับลดขนาดลง?",
       "questionImage": "",
-      "answer": "▶ ผลเมื่อหยุดสูบ: ภาวะ Induction หายไป (De-induction) → CYP1A2 ทำงานลดลง → ยาถูกกำจัดช้าลง ระดับยาพุ่งสูงขึ้น เสี่ยงพิษรุนแรง<br> ▶ รายการยาที่ต้องลดขนาดยาลง:<br> 1. Clozapine (เสี่ยง <b style=\"color:#dc2626;\">Seizure</b>, Agranulocytosis - ต้องลดขนาด 30-50%)<br> 2. Olanzapine (ง่วงซึมรุนแรง, EPS)<br> 3. Theophylline (เสี่ยง Arrhythmias, <b style=\"color:#dc2626;\">Seizure</b>)<br> 4. Warfarin (INR สูงขึ้น เสี่ยงเลือดออกผิดปกติ)",
+      "answer": "▶ ผลเมื่อหยุดสูบ ภาวะ Induction หายไป (De-induction) → CYP1A2 ทำงานลดลง → ยาถูกกำจัดช้าลง ระดับยาพุ่งสูงขึ้น เสี่ยงพิษรุนแรง<br> ▶ รายการยาที่ต้องลดขนาดยาลง<br> 1. Clozapine (เสี่ยง <b style=\"color:#dc2626;\">Seizure</b>, Agranulocytosis - ต้องลดขนาด 30-50%)<br> 2. Olanzapine (ง่วงซึมรุนแรง, EPS)<br> 3. Theophylline (เสี่ยง Arrhythmias, <b style=\"color:#dc2626;\">Seizure</b>)<br> 4. Warfarin (INR สูงขึ้น เสี่ยงเลือดออกผิดปกติ)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "10. Psychiatric::40",
-      "itemNo": "38",
-      "group": "10. Psychiatric",
-      "subTopic": "Smoking Cessation",
-      "track": "Clinic",
-      "question": "การเปลี่ยนจากบุหรี่มาใช้ NRT (Nicotine Patch / Gum) มีผลต่อเอนไซม์ CYP1A2 หรือไม่ อย่างไร?",
-      "questionImage": "",
-      "answer": "ไม่มีผลกระตุ้น CYP1A2 เนื่องจาก NRT ไม่มีสาร PAHs จากการเผาไหม้ ดังนั้นเมื่อเปลี่ยนมาใช้ NRT เอนไซม์ CYP1A2 จะทำงานลดลงเข้าสู่ระดับปกติเช่นเดียวกับการเลิกบุหรี่ทั่วไป จึงยังคงต้องปรับลดขนาดยาที่ผ่าน CYP1A2 ตามปกติ",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "10. Psychiatric::41",
       "itemNo": "39",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -2952,7 +2928,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::42",
+      "id": "10. Psychiatric::41",
       "itemNo": "40",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -2964,7 +2940,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::43",
+      "id": "10. Psychiatric::42",
       "itemNo": "41",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -2976,7 +2952,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::44",
+      "id": "10. Psychiatric::43",
       "itemNo": "42",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -2988,7 +2964,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::45",
+      "id": "10. Psychiatric::44",
       "itemNo": "43",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3000,7 +2976,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::46",
+      "id": "10. Psychiatric::45",
       "itemNo": "44",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3012,7 +2988,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::47",
+      "id": "10. Psychiatric::46",
       "itemNo": "45",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3024,7 +3000,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::48",
+      "id": "10. Psychiatric::47",
       "itemNo": "46",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3036,7 +3012,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::49",
+      "id": "10. Psychiatric::48",
       "itemNo": "47",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3048,7 +3024,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::50",
+      "id": "10. Psychiatric::49",
       "itemNo": "48",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3060,7 +3036,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::51",
+      "id": "10. Psychiatric::50",
       "itemNo": "49",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3072,7 +3048,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::52",
+      "id": "10. Psychiatric::51",
       "itemNo": "50",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -3084,7 +3060,7 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::53",
+      "id": "10. Psychiatric::52",
       "itemNo": "51",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -7313,7 +7289,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ระยะของการเกิดโรคไมเกรน (Phases of a migraine attack) แบ่งออกเป็นกี่ระยะ อะไรบ้าง?",
       "questionImage": "",
-      "answer": "แบ่งเป็น 4 ระยะ คือ 1. Prodrome 2. Aura 3. Headache และ 4. Resolution",
+      "answer": "แบ่งเป็น 4 ระยะ คือ 1. ระยะอาการนำ (Prodrome Phase)<br> ช่วงเวลา: เกิดก่อนมีอาการปวดศีรษะประมาณ 24 ถึง 48 ชั่วโมง มีการเปลี่ยนแปลงทางอารมณ์ เพลีย เบื่ออาหาร 2. ระยะอาการเตือนทางระบบประสาท (Aura Phase)<br> ช่วงเวลา: เกิดขึ้นก่อนเข้าสู่ระยะปวดศีรษะประมาณ 5 ถึง 60 นาที และผู้ป่วยไมเกรนไม่ได้มีระยะนี้ทุกคน มีอาการ visual aura และชาซ่าๆยิบๆ 3. ระยะปวดศีรษะ (Headache Phase)<br> ช่วงเวลา: ปวดนานตั้งแต่ 4 ถึง 72 ชั่วโมง หากไม่ได้รับการรักษาหรือรักษาไม่สำเร็จ 4. ระยะฟื้นตัว (Postdrome Phase)<br> ช่วงเวลา: เกิดหลังจากอาการปวดศีรษะเริ่มบรรเทาลง กินเวลาประมาณ 24 ชั่วโมง  <br> ลักษณะอาการ: มีลักษณะคล้ายภาวะ Hangover effect คือ มึนงง สับสน เพลียมาก",
       "answerImage": "",
       "note": ""
     },
@@ -7409,7 +7385,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ในการเลือกใช้ NSAIDs สำหรับ Acute migraine ควรเลือกคุณสมบัติยาลักษณะใด?",
       "questionImage": "",
-      "answer": "ควรเลือก NSAIDs ที่มีค่า Tmaxสั้น (ดูดซึมเร็วไม่เกิน 2 ชั่วโมง) และหลีกเลี่ยงรูปแบบ Enteric-coated (EC) เพื่อให้ยาเริ่มออกฤทธิ์ระงับอาการปวดได้รวดเร็วภายใน 2 ชั่วโมง",
+      "answer": "ควรเลือก NSAIDs ที่มีค่า Tmaxสั้น (ดูดซึมเร็วไม่เกิน 2 ชั่วโมง) ได้แก่ Ibuprofen<br> Diclofenac (โดยเฉพาะรูปแบบ Potassium salt หรือ Dispersible/Liquid-filled capsule)  <br> Naproxen sodium ,Aspirin,Ketorolac และควรหลีกเลี่ยงยารูปแบบ Enteric-coated (EC) เนื่องจากจะทำให้การปลดปล่อยและดูดซึมยาเนิ่นออกไป ส่งผลให้ Tmaxนานขึ้นและออกฤทธิ์ระงับอาการปวดได้ช้าลง",
       "answerImage": "",
       "note": ""
     },
@@ -7481,7 +7457,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ข้อห้ามใช้ที่สำคัญอย่างยิ่งของยากลุ่ม Triptans และ Ergotamine มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "ผู้ป่วยโรคหลอดเลือดหัวใจ (CAD), ความดันโลหิตสูงที่ควบคุมไม่ได้ (Uncontrolled HT), โรคหลอดเลือดสมอง (Stroke/TIA) และ หญิงตั้งครรภ์ (Pregnancy Category X)",
+      "answer": "ผู้ป่วยโรคหลอดเลือดหัวใจ (CAD), ความดันโลหิตสูงที่ควบคุมไม่ได้ (Uncontrolled HT), โรคหลอดเลือดสมอง (Stroke/TIA), คนที่แพ้ sulfa และ หญิงตั้งครรภ์ (Pregnancy Category X)",
       "answerImage": "",
       "note": ""
     },
@@ -7527,6 +7503,18 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
+      "question": "ขนาดยาแนะนำและการบริหารยา Ergotamine ในผู้ใหญ่คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ขนาดยาเริ่มต้น: รับประทานครั้งแรก 1–2 เม็ด ทันทีเมื่อเริ่มมีอาการปวดศีรษะไมเกรน  <br> การรับประทานซ้ำ: หากอาการยังไม่ดีขึ้น สามารถรับประทานซ้ำได้ครั้งละ 1 เม็ด ทุกๆ 30 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::27",
+      "itemNo": "25",
+      "group": "9. Neurologic",
+      "subTopic": "Headache (migraine/tension)",
+      "track": "Clinic",
       "question": "ยา Ergotamine tartrate ออกฤทธิ์ผ่านตัวรับใดบ้าง และก่อให้เกิดผลข้างเคียงอย่างไรตามกลไก?",
       "questionImage": "",
       "answer": "กระตุ้น alpha1-receptor: ทำให้หลอดเลือดส่วนปลายหดตัว, ความดันโลหิตสูงขึ้น, ปลายมือปลายเท้าเย็น  <br> กระตุ้น D2-receptor: ทำให้เกิดอาการคลื่นไส้ อาเจียน  <br> กระตุ้น 5-HT 1B receptor: ทำให้เกิดอาการใจสั่น เจ็บหน้าอก",
@@ -7534,8 +7522,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::27",
-      "itemNo": "25",
+      "id": "9. Neurologic::28",
+      "itemNo": "26",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7546,8 +7534,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::28",
-      "itemNo": "26",
+      "id": "9. Neurologic::29",
+      "itemNo": "27",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7558,8 +7546,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::29",
-      "itemNo": "27",
+      "id": "9. Neurologic::30",
+      "itemNo": "28",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7570,8 +7558,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::30",
-      "itemNo": "28",
+      "id": "9. Neurologic::31",
+      "itemNo": "29",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7582,8 +7570,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::31",
-      "itemNo": "29",
+      "id": "9. Neurologic::32",
+      "itemNo": "30",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7594,8 +7582,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::32",
-      "itemNo": "30",
+      "id": "9. Neurologic::33",
+      "itemNo": "31",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7606,8 +7594,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::33",
-      "itemNo": "31",
+      "id": "9. Neurologic::34",
+      "itemNo": "32",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7618,8 +7606,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::34",
-      "itemNo": "32",
+      "id": "9. Neurologic::35",
+      "itemNo": "33",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7630,8 +7618,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::35",
-      "itemNo": "33",
+      "id": "9. Neurologic::36",
+      "itemNo": "34",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7642,8 +7630,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::36",
-      "itemNo": "34",
+      "id": "9. Neurologic::37",
+      "itemNo": "35",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7654,8 +7642,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::37",
-      "itemNo": "35",
+      "id": "9. Neurologic::38",
+      "itemNo": "36",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -7666,32 +7654,32 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::38",
-      "itemNo": "36",
-      "group": "9. Neurologic",
-      "subTopic": "Parkinson disease",
-      "track": "Clinic",
-      "question": "เพราะเหตุใดจึงไม่สามารถใช้โดปามีน (Dopamine) โดยตรงในการรักษาโรคพาร์กินสันได้?",
-      "questionImage": "",
-      "answer": "เพราะโดปามีนไม่สามารถผ่านกั้นระหว่างเลือดกับสมอง (Blood-Brain Barrier: BBB) ได้",
-      "answerImage": "",
-      "note": ""
-    },
-    {
       "id": "9. Neurologic::39",
       "itemNo": "37",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "การรับประทานยา Levodopa พร้อมกับอาหารประเภทโปรตีนสูงจะส่งผลอย่างไรต่อเภสัชจลนศาสตร์ของยา?",
+      "question": "เพราะเหตุใดจึงไม่สามารถใช้โดปามีน (Dopamine) โดยตรงในการรักษาโรคพาร์กินสันได้?",
       "questionImage": "",
-      "answer": "ชะลอการดูดซึมและลด C max",
+      "answer": "เพราะโดปามีนไม่สามารถผ่าน Blood-Brain Barrier: BBB ได้",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "9. Neurologic::40",
       "itemNo": "38",
+      "group": "9. Neurologic",
+      "subTopic": "Parkinson disease",
+      "track": "Clinic",
+      "question": "การรับประทานยา Levodopa พร้อมกับอาหารประเภทโปรตีนสูงจะส่งผลอย่างไรต่อเภสัชจลนศาสตร์ของยา?",
+      "questionImage": "",
+      "answer": "ชะลอการดูดซึมและลด C max เนื่องจาก Levodopa ใช้ transporter ร่วมกับโปรตีน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::41",
+      "itemNo": "39",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
@@ -7702,8 +7690,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::41",
-      "itemNo": "39",
+      "id": "9. Neurologic::42",
+      "itemNo": "40",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
@@ -7714,7 +7702,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::42",
+      "id": "9. Neurologic::43",
       "itemNo": "40",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7726,7 +7714,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::43",
+      "id": "9. Neurologic::44",
       "itemNo": "41",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7738,7 +7726,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::44",
+      "id": "9. Neurologic::45",
       "itemNo": "42",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7750,7 +7738,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::45",
+      "id": "9. Neurologic::46",
       "itemNo": "43",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7762,7 +7750,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::46",
+      "id": "9. Neurologic::47",
       "itemNo": "44",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7774,7 +7762,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::47",
+      "id": "9. Neurologic::48",
       "itemNo": "45",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7786,7 +7774,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::48",
+      "id": "9. Neurologic::49",
       "itemNo": "46",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7798,7 +7786,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::49",
+      "id": "9. Neurologic::50",
       "itemNo": "47",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7810,7 +7798,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::50",
+      "id": "9. Neurologic::51",
       "itemNo": "48",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7822,7 +7810,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::51",
+      "id": "9. Neurologic::52",
       "itemNo": "49",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7834,7 +7822,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::52",
+      "id": "9. Neurologic::53",
       "itemNo": "50",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7846,7 +7834,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::53",
+      "id": "9. Neurologic::54",
       "itemNo": "51",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7858,31 +7846,31 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::54",
+      "id": "9. Neurologic::55",
       "itemNo": "52",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "Selegiline ถูก metabolism ได้อะไร",
+      "question": "Selegiline ถูก metabolism ได้อะไร ทำให้เกิดผลข้างเคียงตื่นตัว นอนไม่หลับ",
       "questionImage": "",
       "answer": "L-amphetamine และ L-methamphetamine",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "9. Neurologic::55",
+      "id": "9. Neurologic::56",
       "itemNo": "53",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "ข้อแนะนำในการบริหารยา Selegiline เพื่อลดปัญหาการนอนไม่หลับคืออะไร?",
+      "question": "ข้อแนะนำในการบริหารยา Selegiline เพื่อลดปัญหาการนอนไม่หลับคืออะไร",
       "questionImage": "",
       "answer": "หลีกเลี่ยงการรับประทานยามื้อเย็นหรือมื้อก่อนนอน",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "9. Neurologic::56",
+      "id": "9. Neurologic::57",
       "itemNo": "54",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7894,7 +7882,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::57",
+      "id": "9. Neurologic::58",
       "itemNo": "55",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -7902,18 +7890,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "COMT inhibitors ออกฤทธิ์อย่างไรเมื่อใช้ร่วมกับ Levodopa?",
       "questionImage": "",
       "answer": "ยับยั้งเอนไซม์ Catechol-O-methyltransferase เพื่อป้องกันการเปลี่ยน Levodopa ไปเป็น 3-O-methyldopa (3-OMD)",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "9. Neurologic::58",
-      "itemNo": "56",
-      "group": "9. Neurologic",
-      "subTopic": "Parkinson disease",
-      "track": "Clinic",
-      "question": "การให้ Levodopa ร่วมกับ COMT inhibitor มีวัตถุประสงค์หลักเพื่ออะไรในเชิงเภสัชจลนศาสตร์?",
-      "questionImage": "",
-      "answer": "ยืดค่าครึ่งชีวิตของ Levodopa และเพิ่มปริมาณ Levodopa เข้าสู่สมองอย่างสม่ำเสมอ",
       "answerImage": "",
       "note": ""
     },
@@ -8259,11 +8235,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia (ภาวะสมองเสื่อม) คืออะไร และก่อนวินิจฉัยต้องแยกภาวะใดออกก่อน?",
+      "question": "Dementia ต่างจาก Alzheimer&#039;s disease (AD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน Cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
+      "answer": "Dementia = กลุ่มอาการสมองเสื่อม เกิดได้หลายสาเหตุ<br>AD = สาเหตุที่พบบ่อยที่สุดของ dementia (60–80%) และรักษาไม่หาย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 50 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::88",
@@ -8271,11 +8247,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia กับ Alzheimer&#039;s disease (AD) ต่างกันอย่างไร?",
+      "question": "ก่อนวินิจฉัย dementia ต้องแยกภาวะใดออกก่อน?",
       "questionImage": "",
-      "answer": "▶ Dementia: เป็น &#039;กลุ่มอาการ&#039; เกิดได้จากหลายสาเหตุ มีทั้งแบบแก้ได้ (Reversible) และแก้ไม่ได้ (Irreversible)<br>▶ AD: เป็นสาเหตุหนึ่งของ Dementia และพบบ่อยที่สุด (60–80%) เป็นแบบ Irreversible อาการเด่นคือความจำเสื่อม (Memory loss)<br>▶ อายุ: ส่วนใหญ่พบในคนอายุ &gt; 65 ปี (มีราว 5% ที่เริ่มก่อน 65 ปี)",
+      "answer": "Delirium · ซึมเศร้า · โรคจิตเวชเรื้อรัง · วิตกกังวลรุนแรง",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 50"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
     },
     {
       "id": "9. Neurologic::89",
@@ -8283,11 +8259,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia ชนิดที่รักษาไม่หาย (Irreversible dementia) มีอะไรบ้าง?",
+      "question": "สมองเสื่อมจากสาเหตุใดที่แก้ไขได้ (reversible)?",
       "questionImage": "",
-      "answer": "▶ Alzheimer&#039;s disease (AD)<br>▶ Dementia with Lewy bodies (DLB)<br>▶ Frontotemporal dementia (FTD) — เด่นเรื่องพฤติกรรม บุคลิกภาพ ภาษา<br>▶ Dementia associated with Parkinson&#039;s disease<br>▶ Vascular dementia (VaD)",
+      "answer": "CNS infection · <b style=\"color:#dc2626;\">Hypothyroidism</b> · ขาด vitamin B12 · ซึมเศร้า<br>ยา anticholinergic, sedative-hypnotics, opioids",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 49"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 49"
     },
     {
       "id": "9. Neurologic::90",
@@ -8295,9 +8271,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยสูงอายุความจำแย่ลง ก่อนสรุปว่าเป็นสมองเสื่อม ควรมองหาสาเหตุที่แก้ไขได้ (Reversible dementia) อะไรบ้าง?",
+      "question": "Irreversible dementia มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ โรค/ภาวะ: CNS infections, <b style=\"color:#dc2626;\">Hypothyroidism</b>, ขาด Vitamin B12, Depression<br>▶ ยาที่ทำให้ความจำแย่ลง: ยากลุ่ม Anticholinergic, Sedative-hypnotics, Opiate analgesics",
+      "answer": "AD · Lewy bodies (DLB) · Frontotemporal (FTD) · Parkinson&#039;s disease dementia · Vascular (VaD)",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 49"
     },
@@ -8307,11 +8283,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Young onset dementia (YOD) คืออะไร และโอกาสเกิด Dementia เพิ่มขึ้นตามอายุแค่ไหน?",
+      "question": "เกณฑ์วินิจฉัย AD ทางคลินิก (ต้องครบทุกข้อ) มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ YOD: เริ่มมีอาการสมองเสื่อมก่อนอายุ 65 ปี<br>▶ อุบัติการณ์: อายุ &gt; 65 ปี พบได้ ~15% และอายุ &gt; 80 ปี พบได้ถึง ~45%<br>▶ ช่วงที่เริ่มมีอาการบ่อย: อายุ 70–80 ปี",
+      "answer": "1. ความจำเหตุการณ์เสื่อม (episodic memory loss)<br>2. มี aphasia, apraxia, agnosia หรือ executive dysfunction อย่างน้อย 1 อย่าง<br>3. เป็นนานกว่า 6 เดือน<br>4. แย่ลงเรื่อย ๆ<br>5. รบกวนชีวิตประจำวัน",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 50"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7"
     },
     {
       "id": "9. Neurologic::92",
@@ -8319,11 +8295,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "เกณฑ์วินิจฉัย Alzheimer&#039;s disease ทางคลินิก (ต้องมีครบทุกข้อ) มีอะไรบ้าง?",
+      "question": "ผู้ป่วย AD จะเสีย ADL ด้านไหนก่อน?",
       "questionImage": "",
-      "answer": "1. ความจำเหตุการณ์เสื่อม (Episodic memory loss) เช่น ถามซ้ำ ลืมว่าทานข้าวแล้ว ลืมนัด<br>2. มีอย่างน้อย 1 ข้อ: Aphasia / Apraxia / Agnosia / Executive dysfunction / Social cognition ถดถอย<br>3. เป็นมานานกว่า 6 เดือน<br>4. อาการแย่ลงเรื่อย ๆ (Progressive course)<br>5. รบกวนกิจวัตรประจำวันหรือการเข้าสังคม",
+      "answer": "IADL ก่อน เช่น ทำอาหาร จัดการเงิน ทานยาเอง<br>แล้วจึงเสีย basic ADL เช่น อาบน้ำ แต่งตัว ทานข้าว",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7 (แนวทางเวชปฏิบัติภาวะสมองเสื่อม สถาบันประสาทวิทยา 2563)"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 9"
     },
     {
       "id": "9. Neurologic::93",
@@ -8331,11 +8307,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Aphasia, Apraxia และ Agnosia ต่างกันอย่างไร?",
+      "question": "BPSD คืออะไร และพบมากในระยะใด?",
       "questionImage": "",
-      "answer": "▶ Aphasia: ใช้ภาษา/สื่อสารผิดปกติ เช่น เรียกชื่อสิ่งของไม่ถูก ทำตามที่สั่งไม่ได้<br>▶ Apraxia: สั่งกล้ามเนื้อให้ทำตามไม่ได้ ทั้งที่ไม่ได้อ่อนแรง<br>▶ Agnosia: จำสิ่งของที่เคยรู้จักไม่ได้ว่าคืออะไร",
+      "answer": "อาการด้านพฤติกรรม อารมณ์ และอาการทางจิตในผู้ป่วยสมองเสื่อม<br>พบได้ทุกระยะ แต่พบมากในระยะรุนแรง และเป็น ๆ หาย ๆ",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 10"
     },
     {
       "id": "9. Neurologic::94",
@@ -8343,11 +8319,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "อาการของ Alzheimer&#039;s disease แบ่งเป็นกี่ด้าน อะไรบ้าง?",
+      "question": "ยกตัวอย่างอาการ BPSD",
       "questionImage": "",
-      "answer": "แบ่งเป็น 3 ด้าน คือ<br>1. ปริชาน (Cognition)<br>2. การทำกิจวัตรประจำวัน (ADL)<br>3. ปัญหาพฤติกรรม อารมณ์ และอาการทางจิต (BPSD)",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 5"
+      "answer": "กระสับกระส่าย ก้าวร้าว เร่ร่อน นอนผิดปกติ (พฤติกรรม)<br>หงุดหงิด ซึมเศร้า วิตกกังวล ไร้อารมณ์ (อารมณ์)<br>หลงผิด จำญาติผิด ประสาทหลอน (อาการทางจิต)",
+      "answerImage": "https://lh3.googleusercontent.com/d/14k25fn-X0dP7MghU1nDYo3okvQ1M6Ml3",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 11"
     },
     {
       "id": "9. Neurologic::95",
@@ -8355,11 +8331,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Cognition (ปริชาน) แบ่งออกเป็น 6 ด้าน อะไรบ้าง?",
+      "question": "ระยะของ AD แบ่งตามคะแนน MMSE อย่างไร?",
       "questionImage": "",
-      "answer": "1. Complex attention — ใส่ใจได้ต่อเนื่อง<br>2. Executive function — วางแผน ตัดสินใจ Working memory<br>3. Learning and memory<br>4. Language — พูด ฟัง เรียกชื่อสิ่งของ<br>5. Visuoconstructional-perceptual — Perceptual-motor, Praxis<br>6. Social cognition",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 6"
+      "answer": "Mild 21–26 · Moderate 10–20 · Severe 0–9<br>คะแนนยิ่งต่ำ ยิ่งรุนแรง",
+      "answerImage": "https://lh3.googleusercontent.com/d/1NAtmto46PznZZu4yjZcVSaoA47AlfzLr",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83) · สภา 2564 ใช้คะแนน TMSE บอกว่าเป็น severe"
     },
     {
       "id": "9. Neurologic::96",
@@ -8367,11 +8343,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD จะเริ่มทำกิจวัตรประจำวัน (ADL) ด้านไหนไม่ได้ก่อน?",
+      "question": "อาการเด่นของ AD ระยะ moderate คืออะไร?",
       "questionImage": "",
-      "answer": "▶ เสียก่อน: IADL เช่น ทำอาหาร ใช้โทรศัพท์ เดินทาง ทำงานบ้าน จัดการเงิน ทานยาเอง<br>▶ เสียทีหลัง (เมื่อโรคเป็นมากขึ้น): Basic ADL เช่น ลุกจากเตียง ล้างหน้าแปรงฟัน ขับถ่าย อาบน้ำ แต่งตัว ทานข้าว",
+      "answer": "ต้องมีคนช่วยทำ ADL · ลืมชื่อคนในครอบครัว · สับสนวันเวลา · agitation และหลงผิดพบบ่อย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 9"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
     },
     {
       "id": "9. Neurologic::97",
@@ -8379,11 +8355,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "BPSD คืออะไร พบในระยะไหนของโรค และส่งผลอย่างไร?",
+      "question": "อาการเด่นของ AD ระยะ severe คืออะไร?",
       "questionImage": "",
-      "answer": "▶ ความหมาย: Behavioral and Psychological Symptoms of Dementia (เรียกอีกชื่อว่า Neuropsychiatric symptoms) แบ่งเป็น ปัญหาพฤติกรรม / อารมณ์ / อาการทางจิต<br>▶ ระยะที่พบ: พบได้ทุกระยะ แต่เจอมากในระยะรุนแรง อาการเป็น ๆ หาย ๆ และกลับมาซ้ำบ่อย<br>▶ ผลกระทบ: ทุพพลภาพมากขึ้น ค่ารักษาสูงขึ้น และต้องนอนโรงพยาบาลบ่อยขึ้น",
+      "answer": "พูด เดิน ทานข้าวเองไม่ได้ · กลั้นปัสสาวะ-อุจจาระไม่ได้ · ต้องมีคนดูแล 24 ชม.",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 10"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
     },
     {
       "id": "9. Neurologic::98",
@@ -8391,11 +8367,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "อาการ BPSD แต่ละกลุ่ม (พฤติกรรม / อารมณ์ / อาการทางจิต) มีอะไรบ้าง?",
+      "question": "แบบประเมิน MMSE-Thai ใช้วินิจฉัยสมองเสื่อมได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ปัญหาพฤติกรรม: กระสับกระส่าย (Agitation), ก้าวร้าว, เร่ร่อน (Wandering), ขาดความยับยั้งชั่งใจ (Disinhibition), นอนผิดปกติ, ทำซ้ำ ๆ<br>▶ ปัญหาอารมณ์: หงุดหงิด, วิตกกังวล, ซึมเศร้า, ไร้อารมณ์ (Apathy), อารมณ์เปลี่ยนง่าย<br>▶ อาการทางจิต: หลงผิด (Delusion), จำผิด (Misidentification) เช่น จำญาติผิด คิดว่าบ้านตัวเองไม่ใช่บ้าน, ประสาทหลอน (หูแว่ว เห็นภาพหลอน)",
-      "answerImage": "https://lh3.googleusercontent.com/d/14k25fn-X0dP7MghU1nDYo3okvQ1M6Ml3",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 11"
+      "answer": "ไม่ได้ ใช้คัดกรองเท่านั้น (11 ข้อ เต็ม 30)<br>ต่ำกว่าจุดตัด = สงสัยสมองเสื่อม ต้องส่งพบแพทย์",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 51"
     },
     {
       "id": "9. Neurologic::99",
@@ -8403,11 +8379,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ระยะของ AD แบ่งตามคะแนน MMSE อย่างไร และแต่ละระยะมีอาการเด่นอะไร?",
+      "question": "จุดตัดของ MMSE-Thai 2002 แต่ละระดับการศึกษาคือเท่าไร?",
       "questionImage": "",
-      "answer": "▶ Mild (MMSE 26–21): ลืมเรื่องที่เพิ่งเกิด อาจหลงทางตอนขับรถ จัดการเงิน/ทำอาหาร/งานบ้านได้แย่ลง เริ่มเลิกงานยากและงานอดิเรก<br>▶ Moderate (MMSE 20–10): ต้องมีคนช่วยทำ ADL ลืมชื่อคนในครอบครัว สับสนวันเวลา อาการขึ้น ๆ ลง ๆ รายวัน พบ Agitation/Paranoid/Delusion บ่อย<br>▶ Severe (MMSE 9–0): พูด เดิน ทานข้าวเองไม่ได้ กลั้นปัสสาวะ-อุจจาระไม่ได้ ต้องมีคนดูแล 24 ชม.",
-      "answerImage": "https://lh3.googleusercontent.com/d/1NAtmto46PznZZu4yjZcVSaoA47AlfzLr",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
+      "answer": "ไม่ได้เรียนหนังสือ ≤ 14 (เต็ม 23)<br>จบประถม ≤ 17<br>สูงกว่าประถม ≤ 22",
+      "answerImage": "https://lh3.googleusercontent.com/d/1VTrR1NWWIu8wIo_MDrfM3gs43iBeFevY",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
     },
     {
       "id": "9. Neurologic::100",
@@ -8415,11 +8391,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยารักษา Alzheimer&#039;s disease มีกี่กลุ่ม อะไรบ้าง?",
+      "question": "ยารักษา AD มีกี่กลุ่ม อะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ Acetylcholinesterase inhibitors (AChEIs): Donepezil, Rivastigmine, Galantamine<br>▶ NMDA receptor antagonist: Memantine",
+      "answer": "AChEIs ได้แก่ donepezil, rivastigmine, galantamine<br>NMDA antagonist ได้แก่ memantine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024 (กลไก rivastigmine)"
     },
     {
       "id": "9. Neurologic::101",
@@ -8427,9 +8403,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "เลือกยารักษา AD ตามระดับความรุนแรงของโรคอย่างไร?",
+      "question": "AD ระยะ mild–moderate เลือกยาใด?",
       "questionImage": "",
-      "answer": "▶ Mild–Moderate: AChEIs (3 ตัวประสิทธิภาพไม่ต่างกัน ช่วยทั้ง Cognition, ADL และ BPSD)<br>▶ Moderate–Severe: Memantine หรือ AChEI ขนาดสูง ได้แก่ Donepezil 23 mg (SR) หรือ Rivastigmine patch 13.3 mg/24 hr",
+      "answer": "AChEI ตัวใดก็ได้ ประสิทธิภาพไม่ต่างกัน",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 14, 36"
     },
@@ -8439,11 +8415,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD ระยะ Moderate–Severe ที่ใช้ AChEI อยู่ ปรับการรักษาได้กี่แบบ อะไรบ้าง?",
+      "question": "AD ระยะ moderate–severe เลือกยาใด?",
       "questionImage": "",
-      "answer": "1. ปรับเพิ่มขนาด AChEI<br>2. คง AChEI ขนาดเดิม แล้วเพิ่ม Memantine (Combination therapy)<br>3. เปลี่ยนจาก AChEI เป็น Memantine (Switch)",
+      "answer": "Memantine หรือ AChEI ขนาดสูง (donepezil 23 mg, rivastigmine patch 13.3 mg/24 hr)",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 37"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 14, 36 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::103",
@@ -8451,11 +8427,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเพิ่ม Memantine ให้ผู้ป่วยที่ใช้ AChEI อยู่ (Combination therapy) ต้องทำอย่างไร และได้ประโยชน์อะไร?",
+      "question": "ผู้ป่วย severe AD ใช้ galantamine อยู่แล้วอาการแย่ลง ควรเพิ่มยาใด?",
       "questionImage": "",
-      "answer": "▶ วิธีทำ: คง AChEI ขนาดเดิมไว้ แล้วเริ่ม Memantine และค่อย ๆ ปรับขนาด (5 → 10 → 15 → 20 mg/วัน เพิ่มทุก 1 สัปดาห์)<br>▶ ประโยชน์: ดีกว่าใช้ AChEI ตัวเดียว ทั้งด้าน Cognition, พฤติกรรม และ ADL",
+      "answer": "Memantine<br>คง galantamine ขนาดเดิม แล้วค่อย ๆ เพิ่ม memantine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 38"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 37–38 · ★ ออกสอบสภา PLE-PC1 2564 (เคส severe AD ใช้ galantamine)"
     },
     {
       "id": "9. Neurologic::104",
@@ -8463,9 +8439,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมไม่ควรหยุด AChEI ทันที?",
+      "question": "จะเปลี่ยนจาก AChEI เป็น memantine ต้องทำอย่างไร?",
       "questionImage": "",
-      "answer": "▶ วิธีทำ: ค่อย ๆ Taper AChEI โดยลดลงครึ่งหนึ่งทุก 2–4 สัปดาห์ จนถึงขนาดต่ำสุด คงไว้ช่วงหนึ่ง แล้วจึงหยุด<br>▶ ถ้าหยุดขนาดสูงทันที: อาจเกิด Withdrawal และ Cognition/อาการทางจิตประสาทแย่ลง<br>▶ ถ้าแย่ลงมาก: พิจารณากลับมาใช้ AChEI",
+      "answer": "ค่อย ๆ ลด AChEI ครึ่งหนึ่งทุก 2–4 สัปดาห์<br>ไม่หยุดทันที เพราะอาการอาจแย่ลง",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 39"
     },
@@ -8475,11 +8451,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงทางเดินอาหารของยากลุ่ม AChEIs คืออะไร และมีการจัดการอย่างไร?",
+      "question": "ยารักษา AD ช่วยลด BPSD ได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ผลข้างเคียง: คลื่นไส้ อาเจียน ท้องเสีย<br>▶ การจัดการ: ทานพร้อมอาหาร อาการมักเป็นช่วงสั้น ๆ ตอนเริ่มยาหรือตอนปรับเพิ่มขนาด และเป็นมากขึ้นตามขนาดยา",
+      "answer": "ได้ ทั้ง AChEIs และ memantine<br>ถ้ามีหลายอาการ ใช้ 2 กลุ่มร่วมกัน",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 33, 35 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83)"
     },
     {
       "id": "9. Neurologic::106",
@@ -8487,11 +8463,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยากลุ่ม AChEIs มีผลต่อหัวใจอย่างไร และต้องติดตามอะไร?",
+      "question": "หลักการเริ่มยารักษา AD คืออะไร?",
       "questionImage": "",
-      "answer": "▶ ผลต่อหัวใจ: หัวใจเต้นช้า (Bradycardia) จากฤทธิ์ Vagotonic และอาจวูบหมดสติ (Syncope)<br>▶ การติดตาม: จับชีพจรก่อนเริ่มยา และระหว่างปรับขนาดยา — เป็นข้อควรระวังของ AChEI ทุกตัว",
+      "answer": "เริ่มขนาดต่ำ แล้วค่อยเพิ่มเท่าที่ผู้ป่วยทนได้<br>ควรเริ่มยาให้เร็วที่สุด",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 44–46"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 33 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83)"
     },
     {
       "id": "9. Neurologic::107",
@@ -8499,11 +8475,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงด้านระบบประสาทและด้านอื่น ๆ ของยากลุ่ม AChEIs มีอะไรบ้าง?",
+      "question": "ผู้ป่วย AD แบบไหนถือว่าตอบสนองต่อยา?",
       "questionImage": "",
-      "answer": "▶ ระบบประสาท: เวียนศีรษะ, นอนไม่หลับ, ฝันสมจริง (Vivid dreams) — พบกับ Donepezil แก้ได้โดยเปลี่ยนมาทานตอนเช้า<br>▶ อื่น ๆ: น้ำหนักลด (คนน้ำหนัก &lt; 55 kg เสี่ยงมากขึ้น), ตะคริวที่ขา",
+      "answer": "อาการดีขึ้น หรือไม่แย่ลงจากก่อนเริ่มยา<br>ประเมินทุก 3–6 เดือนหลังได้ขนาดเป้าหมาย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 34"
     },
     {
       "id": "9. Neurologic::108",
@@ -8511,11 +8487,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยทาน Donepezil ก่อนนอนแล้วนอนไม่หลับและฝันร้าย ควรแนะนำอย่างไร? แล้ว AChEI ตัวอื่นควรทานเวลาไหน?",
+      "question": "ผลข้างเคียงที่พบบ่อยที่สุดของ AChEIs คืออะไร?",
       "questionImage": "",
-      "answer": "▶ Donepezil: ปกติให้ทานก่อนนอน (เพราะทำให้เวียนศีรษะ) แต่ถ้านอนไม่หลับ/ฝันร้าย ให้เปลี่ยนมาทานหลังอาหารเช้า<br>▶ Rivastigmine (ชนิดทาน): หลังอาหาร เช้า–เย็น<br>▶ Galantamine PR: ทานพร้อมอาหารเช้า วันละครั้ง",
+      "answer": "คลื่นไส้ อาเจียน ท้องเสีย<br>ทานพร้อมอาหาร มักเป็นช่วงเริ่มยาหรือปรับขนาด",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16, 29"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
     },
     {
       "id": "9. Neurologic::109",
@@ -8523,11 +8499,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "หลักการปรับขนาดยากลุ่ม AChEIs มีอะไรบ้าง?",
+      "question": "ผู้ป่วยใช้ galantamine แล้วทนยาไม่ได้ น่าจะเกิดจากผลข้างเคียงใด?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มขนาดต่ำ แล้วค่อย ๆ เพิ่มประมาณทุก 4 สัปดาห์<br>▶ ใช้ 2 ตัวร่วมกัน: ไม่แนะนำ แต่เปลี่ยนไปใช้ตัวอื่นได้ถ้าทนผลข้างเคียงของตัวเดิมไม่ไหว<br>▶ ขาดยาหลายวัน: ต้องแจ้งแพทย์ เพราะอาจต้องเริ่มปรับขนาดใหม่",
+      "answer": "คลื่นไส้ (ผลข้างเคียงทางเดินอาหาร)",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 46 · ★ ออกสอบสภา PLE-PC1 2564 (เคส severe AD ใช้ galantamine)"
     },
     {
       "id": "9. Neurologic::110",
@@ -8535,11 +8511,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil มีขนาดเริ่มต้น การปรับขนาด และขนาดสูงสุดเท่าไร?",
+      "question": "AChEIs มีผลต่อหัวใจอย่างไร?",
       "questionImage": "",
-      "answer": "▶ เริ่มต้น: 5 mg วันละครั้ง<br>▶ ปรับขนาด: เพิ่มครั้งละ 5 mg/วัน ทุก 4 สัปดาห์ (ระยะ Moderate–Severe เพิ่มได้ถึง 15–20 mg วันละครั้ง)<br>▶ ขนาดต่ำสุดที่ได้ผล: 5 mg/วัน · ขนาดสูงสุด: 20 mg/วัน<br>▶ ใช้ได้ตั้งแต่ระยะ Mild จนถึง Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/10XgyYb21KST4teHQvHhMdAD0CWibFjR1",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 44"
+      "answer": "หัวใจเต้นช้า วูบหมดสติ<br>จับชีพจรก่อนเริ่มยาและช่วงปรับขนาด",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
     },
     {
       "id": "9. Neurologic::111",
@@ -8547,11 +8523,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil มีรูปแบบยาอะไรบ้าง และยาเม็ดละลายในปาก (ODT) ต้องแนะนำผู้ป่วยอย่างไร?",
+      "question": "Donepezil ควรทานเวลาไหน?",
       "questionImage": "",
-      "answer": "▶ Tablet: 5, 10 mg (Aricept)<br>▶ ODT: 5, 10 mg (Aricept Evess) — วางบนลิ้นให้ละลายแล้วกลืน (ดื่มน้ำหรือไม่ก็ได้) หลังยาละลายแนะนำให้ดื่มน้ำตาม 1 แก้ว<br>▶ SR: 23 mg (เทียบเท่าขนาด 20 mg) ใช้ในระยะ Moderate–Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/1kRtz3rj75L-zY2jMIwZtsoh7bQ0zHXof",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 21–23, 44"
+      "answer": "ก่อนนอน<br>ถ้านอนไม่หลับหรือฝันร้าย ย้ายมาทานหลังอาหารเช้า",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
     },
     {
       "id": "9. Neurologic::112",
@@ -8559,11 +8535,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine ชนิดทาน มีรูปแบบ ขนาดเริ่มต้น การปรับขนาด และขนาดสูงสุดเท่าไร?",
+      "question": "Rivastigmine ชนิดทานควรทานอย่างไร?",
       "questionImage": "",
-      "answer": "▶ รูปแบบ: Capsule 1.5, 3, 4.5, 6 mg และ Solution 2 mg/mL<br>▶ เริ่มต้น: 1.5 mg วันละ 2 ครั้ง → เพิ่มครั้งละ 1.5–3 mg/วัน ทุก 4 สัปดาห์<br>▶ ขนาดต่ำสุดที่ได้ผล: 6 mg/วัน · ขนาดสูงสุด: 12 mg/วัน (ระยะ Mild–Moderate)<br>▶ ข้อควรระวัง: ผลข้างเคียงทางเดินอาหารเด่น (คลื่นไส้ อาเจียน ปวดท้อง เบื่ออาหาร น้ำหนักลด) → ปรับขนาดช้า ๆ และทานหลังอาหาร",
-      "answerImage": "https://lh3.googleusercontent.com/d/1LIN2GZyZpa2rO3LIBHL5rUEA61hJa65u",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 24, 45"
+      "answer": "หลังอาหาร เช้า–เย็น เพื่อลดคลื่นไส้",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16, 45"
     },
     {
       "id": "9. Neurologic::113",
@@ -8571,11 +8547,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine ชนิดน้ำ (Exelon oral solution) มีวิธีใช้อย่างไร?",
+      "question": "Galantamine PR ควรทานอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ความแรง: 2 mg/mL (ขวด 50 mL)<br>▶ วิธีตวง: ใช้ Syringe ที่ให้มากับขวด<br>▶ วิธีทาน: ให้จาก Syringe ได้เลย หรือผสมกับน้ำ น้ำผลไม้ หรือโซดาแก้วเล็ก ๆ คนให้เข้ากัน แล้วดื่มให้หมดภายใน 4 ชั่วโมงหลังผสม",
-      "answerImage": "https://lh3.googleusercontent.com/d/1nXW7OBhR9NrBVhUsAyoFw1ZKJW9ah0DG",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 25"
+      "answer": "วันละครั้ง พร้อมอาหารเช้า<br>กลืนทั้งแคปซูล ห้ามเคี้ยวหรือบด",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 29"
     },
     {
       "id": "9. Neurologic::114",
@@ -8583,11 +8559,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine patch (Exelon Patch) มีขนาดอะไรบ้าง และปรับขนาดอย่างไร?",
+      "question": "ใช้ AChEI 2 ตัวร่วมกันได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ขนาด: Exelon Patch 5 / 10 / 15 = 4.6 / 9.5 / 13.3 mg/24 hr<br>▶ เริ่มต้น: 4.6 mg/24 hr แปะวันละ 1 แผ่น → เพิ่มขนาดทุก 4 สัปดาห์<br>▶ ขนาดต่ำสุดที่ได้ผล: 9.5 mg/24 hr · ขนาดสูงสุด: 13.3 mg/24 hr (ใช้ในระยะ Moderate–Severe)<br>▶ ใช้ได้ตั้งแต่ระยะ Mild จนถึง Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/1P4ylhVYHGY4nuPzKndvDewr5J3DaT9LI",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 26, 45"
+      "answer": "ไม่แนะนำ<br>ถ้าทนตัวเดิมไม่ได้ ให้เปลี่ยนไปใช้ตัวอื่น",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
     },
     {
       "id": "9. Neurologic::115",
@@ -8595,11 +8571,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine patch แปะตรงไหนได้บ้าง และมีข้อควรระวังอะไร?",
+      "question": "Donepezil ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ตำแหน่งแปะ (ซ้ายหรือขวา): ต้นแขน, หน้าอก, หลังส่วนบน, หลังส่วนล่าง<br>▶ วิธีแปะ: แปะทีละ 1 แผ่นเท่านั้น ห้ามแปะหลายแผ่นพร้อมกัน และไม่ตัดแบ่งแผ่นยา<br>▶ ผลข้างเคียง: 10–20% เกิดปฏิกิริยาที่ผิวหนัง และระวังหัวใจเต้นช้า วูบหมดสติ",
-      "answerImage": "https://lh3.googleusercontent.com/d/1JZpAbXK6iJ2lUfhRsVxfTd9prBGGTG6T",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 27–28, 45"
+      "answer": "เริ่ม 5 mg วันละครั้ง เพิ่มทีละ 5 mg ทุก 4 สัปดาห์<br>สูงสุด 20 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/10XgyYb21KST4teHQvHhMdAD0CWibFjR1",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 44"
     },
     {
       "id": "9. Neurologic::116",
@@ -8607,11 +8583,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Galantamine มีรูปแบบ วิธีทาน และขนาดยาอย่างไร?",
+      "question": "Donepezil 23 mg ใช้ในผู้ป่วยกลุ่มไหน?",
       "questionImage": "",
-      "answer": "▶ รูปแบบ: Reminyl PR (Extended-release capsule) 8, 16 mg ทานวันละครั้ง<br>▶ วิธีทาน: กลืนทั้งแคปซูลพร้อมน้ำ ห้ามเคี้ยวหรือบด ทานพร้อมอาหาร ส่วนใหญ่แนะนำตอนเช้า<br>▶ ขนาดยา: เริ่ม 8 mg → เพิ่มครั้งละ 8 mg/วัน ทุก 4 สัปดาห์ · ขนาดต่ำสุดที่ได้ผล 16 mg · สูงสุด 24 mg/วัน (ระยะ Mild–Moderate)<br>▶ ผลข้างเคียง: เบื่ออาหาร คลื่นไส้ น้ำหนักลด ตะคริว หัวใจเต้นช้า วูบหมดสติ",
-      "answerImage": "https://lh3.googleusercontent.com/d/1uYuF983asgZT0Ri6XCpDapXxp2ByjkUP",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 29, 46"
+      "answer": "AD ระยะ moderate–severe (เทียบเท่า 20 mg)",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 23, 36"
     },
     {
       "id": "9. Neurologic::117",
@@ -8619,11 +8595,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร?",
+      "question": "Donepezil ชนิดละลายในปาก (ODT) แนะนำผู้ป่วยอย่างไร?",
       "questionImage": "",
-      "answer": "▶ MOA: NMDA receptor antagonist<br>▶ ข้อบ่งใช้: AD ระยะ Moderate–Severe ใช้เดี่ยวหรือใช้ร่วมกับ AChEI ก็ได้<br>▶ ข้อจำกัด: ไม่แนะนำให้ใช้เป็นยาเดี่ยวในระยะ Mild",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
+      "answer": "วางบนลิ้นให้ละลายแล้วกลืน แล้วดื่มน้ำตาม 1 แก้ว",
+      "answerImage": "https://lh3.googleusercontent.com/d/1kRtz3rj75L-zY2jMIwZtsoh7bQ0zHXof",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 22"
     },
     {
       "id": "9. Neurologic::118",
@@ -8631,11 +8607,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีการปรับขนาดยาและวิธีทานอย่างไร?",
+      "question": "Rivastigmine ชนิดทาน ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ปรับขนาด: เพิ่มครั้งละ 5 mg ทุก 1 สัปดาห์<br>สัปดาห์ 1: 5 mg → สัปดาห์ 2: 10 mg → สัปดาห์ 3: 15 mg → สัปดาห์ 4 เป็นต้นไป: 20 mg/วัน (ทานวันละครั้ง หรือแบ่ง 2 ครั้ง)<br>▶ ขนาดต่ำสุดที่ได้ผล: 10 mg/วัน · ขนาดสูงสุด: 20 mg/วัน<br>▶ วิธีทาน: ทานพร้อมหรือไม่พร้อมอาหารก็ได้ แต่ให้ทานเวลาเดิมทุกวัน<br>▶ ช่วยจำ: AChEI ปรับทุก 4 สัปดาห์ แต่ Memantine ปรับทุก 1 สัปดาห์",
-      "answerImage": "https://lh3.googleusercontent.com/d/1zZsZJ-2L2owRryEexpkGX4Rns54yS7eT",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 19, 47"
+      "answer": "เริ่ม 1.5 mg วันละ 2 ครั้ง เพิ่มทุก 4 สัปดาห์<br>สูงสุด 12 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/1LIN2GZyZpa2rO3LIBHL5rUEA61hJa65u",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 45"
     },
     {
       "id": "9. Neurologic::119",
@@ -8643,11 +8619,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงสำคัญของ Memantine มีอะไรบ้าง?",
+      "question": "Rivastigmine ยาน้ำผสมแล้วต้องดื่มให้หมดภายในกี่ชั่วโมง?",
       "questionImage": "",
-      "answer": "▶ ทางเดินอาหาร: ท้องผูก (มีรายงานท้องเสียได้บ้าง)<br>▶ ระบบประสาท: เวียนศีรษะ สับสน ปวดศีรษะ ประสาทหลอน — มักเป็นช่วงปรับขนาดยาและหายเองได้<br>▶ พบน้อย (&lt; 1%): Acute renal failure, <b style=\"color:#dc2626;\">Seizure</b>, Hepatitis<br>▶ ช่วยจำ: AChEI ทำให้ท้องเสีย ส่วน Memantine ทำให้ท้องผูก",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18"
+      "answer": "4 ชั่วโมง<br>ผสมน้ำ น้ำผลไม้ หรือโซดาได้",
+      "answerImage": "https://lh3.googleusercontent.com/d/1nXW7OBhR9NrBVhUsAyoFw1ZKJW9ah0DG",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 25"
     },
     {
       "id": "9. Neurologic::120",
@@ -8655,11 +8631,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine ต้องระวังในผู้ป่วยกลุ่มใดบ้าง?",
+      "question": "Rivastigmine patch มีขนาดอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ ไตบกพร่อง: ต้องปรับขนาดยาเมื่อ GFR &lt; 30 mL/min<br>▶ โรคลมชัก: ระวังในผู้ที่เพิ่งเป็นลมชัก หรือยังคุมอาการชักไม่ได้ภายใน 6 เดือน",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
+      "answer": "4.6 → 9.5 → 13.3 mg/24 hr<br>แปะวันละ 1 แผ่น เพิ่มขนาดทุก 4 สัปดาห์",
+      "answerImage": "https://lh3.googleusercontent.com/d/1P4ylhVYHGY4nuPzKndvDewr5J3DaT9LI",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 26, 45"
     },
     {
       "id": "9. Neurologic::121",
@@ -8667,11 +8643,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีรูปแบบยาอะไรบ้าง และยาน้ำ Ebixa แบบหัวปั๊มต้องแนะนำผู้ป่วยอย่างไร?",
+      "question": "Rivastigmine patch แปะตรงไหนได้บ้าง?",
       "questionImage": "",
-      "answer": "▶ Tablet: 10, 20 mg (กล่องละ 28 เม็ด)<br>▶ Ebixa oral solution: กด 1 ครั้ง = 5 mg (ขวด 50 mL) ทานวันละครั้ง<br>▶ เปิดขวดครั้งแรก: กดหัวปั๊ม 5 ครั้งแล้วทิ้งยาที่ได้ไป<br>▶ วิธีทาน: กดตามขนาดที่แพทย์สั่ง ผสมกับน้ำในปริมาณที่ผู้ป่วยทานหมด<br>▶ ขนาด 20 mg/วัน ใช้ได้ 25 วัน (ขนาด Maintenance 20 mg/วัน เริ่มสัปดาห์ที่ 4 วันที่ 22)",
-      "answerImage": "https://lh3.googleusercontent.com/d/18jnQxkzuOBhzna7KNRZ2yBzYZDTSDL6l",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 30–31, 47"
+      "answer": "ต้นแขน · หน้าอก · หลังส่วนบน · หลังส่วนล่าง<br>แปะทีละ 1 แผ่น ห้ามตัดแบ่ง",
+      "answerImage": "https://lh3.googleusercontent.com/d/1JZpAbXK6iJ2lUfhRsVxfTd9prBGGTG6T",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 27–28, 45"
     },
     {
       "id": "9. Neurologic::122",
@@ -8679,11 +8655,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "หลักการเริ่มยาและปรับขนาดยารักษา AD มีอะไรบ้าง?",
+      "question": "Galantamine PR ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 17, 33"
+      "answer": "เริ่ม 8 mg วันละครั้ง เพิ่มทุก 4 สัปดาห์<br>สูงสุด 24 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/1uYuF983asgZT0Ri6XCpDapXxp2ByjkUP",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 46"
     },
     {
       "id": "9. Neurologic::123",
@@ -8691,11 +8667,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ประเมินการตอบสนองต่อยารักษา AD เมื่อไร และแบบไหนเรียกว่า &#039;ตอบสนองต่อยา&#039;?",
+      "question": "Memantine ออกฤทธิ์อย่างไร?",
       "questionImage": "",
-      "answer": "▶ เวลาประเมิน: หลังได้ขนาดเป้าหมาย (หรือขนาดสูงสุดที่ทนได้) แล้วประเมินทุก 3–6 เดือน<br>▶ ตอบสนองต่อยา: Cognition, BPSD หรือ ADL ดีขึ้น หรือ &#039;ไม่แย่ลง&#039; จากก่อนเริ่มยา",
+      "answer": "NMDA receptor antagonist",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 34"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13, 18"
     },
     {
       "id": "9. Neurologic::124",
@@ -8703,11 +8679,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD มีอาการ BPSD หลายอย่าง ควรจัดการอย่างไร?",
+      "question": "Memantine ใช้ในผู้ป่วย AD ระยะไหน?",
       "questionImage": "",
-      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้าจำเป็น: เพิ่มยา Antipsychotics หรือ Antidepressants",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 35"
+      "answer": "Moderate–severe ใช้เดี่ยวหรือร่วมกับ AChEI ได้<br>ไม่แนะนำใช้เดี่ยวในระยะ mild",
+      "answerImage": "https://lh3.googleusercontent.com/d/18jnQxkzuOBhzna7KNRZ2yBzYZDTSDL6l",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::125",
@@ -8715,11 +8691,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยสมองเสื่อมมีอาการกระสับกระส่าย/หลงผิด ถ้าจะใช้ยา Antipsychotic ต้องยึดหลักอะไร?",
+      "question": "Memantine ปรับขนาดอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลองวิธีไม่ใช้ยาก่อน: ยาเป็นแค่ส่วนหนึ่งของแผนการดูแล<br>▶ ใช้ยาเมื่อ: อาการรุนแรง เป็นอันตราย หรือทำให้ผู้ป่วยทุกข์ทรมานมาก (กรณีไม่ฉุกเฉิน)<br>▶ ไม่ตอบสนองใน 4 สัปดาห์ (ขนาดยาเพียงพอแล้ว): ค่อย ๆ ลดยาแล้วหยุด<br>▶ ตอบสนองดี: พยายามลดและหยุดยาภายใน 4 เดือนหลังเริ่ม<br>▶ ไม่ควรใช้ Haloperidol เป็นตัวแรก (ถ้าไม่มี Delirium)",
-      "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: Reus VI, et al. The APA Practice Guideline on the Use of Antipsychotics to Treat Agitation or Psychosis in Patients With Dementia. Am J Psychiatry. 2016;173(5):543-6. doi:10.1176/appi.ajp.2015.173501"
+      "answer": "5 → 10 → 15 → 20 mg/วัน เพิ่มทุก 1 สัปดาห์<br>(AChEI เพิ่มทุก 4 สัปดาห์)",
+      "answerImage": "https://lh3.googleusercontent.com/d/1zZsZJ-2L2owRryEexpkGX4Rns54yS7eT",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 19, 47"
     },
     {
       "id": "9. Neurologic::126",
@@ -8727,11 +8703,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Black Box Warning ของยา Antipsychotic ในผู้สูงอายุที่เป็นสมองเสื่อมคืออะไร?",
+      "question": "ผลข้างเคียงทางเดินอาหารของ memantine ต่างจาก AChEI อย่างไร?",
       "questionImage": "",
-      "answer": "▶ คำเตือน: ผู้สูงอายุที่มีอาการทางจิตจากสมองเสื่อม (Dementia-related <b style=\"color:#dc2626;\">psychosis</b>) ถ้าได้ยา Antipsychotic จะเสี่ยงเสียชีวิตเพิ่มขึ้น ~1.6–1.7 เท่าของยาหลอก<br>▶ สาเหตุการเสียชีวิต: ส่วนใหญ่เป็นโรคหัวใจและหลอดเลือด (Heart failure, Sudden death) หรือติดเชื้อ (Pneumonia)<br>▶ เพิ่มเติม: ยาไม่ได้รับอนุมัติให้รักษา Dementia-related <b style=\"color:#dc2626;\">psychosis</b> และ Risperidone ยังพบ Stroke/TIA มากกว่ายาหลอกในผู้ป่วยกลุ่มนี้",
+      "answer": "Memantine → ท้องผูก<br>AChEI → ท้องเสีย",
       "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: ฉลากยา RISPERDAL (Janssen) Boxed Warning, section 5.1–5.2. DailyMed. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 18"
     },
     {
       "id": "9. Neurologic::127",
@@ -8739,11 +8715,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าใช้ AChEI ร่วมกับยาที่มีฤทธิ์ Anticholinergic จะเกิดอะไรขึ้น? ยกตัวอย่างยา",
+      "question": "Memantine มีผลข้างเคียงทางระบบประสาทอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ ผล: ยาไปขัดขวางไม่ให้ ACh จับกับ Muscarinic receptor ทำให้ AChEI ได้ผลน้อยลง และอาจเกิด Delirium<br>▶ ตัวอย่างยา: Antihistamines (Chlorpheniramine, Brompheniramine, Dimenhydrinate), Antispasmodics, TCA, Benztropine, Trihexyphenidyl, Orphenadrine, Antipsychotics",
-      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
+      "answer": "เวียนศีรษะ สับสน ปวดศีรษะ ประสาทหลอน<br>มักเป็นช่วงปรับยา แล้วหายเอง",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18 · ★ ออกสอบสภา 2562 (เคส memantine แล้วเกิดอาการทางระบบประสาท)"
     },
     {
       "id": "9. Neurologic::128",
@@ -8751,11 +8727,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าใช้ AChEI ร่วมกับยา Cholinergic เช่น Bethanechol (Urecholine) จะเกิดอะไรขึ้น?",
+      "question": "Memantine ต้องปรับขนาดเมื่อการทำงานของไตลดลงเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ผล: เกิดพิษจาก Cholinergic เกินขนาด (Cholinergic overdose)<br>▶ การดูแล: ควรติดตามอาการอย่างใกล้ชิดถ้าจำเป็นต้องใช้ร่วมกัน",
-      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
+      "answer": "GFR &lt; 30 mL/min",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 47"
     },
     {
       "id": "9. Neurologic::129",
@@ -8763,11 +8739,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "AChEI เกิดยาตีกันกับยาโรคหัวใจและยาที่ทำให้ QT ยาวอย่างไร?",
+      "question": "Memantine ต้องระวังในผู้ป่วยลมชักแบบไหน?",
       "questionImage": "",
-      "answer": "▶ β-blockers, Verapamil, Diltiazem, Digoxin: หัวใจเต้นช้า (Bradycardia) มากขึ้น<br>▶ ยาเสี่ยง <b style=\"color:#dc2626;\">QT prolongation</b> (Procainamide, Quinidine, Sotalol, Chlorpromazine, <b style=\"color:#0284c7;\">Erythromycin</b>, <b style=\"color:#0284c7;\">Levofloxacin</b>): เกิด <b style=\"color:#dc2626;\">QT prolongation</b> และ <b style=\"color:#dc2626;\">Torsades de pointes</b> ได้",
-      "answerImage": "https://lh3.googleusercontent.com/d/1v9vXaquXlOxaahwWIpZe5l-5gXzj_-88",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 41"
+      "answer": "เพิ่งเป็นลมชัก หรือยังคุมชักไม่ได้ภายใน 6 เดือน",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
     },
     {
       "id": "9. Neurologic::130",
@@ -8775,11 +8751,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil และ Galantamine เกิดยาตีกันผ่าน CYP อย่างไร?",
+      "question": "ใช้ AChEI ร่วมกับยาที่มีฤทธิ์ anticholinergic จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ CYP2D6/3A4 inducer (Carbamazepine, Phenytoin, <b style=\"color:#0284c7;\">Rifampin</b>): ฤทธิ์ยาลดลง<br>▶ CYP2D6 inhibitor (Fluoxetine, Paroxetine, Duloxetine, Quinidine): ฤทธิ์ยาเพิ่มขึ้น<br>▶ CYP3A4 inhibitor (<b style=\"color:#0284c7;\">Clarithromycin</b>, Ketoconazole, Itraconazole, Verapamil, Diltiazem, Ritonavir, Atazanavir): ฤทธิ์ยาเพิ่มขึ้น",
-      "answerImage": "https://lh3.googleusercontent.com/d/1yLv96aFO9FCSJO0R5MdNE5BUynw8hXI2",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 42"
+      "answer": "AChEI ได้ผลน้อยลง และอาจเกิด delirium<br>เช่น chlorpheniramine, TCA, trihexyphenidyl, antipsychotics",
+      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
     },
     {
       "id": "9. Neurologic::131",
@@ -8787,11 +8763,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยาที่มีฤทธิ์ Anticholinergic ที่ควรเลี่ยงในผู้ป่วยสมองเสื่อมมีอะไรบ้าง?",
+      "question": "ใช้ donepezil หรือ galantamine ร่วมกับ CYP2D6/3A4 inhibitor จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ Antihistamine รุ่นแรก<br>▶ TCA: Amitriptyline, Imipramine, Doxepin (&gt; 6 mg), Nortriptyline<br>▶ Skeletal muscle relaxant: Orphenadrine<br>▶ Antiparkinson: Benztropine, Trihexyphenidyl<br>▶ Antimuscarinic: Flavoxate, Oxybutynin, Solifenacin<br>▶ Antipsychotics: Chlorpromazine, Perphenazine, Thioridazine, Clozapine",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 43"
+      "answer": "ฤทธิ์ยาเพิ่มขึ้น<br>เช่น fluoxetine, paroxetine, <b style=\"color:#0284c7;\">clarithromycin</b>, ketoconazole",
+      "answerImage": "https://lh3.googleusercontent.com/d/1yLv96aFO9FCSJO0R5MdNE5BUynw8hXI2",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 42 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::132",
@@ -8799,11 +8775,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "SLUDGE คืออาการอะไร และเกี่ยวกับยา AChEI อย่างไร?",
+      "question": "ใช้ AChEI ร่วมกับ β-blocker, verapamil, diltiazem หรือ digoxin จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ คืออาการ Cholinergic เกิน (ฤทธิ์ Muscarinic) พบได้เมื่อ AChEI เกินขนาด หรือใช้ร่วมกับยา Cholinergic<br>S = Salivation (น้ำลายมาก)<br>L = Lacrimation (น้ำตาไหล)<br>U = Urination (ปัสสาวะบ่อย)<br>D = Defecation/Diarrhea (ท้องเสีย)<br>G = GI cramps (ปวดเกร็งท้อง)<br>E = Emesis (อาเจียน)<br>▶ อาจพบร่วม: หัวใจเต้นช้า (Bradycardia), รูม่านตาเล็ก (Miosis)",
-      "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: Adeyinka A, Patel A, Kondamudi NP. Cholinergic Crisis. StatPearls [Internet]. Updated 2025 Apr 6. https://www.ncbi.nlm.nih.gov/books/NBK482433/ (ส่วนยาตีกันกับยา Cholinergic อยู่ในสไลด์หน้า 40)"
+      "answer": "หัวใจเต้นช้า (bradycardia) มากขึ้น",
+      "answerImage": "https://lh3.googleusercontent.com/d/1v9vXaquXlOxaahwWIpZe5l-5gXzj_-88",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 41"
     },
     {
       "id": "9. Neurologic::133",
@@ -8811,11 +8787,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "แบบประเมิน MMSE-Thai มีลักษณะอย่างไร และแปลผลอย่างไร?",
+      "question": "ยากลุ่มใดที่ควรเลี่ยงในผู้ป่วยสมองเสื่อม เพราะมีฤทธิ์ anticholinergic?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: 11 ข้อ ประเมิน Cognition 6 ด้าน ได้แก่ Orientation, Registration, Attention/Calculation, Recall, Language, Visuoconstruction<br>▶ คะแนนเต็ม: 30 คะแนน ใช้เวลา 5–10 นาที<br>▶ จุดตัด: ต่างกันตามระดับการศึกษา<br>▶ แปลผล: เป็นแบบคัดกรอง ไม่ใช่การวินิจฉัย — ถ้าต่ำกว่าจุดตัด แปลว่า &#039;สงสัย/เสี่ยง&#039; สมองเสื่อม ต้องส่งพบแพทย์ประเมินต่อ",
+      "answer": "Antihistamine รุ่นแรก · TCA (amitriptyline) · oxybutynin · trihexyphenidyl · chlorpromazine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 51"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 43"
     },
     {
       "id": "9. Neurologic::134",
@@ -8823,11 +8799,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "จุดตัด (Cut-off) ของ MMSE-Thai 2002 แต่ละระดับการศึกษาคือเท่าไร?",
+      "question": "Black box warning ของ antipsychotic ในผู้สูงอายุสมองเสื่อมคืออะไร?",
       "questionImage": "",
-      "answer": "▶ ไม่ได้เรียนหนังสือ (อ่านไม่ออก): ≤ 14 คะแนน (เต็ม 23 เพราะตัดข้อ 4, 9, 10 ออก)<br>▶ จบประถมศึกษา: ≤ 17 คะแนน (เต็ม 30)<br>▶ สูงกว่าประถม: ≤ 22 คะแนน (เต็ม 30)",
-      "answerImage": "https://lh3.googleusercontent.com/d/1VTrR1NWWIu8wIo_MDrfM3gs43iBeFevY",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
+      "answer": "เพิ่มความเสี่ยงเสียชีวิต (~1.6–1.7 เท่า) ส่วนใหญ่จากหัวใจหรือปอดอักเสบ",
+      "answerImage": "",
+      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: ฉลากยา RISPERDAL (Janssen) Boxed Warning, section 5.1. DailyMed. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0"
     },
     {
       "id": "9. Neurologic::135",
@@ -9149,7 +9125,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Precontemplation (ยังไม่คิดเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ไม่มีความคิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า<br> ▶ แนวทางดูแล: ให้ข้อมูลประโยชน์ของการเลิกสั้นๆ ไม่กดดัน และใช้หลัก 5 R&#039;s (Relevance, Risks, Rewards, Roadblocks, Repetition) กระตุ้นแรงจูงใจ",
+      "answer": "ไม่มีความคิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า<br> ▶ แนวทางดูแล: ให้ข้อมูลประโยชน์ของการเลิกสั้นๆ ไม่กดดัน และใช้หลัก 5 R&#039;s (Relevance, Risks, Rewards, Roadblocks, Repetition) กระตุ้นแรงจูงใจ",
       "answerImage": "",
       "note": ""
     },
@@ -9161,7 +9137,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Contemplation (ลังเลใจ/เริ่มคิด) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: คิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า แต่ยังไม่พร้อมลงมือทำ<br> ▶ แนวทางดูแล: เสริมแรงจูงใจ ชั่งน้ำหนักข้อดี-ข้อเสีย (Decisional balance) และช่วยก้าวข้ามอุปสรรค",
+      "answer": "คิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า แต่ยังไม่พร้อมลงมือทำ<br> ▶ แนวทางดูแล: เสริมแรงจูงใจ ชั่งน้ำหนักข้อดี-ข้อเสีย (Decisional balance) และช่วยก้าวข้ามอุปสรรค",
       "answerImage": "",
       "note": ""
     },
@@ -9173,7 +9149,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Preparation (เตรียมตัวเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ตัดสินใจจะเลิกใน 30 วันข้างหน้า และเริ่มลดจำนวนมวนลงบ้างแล้ว<br> ▶ แนวทางดูแล: กำหนดวันเลิกเด็ดขาด (Target Quit Date: TQD) วางแผนรับมือสิ่งกระตุ้น และเลือกยาช่วยเลิกบุหรี่",
+      "answer": " ตัดสินใจจะเลิกใน 30 วันข้างหน้า และเริ่มลดจำนวนมวนลงบ้างแล้ว<br> ▶ แนวทางดูแล: กำหนดวันเลิกเด็ดขาด (Target Quit Date: TQD) วางแผนรับมือสิ่งกระตุ้น และเลือกยาช่วยเลิกบุหรี่",
       "answerImage": "",
       "note": ""
     },
@@ -9185,7 +9161,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Action (ลงมือเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: หยุดสูบบุหรี่เด็ดขาดต่อเนื่องในช่วง 0-6 เดือนแรก<br> ▶ แนวทางดูแล: ติดตามอาการถอนนิโคติน จัดการผลข้างเคียงจากยา และให้คำแนะนำป้องกันการกลับไปสูบซ้ำ",
+      "answer": "สูบบุหรี่เด็ดขาดต่อเนื่องในช่วง 0-6 เดือนแรก<br> ▶ แนวทางดูแล: ติดตามอาการถอนนิโคติน จัดการผลข้างเคียงจากยา และให้คำแนะนำป้องกันการกลับไปสูบซ้ำ",
       "answerImage": "",
       "note": ""
     },
@@ -9197,7 +9173,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Maintenance (คงการไม่สูบ) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ไม่สูบบุหรี่ต่อเนื่องเกิน 6 เดือนขึ้นไป<br> ▶ แนวทางดูแล: ให้กำลังใจเสริมพลังใจอย่างต่อเนื่อง และทบทวนทักษะการรับมือกับสถานการณ์เสี่ยงสูง",
+      "answer": "ไม่สูบบุหรี่ต่อเนื่องเกิน 6 เดือนขึ้นไป<br> ▶ แนวทางดูแล: ให้กำลังใจเสริมพลังใจอย่างต่อเนื่อง และทบทวนทักษะการรับมือกับสถานการณ์เสี่ยงสูง",
       "answerImage": "",
       "note": ""
     },
@@ -9209,7 +9185,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Relapse (กลับไปสูบซ้ำ) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: กลับมาสูบบุหรี่ใหม่หลังพยายามเลิก<br> ▶ แนวทางดูแล: ให้กำลังใจ ไม่ตำหนิ วิเคราะห์สาเหตุของการหลุดสูบ และเริ่มกระบวนการประเมินเพื่อวางแผนใหม่",
+      "answer": "กลับมาสูบบุหรี่ใหม่หลังพยายามเลิก<br> ▶ แนวทางดูแล: ให้กำลังใจ ไม่ตำหนิ วิเคราะห์สาเหตุของการหลุดสูบ และเริ่มกระบวนการประเมินเพื่อวางแผนใหม่",
       "answerImage": "",
       "note": ""
     },
@@ -9221,7 +9197,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Nicotine Patch มีคุณลักษณะการดูดซึม และวิธีแปะที่ถูกต้องอย่างไร?",
       "questionImage": "",
-      "answer": "▶ การดูดซึม: ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> ▶ วิธีแปะ: แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
+      "answer": " ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
       "answerImage": "images/extracted_10__Psychiatric_r17_c4.png",
       "note": ""
     },
@@ -9233,7 +9209,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญของ Nicotine Patch คืออะไร และมีการจัดการอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ผลข้างเคียง: ระคายเคืองผิวหนังบริเวณที่แปะ, นอนไม่หลับ (Insomnia) และฝันร้ายสมจริง (Vivid/Abnormal dreams)<br> ▶ การจัดการ: หากมีปัญหานอนไม่หลับ/ฝันร้าย ให้ลอกแผ่นแปะออกก่อนนอน (ใช้เฉพาะ 16 ชั่วโมงตอนกลางวัน)",
+      "answer": " ระคายเคืองผิวหนังบริเวณที่แปะ, นอนไม่หลับ (Insomnia) และฝันร้ายสมจริง (Vivid/Abnormal dreams)<br> ▶ การจัดการ: หากมีปัญหานอนไม่หลับ/ฝันร้าย ให้ลอกแผ่นแปะออกก่อนนอน (ใช้เฉพาะ 16 ชั่วโมงตอนกลางวัน)",
       "answerImage": "",
       "note": ""
     },
@@ -9263,30 +9239,18 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
     },
     {
       "id": "10. Psychiatric::21",
-      "itemNo": "19",
-      "group": "10. Psychiatric",
-      "subTopic": "Smoking Cessation",
-      "track": "Clinic",
-      "question": "Nicotine Oral Spray มีขนาดการใช้ ข้อจำกัดการพ่น และวิธีใช้อย่างไร?",
-      "questionImage": "",
-      "answer": "▶ วิธีใช้: พ่นเข้ากระพุ้งแก้มหรือใต้ลิ้น กลั้นหายใจและงดกลืนน้ำลายทันที ห้ามสูดดมเข้าทางเดินหายใจ งดอาหาร/น้ำก่อนและหลังพ่น 15 นาที<br> ▶ Dosing: พ่น 1-2 sprays ทุก 30-60 นาที (ถ้าพ่น 1 spray แล้ว 2-3 นาทียังอยาก ให้พ่นซ้ำอีก 1 spray)<br> ▶ Max dose: ไม่เกิน 2 sprays/ครั้ง, ไม่เกิน 3-4 sprays/ชม., ไม่เกิน 48-64 sprays/วัน",
-      "answerImage": "images/extracted_10__Psychiatric_r21_c4.png",
-      "note": ""
-    },
-    {
-      "id": "10. Psychiatric::22",
       "itemNo": "20",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
-      "question": "ผลข้างเคียงเด่นของ Nicotine Gumิและ Oral Spray คืออะไร?",
+      "question": "ผลข้างเคียงเด่นของ Nicotine Gum และ Oral Spray คืออะไร?",
       "questionImage": "",
       "answer": "▶ Gum  คลื่นไส้, สะอึก, แสบร้อนยอดอก (Heartburn), ระคายเคืองช่องปากและคอ, ปวดกราม<br> ▶ Oral Spray: ระคายเคืองคอ, ไอ, จาม, น้ำตาไหล, คลื่นไส้ (เนื่องจากออกฤทธิ์เร็วมากใน 1-2 นาที)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::23",
+      "id": "10. Psychiatric::22",
       "itemNo": "21",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9298,19 +9262,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::24",
+      "id": "10. Psychiatric::23",
       "itemNo": "22",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Bupropion SR มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ (</b></span>เริ่มต้น 150 mg OD เช้า x 3 วัน → เพิ่มเป็น 150 mg BID ห่างกันอย่างน้อย 8 ชม. เลี่ยงมื้อเย็นก่อนนอน)",
-      "answerImage": "images/extracted_10__Psychiatric_r24_c4.png",
+      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ </b></span>",
+      "answerImage": "images/extracted_10__Psychiatric_r23_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::25",
+      "id": "10. Psychiatric::24",
       "itemNo": "23",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9322,7 +9286,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::26",
+      "id": "10. Psychiatric::25",
       "itemNo": "24",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9334,19 +9298,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::27",
+      "id": "10. Psychiatric::26",
       "itemNo": "25",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Cytisine มีกำหนด Target Quit Date (TQD) วันใด และมีคอร์สการรักษาอย่างไร?",
       "questionImage": "",
-      "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)<br> ▶<span style=\"color:#dc2626\"> Regimen: ไม่ต้องจำ</span><br> - วันที่ 1-3: 1 เม็ด (1.5 mg) ทุก 2 ชม. (6 เม็ด/วัน)<br> - วันที่ 4-12: 1 เม็ด ทุก 2.5 ชม. (5 เม็ด/วัน)<br> - วันที่ 13-16: 1 เม็ด ทุก 3 ชม. (4 เม็ด/วัน)<br> - วันที่ 17-20: 1 เม็ด ทุก 5 ชม. (3 เม็ด/วัน)<br> - วันที่ 21-25: วันละ 1-2 เม็ด แล้วหยุดยา",
-      "answerImage": "images/extracted_10__Psychiatric_r27_c4.png",
+      "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)",
+      "answerImage": "images/extracted_10__Psychiatric_r26_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::28",
+      "id": "10. Psychiatric::27",
       "itemNo": "26",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9358,7 +9322,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::29",
+      "id": "10. Psychiatric::28",
       "itemNo": "27",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9370,19 +9334,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::30",
+      "id": "10. Psychiatric::29",
       "itemNo": "28",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Varenicline มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> (วัน 1-3: 0.5 mg OD → วัน 4-7: 0.5 mg BID → วัน 8/TQD เป็นต้นไป: 1 mg BID นาน 12 สัปดาห์)",
-      "answerImage": "images/extracted_10__Psychiatric_r30_c4.png",
+      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> ",
+      "answerImage": "images/extracted_10__Psychiatric_r29_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::31",
+      "id": "10. Psychiatric::30",
       "itemNo": "29",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9394,19 +9358,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::32",
+      "id": "10. Psychiatric::31",
       "itemNo": "30",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Nortriptyline มี MOAอย่างไร?",
       "questionImage": "",
-      "answer": "▶ MOA: Non-specific Monoamine Reuptake Inhibitor (TCA) ยับยั้ง Reuptake ของ NE เป็นหลัก และ Serotonin บางส่วน ช่วยบรรเทาอาการถอนและอารมณ์ดิ่ง<br>",
+      "answer": "Non-specific Monoamine Reuptake Inhibitor (TCA) ยับยั้ง Reuptake ของ NE เป็นหลัก และ Serotonin บางส่วน ช่วยบรรเทาอาการถอนและอารมณ์ดิ่ง<br>",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::33",
+      "id": "10. Psychiatric::32",
       "itemNo": "31",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9414,47 +9378,47 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nortriptyline มีการเริ่มยา (TQD) สำหรับช่วยเลิกบุหรี่อย่างไร?",
       "questionImage": "",
       "answer": "<br> ▶ TQD: เริ่มทานก่อนวันเลิกบุหรี่ (TQD) 2-4 สัปดาห์ (10-28 วัน) เพื่อให้ระดับยาสะสมถึง Steady-state",
-      "answerImage": "images/extracted_10__Psychiatric_r33_c4.png",
+      "answerImage": "images/extracted_10__Psychiatric_r32_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::34",
+      "id": "10. Psychiatric::33",
       "itemNo": "32",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญ และข้อห้ามใช้ของ Nortriptyline มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ Key ADRs: Anticholinergic (ปากแห้ง ท้องผูก ตาพร่า ปัสสาวะขัด ง่วงซึม) และ Cardiovascular (Tachycardia, ความดันตกเวลายืน, <b style=\"color:#dc2626;\">QT prolongation</b>)<br> ❌ <b style=\"color:#dc2626;\">ข้อห้ามใช้</b>: Recent MI, Conduction block, ต้อหินมุมปิด, ต่อมลูกหมากโต (BPH), ใช้ MAOIs ใน 14 วัน",
+      "answer": "Anticholinergic (ปากแห้ง ท้องผูก ตาพร่า ปัสสาวะขัด ง่วงซึม) Cardiovascular (Tachycardia, ความดันตกเวลายืน, <b style=\"color:#dc2626;\">QT prolongation</b>)<br> ❌ <b style=\"color:#dc2626;\">ข้อห้ามใช้</b>: Recent MI, Conduction block, ต้อหินมุมปิด, ต่อมลูกหมากโต (BPH), ใช้ MAOIs ใน 14 วัน",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::35",
+      "id": "10. Psychiatric::34",
       "itemNo": "33",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ชาหญ้าดอกขาว มีสารสำคัญ MOA วิธีใช้ ",
       "questionImage": "",
-      "answer": "▶ สารสำคัญ &amp; MOA: มี Nitrate และ Flavonoids ทำให้ต่อมรับรสที่ลิ้นชา รู้สึกเหม็นควันบุหรี่และไม่อยากสูบ<br> ",
+      "answer": " มี Nitrate และ Flavonoids ทำให้ต่อมรับรสที่ลิ้นชา รู้สึกเหม็นควันบุหรี่และไม่อยากสูบ<br> ",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::36",
+      "id": "10. Psychiatric::35",
       "itemNo": "34",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ชาหญ้าดอกขาว มีระยะเวลาการดื่มอย่างไร?",
       "questionImage": "",
-      "answer": "<br> ▶ วิธีใช้: ชงดื่มหลังอาหารวันละ 3-4 ครั้ง ดื่มอย่างน้อย 7 วันก่อนวันเลิก (TQD) และดื่มต่ออีก 7 วัน (รวม 14 วัน)",
+      "answer": "<br>ชงดื่มหลังอาหารวันละ 3-4 ครั้ง ดื่มอย่างน้อย 7 วันก่อนวันเลิก (TQD) และดื่มต่ออีก 7 วัน (รวม 14 วัน)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::37",
+      "id": "10. Psychiatric::36",
       "itemNo": "35",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -9462,47 +9426,35 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ข้อควรระวังสำคัญในการใช้ชาหญ้าดอกขาวคืออะไร?",
       "questionImage": "",
       "answer": "⚠️ ระวังในผู้ป่วย &#039;โรคหัวใจ&#039; และ &#039;โรคไต&#039; เนื่องจากหญ้าดอกขาวมีปริมาณโพแทสเซียม (Potassium) สูง",
-      "answerImage": "images/extracted_10__Psychiatric_r37_c4.png",
+      "answerImage": "images/extracted_10__Psychiatric_r36_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::38",
+      "id": "10. Psychiatric::37",
       "itemNo": "36",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "สารใดในควันบุหรี่ที่มีผลต่อเอนไซม์ตับ CYP1A2 และส่งผลอย่างไรขณะสูบบุหรี่?",
       "questionImage": "",
-      "answer": "▶ สารออกฤทธิ์: Polycyclic Aromatic Hydrocarbons (PAHs) ในควันบุหรี่ (ไม่ใช่ตัวนิโคติน) เป็น Potent CYP1A2 Inducer<br> ▶ ผลขณะสูบบุหรี่: PAHs จะกระตุ้นเอนไซม์ CYP1A2 ให้ทำงานเพิ่มขึ้น ทำให้ยาที่ผ่าน CYP1A2 ถูกกำจัดเร็ว จึงต้องใช้ขนาดยาสูงกว่าปกติ",
+      "answer": " Polycyclic Aromatic Hydrocarbons (PAHs) ในควันบุหรี่ (ไม่ใช่ตัวนิโคติน) เป็น Potent CYP1A2 Inducer<br> PAHs จะกระตุ้นเอนไซม์ CYP1A2 ให้ทำงานเพิ่มขึ้น ทำให้ยาที่ผ่าน CYP1A2 ถูกกำจัดเร็ว จึงต้องใช้ขนาดยาสูงกว่าปกติ",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::39",
+      "id": "10. Psychiatric::38",
       "itemNo": "37",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "เกิดอะไรขึ้นกับระดับยาในเลือดเมื่อผู้ป่วย &#039;หยุดสูบบุหรี่&#039; และยารายการใดที่ต้องปรับลดขนาดลง?",
       "questionImage": "",
-      "answer": "▶ ผลเมื่อหยุดสูบ: ภาวะ Induction หายไป (De-induction) → CYP1A2 ทำงานลดลง → ยาถูกกำจัดช้าลง ระดับยาพุ่งสูงขึ้น เสี่ยงพิษรุนแรง<br> ▶ รายการยาที่ต้องลดขนาดยาลง:<br> 1. Clozapine (เสี่ยง <b style=\"color:#dc2626;\">Seizure</b>, Agranulocytosis - ต้องลดขนาด 30-50%)<br> 2. Olanzapine (ง่วงซึมรุนแรง, EPS)<br> 3. Theophylline (เสี่ยง Arrhythmias, <b style=\"color:#dc2626;\">Seizure</b>)<br> 4. Warfarin (INR สูงขึ้น เสี่ยงเลือดออกผิดปกติ)",
+      "answer": "▶ ผลเมื่อหยุดสูบ ภาวะ Induction หายไป (De-induction) → CYP1A2 ทำงานลดลง → ยาถูกกำจัดช้าลง ระดับยาพุ่งสูงขึ้น เสี่ยงพิษรุนแรง<br> ▶ รายการยาที่ต้องลดขนาดยาลง<br> 1. Clozapine (เสี่ยง <b style=\"color:#dc2626;\">Seizure</b>, Agranulocytosis - ต้องลดขนาด 30-50%)<br> 2. Olanzapine (ง่วงซึมรุนแรง, EPS)<br> 3. Theophylline (เสี่ยง Arrhythmias, <b style=\"color:#dc2626;\">Seizure</b>)<br> 4. Warfarin (INR สูงขึ้น เสี่ยงเลือดออกผิดปกติ)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "10. Psychiatric::40",
-      "itemNo": "38",
-      "group": "10. Psychiatric",
-      "subTopic": "Smoking Cessation",
-      "track": "Clinic",
-      "question": "การเปลี่ยนจากบุหรี่มาใช้ NRT (Nicotine Patch / Gum) มีผลต่อเอนไซม์ CYP1A2 หรือไม่ อย่างไร?",
-      "questionImage": "",
-      "answer": "ไม่มีผลกระตุ้น CYP1A2 เนื่องจาก NRT ไม่มีสาร PAHs จากการเผาไหม้ ดังนั้นเมื่อเปลี่ยนมาใช้ NRT เอนไซม์ CYP1A2 จะทำงานลดลงเข้าสู่ระดับปกติเช่นเดียวกับการเลิกบุหรี่ทั่วไป จึงยังคงต้องปรับลดขนาดยาที่ผ่าน CYP1A2 ตามปกติ",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "10. Psychiatric::41",
       "itemNo": "39",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9514,7 +9466,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::42",
+      "id": "10. Psychiatric::41",
       "itemNo": "40",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9526,7 +9478,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::43",
+      "id": "10. Psychiatric::42",
       "itemNo": "41",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9538,7 +9490,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::44",
+      "id": "10. Psychiatric::43",
       "itemNo": "42",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9550,7 +9502,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::45",
+      "id": "10. Psychiatric::44",
       "itemNo": "43",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9562,7 +9514,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::46",
+      "id": "10. Psychiatric::45",
       "itemNo": "44",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9574,7 +9526,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::47",
+      "id": "10. Psychiatric::46",
       "itemNo": "45",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9586,7 +9538,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::48",
+      "id": "10. Psychiatric::47",
       "itemNo": "46",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9598,7 +9550,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::49",
+      "id": "10. Psychiatric::48",
       "itemNo": "47",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9610,7 +9562,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::50",
+      "id": "10. Psychiatric::49",
       "itemNo": "48",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9622,7 +9574,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::51",
+      "id": "10. Psychiatric::50",
       "itemNo": "49",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9634,7 +9586,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::52",
+      "id": "10. Psychiatric::51",
       "itemNo": "50",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -9646,7 +9598,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::53",
+      "id": "10. Psychiatric::52",
       "itemNo": "51",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -13846,7 +13798,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ระยะของการเกิดโรคไมเกรน (Phases of a migraine attack) แบ่งออกเป็นกี่ระยะ อะไรบ้าง?",
       "questionImage": "",
-      "answer": "แบ่งเป็น 4 ระยะ คือ 1. Prodrome 2. Aura 3. Headache และ 4. Resolution",
+      "answer": "แบ่งเป็น 4 ระยะ คือ 1. ระยะอาการนำ (Prodrome Phase)<br> ช่วงเวลา: เกิดก่อนมีอาการปวดศีรษะประมาณ 24 ถึง 48 ชั่วโมง มีการเปลี่ยนแปลงทางอารมณ์ เพลีย เบื่ออาหาร 2. ระยะอาการเตือนทางระบบประสาท (Aura Phase)<br> ช่วงเวลา: เกิดขึ้นก่อนเข้าสู่ระยะปวดศีรษะประมาณ 5 ถึง 60 นาที และผู้ป่วยไมเกรนไม่ได้มีระยะนี้ทุกคน มีอาการ visual aura และชาซ่าๆยิบๆ 3. ระยะปวดศีรษะ (Headache Phase)<br> ช่วงเวลา: ปวดนานตั้งแต่ 4 ถึง 72 ชั่วโมง หากไม่ได้รับการรักษาหรือรักษาไม่สำเร็จ 4. ระยะฟื้นตัว (Postdrome Phase)<br> ช่วงเวลา: เกิดหลังจากอาการปวดศีรษะเริ่มบรรเทาลง กินเวลาประมาณ 24 ชั่วโมง  <br> ลักษณะอาการ: มีลักษณะคล้ายภาวะ Hangover effect คือ มึนงง สับสน เพลียมาก",
       "answerImage": "",
       "note": ""
     },
@@ -13942,7 +13894,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ในการเลือกใช้ NSAIDs สำหรับ Acute migraine ควรเลือกคุณสมบัติยาลักษณะใด?",
       "questionImage": "",
-      "answer": "ควรเลือก NSAIDs ที่มีค่า Tmaxสั้น (ดูดซึมเร็วไม่เกิน 2 ชั่วโมง) และหลีกเลี่ยงรูปแบบ Enteric-coated (EC) เพื่อให้ยาเริ่มออกฤทธิ์ระงับอาการปวดได้รวดเร็วภายใน 2 ชั่วโมง",
+      "answer": "ควรเลือก NSAIDs ที่มีค่า Tmaxสั้น (ดูดซึมเร็วไม่เกิน 2 ชั่วโมง) ได้แก่ Ibuprofen<br> Diclofenac (โดยเฉพาะรูปแบบ Potassium salt หรือ Dispersible/Liquid-filled capsule)  <br> Naproxen sodium ,Aspirin,Ketorolac และควรหลีกเลี่ยงยารูปแบบ Enteric-coated (EC) เนื่องจากจะทำให้การปลดปล่อยและดูดซึมยาเนิ่นออกไป ส่งผลให้ Tmaxนานขึ้นและออกฤทธิ์ระงับอาการปวดได้ช้าลง",
       "answerImage": "",
       "note": ""
     },
@@ -14014,7 +13966,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ข้อห้ามใช้ที่สำคัญอย่างยิ่งของยากลุ่ม Triptans และ Ergotamine มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "ผู้ป่วยโรคหลอดเลือดหัวใจ (CAD), ความดันโลหิตสูงที่ควบคุมไม่ได้ (Uncontrolled HT), โรคหลอดเลือดสมอง (Stroke/TIA) และ หญิงตั้งครรภ์ (Pregnancy Category X)",
+      "answer": "ผู้ป่วยโรคหลอดเลือดหัวใจ (CAD), ความดันโลหิตสูงที่ควบคุมไม่ได้ (Uncontrolled HT), โรคหลอดเลือดสมอง (Stroke/TIA), คนที่แพ้ sulfa และ หญิงตั้งครรภ์ (Pregnancy Category X)",
       "answerImage": "",
       "note": ""
     },
@@ -14060,6 +14012,18 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
+      "question": "ขนาดยาแนะนำและการบริหารยา Ergotamine ในผู้ใหญ่คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ขนาดยาเริ่มต้น: รับประทานครั้งแรก 1–2 เม็ด ทันทีเมื่อเริ่มมีอาการปวดศีรษะไมเกรน  <br> การรับประทานซ้ำ: หากอาการยังไม่ดีขึ้น สามารถรับประทานซ้ำได้ครั้งละ 1 เม็ด ทุกๆ 30 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::27",
+      "itemNo": "25",
+      "group": "9. Neurologic",
+      "subTopic": "Headache (migraine/tension)",
+      "track": "Clinic",
       "question": "ยา Ergotamine tartrate ออกฤทธิ์ผ่านตัวรับใดบ้าง และก่อให้เกิดผลข้างเคียงอย่างไรตามกลไก?",
       "questionImage": "",
       "answer": "กระตุ้น alpha1-receptor: ทำให้หลอดเลือดส่วนปลายหดตัว, ความดันโลหิตสูงขึ้น, ปลายมือปลายเท้าเย็น  <br> กระตุ้น D2-receptor: ทำให้เกิดอาการคลื่นไส้ อาเจียน  <br> กระตุ้น 5-HT 1B receptor: ทำให้เกิดอาการใจสั่น เจ็บหน้าอก",
@@ -14067,8 +14031,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::27",
-      "itemNo": "25",
+      "id": "9. Neurologic::28",
+      "itemNo": "26",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14079,8 +14043,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::28",
-      "itemNo": "26",
+      "id": "9. Neurologic::29",
+      "itemNo": "27",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14091,8 +14055,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::29",
-      "itemNo": "27",
+      "id": "9. Neurologic::30",
+      "itemNo": "28",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14103,8 +14067,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::30",
-      "itemNo": "28",
+      "id": "9. Neurologic::31",
+      "itemNo": "29",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14115,8 +14079,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::31",
-      "itemNo": "29",
+      "id": "9. Neurologic::32",
+      "itemNo": "30",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14127,8 +14091,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::32",
-      "itemNo": "30",
+      "id": "9. Neurologic::33",
+      "itemNo": "31",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14139,8 +14103,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::33",
-      "itemNo": "31",
+      "id": "9. Neurologic::34",
+      "itemNo": "32",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14151,8 +14115,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::34",
-      "itemNo": "32",
+      "id": "9. Neurologic::35",
+      "itemNo": "33",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14163,8 +14127,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::35",
-      "itemNo": "33",
+      "id": "9. Neurologic::36",
+      "itemNo": "34",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14175,8 +14139,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::36",
-      "itemNo": "34",
+      "id": "9. Neurologic::37",
+      "itemNo": "35",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14187,8 +14151,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::37",
-      "itemNo": "35",
+      "id": "9. Neurologic::38",
+      "itemNo": "36",
       "group": "9. Neurologic",
       "subTopic": "Headache (migraine/tension)",
       "track": "Clinic",
@@ -14199,32 +14163,32 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::38",
-      "itemNo": "36",
-      "group": "9. Neurologic",
-      "subTopic": "Parkinson disease",
-      "track": "Clinic",
-      "question": "เพราะเหตุใดจึงไม่สามารถใช้โดปามีน (Dopamine) โดยตรงในการรักษาโรคพาร์กินสันได้?",
-      "questionImage": "",
-      "answer": "เพราะโดปามีนไม่สามารถผ่านกั้นระหว่างเลือดกับสมอง (Blood-Brain Barrier: BBB) ได้",
-      "answerImage": "",
-      "note": ""
-    },
-    {
       "id": "9. Neurologic::39",
       "itemNo": "37",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "การรับประทานยา Levodopa พร้อมกับอาหารประเภทโปรตีนสูงจะส่งผลอย่างไรต่อเภสัชจลนศาสตร์ของยา?",
+      "question": "เพราะเหตุใดจึงไม่สามารถใช้โดปามีน (Dopamine) โดยตรงในการรักษาโรคพาร์กินสันได้?",
       "questionImage": "",
-      "answer": "ชะลอการดูดซึมและลด C max",
+      "answer": "เพราะโดปามีนไม่สามารถผ่าน Blood-Brain Barrier: BBB ได้",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "9. Neurologic::40",
       "itemNo": "38",
+      "group": "9. Neurologic",
+      "subTopic": "Parkinson disease",
+      "track": "Clinic",
+      "question": "การรับประทานยา Levodopa พร้อมกับอาหารประเภทโปรตีนสูงจะส่งผลอย่างไรต่อเภสัชจลนศาสตร์ของยา?",
+      "questionImage": "",
+      "answer": "ชะลอการดูดซึมและลด C max เนื่องจาก Levodopa ใช้ transporter ร่วมกับโปรตีน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::41",
+      "itemNo": "39",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
@@ -14235,8 +14199,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::41",
-      "itemNo": "39",
+      "id": "9. Neurologic::42",
+      "itemNo": "40",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
@@ -14247,7 +14211,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::42",
+      "id": "9. Neurologic::43",
       "itemNo": "40",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14259,7 +14223,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::43",
+      "id": "9. Neurologic::44",
       "itemNo": "41",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14271,7 +14235,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::44",
+      "id": "9. Neurologic::45",
       "itemNo": "42",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14283,7 +14247,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::45",
+      "id": "9. Neurologic::46",
       "itemNo": "43",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14295,7 +14259,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::46",
+      "id": "9. Neurologic::47",
       "itemNo": "44",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14307,7 +14271,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::47",
+      "id": "9. Neurologic::48",
       "itemNo": "45",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14319,7 +14283,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::48",
+      "id": "9. Neurologic::49",
       "itemNo": "46",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14331,7 +14295,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::49",
+      "id": "9. Neurologic::50",
       "itemNo": "47",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14343,7 +14307,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::50",
+      "id": "9. Neurologic::51",
       "itemNo": "48",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14355,7 +14319,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::51",
+      "id": "9. Neurologic::52",
       "itemNo": "49",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14367,7 +14331,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::52",
+      "id": "9. Neurologic::53",
       "itemNo": "50",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14379,7 +14343,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::53",
+      "id": "9. Neurologic::54",
       "itemNo": "51",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14391,31 +14355,31 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::54",
+      "id": "9. Neurologic::55",
       "itemNo": "52",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "Selegiline ถูก metabolism ได้อะไร",
+      "question": "Selegiline ถูก metabolism ได้อะไร ทำให้เกิดผลข้างเคียงตื่นตัว นอนไม่หลับ",
       "questionImage": "",
       "answer": "L-amphetamine และ L-methamphetamine",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "9. Neurologic::55",
+      "id": "9. Neurologic::56",
       "itemNo": "53",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
       "track": "Clinic",
-      "question": "ข้อแนะนำในการบริหารยา Selegiline เพื่อลดปัญหาการนอนไม่หลับคืออะไร?",
+      "question": "ข้อแนะนำในการบริหารยา Selegiline เพื่อลดปัญหาการนอนไม่หลับคืออะไร",
       "questionImage": "",
       "answer": "หลีกเลี่ยงการรับประทานยามื้อเย็นหรือมื้อก่อนนอน",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "9. Neurologic::56",
+      "id": "9. Neurologic::57",
       "itemNo": "54",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14427,7 +14391,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "9. Neurologic::57",
+      "id": "9. Neurologic::58",
       "itemNo": "55",
       "group": "9. Neurologic",
       "subTopic": "Parkinson disease",
@@ -14435,18 +14399,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "COMT inhibitors ออกฤทธิ์อย่างไรเมื่อใช้ร่วมกับ Levodopa?",
       "questionImage": "",
       "answer": "ยับยั้งเอนไซม์ Catechol-O-methyltransferase เพื่อป้องกันการเปลี่ยน Levodopa ไปเป็น 3-O-methyldopa (3-OMD)",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "9. Neurologic::58",
-      "itemNo": "56",
-      "group": "9. Neurologic",
-      "subTopic": "Parkinson disease",
-      "track": "Clinic",
-      "question": "การให้ Levodopa ร่วมกับ COMT inhibitor มีวัตถุประสงค์หลักเพื่ออะไรในเชิงเภสัชจลนศาสตร์?",
-      "questionImage": "",
-      "answer": "ยืดค่าครึ่งชีวิตของ Levodopa และเพิ่มปริมาณ Levodopa เข้าสู่สมองอย่างสม่ำเสมอ",
       "answerImage": "",
       "note": ""
     },
@@ -14792,11 +14744,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia (ภาวะสมองเสื่อม) คืออะไร และก่อนวินิจฉัยต้องแยกภาวะใดออกก่อน?",
+      "question": "Dementia ต่างจาก Alzheimer&#039;s disease (AD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน Cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
+      "answer": "Dementia = กลุ่มอาการสมองเสื่อม เกิดได้หลายสาเหตุ<br>AD = สาเหตุที่พบบ่อยที่สุดของ dementia (60–80%) และรักษาไม่หาย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 50 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::88",
@@ -14804,11 +14756,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia กับ Alzheimer&#039;s disease (AD) ต่างกันอย่างไร?",
+      "question": "ก่อนวินิจฉัย dementia ต้องแยกภาวะใดออกก่อน?",
       "questionImage": "",
-      "answer": "▶ Dementia: เป็น &#039;กลุ่มอาการ&#039; เกิดได้จากหลายสาเหตุ มีทั้งแบบแก้ได้ (Reversible) และแก้ไม่ได้ (Irreversible)<br>▶ AD: เป็นสาเหตุหนึ่งของ Dementia และพบบ่อยที่สุด (60–80%) เป็นแบบ Irreversible อาการเด่นคือความจำเสื่อม (Memory loss)<br>▶ อายุ: ส่วนใหญ่พบในคนอายุ &gt; 65 ปี (มีราว 5% ที่เริ่มก่อน 65 ปี)",
+      "answer": "Delirium · ซึมเศร้า · โรคจิตเวชเรื้อรัง · วิตกกังวลรุนแรง",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 50"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
     },
     {
       "id": "9. Neurologic::89",
@@ -14816,11 +14768,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Dementia ชนิดที่รักษาไม่หาย (Irreversible dementia) มีอะไรบ้าง?",
+      "question": "สมองเสื่อมจากสาเหตุใดที่แก้ไขได้ (reversible)?",
       "questionImage": "",
-      "answer": "▶ Alzheimer&#039;s disease (AD)<br>▶ Dementia with Lewy bodies (DLB)<br>▶ Frontotemporal dementia (FTD) — เด่นเรื่องพฤติกรรม บุคลิกภาพ ภาษา<br>▶ Dementia associated with Parkinson&#039;s disease<br>▶ Vascular dementia (VaD)",
+      "answer": "CNS infection · <b style=\"color:#dc2626;\">Hypothyroidism</b> · ขาด vitamin B12 · ซึมเศร้า<br>ยา anticholinergic, sedative-hypnotics, opioids",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 8, 49"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 49"
     },
     {
       "id": "9. Neurologic::90",
@@ -14828,9 +14780,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยสูงอายุความจำแย่ลง ก่อนสรุปว่าเป็นสมองเสื่อม ควรมองหาสาเหตุที่แก้ไขได้ (Reversible dementia) อะไรบ้าง?",
+      "question": "Irreversible dementia มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ โรค/ภาวะ: CNS infections, <b style=\"color:#dc2626;\">Hypothyroidism</b>, ขาด Vitamin B12, Depression<br>▶ ยาที่ทำให้ความจำแย่ลง: ยากลุ่ม Anticholinergic, Sedative-hypnotics, Opiate analgesics",
+      "answer": "AD · Lewy bodies (DLB) · Frontotemporal (FTD) · Parkinson&#039;s disease dementia · Vascular (VaD)",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 49"
     },
@@ -14840,11 +14792,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Young onset dementia (YOD) คืออะไร และโอกาสเกิด Dementia เพิ่มขึ้นตามอายุแค่ไหน?",
+      "question": "เกณฑ์วินิจฉัย AD ทางคลินิก (ต้องครบทุกข้อ) มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ YOD: เริ่มมีอาการสมองเสื่อมก่อนอายุ 65 ปี<br>▶ อุบัติการณ์: อายุ &gt; 65 ปี พบได้ ~15% และอายุ &gt; 80 ปี พบได้ถึง ~45%<br>▶ ช่วงที่เริ่มมีอาการบ่อย: อายุ 70–80 ปี",
+      "answer": "1. ความจำเหตุการณ์เสื่อม (episodic memory loss)<br>2. มี aphasia, apraxia, agnosia หรือ executive dysfunction อย่างน้อย 1 อย่าง<br>3. เป็นนานกว่า 6 เดือน<br>4. แย่ลงเรื่อย ๆ<br>5. รบกวนชีวิตประจำวัน",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 50"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7"
     },
     {
       "id": "9. Neurologic::92",
@@ -14852,11 +14804,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "เกณฑ์วินิจฉัย Alzheimer&#039;s disease ทางคลินิก (ต้องมีครบทุกข้อ) มีอะไรบ้าง?",
+      "question": "ผู้ป่วย AD จะเสีย ADL ด้านไหนก่อน?",
       "questionImage": "",
-      "answer": "1. ความจำเหตุการณ์เสื่อม (Episodic memory loss) เช่น ถามซ้ำ ลืมว่าทานข้าวแล้ว ลืมนัด<br>2. มีอย่างน้อย 1 ข้อ: Aphasia / Apraxia / Agnosia / Executive dysfunction / Social cognition ถดถอย<br>3. เป็นมานานกว่า 6 เดือน<br>4. อาการแย่ลงเรื่อย ๆ (Progressive course)<br>5. รบกวนกิจวัตรประจำวันหรือการเข้าสังคม",
+      "answer": "IADL ก่อน เช่น ทำอาหาร จัดการเงิน ทานยาเอง<br>แล้วจึงเสีย basic ADL เช่น อาบน้ำ แต่งตัว ทานข้าว",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7 (แนวทางเวชปฏิบัติภาวะสมองเสื่อม สถาบันประสาทวิทยา 2563)"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 9"
     },
     {
       "id": "9. Neurologic::93",
@@ -14864,11 +14816,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Aphasia, Apraxia และ Agnosia ต่างกันอย่างไร?",
+      "question": "BPSD คืออะไร และพบมากในระยะใด?",
       "questionImage": "",
-      "answer": "▶ Aphasia: ใช้ภาษา/สื่อสารผิดปกติ เช่น เรียกชื่อสิ่งของไม่ถูก ทำตามที่สั่งไม่ได้<br>▶ Apraxia: สั่งกล้ามเนื้อให้ทำตามไม่ได้ ทั้งที่ไม่ได้อ่อนแรง<br>▶ Agnosia: จำสิ่งของที่เคยรู้จักไม่ได้ว่าคืออะไร",
+      "answer": "อาการด้านพฤติกรรม อารมณ์ และอาการทางจิตในผู้ป่วยสมองเสื่อม<br>พบได้ทุกระยะ แต่พบมากในระยะรุนแรง และเป็น ๆ หาย ๆ",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 7"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 10"
     },
     {
       "id": "9. Neurologic::94",
@@ -14876,11 +14828,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "อาการของ Alzheimer&#039;s disease แบ่งเป็นกี่ด้าน อะไรบ้าง?",
+      "question": "ยกตัวอย่างอาการ BPSD",
       "questionImage": "",
-      "answer": "แบ่งเป็น 3 ด้าน คือ<br>1. ปริชาน (Cognition)<br>2. การทำกิจวัตรประจำวัน (ADL)<br>3. ปัญหาพฤติกรรม อารมณ์ และอาการทางจิต (BPSD)",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 5"
+      "answer": "กระสับกระส่าย ก้าวร้าว เร่ร่อน นอนผิดปกติ (พฤติกรรม)<br>หงุดหงิด ซึมเศร้า วิตกกังวล ไร้อารมณ์ (อารมณ์)<br>หลงผิด จำญาติผิด ประสาทหลอน (อาการทางจิต)",
+      "answerImage": "https://lh3.googleusercontent.com/d/14k25fn-X0dP7MghU1nDYo3okvQ1M6Ml3",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 11"
     },
     {
       "id": "9. Neurologic::95",
@@ -14888,11 +14840,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Cognition (ปริชาน) แบ่งออกเป็น 6 ด้าน อะไรบ้าง?",
+      "question": "ระยะของ AD แบ่งตามคะแนน MMSE อย่างไร?",
       "questionImage": "",
-      "answer": "1. Complex attention — ใส่ใจได้ต่อเนื่อง<br>2. Executive function — วางแผน ตัดสินใจ Working memory<br>3. Learning and memory<br>4. Language — พูด ฟัง เรียกชื่อสิ่งของ<br>5. Visuoconstructional-perceptual — Perceptual-motor, Praxis<br>6. Social cognition",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 6"
+      "answer": "Mild 21–26 · Moderate 10–20 · Severe 0–9<br>คะแนนยิ่งต่ำ ยิ่งรุนแรง",
+      "answerImage": "https://lh3.googleusercontent.com/d/1NAtmto46PznZZu4yjZcVSaoA47AlfzLr",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83) · สภา 2564 ใช้คะแนน TMSE บอกว่าเป็น severe"
     },
     {
       "id": "9. Neurologic::96",
@@ -14900,11 +14852,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD จะเริ่มทำกิจวัตรประจำวัน (ADL) ด้านไหนไม่ได้ก่อน?",
+      "question": "อาการเด่นของ AD ระยะ moderate คืออะไร?",
       "questionImage": "",
-      "answer": "▶ เสียก่อน: IADL เช่น ทำอาหาร ใช้โทรศัพท์ เดินทาง ทำงานบ้าน จัดการเงิน ทานยาเอง<br>▶ เสียทีหลัง (เมื่อโรคเป็นมากขึ้น): Basic ADL เช่น ลุกจากเตียง ล้างหน้าแปรงฟัน ขับถ่าย อาบน้ำ แต่งตัว ทานข้าว",
+      "answer": "ต้องมีคนช่วยทำ ADL · ลืมชื่อคนในครอบครัว · สับสนวันเวลา · agitation และหลงผิดพบบ่อย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 9"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
     },
     {
       "id": "9. Neurologic::97",
@@ -14912,11 +14864,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "BPSD คืออะไร พบในระยะไหนของโรค และส่งผลอย่างไร?",
+      "question": "อาการเด่นของ AD ระยะ severe คืออะไร?",
       "questionImage": "",
-      "answer": "▶ ความหมาย: Behavioral and Psychological Symptoms of Dementia (เรียกอีกชื่อว่า Neuropsychiatric symptoms) แบ่งเป็น ปัญหาพฤติกรรม / อารมณ์ / อาการทางจิต<br>▶ ระยะที่พบ: พบได้ทุกระยะ แต่เจอมากในระยะรุนแรง อาการเป็น ๆ หาย ๆ และกลับมาซ้ำบ่อย<br>▶ ผลกระทบ: ทุพพลภาพมากขึ้น ค่ารักษาสูงขึ้น และต้องนอนโรงพยาบาลบ่อยขึ้น",
+      "answer": "พูด เดิน ทานข้าวเองไม่ได้ · กลั้นปัสสาวะ-อุจจาระไม่ได้ · ต้องมีคนดูแล 24 ชม.",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 10"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
     },
     {
       "id": "9. Neurologic::98",
@@ -14924,11 +14876,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "อาการ BPSD แต่ละกลุ่ม (พฤติกรรม / อารมณ์ / อาการทางจิต) มีอะไรบ้าง?",
+      "question": "แบบประเมิน MMSE-Thai ใช้วินิจฉัยสมองเสื่อมได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ปัญหาพฤติกรรม: กระสับกระส่าย (Agitation), ก้าวร้าว, เร่ร่อน (Wandering), ขาดความยับยั้งชั่งใจ (Disinhibition), นอนผิดปกติ, ทำซ้ำ ๆ<br>▶ ปัญหาอารมณ์: หงุดหงิด, วิตกกังวล, ซึมเศร้า, ไร้อารมณ์ (Apathy), อารมณ์เปลี่ยนง่าย<br>▶ อาการทางจิต: หลงผิด (Delusion), จำผิด (Misidentification) เช่น จำญาติผิด คิดว่าบ้านตัวเองไม่ใช่บ้าน, ประสาทหลอน (หูแว่ว เห็นภาพหลอน)",
-      "answerImage": "https://lh3.googleusercontent.com/d/14k25fn-X0dP7MghU1nDYo3okvQ1M6Ml3",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 11"
+      "answer": "ไม่ได้ ใช้คัดกรองเท่านั้น (11 ข้อ เต็ม 30)<br>ต่ำกว่าจุดตัด = สงสัยสมองเสื่อม ต้องส่งพบแพทย์",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 51"
     },
     {
       "id": "9. Neurologic::99",
@@ -14936,11 +14888,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ระยะของ AD แบ่งตามคะแนน MMSE อย่างไร และแต่ละระยะมีอาการเด่นอะไร?",
+      "question": "จุดตัดของ MMSE-Thai 2002 แต่ละระดับการศึกษาคือเท่าไร?",
       "questionImage": "",
-      "answer": "▶ Mild (MMSE 26–21): ลืมเรื่องที่เพิ่งเกิด อาจหลงทางตอนขับรถ จัดการเงิน/ทำอาหาร/งานบ้านได้แย่ลง เริ่มเลิกงานยากและงานอดิเรก<br>▶ Moderate (MMSE 20–10): ต้องมีคนช่วยทำ ADL ลืมชื่อคนในครอบครัว สับสนวันเวลา อาการขึ้น ๆ ลง ๆ รายวัน พบ Agitation/Paranoid/Delusion บ่อย<br>▶ Severe (MMSE 9–0): พูด เดิน ทานข้าวเองไม่ได้ กลั้นปัสสาวะ-อุจจาระไม่ได้ ต้องมีคนดูแล 24 ชม.",
-      "answerImage": "https://lh3.googleusercontent.com/d/1NAtmto46PznZZu4yjZcVSaoA47AlfzLr",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 12"
+      "answer": "ไม่ได้เรียนหนังสือ ≤ 14 (เต็ม 23)<br>จบประถม ≤ 17<br>สูงกว่าประถม ≤ 22",
+      "answerImage": "https://lh3.googleusercontent.com/d/1VTrR1NWWIu8wIo_MDrfM3gs43iBeFevY",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
     },
     {
       "id": "9. Neurologic::100",
@@ -14948,11 +14900,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยารักษา Alzheimer&#039;s disease มีกี่กลุ่ม อะไรบ้าง?",
+      "question": "ยารักษา AD มีกี่กลุ่ม อะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ Acetylcholinesterase inhibitors (AChEIs): Donepezil, Rivastigmine, Galantamine<br>▶ NMDA receptor antagonist: Memantine",
+      "answer": "AChEIs ได้แก่ donepezil, rivastigmine, galantamine<br>NMDA antagonist ได้แก่ memantine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024 (กลไก rivastigmine)"
     },
     {
       "id": "9. Neurologic::101",
@@ -14960,9 +14912,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "เลือกยารักษา AD ตามระดับความรุนแรงของโรคอย่างไร?",
+      "question": "AD ระยะ mild–moderate เลือกยาใด?",
       "questionImage": "",
-      "answer": "▶ Mild–Moderate: AChEIs (3 ตัวประสิทธิภาพไม่ต่างกัน ช่วยทั้ง Cognition, ADL และ BPSD)<br>▶ Moderate–Severe: Memantine หรือ AChEI ขนาดสูง ได้แก่ Donepezil 23 mg (SR) หรือ Rivastigmine patch 13.3 mg/24 hr",
+      "answer": "AChEI ตัวใดก็ได้ ประสิทธิภาพไม่ต่างกัน",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 14, 36"
     },
@@ -14972,11 +14924,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD ระยะ Moderate–Severe ที่ใช้ AChEI อยู่ ปรับการรักษาได้กี่แบบ อะไรบ้าง?",
+      "question": "AD ระยะ moderate–severe เลือกยาใด?",
       "questionImage": "",
-      "answer": "1. ปรับเพิ่มขนาด AChEI<br>2. คง AChEI ขนาดเดิม แล้วเพิ่ม Memantine (Combination therapy)<br>3. เปลี่ยนจาก AChEI เป็น Memantine (Switch)",
+      "answer": "Memantine หรือ AChEI ขนาดสูง (donepezil 23 mg, rivastigmine patch 13.3 mg/24 hr)",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 37"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 14, 36 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::103",
@@ -14984,11 +14936,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเพิ่ม Memantine ให้ผู้ป่วยที่ใช้ AChEI อยู่ (Combination therapy) ต้องทำอย่างไร และได้ประโยชน์อะไร?",
+      "question": "ผู้ป่วย severe AD ใช้ galantamine อยู่แล้วอาการแย่ลง ควรเพิ่มยาใด?",
       "questionImage": "",
-      "answer": "▶ วิธีทำ: คง AChEI ขนาดเดิมไว้ แล้วเริ่ม Memantine และค่อย ๆ ปรับขนาด (5 → 10 → 15 → 20 mg/วัน เพิ่มทุก 1 สัปดาห์)<br>▶ ประโยชน์: ดีกว่าใช้ AChEI ตัวเดียว ทั้งด้าน Cognition, พฤติกรรม และ ADL",
+      "answer": "Memantine<br>คง galantamine ขนาดเดิม แล้วค่อย ๆ เพิ่ม memantine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 38"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 37–38 · ★ ออกสอบสภา PLE-PC1 2564 (เคส severe AD ใช้ galantamine)"
     },
     {
       "id": "9. Neurologic::104",
@@ -14996,9 +14948,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมไม่ควรหยุด AChEI ทันที?",
+      "question": "จะเปลี่ยนจาก AChEI เป็น memantine ต้องทำอย่างไร?",
       "questionImage": "",
-      "answer": "▶ วิธีทำ: ค่อย ๆ Taper AChEI โดยลดลงครึ่งหนึ่งทุก 2–4 สัปดาห์ จนถึงขนาดต่ำสุด คงไว้ช่วงหนึ่ง แล้วจึงหยุด<br>▶ ถ้าหยุดขนาดสูงทันที: อาจเกิด Withdrawal และ Cognition/อาการทางจิตประสาทแย่ลง<br>▶ ถ้าแย่ลงมาก: พิจารณากลับมาใช้ AChEI",
+      "answer": "ค่อย ๆ ลด AChEI ครึ่งหนึ่งทุก 2–4 สัปดาห์<br>ไม่หยุดทันที เพราะอาการอาจแย่ลง",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 39"
     },
@@ -15008,11 +14960,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงทางเดินอาหารของยากลุ่ม AChEIs คืออะไร และมีการจัดการอย่างไร?",
+      "question": "ยารักษา AD ช่วยลด BPSD ได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ผลข้างเคียง: คลื่นไส้ อาเจียน ท้องเสีย<br>▶ การจัดการ: ทานพร้อมอาหาร อาการมักเป็นช่วงสั้น ๆ ตอนเริ่มยาหรือตอนปรับเพิ่มขนาด และเป็นมากขึ้นตามขนาดยา",
+      "answer": "ได้ ทั้ง AChEIs และ memantine<br>ถ้ามีหลายอาการ ใช้ 2 กลุ่มร่วมกัน",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 33, 35 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83)"
     },
     {
       "id": "9. Neurologic::106",
@@ -15020,11 +14972,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยากลุ่ม AChEIs มีผลต่อหัวใจอย่างไร และต้องติดตามอะไร?",
+      "question": "หลักการเริ่มยารักษา AD คืออะไร?",
       "questionImage": "",
-      "answer": "▶ ผลต่อหัวใจ: หัวใจเต้นช้า (Bradycardia) จากฤทธิ์ Vagotonic และอาจวูบหมดสติ (Syncope)<br>▶ การติดตาม: จับชีพจรก่อนเริ่มยา และระหว่างปรับขนาดยา — เป็นข้อควรระวังของ AChEI ทุกตัว",
+      "answer": "เริ่มขนาดต่ำ แล้วค่อยเพิ่มเท่าที่ผู้ป่วยทนได้<br>ควรเริ่มยาให้เร็วที่สุด",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 44–46"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 33 · ข้อสอบเก่า: แนวข้อสอบ IDT 6 รอบ 1 (RxCU83)"
     },
     {
       "id": "9. Neurologic::107",
@@ -15032,11 +14984,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงด้านระบบประสาทและด้านอื่น ๆ ของยากลุ่ม AChEIs มีอะไรบ้าง?",
+      "question": "ผู้ป่วย AD แบบไหนถือว่าตอบสนองต่อยา?",
       "questionImage": "",
-      "answer": "▶ ระบบประสาท: เวียนศีรษะ, นอนไม่หลับ, ฝันสมจริง (Vivid dreams) — พบกับ Donepezil แก้ได้โดยเปลี่ยนมาทานตอนเช้า<br>▶ อื่น ๆ: น้ำหนักลด (คนน้ำหนัก &lt; 55 kg เสี่ยงมากขึ้น), ตะคริวที่ขา",
+      "answer": "อาการดีขึ้น หรือไม่แย่ลงจากก่อนเริ่มยา<br>ประเมินทุก 3–6 เดือนหลังได้ขนาดเป้าหมาย",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 34"
     },
     {
       "id": "9. Neurologic::108",
@@ -15044,11 +14996,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยทาน Donepezil ก่อนนอนแล้วนอนไม่หลับและฝันร้าย ควรแนะนำอย่างไร? แล้ว AChEI ตัวอื่นควรทานเวลาไหน?",
+      "question": "ผลข้างเคียงที่พบบ่อยที่สุดของ AChEIs คืออะไร?",
       "questionImage": "",
-      "answer": "▶ Donepezil: ปกติให้ทานก่อนนอน (เพราะทำให้เวียนศีรษะ) แต่ถ้านอนไม่หลับ/ฝันร้าย ให้เปลี่ยนมาทานหลังอาหารเช้า<br>▶ Rivastigmine (ชนิดทาน): หลังอาหาร เช้า–เย็น<br>▶ Galantamine PR: ทานพร้อมอาหารเช้า วันละครั้ง",
+      "answer": "คลื่นไส้ อาเจียน ท้องเสีย<br>ทานพร้อมอาหาร มักเป็นช่วงเริ่มยาหรือปรับขนาด",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16, 29"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
     },
     {
       "id": "9. Neurologic::109",
@@ -15056,11 +15008,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "หลักการปรับขนาดยากลุ่ม AChEIs มีอะไรบ้าง?",
+      "question": "ผู้ป่วยใช้ galantamine แล้วทนยาไม่ได้ น่าจะเกิดจากผลข้างเคียงใด?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มขนาดต่ำ แล้วค่อย ๆ เพิ่มประมาณทุก 4 สัปดาห์<br>▶ ใช้ 2 ตัวร่วมกัน: ไม่แนะนำ แต่เปลี่ยนไปใช้ตัวอื่นได้ถ้าทนผลข้างเคียงของตัวเดิมไม่ไหว<br>▶ ขาดยาหลายวัน: ต้องแจ้งแพทย์ เพราะอาจต้องเริ่มปรับขนาดใหม่",
+      "answer": "คลื่นไส้ (ผลข้างเคียงทางเดินอาหาร)",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 46 · ★ ออกสอบสภา PLE-PC1 2564 (เคส severe AD ใช้ galantamine)"
     },
     {
       "id": "9. Neurologic::110",
@@ -15068,11 +15020,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil มีขนาดเริ่มต้น การปรับขนาด และขนาดสูงสุดเท่าไร?",
+      "question": "AChEIs มีผลต่อหัวใจอย่างไร?",
       "questionImage": "",
-      "answer": "▶ เริ่มต้น: 5 mg วันละครั้ง<br>▶ ปรับขนาด: เพิ่มครั้งละ 5 mg/วัน ทุก 4 สัปดาห์ (ระยะ Moderate–Severe เพิ่มได้ถึง 15–20 mg วันละครั้ง)<br>▶ ขนาดต่ำสุดที่ได้ผล: 5 mg/วัน · ขนาดสูงสุด: 20 mg/วัน<br>▶ ใช้ได้ตั้งแต่ระยะ Mild จนถึง Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/10XgyYb21KST4teHQvHhMdAD0CWibFjR1",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 44"
+      "answer": "หัวใจเต้นช้า วูบหมดสติ<br>จับชีพจรก่อนเริ่มยาและช่วงปรับขนาด",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15"
     },
     {
       "id": "9. Neurologic::111",
@@ -15080,11 +15032,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil มีรูปแบบยาอะไรบ้าง และยาเม็ดละลายในปาก (ODT) ต้องแนะนำผู้ป่วยอย่างไร?",
+      "question": "Donepezil ควรทานเวลาไหน?",
       "questionImage": "",
-      "answer": "▶ Tablet: 5, 10 mg (Aricept)<br>▶ ODT: 5, 10 mg (Aricept Evess) — วางบนลิ้นให้ละลายแล้วกลืน (ดื่มน้ำหรือไม่ก็ได้) หลังยาละลายแนะนำให้ดื่มน้ำตาม 1 แก้ว<br>▶ SR: 23 mg (เทียบเท่าขนาด 20 mg) ใช้ในระยะ Moderate–Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/1kRtz3rj75L-zY2jMIwZtsoh7bQ0zHXof",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 21–23, 44"
+      "answer": "ก่อนนอน<br>ถ้านอนไม่หลับหรือฝันร้าย ย้ายมาทานหลังอาหารเช้า",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
     },
     {
       "id": "9. Neurologic::112",
@@ -15092,11 +15044,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine ชนิดทาน มีรูปแบบ ขนาดเริ่มต้น การปรับขนาด และขนาดสูงสุดเท่าไร?",
+      "question": "Rivastigmine ชนิดทานควรทานอย่างไร?",
       "questionImage": "",
-      "answer": "▶ รูปแบบ: Capsule 1.5, 3, 4.5, 6 mg และ Solution 2 mg/mL<br>▶ เริ่มต้น: 1.5 mg วันละ 2 ครั้ง → เพิ่มครั้งละ 1.5–3 mg/วัน ทุก 4 สัปดาห์<br>▶ ขนาดต่ำสุดที่ได้ผล: 6 mg/วัน · ขนาดสูงสุด: 12 mg/วัน (ระยะ Mild–Moderate)<br>▶ ข้อควรระวัง: ผลข้างเคียงทางเดินอาหารเด่น (คลื่นไส้ อาเจียน ปวดท้อง เบื่ออาหาร น้ำหนักลด) → ปรับขนาดช้า ๆ และทานหลังอาหาร",
-      "answerImage": "https://lh3.googleusercontent.com/d/1LIN2GZyZpa2rO3LIBHL5rUEA61hJa65u",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 24, 45"
+      "answer": "หลังอาหาร เช้า–เย็น เพื่อลดคลื่นไส้",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16, 45"
     },
     {
       "id": "9. Neurologic::113",
@@ -15104,11 +15056,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine ชนิดน้ำ (Exelon oral solution) มีวิธีใช้อย่างไร?",
+      "question": "Galantamine PR ควรทานอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ความแรง: 2 mg/mL (ขวด 50 mL)<br>▶ วิธีตวง: ใช้ Syringe ที่ให้มากับขวด<br>▶ วิธีทาน: ให้จาก Syringe ได้เลย หรือผสมกับน้ำ น้ำผลไม้ หรือโซดาแก้วเล็ก ๆ คนให้เข้ากัน แล้วดื่มให้หมดภายใน 4 ชั่วโมงหลังผสม",
-      "answerImage": "https://lh3.googleusercontent.com/d/1nXW7OBhR9NrBVhUsAyoFw1ZKJW9ah0DG",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 25"
+      "answer": "วันละครั้ง พร้อมอาหารเช้า<br>กลืนทั้งแคปซูล ห้ามเคี้ยวหรือบด",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 29"
     },
     {
       "id": "9. Neurologic::114",
@@ -15116,11 +15068,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine patch (Exelon Patch) มีขนาดอะไรบ้าง และปรับขนาดอย่างไร?",
+      "question": "ใช้ AChEI 2 ตัวร่วมกันได้ไหม?",
       "questionImage": "",
-      "answer": "▶ ขนาด: Exelon Patch 5 / 10 / 15 = 4.6 / 9.5 / 13.3 mg/24 hr<br>▶ เริ่มต้น: 4.6 mg/24 hr แปะวันละ 1 แผ่น → เพิ่มขนาดทุก 4 สัปดาห์<br>▶ ขนาดต่ำสุดที่ได้ผล: 9.5 mg/24 hr · ขนาดสูงสุด: 13.3 mg/24 hr (ใช้ในระยะ Moderate–Severe)<br>▶ ใช้ได้ตั้งแต่ระยะ Mild จนถึง Severe",
-      "answerImage": "https://lh3.googleusercontent.com/d/1P4ylhVYHGY4nuPzKndvDewr5J3DaT9LI",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 26, 45"
+      "answer": "ไม่แนะนำ<br>ถ้าทนตัวเดิมไม่ได้ ให้เปลี่ยนไปใช้ตัวอื่น",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 16"
     },
     {
       "id": "9. Neurologic::115",
@@ -15128,11 +15080,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Rivastigmine patch แปะตรงไหนได้บ้าง และมีข้อควรระวังอะไร?",
+      "question": "Donepezil ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ตำแหน่งแปะ (ซ้ายหรือขวา): ต้นแขน, หน้าอก, หลังส่วนบน, หลังส่วนล่าง<br>▶ วิธีแปะ: แปะทีละ 1 แผ่นเท่านั้น ห้ามแปะหลายแผ่นพร้อมกัน และไม่ตัดแบ่งแผ่นยา<br>▶ ผลข้างเคียง: 10–20% เกิดปฏิกิริยาที่ผิวหนัง และระวังหัวใจเต้นช้า วูบหมดสติ",
-      "answerImage": "https://lh3.googleusercontent.com/d/1JZpAbXK6iJ2lUfhRsVxfTd9prBGGTG6T",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 27–28, 45"
+      "answer": "เริ่ม 5 mg วันละครั้ง เพิ่มทีละ 5 mg ทุก 4 สัปดาห์<br>สูงสุด 20 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/10XgyYb21KST4teHQvHhMdAD0CWibFjR1",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 44"
     },
     {
       "id": "9. Neurologic::116",
@@ -15140,11 +15092,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Galantamine มีรูปแบบ วิธีทาน และขนาดยาอย่างไร?",
+      "question": "Donepezil 23 mg ใช้ในผู้ป่วยกลุ่มไหน?",
       "questionImage": "",
-      "answer": "▶ รูปแบบ: Reminyl PR (Extended-release capsule) 8, 16 mg ทานวันละครั้ง<br>▶ วิธีทาน: กลืนทั้งแคปซูลพร้อมน้ำ ห้ามเคี้ยวหรือบด ทานพร้อมอาหาร ส่วนใหญ่แนะนำตอนเช้า<br>▶ ขนาดยา: เริ่ม 8 mg → เพิ่มครั้งละ 8 mg/วัน ทุก 4 สัปดาห์ · ขนาดต่ำสุดที่ได้ผล 16 mg · สูงสุด 24 mg/วัน (ระยะ Mild–Moderate)<br>▶ ผลข้างเคียง: เบื่ออาหาร คลื่นไส้ น้ำหนักลด ตะคริว หัวใจเต้นช้า วูบหมดสติ",
-      "answerImage": "https://lh3.googleusercontent.com/d/1uYuF983asgZT0Ri6XCpDapXxp2ByjkUP",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 29, 46"
+      "answer": "AD ระยะ moderate–severe (เทียบเท่า 20 mg)",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 23, 36"
     },
     {
       "id": "9. Neurologic::117",
@@ -15152,11 +15104,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร?",
+      "question": "Donepezil ชนิดละลายในปาก (ODT) แนะนำผู้ป่วยอย่างไร?",
       "questionImage": "",
-      "answer": "▶ MOA: NMDA receptor antagonist<br>▶ ข้อบ่งใช้: AD ระยะ Moderate–Severe ใช้เดี่ยวหรือใช้ร่วมกับ AChEI ก็ได้<br>▶ ข้อจำกัด: ไม่แนะนำให้ใช้เป็นยาเดี่ยวในระยะ Mild",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
+      "answer": "วางบนลิ้นให้ละลายแล้วกลืน แล้วดื่มน้ำตาม 1 แก้ว",
+      "answerImage": "https://lh3.googleusercontent.com/d/1kRtz3rj75L-zY2jMIwZtsoh7bQ0zHXof",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 22"
     },
     {
       "id": "9. Neurologic::118",
@@ -15164,11 +15116,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีการปรับขนาดยาและวิธีทานอย่างไร?",
+      "question": "Rivastigmine ชนิดทาน ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ปรับขนาด: เพิ่มครั้งละ 5 mg ทุก 1 สัปดาห์<br>สัปดาห์ 1: 5 mg → สัปดาห์ 2: 10 mg → สัปดาห์ 3: 15 mg → สัปดาห์ 4 เป็นต้นไป: 20 mg/วัน (ทานวันละครั้ง หรือแบ่ง 2 ครั้ง)<br>▶ ขนาดต่ำสุดที่ได้ผล: 10 mg/วัน · ขนาดสูงสุด: 20 mg/วัน<br>▶ วิธีทาน: ทานพร้อมหรือไม่พร้อมอาหารก็ได้ แต่ให้ทานเวลาเดิมทุกวัน<br>▶ ช่วยจำ: AChEI ปรับทุก 4 สัปดาห์ แต่ Memantine ปรับทุก 1 สัปดาห์",
-      "answerImage": "https://lh3.googleusercontent.com/d/1zZsZJ-2L2owRryEexpkGX4Rns54yS7eT",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 19, 47"
+      "answer": "เริ่ม 1.5 mg วันละ 2 ครั้ง เพิ่มทุก 4 สัปดาห์<br>สูงสุด 12 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/1LIN2GZyZpa2rO3LIBHL5rUEA61hJa65u",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 45"
     },
     {
       "id": "9. Neurologic::119",
@@ -15176,11 +15128,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผลข้างเคียงสำคัญของ Memantine มีอะไรบ้าง?",
+      "question": "Rivastigmine ยาน้ำผสมแล้วต้องดื่มให้หมดภายในกี่ชั่วโมง?",
       "questionImage": "",
-      "answer": "▶ ทางเดินอาหาร: ท้องผูก (มีรายงานท้องเสียได้บ้าง)<br>▶ ระบบประสาท: เวียนศีรษะ สับสน ปวดศีรษะ ประสาทหลอน — มักเป็นช่วงปรับขนาดยาและหายเองได้<br>▶ พบน้อย (&lt; 1%): Acute renal failure, <b style=\"color:#dc2626;\">Seizure</b>, Hepatitis<br>▶ ช่วยจำ: AChEI ทำให้ท้องเสีย ส่วน Memantine ทำให้ท้องผูก",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18"
+      "answer": "4 ชั่วโมง<br>ผสมน้ำ น้ำผลไม้ หรือโซดาได้",
+      "answerImage": "https://lh3.googleusercontent.com/d/1nXW7OBhR9NrBVhUsAyoFw1ZKJW9ah0DG",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 25"
     },
     {
       "id": "9. Neurologic::120",
@@ -15188,11 +15140,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine ต้องระวังในผู้ป่วยกลุ่มใดบ้าง?",
+      "question": "Rivastigmine patch มีขนาดอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ ไตบกพร่อง: ต้องปรับขนาดยาเมื่อ GFR &lt; 30 mL/min<br>▶ โรคลมชัก: ระวังในผู้ที่เพิ่งเป็นลมชัก หรือยังคุมอาการชักไม่ได้ภายใน 6 เดือน",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
+      "answer": "4.6 → 9.5 → 13.3 mg/24 hr<br>แปะวันละ 1 แผ่น เพิ่มขนาดทุก 4 สัปดาห์",
+      "answerImage": "https://lh3.googleusercontent.com/d/1P4ylhVYHGY4nuPzKndvDewr5J3DaT9LI",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 26, 45"
     },
     {
       "id": "9. Neurologic::121",
@@ -15200,11 +15152,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Memantine มีรูปแบบยาอะไรบ้าง และยาน้ำ Ebixa แบบหัวปั๊มต้องแนะนำผู้ป่วยอย่างไร?",
+      "question": "Rivastigmine patch แปะตรงไหนได้บ้าง?",
       "questionImage": "",
-      "answer": "▶ Tablet: 10, 20 mg (กล่องละ 28 เม็ด)<br>▶ Ebixa oral solution: กด 1 ครั้ง = 5 mg (ขวด 50 mL) ทานวันละครั้ง<br>▶ เปิดขวดครั้งแรก: กดหัวปั๊ม 5 ครั้งแล้วทิ้งยาที่ได้ไป<br>▶ วิธีทาน: กดตามขนาดที่แพทย์สั่ง ผสมกับน้ำในปริมาณที่ผู้ป่วยทานหมด<br>▶ ขนาด 20 mg/วัน ใช้ได้ 25 วัน (ขนาด Maintenance 20 mg/วัน เริ่มสัปดาห์ที่ 4 วันที่ 22)",
-      "answerImage": "https://lh3.googleusercontent.com/d/18jnQxkzuOBhzna7KNRZ2yBzYZDTSDL6l",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 30–31, 47"
+      "answer": "ต้นแขน · หน้าอก · หลังส่วนบน · หลังส่วนล่าง<br>แปะทีละ 1 แผ่น ห้ามตัดแบ่ง",
+      "answerImage": "https://lh3.googleusercontent.com/d/1JZpAbXK6iJ2lUfhRsVxfTd9prBGGTG6T",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 27–28, 45"
     },
     {
       "id": "9. Neurologic::122",
@@ -15212,11 +15164,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "หลักการเริ่มยาและปรับขนาดยารักษา AD มีอะไรบ้าง?",
+      "question": "Galantamine PR ขนาดเริ่มต้นและขนาดสูงสุดเท่าไร?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 17, 33"
+      "answer": "เริ่ม 8 mg วันละครั้ง เพิ่มทุก 4 สัปดาห์<br>สูงสุด 24 mg/วัน",
+      "answerImage": "https://lh3.googleusercontent.com/d/1uYuF983asgZT0Ri6XCpDapXxp2ByjkUP",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 46"
     },
     {
       "id": "9. Neurologic::123",
@@ -15224,11 +15176,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ประเมินการตอบสนองต่อยารักษา AD เมื่อไร และแบบไหนเรียกว่า &#039;ตอบสนองต่อยา&#039;?",
+      "question": "Memantine ออกฤทธิ์อย่างไร?",
       "questionImage": "",
-      "answer": "▶ เวลาประเมิน: หลังได้ขนาดเป้าหมาย (หรือขนาดสูงสุดที่ทนได้) แล้วประเมินทุก 3–6 เดือน<br>▶ ตอบสนองต่อยา: Cognition, BPSD หรือ ADL ดีขึ้น หรือ &#039;ไม่แย่ลง&#039; จากก่อนเริ่มยา",
+      "answer": "NMDA receptor antagonist",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 34"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 13, 18"
     },
     {
       "id": "9. Neurologic::124",
@@ -15236,11 +15188,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วย AD มีอาการ BPSD หลายอย่าง ควรจัดการอย่างไร?",
+      "question": "Memantine ใช้ในผู้ป่วย AD ระยะไหน?",
       "questionImage": "",
-      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้าจำเป็น: เพิ่มยา Antipsychotics หรือ Antidepressants",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 35"
+      "answer": "Moderate–severe ใช้เดี่ยวหรือร่วมกับ AChEI ได้<br>ไม่แนะนำใช้เดี่ยวในระยะ mild",
+      "answerImage": "https://lh3.googleusercontent.com/d/18jnQxkzuOBhzna7KNRZ2yBzYZDTSDL6l",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::125",
@@ -15248,11 +15200,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ผู้ป่วยสมองเสื่อมมีอาการกระสับกระส่าย/หลงผิด ถ้าจะใช้ยา Antipsychotic ต้องยึดหลักอะไร?",
+      "question": "Memantine ปรับขนาดอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลองวิธีไม่ใช้ยาก่อน: ยาเป็นแค่ส่วนหนึ่งของแผนการดูแล<br>▶ ใช้ยาเมื่อ: อาการรุนแรง เป็นอันตราย หรือทำให้ผู้ป่วยทุกข์ทรมานมาก (กรณีไม่ฉุกเฉิน)<br>▶ ไม่ตอบสนองใน 4 สัปดาห์ (ขนาดยาเพียงพอแล้ว): ค่อย ๆ ลดยาแล้วหยุด<br>▶ ตอบสนองดี: พยายามลดและหยุดยาภายใน 4 เดือนหลังเริ่ม<br>▶ ไม่ควรใช้ Haloperidol เป็นตัวแรก (ถ้าไม่มี Delirium)",
-      "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: Reus VI, et al. The APA Practice Guideline on the Use of Antipsychotics to Treat Agitation or Psychosis in Patients With Dementia. Am J Psychiatry. 2016;173(5):543-6. doi:10.1176/appi.ajp.2015.173501"
+      "answer": "5 → 10 → 15 → 20 mg/วัน เพิ่มทุก 1 สัปดาห์<br>(AChEI เพิ่มทุก 4 สัปดาห์)",
+      "answerImage": "https://lh3.googleusercontent.com/d/1zZsZJ-2L2owRryEexpkGX4Rns54yS7eT",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 19, 47"
     },
     {
       "id": "9. Neurologic::126",
@@ -15260,11 +15212,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Black Box Warning ของยา Antipsychotic ในผู้สูงอายุที่เป็นสมองเสื่อมคืออะไร?",
+      "question": "ผลข้างเคียงทางเดินอาหารของ memantine ต่างจาก AChEI อย่างไร?",
       "questionImage": "",
-      "answer": "▶ คำเตือน: ผู้สูงอายุที่มีอาการทางจิตจากสมองเสื่อม (Dementia-related <b style=\"color:#dc2626;\">psychosis</b>) ถ้าได้ยา Antipsychotic จะเสี่ยงเสียชีวิตเพิ่มขึ้น ~1.6–1.7 เท่าของยาหลอก<br>▶ สาเหตุการเสียชีวิต: ส่วนใหญ่เป็นโรคหัวใจและหลอดเลือด (Heart failure, Sudden death) หรือติดเชื้อ (Pneumonia)<br>▶ เพิ่มเติม: ยาไม่ได้รับอนุมัติให้รักษา Dementia-related <b style=\"color:#dc2626;\">psychosis</b> และ Risperidone ยังพบ Stroke/TIA มากกว่ายาหลอกในผู้ป่วยกลุ่มนี้",
+      "answer": "Memantine → ท้องผูก<br>AChEI → ท้องเสีย",
       "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: ฉลากยา RISPERDAL (Janssen) Boxed Warning, section 5.1–5.2. DailyMed. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 15, 18"
     },
     {
       "id": "9. Neurologic::127",
@@ -15272,11 +15224,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าใช้ AChEI ร่วมกับยาที่มีฤทธิ์ Anticholinergic จะเกิดอะไรขึ้น? ยกตัวอย่างยา",
+      "question": "Memantine มีผลข้างเคียงทางระบบประสาทอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ ผล: ยาไปขัดขวางไม่ให้ ACh จับกับ Muscarinic receptor ทำให้ AChEI ได้ผลน้อยลง และอาจเกิด Delirium<br>▶ ตัวอย่างยา: Antihistamines (Chlorpheniramine, Brompheniramine, Dimenhydrinate), Antispasmodics, TCA, Benztropine, Trihexyphenidyl, Orphenadrine, Antipsychotics",
-      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
+      "answer": "เวียนศีรษะ สับสน ปวดศีรษะ ประสาทหลอน<br>มักเป็นช่วงปรับยา แล้วหายเอง",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18 · ★ ออกสอบสภา 2562 (เคส memantine แล้วเกิดอาการทางระบบประสาท)"
     },
     {
       "id": "9. Neurologic::128",
@@ -15284,11 +15236,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าใช้ AChEI ร่วมกับยา Cholinergic เช่น Bethanechol (Urecholine) จะเกิดอะไรขึ้น?",
+      "question": "Memantine ต้องปรับขนาดเมื่อการทำงานของไตลดลงเท่าไร?",
       "questionImage": "",
-      "answer": "▶ ผล: เกิดพิษจาก Cholinergic เกินขนาด (Cholinergic overdose)<br>▶ การดูแล: ควรติดตามอาการอย่างใกล้ชิดถ้าจำเป็นต้องใช้ร่วมกัน",
-      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
+      "answer": "GFR &lt; 30 mL/min",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 47"
     },
     {
       "id": "9. Neurologic::129",
@@ -15296,11 +15248,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "AChEI เกิดยาตีกันกับยาโรคหัวใจและยาที่ทำให้ QT ยาวอย่างไร?",
+      "question": "Memantine ต้องระวังในผู้ป่วยลมชักแบบไหน?",
       "questionImage": "",
-      "answer": "▶ β-blockers, Verapamil, Diltiazem, Digoxin: หัวใจเต้นช้า (Bradycardia) มากขึ้น<br>▶ ยาเสี่ยง <b style=\"color:#dc2626;\">QT prolongation</b> (Procainamide, Quinidine, Sotalol, Chlorpromazine, <b style=\"color:#0284c7;\">Erythromycin</b>, <b style=\"color:#0284c7;\">Levofloxacin</b>): เกิด <b style=\"color:#dc2626;\">QT prolongation</b> และ <b style=\"color:#dc2626;\">Torsades de pointes</b> ได้",
-      "answerImage": "https://lh3.googleusercontent.com/d/1v9vXaquXlOxaahwWIpZe5l-5gXzj_-88",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 41"
+      "answer": "เพิ่งเป็นลมชัก หรือยังคุมชักไม่ได้ภายใน 6 เดือน",
+      "answerImage": "",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 18, 47"
     },
     {
       "id": "9. Neurologic::130",
@@ -15308,11 +15260,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "Donepezil และ Galantamine เกิดยาตีกันผ่าน CYP อย่างไร?",
+      "question": "ใช้ AChEI ร่วมกับยาที่มีฤทธิ์ anticholinergic จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ CYP2D6/3A4 inducer (Carbamazepine, Phenytoin, <b style=\"color:#0284c7;\">Rifampin</b>): ฤทธิ์ยาลดลง<br>▶ CYP2D6 inhibitor (Fluoxetine, Paroxetine, Duloxetine, Quinidine): ฤทธิ์ยาเพิ่มขึ้น<br>▶ CYP3A4 inhibitor (<b style=\"color:#0284c7;\">Clarithromycin</b>, Ketoconazole, Itraconazole, Verapamil, Diltiazem, Ritonavir, Atazanavir): ฤทธิ์ยาเพิ่มขึ้น",
-      "answerImage": "https://lh3.googleusercontent.com/d/1yLv96aFO9FCSJO0R5MdNE5BUynw8hXI2",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 42"
+      "answer": "AChEI ได้ผลน้อยลง และอาจเกิด delirium<br>เช่น chlorpheniramine, TCA, trihexyphenidyl, antipsychotics",
+      "answerImage": "https://lh3.googleusercontent.com/d/1UwWaIoj5mztQ1kQRISShumy1Mykubd4B",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 40"
     },
     {
       "id": "9. Neurologic::131",
@@ -15320,11 +15272,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ยาที่มีฤทธิ์ Anticholinergic ที่ควรเลี่ยงในผู้ป่วยสมองเสื่อมมีอะไรบ้าง?",
+      "question": "ใช้ donepezil หรือ galantamine ร่วมกับ CYP2D6/3A4 inhibitor จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ Antihistamine รุ่นแรก<br>▶ TCA: Amitriptyline, Imipramine, Doxepin (&gt; 6 mg), Nortriptyline<br>▶ Skeletal muscle relaxant: Orphenadrine<br>▶ Antiparkinson: Benztropine, Trihexyphenidyl<br>▶ Antimuscarinic: Flavoxate, Oxybutynin, Solifenacin<br>▶ Antipsychotics: Chlorpromazine, Perphenazine, Thioridazine, Clozapine",
-      "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 43"
+      "answer": "ฤทธิ์ยาเพิ่มขึ้น<br>เช่น fluoxetine, paroxetine, <b style=\"color:#0284c7;\">clarithromycin</b>, ketoconazole",
+      "answerImage": "https://lh3.googleusercontent.com/d/1yLv96aFO9FCSJO0R5MdNE5BUynw8hXI2",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 42 · ข้อสอบเตรียมแนวสภา: Pharmtutor 2024"
     },
     {
       "id": "9. Neurologic::132",
@@ -15332,11 +15284,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "SLUDGE คืออาการอะไร และเกี่ยวกับยา AChEI อย่างไร?",
+      "question": "ใช้ AChEI ร่วมกับ β-blocker, verapamil, diltiazem หรือ digoxin จะเกิดอะไรขึ้น?",
       "questionImage": "",
-      "answer": "▶ คืออาการ Cholinergic เกิน (ฤทธิ์ Muscarinic) พบได้เมื่อ AChEI เกินขนาด หรือใช้ร่วมกับยา Cholinergic<br>S = Salivation (น้ำลายมาก)<br>L = Lacrimation (น้ำตาไหล)<br>U = Urination (ปัสสาวะบ่อย)<br>D = Defecation/Diarrhea (ท้องเสีย)<br>G = GI cramps (ปวดเกร็งท้อง)<br>E = Emesis (อาเจียน)<br>▶ อาจพบร่วม: หัวใจเต้นช้า (Bradycardia), รูม่านตาเล็ก (Miosis)",
-      "answerImage": "",
-      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: Adeyinka A, Patel A, Kondamudi NP. Cholinergic Crisis. StatPearls [Internet]. Updated 2025 Apr 6. https://www.ncbi.nlm.nih.gov/books/NBK482433/ (ส่วนยาตีกันกับยา Cholinergic อยู่ในสไลด์หน้า 40)"
+      "answer": "หัวใจเต้นช้า (bradycardia) มากขึ้น",
+      "answerImage": "https://lh3.googleusercontent.com/d/1v9vXaquXlOxaahwWIpZe5l-5gXzj_-88",
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 41"
     },
     {
       "id": "9. Neurologic::133",
@@ -15344,11 +15296,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "แบบประเมิน MMSE-Thai มีลักษณะอย่างไร และแปลผลอย่างไร?",
+      "question": "ยากลุ่มใดที่ควรเลี่ยงในผู้ป่วยสมองเสื่อม เพราะมีฤทธิ์ anticholinergic?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: 11 ข้อ ประเมิน Cognition 6 ด้าน ได้แก่ Orientation, Registration, Attention/Calculation, Recall, Language, Visuoconstruction<br>▶ คะแนนเต็ม: 30 คะแนน ใช้เวลา 5–10 นาที<br>▶ จุดตัด: ต่างกันตามระดับการศึกษา<br>▶ แปลผล: เป็นแบบคัดกรอง ไม่ใช่การวินิจฉัย — ถ้าต่ำกว่าจุดตัด แปลว่า &#039;สงสัย/เสี่ยง&#039; สมองเสื่อม ต้องส่งพบแพทย์ประเมินต่อ",
+      "answer": "Antihistamine รุ่นแรก · TCA (amitriptyline) · oxybutynin · trihexyphenidyl · chlorpromazine",
       "answerImage": "",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 51"
+      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 43"
     },
     {
       "id": "9. Neurologic::134",
@@ -15356,11 +15308,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "จุดตัด (Cut-off) ของ MMSE-Thai 2002 แต่ละระดับการศึกษาคือเท่าไร?",
+      "question": "Black box warning ของ antipsychotic ในผู้สูงอายุสมองเสื่อมคืออะไร?",
       "questionImage": "",
-      "answer": "▶ ไม่ได้เรียนหนังสือ (อ่านไม่ออก): ≤ 14 คะแนน (เต็ม 23 เพราะตัดข้อ 4, 9, 10 ออก)<br>▶ จบประถมศึกษา: ≤ 17 คะแนน (เต็ม 30)<br>▶ สูงกว่าประถม: ≤ 22 คะแนน (เต็ม 30)",
-      "answerImage": "https://lh3.googleusercontent.com/d/1VTrR1NWWIu8wIo_MDrfM3gs43iBeFevY",
-      "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
+      "answer": "เพิ่มความเสี่ยงเสียชีวิต (~1.6–1.7 เท่า) ส่วนใหญ่จากหัวใจหรือปอดอักเสบ",
+      "answerImage": "",
+      "note": "เสริม (หาเพิ่มเอง ไม่ใช่สไลด์อาจารย์) | อ้างอิง: ฉลากยา RISPERDAL (Janssen) Boxed Warning, section 5.1. DailyMed. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0"
     },
     {
       "id": "9. Neurologic::135",
@@ -15682,7 +15634,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Precontemplation (ยังไม่คิดเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ไม่มีความคิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า<br> ▶ แนวทางดูแล: ให้ข้อมูลประโยชน์ของการเลิกสั้นๆ ไม่กดดัน และใช้หลัก 5 R&#039;s (Relevance, Risks, Rewards, Roadblocks, Repetition) กระตุ้นแรงจูงใจ",
+      "answer": "ไม่มีความคิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า<br> ▶ แนวทางดูแล: ให้ข้อมูลประโยชน์ของการเลิกสั้นๆ ไม่กดดัน และใช้หลัก 5 R&#039;s (Relevance, Risks, Rewards, Roadblocks, Repetition) กระตุ้นแรงจูงใจ",
       "answerImage": "",
       "note": ""
     },
@@ -15694,7 +15646,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Contemplation (ลังเลใจ/เริ่มคิด) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: คิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า แต่ยังไม่พร้อมลงมือทำ<br> ▶ แนวทางดูแล: เสริมแรงจูงใจ ชั่งน้ำหนักข้อดี-ข้อเสีย (Decisional balance) และช่วยก้าวข้ามอุปสรรค",
+      "answer": "คิดจะเลิกสูบบุหรี่ภายใน 6 เดือนข้างหน้า แต่ยังไม่พร้อมลงมือทำ<br> ▶ แนวทางดูแล: เสริมแรงจูงใจ ชั่งน้ำหนักข้อดี-ข้อเสีย (Decisional balance) และช่วยก้าวข้ามอุปสรรค",
       "answerImage": "",
       "note": ""
     },
@@ -15706,7 +15658,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Preparation (เตรียมตัวเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ตัดสินใจจะเลิกใน 30 วันข้างหน้า และเริ่มลดจำนวนมวนลงบ้างแล้ว<br> ▶ แนวทางดูแล: กำหนดวันเลิกเด็ดขาด (Target Quit Date: TQD) วางแผนรับมือสิ่งกระตุ้น และเลือกยาช่วยเลิกบุหรี่",
+      "answer": " ตัดสินใจจะเลิกใน 30 วันข้างหน้า และเริ่มลดจำนวนมวนลงบ้างแล้ว<br> ▶ แนวทางดูแล: กำหนดวันเลิกเด็ดขาด (Target Quit Date: TQD) วางแผนรับมือสิ่งกระตุ้น และเลือกยาช่วยเลิกบุหรี่",
       "answerImage": "",
       "note": ""
     },
@@ -15718,7 +15670,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Action (ลงมือเลิก) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: หยุดสูบบุหรี่เด็ดขาดต่อเนื่องในช่วง 0-6 เดือนแรก<br> ▶ แนวทางดูแล: ติดตามอาการถอนนิโคติน จัดการผลข้างเคียงจากยา และให้คำแนะนำป้องกันการกลับไปสูบซ้ำ",
+      "answer": "สูบบุหรี่เด็ดขาดต่อเนื่องในช่วง 0-6 เดือนแรก<br> ▶ แนวทางดูแล: ติดตามอาการถอนนิโคติน จัดการผลข้างเคียงจากยา และให้คำแนะนำป้องกันการกลับไปสูบซ้ำ",
       "answerImage": "",
       "note": ""
     },
@@ -15730,7 +15682,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Maintenance (คงการไม่สูบ) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: ไม่สูบบุหรี่ต่อเนื่องเกิน 6 เดือนขึ้นไป<br> ▶ แนวทางดูแล: ให้กำลังใจเสริมพลังใจอย่างต่อเนื่อง และทบทวนทักษะการรับมือกับสถานการณ์เสี่ยงสูง",
+      "answer": "ไม่สูบบุหรี่ต่อเนื่องเกิน 6 เดือนขึ้นไป<br> ▶ แนวทางดูแล: ให้กำลังใจเสริมพลังใจอย่างต่อเนื่อง และทบทวนทักษะการรับมือกับสถานการณ์เสี่ยงสูง",
       "answerImage": "",
       "note": ""
     },
@@ -15742,7 +15694,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Stages of Change: ระยะ Relapse (กลับไปสูบซ้ำ) มีลักษณะอย่างไรและควรดูแลอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ลักษณะ: กลับมาสูบบุหรี่ใหม่หลังพยายามเลิก<br> ▶ แนวทางดูแล: ให้กำลังใจ ไม่ตำหนิ วิเคราะห์สาเหตุของการหลุดสูบ และเริ่มกระบวนการประเมินเพื่อวางแผนใหม่",
+      "answer": "กลับมาสูบบุหรี่ใหม่หลังพยายามเลิก<br> ▶ แนวทางดูแล: ให้กำลังใจ ไม่ตำหนิ วิเคราะห์สาเหตุของการหลุดสูบ และเริ่มกระบวนการประเมินเพื่อวางแผนใหม่",
       "answerImage": "",
       "note": ""
     },
@@ -15754,7 +15706,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Nicotine Patch มีคุณลักษณะการดูดซึม และวิธีแปะที่ถูกต้องอย่างไร?",
       "questionImage": "",
-      "answer": "▶ การดูดซึม: ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> ▶ วิธีแปะ: แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
+      "answer": " ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
       "answerImage": "images/extracted_10__Psychiatric_r17_c4.png",
       "note": ""
     },
@@ -15766,7 +15718,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญของ Nicotine Patch คืออะไร และมีการจัดการอย่างไร?",
       "questionImage": "",
-      "answer": "▶ ผลข้างเคียง: ระคายเคืองผิวหนังบริเวณที่แปะ, นอนไม่หลับ (Insomnia) และฝันร้ายสมจริง (Vivid/Abnormal dreams)<br> ▶ การจัดการ: หากมีปัญหานอนไม่หลับ/ฝันร้าย ให้ลอกแผ่นแปะออกก่อนนอน (ใช้เฉพาะ 16 ชั่วโมงตอนกลางวัน)",
+      "answer": " ระคายเคืองผิวหนังบริเวณที่แปะ, นอนไม่หลับ (Insomnia) และฝันร้ายสมจริง (Vivid/Abnormal dreams)<br> ▶ การจัดการ: หากมีปัญหานอนไม่หลับ/ฝันร้าย ให้ลอกแผ่นแปะออกก่อนนอน (ใช้เฉพาะ 16 ชั่วโมงตอนกลางวัน)",
       "answerImage": "",
       "note": ""
     },
@@ -15796,30 +15748,18 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
     },
     {
       "id": "10. Psychiatric::21",
-      "itemNo": "19",
-      "group": "10. Psychiatric",
-      "subTopic": "Smoking Cessation",
-      "track": "Clinic",
-      "question": "Nicotine Oral Spray มีขนาดการใช้ ข้อจำกัดการพ่น และวิธีใช้อย่างไร?",
-      "questionImage": "",
-      "answer": "▶ วิธีใช้: พ่นเข้ากระพุ้งแก้มหรือใต้ลิ้น กลั้นหายใจและงดกลืนน้ำลายทันที ห้ามสูดดมเข้าทางเดินหายใจ งดอาหาร/น้ำก่อนและหลังพ่น 15 นาที<br> ▶ Dosing: พ่น 1-2 sprays ทุก 30-60 นาที (ถ้าพ่น 1 spray แล้ว 2-3 นาทียังอยาก ให้พ่นซ้ำอีก 1 spray)<br> ▶ Max dose: ไม่เกิน 2 sprays/ครั้ง, ไม่เกิน 3-4 sprays/ชม., ไม่เกิน 48-64 sprays/วัน",
-      "answerImage": "images/extracted_10__Psychiatric_r21_c4.png",
-      "note": ""
-    },
-    {
-      "id": "10. Psychiatric::22",
       "itemNo": "20",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
-      "question": "ผลข้างเคียงเด่นของ Nicotine Gumิและ Oral Spray คืออะไร?",
+      "question": "ผลข้างเคียงเด่นของ Nicotine Gum และ Oral Spray คืออะไร?",
       "questionImage": "",
       "answer": "▶ Gum  คลื่นไส้, สะอึก, แสบร้อนยอดอก (Heartburn), ระคายเคืองช่องปากและคอ, ปวดกราม<br> ▶ Oral Spray: ระคายเคืองคอ, ไอ, จาม, น้ำตาไหล, คลื่นไส้ (เนื่องจากออกฤทธิ์เร็วมากใน 1-2 นาที)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::23",
+      "id": "10. Psychiatric::22",
       "itemNo": "21",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15831,19 +15771,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::24",
+      "id": "10. Psychiatric::23",
       "itemNo": "22",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Bupropion SR มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ (</b></span>เริ่มต้น 150 mg OD เช้า x 3 วัน → เพิ่มเป็น 150 mg BID ห่างกันอย่างน้อย 8 ชม. เลี่ยงมื้อเย็นก่อนนอน)",
-      "answerImage": "images/extracted_10__Psychiatric_r24_c4.png",
+      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ </b></span>",
+      "answerImage": "images/extracted_10__Psychiatric_r23_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::25",
+      "id": "10. Psychiatric::24",
       "itemNo": "23",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15855,7 +15795,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::26",
+      "id": "10. Psychiatric::25",
       "itemNo": "24",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15867,19 +15807,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::27",
+      "id": "10. Psychiatric::26",
       "itemNo": "25",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Cytisine มีกำหนด Target Quit Date (TQD) วันใด และมีคอร์สการรักษาอย่างไร?",
       "questionImage": "",
-      "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)<br> ▶<span style=\"color:#dc2626\"> Regimen: ไม่ต้องจำ</span><br> - วันที่ 1-3: 1 เม็ด (1.5 mg) ทุก 2 ชม. (6 เม็ด/วัน)<br> - วันที่ 4-12: 1 เม็ด ทุก 2.5 ชม. (5 เม็ด/วัน)<br> - วันที่ 13-16: 1 เม็ด ทุก 3 ชม. (4 เม็ด/วัน)<br> - วันที่ 17-20: 1 เม็ด ทุก 5 ชม. (3 เม็ด/วัน)<br> - วันที่ 21-25: วันละ 1-2 เม็ด แล้วหยุดยา",
-      "answerImage": "images/extracted_10__Psychiatric_r27_c4.png",
+      "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)",
+      "answerImage": "images/extracted_10__Psychiatric_r26_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::28",
+      "id": "10. Psychiatric::27",
       "itemNo": "26",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15891,7 +15831,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::29",
+      "id": "10. Psychiatric::28",
       "itemNo": "27",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15903,19 +15843,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::30",
+      "id": "10. Psychiatric::29",
       "itemNo": "28",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Varenicline มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
-      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> (วัน 1-3: 0.5 mg OD → วัน 4-7: 0.5 mg BID → วัน 8/TQD เป็นต้นไป: 1 mg BID นาน 12 สัปดาห์)",
-      "answerImage": "images/extracted_10__Psychiatric_r30_c4.png",
+      "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> ",
+      "answerImage": "images/extracted_10__Psychiatric_r29_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::31",
+      "id": "10. Psychiatric::30",
       "itemNo": "29",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15927,19 +15867,19 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::32",
+      "id": "10. Psychiatric::31",
       "itemNo": "30",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "Nortriptyline มี MOAอย่างไร?",
       "questionImage": "",
-      "answer": "▶ MOA: Non-specific Monoamine Reuptake Inhibitor (TCA) ยับยั้ง Reuptake ของ NE เป็นหลัก และ Serotonin บางส่วน ช่วยบรรเทาอาการถอนและอารมณ์ดิ่ง<br>",
+      "answer": "Non-specific Monoamine Reuptake Inhibitor (TCA) ยับยั้ง Reuptake ของ NE เป็นหลัก และ Serotonin บางส่วน ช่วยบรรเทาอาการถอนและอารมณ์ดิ่ง<br>",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::33",
+      "id": "10. Psychiatric::32",
       "itemNo": "31",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15947,47 +15887,47 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nortriptyline มีการเริ่มยา (TQD) สำหรับช่วยเลิกบุหรี่อย่างไร?",
       "questionImage": "",
       "answer": "<br> ▶ TQD: เริ่มทานก่อนวันเลิกบุหรี่ (TQD) 2-4 สัปดาห์ (10-28 วัน) เพื่อให้ระดับยาสะสมถึง Steady-state",
-      "answerImage": "images/extracted_10__Psychiatric_r33_c4.png",
+      "answerImage": "images/extracted_10__Psychiatric_r32_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::34",
+      "id": "10. Psychiatric::33",
       "itemNo": "32",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญ และข้อห้ามใช้ของ Nortriptyline มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ Key ADRs: Anticholinergic (ปากแห้ง ท้องผูก ตาพร่า ปัสสาวะขัด ง่วงซึม) และ Cardiovascular (Tachycardia, ความดันตกเวลายืน, <b style=\"color:#dc2626;\">QT prolongation</b>)<br> ❌ <b style=\"color:#dc2626;\">ข้อห้ามใช้</b>: Recent MI, Conduction block, ต้อหินมุมปิด, ต่อมลูกหมากโต (BPH), ใช้ MAOIs ใน 14 วัน",
+      "answer": "Anticholinergic (ปากแห้ง ท้องผูก ตาพร่า ปัสสาวะขัด ง่วงซึม) Cardiovascular (Tachycardia, ความดันตกเวลายืน, <b style=\"color:#dc2626;\">QT prolongation</b>)<br> ❌ <b style=\"color:#dc2626;\">ข้อห้ามใช้</b>: Recent MI, Conduction block, ต้อหินมุมปิด, ต่อมลูกหมากโต (BPH), ใช้ MAOIs ใน 14 วัน",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::35",
+      "id": "10. Psychiatric::34",
       "itemNo": "33",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ชาหญ้าดอกขาว มีสารสำคัญ MOA วิธีใช้ ",
       "questionImage": "",
-      "answer": "▶ สารสำคัญ &amp; MOA: มี Nitrate และ Flavonoids ทำให้ต่อมรับรสที่ลิ้นชา รู้สึกเหม็นควันบุหรี่และไม่อยากสูบ<br> ",
+      "answer": " มี Nitrate และ Flavonoids ทำให้ต่อมรับรสที่ลิ้นชา รู้สึกเหม็นควันบุหรี่และไม่อยากสูบ<br> ",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::36",
+      "id": "10. Psychiatric::35",
       "itemNo": "34",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "ชาหญ้าดอกขาว มีระยะเวลาการดื่มอย่างไร?",
       "questionImage": "",
-      "answer": "<br> ▶ วิธีใช้: ชงดื่มหลังอาหารวันละ 3-4 ครั้ง ดื่มอย่างน้อย 7 วันก่อนวันเลิก (TQD) และดื่มต่ออีก 7 วัน (รวม 14 วัน)",
+      "answer": "<br>ชงดื่มหลังอาหารวันละ 3-4 ครั้ง ดื่มอย่างน้อย 7 วันก่อนวันเลิก (TQD) และดื่มต่ออีก 7 วัน (รวม 14 วัน)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::37",
+      "id": "10. Psychiatric::36",
       "itemNo": "35",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
@@ -15995,47 +15935,35 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ข้อควรระวังสำคัญในการใช้ชาหญ้าดอกขาวคืออะไร?",
       "questionImage": "",
       "answer": "⚠️ ระวังในผู้ป่วย &#039;โรคหัวใจ&#039; และ &#039;โรคไต&#039; เนื่องจากหญ้าดอกขาวมีปริมาณโพแทสเซียม (Potassium) สูง",
-      "answerImage": "images/extracted_10__Psychiatric_r37_c4.png",
+      "answerImage": "images/extracted_10__Psychiatric_r36_c4.png",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::38",
+      "id": "10. Psychiatric::37",
       "itemNo": "36",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "สารใดในควันบุหรี่ที่มีผลต่อเอนไซม์ตับ CYP1A2 และส่งผลอย่างไรขณะสูบบุหรี่?",
       "questionImage": "",
-      "answer": "▶ สารออกฤทธิ์: Polycyclic Aromatic Hydrocarbons (PAHs) ในควันบุหรี่ (ไม่ใช่ตัวนิโคติน) เป็น Potent CYP1A2 Inducer<br> ▶ ผลขณะสูบบุหรี่: PAHs จะกระตุ้นเอนไซม์ CYP1A2 ให้ทำงานเพิ่มขึ้น ทำให้ยาที่ผ่าน CYP1A2 ถูกกำจัดเร็ว จึงต้องใช้ขนาดยาสูงกว่าปกติ",
+      "answer": " Polycyclic Aromatic Hydrocarbons (PAHs) ในควันบุหรี่ (ไม่ใช่ตัวนิโคติน) เป็น Potent CYP1A2 Inducer<br> PAHs จะกระตุ้นเอนไซม์ CYP1A2 ให้ทำงานเพิ่มขึ้น ทำให้ยาที่ผ่าน CYP1A2 ถูกกำจัดเร็ว จึงต้องใช้ขนาดยาสูงกว่าปกติ",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "10. Psychiatric::39",
+      "id": "10. Psychiatric::38",
       "itemNo": "37",
       "group": "10. Psychiatric",
       "subTopic": "Smoking Cessation",
       "track": "Clinic",
       "question": "เกิดอะไรขึ้นกับระดับยาในเลือดเมื่อผู้ป่วย &#039;หยุดสูบบุหรี่&#039; และยารายการใดที่ต้องปรับลดขนาดลง?",
       "questionImage": "",
-      "answer": "▶ ผลเมื่อหยุดสูบ: ภาวะ Induction หายไป (De-induction) → CYP1A2 ทำงานลดลง → ยาถูกกำจัดช้าลง ระดับยาพุ่งสูงขึ้น เสี่ยงพิษรุนแรง<br> ▶ รายการยาที่ต้องลดขนาดยาลง:<br> 1. Clozapine (เสี่ยง <b style=\"color:#dc2626;\">Seizure</b>, Agranulocytosis - ต้องลดขนาด 30-50%)<br> 2. Olanzapine (ง่วงซึมรุนแรง, EPS)<br> 3. Theophylline (เสี่ยง Arrhythmias, <b style=\"color:#dc2626;\">Seizure</b>)<br> 4. Warfarin (INR สูงขึ้น เสี่ยงเลือดออกผิดปกติ)",
+      "answer": "▶ ผลเมื่อหยุดสูบ ภาวะ Induction หายไป (De-induction) → CYP1A2 ทำงานลดลง → ยาถูกกำจัดช้าลง ระดับยาพุ่งสูงขึ้น เสี่ยงพิษรุนแรง<br> ▶ รายการยาที่ต้องลดขนาดยาลง<br> 1. Clozapine (เสี่ยง <b style=\"color:#dc2626;\">Seizure</b>, Agranulocytosis - ต้องลดขนาด 30-50%)<br> 2. Olanzapine (ง่วงซึมรุนแรง, EPS)<br> 3. Theophylline (เสี่ยง Arrhythmias, <b style=\"color:#dc2626;\">Seizure</b>)<br> 4. Warfarin (INR สูงขึ้น เสี่ยงเลือดออกผิดปกติ)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "10. Psychiatric::40",
-      "itemNo": "38",
-      "group": "10. Psychiatric",
-      "subTopic": "Smoking Cessation",
-      "track": "Clinic",
-      "question": "การเปลี่ยนจากบุหรี่มาใช้ NRT (Nicotine Patch / Gum) มีผลต่อเอนไซม์ CYP1A2 หรือไม่ อย่างไร?",
-      "questionImage": "",
-      "answer": "ไม่มีผลกระตุ้น CYP1A2 เนื่องจาก NRT ไม่มีสาร PAHs จากการเผาไหม้ ดังนั้นเมื่อเปลี่ยนมาใช้ NRT เอนไซม์ CYP1A2 จะทำงานลดลงเข้าสู่ระดับปกติเช่นเดียวกับการเลิกบุหรี่ทั่วไป จึงยังคงต้องปรับลดขนาดยาที่ผ่าน CYP1A2 ตามปกติ",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "10. Psychiatric::41",
       "itemNo": "39",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16047,7 +15975,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::42",
+      "id": "10. Psychiatric::41",
       "itemNo": "40",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16059,7 +15987,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::43",
+      "id": "10. Psychiatric::42",
       "itemNo": "41",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16071,7 +15999,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::44",
+      "id": "10. Psychiatric::43",
       "itemNo": "42",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16083,7 +16011,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::45",
+      "id": "10. Psychiatric::44",
       "itemNo": "43",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16095,7 +16023,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::46",
+      "id": "10. Psychiatric::45",
       "itemNo": "44",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16107,7 +16035,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::47",
+      "id": "10. Psychiatric::46",
       "itemNo": "45",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16119,7 +16047,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::48",
+      "id": "10. Psychiatric::47",
       "itemNo": "46",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16131,7 +16059,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::49",
+      "id": "10. Psychiatric::48",
       "itemNo": "47",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16143,7 +16071,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::50",
+      "id": "10. Psychiatric::49",
       "itemNo": "48",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16155,7 +16083,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::51",
+      "id": "10. Psychiatric::50",
       "itemNo": "49",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16167,7 +16095,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::52",
+      "id": "10. Psychiatric::51",
       "itemNo": "50",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
@@ -16179,7 +16107,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "10. Psychiatric::53",
+      "id": "10. Psychiatric::52",
       "itemNo": "51",
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
