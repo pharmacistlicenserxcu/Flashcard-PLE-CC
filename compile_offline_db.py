@@ -1,25 +1,66 @@
 # -*- coding: utf-8 -*-
-import os, sys, json, re, zipfile, io
+import os, sys, json, re, zipfile, io, argparse
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-CREDS_FILE = 'C:/Users/thana/Desktop/PLE-CC/gemini-sheets-editor-497118-060a7f15daf9.json'
-PRIVATE_SID = '1doPJ0TPKTV2ESuplOvSq-AO_mOLflVynCdjyYjgY4Bo'
+DEFAULT_CREDS_FILE = 'C:/Users/thana/Desktop/PLE-CC/gemini-sheets-editor-497118-060a7f15daf9.json'
+DEFAULT_PRIVATE_SID = '1doPJ0TPKTV2ESuplOvSq-AO_mOLflVynCdjyYjgY4Bo'
 OUTPUT_JS = os.path.join(os.path.dirname(__file__), 'flashcard-data-offline.js')
 
+parser = argparse.ArgumentParser(description='Compile Google Sheets into Offline Flashcard JS Database')
+parser.add_argument('--mode', choices=['all', 'track', 'sheet', 'keyword'], default='all',
+                    help='Compile mode: all, track, sheet, keyword')
+parser.add_argument('--query', default='',
+                    help='Filter query (Track name: Clinic/Product/SAP, exact Sheet title, or keyword)')
+parser.add_argument('--skip-images', action='store_true',
+                    help='Skip downloading XLSX and extracting in-cell images (Fast mode)')
+parser.add_argument('--creds-file', default='',
+                    help='Path to service account credentials JSON file')
+parser.add_argument('--sheet-id', default=DEFAULT_PRIVATE_SID,
+                    help='Google Sheets ID to compile from')
+args = parser.parse_args()
+
+PRIVATE_SID = args.sheet_id
+
 print("=" * 65)
-print("  🚀 PharmaCU Flashcard Private -- Complete 16 Clinic + 12 Product Compiler")
-print(f"  Target Sheet: {PRIVATE_SID}")
+print("  🚀 PharmaCU Flashcard Compiler (Granular & Full)")
+print(f"  Target Sheet : {PRIVATE_SID}")
+print(f"  Compile Mode : {args.mode.upper()}")
+if args.query:
+    print(f"  Filter Query : {args.query}")
+print(f"  Skip Images  : {args.skip_images}")
 print("=" * 65)
 
-creds = service_account.Credentials.from_service_account_file(
-    CREDS_FILE, scopes=[
-        'https://www.googleapis.com/auth/spreadsheets.readonly',
-        'https://www.googleapis.com/auth/drive.readonly'
-    ]
-)
+# ── Credentials Resolution (GitHub Secret vs Local File) ──
+SCOPES = [
+    'https://www.googleapis.com/auth/spreadsheets.readonly',
+    'https://www.googleapis.com/auth/drive.readonly'
+]
+
+creds = None
+gcp_sa_key_env = os.environ.get('GCP_SA_KEY') or os.environ.get('COMPILE_AND_PUSH')
+if gcp_sa_key_env:
+    print("  🔑 Using GCP_SA_KEY environment variable for authentication...")
+    try:
+        raw_env = gcp_sa_key_env.strip()
+        if raw_env.startswith('{'):
+            sa_info = json.loads(raw_env)
+            creds = service_account.Credentials.from_service_account_info(sa_info, scopes=SCOPES)
+        elif os.path.exists(raw_env):
+            creds = service_account.Credentials.from_service_account_file(raw_env, scopes=SCOPES)
+    except Exception as e:
+        print(f"  ⚠️ Error parsing GCP_SA_KEY from environment: {e}")
+
+if not creds:
+    creds_path = args.creds_file or DEFAULT_CREDS_FILE
+    if os.path.exists(creds_path):
+        print(f"  🔑 Using local service account file: {creds_path}")
+        creds = service_account.Credentials.from_service_account_file(creds_path, scopes=SCOPES)
+    else:
+        raise FileNotFoundError(f"Could not find valid credentials at: {creds_path} or in environment.")
+
 service = build('sheets', 'v4', credentials=creds)
 drive_service = build('drive', 'v3', credentials=creds)
 
@@ -117,8 +158,13 @@ def extract_in_cell_images():
         print(f"  ⚠️ In-cell image extraction warning: {e}")
     return extracted_map
 
-in_cell_images_map = extract_in_cell_images()
+if args.skip_images:
+    print("  ⚡ Fast mode: Skipping in-cell image extraction (--skip-images)")
+    in_cell_images_map = {}
+else:
+    in_cell_images_map = extract_in_cell_images()
 
+# ── Sheet Name Metadata Resolution ──
 CLINIC_TAB_NAMES = [
   "1. Musculoskeleton", "2. Cardiovascular", "3. Dermatologic", "4. Endocrine",
   "5. Gastrointestinal", "6. Hematologic", "7. Immunologic", "8. Infectious diseases",
@@ -133,11 +179,9 @@ PRODUCT_TAB_NAMES = [
   "11. Herbal Products", "12. Food Products & QA"
 ]
 
-# Fetch metadata to dynamically detect all existing tabs in the spreadsheet
 meta_resp = service.spreadsheets().get(spreadsheetId=PRIVATE_SID).execute()
 existing_titles = [s['properties']['title'] for s in meta_resp.get('sheets', [])]
 
-# Auto-detect SAP tabs (any tab starting with 'SAP' or containing 'Social', 'Admin', 'Laws')
 SAP_TAB_NAMES = [
     t for t in existing_titles
     if (t.startswith('SAP') or 'Social' in t or 'Admin' in t or 'Laws' in t)
@@ -148,15 +192,50 @@ valid_clinic = [t for t in CLINIC_TAB_NAMES if t in existing_titles]
 valid_product = [t for t in PRODUCT_TAB_NAMES if t in existing_titles]
 valid_sap = [t for t in SAP_TAB_NAMES if t in existing_titles]
 
-all_tab_names = valid_clinic + valid_product + valid_sap
+all_ordered_tabs = [(t, 'Clinic') for t in valid_clinic] + [(t, 'Product') for t in valid_product] + [(t, 'SAP') for t in valid_sap]
+
+# ── Filter Targets based on Mode & Query ──
+mode = args.mode.lower()
+query = args.query.strip()
+is_partial = False
+
+if mode == 'all':
+    target_tabs = all_ordered_tabs
+    is_partial = False
+elif mode == 'track':
+    target_track = query.lower()
+    target_tabs = [(t, trk) for (t, trk) in all_ordered_tabs if trk.lower() == target_track]
+    is_partial = True
+elif mode == 'sheet':
+    target_tabs = [(t, trk) for (t, trk) in all_ordered_tabs if t.strip().lower() == query.lower()]
+    if not target_tabs:
+        # fallback to substring search if exact didn't match
+        target_tabs = [(t, trk) for (t, trk) in all_ordered_tabs if query.lower() in t.strip().lower()]
+    is_partial = True
+elif mode == 'keyword':
+    target_tabs = [(t, trk) for (t, trk) in all_ordered_tabs if query.lower() in t.strip().lower()]
+    is_partial = True
+else:
+    target_tabs = all_ordered_tabs
+    is_partial = False
+
+if not target_tabs:
+    print(f"❌ Error: No matching sheets found for mode='{mode}', query='{query}'")
+    print(f"   Available sheets: {[t for t, _ in all_ordered_tabs]}")
+    sys.exit(1)
+
+print(f"🎯 Target sheets to compile ({len(target_tabs)} total): {[t for t, _ in target_tabs]}")
+
+# ── Fetch Data Only for Target Tabs ──
+ranges_to_fetch = [f"{t}!A1:H500" for t, _ in target_tabs]
 sheet_meta = service.spreadsheets().get(
     spreadsheetId=PRIVATE_SID,
-    ranges=[f"{t}!A1:H500" for t in all_tab_names],
+    ranges=ranges_to_fetch,
     includeGridData=True
 ).execute()
 
 sheets_dict = {s['properties']['title']: s for s in sheet_meta.get('sheets', [])}
-print(f"Loaded {len(sheets_dict)} total sheets with full ranges from Google Sheets (Clinic: {len(valid_clinic)}, Product: {len(valid_product)}, SAP: {len(valid_sap)}).")
+print(f"📥 Successfully fetched {len(sheets_dict)} target sheet ranges from Google Sheets.")
 
 def escape_html(s):
     if not s:
@@ -167,10 +246,9 @@ def apply_clinical_highlighting(text):
     if not text:
         return ""
     
-    # 1. First escape HTML
     escaped = escape_html(text)
 
-    # 2. Header Badges & Callout Formatting
+    # 1. Header Badges & Callout Formatting
     escaped = re.sub(
         r'▶\s*\[(ข้อสอบจริง\s*/\s*Real Exam Question|ข้อสอบจริง|Real Exam Question)\]:?',
         r'<div style="display:inline-flex; align-items:center; gap:5px; background:#fef2f2; color:#b91c1c; border:1px solid #fecaca; padding:3px 10px; border-radius:6px; font-weight:700; font-size:0.88em; margin-bottom:8px; box-shadow:0 1px 2px rgba(0,0,0,0.05);">🎯 ข้อสอบจริง / Real Exam</div><br>',
@@ -207,7 +285,7 @@ def apply_clinical_highlighting(text):
         escaped
     )
 
-    # 3. 5-Color Clinical Palette
+    # 2. 5-Color Clinical Palette
     C_GREEN  = '#16a34a' # DOC & Regimens
     C_RED    = '#dc2626' # Warnings, Contraindications, Severe ADRs
     C_AMBER  = '#d97706' # Criteria, Scores, Cutoffs
@@ -300,7 +378,7 @@ def apply_clinical_highlighting(text):
         (C_GREEN, reg_green, False),
         (C_RED, reg_red, False),
         (C_AMBER, reg_amber, False),
-        (C_PURPLE, reg_purple_species, True), # Species are Italic + Bold Purple
+        (C_PURPLE, reg_purple_species, True),
         (C_PURPLE, reg_purple_genes, False),
         (C_BLUE, reg_blue, False)
     ]
@@ -325,7 +403,6 @@ def rich_text_to_html(cell):
     if not runs:
         return apply_clinical_highlighting(text)
 
-    # Check if runs contain actual colors
     has_color_run = False
     for r in runs:
         if r.get('format', {}).get('foregroundColor'):
@@ -392,20 +469,41 @@ def rich_text_to_html(cell):
     full_html = "".join(html_parts)
     return full_html.replace('\n', '<br>')
 
-categories_list = []
-offline_cards_map = {}
-offline_all_cards = {
-    'clinic': [],
-    'product': [],
-    'sap': [],
-    'all': []
-}
+def load_existing_db(filepath):
+    if not os.path.exists(filepath):
+        return [], {}, {'clinic': [], 'product': [], 'sap': [], 'all': []}
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
 
-total_cards = 0
+        def get_var(var_name):
+            prefix = f"window.{var_name} ="
+            idx = content.find(prefix)
+            if idx == -1:
+                return None
+            sub = content[idx + len(prefix):].lstrip()
+            decoder = json.JSONDecoder()
+            obj, _ = decoder.raw_decode(sub)
+            return obj
 
-all_ordered_tabs = [(t, 'Clinic') for t in valid_clinic] + [(t, 'Product') for t in valid_product] + [(t, 'SAP') for t in valid_sap]
+        cats = get_var('OFFLINE_CATEGORIES') or []
+        cards = get_var('OFFLINE_CARDS') or {}
+        by_track = get_var('OFFLINE_ALL_CARDS_BY_TRACK') or {'clinic': [], 'product': [], 'sap': [], 'all': []}
+        return cats, cards, by_track
+    except Exception as e:
+        print(f"  ⚠️ Warning loading existing DB: {e}")
+        return [], {}, {'clinic': [], 'product': [], 'sap': [], 'all': []}
 
-for title, track in all_ordered_tabs:
+# ── Setup State & Compile Loop ──
+if is_partial:
+    print(f"🔄 State-Preserving Mode: Loading existing database from {OUTPUT_JS}...")
+    categories_list, offline_cards_map, _ = load_existing_db(OUTPUT_JS)
+else:
+    categories_list = []
+    offline_cards_map = {}
+
+# Process each target tab
+for title, track in target_tabs:
     sheet = sheets_dict.get(title)
     cards_in_tab = []
     subtopics_set = set()
@@ -452,7 +550,7 @@ for title, track in all_ordered_tabs:
             
             if subtopic:
                 subtopics_set.add(subtopic)
-                
+
             def to_direct_image_url(u):
                 if not u: return ""
                 u = u.strip()
@@ -496,24 +594,52 @@ for title, track in all_ordered_tabs:
                 "answerImage": a_img_final,
                 "note": note
             }
-            
             cards_in_tab.append(card_obj)
-            offline_all_cards[actual_track.lower()].append(card_obj)
-            offline_all_cards['all'].append(card_obj)
 
-    total_cards += len(cards_in_tab)
+    # Upsert cards into map
     offline_cards_map[title] = cards_in_tab
-    categories_list.append({
-        "name": title,
-        "track": track,
-        "count": len(cards_in_tab),
-        "subtopics": sorted(list(subtopics_set))
-    })
+
+    # Upsert into categories_list
+    cat_entry = next((c for c in categories_list if c.get('name') == title), None)
+    if cat_entry:
+        cat_entry['count'] = len(cards_in_tab)
+        cat_entry['subtopics'] = sorted(list(subtopics_set))
+        cat_entry['track'] = track
+    else:
+        categories_list.append({
+            "name": title,
+            "track": track,
+            "count": len(cards_in_tab),
+            "subtopics": sorted(list(subtopics_set))
+        })
+
     status_icon = "✅" if cards_in_tab else "⚪"
     print(f"  {status_icon} [{track:7}] {title:30}: {len(cards_in_tab):3} cards, {len(subtopics_set):2} subtopics")
 
+# ── Reorder categories_list according to all_ordered_tabs ──
+tab_order = {t: idx for idx, (t, _) in enumerate(all_ordered_tabs)}
+categories_list.sort(key=lambda c: tab_order.get(c.get('name', ''), 999))
+
+# ── Rebuild Aggregations for OFFLINE_ALL_CARDS_BY_TRACK ──
+offline_all_cards = {
+    'clinic': [],
+    'product': [],
+    'sap': [],
+    'all': []
+}
+
+for t, default_track in all_ordered_tabs:
+    cards = offline_cards_map.get(t, [])
+    for card in cards:
+        act_trk = card.get('track', default_track).lower()
+        if act_trk in offline_all_cards:
+            offline_all_cards[act_trk].append(card)
+        offline_all_cards['all'].append(card)
+
+total_cards = len(offline_all_cards['all'])
+
 print("-" * 65)
-print(f"Total compiled cards: {total_cards} across {len(categories_list)} categories (16 Clinic + 12 Product).")
+print(f"Total compiled cards: {total_cards} across {len(categories_list)} categories.")
 
 js_code = """/**
  * PharmaCU Flashcard Private -- Pre-compiled Offline Database
@@ -529,6 +655,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = """ + json.dumps(offline_all_cards, ensure_a
 with open(OUTPUT_JS, 'w', encoding='utf-8') as f:
     f.write(js_code)
 
-print(f"🎉 Wrote offline database to: {OUTPUT_JS}")
+print(f"🎉 Successfully wrote offline database to: {OUTPUT_JS}")
 print(f"   Size: {os.path.getsize(OUTPUT_JS):,} bytes")
 print("=" * 65)

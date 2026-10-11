@@ -1,0 +1,76 @@
+name: 🚀 Remote Compile Flashcard Offline Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      filter_mode:
+        description: 'เลือกโหมดการ Compile'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - 'all'
+          - 'track'
+          - 'sheet'
+          - 'keyword'
+      filter_query:
+        description: 'คำค้นหา/ชื่อชีต/ชื่อแทร็ก (เช่น Clinic, Product, 1. Musculoskeleton หรือ Cardio)'
+        required: false
+        default: ''
+        type: string
+      skip_images:
+        description: '⚡ ข้ามการแตกรูปภาพ In-cell เพื่อความรวดเร็ว (Fast Mode)'
+        required: false
+        default: false
+        type: boolean
+      commit_msg:
+        description: 'ข้อความกำกับ Git Commit'
+        required: false
+        default: 'Auto sync flashcard offline data from Google Sheets'
+        type: string
+
+jobs:
+  compile_and_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: ⚙️ Compile Flashcard Data from Google Sheets
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY || secrets.COMPILE_AND_PUSH }}
+        run: |
+          SKIP_FLAG=""
+          if [ "${{ github.event.inputs.skip_images }}" = "true" ]; then
+            SKIP_FLAG="--skip-images"
+          fi
+          python compile_offline_db.py --mode "${{ github.event.inputs.filter_mode }}" --query "${{ github.event.inputs.filter_query }}" $SKIP_FLAG
+
+      - name: 🚀 Commit & Push Flashcard Offline Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # สั่ง Stage เฉพาะ offline data และภาพที่แตกใหม่เท่านั้น
+          git add flashcard-data-offline.js images/
+          if git diff --staged --quiet; then
+            echo "No flashcard data changes detected to commit."
+          else
+            git commit -m "${{ github.event.inputs.commit_msg }} [mode: ${{ github.event.inputs.filter_mode }}, query: '${{ github.event.inputs.filter_query }}']"
+            git push origin main
+          fi
