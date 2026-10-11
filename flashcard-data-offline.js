@@ -69,10 +69,11 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "9. Neurologic",
     "track": "Clinic",
-    "count": 132,
+    "count": 150,
     "subtopics": [
       "Dementia & Alzheimer's Disease",
       "Headache (migraine/tension)",
+      "Insomnia",
       "Parkinson disease"
     ]
   },
@@ -241,7 +242,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "Hyp",
       "track": "Clinic",
       "question": "<span style=\"color:#dc2626\">Pathophysiology </span>และอาการของโรคข้อเสื่อม <br>(Primary Osteoarthritis) คืออะไร ทดสอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
       "answer": "1. การเปลี่ยนแปลงโครงสร้างต่างๆภายในข้อ (Collagen, Chrondoitin) โดยเฉพาะบริเวณกระดูกอ่อนผิวข้อ -&gt; ปวดข้อแบบไม่สมมาตร ปวดเมื่อขยับหรือใช้งาน มักเป็นบริเวณสะโพก เข่า (ข้อที่รับน้ำหนัก) และข้อมือ เป็นนานๆ เกิดข้อผิดรูป<br>2. น้ำไขข้อเกิดการอักเสบ -&gt; ข้อฝืด - หลังจากตื่นนอนหรือนั่งนานๆ โดยไม่เกิน 30 นาที (Morning Stiffness)",
       "answerImage": "",
       "note": ""
@@ -309,7 +310,7 @@ window.OFFLINE_CARDS = {
       "question": "กลไกการออกฤทธิ์ของกลุ่ม PPIs",
       "questionImage": "",
       "answer": "เป็น Prodrug ที่ต้องกระตุ้นด้วยกรดใน canaliculi ของ Parietal cell<br>จะจับกับ Sulfhydryl (-SH) group บนเอนไซม์ H+/K+ ATPase แบบโควาเลนต์ (Irreversible) ยับยั้งขั้นตอนสุดท้ายของการหลั่งกรด",
-      "answerImage": "",
+      "answerImage": "images/extracted_5__Gastrointestinal_r3_c4.png",
       "note": "Peptic Ulcer & GERD"
     },
     {
@@ -333,7 +334,7 @@ window.OFFLINE_CARDS = {
       "question": " CYP2C19 กระทบ PPI ตัวไหนบ้างที่สุด",
       "questionImage": "",
       "answer": "- ส่วนใหญยาถูกเปลี่ยนสภาพหลักผ่าน CYP2C19 และ CYP3A4<br> - คนเอเชียมีสัดส่วนกลุ่มย่อยช้า (Poor Metabolizer: PM) สูงกว่าฝรั่ง (~23% vs 3%) ทำให้ระดับยาในเลือดสูงขึ้น<br> - ผลกระทบจาก CYP2C19 Polymorphism:<br><br> Omeprazole / Esomeprazole &gt; Pantoprazole &gt; Lansoprazole &gt; Rabeprazole (Rabeprazole ผ่าน Non-enzymatic เป็นหลัก จึงได้รับผลกระทบน้อยที่สุด)",
-      "answerImage": "",
+      "answerImage": "images/extracted_5__Gastrointestinal_r5_c4.png",
       "note": ""
     },
     {
@@ -1696,7 +1697,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Dementia (ภาวะสมองเสื่อม) คืออะไร และก่อนวินิจฉัยต้องแยกภาวะใดออกก่อน?",
       "questionImage": "",
-      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
+      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน Cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
     },
@@ -1898,7 +1899,7 @@ window.OFFLINE_CARDS = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมห้ามหยุด AChEI ทันที?",
+      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมไม่ควรหยุด AChEI ทันที?",
       "questionImage": "",
       "answer": "▶ วิธีทำ: ค่อย ๆ Taper AChEI โดยลดลงครึ่งหนึ่งทุก 2–4 สัปดาห์ จนถึงขนาดต่ำสุด คงไว้ช่วงหนึ่ง แล้วจึงหยุด<br>▶ ถ้าหยุดขนาดสูงทันที: อาจเกิด Withdrawal และ Cognition/อาการทางจิตประสาทแย่ลง<br>▶ ถ้าแย่ลงมาก: พิจารณากลับมาใช้ AChEI",
       "answerImage": "",
@@ -2116,7 +2117,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "หลักการเริ่มยาและปรับขนาดยารักษา AD มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD (ไม่ได้รักษาให้หายขาด)",
+      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 17, 33"
     },
@@ -2140,7 +2141,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ผู้ป่วย AD มีอาการ BPSD หลายอย่าง ควรจัดการอย่างไร?",
       "questionImage": "",
-      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้ายังไม่ดีขึ้น: เพิ่มยา Antipsychotics หรือ Antidepressants ตามความจำเป็น",
+      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้าจำเป็น: เพิ่มยา Antipsychotics หรือ Antidepressants",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 35"
     },
@@ -2263,6 +2264,222 @@ window.OFFLINE_CARDS = {
       "answer": "▶ ไม่ได้เรียนหนังสือ (อ่านไม่ออก): ≤ 14 คะแนน (เต็ม 23 เพราะตัดข้อ 4, 9, 10 ออก)<br>▶ จบประถมศึกษา: ≤ 17 คะแนน (เต็ม 30)<br>▶ สูงกว่าประถม: ≤ 22 คะแนน (เต็ม 30)",
       "answerImage": "https://lh3.googleusercontent.com/d/1VTrR1NWWIu8wIo_MDrfM3gs43iBeFevY",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
+    },
+    {
+      "id": "9. Neurologic::135",
+      "itemNo": "133",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "1. การรักษาอันดับแรก (<b style=\"color:#16a34a;\">First-line</b> treatment) สำหรับภาวะนอนไม่หลับเรื้อรังคืออะไร?",
+      "questionImage": "",
+      "answer": "การปรับความคิดและพฤติกรรมเพื่อรักษาอาการนอนไม่หลับ (CBTi หรือ BBTi) เนื่องจากให้ผลการรักษายาวนานและไม่มีผลข้างเคียงจากยา",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2568"
+    },
+    {
+      "id": "9. Neurologic::136",
+      "itemNo": "134",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "2. ตามหลัก Sleep Hygiene ควรปฏิบัติตนเกี่ยวกับเวลานอนและเวลาตื่นอย่างไร?",
+      "questionImage": "",
+      "answer": "เข้านอนและตื่นนอนให้ตรงเวลาเดิมทุกวัน (รวมถึงวันหยุด) เพื่อรักษาวงจรนาฬิกาชีวภาพของร่างกาย (Circadian rhythm)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2569"
+    },
+    {
+      "id": "9. Neurologic::137",
+      "itemNo": "135",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "3. หากเข้านอนแล้วไม่ง่วงหรือไม่หลับภายใน 20 นาที ควรปฏิบัติอย่างไรตามหลัก Stimulus Control?",
+      "questionImage": "",
+      "answer": "ลุกออกจากเตียง ไปทำกิจกรรมที่ผ่อนคลายในห้องที่มีแสงสลัว และกลับมานอนต่อเมื่อรู้สึกง่วงนอนเท่านั้น",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2570"
+    },
+    {
+      "id": "9. Neurologic::138",
+      "itemNo": "136",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "4. ตามหลัก Stimulus Control เตียงนอนมีไว้สำหรับกิจกรรมใดบ้าง?",
+      "questionImage": "",
+      "answer": "เตียงนอนมีไว้สำหรับ การนอนหลับและกิจกรรมทางเพศเท่านั้น หลีกเลี่ยงการทำงาน อ่านหนังสือ หรือดูทีวีบนเตียง",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2571"
+    },
+    {
+      "id": "9. Neurologic::139",
+      "itemNo": "137",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "5. ข้อแนะนำเกี่ยวกับสารกระตุ้นในหลัก Sleep Hygiene มีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "หลีกเลี่ยงการบริโภคเครื่องดื่มที่มีคาเฟอีน แอลกอฮอล์ และการสูบบุหรี่ในช่วงบ่ายหรือใกล้นอน",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2572"
+    },
+    {
+      "id": "9. Neurologic::140",
+      "itemNo": "138",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "6. ผู้ป่วยที่มีปัญหานอนหลับยาก (Sleep-Onset Insomnia) ควรเลือกใช้ยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่มออกฤทธิ์เร็วและครึ่งชีวิตสั้น เช่น Zolpidem IR, Zaleplon หรือ Ramelteon",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2573"
+    },
+    {
+      "id": "9. Neurologic::141",
+      "itemNo": "139",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "7. ผู้ป่วยที่มีปัญหาตื่นกลางดึกหรือตื่นเช้าเกินไป (Sleep-Maintenance Insomnia) ควรเลือกใช้ยาตัวใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่มออกฤทธิ์ยาวขึ้นเพื่อช่วยรักษาการนอนหลับ เช่น Zolpidem ER/CR, Eszopiclone หรือ Low-dose Doxepin",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2574"
+    },
+    {
+      "id": "9. Neurologic::142",
+      "itemNo": "140",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "8. หากตื่นกลางดึกแล้วต้องการกลับไปนอนต่อ (Middle-of-the-night awakening) มีข้อพิจารณาในการใช้ Zaleplon อย่างไร?",
+      "questionImage": "",
+      "answer": "Zaleplon มีครึ่งชีวิตสั้นมาก (ประมาณ 1 ชั่วโมง) เหมาะกับอาการตื่นกลางดึก แต่ผู้ป่วยต้องมีเวลานอนเหลืออยู่อย่างน้อย 4 ชั่วโมงขึ้นไป",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2575"
+    },
+    {
+      "id": "9. Neurologic::143",
+      "itemNo": "141",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "9. กลไกการออกฤทธิ์ของยา Zolpidem (Z-drug) คืออะไร?",
+      "questionImage": "",
+      "answer": "จับจำเพาะกับ GABA-A receptor โดยเฉพาะ Alpha-1 subunit ช่วยลดระยะเวลาที่ใช้ในการเริ่มหลับ",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2576"
+    },
+    {
+      "id": "9. Neurologic::144",
+      "itemNo": "142",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "10. อาการข้างเคียงสำคัญและพฤติกรรมแปลกๆ ขณะหลับ (Complex sleep behaviors) จาก Zolpidem คืออะไร?",
+      "questionImage": "",
+      "answer": "เกิดพฤติกรรมละเมอขณะหลับโดยจำเหตุการณ์ไม่ได้ เช่น ละเมอเดิน (Sleep walking), ละเมอขับรถ (Sleep driving), ละเมอกินอาหาร หรือละเมอมีกิจกรรมทางเพศ (Sleep sex)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2577"
+    },
+    {
+      "id": "9. Neurologic::145",
+      "itemNo": "143",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "11. ขนาดยาเริ่มต้นของ Zolpidem ในผู้หญิงและผู้สูงอายุต้องปรับอย่างไร?",
+      "questionImage": "",
+      "answer": "ต้องลดขนาดยาเริ่มต้นเหลือ 5 mg ในผู้หญิงและผู้สูงอายุ (เทียบกับผู้ชายทั่วไป 5–10 mg) เนื่องจากระดับยาในเลือดจะสูงกว่า",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2578"
+    },
+    {
+      "id": "9. Neurologic::146",
+      "itemNo": "144",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "12. เหตุใด Beers Criteria จึงแนะนำให้หลีกเลี่ยง Benzodiazepines (BZDs) ทุกชนิดในผู้สูงอายุ?",
+      "questionImage": "",
+      "answer": "BZDs เพิ่มความเสี่ยงต่อ การหกล้ม, กระดูกสะโพกหัก, การถดถอยของพุทธิปัญญา/สมองเสื่อม, ภาวะสับสน และการติดยา",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2579"
+    },
+    {
+      "id": "9. Neurologic::147",
+      "itemNo": "145",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "13. เหตุใดจึงควรหลีกเลี่ยง Antihistamines รุ่นที่ 1 (เช่น Diphenhydramine, Hydroxyzine) ในผู้สูงอายุ?",
+      "questionImage": "",
+      "answer": "มีฤทธิ์ Anticholinergic สูง ทำให้ปากแห้ง ตาพร่า ปัสสาวะลำบาก ท้องผูก มึนงง สับสน และเพิ่มความเสี่ยงต่อภาวะสมองเสื่อม",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2580"
+    },
+    {
+      "id": "9. Neurologic::148",
+      "itemNo": "146",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "14. ความเสี่ยงหลักของการใช้ BZDs ชนิด Long-acting ในผู้สูงอายุคืออะไร?",
+      "questionImage": "",
+      "answer": "เกิดการสะสมของยา เสี่ยงต่อ ภาวะเมาค้างในตอนเช้า (Hangover effect), สับสน, หกล้ม และกดการหายใจ",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2581"
+    },
+    {
+      "id": "9. Neurologic::149",
+      "itemNo": "147",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "15. จุดเด่นและความปลอดภัยของ Melatonin และ Ramelteon คืออะไร?",
+      "questionImage": "",
+      "answer": "ออกฤทธิ์ผ่าน Melatonin receptors (MT1/MT2) ปลอดภัย ไม่มีฤทธิ์กดประสาทหรือเสพติด เหมาะกับผู้มีประวัติติดสารเสพติด หรือใช้ปรับเวลาจาก Jet lag",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2582"
+    },
+    {
+      "id": "9. Neurologic::150",
+      "itemNo": "148",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "16. การใช้ Trazodone ขนาดต่ำ (25–50 mg) มีข้อบ่งใช้ Off-label และข้อควรระวังอย่างไร?",
+      "questionImage": "",
+      "answer": "นิยมใช้ Off-label ในผู้ป่วยนอนไม่หลับที่มี ภาวะซึมเศร้าหรือวิตกกังวลร่วมด้วย ข้อควรระวังคือ ความดันโลหิตต่ำเมื่อเปลี่ยนท่า, ง่วงซึมตอนกลางวัน และภาวะอวัยวะเพศแข็งตัวค้าง (Priapism)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2583"
+    },
+    {
+      "id": "9. Neurologic::151",
+      "itemNo": "149",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "17. การใช้ Low-dose Doxepin (3–6 mg) เหมาะสำหรับอาการนอนไม่หลับประเภทใด และมีจุดเด่นอย่างไร?",
+      "questionImage": "",
+      "answer": "เหมาะสำหรับ Sleep-maintenance insomnia ในผู้สูงอายุ ช่วยเพิ่มระยะเวลานอนหลับรวมโดยไม่พบอาการข้างเคียงด้าน Anticholinergic",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2584"
+    },
+    {
+      "id": "9. Neurologic::152",
+      "itemNo": "150",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "18. ระยะเวลาการใช้ยานอนหลับรักษาโรค Insomnia ตามแนวทางปฏิบัติแนะนำไว้อย่างไร?",
+      "questionImage": "",
+      "answer": "แนะนำให้ใช้ยาใน ระยะสั้น (ไม่เกิน 4 สัปดาห์ หรือสูงสุดไม่เกิน 3 เดือน) ร่วมกับการทำ CBTi เสมอ ไม่แนะนำให้ใช้ระยะยาวโดยไม่จำเป็น",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2585"
     }
   ],
   "10. Psychiatric": [
@@ -2275,7 +2492,7 @@ window.OFFLINE_CARDS = {
       "question": "กลไกการเกิดภาวะติดบุหรี่ (Nicotine Dependence) ในสมองเกิดขึ้นได้อย่างไร?",
       "questionImage": "",
       "answer": "นิโคตินในควันบุหรี่เข้าสู่สมองใน 7-10 วินาที ไปจับกับ α4β2 Nicotinic Acetylcholine Receptor (nAChR) ใน Ventral Tegmental Area (VTA) กระตุ้นการปลดปล่อย Dopamine ที่ Nucleus Accumbens ทำให้เกิดความรู้สึกพึงพอใจและผ่อนคลาย",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r3_c4.png",
       "note": ""
     },
     {
@@ -2299,7 +2516,7 @@ window.OFFLINE_CARDS = {
       "question": "สูตรการคำนวณ Pack-Year มีวิธีคำนวณอย่างไร?",
       "questionImage": "",
       "answer": "Pack-Year = (จำนวนมวนที่สูบต่อวัน / 20) x จำนวนปีที่สูบ (โดยบุหรี่ 1 ซองมาตรฐาน = 20 มวน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r5_c4.png",
       "note": ""
     },
     {
@@ -2323,7 +2540,7 @@ window.OFFLINE_CARDS = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดยาเริ่มต้นของ Nicotine Patch อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Patch 25 mg/day (หรือ 21 mg/day) นาน 8 สัปดาห์ แล้วค่อยๆ ปรับลดขนาดลง<br> ▶ สูบ ≤ 20 มวน/วัน (หรือ ≤ 10 มวน/วัน หรือน้ำหนัก &lt; 45 kg) → เริ่มต้น Nicotine Patch 15 mg/day (หรือ 14 mg/day)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r7_c4.png",
       "note": ""
     },
     {
@@ -2335,7 +2552,7 @@ window.OFFLINE_CARDS = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดและจำนวนสูงสุดของ Nicotine Gum อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Gum 4 mg (ใช้ไม่เกิน 15 ชิ้น/วัน)<br> ▶ สูบ ≤ 20 มวน/วัน → เริ่มต้น Nicotine Gum 2 mg (ใช้ไม่เกิน 30 ชิ้น/วัน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r8_c4.png",
       "note": ""
     },
     {
@@ -2443,7 +2660,7 @@ window.OFFLINE_CARDS = {
       "question": "Nicotine Patch มีคุณลักษณะการดูดซึม และวิธีแปะที่ถูกต้องอย่างไร?",
       "questionImage": "",
       "answer": "▶ การดูดซึม: ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> ▶ วิธีแปะ: แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r17_c4.png",
       "note": ""
     },
     {
@@ -2467,7 +2684,7 @@ window.OFFLINE_CARDS = {
       "question": "Nicotine Gum มีเทคนิคการเคี้ยวที่ถูกต้อง (Chew and Park) อย่างไร?",
       "questionImage": "",
       "answer": "1. เคี้ยวช้าๆ จนกระทั่งได้ &#039;รสเผ็ดซ่า&#039; (Peppery taste)<br> 2. นำไปพัก/เหน็บไว้ข้างกระพุ้งแก้มเพื่อให้ดูดซึมผ่านเยื่อบุช่องปาก<br> 3. เมื่อรสซ่าจางลง นำมาเคี้ยวใหม่อีกครั้งจนได้รสซ่าแล้วนำไปพัก ทำซ้ำวนไปประมาณ 30 นาทีแล้วคายทิ้ง",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r19_c4.png",
       "note": ""
     },
     {
@@ -2491,7 +2708,7 @@ window.OFFLINE_CARDS = {
       "question": "Nicotine Oral Spray มีขนาดการใช้ ข้อจำกัดการพ่น และวิธีใช้อย่างไร?",
       "questionImage": "",
       "answer": "▶ วิธีใช้: พ่นเข้ากระพุ้งแก้มหรือใต้ลิ้น กลั้นหายใจและงดกลืนน้ำลายทันที ห้ามสูดดมเข้าทางเดินหายใจ งดอาหาร/น้ำก่อนและหลังพ่น 15 นาที<br> ▶ Dosing: พ่น 1-2 sprays ทุก 30-60 นาที (ถ้าพ่น 1 spray แล้ว 2-3 นาทียังอยาก ให้พ่นซ้ำอีก 1 spray)<br> ▶ Max dose: ไม่เกิน 2 sprays/ครั้ง, ไม่เกิน 3-4 sprays/ชม., ไม่เกิน 48-64 sprays/วัน",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r21_c4.png",
       "note": ""
     },
     {
@@ -2527,7 +2744,7 @@ window.OFFLINE_CARDS = {
       "question": "Bupropion SR มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
       "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ (</b></span>เริ่มต้น 150 mg OD เช้า x 3 วัน → เพิ่มเป็น 150 mg BID ห่างกันอย่างน้อย 8 ชม. เลี่ยงมื้อเย็นก่อนนอน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r24_c4.png",
       "note": ""
     },
     {
@@ -2563,7 +2780,7 @@ window.OFFLINE_CARDS = {
       "question": "Cytisine มีกำหนด Target Quit Date (TQD) วันใด และมีคอร์สการรักษาอย่างไร?",
       "questionImage": "",
       "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)<br> ▶<span style=\"color:#dc2626\"> Regimen: ไม่ต้องจำ</span><br> - วันที่ 1-3: 1 เม็ด (1.5 mg) ทุก 2 ชม. (6 เม็ด/วัน)<br> - วันที่ 4-12: 1 เม็ด ทุก 2.5 ชม. (5 เม็ด/วัน)<br> - วันที่ 13-16: 1 เม็ด ทุก 3 ชม. (4 เม็ด/วัน)<br> - วันที่ 17-20: 1 เม็ด ทุก 5 ชม. (3 เม็ด/วัน)<br> - วันที่ 21-25: วันละ 1-2 เม็ด แล้วหยุดยา",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r27_c4.png",
       "note": ""
     },
     {
@@ -2599,7 +2816,7 @@ window.OFFLINE_CARDS = {
       "question": "Varenicline มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
       "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> (วัน 1-3: 0.5 mg OD → วัน 4-7: 0.5 mg BID → วัน 8/TQD เป็นต้นไป: 1 mg BID นาน 12 สัปดาห์)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r30_c4.png",
       "note": ""
     },
     {
@@ -2635,7 +2852,7 @@ window.OFFLINE_CARDS = {
       "question": "Nortriptyline มีการเริ่มยา (TQD) สำหรับช่วยเลิกบุหรี่อย่างไร?",
       "questionImage": "",
       "answer": "<br> ▶ TQD: เริ่มทานก่อนวันเลิกบุหรี่ (TQD) 2-4 สัปดาห์ (10-28 วัน) เพื่อให้ระดับยาสะสมถึง Steady-state",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r33_c4.png",
       "note": ""
     },
     {
@@ -2683,7 +2900,7 @@ window.OFFLINE_CARDS = {
       "question": "ข้อควรระวังสำคัญในการใช้ชาหญ้าดอกขาวคืออะไร?",
       "questionImage": "",
       "answer": "⚠️ ระวังในผู้ป่วย &#039;โรคหัวใจ&#039; และ &#039;โรคไต&#039; เนื่องจากหญ้าดอกขาวมีปริมาณโพแทสเซียม (Potassium) สูง",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r37_c4.png",
       "note": ""
     },
     {
@@ -2814,7 +3031,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ยา Benzodiazepine ตัวใดบ้างที่มีประสิทธิภาพสูงและนิยมใช้เป็นพิเศษในการรักษาโรคตื่นกลัว (Panic disorder) ระยะยาว?",
       "questionImage": "",
-      "answer": "",
+      "answer": "จากข้อมูลทางคลินิกพบว่ายา Alprazolam และ Clonazepam มีประสิทธิภาพสูงและนิยมใช้ในระยะยาวสำหรับรักษา panic disorder ",
       "answerImage": "",
       "note": ""
     },
@@ -2826,7 +3043,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ข้อควรระวังของยากลุ่ม Benzodiazepines ",
       "questionImage": "",
-      "answer": "",
+      "answer": "&gt;Psychomotor &amp; Cognitive Impairment ทำให้ความสามารถในการขับขี่หรือทำงานกับเครื่องจักรลดลง โดยเฉพาะยาที่มี Active metabolite อายุสั้น/ยาวต่างกัน  <br> &gt;ความเสี่ยงในผู้สูงอายุ เนื่องจากผู้สูงอายุมีความไวต่อยามากกว่า ทำให้เกิดอาการง่วงซึมมากเกินไป ซึ่งเพิ่ม ความเสี่ยงต่อการหกล้มและกระดูกหัก <br>&gt;Anterograde Amnesia) อาจทำให้จำเหตุการณ์ช่วงที่ยาออกฤทธิ์ไม่ได้ และอาจถูกนำไปใช้ในทางที่ผิด<br> &gt;Additive CNS &amp; Respiratory Depression อาจเสี่ยงอันตรายถึงชีวิตหากใช้ร่วมกับแอลกอฮอล์ ยากดประสาทอื่น ๆ หรือเกิดภาวะ Overdose  <br> &gt;การติดยา หากใช้ติดต่อกันนานจะเกิดการดื้อยาและติดยา เมื่อหยุดยาทันทีจะเกิด อาการถอนยา เช่น วิตกกังวลรุนแรง ตัวสั่น ไฮเปอร์รีเฟล็กซ์เซีย หรืออาจถึงขั้นชักได้",
       "answerImage": "",
       "note": ""
     },
@@ -2836,9 +3053,9 @@ window.OFFLINE_CARDS = {
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
       "track": "Clinic",
-      "question": "ยา Buspirone มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร",
+      "question": "ยา Buspirone มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร?",
       "questionImage": "",
-      "answer": "",
+      "answer": "เป็น Partial agonist ที่ 5-HT1A receptor ในสมอง ใช้สำหรับรักษาโรคกังวลทั่วไป( GAD)<br>&gt;โดยเป็นยาคลายกังวลที่ไม่ทำให้ง่วงซึมและไม่รบกวนทักษะการขับรถ ไม่มีฤทธิ์คลายกล้ามเนื้อหรือกันชัก และมีแนวโน้มการติดยาต่ำมาก <br>&gt;แต่มีข้อจำกัดคือ Onset ช้า ต้องใช้เวลามากกว่า 1-2 สัปดาห์ จึงไม่เหมาะกับภาวะกังวลเฉียบพลัน",
       "answerImage": "",
       "note": ""
     },
@@ -2850,7 +3067,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "Drug interaction ที่สำคัญของยา Buspirone",
       "questionImage": "",
-      "answer": "",
+      "answer": "การใช้ร่วมกับ CYP3A4 Inhibitors เช่น <b style=\"color:#0284c7;\">Erythromycin</b> หรือ Ketoconazole ทำให้ระดับยา Buspirone ในเลือดสูงขึ้นอย่างมากเนื่องจากถูกยับยั้งการขับออกจากร่างกาย",
       "answerImage": "",
       "note": ""
     },
@@ -2862,7 +3079,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ยาในกลุ่มใดที่มักถูกนำมาใช้ทดแทนหรือใช้ร่วมในการรักษาภาวะวิตกกังวลเรื้อรัง (Chronic anxiety states) ในปัจจุบันเพื่อลดการติดยา BZ?",
       "questionImage": "",
-      "answer": "ยากลุ่ม Antidepressants (เช่น SSRIs เช่น Paroxetine, Escitalopram หรือ Imipramine)",
+      "answer": "ยากลุ่ม Antidepressants  SSRIs/SNRIs เช่น Paroxetine, Escitalopram หรือ Imipramine",
       "answerImage": "",
       "note": ""
     },
@@ -2870,11 +3087,11 @@ window.OFFLINE_CARDS = {
       "id": "10. Psychiatric::53",
       "itemNo": "51",
       "group": "10. Psychiatric",
-      "subTopic": "10. Psychiatric",
+      "subTopic": "Anxiety",
       "track": "Clinic",
       "question": "ยา Propranolol และกลุ่ม \\beta-adrenoceptor antagonists มีประโยชน์อย่างไรในแง่ของความวิตกกังวล?",
       "questionImage": "",
-      "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน",
+      "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน โดยรับประทานก่อนเริ่มงาน 30-60 นาที",
       "answerImage": "",
       "note": ""
     }
@@ -4438,7 +4655,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันเด่นที่สุดของสาร และระบุบริเวณ peak ที่ใช้ตัดสิน",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
       "answer": "Carbonyl ของ ketone, ดู strong C=O stretching บริเวณประมาณ 1715 cm⁻¹ และไม่มี broad O–H",
       "answerImage": "",
       "note": ""
@@ -4450,7 +4667,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันหลักของสาร และอธิบายว่าจุดใดใน spectrum ช่วยแยกสารนี้ออกจาก carboxylic acid",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r12_c2.png",
       "answer": "Alcohol, มี broad O–H stretching แถวประมาณ 3200–3600 cm⁻¹ แต่ไม่มี strong C=O แถวประมาณ 1700 cm⁻¹ จึงไม่เข้า pattern ของ carboxylic acid",
       "answerImage": "",
       "note": ""
@@ -4462,7 +4679,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงสรุปว่าสารนี้มีหมู่ฟังก์ชันใด โดยใช้ลักษณะของ peak อย่างน้อย 2 บริเวณประกอบคำตอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r13_c2.png",
       "answer": "Carboxylic acid, มี broad O–H ของกรดประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O ประมาณ 1700–1725 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -4474,7 +4691,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป มี peak หนึ่งที่ใช้บ่งชี้หมู่ฟังก์ชันได้ค่อนข้างจำเพาะ จงระบุหมู่ฟังก์ชันนั้นและช่วง wavenumber ที่ควรพบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r14_c2.png",
       "answer": "Nitrile (C≡N), ให้ sharp absorption บริเวณประมาณ 2210–2260 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -4486,7 +4703,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุว่าหมู่ amino ในสารนี้มีแนวโน้มเป็น primary หรือ secondary amine พร้อมบอกหลักฐานจาก spectrum",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r15_c2.png",
       "answer": "Primary amine, N–H stretching บริเวณประมาณ 3300–3500 cm⁻¹ มักเห็นเป็น 2 bands จาก asymmetric และ symmetric N–H stretching",
       "answerImage": "",
       "note": ""
@@ -4498,7 +4715,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป หากต้องแยกว่า carbonyl ในสารนี้เป็น aldehyde หรือ ketone ควรใช้ peak ใดประกอบการตัดสิน และสรุปว่าสารนี้เข้ากับชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r16_c2.png",
       "answer": "เข้ากับ aldehyde, นอกจาก C=O แล้วพบ aldehydic C–H stretching มักอยู่ใกล้ประมาณ 2720 และ 2820 cm⁻¹ ซึ่งช่วยแยกจาก ketone",
       "answerImage": "",
       "note": ""
@@ -4510,7 +4727,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุชนิดของ carbonyl compound ที่สอดคล้องที่สุด โดยใช้ข้อมูลจากทั้ง carbonyl region และ fingerprint region",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r17_c2.png",
       "answer": "Ester, มี strong ester C=O แถวประมาณ 1735–1750 cm⁻¹ และมี strong C–O stretching หลายแถบในช่วงประมาณ 1050–1300 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -4522,7 +4739,7 @@ window.OFFLINE_CARDS = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันสำคัญที่พบอย่างน้อย 3 กลุ่ม และอธิบายว่าข้อมูลดังกล่าวสอดคล้องกับโครงสร้างของ acetaminophen อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "พบ O–H/N–H stretching บริเวณประมาณ 3100–3500 cm⁻¹, amide C=O แถวประมาณ 1650 cm⁻¹ และ aromatic ring bands แถวประมาณ 1500–1600 cm⁻¹ จึงสอดคล้องกับ phenolic OH + amide + aromatic ring ของ acetaminophen",
       "answerImage": "",
       "note": ""
@@ -4728,7 +4945,7 @@ window.OFFLINE_CARDS = {
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
-      "answerImage": "",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
@@ -6298,7 +6515,7 @@ window.OFFLINE_CARDS = {
       "question": "ใบพัด (Impeller) ชนิดใดที่ถูกนำมาใช้บ่อยที่สุดเพื่อกระจายอากาศในถังปฏิกรณ์ชีวภาพแบบกวน (Stirred tank bioreactor)?",
       "questionImage": "",
       "answer": "Disc turbine - เพราะสามารถตีฟองอากาศให้แตกเป็นขนาดเล็กและกระจายในแนวรัศมีได้ดีมากโดยไม่เกิดปัญหาฟองท่วมใบพัด",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Biotech_Products_r8_c4.jpg",
       "note": ""
     },
     {
@@ -6603,7 +6820,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "Hyp",
       "track": "Clinic",
       "question": "<span style=\"color:#dc2626\">Pathophysiology </span>และอาการของโรคข้อเสื่อม <br>(Primary Osteoarthritis) คืออะไร ทดสอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
       "answer": "1. การเปลี่ยนแปลงโครงสร้างต่างๆภายในข้อ (Collagen, Chrondoitin) โดยเฉพาะบริเวณกระดูกอ่อนผิวข้อ -&gt; ปวดข้อแบบไม่สมมาตร ปวดเมื่อขยับหรือใช้งาน มักเป็นบริเวณสะโพก เข่า (ข้อที่รับน้ำหนัก) และข้อมือ เป็นนานๆ เกิดข้อผิดรูป<br>2. น้ำไขข้อเกิดการอักเสบ -&gt; ข้อฝืด - หลังจากตื่นนอนหรือนั่งนานๆ โดยไม่เกิน 30 นาที (Morning Stiffness)",
       "answerImage": "",
       "note": ""
@@ -6665,7 +6882,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "กลไกการออกฤทธิ์ของกลุ่ม PPIs",
       "questionImage": "",
       "answer": "เป็น Prodrug ที่ต้องกระตุ้นด้วยกรดใน canaliculi ของ Parietal cell<br>จะจับกับ Sulfhydryl (-SH) group บนเอนไซม์ H+/K+ ATPase แบบโควาเลนต์ (Irreversible) ยับยั้งขั้นตอนสุดท้ายของการหลั่งกรด",
-      "answerImage": "",
+      "answerImage": "images/extracted_5__Gastrointestinal_r3_c4.png",
       "note": "Peptic Ulcer & GERD"
     },
     {
@@ -6689,7 +6906,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": " CYP2C19 กระทบ PPI ตัวไหนบ้างที่สุด",
       "questionImage": "",
       "answer": "- ส่วนใหญยาถูกเปลี่ยนสภาพหลักผ่าน CYP2C19 และ CYP3A4<br> - คนเอเชียมีสัดส่วนกลุ่มย่อยช้า (Poor Metabolizer: PM) สูงกว่าฝรั่ง (~23% vs 3%) ทำให้ระดับยาในเลือดสูงขึ้น<br> - ผลกระทบจาก CYP2C19 Polymorphism:<br><br> Omeprazole / Esomeprazole &gt; Pantoprazole &gt; Lansoprazole &gt; Rabeprazole (Rabeprazole ผ่าน Non-enzymatic เป็นหลัก จึงได้รับผลกระทบน้อยที่สุด)",
-      "answerImage": "",
+      "answerImage": "images/extracted_5__Gastrointestinal_r5_c4.png",
       "note": ""
     },
     {
@@ -8044,7 +8261,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Dementia (ภาวะสมองเสื่อม) คืออะไร และก่อนวินิจฉัยต้องแยกภาวะใดออกก่อน?",
       "questionImage": "",
-      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
+      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน Cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
     },
@@ -8246,7 +8463,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมห้ามหยุด AChEI ทันที?",
+      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมไม่ควรหยุด AChEI ทันที?",
       "questionImage": "",
       "answer": "▶ วิธีทำ: ค่อย ๆ Taper AChEI โดยลดลงครึ่งหนึ่งทุก 2–4 สัปดาห์ จนถึงขนาดต่ำสุด คงไว้ช่วงหนึ่ง แล้วจึงหยุด<br>▶ ถ้าหยุดขนาดสูงทันที: อาจเกิด Withdrawal และ Cognition/อาการทางจิตประสาทแย่ลง<br>▶ ถ้าแย่ลงมาก: พิจารณากลับมาใช้ AChEI",
       "answerImage": "",
@@ -8464,7 +8681,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "หลักการเริ่มยาและปรับขนาดยารักษา AD มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD (ไม่ได้รักษาให้หายขาด)",
+      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 17, 33"
     },
@@ -8488,7 +8705,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ผู้ป่วย AD มีอาการ BPSD หลายอย่าง ควรจัดการอย่างไร?",
       "questionImage": "",
-      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้ายังไม่ดีขึ้น: เพิ่มยา Antipsychotics หรือ Antidepressants ตามความจำเป็น",
+      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้าจำเป็น: เพิ่มยา Antipsychotics หรือ Antidepressants",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 35"
     },
@@ -8613,6 +8830,222 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
     },
     {
+      "id": "9. Neurologic::135",
+      "itemNo": "133",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "1. การรักษาอันดับแรก (<b style=\"color:#16a34a;\">First-line</b> treatment) สำหรับภาวะนอนไม่หลับเรื้อรังคืออะไร?",
+      "questionImage": "",
+      "answer": "การปรับความคิดและพฤติกรรมเพื่อรักษาอาการนอนไม่หลับ (CBTi หรือ BBTi) เนื่องจากให้ผลการรักษายาวนานและไม่มีผลข้างเคียงจากยา",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2568"
+    },
+    {
+      "id": "9. Neurologic::136",
+      "itemNo": "134",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "2. ตามหลัก Sleep Hygiene ควรปฏิบัติตนเกี่ยวกับเวลานอนและเวลาตื่นอย่างไร?",
+      "questionImage": "",
+      "answer": "เข้านอนและตื่นนอนให้ตรงเวลาเดิมทุกวัน (รวมถึงวันหยุด) เพื่อรักษาวงจรนาฬิกาชีวภาพของร่างกาย (Circadian rhythm)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2569"
+    },
+    {
+      "id": "9. Neurologic::137",
+      "itemNo": "135",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "3. หากเข้านอนแล้วไม่ง่วงหรือไม่หลับภายใน 20 นาที ควรปฏิบัติอย่างไรตามหลัก Stimulus Control?",
+      "questionImage": "",
+      "answer": "ลุกออกจากเตียง ไปทำกิจกรรมที่ผ่อนคลายในห้องที่มีแสงสลัว และกลับมานอนต่อเมื่อรู้สึกง่วงนอนเท่านั้น",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2570"
+    },
+    {
+      "id": "9. Neurologic::138",
+      "itemNo": "136",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "4. ตามหลัก Stimulus Control เตียงนอนมีไว้สำหรับกิจกรรมใดบ้าง?",
+      "questionImage": "",
+      "answer": "เตียงนอนมีไว้สำหรับ การนอนหลับและกิจกรรมทางเพศเท่านั้น หลีกเลี่ยงการทำงาน อ่านหนังสือ หรือดูทีวีบนเตียง",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2571"
+    },
+    {
+      "id": "9. Neurologic::139",
+      "itemNo": "137",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "5. ข้อแนะนำเกี่ยวกับสารกระตุ้นในหลัก Sleep Hygiene มีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "หลีกเลี่ยงการบริโภคเครื่องดื่มที่มีคาเฟอีน แอลกอฮอล์ และการสูบบุหรี่ในช่วงบ่ายหรือใกล้นอน",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2572"
+    },
+    {
+      "id": "9. Neurologic::140",
+      "itemNo": "138",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "6. ผู้ป่วยที่มีปัญหานอนหลับยาก (Sleep-Onset Insomnia) ควรเลือกใช้ยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่มออกฤทธิ์เร็วและครึ่งชีวิตสั้น เช่น Zolpidem IR, Zaleplon หรือ Ramelteon",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2573"
+    },
+    {
+      "id": "9. Neurologic::141",
+      "itemNo": "139",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "7. ผู้ป่วยที่มีปัญหาตื่นกลางดึกหรือตื่นเช้าเกินไป (Sleep-Maintenance Insomnia) ควรเลือกใช้ยาตัวใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่มออกฤทธิ์ยาวขึ้นเพื่อช่วยรักษาการนอนหลับ เช่น Zolpidem ER/CR, Eszopiclone หรือ Low-dose Doxepin",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2574"
+    },
+    {
+      "id": "9. Neurologic::142",
+      "itemNo": "140",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "8. หากตื่นกลางดึกแล้วต้องการกลับไปนอนต่อ (Middle-of-the-night awakening) มีข้อพิจารณาในการใช้ Zaleplon อย่างไร?",
+      "questionImage": "",
+      "answer": "Zaleplon มีครึ่งชีวิตสั้นมาก (ประมาณ 1 ชั่วโมง) เหมาะกับอาการตื่นกลางดึก แต่ผู้ป่วยต้องมีเวลานอนเหลืออยู่อย่างน้อย 4 ชั่วโมงขึ้นไป",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2575"
+    },
+    {
+      "id": "9. Neurologic::143",
+      "itemNo": "141",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "9. กลไกการออกฤทธิ์ของยา Zolpidem (Z-drug) คืออะไร?",
+      "questionImage": "",
+      "answer": "จับจำเพาะกับ GABA-A receptor โดยเฉพาะ Alpha-1 subunit ช่วยลดระยะเวลาที่ใช้ในการเริ่มหลับ",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2576"
+    },
+    {
+      "id": "9. Neurologic::144",
+      "itemNo": "142",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "10. อาการข้างเคียงสำคัญและพฤติกรรมแปลกๆ ขณะหลับ (Complex sleep behaviors) จาก Zolpidem คืออะไร?",
+      "questionImage": "",
+      "answer": "เกิดพฤติกรรมละเมอขณะหลับโดยจำเหตุการณ์ไม่ได้ เช่น ละเมอเดิน (Sleep walking), ละเมอขับรถ (Sleep driving), ละเมอกินอาหาร หรือละเมอมีกิจกรรมทางเพศ (Sleep sex)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2577"
+    },
+    {
+      "id": "9. Neurologic::145",
+      "itemNo": "143",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "11. ขนาดยาเริ่มต้นของ Zolpidem ในผู้หญิงและผู้สูงอายุต้องปรับอย่างไร?",
+      "questionImage": "",
+      "answer": "ต้องลดขนาดยาเริ่มต้นเหลือ 5 mg ในผู้หญิงและผู้สูงอายุ (เทียบกับผู้ชายทั่วไป 5–10 mg) เนื่องจากระดับยาในเลือดจะสูงกว่า",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2578"
+    },
+    {
+      "id": "9. Neurologic::146",
+      "itemNo": "144",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "12. เหตุใด Beers Criteria จึงแนะนำให้หลีกเลี่ยง Benzodiazepines (BZDs) ทุกชนิดในผู้สูงอายุ?",
+      "questionImage": "",
+      "answer": "BZDs เพิ่มความเสี่ยงต่อ การหกล้ม, กระดูกสะโพกหัก, การถดถอยของพุทธิปัญญา/สมองเสื่อม, ภาวะสับสน และการติดยา",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2579"
+    },
+    {
+      "id": "9. Neurologic::147",
+      "itemNo": "145",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "13. เหตุใดจึงควรหลีกเลี่ยง Antihistamines รุ่นที่ 1 (เช่น Diphenhydramine, Hydroxyzine) ในผู้สูงอายุ?",
+      "questionImage": "",
+      "answer": "มีฤทธิ์ Anticholinergic สูง ทำให้ปากแห้ง ตาพร่า ปัสสาวะลำบาก ท้องผูก มึนงง สับสน และเพิ่มความเสี่ยงต่อภาวะสมองเสื่อม",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2580"
+    },
+    {
+      "id": "9. Neurologic::148",
+      "itemNo": "146",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "14. ความเสี่ยงหลักของการใช้ BZDs ชนิด Long-acting ในผู้สูงอายุคืออะไร?",
+      "questionImage": "",
+      "answer": "เกิดการสะสมของยา เสี่ยงต่อ ภาวะเมาค้างในตอนเช้า (Hangover effect), สับสน, หกล้ม และกดการหายใจ",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2581"
+    },
+    {
+      "id": "9. Neurologic::149",
+      "itemNo": "147",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "15. จุดเด่นและความปลอดภัยของ Melatonin และ Ramelteon คืออะไร?",
+      "questionImage": "",
+      "answer": "ออกฤทธิ์ผ่าน Melatonin receptors (MT1/MT2) ปลอดภัย ไม่มีฤทธิ์กดประสาทหรือเสพติด เหมาะกับผู้มีประวัติติดสารเสพติด หรือใช้ปรับเวลาจาก Jet lag",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2582"
+    },
+    {
+      "id": "9. Neurologic::150",
+      "itemNo": "148",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "16. การใช้ Trazodone ขนาดต่ำ (25–50 mg) มีข้อบ่งใช้ Off-label และข้อควรระวังอย่างไร?",
+      "questionImage": "",
+      "answer": "นิยมใช้ Off-label ในผู้ป่วยนอนไม่หลับที่มี ภาวะซึมเศร้าหรือวิตกกังวลร่วมด้วย ข้อควรระวังคือ ความดันโลหิตต่ำเมื่อเปลี่ยนท่า, ง่วงซึมตอนกลางวัน และภาวะอวัยวะเพศแข็งตัวค้าง (Priapism)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2583"
+    },
+    {
+      "id": "9. Neurologic::151",
+      "itemNo": "149",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "17. การใช้ Low-dose Doxepin (3–6 mg) เหมาะสำหรับอาการนอนไม่หลับประเภทใด และมีจุดเด่นอย่างไร?",
+      "questionImage": "",
+      "answer": "เหมาะสำหรับ Sleep-maintenance insomnia ในผู้สูงอายุ ช่วยเพิ่มระยะเวลานอนหลับรวมโดยไม่พบอาการข้างเคียงด้าน Anticholinergic",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2584"
+    },
+    {
+      "id": "9. Neurologic::152",
+      "itemNo": "150",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "18. ระยะเวลาการใช้ยานอนหลับรักษาโรค Insomnia ตามแนวทางปฏิบัติแนะนำไว้อย่างไร?",
+      "questionImage": "",
+      "answer": "แนะนำให้ใช้ยาใน ระยะสั้น (ไม่เกิน 4 สัปดาห์ หรือสูงสุดไม่เกิน 3 เดือน) ร่วมกับการทำ CBTi เสมอ ไม่แนะนำให้ใช้ระยะยาวโดยไม่จำเป็น",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2585"
+    },
+    {
       "id": "10. Psychiatric::3",
       "itemNo": "1",
       "group": "10. Psychiatric",
@@ -8621,7 +9054,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "กลไกการเกิดภาวะติดบุหรี่ (Nicotine Dependence) ในสมองเกิดขึ้นได้อย่างไร?",
       "questionImage": "",
       "answer": "นิโคตินในควันบุหรี่เข้าสู่สมองใน 7-10 วินาที ไปจับกับ α4β2 Nicotinic Acetylcholine Receptor (nAChR) ใน Ventral Tegmental Area (VTA) กระตุ้นการปลดปล่อย Dopamine ที่ Nucleus Accumbens ทำให้เกิดความรู้สึกพึงพอใจและผ่อนคลาย",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r3_c4.png",
       "note": ""
     },
     {
@@ -8645,7 +9078,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "สูตรการคำนวณ Pack-Year มีวิธีคำนวณอย่างไร?",
       "questionImage": "",
       "answer": "Pack-Year = (จำนวนมวนที่สูบต่อวัน / 20) x จำนวนปีที่สูบ (โดยบุหรี่ 1 ซองมาตรฐาน = 20 มวน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r5_c4.png",
       "note": ""
     },
     {
@@ -8669,7 +9102,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดยาเริ่มต้นของ Nicotine Patch อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Patch 25 mg/day (หรือ 21 mg/day) นาน 8 สัปดาห์ แล้วค่อยๆ ปรับลดขนาดลง<br> ▶ สูบ ≤ 20 มวน/วัน (หรือ ≤ 10 มวน/วัน หรือน้ำหนัก &lt; 45 kg) → เริ่มต้น Nicotine Patch 15 mg/day (หรือ 14 mg/day)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r7_c4.png",
       "note": ""
     },
     {
@@ -8681,7 +9114,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดและจำนวนสูงสุดของ Nicotine Gum อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Gum 4 mg (ใช้ไม่เกิน 15 ชิ้น/วัน)<br> ▶ สูบ ≤ 20 มวน/วัน → เริ่มต้น Nicotine Gum 2 mg (ใช้ไม่เกิน 30 ชิ้น/วัน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r8_c4.png",
       "note": ""
     },
     {
@@ -8789,7 +9222,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nicotine Patch มีคุณลักษณะการดูดซึม และวิธีแปะที่ถูกต้องอย่างไร?",
       "questionImage": "",
       "answer": "▶ การดูดซึม: ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> ▶ วิธีแปะ: แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r17_c4.png",
       "note": ""
     },
     {
@@ -8813,7 +9246,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nicotine Gum มีเทคนิคการเคี้ยวที่ถูกต้อง (Chew and Park) อย่างไร?",
       "questionImage": "",
       "answer": "1. เคี้ยวช้าๆ จนกระทั่งได้ &#039;รสเผ็ดซ่า&#039; (Peppery taste)<br> 2. นำไปพัก/เหน็บไว้ข้างกระพุ้งแก้มเพื่อให้ดูดซึมผ่านเยื่อบุช่องปาก<br> 3. เมื่อรสซ่าจางลง นำมาเคี้ยวใหม่อีกครั้งจนได้รสซ่าแล้วนำไปพัก ทำซ้ำวนไปประมาณ 30 นาทีแล้วคายทิ้ง",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r19_c4.png",
       "note": ""
     },
     {
@@ -8837,7 +9270,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nicotine Oral Spray มีขนาดการใช้ ข้อจำกัดการพ่น และวิธีใช้อย่างไร?",
       "questionImage": "",
       "answer": "▶ วิธีใช้: พ่นเข้ากระพุ้งแก้มหรือใต้ลิ้น กลั้นหายใจและงดกลืนน้ำลายทันที ห้ามสูดดมเข้าทางเดินหายใจ งดอาหาร/น้ำก่อนและหลังพ่น 15 นาที<br> ▶ Dosing: พ่น 1-2 sprays ทุก 30-60 นาที (ถ้าพ่น 1 spray แล้ว 2-3 นาทียังอยาก ให้พ่นซ้ำอีก 1 spray)<br> ▶ Max dose: ไม่เกิน 2 sprays/ครั้ง, ไม่เกิน 3-4 sprays/ชม., ไม่เกิน 48-64 sprays/วัน",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r21_c4.png",
       "note": ""
     },
     {
@@ -8873,7 +9306,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Bupropion SR มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
       "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ (</b></span>เริ่มต้น 150 mg OD เช้า x 3 วัน → เพิ่มเป็น 150 mg BID ห่างกันอย่างน้อย 8 ชม. เลี่ยงมื้อเย็นก่อนนอน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r24_c4.png",
       "note": ""
     },
     {
@@ -8909,7 +9342,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Cytisine มีกำหนด Target Quit Date (TQD) วันใด และมีคอร์สการรักษาอย่างไร?",
       "questionImage": "",
       "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)<br> ▶<span style=\"color:#dc2626\"> Regimen: ไม่ต้องจำ</span><br> - วันที่ 1-3: 1 เม็ด (1.5 mg) ทุก 2 ชม. (6 เม็ด/วัน)<br> - วันที่ 4-12: 1 เม็ด ทุก 2.5 ชม. (5 เม็ด/วัน)<br> - วันที่ 13-16: 1 เม็ด ทุก 3 ชม. (4 เม็ด/วัน)<br> - วันที่ 17-20: 1 เม็ด ทุก 5 ชม. (3 เม็ด/วัน)<br> - วันที่ 21-25: วันละ 1-2 เม็ด แล้วหยุดยา",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r27_c4.png",
       "note": ""
     },
     {
@@ -8945,7 +9378,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Varenicline มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
       "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> (วัน 1-3: 0.5 mg OD → วัน 4-7: 0.5 mg BID → วัน 8/TQD เป็นต้นไป: 1 mg BID นาน 12 สัปดาห์)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r30_c4.png",
       "note": ""
     },
     {
@@ -8981,7 +9414,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nortriptyline มีการเริ่มยา (TQD) สำหรับช่วยเลิกบุหรี่อย่างไร?",
       "questionImage": "",
       "answer": "<br> ▶ TQD: เริ่มทานก่อนวันเลิกบุหรี่ (TQD) 2-4 สัปดาห์ (10-28 วัน) เพื่อให้ระดับยาสะสมถึง Steady-state",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r33_c4.png",
       "note": ""
     },
     {
@@ -9029,7 +9462,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ข้อควรระวังสำคัญในการใช้ชาหญ้าดอกขาวคืออะไร?",
       "questionImage": "",
       "answer": "⚠️ ระวังในผู้ป่วย &#039;โรคหัวใจ&#039; และ &#039;โรคไต&#039; เนื่องจากหญ้าดอกขาวมีปริมาณโพแทสเซียม (Potassium) สูง",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r37_c4.png",
       "note": ""
     },
     {
@@ -9160,7 +9593,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยา Benzodiazepine ตัวใดบ้างที่มีประสิทธิภาพสูงและนิยมใช้เป็นพิเศษในการรักษาโรคตื่นกลัว (Panic disorder) ระยะยาว?",
       "questionImage": "",
-      "answer": "",
+      "answer": "จากข้อมูลทางคลินิกพบว่ายา Alprazolam และ Clonazepam มีประสิทธิภาพสูงและนิยมใช้ในระยะยาวสำหรับรักษา panic disorder ",
       "answerImage": "",
       "note": ""
     },
@@ -9172,7 +9605,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ข้อควรระวังของยากลุ่ม Benzodiazepines ",
       "questionImage": "",
-      "answer": "",
+      "answer": "&gt;Psychomotor &amp; Cognitive Impairment ทำให้ความสามารถในการขับขี่หรือทำงานกับเครื่องจักรลดลง โดยเฉพาะยาที่มี Active metabolite อายุสั้น/ยาวต่างกัน  <br> &gt;ความเสี่ยงในผู้สูงอายุ เนื่องจากผู้สูงอายุมีความไวต่อยามากกว่า ทำให้เกิดอาการง่วงซึมมากเกินไป ซึ่งเพิ่ม ความเสี่ยงต่อการหกล้มและกระดูกหัก <br>&gt;Anterograde Amnesia) อาจทำให้จำเหตุการณ์ช่วงที่ยาออกฤทธิ์ไม่ได้ และอาจถูกนำไปใช้ในทางที่ผิด<br> &gt;Additive CNS &amp; Respiratory Depression อาจเสี่ยงอันตรายถึงชีวิตหากใช้ร่วมกับแอลกอฮอล์ ยากดประสาทอื่น ๆ หรือเกิดภาวะ Overdose  <br> &gt;การติดยา หากใช้ติดต่อกันนานจะเกิดการดื้อยาและติดยา เมื่อหยุดยาทันทีจะเกิด อาการถอนยา เช่น วิตกกังวลรุนแรง ตัวสั่น ไฮเปอร์รีเฟล็กซ์เซีย หรืออาจถึงขั้นชักได้",
       "answerImage": "",
       "note": ""
     },
@@ -9182,9 +9615,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
       "track": "Clinic",
-      "question": "ยา Buspirone มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร",
+      "question": "ยา Buspirone มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร?",
       "questionImage": "",
-      "answer": "",
+      "answer": "เป็น Partial agonist ที่ 5-HT1A receptor ในสมอง ใช้สำหรับรักษาโรคกังวลทั่วไป( GAD)<br>&gt;โดยเป็นยาคลายกังวลที่ไม่ทำให้ง่วงซึมและไม่รบกวนทักษะการขับรถ ไม่มีฤทธิ์คลายกล้ามเนื้อหรือกันชัก และมีแนวโน้มการติดยาต่ำมาก <br>&gt;แต่มีข้อจำกัดคือ Onset ช้า ต้องใช้เวลามากกว่า 1-2 สัปดาห์ จึงไม่เหมาะกับภาวะกังวลเฉียบพลัน",
       "answerImage": "",
       "note": ""
     },
@@ -9196,7 +9629,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Drug interaction ที่สำคัญของยา Buspirone",
       "questionImage": "",
-      "answer": "",
+      "answer": "การใช้ร่วมกับ CYP3A4 Inhibitors เช่น <b style=\"color:#0284c7;\">Erythromycin</b> หรือ Ketoconazole ทำให้ระดับยา Buspirone ในเลือดสูงขึ้นอย่างมากเนื่องจากถูกยับยั้งการขับออกจากร่างกาย",
       "answerImage": "",
       "note": ""
     },
@@ -9208,7 +9641,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยาในกลุ่มใดที่มักถูกนำมาใช้ทดแทนหรือใช้ร่วมในการรักษาภาวะวิตกกังวลเรื้อรัง (Chronic anxiety states) ในปัจจุบันเพื่อลดการติดยา BZ?",
       "questionImage": "",
-      "answer": "ยากลุ่ม Antidepressants (เช่น SSRIs เช่น Paroxetine, Escitalopram หรือ Imipramine)",
+      "answer": "ยากลุ่ม Antidepressants  SSRIs/SNRIs เช่น Paroxetine, Escitalopram หรือ Imipramine",
       "answerImage": "",
       "note": ""
     },
@@ -9216,11 +9649,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "10. Psychiatric::53",
       "itemNo": "51",
       "group": "10. Psychiatric",
-      "subTopic": "10. Psychiatric",
+      "subTopic": "Anxiety",
       "track": "Clinic",
       "question": "ยา Propranolol และกลุ่ม \\beta-adrenoceptor antagonists มีประโยชน์อย่างไรในแง่ของความวิตกกังวล?",
       "questionImage": "",
-      "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน",
+      "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน โดยรับประทานก่อนเริ่มงาน 30-60 นาที",
       "answerImage": "",
       "note": ""
     },
@@ -10769,7 +11202,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันเด่นที่สุดของสาร และระบุบริเวณ peak ที่ใช้ตัดสิน",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
       "answer": "Carbonyl ของ ketone, ดู strong C=O stretching บริเวณประมาณ 1715 cm⁻¹ และไม่มี broad O–H",
       "answerImage": "",
       "note": ""
@@ -10781,7 +11214,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันหลักของสาร และอธิบายว่าจุดใดใน spectrum ช่วยแยกสารนี้ออกจาก carboxylic acid",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r12_c2.png",
       "answer": "Alcohol, มี broad O–H stretching แถวประมาณ 3200–3600 cm⁻¹ แต่ไม่มี strong C=O แถวประมาณ 1700 cm⁻¹ จึงไม่เข้า pattern ของ carboxylic acid",
       "answerImage": "",
       "note": ""
@@ -10793,7 +11226,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงสรุปว่าสารนี้มีหมู่ฟังก์ชันใด โดยใช้ลักษณะของ peak อย่างน้อย 2 บริเวณประกอบคำตอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r13_c2.png",
       "answer": "Carboxylic acid, มี broad O–H ของกรดประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O ประมาณ 1700–1725 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -10805,7 +11238,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป มี peak หนึ่งที่ใช้บ่งชี้หมู่ฟังก์ชันได้ค่อนข้างจำเพาะ จงระบุหมู่ฟังก์ชันนั้นและช่วง wavenumber ที่ควรพบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r14_c2.png",
       "answer": "Nitrile (C≡N), ให้ sharp absorption บริเวณประมาณ 2210–2260 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -10817,7 +11250,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุว่าหมู่ amino ในสารนี้มีแนวโน้มเป็น primary หรือ secondary amine พร้อมบอกหลักฐานจาก spectrum",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r15_c2.png",
       "answer": "Primary amine, N–H stretching บริเวณประมาณ 3300–3500 cm⁻¹ มักเห็นเป็น 2 bands จาก asymmetric และ symmetric N–H stretching",
       "answerImage": "",
       "note": ""
@@ -10829,7 +11262,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป หากต้องแยกว่า carbonyl ในสารนี้เป็น aldehyde หรือ ketone ควรใช้ peak ใดประกอบการตัดสิน และสรุปว่าสารนี้เข้ากับชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r16_c2.png",
       "answer": "เข้ากับ aldehyde, นอกจาก C=O แล้วพบ aldehydic C–H stretching มักอยู่ใกล้ประมาณ 2720 และ 2820 cm⁻¹ ซึ่งช่วยแยกจาก ketone",
       "answerImage": "",
       "note": ""
@@ -10841,7 +11274,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุชนิดของ carbonyl compound ที่สอดคล้องที่สุด โดยใช้ข้อมูลจากทั้ง carbonyl region และ fingerprint region",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r17_c2.png",
       "answer": "Ester, มี strong ester C=O แถวประมาณ 1735–1750 cm⁻¹ และมี strong C–O stretching หลายแถบในช่วงประมาณ 1050–1300 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -10853,7 +11286,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันสำคัญที่พบอย่างน้อย 3 กลุ่ม และอธิบายว่าข้อมูลดังกล่าวสอดคล้องกับโครงสร้างของ acetaminophen อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "พบ O–H/N–H stretching บริเวณประมาณ 3100–3500 cm⁻¹, amide C=O แถวประมาณ 1650 cm⁻¹ และ aromatic ring bands แถวประมาณ 1500–1600 cm⁻¹ จึงสอดคล้องกับ phenolic OH + amide + aromatic ring ของ acetaminophen",
       "answerImage": "",
       "note": ""
@@ -11059,7 +11492,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
-      "answerImage": "",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
@@ -12619,7 +13052,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ใบพัด (Impeller) ชนิดใดที่ถูกนำมาใช้บ่อยที่สุดเพื่อกระจายอากาศในถังปฏิกรณ์ชีวภาพแบบกวน (Stirred tank bioreactor)?",
       "questionImage": "",
       "answer": "Disc turbine - เพราะสามารถตีฟองอากาศให้แตกเป็นขนาดเล็กและกระจายในแนวรัศมีได้ดีมากโดยไม่เกิดปัญหาฟองท่วมใบพัด",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Biotech_Products_r8_c4.jpg",
       "note": ""
     },
     {
@@ -12920,7 +13353,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "Hyp",
       "track": "Clinic",
       "question": "<span style=\"color:#dc2626\">Pathophysiology </span>และอาการของโรคข้อเสื่อม <br>(Primary Osteoarthritis) คืออะไร ทดสอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
       "answer": "1. การเปลี่ยนแปลงโครงสร้างต่างๆภายในข้อ (Collagen, Chrondoitin) โดยเฉพาะบริเวณกระดูกอ่อนผิวข้อ -&gt; ปวดข้อแบบไม่สมมาตร ปวดเมื่อขยับหรือใช้งาน มักเป็นบริเวณสะโพก เข่า (ข้อที่รับน้ำหนัก) และข้อมือ เป็นนานๆ เกิดข้อผิดรูป<br>2. น้ำไขข้อเกิดการอักเสบ -&gt; ข้อฝืด - หลังจากตื่นนอนหรือนั่งนานๆ โดยไม่เกิน 30 นาที (Morning Stiffness)",
       "answerImage": "",
       "note": ""
@@ -12982,7 +13415,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "กลไกการออกฤทธิ์ของกลุ่ม PPIs",
       "questionImage": "",
       "answer": "เป็น Prodrug ที่ต้องกระตุ้นด้วยกรดใน canaliculi ของ Parietal cell<br>จะจับกับ Sulfhydryl (-SH) group บนเอนไซม์ H+/K+ ATPase แบบโควาเลนต์ (Irreversible) ยับยั้งขั้นตอนสุดท้ายของการหลั่งกรด",
-      "answerImage": "",
+      "answerImage": "images/extracted_5__Gastrointestinal_r3_c4.png",
       "note": "Peptic Ulcer & GERD"
     },
     {
@@ -13006,7 +13439,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": " CYP2C19 กระทบ PPI ตัวไหนบ้างที่สุด",
       "questionImage": "",
       "answer": "- ส่วนใหญยาถูกเปลี่ยนสภาพหลักผ่าน CYP2C19 และ CYP3A4<br> - คนเอเชียมีสัดส่วนกลุ่มย่อยช้า (Poor Metabolizer: PM) สูงกว่าฝรั่ง (~23% vs 3%) ทำให้ระดับยาในเลือดสูงขึ้น<br> - ผลกระทบจาก CYP2C19 Polymorphism:<br><br> Omeprazole / Esomeprazole &gt; Pantoprazole &gt; Lansoprazole &gt; Rabeprazole (Rabeprazole ผ่าน Non-enzymatic เป็นหลัก จึงได้รับผลกระทบน้อยที่สุด)",
-      "answerImage": "",
+      "answerImage": "images/extracted_5__Gastrointestinal_r5_c4.png",
       "note": ""
     },
     {
@@ -14361,7 +14794,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Dementia (ภาวะสมองเสื่อม) คืออะไร และก่อนวินิจฉัยต้องแยกภาวะใดออกก่อน?",
       "questionImage": "",
-      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
+      "answer": "▶ นิยาม: สมองทำงานถดถอยด้าน Cognition (ความจำ การตัดสินใจ การวางแผน มิติสัมพันธ์ ภาษา สมาธิ การรับรู้สังคมรอบตัว) จนกระทบการใช้ชีวิตประจำวัน การทำงาน และการเข้าสังคม<br>▶ ต้องไม่มีขณะวินิจฉัย: อาการเพ้อ (Delirium), โรคซึมเศร้า, โรคจิตเวชเรื้อรัง หรือวิตกกังวลรุนแรง",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 48"
     },
@@ -14563,7 +14996,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "9. Neurologic",
       "subTopic": "Dementia & Alzheimer's Disease",
       "track": "Clinic",
-      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมห้ามหยุด AChEI ทันที?",
+      "question": "ถ้าจะเปลี่ยน (Switch) จาก AChEI เป็น Memantine ต้องทำอย่างไร และทำไมไม่ควรหยุด AChEI ทันที?",
       "questionImage": "",
       "answer": "▶ วิธีทำ: ค่อย ๆ Taper AChEI โดยลดลงครึ่งหนึ่งทุก 2–4 สัปดาห์ จนถึงขนาดต่ำสุด คงไว้ช่วงหนึ่ง แล้วจึงหยุด<br>▶ ถ้าหยุดขนาดสูงทันที: อาจเกิด Withdrawal และ Cognition/อาการทางจิตประสาทแย่ลง<br>▶ ถ้าแย่ลงมาก: พิจารณากลับมาใช้ AChEI",
       "answerImage": "",
@@ -14781,7 +15214,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "หลักการเริ่มยาและปรับขนาดยารักษา AD มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD (ไม่ได้รักษาให้หายขาด)",
+      "answer": "▶ การปรับขนาด: เริ่มที่ขนาดเริ่มต้น แล้วเพิ่มทุก 4 สัปดาห์ (หรือนานกว่านั้น) จนได้ขนาดที่ได้ผล หรือขนาดสูงสุดที่ผู้ป่วยทนได้<br>▶ ไม่จำเป็นต้องถึงขนาดสูงสุด: ถ้าผู้ป่วยตอบสนองดีอยู่แล้ว หรือทนผลข้างเคียงไม่ได้<br>▶ เวลาเริ่มยา: ควรเริ่มให้เร็วที่สุด เพราะยิ่งเริ่มช้า ยิ่งตอบสนองต่อยาน้อยลง<br>▶ เป้าหมาย: ชะลอการถดถอยของ Cognition และ Function รวมถึงลด BPSD",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 17, 33"
     },
@@ -14805,7 +15238,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ผู้ป่วย AD มีอาการ BPSD หลายอย่าง ควรจัดการอย่างไร?",
       "questionImage": "",
-      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้ายังไม่ดีขึ้น: เพิ่มยา Antipsychotics หรือ Antidepressants ตามความจำเป็น",
+      "answer": "▶ หลักการ: ใช้ทั้งวิธีไม่ใช้ยาและใช้ยาร่วมกัน<br>▶ <b style=\"color:#16a34a;\">ยาหลัก</b>: AChEIs และ Memantine ช่วยลดพฤติกรรมผิดปกติและอาการทางจิตประสาทได้ ถ้ามีหลายอาการแนะนำให้ใช้ 2 กลุ่มนี้ร่วมกัน<br>▶ ถ้าจำเป็น: เพิ่มยา Antipsychotics หรือ Antidepressants",
       "answerImage": "",
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 35"
     },
@@ -14930,6 +15363,222 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "อ้างอิง: สไลด์ AD อ.สิริพรรณ (IDT6 2568) หน้า 54"
     },
     {
+      "id": "9. Neurologic::135",
+      "itemNo": "133",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "1. การรักษาอันดับแรก (<b style=\"color:#16a34a;\">First-line</b> treatment) สำหรับภาวะนอนไม่หลับเรื้อรังคืออะไร?",
+      "questionImage": "",
+      "answer": "การปรับความคิดและพฤติกรรมเพื่อรักษาอาการนอนไม่หลับ (CBTi หรือ BBTi) เนื่องจากให้ผลการรักษายาวนานและไม่มีผลข้างเคียงจากยา",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2568"
+    },
+    {
+      "id": "9. Neurologic::136",
+      "itemNo": "134",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "2. ตามหลัก Sleep Hygiene ควรปฏิบัติตนเกี่ยวกับเวลานอนและเวลาตื่นอย่างไร?",
+      "questionImage": "",
+      "answer": "เข้านอนและตื่นนอนให้ตรงเวลาเดิมทุกวัน (รวมถึงวันหยุด) เพื่อรักษาวงจรนาฬิกาชีวภาพของร่างกาย (Circadian rhythm)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2569"
+    },
+    {
+      "id": "9. Neurologic::137",
+      "itemNo": "135",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "3. หากเข้านอนแล้วไม่ง่วงหรือไม่หลับภายใน 20 นาที ควรปฏิบัติอย่างไรตามหลัก Stimulus Control?",
+      "questionImage": "",
+      "answer": "ลุกออกจากเตียง ไปทำกิจกรรมที่ผ่อนคลายในห้องที่มีแสงสลัว และกลับมานอนต่อเมื่อรู้สึกง่วงนอนเท่านั้น",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2570"
+    },
+    {
+      "id": "9. Neurologic::138",
+      "itemNo": "136",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "4. ตามหลัก Stimulus Control เตียงนอนมีไว้สำหรับกิจกรรมใดบ้าง?",
+      "questionImage": "",
+      "answer": "เตียงนอนมีไว้สำหรับ การนอนหลับและกิจกรรมทางเพศเท่านั้น หลีกเลี่ยงการทำงาน อ่านหนังสือ หรือดูทีวีบนเตียง",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2571"
+    },
+    {
+      "id": "9. Neurologic::139",
+      "itemNo": "137",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "5. ข้อแนะนำเกี่ยวกับสารกระตุ้นในหลัก Sleep Hygiene มีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "หลีกเลี่ยงการบริโภคเครื่องดื่มที่มีคาเฟอีน แอลกอฮอล์ และการสูบบุหรี่ในช่วงบ่ายหรือใกล้นอน",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2572"
+    },
+    {
+      "id": "9. Neurologic::140",
+      "itemNo": "138",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "6. ผู้ป่วยที่มีปัญหานอนหลับยาก (Sleep-Onset Insomnia) ควรเลือกใช้ยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่มออกฤทธิ์เร็วและครึ่งชีวิตสั้น เช่น Zolpidem IR, Zaleplon หรือ Ramelteon",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2573"
+    },
+    {
+      "id": "9. Neurologic::141",
+      "itemNo": "139",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "7. ผู้ป่วยที่มีปัญหาตื่นกลางดึกหรือตื่นเช้าเกินไป (Sleep-Maintenance Insomnia) ควรเลือกใช้ยาตัวใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่มออกฤทธิ์ยาวขึ้นเพื่อช่วยรักษาการนอนหลับ เช่น Zolpidem ER/CR, Eszopiclone หรือ Low-dose Doxepin",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2574"
+    },
+    {
+      "id": "9. Neurologic::142",
+      "itemNo": "140",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "8. หากตื่นกลางดึกแล้วต้องการกลับไปนอนต่อ (Middle-of-the-night awakening) มีข้อพิจารณาในการใช้ Zaleplon อย่างไร?",
+      "questionImage": "",
+      "answer": "Zaleplon มีครึ่งชีวิตสั้นมาก (ประมาณ 1 ชั่วโมง) เหมาะกับอาการตื่นกลางดึก แต่ผู้ป่วยต้องมีเวลานอนเหลืออยู่อย่างน้อย 4 ชั่วโมงขึ้นไป",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2575"
+    },
+    {
+      "id": "9. Neurologic::143",
+      "itemNo": "141",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "9. กลไกการออกฤทธิ์ของยา Zolpidem (Z-drug) คืออะไร?",
+      "questionImage": "",
+      "answer": "จับจำเพาะกับ GABA-A receptor โดยเฉพาะ Alpha-1 subunit ช่วยลดระยะเวลาที่ใช้ในการเริ่มหลับ",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2576"
+    },
+    {
+      "id": "9. Neurologic::144",
+      "itemNo": "142",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "10. อาการข้างเคียงสำคัญและพฤติกรรมแปลกๆ ขณะหลับ (Complex sleep behaviors) จาก Zolpidem คืออะไร?",
+      "questionImage": "",
+      "answer": "เกิดพฤติกรรมละเมอขณะหลับโดยจำเหตุการณ์ไม่ได้ เช่น ละเมอเดิน (Sleep walking), ละเมอขับรถ (Sleep driving), ละเมอกินอาหาร หรือละเมอมีกิจกรรมทางเพศ (Sleep sex)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2577"
+    },
+    {
+      "id": "9. Neurologic::145",
+      "itemNo": "143",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "11. ขนาดยาเริ่มต้นของ Zolpidem ในผู้หญิงและผู้สูงอายุต้องปรับอย่างไร?",
+      "questionImage": "",
+      "answer": "ต้องลดขนาดยาเริ่มต้นเหลือ 5 mg ในผู้หญิงและผู้สูงอายุ (เทียบกับผู้ชายทั่วไป 5–10 mg) เนื่องจากระดับยาในเลือดจะสูงกว่า",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2578"
+    },
+    {
+      "id": "9. Neurologic::146",
+      "itemNo": "144",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "12. เหตุใด Beers Criteria จึงแนะนำให้หลีกเลี่ยง Benzodiazepines (BZDs) ทุกชนิดในผู้สูงอายุ?",
+      "questionImage": "",
+      "answer": "BZDs เพิ่มความเสี่ยงต่อ การหกล้ม, กระดูกสะโพกหัก, การถดถอยของพุทธิปัญญา/สมองเสื่อม, ภาวะสับสน และการติดยา",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2579"
+    },
+    {
+      "id": "9. Neurologic::147",
+      "itemNo": "145",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "13. เหตุใดจึงควรหลีกเลี่ยง Antihistamines รุ่นที่ 1 (เช่น Diphenhydramine, Hydroxyzine) ในผู้สูงอายุ?",
+      "questionImage": "",
+      "answer": "มีฤทธิ์ Anticholinergic สูง ทำให้ปากแห้ง ตาพร่า ปัสสาวะลำบาก ท้องผูก มึนงง สับสน และเพิ่มความเสี่ยงต่อภาวะสมองเสื่อม",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2580"
+    },
+    {
+      "id": "9. Neurologic::148",
+      "itemNo": "146",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "14. ความเสี่ยงหลักของการใช้ BZDs ชนิด Long-acting ในผู้สูงอายุคืออะไร?",
+      "questionImage": "",
+      "answer": "เกิดการสะสมของยา เสี่ยงต่อ ภาวะเมาค้างในตอนเช้า (Hangover effect), สับสน, หกล้ม และกดการหายใจ",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2581"
+    },
+    {
+      "id": "9. Neurologic::149",
+      "itemNo": "147",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "15. จุดเด่นและความปลอดภัยของ Melatonin และ Ramelteon คืออะไร?",
+      "questionImage": "",
+      "answer": "ออกฤทธิ์ผ่าน Melatonin receptors (MT1/MT2) ปลอดภัย ไม่มีฤทธิ์กดประสาทหรือเสพติด เหมาะกับผู้มีประวัติติดสารเสพติด หรือใช้ปรับเวลาจาก Jet lag",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2582"
+    },
+    {
+      "id": "9. Neurologic::150",
+      "itemNo": "148",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "16. การใช้ Trazodone ขนาดต่ำ (25–50 mg) มีข้อบ่งใช้ Off-label และข้อควรระวังอย่างไร?",
+      "questionImage": "",
+      "answer": "นิยมใช้ Off-label ในผู้ป่วยนอนไม่หลับที่มี ภาวะซึมเศร้าหรือวิตกกังวลร่วมด้วย ข้อควรระวังคือ ความดันโลหิตต่ำเมื่อเปลี่ยนท่า, ง่วงซึมตอนกลางวัน และภาวะอวัยวะเพศแข็งตัวค้าง (Priapism)",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2583"
+    },
+    {
+      "id": "9. Neurologic::151",
+      "itemNo": "149",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "17. การใช้ Low-dose Doxepin (3–6 mg) เหมาะสำหรับอาการนอนไม่หลับประเภทใด และมีจุดเด่นอย่างไร?",
+      "questionImage": "",
+      "answer": "เหมาะสำหรับ Sleep-maintenance insomnia ในผู้สูงอายุ ช่วยเพิ่มระยะเวลานอนหลับรวมโดยไม่พบอาการข้างเคียงด้าน Anticholinergic",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2584"
+    },
+    {
+      "id": "9. Neurologic::152",
+      "itemNo": "150",
+      "group": "9. Neurologic",
+      "subTopic": "Insomnia",
+      "track": "Clinic",
+      "question": "18. ระยะเวลาการใช้ยานอนหลับรักษาโรค Insomnia ตามแนวทางปฏิบัติแนะนำไว้อย่างไร?",
+      "questionImage": "",
+      "answer": "แนะนำให้ใช้ยาใน ระยะสั้น (ไม่เกิน 4 สัปดาห์ หรือสูงสุดไม่เกิน 3 เดือน) ร่วมกับการทำ CBTi เสมอ ไม่แนะนำให้ใช้ระยะยาวโดยไม่จำเป็น",
+      "answerImage": "",
+      "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2585"
+    },
+    {
       "id": "10. Psychiatric::3",
       "itemNo": "1",
       "group": "10. Psychiatric",
@@ -14938,7 +15587,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "กลไกการเกิดภาวะติดบุหรี่ (Nicotine Dependence) ในสมองเกิดขึ้นได้อย่างไร?",
       "questionImage": "",
       "answer": "นิโคตินในควันบุหรี่เข้าสู่สมองใน 7-10 วินาที ไปจับกับ α4β2 Nicotinic Acetylcholine Receptor (nAChR) ใน Ventral Tegmental Area (VTA) กระตุ้นการปลดปล่อย Dopamine ที่ Nucleus Accumbens ทำให้เกิดความรู้สึกพึงพอใจและผ่อนคลาย",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r3_c4.png",
       "note": ""
     },
     {
@@ -14962,7 +15611,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "สูตรการคำนวณ Pack-Year มีวิธีคำนวณอย่างไร?",
       "questionImage": "",
       "answer": "Pack-Year = (จำนวนมวนที่สูบต่อวัน / 20) x จำนวนปีที่สูบ (โดยบุหรี่ 1 ซองมาตรฐาน = 20 มวน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r5_c4.png",
       "note": ""
     },
     {
@@ -14986,7 +15635,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดยาเริ่มต้นของ Nicotine Patch อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Patch 25 mg/day (หรือ 21 mg/day) นาน 8 สัปดาห์ แล้วค่อยๆ ปรับลดขนาดลง<br> ▶ สูบ ≤ 20 มวน/วัน (หรือ ≤ 10 มวน/วัน หรือน้ำหนัก &lt; 45 kg) → เริ่มต้น Nicotine Patch 15 mg/day (หรือ 14 mg/day)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r7_c4.png",
       "note": ""
     },
     {
@@ -14998,7 +15647,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "การประเมินจำนวนมวนต่อวัน (CPD) ส่งผลต่อการเลือกขนาดและจำนวนสูงสุดของ Nicotine Gum อย่างไร?",
       "questionImage": "",
       "answer": "▶ สูบ &gt; 20 มวน/วัน → เริ่มต้น Nicotine Gum 4 mg (ใช้ไม่เกิน 15 ชิ้น/วัน)<br> ▶ สูบ ≤ 20 มวน/วัน → เริ่มต้น Nicotine Gum 2 mg (ใช้ไม่เกิน 30 ชิ้น/วัน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r8_c4.png",
       "note": ""
     },
     {
@@ -15106,7 +15755,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nicotine Patch มีคุณลักษณะการดูดซึม และวิธีแปะที่ถูกต้องอย่างไร?",
       "questionImage": "",
       "answer": "▶ การดูดซึม: ดูดซึมช้าๆ ให้ระดับยาคงที่ต่อเนื่อง 16 หรือ 24 ชั่วโมง<br> ▶ วิธีแปะ: แปะวันละ 1 ครั้ง บนผิวสะอาด แห้ง ไม่มีขน/แผล (ต้นแขน หน้าอก สะบัก) หมุนเวียนจุดแปะไม่ซ้ำที่เดิมใน 7 วัน กดแน่น 10-20 วินาที ห้ามตัดแบ่งแผ่นแปะ",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r17_c4.png",
       "note": ""
     },
     {
@@ -15130,7 +15779,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nicotine Gum มีเทคนิคการเคี้ยวที่ถูกต้อง (Chew and Park) อย่างไร?",
       "questionImage": "",
       "answer": "1. เคี้ยวช้าๆ จนกระทั่งได้ &#039;รสเผ็ดซ่า&#039; (Peppery taste)<br> 2. นำไปพัก/เหน็บไว้ข้างกระพุ้งแก้มเพื่อให้ดูดซึมผ่านเยื่อบุช่องปาก<br> 3. เมื่อรสซ่าจางลง นำมาเคี้ยวใหม่อีกครั้งจนได้รสซ่าแล้วนำไปพัก ทำซ้ำวนไปประมาณ 30 นาทีแล้วคายทิ้ง",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r19_c4.png",
       "note": ""
     },
     {
@@ -15154,7 +15803,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nicotine Oral Spray มีขนาดการใช้ ข้อจำกัดการพ่น และวิธีใช้อย่างไร?",
       "questionImage": "",
       "answer": "▶ วิธีใช้: พ่นเข้ากระพุ้งแก้มหรือใต้ลิ้น กลั้นหายใจและงดกลืนน้ำลายทันที ห้ามสูดดมเข้าทางเดินหายใจ งดอาหาร/น้ำก่อนและหลังพ่น 15 นาที<br> ▶ Dosing: พ่น 1-2 sprays ทุก 30-60 นาที (ถ้าพ่น 1 spray แล้ว 2-3 นาทียังอยาก ให้พ่นซ้ำอีก 1 spray)<br> ▶ Max dose: ไม่เกิน 2 sprays/ครั้ง, ไม่เกิน 3-4 sprays/ชม., ไม่เกิน 48-64 sprays/วัน",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r21_c4.png",
       "note": ""
     },
     {
@@ -15190,7 +15839,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Bupropion SR มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
       "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน Target Quit Date (TQD) 1-2 สัปดาห์ (</b></span>เริ่มต้น 150 mg OD เช้า x 3 วัน → เพิ่มเป็น 150 mg BID ห่างกันอย่างน้อย 8 ชม. เลี่ยงมื้อเย็นก่อนนอน)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r24_c4.png",
       "note": ""
     },
     {
@@ -15226,7 +15875,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Cytisine มีกำหนด Target Quit Date (TQD) วันใด และมีคอร์สการรักษาอย่างไร?",
       "questionImage": "",
       "answer": "▶ TQD:<b> </b><span style=\"color:#dc2626\"><b>ต้องหยุดสูบบุหรี่เด็ดขาดใน &#039;วันที่ 5&#039; ของการเริ่มยา</b></span><b> </b>(คอร์สรวม 25 วัน)<br> ▶<span style=\"color:#dc2626\"> Regimen: ไม่ต้องจำ</span><br> - วันที่ 1-3: 1 เม็ด (1.5 mg) ทุก 2 ชม. (6 เม็ด/วัน)<br> - วันที่ 4-12: 1 เม็ด ทุก 2.5 ชม. (5 เม็ด/วัน)<br> - วันที่ 13-16: 1 เม็ด ทุก 3 ชม. (4 เม็ด/วัน)<br> - วันที่ 17-20: 1 เม็ด ทุก 5 ชม. (3 เม็ด/วัน)<br> - วันที่ 21-25: วันละ 1-2 เม็ด แล้วหยุดยา",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r27_c4.png",
       "note": ""
     },
     {
@@ -15262,7 +15911,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Varenicline มีการบริหารยา (TQD) อย่างไร?",
       "questionImage": "",
       "answer": "▶ Dosing &amp; TQD:<span style=\"color:#dc2626\"><b> เริ่มทานก่อน TQD 1 สัปดาห์</b></span> (วัน 1-3: 0.5 mg OD → วัน 4-7: 0.5 mg BID → วัน 8/TQD เป็นต้นไป: 1 mg BID นาน 12 สัปดาห์)",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r30_c4.png",
       "note": ""
     },
     {
@@ -15298,7 +15947,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "Nortriptyline มีการเริ่มยา (TQD) สำหรับช่วยเลิกบุหรี่อย่างไร?",
       "questionImage": "",
       "answer": "<br> ▶ TQD: เริ่มทานก่อนวันเลิกบุหรี่ (TQD) 2-4 สัปดาห์ (10-28 วัน) เพื่อให้ระดับยาสะสมถึง Steady-state",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r33_c4.png",
       "note": ""
     },
     {
@@ -15346,7 +15995,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ข้อควรระวังสำคัญในการใช้ชาหญ้าดอกขาวคืออะไร?",
       "questionImage": "",
       "answer": "⚠️ ระวังในผู้ป่วย &#039;โรคหัวใจ&#039; และ &#039;โรคไต&#039; เนื่องจากหญ้าดอกขาวมีปริมาณโพแทสเซียม (Potassium) สูง",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Psychiatric_r37_c4.png",
       "note": ""
     },
     {
@@ -15477,7 +16126,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยา Benzodiazepine ตัวใดบ้างที่มีประสิทธิภาพสูงและนิยมใช้เป็นพิเศษในการรักษาโรคตื่นกลัว (Panic disorder) ระยะยาว?",
       "questionImage": "",
-      "answer": "",
+      "answer": "จากข้อมูลทางคลินิกพบว่ายา Alprazolam และ Clonazepam มีประสิทธิภาพสูงและนิยมใช้ในระยะยาวสำหรับรักษา panic disorder ",
       "answerImage": "",
       "note": ""
     },
@@ -15489,7 +16138,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ข้อควรระวังของยากลุ่ม Benzodiazepines ",
       "questionImage": "",
-      "answer": "",
+      "answer": "&gt;Psychomotor &amp; Cognitive Impairment ทำให้ความสามารถในการขับขี่หรือทำงานกับเครื่องจักรลดลง โดยเฉพาะยาที่มี Active metabolite อายุสั้น/ยาวต่างกัน  <br> &gt;ความเสี่ยงในผู้สูงอายุ เนื่องจากผู้สูงอายุมีความไวต่อยามากกว่า ทำให้เกิดอาการง่วงซึมมากเกินไป ซึ่งเพิ่ม ความเสี่ยงต่อการหกล้มและกระดูกหัก <br>&gt;Anterograde Amnesia) อาจทำให้จำเหตุการณ์ช่วงที่ยาออกฤทธิ์ไม่ได้ และอาจถูกนำไปใช้ในทางที่ผิด<br> &gt;Additive CNS &amp; Respiratory Depression อาจเสี่ยงอันตรายถึงชีวิตหากใช้ร่วมกับแอลกอฮอล์ ยากดประสาทอื่น ๆ หรือเกิดภาวะ Overdose  <br> &gt;การติดยา หากใช้ติดต่อกันนานจะเกิดการดื้อยาและติดยา เมื่อหยุดยาทันทีจะเกิด อาการถอนยา เช่น วิตกกังวลรุนแรง ตัวสั่น ไฮเปอร์รีเฟล็กซ์เซีย หรืออาจถึงขั้นชักได้",
       "answerImage": "",
       "note": ""
     },
@@ -15499,9 +16148,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "10. Psychiatric",
       "subTopic": "Anxiety",
       "track": "Clinic",
-      "question": "ยา Buspirone มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร",
+      "question": "ยา Buspirone มีกลไกการออกฤทธิ์และข้อบ่งใช้อย่างไร?",
       "questionImage": "",
-      "answer": "",
+      "answer": "เป็น Partial agonist ที่ 5-HT1A receptor ในสมอง ใช้สำหรับรักษาโรคกังวลทั่วไป( GAD)<br>&gt;โดยเป็นยาคลายกังวลที่ไม่ทำให้ง่วงซึมและไม่รบกวนทักษะการขับรถ ไม่มีฤทธิ์คลายกล้ามเนื้อหรือกันชัก และมีแนวโน้มการติดยาต่ำมาก <br>&gt;แต่มีข้อจำกัดคือ Onset ช้า ต้องใช้เวลามากกว่า 1-2 สัปดาห์ จึงไม่เหมาะกับภาวะกังวลเฉียบพลัน",
       "answerImage": "",
       "note": ""
     },
@@ -15513,7 +16162,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "Drug interaction ที่สำคัญของยา Buspirone",
       "questionImage": "",
-      "answer": "",
+      "answer": "การใช้ร่วมกับ CYP3A4 Inhibitors เช่น <b style=\"color:#0284c7;\">Erythromycin</b> หรือ Ketoconazole ทำให้ระดับยา Buspirone ในเลือดสูงขึ้นอย่างมากเนื่องจากถูกยับยั้งการขับออกจากร่างกาย",
       "answerImage": "",
       "note": ""
     },
@@ -15525,7 +16174,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยาในกลุ่มใดที่มักถูกนำมาใช้ทดแทนหรือใช้ร่วมในการรักษาภาวะวิตกกังวลเรื้อรัง (Chronic anxiety states) ในปัจจุบันเพื่อลดการติดยา BZ?",
       "questionImage": "",
-      "answer": "ยากลุ่ม Antidepressants (เช่น SSRIs เช่น Paroxetine, Escitalopram หรือ Imipramine)",
+      "answer": "ยากลุ่ม Antidepressants  SSRIs/SNRIs เช่น Paroxetine, Escitalopram หรือ Imipramine",
       "answerImage": "",
       "note": ""
     },
@@ -15533,11 +16182,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "10. Psychiatric::53",
       "itemNo": "51",
       "group": "10. Psychiatric",
-      "subTopic": "10. Psychiatric",
+      "subTopic": "Anxiety",
       "track": "Clinic",
       "question": "ยา Propranolol และกลุ่ม \\beta-adrenoceptor antagonists มีประโยชน์อย่างไรในแง่ของความวิตกกังวล?",
       "questionImage": "",
-      "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน",
+      "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน โดยรับประทานก่อนเริ่มงาน 30-60 นาที",
       "answerImage": "",
       "note": ""
     },
@@ -17084,7 +17733,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันเด่นที่สุดของสาร และระบุบริเวณ peak ที่ใช้ตัดสิน",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r11_c2.png",
       "answer": "Carbonyl ของ ketone, ดู strong C=O stretching บริเวณประมาณ 1715 cm⁻¹ และไม่มี broad O–H",
       "answerImage": "",
       "note": ""
@@ -17096,7 +17745,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันหลักของสาร และอธิบายว่าจุดใดใน spectrum ช่วยแยกสารนี้ออกจาก carboxylic acid",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r12_c2.png",
       "answer": "Alcohol, มี broad O–H stretching แถวประมาณ 3200–3600 cm⁻¹ แต่ไม่มี strong C=O แถวประมาณ 1700 cm⁻¹ จึงไม่เข้า pattern ของ carboxylic acid",
       "answerImage": "",
       "note": ""
@@ -17108,7 +17757,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงสรุปว่าสารนี้มีหมู่ฟังก์ชันใด โดยใช้ลักษณะของ peak อย่างน้อย 2 บริเวณประกอบคำตอบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r13_c2.png",
       "answer": "Carboxylic acid, มี broad O–H ของกรดประมาณ 2500–3300 cm⁻¹ ร่วมกับ strong C=O ประมาณ 1700–1725 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -17120,7 +17769,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป มี peak หนึ่งที่ใช้บ่งชี้หมู่ฟังก์ชันได้ค่อนข้างจำเพาะ จงระบุหมู่ฟังก์ชันนั้นและช่วง wavenumber ที่ควรพบ",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r14_c2.png",
       "answer": "Nitrile (C≡N), ให้ sharp absorption บริเวณประมาณ 2210–2260 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -17132,7 +17781,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุว่าหมู่ amino ในสารนี้มีแนวโน้มเป็น primary หรือ secondary amine พร้อมบอกหลักฐานจาก spectrum",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r15_c2.png",
       "answer": "Primary amine, N–H stretching บริเวณประมาณ 3300–3500 cm⁻¹ มักเห็นเป็น 2 bands จาก asymmetric และ symmetric N–H stretching",
       "answerImage": "",
       "note": ""
@@ -17144,7 +17793,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป หากต้องแยกว่า carbonyl ในสารนี้เป็น aldehyde หรือ ketone ควรใช้ peak ใดประกอบการตัดสิน และสรุปว่าสารนี้เข้ากับชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r16_c2.png",
       "answer": "เข้ากับ aldehyde, นอกจาก C=O แล้วพบ aldehydic C–H stretching มักอยู่ใกล้ประมาณ 2720 และ 2820 cm⁻¹ ซึ่งช่วยแยกจาก ketone",
       "answerImage": "",
       "note": ""
@@ -17156,7 +17805,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุชนิดของ carbonyl compound ที่สอดคล้องที่สุด โดยใช้ข้อมูลจากทั้ง carbonyl region และ fingerprint region",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r17_c2.png",
       "answer": "Ester, มี strong ester C=O แถวประมาณ 1735–1750 cm⁻¹ และมี strong C–O stretching หลายแถบในช่วงประมาณ 1050–1300 cm⁻¹",
       "answerImage": "",
       "note": ""
@@ -17168,7 +17817,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "subTopic": "IR",
       "track": "Product",
       "question": "จาก IR spectrum ในรูป จงระบุหมู่ฟังก์ชันสำคัญที่พบอย่างน้อย 3 กลุ่ม และอธิบายว่าข้อมูลดังกล่าวสอดคล้องกับโครงสร้างของ acetaminophen อย่างไร",
-      "questionImage": "",
+      "questionImage": "images/extracted_3__Spectroscopy___Optics_r18_c2.png",
       "answer": "พบ O–H/N–H stretching บริเวณประมาณ 3100–3500 cm⁻¹, amide C=O แถวประมาณ 1650 cm⁻¹ และ aromatic ring bands แถวประมาณ 1500–1600 cm⁻¹ จึงสอดคล้องกับ phenolic OH + amide + aromatic ring ของ acetaminophen",
       "answerImage": "",
       "note": ""
@@ -17374,7 +18023,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "สูตรคำนวณ Specific rotation",
       "questionImage": "",
       "answer": "",
-      "answerImage": "",
+      "answerImage": "images/extracted_3__Spectroscopy___Optics_r35_c4.png",
       "note": ""
     },
     {
@@ -18934,7 +19583,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ใบพัด (Impeller) ชนิดใดที่ถูกนำมาใช้บ่อยที่สุดเพื่อกระจายอากาศในถังปฏิกรณ์ชีวภาพแบบกวน (Stirred tank bioreactor)?",
       "questionImage": "",
       "answer": "Disc turbine - เพราะสามารถตีฟองอากาศให้แตกเป็นขนาดเล็กและกระจายในแนวรัศมีได้ดีมากโดยไม่เกิดปัญหาฟองท่วมใบพัด",
-      "answerImage": "",
+      "answerImage": "images/extracted_10__Biotech_Products_r8_c4.jpg",
       "note": ""
     },
     {
