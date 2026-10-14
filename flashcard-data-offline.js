@@ -6,7 +6,7 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "1. Musculoskeleton",
     "track": "Clinic",
-    "count": 180,
+    "count": 177,
     "subtopics": [
       "Gout & Hyperuricemia",
       "Osteoarthritis",
@@ -102,19 +102,23 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "9. Neurologic",
     "track": "Clinic",
-    "count": 149,
+    "count": 177,
     "subtopics": [
       "Dementia & Alzheimer's Disease",
+      "Epilepsy & Seizures",
       "Headache (migraine/tension)",
       "Insomnia",
-      "Parkinson disease"
+      "Neuropathic Pain",
+      "Parkinson disease",
+      "Stroke & Cerebrovascular"
     ]
   },
   {
     "name": "10. Psychiatric",
     "track": "Clinic",
-    "count": 49,
+    "count": 56,
     "subtopics": [
+      "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
       "Anxiety",
       "Smoking Cessation"
     ]
@@ -157,7 +161,10 @@ window.OFFLINE_CATEGORIES = [
     "track": "Clinic",
     "count": 135,
     "subtopics": [
-      "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)"
+      "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "Breast & Colorectal Cancer",
+      "CINV & Supportive Care",
+      "Chemotherapy Principles & DLTs"
     ]
   },
   {
@@ -320,18 +327,6 @@ window.OFFLINE_CARDS = {
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
-      "question": "ปุ่มกระดูกงอกบริเวณข้อนิ้วมือส่วนปลายสุด (DIP joint) ในผู้ป่วยข้อเสื่อม เรียกว่าอะไร?",
-      "questionImage": "",
-      "answer": "Heberden&#039;s nodes<br> เกิดจากกระดูกงอก (Osteophytes) ที่ข้อ Distal Interphalangeal",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::7",
-      "itemNo": "5",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
       "question": "ปุ่มกระดูกงอกบริเวณข้อนิ้วมือส่วนกลาง (PIP joint) ในผู้ป่วยข้อเสื่อม เรียกว่าอะไร?",
       "questionImage": "",
       "answer": "Bouchard&#039;s nodes<br> จำ B มาก่อน H (Bouchard ข้อกลางนิ้ว PIP, Heberden ข้อปลายนิ้ว DIP)",
@@ -339,44 +334,20 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::8",
-      "itemNo": "6",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
-      "question": "เสียงกรอบแกรบในข้อขณะเคลื่อนไหวที่ตรวจพบในโรคข้อเสื่อม เรียกว่าอะไร?",
-      "questionImage": "",
-      "answer": "Crepitus<br> เกิดจากการเสียดสีกันของผิวข้อที่ขรุขระและสูญเสียน้ำหล่อเลี้ยงข้อ",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::9",
+      "id": "1. Musculoskeleton::7",
       "itemNo": "7",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
       "question": "ลักษณะเด่น 4 ประการที่พบบนภาพถ่ายรังสีเอกซเรย์ของข้อเสื่อมมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "1. ข้อแคบไม่สมมาตร 2. กระดูกงอก (Osteophytes) 3. กระดูกใต้ข้อแข็งหนา 4. ถุงน้ำใต้กระดูก<br> ต่างจาก RA ที่ช่องว่างแคบแบบสมมาตรและมีกระดูกกร่อน (Bone erosions)",
+      "answer": "1. ข้อแคบไม่สมมาตร <br>2. กระดูกงอก (Osteophytes) <br>3. กระดูกใต้ข้อแข็งหนา <br>4. ถุงน้ำใต้กระดูก<br> <br>ต่างจาก RA ที่ช่องว่างแคบแบบสมมาตรและมีกระดูกกร่อน (Bone erosions)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::10",
-      "itemNo": "8",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
-      "question": "ปัจจัยเสี่ยงที่ไม่สามารถแก้ไขได้ในการเกิดโรคข้อเสื่อมมีอะไรบ้าง?",
-      "questionImage": "",
-      "answer": "อายุที่มากขึ้น (สำคัญที่สุด), เพศหญิงหลังหมดประจำเดือน, พันธุกรรม, และโครงสร้างข้อแต่กำเนิด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::11",
-      "itemNo": "9",
+      "id": "1. Musculoskeleton::8",
+      "itemNo": "6",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -387,8 +358,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::12",
-      "itemNo": "10",
+      "id": "1. Musculoskeleton::9",
+      "itemNo": "7",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -399,8 +370,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::13",
-      "itemNo": "11",
+      "id": "1. Musculoskeleton::10",
+      "itemNo": "8",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -411,8 +382,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::14",
-      "itemNo": "12",
+      "id": "1. Musculoskeleton::11",
+      "itemNo": "9",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -423,8 +394,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::15",
-      "itemNo": "13",
+      "id": "1. Musculoskeleton::12",
+      "itemNo": "10",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -435,8 +406,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::16",
-      "itemNo": "14",
+      "id": "1. Musculoskeleton::13",
+      "itemNo": "11",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -447,8 +418,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::17",
-      "itemNo": "15",
+      "id": "1. Musculoskeleton::14",
+      "itemNo": "12",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -459,8 +430,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::18",
-      "itemNo": "16",
+      "id": "1. Musculoskeleton::15",
+      "itemNo": "13",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -471,8 +442,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::19",
-      "itemNo": "17",
+      "id": "1. Musculoskeleton::16",
+      "itemNo": "14",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -483,8 +454,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::20",
-      "itemNo": "18",
+      "id": "1. Musculoskeleton::17",
+      "itemNo": "15",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -495,8 +466,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::21",
-      "itemNo": "19",
+      "id": "1. Musculoskeleton::18",
+      "itemNo": "16",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -507,8 +478,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::22",
-      "itemNo": "20",
+      "id": "1. Musculoskeleton::19",
+      "itemNo": "17",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -519,8 +490,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::23",
-      "itemNo": "21",
+      "id": "1. Musculoskeleton::20",
+      "itemNo": "18",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -531,8 +502,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::24",
-      "itemNo": "22",
+      "id": "1. Musculoskeleton::21",
+      "itemNo": "19",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -543,8 +514,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::25",
-      "itemNo": "23",
+      "id": "1. Musculoskeleton::22",
+      "itemNo": "20",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -555,8 +526,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::26",
-      "itemNo": "24",
+      "id": "1. Musculoskeleton::23",
+      "itemNo": "21",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -567,8 +538,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::27",
-      "itemNo": "25",
+      "id": "1. Musculoskeleton::24",
+      "itemNo": "22",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -579,8 +550,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::28",
-      "itemNo": "26",
+      "id": "1. Musculoskeleton::25",
+      "itemNo": "23",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -591,8 +562,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::29",
-      "itemNo": "27",
+      "id": "1. Musculoskeleton::26",
+      "itemNo": "24",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -603,8 +574,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::30",
-      "itemNo": "28",
+      "id": "1. Musculoskeleton::27",
+      "itemNo": "25",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -615,8 +586,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::31",
-      "itemNo": "29",
+      "id": "1. Musculoskeleton::28",
+      "itemNo": "26",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -627,8 +598,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::32",
-      "itemNo": "30",
+      "id": "1. Musculoskeleton::29",
+      "itemNo": "27",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -639,8 +610,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::33",
-      "itemNo": "31",
+      "id": "1. Musculoskeleton::30",
+      "itemNo": "28",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -651,8 +622,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::34",
-      "itemNo": "32",
+      "id": "1. Musculoskeleton::31",
+      "itemNo": "29",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -663,8 +634,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::35",
-      "itemNo": "33",
+      "id": "1. Musculoskeleton::32",
+      "itemNo": "30",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -675,8 +646,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::36",
-      "itemNo": "34",
+      "id": "1. Musculoskeleton::33",
+      "itemNo": "31",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -687,8 +658,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::37",
-      "itemNo": "35",
+      "id": "1. Musculoskeleton::34",
+      "itemNo": "32",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -699,8 +670,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::38",
-      "itemNo": "36",
+      "id": "1. Musculoskeleton::35",
+      "itemNo": "33",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -711,8 +682,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::39",
-      "itemNo": "37",
+      "id": "1. Musculoskeleton::36",
+      "itemNo": "34",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -723,8 +694,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::40",
-      "itemNo": "38",
+      "id": "1. Musculoskeleton::37",
+      "itemNo": "35",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -735,8 +706,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::41",
-      "itemNo": "39",
+      "id": "1. Musculoskeleton::38",
+      "itemNo": "36",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -747,8 +718,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::42",
-      "itemNo": "40",
+      "id": "1. Musculoskeleton::39",
+      "itemNo": "37",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -759,8 +730,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::43",
-      "itemNo": "41",
+      "id": "1. Musculoskeleton::40",
+      "itemNo": "38",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -771,8 +742,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::44",
-      "itemNo": "42",
+      "id": "1. Musculoskeleton::41",
+      "itemNo": "39",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -783,8 +754,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::45",
-      "itemNo": "43",
+      "id": "1. Musculoskeleton::42",
+      "itemNo": "40",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -795,8 +766,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::46",
-      "itemNo": "44",
+      "id": "1. Musculoskeleton::43",
+      "itemNo": "41",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -807,8 +778,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::47",
-      "itemNo": "45",
+      "id": "1. Musculoskeleton::44",
+      "itemNo": "42",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -819,8 +790,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::48",
-      "itemNo": "46",
+      "id": "1. Musculoskeleton::45",
+      "itemNo": "43",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -831,8 +802,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::49",
-      "itemNo": "47",
+      "id": "1. Musculoskeleton::46",
+      "itemNo": "44",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -843,8 +814,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::50",
-      "itemNo": "48",
+      "id": "1. Musculoskeleton::47",
+      "itemNo": "45",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -855,8 +826,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::51",
-      "itemNo": "49",
+      "id": "1. Musculoskeleton::48",
+      "itemNo": "46",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -867,8 +838,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::52",
-      "itemNo": "50",
+      "id": "1. Musculoskeleton::49",
+      "itemNo": "47",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -879,8 +850,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::53",
-      "itemNo": "51",
+      "id": "1. Musculoskeleton::50",
+      "itemNo": "48",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -891,8 +862,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::54",
-      "itemNo": "52",
+      "id": "1. Musculoskeleton::51",
+      "itemNo": "49",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -903,8 +874,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::55",
-      "itemNo": "53",
+      "id": "1. Musculoskeleton::52",
+      "itemNo": "50",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -915,8 +886,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::56",
-      "itemNo": "54",
+      "id": "1. Musculoskeleton::53",
+      "itemNo": "51",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -927,8 +898,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::57",
-      "itemNo": "55",
+      "id": "1. Musculoskeleton::54",
+      "itemNo": "52",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -939,8 +910,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::58",
-      "itemNo": "56",
+      "id": "1. Musculoskeleton::55",
+      "itemNo": "53",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -951,8 +922,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::59",
-      "itemNo": "57",
+      "id": "1. Musculoskeleton::56",
+      "itemNo": "54",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -963,8 +934,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::60",
-      "itemNo": "58",
+      "id": "1. Musculoskeleton::57",
+      "itemNo": "55",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -975,8 +946,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::61",
-      "itemNo": "59",
+      "id": "1. Musculoskeleton::58",
+      "itemNo": "56",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -987,8 +958,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::62",
-      "itemNo": "60",
+      "id": "1. Musculoskeleton::59",
+      "itemNo": "57",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -999,8 +970,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::63",
-      "itemNo": "61",
+      "id": "1. Musculoskeleton::60",
+      "itemNo": "58",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1011,8 +982,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::64",
-      "itemNo": "62",
+      "id": "1. Musculoskeleton::61",
+      "itemNo": "59",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1023,8 +994,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::65",
-      "itemNo": "63",
+      "id": "1. Musculoskeleton::62",
+      "itemNo": "60",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1035,8 +1006,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::66",
-      "itemNo": "64",
+      "id": "1. Musculoskeleton::63",
+      "itemNo": "61",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1047,8 +1018,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::67",
-      "itemNo": "65",
+      "id": "1. Musculoskeleton::64",
+      "itemNo": "62",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1059,8 +1030,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::68",
-      "itemNo": "66",
+      "id": "1. Musculoskeleton::65",
+      "itemNo": "63",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1071,8 +1042,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::69",
-      "itemNo": "67",
+      "id": "1. Musculoskeleton::66",
+      "itemNo": "64",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1083,8 +1054,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::70",
-      "itemNo": "68",
+      "id": "1. Musculoskeleton::67",
+      "itemNo": "65",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1095,8 +1066,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::71",
-      "itemNo": "69",
+      "id": "1. Musculoskeleton::68",
+      "itemNo": "66",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1107,8 +1078,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::72",
-      "itemNo": "70",
+      "id": "1. Musculoskeleton::69",
+      "itemNo": "67",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1119,8 +1090,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::73",
-      "itemNo": "71",
+      "id": "1. Musculoskeleton::70",
+      "itemNo": "68",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1131,8 +1102,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::74",
-      "itemNo": "72",
+      "id": "1. Musculoskeleton::71",
+      "itemNo": "69",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1143,8 +1114,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::75",
-      "itemNo": "73",
+      "id": "1. Musculoskeleton::72",
+      "itemNo": "70",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1155,8 +1126,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::76",
-      "itemNo": "74",
+      "id": "1. Musculoskeleton::73",
+      "itemNo": "71",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1167,8 +1138,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::77",
-      "itemNo": "75",
+      "id": "1. Musculoskeleton::74",
+      "itemNo": "72",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1179,8 +1150,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::78",
-      "itemNo": "76",
+      "id": "1. Musculoskeleton::75",
+      "itemNo": "73",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1191,8 +1162,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::79",
-      "itemNo": "77",
+      "id": "1. Musculoskeleton::76",
+      "itemNo": "74",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1203,8 +1174,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::80",
-      "itemNo": "78",
+      "id": "1. Musculoskeleton::77",
+      "itemNo": "75",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1215,8 +1186,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::81",
-      "itemNo": "79",
+      "id": "1. Musculoskeleton::78",
+      "itemNo": "76",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1227,8 +1198,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::82",
-      "itemNo": "80",
+      "id": "1. Musculoskeleton::79",
+      "itemNo": "77",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1239,8 +1210,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::83",
-      "itemNo": "81",
+      "id": "1. Musculoskeleton::80",
+      "itemNo": "78",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1251,8 +1222,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::84",
-      "itemNo": "82",
+      "id": "1. Musculoskeleton::81",
+      "itemNo": "79",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1263,8 +1234,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::85",
-      "itemNo": "83",
+      "id": "1. Musculoskeleton::82",
+      "itemNo": "80",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1275,8 +1246,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::86",
-      "itemNo": "84",
+      "id": "1. Musculoskeleton::83",
+      "itemNo": "81",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1287,8 +1258,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::87",
-      "itemNo": "85",
+      "id": "1. Musculoskeleton::84",
+      "itemNo": "82",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1299,8 +1270,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::88",
-      "itemNo": "86",
+      "id": "1. Musculoskeleton::85",
+      "itemNo": "83",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1311,8 +1282,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::89",
-      "itemNo": "87",
+      "id": "1. Musculoskeleton::86",
+      "itemNo": "84",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1323,8 +1294,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::90",
-      "itemNo": "88",
+      "id": "1. Musculoskeleton::87",
+      "itemNo": "85",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1335,8 +1306,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::91",
-      "itemNo": "89",
+      "id": "1. Musculoskeleton::88",
+      "itemNo": "86",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1347,8 +1318,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::92",
-      "itemNo": "90",
+      "id": "1. Musculoskeleton::89",
+      "itemNo": "87",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -1359,8 +1330,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::93",
-      "itemNo": "91",
+      "id": "1. Musculoskeleton::90",
+      "itemNo": "88",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1371,8 +1342,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::94",
-      "itemNo": "92",
+      "id": "1. Musculoskeleton::91",
+      "itemNo": "89",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1383,8 +1354,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::95",
-      "itemNo": "93",
+      "id": "1. Musculoskeleton::92",
+      "itemNo": "90",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1395,8 +1366,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::96",
-      "itemNo": "94",
+      "id": "1. Musculoskeleton::93",
+      "itemNo": "91",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1407,8 +1378,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::97",
-      "itemNo": "95",
+      "id": "1. Musculoskeleton::94",
+      "itemNo": "92",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1419,8 +1390,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::98",
-      "itemNo": "96",
+      "id": "1. Musculoskeleton::95",
+      "itemNo": "93",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1431,8 +1402,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::99",
-      "itemNo": "97",
+      "id": "1. Musculoskeleton::96",
+      "itemNo": "94",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1443,8 +1414,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::100",
-      "itemNo": "98",
+      "id": "1. Musculoskeleton::97",
+      "itemNo": "95",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1455,8 +1426,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::101",
-      "itemNo": "99",
+      "id": "1. Musculoskeleton::98",
+      "itemNo": "96",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1467,8 +1438,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::102",
-      "itemNo": "100",
+      "id": "1. Musculoskeleton::99",
+      "itemNo": "97",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1479,8 +1450,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::103",
-      "itemNo": "101",
+      "id": "1. Musculoskeleton::100",
+      "itemNo": "98",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1491,8 +1462,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::104",
-      "itemNo": "102",
+      "id": "1. Musculoskeleton::101",
+      "itemNo": "99",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1503,8 +1474,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::105",
-      "itemNo": "103",
+      "id": "1. Musculoskeleton::102",
+      "itemNo": "100",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1515,8 +1486,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::106",
-      "itemNo": "104",
+      "id": "1. Musculoskeleton::103",
+      "itemNo": "101",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1527,8 +1498,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::107",
-      "itemNo": "105",
+      "id": "1. Musculoskeleton::104",
+      "itemNo": "102",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1539,8 +1510,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::108",
-      "itemNo": "106",
+      "id": "1. Musculoskeleton::105",
+      "itemNo": "103",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1551,8 +1522,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::109",
-      "itemNo": "107",
+      "id": "1. Musculoskeleton::106",
+      "itemNo": "104",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1563,8 +1534,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::110",
-      "itemNo": "108",
+      "id": "1. Musculoskeleton::107",
+      "itemNo": "105",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1575,8 +1546,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::111",
-      "itemNo": "109",
+      "id": "1. Musculoskeleton::108",
+      "itemNo": "106",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1587,8 +1558,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::112",
-      "itemNo": "110",
+      "id": "1. Musculoskeleton::109",
+      "itemNo": "107",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1599,8 +1570,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::113",
-      "itemNo": "111",
+      "id": "1. Musculoskeleton::110",
+      "itemNo": "108",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1611,8 +1582,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::114",
-      "itemNo": "112",
+      "id": "1. Musculoskeleton::111",
+      "itemNo": "109",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1623,8 +1594,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::115",
-      "itemNo": "113",
+      "id": "1. Musculoskeleton::112",
+      "itemNo": "110",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1635,8 +1606,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::116",
-      "itemNo": "114",
+      "id": "1. Musculoskeleton::113",
+      "itemNo": "111",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1647,8 +1618,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::117",
-      "itemNo": "115",
+      "id": "1. Musculoskeleton::114",
+      "itemNo": "112",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1659,8 +1630,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::118",
-      "itemNo": "116",
+      "id": "1. Musculoskeleton::115",
+      "itemNo": "113",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1671,8 +1642,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::119",
-      "itemNo": "117",
+      "id": "1. Musculoskeleton::116",
+      "itemNo": "114",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1683,8 +1654,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::120",
-      "itemNo": "118",
+      "id": "1. Musculoskeleton::117",
+      "itemNo": "115",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1695,8 +1666,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::121",
-      "itemNo": "119",
+      "id": "1. Musculoskeleton::118",
+      "itemNo": "116",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1707,8 +1678,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::122",
-      "itemNo": "120",
+      "id": "1. Musculoskeleton::119",
+      "itemNo": "117",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1719,8 +1690,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::123",
-      "itemNo": "121",
+      "id": "1. Musculoskeleton::120",
+      "itemNo": "118",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1731,8 +1702,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::124",
-      "itemNo": "122",
+      "id": "1. Musculoskeleton::121",
+      "itemNo": "119",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1743,8 +1714,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::125",
-      "itemNo": "123",
+      "id": "1. Musculoskeleton::122",
+      "itemNo": "120",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1755,8 +1726,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::126",
-      "itemNo": "124",
+      "id": "1. Musculoskeleton::123",
+      "itemNo": "121",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1767,8 +1738,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::127",
-      "itemNo": "125",
+      "id": "1. Musculoskeleton::124",
+      "itemNo": "122",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1779,8 +1750,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::128",
-      "itemNo": "126",
+      "id": "1. Musculoskeleton::125",
+      "itemNo": "123",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1791,8 +1762,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::129",
-      "itemNo": "127",
+      "id": "1. Musculoskeleton::126",
+      "itemNo": "124",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1803,8 +1774,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::130",
-      "itemNo": "128",
+      "id": "1. Musculoskeleton::127",
+      "itemNo": "125",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1815,8 +1786,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::131",
-      "itemNo": "129",
+      "id": "1. Musculoskeleton::128",
+      "itemNo": "126",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1827,8 +1798,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::132",
-      "itemNo": "130",
+      "id": "1. Musculoskeleton::129",
+      "itemNo": "127",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1839,8 +1810,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::133",
-      "itemNo": "131",
+      "id": "1. Musculoskeleton::130",
+      "itemNo": "128",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1851,8 +1822,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::134",
-      "itemNo": "132",
+      "id": "1. Musculoskeleton::131",
+      "itemNo": "129",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1863,8 +1834,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::135",
-      "itemNo": "133",
+      "id": "1. Musculoskeleton::132",
+      "itemNo": "130",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1875,8 +1846,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::136",
-      "itemNo": "134",
+      "id": "1. Musculoskeleton::133",
+      "itemNo": "131",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1887,8 +1858,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::137",
-      "itemNo": "135",
+      "id": "1. Musculoskeleton::134",
+      "itemNo": "132",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -1899,8 +1870,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::138",
-      "itemNo": "136",
+      "id": "1. Musculoskeleton::135",
+      "itemNo": "133",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1911,8 +1882,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::139",
-      "itemNo": "137",
+      "id": "1. Musculoskeleton::136",
+      "itemNo": "134",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1923,8 +1894,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::140",
-      "itemNo": "138",
+      "id": "1. Musculoskeleton::137",
+      "itemNo": "135",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1935,8 +1906,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::141",
-      "itemNo": "139",
+      "id": "1. Musculoskeleton::138",
+      "itemNo": "136",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1947,8 +1918,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::142",
-      "itemNo": "140",
+      "id": "1. Musculoskeleton::139",
+      "itemNo": "137",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1959,8 +1930,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::143",
-      "itemNo": "141",
+      "id": "1. Musculoskeleton::140",
+      "itemNo": "138",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1971,8 +1942,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::144",
-      "itemNo": "142",
+      "id": "1. Musculoskeleton::141",
+      "itemNo": "139",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1983,8 +1954,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::145",
-      "itemNo": "143",
+      "id": "1. Musculoskeleton::142",
+      "itemNo": "140",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -1995,8 +1966,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::146",
-      "itemNo": "144",
+      "id": "1. Musculoskeleton::143",
+      "itemNo": "141",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2007,8 +1978,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::147",
-      "itemNo": "145",
+      "id": "1. Musculoskeleton::144",
+      "itemNo": "142",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2019,8 +1990,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::148",
-      "itemNo": "146",
+      "id": "1. Musculoskeleton::145",
+      "itemNo": "143",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2031,8 +2002,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::149",
-      "itemNo": "147",
+      "id": "1. Musculoskeleton::146",
+      "itemNo": "144",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2043,8 +2014,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::150",
-      "itemNo": "148",
+      "id": "1. Musculoskeleton::147",
+      "itemNo": "145",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2055,8 +2026,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::151",
-      "itemNo": "149",
+      "id": "1. Musculoskeleton::148",
+      "itemNo": "146",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2067,8 +2038,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::152",
-      "itemNo": "150",
+      "id": "1. Musculoskeleton::149",
+      "itemNo": "147",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2079,8 +2050,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::153",
-      "itemNo": "151",
+      "id": "1. Musculoskeleton::150",
+      "itemNo": "148",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2091,8 +2062,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::154",
-      "itemNo": "152",
+      "id": "1. Musculoskeleton::151",
+      "itemNo": "149",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2103,8 +2074,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::155",
-      "itemNo": "153",
+      "id": "1. Musculoskeleton::152",
+      "itemNo": "150",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2115,8 +2086,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::156",
-      "itemNo": "154",
+      "id": "1. Musculoskeleton::153",
+      "itemNo": "151",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2127,8 +2098,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::157",
-      "itemNo": "155",
+      "id": "1. Musculoskeleton::154",
+      "itemNo": "152",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2139,8 +2110,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::158",
-      "itemNo": "156",
+      "id": "1. Musculoskeleton::155",
+      "itemNo": "153",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2151,8 +2122,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::159",
-      "itemNo": "157",
+      "id": "1. Musculoskeleton::156",
+      "itemNo": "154",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2163,8 +2134,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::160",
-      "itemNo": "158",
+      "id": "1. Musculoskeleton::157",
+      "itemNo": "155",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2175,8 +2146,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::161",
-      "itemNo": "159",
+      "id": "1. Musculoskeleton::158",
+      "itemNo": "156",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2187,8 +2158,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::162",
-      "itemNo": "160",
+      "id": "1. Musculoskeleton::159",
+      "itemNo": "157",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2199,8 +2170,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::163",
-      "itemNo": "161",
+      "id": "1. Musculoskeleton::160",
+      "itemNo": "158",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2211,8 +2182,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::164",
-      "itemNo": "162",
+      "id": "1. Musculoskeleton::161",
+      "itemNo": "159",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2223,8 +2194,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::165",
-      "itemNo": "163",
+      "id": "1. Musculoskeleton::162",
+      "itemNo": "160",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2235,8 +2206,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::166",
-      "itemNo": "164",
+      "id": "1. Musculoskeleton::163",
+      "itemNo": "161",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2247,8 +2218,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::167",
-      "itemNo": "165",
+      "id": "1. Musculoskeleton::164",
+      "itemNo": "162",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2259,8 +2230,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::168",
-      "itemNo": "166",
+      "id": "1. Musculoskeleton::165",
+      "itemNo": "163",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2271,8 +2242,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::169",
-      "itemNo": "167",
+      "id": "1. Musculoskeleton::166",
+      "itemNo": "164",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2283,8 +2254,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::170",
-      "itemNo": "168",
+      "id": "1. Musculoskeleton::167",
+      "itemNo": "165",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2295,8 +2266,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::171",
-      "itemNo": "169",
+      "id": "1. Musculoskeleton::168",
+      "itemNo": "166",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2307,8 +2278,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::172",
-      "itemNo": "170",
+      "id": "1. Musculoskeleton::169",
+      "itemNo": "167",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2319,8 +2290,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::173",
-      "itemNo": "171",
+      "id": "1. Musculoskeleton::170",
+      "itemNo": "168",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2331,8 +2302,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::174",
-      "itemNo": "172",
+      "id": "1. Musculoskeleton::171",
+      "itemNo": "169",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2343,8 +2314,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::175",
-      "itemNo": "173",
+      "id": "1. Musculoskeleton::172",
+      "itemNo": "170",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2355,8 +2326,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::176",
-      "itemNo": "174",
+      "id": "1. Musculoskeleton::173",
+      "itemNo": "171",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2367,8 +2338,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::177",
-      "itemNo": "175",
+      "id": "1. Musculoskeleton::174",
+      "itemNo": "172",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2379,8 +2350,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::178",
-      "itemNo": "176",
+      "id": "1. Musculoskeleton::175",
+      "itemNo": "173",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2391,8 +2362,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::179",
-      "itemNo": "177",
+      "id": "1. Musculoskeleton::176",
+      "itemNo": "174",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2403,8 +2374,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::180",
-      "itemNo": "178",
+      "id": "1. Musculoskeleton::177",
+      "itemNo": "175",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2415,8 +2386,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::181",
-      "itemNo": "179",
+      "id": "1. Musculoskeleton::178",
+      "itemNo": "176",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -2427,8 +2398,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::182",
-      "itemNo": "180",
+      "id": "1. Musculoskeleton::179",
+      "itemNo": "177",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -8994,7 +8965,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Concomitant Quadruple Therapy 14 วันประกอบด้วยยาใด?",
       "questionImage": "",
-      "answer": "PPI (วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Amoxicillin</b> (1 g วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Clarithromycin</b> (500 mg วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Metronidazole</b> (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
+      "answer": "&lt;b&gt;PPI&lt;/b&gt; (วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Amoxicillin</b>&lt;/b&gt; (1 g วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Clarithromycin</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง) +<br> &lt;b&gt;<b style=\"color:#0284c7;\">Metronidazole</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
       "answerImage": "",
       "note": ""
     },
@@ -11098,7 +11069,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "เกณฑ์การจำแนกโรคจมูกอักเสบจากภูมิแพ้ตามแนวทาง ARIA อาการแบบมีช่วงเว้น (Intermittent) คือเท่าใด?",
       "questionImage": "",
-      "answer": "มีอาการน้อยกว่า 4 วันต่อสัปดาห์ หรือมีอาการติดต่อกันนานน้อยกว่า 4 สัปดาห์<br> (หากมีอาการตั้งแต่ 4 วันต่อสัปดาห์ และนานตั้งแต่ 4 สัปดาห์ขึ้นไป จัดเป็น Persistent)",
+      "answer": "มีอาการน้อยกว่า 4 วันต่อสัปดาห์ <br>หรือมีอาการติดต่อกันนานน้อยกว่า 4 สัปดาห์<br><br>(หากมีอาการตั้งแต่ 4 วันต่อสัปดาห์ และนานตั้งแต่ 4 สัปดาห์ขึ้นไป จัดเป็น Persistent)",
       "answerImage": "",
       "note": ""
     },
@@ -11110,7 +11081,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "เกณฑ์ที่บ่งชี้ว่าโรคภูมิแพ้โพรงจมูกเป็นระดับปานกลางถึงรุนแรง (Moderate-to-Severe) ตามเกณฑ์ ARIA คืออะไร?",
       "questionImage": "",
-      "answer": "มีผลกระทบต่อคุณภาพชีวิตข้อใดข้อหนึ่ง: การนอนหลับถูกรบกวน, กิจวัตรประจำวันบกพร่อง,<br> การเรียน/การทำงานบกพร่อง, หรือมีอาการรบกวนที่สร้างความรำคาญใจอย่างมาก",
+      "answer": "มีผลกระทบต่อคุณภาพชีวิตข้อใดข้อหนึ่ง: <br>1. การนอนหลับถูกรบกวน, <br>2. กิจวัตรประจำวันบกพร่อง,<br>3. การเรียน/การทำงานบกพร่อง<br>4. หรือมีอาการรบกวนที่สร้างความรำคาญใจอย่างมาก",
       "answerImage": "",
       "note": ""
     },
@@ -11134,7 +11105,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ยากลุ่มใดที่มีประสิทธิภาพสูงที่สุดในการรักษาโรคจมูกอักเสบจากภูมิแพ้ทุกอาการ?",
       "questionImage": "",
-      "answer": "Intranasal Corticosteroids (INCS เช่น Fluticasone, Mometasone, Budesonide)<br> มีประสิทธิผลสูงสุดในการลดทั้งอาการคัดจมูก น้ำมูกไหล จาม คัน และอาการทางตา",
+      "answer": "Intranasal Corticosteroids<br> (INCS เช่น Fluticasone, Mometasone, Budesonide)<br> มีประสิทธิผลสูงสุดในการลดทั้งอาการคัดจมูก น้ำมูกไหล จาม คัน และอาการทางตา",
       "answerImage": "",
       "note": ""
     },
@@ -14633,6 +14604,342 @@ window.OFFLINE_CARDS = {
       "answer": "แนะนำให้ใช้ยาใน ระยะสั้น (ไม่เกิน 4 สัปดาห์ หรือสูงสุดไม่เกิน 3 เดือน) ร่วมกับการทำ CBTi เสมอ ไม่แนะนำให้ใช้ระยะยาวโดยไม่จำเป็น",
       "answerImage": "",
       "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2585"
+    },
+    {
+      "id": "9. Neurologic::152",
+      "itemNo": "150",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "นิยามเวลาในการวินิจฉัยภาวะชักต่อเนื่อง (Status Epilepticus) คือชักนานตั้งแต่กี่นาทีขึ้นไป?",
+      "questionImage": "",
+      "answer": "ชักเกร็งกระตุกต่อเนื่องนานตั้งแต่ 5 นาทีขึ้นไป (&gt;= 5 นาที)<br> หรือมีอาการชักตั้งแต่ 2 ครั้งขึ้นไปโดยระหว่างนั้นผู้ป่วยไม่ฟื้นคืนสติ จัดเป็นภาวะฉุกเฉินทางการแพทย์",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::153",
+      "itemNo": "151",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกมาตรฐานในระยะแรก (5-20 นาทีแรก) ของภาวะ Status Epilepticus คือยากลุ่มใดและยาตัวใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่ม Benzodiazepines: IV Lorazepam (0.1 mg/kg หรือ 4 mg) หรือ IV Diazepam (10 mg)<br> (หากไม่มีเส้นเลือดดำให้ฉีด IM Midazolam 10 mg ทันที)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::154",
+      "itemNo": "152",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยาฉีดทางเลือกในระยะที่สอง (20-40 นาที) หากผู้ป่วยยังไม่หยุดชักหลังได้รับ Benzodiazepines คืออะไร?",
+      "questionImage": "",
+      "answer": "IV Levetiracetam (60 mg/kg), IV Sodium Valproate (40 mg/kg), หรือ IV Fosphenytoin (20 mg PE/kg)<br> เป็นยากันชักออกฤทธิ์ยาวที่ไม่กดการหายใจ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::155",
+      "itemNo": "153",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "เภสัชจลนศาสตร์ของยา Phenytoin มีลักษณะพิเศษอย่างไรที่ทำให้ระดับยาในเลือดเปลี่ยนแปลงได้เร็วมาก?",
+      "questionImage": "",
+      "answer": "จลนศาสตร์แบบอิ่มตัวไม่เป็นเส้นตรง (Non-linear / Michaelis-Menten kinetics)<br> การเพิ่มขนาดยาเพียงเล็กน้อยอาจทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดดจนเกิดพิษเฉียบพลัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::156",
+      "itemNo": "154",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ช่วงระดับความเข้มข้นของยา Phenytoin ในเลือดที่ให้ผลการรักษา (Therapeutic range) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "10 ถึง 20 mcg/mL (Total phenytoin)<br> (หากผู้ป่วยมีภาวะอัลบูมินในเลือดต่ำ ต้องคำนวณปรับค่าด้วยสูตร Sheiner-Tozer equation)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::157",
+      "itemNo": "155",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการพิษเฉียบพลันที่บ่งชี้ว่าระดับยา Phenytoin ในเลือดสูงเกินค่าควบคุมมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "ตากระตุก (Nystagmus), เดินเซทรงตัวไม่อยู่ (Ataxia), มองเห็นภาพซ้อน (Diplopia), และซึมสับสน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::158",
+      "itemNo": "156",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ก่อนเริ่มยา Carbamazepine ในประชากรไทยและเอเชีย จำเป็นต้องตรวจคัดกรองยีนใด?",
+      "questionImage": "",
+      "answer": "ยีน HLA-B*1502<br> หากให้ผลบวก ห้ามใช้ยาเด็ดขาดเพราะเพิ่มความเสี่ยงต่อการเกิดผื่นแพ้ยารุนแรงชนิด SJS และ TEN สูงมาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::159",
+      "itemNo": "157",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ปรากฏการณ์ Autoinduction ของยา Carbamazepine ส่งผลต่อระดับยาในเลือดอย่างไร?",
+      "questionImage": "",
+      "answer": "ยาจะกระตุ้นเอนไซม์ CYP3A4 ให้ทำลายตัวเองมากขึ้น ทำให้ระดับยาในเลือดลดลงหลังกินไป 3-5 สัปดาห์<br> จำเป็นต้องปรับเพิ่มขนาดยาขึ้นเพื่อให้ได้ระดับยาในการรักษาคงที่",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::160",
+      "itemNo": "158",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "Sodium Valproate (Depakine) เป็นยาทางเลือกแรกในการรักษาอาการชักชนิดใด?",
+      "questionImage": "",
+      "answer": "ชักแบบทั้งตัว (Generalized seizures) เช่น Generalized tonic-clonic, Myoclonic, และ Absence seizures<br> เป็นยากันชักที่ออกฤทธิ์กว้างครอบคลุมการชักเกือบทุกรูปแบบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::161",
+      "itemNo": "159",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์สำคัญที่พบบ่อยของยา Sodium Valproate คืออะไร?",
+      "questionImage": "",
+      "answer": "น้ำหนักตัวเพิ่มขึ้นอย่างมาก ผมร่วง ตับอักเสบ ตับอ่อนอักเสบเฉียบพลัน และแอมโมเนียในเลือดสูง (Hyperammonemia)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::162",
+      "itemNo": "160",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยา Ethosuximide มีข้อบ่งใช้จำเพาะเป็น <b style=\"color:#16a34a;\">First-line</b> ในการรักษาอาการชักชนิดใด?",
+      "questionImage": "",
+      "answer": "อาการชักเหม่อในเด็ก (Absence seizures / Petit mal)<br> ออกฤทธิ์ยับยั้ง T-type calcium channels ในสมองส่วนทาลามัสโดยไม่มีผลต่อการชักชนิดอื่น",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::163",
+      "itemNo": "161",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ปฏิกิริยาระหว่างยาของ Sodium Valproate เมื่อใช้ร่วมกับ Lamotrigine คืออะไรและต้องปรับยาอย่างไร?",
+      "questionImage": "",
+      "answer": "Valproate ยับยั้งกระบวนการ Glucuronidation ของ Lamotrigine ทำให้ระดับยา Lamotrigine สูงขึ้น 2 เท่า<br> ต้อง ลดขนาดยาเริ่มต้นของ Lamotrigine ลง 50% และปรับขึ้นช้าๆ เพื่อป้องกันการเกิดผื่นแพ้ SJS",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::164",
+      "itemNo": "162",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์ทางระบบประสาทและจิตเวชที่พบบ่อยของยา Levetiracetam (Keppra) คืออะไร?",
+      "questionImage": "",
+      "answer": "อารมณ์ฉุนเฉียว หงุดหงิดง่าย ก้าวร้าว ซึมเศร้า และวิตกกังวล (Keppra rage)<br> แต่มีข้อดีคือไม่ผ่านการเปลี่ยนสภาพที่ตับ (ขับทางไตเป็นหลัก) จึงแทบไม่มีปฏิกิริยาระหว่างยา",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::165",
+      "itemNo": "163",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "หญิงวัยเจริญพันธุ์ที่เป็นโรคลมชักและวางแผนตั้งครรภ์ ควรเลือกยากันชักตัวใดที่มีความปลอดภัยสูงสุด?",
+      "questionImage": "",
+      "answer": "Levetiracetam หรือ Lamotrigine ร่วมกับเสริม Folic Acid ขนาดสูง (4-5 mg ต่อวัน)<br> และหลีกเลี่ยง Sodium Valproate อย่างเด็ดขาด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::166",
+      "itemNo": "164",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ช่วงเวลาทอง (Golden period) ในการบริหารยาละลายลิ่มเลือด IV rtPA (Alteplase) ในโรคหลอดเลือดสมองตีบเฉียบพลันคือเท่าใด?",
+      "questionImage": "",
+      "answer": "ภายใน 4.5 ชั่วโมงแรก นับตั้งแต่เวลาที่ผู้ป่วยเริ่มมีอาการผิดปกติ (Onset to needle time)<br> เพื่อช่วยฟื้นฟูเนื้อสมองส่วน Penumbra และลดความพิการระยะยาว",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::167",
+      "itemNo": "165",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "เกณฑ์ระดับความดันโลหิตที่ต้องควบคุมก่อนเริ่มฉีดยาละลายลิ่มเลือด IV Alteplase คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ความดันโลหิตต้องต่ำกว่า 185/110 mmHg (SBP &lt; 185 และ DBP &lt; 110)<br> และต้องคุมให้ต่ำกว่า 180/105 mmHg ต่อเนื่องนาน 24 ชั่วโมงหลังฉีดยา เพื่อป้องกันเลือดออกในสมอง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::168",
+      "itemNo": "166",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ขนาดยาและการบริหารยา IV Alteplase ในผู้ป่วยโรคหลอดเลือดสมองตีบเฉียบพลันคือเท่าใด?",
+      "questionImage": "",
+      "answer": "ขนาด 0.9 mg/kg (ขนาดยาสูงสุดไม่เกิน 90 mg) โดยให้ 10% แรกฉีดแบบ IV bolus ใน 1 นาที<br> และอีก 90% ที่เหลือหยดเข้าทางหลอดเลือดดำต่อเนื่องนาน 60 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::169",
+      "itemNo": "167",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "หลังได้รับยาละลายลิ่มเลือด IV Alteplase ต้องงดยาต้านเกล็ดเลือดและยาต้านการแข็งตัวของเลือดนานเท่าใด?",
+      "questionImage": "",
+      "answer": "ต้องงดยาต้านเกล็ดเลือดและยาต้านการแข็งตัวของเลือดทุกชนิดเป็นเวลาอย่างน้อย 24 ชั่วโมง<br> และต้องทำ CT สมองซ้ำหลัง 24 ชั่วโมงเพื่อยืนยันว่าไม่มีภาวะเลือดออกในสมองก่อนเริ่มยาต้านเกล็ดเลือด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::170",
+      "itemNo": "168",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยาต้านเกล็ดเลือดทางเลือกแรกสำหรับป้องกันสโตรกขาดเลือดซ้ำระยะยาวในผู้ป่วย Non-cardioembolic stroke คือยาใด?",
+      "questionImage": "",
+      "answer": "Aspirin (81 ถึง 325 mg ต่อวัน) หรือ Clopidogrel (75 mg ต่อวัน)<br> เริ่มยาภายใน 24 ถึง 48 ชั่วโมงแรกหลังเกิดอาการ (กรณีไม่ได้ยาละลายลิ่มเลือด)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::171",
+      "itemNo": "169",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ข้อบ่งชี้ในการให้ยาต้านเกล็ดเลือดคู่ (DAPT: Aspirin + Clopidogrel) ระยะสั้น 21 วันในผู้ป่วยสโตรกคืออะไร?",
+      "questionImage": "",
+      "answer": "ผู้ป่วยที่มีอาการสโตรกตีบชนิดไม่รุนแรง (Minor ischemic stroke NIHSS &lt;= 3)<br> หรือผู้ป่วยสมองขาดเลือดชั่วคราวความเสี่ยงสูง (High-risk TIA ที่มี ABCD2 score &gt;= 4) เพื่อลดการเกิดสโตรกซ้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::172",
+      "itemNo": "170",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยาป้องกันสโตรกทางเลือกแรกสำหรับผู้ป่วยที่มีภาวะหัวใจห้องบนสั่นพลิ้ว (Atrial Fibrillation) คือยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่ม Direct Oral Anticoagulants (DOACs เช่น Apixaban, Rivaroxaban, Dabigatran)<br> มีประสิทธิภาพเหนือกว่า Warfarin และมีความเสี่ยงต่อภาวะเลือดออกในสมองต่ำกว่าอย่างชัดเจน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::173",
+      "itemNo": "171",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "เป้าหมายการควบคุมระดับไขมัน LDL-C ในผู้ป่วยที่มีโรคหลอดเลือดสมองตีบจากหลอดเลือดแดงแข็ง (Atherosclerosis) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ระดับ LDL-C น้อยกว่า 70 mg/dL (หรือลดลง &gt;= 50% จากค่าเริ่มต้น)<br> โดยให้ยากลุ่ม High-intensity statin (เช่น Atorvastatin 40-80 mg หรือ Rosuvastatin 20-40 mg)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::174",
+      "itemNo": "172",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยา Nimodipine มีบทบาทสำคัญอย่างไรในผู้ป่วยที่มีเลือดออกใต้เยื่อหุ้มสมอง (Subarachnoid Hemorrhage / SAH)?",
+      "questionImage": "",
+      "answer": "รับประทานขนาด 60 mg ทุก 4 ชั่วโมง ต่อเนื่องนาน 21 วัน<br> เพื่อป้องกันภาวะหลอดเลือดสมองหดเกร็ง (Cerebral vasospasm) และภาวะสมองขาดเลือดตามหลัง (DCI)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::175",
+      "itemNo": "173",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยากลุ่ม Gabapentinoids (Gabapentin, Pregabalin) ออกฤทธิ์ระงับอาการปวดประสาทด้วยกลไกใด?",
+      "questionImage": "",
+      "answer": "จับกับแอลฟา-2-เดลตา ซับยูนิต (Alpha-2-delta subunit) ของช่องแคลเซียมที่ไวต่อแรงดันไฟฟ้าในไขสันหลัง<br> ลดการหลั่งสารสื่อประสาทก่อความเจ็บปวด เช่น Glutamate และ Substance P",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::176",
+      "itemNo": "174",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ข้อควรระวังสำคัญในการปรับขนาดยา Gabapentin และ Pregabalin คืออะไร?",
+      "questionImage": "",
+      "answer": "ยาถูกขับออกทางไตในรูปเดิมเกือบทั้งหมด (Renally excreted unchanged)<br> ต้องปรับลดขนาดยาตามค่าการทำงานของไต (CrCl) เพื่อป้องกันอาการง่วงซึม มึนงง สับสน และกล้ามเนื้อกระตุก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::177",
+      "itemNo": "175",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยาในกลุ่ม SNRIs ตัวใดที่มีข้อบ่งชี้ระดับ <b style=\"color:#16a34a;\">First-line</b> ในการรักษาอาการปวดปลายประสาทจากโรคเบาหวาน (DPNP)?",
+      "questionImage": "",
+      "answer": "Duloxetine (ขนาด 60 mg วันละครั้ง)<br> ช่วยเพิ่มสาร Serotonin และ Norepinephrine ในวิถียับยั้งความเจ็บปวดจากสมองสู่ไขสันหลัง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::178",
+      "itemNo": "176",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกมาตรฐาน (<b style=\"color:#16a34a;\">Drug of choice</b>) ในการรักษาโรคปวดเส้นประสาทใบหน้า (Trigeminal neuralgia) คือยาใด?",
+      "questionImage": "",
+      "answer": "Carbamazepine (ขนาดเริ่มต้น 100-200 mg วันละ 1-2 ครั้ง แล้วค่อยๆ ปรับขึ้น)<br> หรือ Oxcarbazepine มีประสิทธิผลระงับอาการปวดแปล๊บคล้ายไฟช็อตที่ใบหน้าได้ดีที่สุด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::179",
+      "itemNo": "177",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "แผ่นแปะเฉพาะที่ 5% Lidocaine patch มีข้อบ่งใช้เด่นและคำแนะนำในการใช้อย่างไร?",
+      "questionImage": "",
+      "answer": "ใช้บรรเทาอาการปวดแสบร้อนปลายประสาทหลังงูสวัด (Postherpetic neuralgia / PHN)<br> แปะบริเวณผิวหนังที่ปวดวันละ 1 ครั้ง นานไม่เกิน 12 ชั่วโมงต่อวัน (แปะ 12 ชม. พัก 12 ชม.)",
+      "answerImage": "",
+      "note": ""
     }
   ],
   "10. Psychiatric": [
@@ -15221,6 +15528,90 @@ window.OFFLINE_CARDS = {
       "question": "ยา Propranolol และกลุ่ม \\beta-adrenoceptor antagonists มีประโยชน์อย่างไรในแง่ของความวิตกกังวล?",
       "questionImage": "",
       "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน โดยรับประทานก่อนเริ่มงาน 30-60 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::53",
+      "itemNo": "50",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกในการรักษาโรคสมาธิสั้น (ADHD) ในเด็กและวัยรุ่นคือยาใดและออกฤทธิ์อย่างไร?",
+      "questionImage": "",
+      "answer": "Methylphenidate (Ritalin, Concerta) ออกฤทธิ์กระตุ้นระบบประสาทส่วนกลางโดยยับยั้ง DAT และ NET<br> ช่วยเพิ่มสมาธิ ลดความหุนหันพลันแล่น จัดเป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::54",
+      "itemNo": "51",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์และการตรวจติดตามที่สำคัญในเด็กที่รับประทานยา Methylphenidate คืออะไร?",
+      "questionImage": "",
+      "answer": "เบื่ออาหาร น้ำหนักลด นอนไม่หลับ หัวใจเต้นเร็ว และความดันโลหิตสูงขึ้น<br> ต้องติดตามกราฟการเจริญเติบโต (ส่วนสูงและน้ำหนัก) ทุก 6 เดือน และตรวจความดันโลหิตสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::55",
+      "itemNo": "52",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยารักษาโรคสมาธิสั้นกลุ่มที่ไม่ใช่สารกระตุ้นประสาท (Non-stimulant) ที่นิยมใช้เมื่อมีข้อห้ามใช้ Methylphenidate คือยาใด?",
+      "questionImage": "",
+      "answer": "Atomoxetine (Strattera) ออกฤทธิ์ยับยั้ง Selective Norepinephrine Reuptake Inhibitor (NRI)<br> ไม่เสี่ยงต่อการติดยา เหมาะสำหรับผู้ป่วยที่มีประวัติติดสารเสพติดหรือมีอาการกระตุก (Tics) ร่วมด้วย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::56",
+      "itemNo": "53",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "อาการแสดงของภาวะถอนสุราเฉียบพลัน (Alcohol Withdrawal Syndrome) มีลักษณะอย่างไร?",
+      "questionImage": "",
+      "answer": "มือสั่น เหงื่อแตก กระสับกระส่าย คลื่นไส้ หัวใจเต้นเร็ว <b style=\"color:#dc2626;\">ชัก</b> และอาจเกิดเพ้อสับสน (Delirium Tremens)<br> มักเกิดขึ้นหลังหยุดหรือลดปริมาณการดื่มสุราภายใน 6-48 ชั่วโมง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::57",
+      "itemNo": "54",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกในการรักษาและป้องกันอาการถอนสุรารุนแรงคือยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยาในกลุ่ม Benzodiazepines (เช่น Diazepam, Chlordiazepoxide หรือ Lorazepam ในรายตับแข็ง)<br> ช่วยเพิ่มฤทธิ์ของ GABA ลดการตื่นตัวของสมอง ป้องกันอาการชักและภาวะเพ้อสับสน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::58",
+      "itemNo": "55",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "กฎเหล็กในการให้สารน้ำและวิตามินบี 1 ในผู้ป่วยติดสุราเรื้อรังเพื่อป้องกัน Wernicke&#039;s Encephalopathy คืออะไร?",
+      "questionImage": "",
+      "answer": "ต้องให้ Vitamin B1 (Thiamine) ทางหลอดเลือดดำ ก่อนหรือพร้อมกับการให้น้ำตาลกลูโคส (Dextrose) เสมอ<br> ห้ามให้น้ำตาลกลูโคสก่อน Thiamine เด็ดขาด เพราะจะดึง Thiamine ไปใช้จนหมดและกระตุ้นให้สมองเสื่อมถาวรเฉียบพลัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::59",
+      "itemNo": "56",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาที่ช่วยรักษาภาวะติดสุราเรื้อรังโดยทำให้เกิดปฏิกิริยาไม่พึงประสงค์รุนแรงเมื่อดื่มแอลกอฮอล์คือยาใด?",
+      "questionImage": "",
+      "answer": "Disulfiram (Antabuse) ยับยั้งเอนไซม์ Aldehyde dehydrogenase<br> ทำให้เกิดการคั่งของ Acetaldehyde ส่งผลให้หน้าแดง หายใจลำบาก คลื่นไส้อาเจียน และความดันตกทันทีที่ดื่มแอลกอฮอล์",
       "answerImage": "",
       "note": ""
     }
@@ -17276,7 +17667,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::45",
       "itemNo": "43",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Aprepitant มีกลไกการออกฤทธิ์อย่างไร และเด่นในการป้องกัน CINV ระยะใด?",
       "questionImage": "",
@@ -17288,7 +17679,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::46",
       "itemNo": "44",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "สูตรการบริหารยา Aprepitant ชนิดรับประทาน 3 วัน มีขนาดการใช้อย่างไร?",
       "questionImage": "",
@@ -17300,7 +17691,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::47",
       "itemNo": "45",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Fosaprepitant แตกต่างจาก Aprepitant อย่างไร และมีขนาดบริหารยาอย่างไร?",
       "questionImage": "",
@@ -17312,7 +17703,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::48",
       "itemNo": "46",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดต้องลดขนาดยา <b style=\"color:#0284c7;\">Dexamethasone</b> ลงเมื่อใช้ร่วมกับยา Aprepitant?",
       "questionImage": "",
@@ -17324,7 +17715,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::49",
       "itemNo": "47",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาฉีด Ondansetron ทางหลอดเลือดดำจำกัดขนาดยาสูงสุดต่อครั้งไม่เกินเท่าใด เพราะเหตุใด?",
       "questionImage": "",
@@ -17336,7 +17727,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::50",
       "itemNo": "48",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Palonosetron มีคุณสมบัติเด่นเหนือกว่ายากลุ่ม 5-HT3 รุ่นแรกอย่างไร?",
       "questionImage": "",
@@ -17348,7 +17739,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::51",
       "itemNo": "49",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Olanzapine มีบทบาทอย่างไรในการรักษา CINV และขนาดที่แนะนำคือเท่าใด?",
       "questionImage": "",
@@ -17360,7 +17751,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::52",
       "itemNo": "50",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญของ Olanzapine ในผู้ป่วยมะเร็งคืออะไร และจัดการอย่างไร?",
       "questionImage": "",
@@ -17372,7 +17763,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::53",
       "itemNo": "51",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Lorazepam มีบทบาทอย่างไรใน Anticipatory CINV และบริหารยาอย่างไร?",
       "questionImage": "",
@@ -17384,7 +17775,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::54",
       "itemNo": "52",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "หากผู้ป่วยที่ได้รับ Metoclopramide เกิดอาการคอบิดเกร็ง ตาเหลือก (EPS) รักษาด้วยยาใด?",
       "questionImage": "",
@@ -17396,7 +17787,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::55",
       "itemNo": "53",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การอมน้ำแข็ง (Oral Cryotherapy) มีประโยชน์ในการป้องกันเยื่อบุช่องปากอักเสบจากยาใด?",
       "questionImage": "",
@@ -17408,7 +17799,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::56",
       "itemNo": "54",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "น้ำยาบ้วนปากสูตรผสม (Magic Mouthwash) นิยมผสมสารใดบ้างเพื่อบรรเทาแผลในปาก?",
       "questionImage": "",
@@ -17420,7 +17811,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::57",
       "itemNo": "55",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ข้อบ่งชี้ในการให้ยา G-CSF เพื่อป้องกันภาวะเม็ดเลือดขาวต่ำติดเชื้อ (Primary Prophylaxis) คืออะไร?",
       "questionImage": "",
@@ -17432,7 +17823,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::58",
       "itemNo": "56",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เปรียบเทียบวิธีการบริหารยาระหว่าง Filgrastim และ Pegfilgrastim?",
       "questionImage": "",
@@ -17444,7 +17835,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::59",
       "itemNo": "57",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "กฎการเว้นระยะเวลาในการฉีดยา G-CSF สัมพันธ์กับยาเคมีบำบัดอย่างไร?",
       "questionImage": "",
@@ -17456,7 +17847,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::60",
       "itemNo": "58",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงที่พบบ่อยที่สุดของยากลุ่ม G-CSF คืออะไร และรักษาด้วยยาใด?",
       "questionImage": "",
@@ -17468,7 +17859,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::61",
       "itemNo": "59",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงมีคำเตือนการใช้ยากระตุ้นการสร้างเม็ดเลือดแดง (ESAs) ในผู้ป่วยมะเร็ง?",
       "questionImage": "",
@@ -17480,7 +17871,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::62",
       "itemNo": "60",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาชนิดใดใช้ลดความเสี่ยงกระดูกหักและการกดทับไขสันหลังในผู้ป่วยมะเร็งลุกลามไปกระดูก?",
       "questionImage": "",
@@ -17492,7 +17883,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::63",
       "itemNo": "61",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การป้องกันภาวะกระดูกขากรรไกรตาย (ONJ) จากการใช้ Zoledronic acid หรือ Denosumab คืออะไร?",
       "questionImage": "",
@@ -17504,7 +17895,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::64",
       "itemNo": "62",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "อาการปวดกำเริบฉับพลัน (Breakthrough Pain) ในผู้ป่วยมะเร็งมีหลักการคำนวณขนาดยาแก้ปวดอย่างไร?",
       "questionImage": "",
@@ -17516,7 +17907,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::65",
       "itemNo": "63",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การป้องกันภาวะท้องผูกจากการใช้ยาแก้ปวดกลุ่ม Opioids ในผู้ป่วยมะเร็งมีแนวทางอย่างไร?",
       "questionImage": "",
@@ -17528,7 +17919,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::66",
       "itemNo": "64",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "<b style=\"color:#0284c7;\">Dexamethasone</b> มีประโยชน์อย่างไรในการบรรเทาอาการปวดจากมะเร็งลุกลามไปกระดูก?",
       "questionImage": "",
@@ -17540,7 +17931,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::67",
       "itemNo": "65",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "สรุปแผนการให้ยาต้านอาเจียนในวันที่ 2-4 หลังได้รับยาเคมีกลุ่ม HEC?",
       "questionImage": "",
@@ -17552,7 +17943,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::68",
       "itemNo": "66",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "มะเร็งเต้านมชนิดตัวรับฮอร์โมนเป็นบวก (HR-positive) หมายถึงมีการตรวจพบตัวรับใด?",
       "questionImage": "",
@@ -17564,7 +17955,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::69",
       "itemNo": "67",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาต้านฮอร์โมนมาตรฐานทางเลือกแรกในสตรี &#039;ก่อนหมดประจำเดือน&#039; ที่เป็นมะเร็งเต้านม HR+ คืออะไร?",
       "questionImage": "",
@@ -17576,7 +17967,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::70",
       "itemNo": "68",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "กรณีสตรีก่อนหมดประจำเดือนที่มีความเสี่ยงสูง มีทางเลือกการรักษาด้วยฮอร์โมนอย่างไร?",
       "questionImage": "",
@@ -17588,7 +17979,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::71",
       "itemNo": "69",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Tamoxifen มีความเสี่ยงต่อการเกิดโรคร้ายแรงใดที่ต้องติดตามอย่างใกล้ชิด?",
       "questionImage": "",
@@ -17600,7 +17991,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::72",
       "itemNo": "70",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Tamoxifen ต้องอาศัยเอนไซม์ใดในการเปลี่ยนเป็นสารออกฤทธิ์หลัก (Active Metabolite)?",
       "questionImage": "",
@@ -17612,7 +18003,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::73",
       "itemNo": "71",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงห้ามใช้ Tamoxifen ร่วมกับยาต้านซึมเศร้า Fluoxetine หรือ Paroxetine?",
       "questionImage": "",
@@ -17624,7 +18015,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::74",
       "itemNo": "72",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาต้านฮอร์โมนทางเลือกแรกที่มีประสิทธิภาพสูงสุดในสตรี &#039;หลังหมดประจำเดือน&#039; คือกลุ่มใด?",
       "questionImage": "",
@@ -17636,7 +18027,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::75",
       "itemNo": "73",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงใช้ยากลุ่ม Aromatase Inhibitors ได้ผลเฉพาะในสตรีหลังหมดประจำเดือน?",
       "questionImage": "",
@@ -17648,7 +18039,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::76",
       "itemNo": "74",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญระยะยาวของยากลุ่ม Aromatase Inhibitors คืออะไร?",
       "questionImage": "",
@@ -17660,7 +18051,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::77",
       "itemNo": "75",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การตรวจติดตามความหนาแน่นกระดูกในผู้ป่วยที่ได้รับยา Aromatase Inhibitor ทำอย่างไร?",
       "questionImage": "",
@@ -17672,7 +18063,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::78",
       "itemNo": "76",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เกณฑ์การตรวจยืนยันว่าเป็นมะเร็งเต้านมชนิด HER2-positive คืออะไร?",
       "questionImage": "",
@@ -17684,7 +18075,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::79",
       "itemNo": "77",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Trastuzumab (Herceptin) มีกลไกการออกฤทธิ์ในการรักษามะเร็งเต้านมอย่างไร?",
       "questionImage": "",
@@ -17696,7 +18087,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::80",
       "itemNo": "78",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "พิษต่อหัวใจจาก Trastuzumab มีลักษณะแตกต่างจาก Doxorubicin อย่างไร?",
       "questionImage": "",
@@ -17708,7 +18099,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::81",
       "itemNo": "79",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การตรวจติดตามการทำงานของหัวใจในผู้ป่วยที่ได้รับ Trastuzumab มีแนวทางอย่างไร?",
       "questionImage": "",
@@ -17720,7 +18111,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::82",
       "itemNo": "80",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เหตุใดจึงมีข้อห้ามเด็ดขาดไม่ให้ยา Trastuzumab พร้อมกับ Doxorubicin ในเวลาเดียวกัน?",
       "questionImage": "",
@@ -17732,7 +18123,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::83",
       "itemNo": "81",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Pertuzumab (Perjeta) มีกลไกเสริมฤทธิ์ร่วมกับ Trastuzumab อย่างไร?",
       "questionImage": "",
@@ -17744,7 +18135,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::84",
       "itemNo": "82",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Trastuzumab Emtansine (T-DM1) มีโครงสร้างและกลไกการออกฤทธิ์อย่างไร?",
       "questionImage": "",
@@ -17756,7 +18147,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::85",
       "itemNo": "83",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Trastuzumab Deruxtecan (Enhertu) มีคำเตือนกล่องดำ (Black Box Warning) เรื่องใด?",
       "questionImage": "",
@@ -17768,7 +18159,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::86",
       "itemNo": "84",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Triple-Negative Breast Cancer (TNBC) มีลักษณะและแนวทางการรักษาอย่างไร?",
       "questionImage": "",
@@ -17780,7 +18171,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::87",
       "itemNo": "85",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัด FOLFOX ในมะเร็งลำไส้ใหญ่ ประกอบด้วยตัวยาใดบ้าง?",
       "questionImage": "",
@@ -17792,7 +18183,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::88",
       "itemNo": "86",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัด FOLFIRI ประกอบด้วยตัวยาใดบ้าง?",
       "questionImage": "",
@@ -17804,7 +18195,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::89",
       "itemNo": "87",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Capecitabine (Xeloda) เปลี่ยนเป็น 5-Fluorouracil ในร่างกายได้อย่างไร?",
       "questionImage": "",
@@ -17816,7 +18207,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::90",
       "itemNo": "88",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "5-Fluorouracil มีกลไกการออกฤทธิ์ยับยั้งเซลล์มะเร็งอย่างไร?",
       "questionImage": "",
@@ -17828,7 +18219,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::91",
       "itemNo": "89",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "บทบาทของ Leucovorin เมื่อใช้ร่วมกับยา 5-Fluorouracil คืออะไร?",
       "questionImage": "",
@@ -17840,7 +18231,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::92",
       "itemNo": "90",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ภาวะ Hand-Foot Syndrome (PPE) จากยา Capecitabine/5-FU มีลักษณะและดูแลอย่างไร?",
       "questionImage": "",
@@ -17852,7 +18243,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::93",
       "itemNo": "91",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ภาวะพร่องเอนไซม์ Dihydropyrimidine Dehydrogenase (DPD) ส่งผลต่อ 5-FU อย่างไร?",
       "questionImage": "",
@@ -17864,7 +18255,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::94",
       "itemNo": "92",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ยาชนิดใดเป็นยาแก้พิษเฉพาะ (Antidote) ในกรณีได้รับยา 5-FU หรือ Capecitabine เกินขนาด?",
       "questionImage": "",
@@ -17876,7 +18267,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::95",
       "itemNo": "93",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การตรวจยีน KRAS และ NRAS มีความสำคัญต่อการเลือกยา Anti-EGFR ในมะเร็งลำไส้อย่างไร?",
       "questionImage": "",
@@ -17888,7 +18279,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::96",
       "itemNo": "94",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผื่นคล้ายสิว (Acneiform Rash) จาก Cetuximab มีความสำคัญทางคลินิกอย่างไร?",
       "questionImage": "",
@@ -17900,7 +18291,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::97",
       "itemNo": "95",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ยากลุ่ม Anti-EGFR (Cetuximab/Panitumumab) ทำให้เกิดความผิดปกติของเกลือแร่ใด?",
       "questionImage": "",
@@ -17912,7 +18303,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::98",
       "itemNo": "96",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Bevacizumab (Avastin) มีกลไกการออกฤทธิ์อย่างไรในการรักษามะเร็งลำไส้ใหญ่?",
       "questionImage": "",
@@ -17924,7 +18315,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::99",
       "itemNo": "97",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผลข้างเคียงเฉพาะของ Bevacizumab ที่ต้องตรวจติดตามสม่ำเสมอมีอะไรบ้าง?",
       "questionImage": "",
@@ -17936,7 +18327,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::100",
       "itemNo": "98",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เหตุใดต้องหยุดยา Bevacizumab ล่วงหน้าอย่างน้อย 4-6 สัปดาห์ก่อนการผ่าตัดใหญ่?",
       "questionImage": "",
@@ -17948,7 +18339,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::101",
       "itemNo": "99",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผู้ป่วยมะเร็งลำไส้ใหญ่ที่มีลักษณะ MSI-High หรือ dMMR ตอบสนองต่อการรักษาด้วยยาใด?",
       "questionImage": "",
@@ -17960,7 +18351,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::102",
       "itemNo": "100",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งลำไส้ใหญ่ที่มีการกลายพันธุ์ของยีน BRAF V600E มีแนวทางการรักษาด้วยยามุ่งเป้าอย่างไร?",
       "questionImage": "",
@@ -17972,7 +18363,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::103",
       "itemNo": "101",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งปอดชนิดเซลล์เล็ก (SCLC) แตกต่างจากชนิดเซลล์ไม่เล็ก (NSCLC) ในแง่การดำเนินโรคอย่างไร?",
       "questionImage": "",
@@ -17984,7 +18375,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::104",
       "itemNo": "102",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การกลายพันธุ์ของยีน EGFR ชนิดใดที่พบบ่อยและตอบสนองดีต่อยากลุ่ม EGFR-TKIs?",
       "questionImage": "",
@@ -17996,7 +18387,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::105",
       "itemNo": "103",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Osimertinib (Tagrisso) มีข้อได้เปรียบอย่างไรในการรักษา NSCLC ที่มี EGFR Mutation?",
       "questionImage": "",
@@ -18008,7 +18399,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::106",
       "itemNo": "104",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผลข้างเคียงที่พบบ่อยของยากลุ่ม EGFR-TKIs (เช่น Osimertinib, Gefitinib) คืออะไร?",
       "questionImage": "",
@@ -18020,7 +18411,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::107",
       "itemNo": "105",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งปอดที่มีการจัดเรียงตัวใหม่ของยีน ALK (EML4-ALK) นิยมรักษาด้วยยาใดเป็นทางเลือกแรก?",
       "questionImage": "",
@@ -18032,7 +18423,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::108",
       "itemNo": "106",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เกณฑ์การให้ยาเดี่ยว Pembrolizumab เป็นการรักษาทางเลือกแรกในมะเร็งปอด NSCLC คืออะไร?",
       "questionImage": "",
@@ -18044,7 +18435,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::109",
       "itemNo": "107",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัดมาตรฐานทางเลือกแรกสำหรับมะเร็งปอดชนิดเซลล์เล็ก (SCLC) คือสูตรใด?",
       "questionImage": "",
@@ -18056,7 +18447,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::110",
       "itemNo": "108",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เป้าหมายของระดับฮอร์โมนเทสโทสเตอโรนในการรักษาด้วย Androgen Deprivation Therapy (ADT) คือเท่าใด?",
       "questionImage": "",
@@ -18068,7 +18459,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::111",
       "itemNo": "109",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ปรากฏการณ์ Flare Up จากยาฉีดกลุ่ม GnRH Agonists (Leuprolide, Goserelin) เกิดขึ้นได้อย่างไร?",
       "questionImage": "",
@@ -18080,7 +18471,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::112",
       "itemNo": "110",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "การป้องกันอันตรายจากปรากฏการณ์ Testosterone Flare มีแนวทางปฏิบัติอย่างไร?",
       "questionImage": "",
@@ -18092,7 +18483,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::113",
       "itemNo": "111",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยากลุ่ม GnRH Antagonists (Degarelix, Relugolix) มีข้อดีเหนือกว่ากลุ่ม Agonists อย่างไร?",
       "questionImage": "",
@@ -18104,7 +18495,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::114",
       "itemNo": "112",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Abiraterone Acetate (Zytiga) มีกลไกการยับยั้งมะเร็งต่อมลูกหมากอย่างไร?",
       "questionImage": "",
@@ -18116,7 +18507,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::115",
       "itemNo": "113",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เหตุใดการให้ยา Abiraterone จึงต้องรับประทานคู่กับยา Prednisone เสมอ?",
       "questionImage": "",
@@ -18128,7 +18519,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::116",
       "itemNo": "114",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Enzalutamide (Xtandi) มีกลไกอย่างไร และมีคำเตือนความปลอดภัยเรื่องใด?",
       "questionImage": "",
@@ -18140,7 +18531,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::117",
       "itemNo": "115",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยภาวะไข้ (Fever) ใน Febrile Neutropenia (FN) กำหนดไว้อย่างไร?",
       "questionImage": "",
@@ -18152,7 +18543,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::118",
       "itemNo": "116",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยภาวะเม็ดเลือดขาวต่ำ (Neutropenia) ใน FN กำหนดค่า ANC เท่าใด?",
       "questionImage": "",
@@ -18164,7 +18555,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::119",
       "itemNo": "117",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สูตรการคำนวณค่า Absolute Neutrophil Count (ANC) มีวิธีคำนวณอย่างไร?",
       "questionImage": "",
@@ -18176,7 +18567,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::120",
       "itemNo": "118",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กฎชั่วโมงทอง (Golden Hour) ในการรักษาผู้ป่วย Febrile Neutropenia มีข้อกำหนดอย่างไร?",
       "questionImage": "",
@@ -18188,7 +18579,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::121",
       "itemNo": "119",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาปฏิชีวนะฉีดเดี่ยวทางเลือกแรกสำหรับผู้ป่วย Febrile Neutropenia คือยากลุ่มใด?",
       "questionImage": "",
@@ -18200,7 +18591,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::122",
       "itemNo": "120",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ข้อบ่งชี้ในการเพิ่มยา <b style=\"color:#0284c7;\">Vancomycin</b> ตั้งแต่เริ่มต้นในผู้ป่วย Febrile Neutropenia คืออะไร?",
       "questionImage": "",
@@ -18212,7 +18603,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::123",
       "itemNo": "121",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กลุ่มอาการสลายตัวของเนื้องอก (Tumor Lysis Syndrome: TLS) มักเกิดจากมะเร็งชนิดใด?",
       "questionImage": "",
@@ -18224,7 +18615,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::124",
       "itemNo": "122",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ความผิดปกติของเกลือแร่ 4 ประการตามเกณฑ์ Cairo-Bishop ในภาวะ TLS มีอะไรบ้าง?",
       "questionImage": "",
@@ -18236,7 +18627,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::125",
       "itemNo": "123",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "การป้องกันภาวะกรดยูริกสูงในผู้ป่วย TLS ที่มีความเสี่ยงปานกลางมีแนวทางอย่างไร?",
       "questionImage": "",
@@ -18248,7 +18639,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::126",
       "itemNo": "124",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Rasburicase (Elitek) มีกลไกอย่างไร และมีข้อได้เปรียบเหนือกว่า Allopurinol อย่างไร?",
       "questionImage": "",
@@ -18260,7 +18651,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::127",
       "itemNo": "125",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เหตุใดการใช้ยา Rasburicase จึงมีข้อห้ามใช้อย่างเด็ดขาดในผู้ป่วยที่มีภาวะพร่องเอนไซม์ G6PD?",
       "questionImage": "",
@@ -18272,7 +18663,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::128",
       "itemNo": "126",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สาเหตุส่วนใหญ่ของภาวะแคลเซียมในเลือดสูงจากโรคมะเร็ง (HCM) เกิดจากกลไกใด?",
       "questionImage": "",
@@ -18284,7 +18675,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::129",
       "itemNo": "127",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สูตรคำนวณค่าแคลเซียมปรับแก้ตามระดับอัลบูมิน (Corrected Calcium) คืออะไร?",
       "questionImage": "",
@@ -18296,7 +18687,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::130",
       "itemNo": "128",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ขั้นตอนแรกที่สำคัญที่สุดในการรักษาภาวะฉุกเฉินแคลเซียมในเลือดสูงจากมะเร็งคืออะไร?",
       "questionImage": "",
@@ -18308,7 +18699,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::131",
       "itemNo": "129",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาทางเลือกหลักในการลดระดับแคลเซียมระยะยาวในภาวะ HCM คือยาใดและบริหารอย่างไร?",
       "questionImage": "",
@@ -18320,7 +18711,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::132",
       "itemNo": "130",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Calcitonin มีบทบาทอย่างไรในการรักษา HCM และมีข้อจำกัดเรื่องระยะเวลาการใช้อย่างไร?",
       "questionImage": "",
@@ -18332,7 +18723,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::133",
       "itemNo": "131",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Denosumab (Xgeva 120 mg) มีบทบาทอย่างไรในการรักษาภาวะแคลเซียมในเลือดสูงจากมะเร็ง?",
       "questionImage": "",
@@ -18344,7 +18735,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::134",
       "itemNo": "132",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "อาการแสดงเตือนสำคัญของภาวะไขสันหลังถูกกดทับจากมะเร็ง (Spinal Cord Compression) คืออะไร?",
       "questionImage": "",
@@ -18356,7 +18747,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::135",
       "itemNo": "133",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาชนิดแรกที่ต้องฉีดทันทีเมื่อสงสัยภาวะไขสันหลังถูกกดทับจากมะเร็งคือยาใด?",
       "questionImage": "",
@@ -18368,7 +18759,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::136",
       "itemNo": "134",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กลุ่มอาการ Superior Vena Cava (SVC) Syndrome มีลักษณะทางคลินิกเด่นอย่างไร?",
       "questionImage": "",
@@ -18380,7 +18771,7 @@ window.OFFLINE_CARDS = {
       "id": "14. Oncologic::137",
       "itemNo": "135",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สรุปเป้าหมายเวลาวิกฤตในการรักษา Febrile Neutropenia และ Spinal Cord Compression?",
       "questionImage": "",
@@ -23520,18 +23911,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
-      "question": "ปุ่มกระดูกงอกบริเวณข้อนิ้วมือส่วนปลายสุด (DIP joint) ในผู้ป่วยข้อเสื่อม เรียกว่าอะไร?",
-      "questionImage": "",
-      "answer": "Heberden&#039;s nodes<br> เกิดจากกระดูกงอก (Osteophytes) ที่ข้อ Distal Interphalangeal",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::7",
-      "itemNo": "5",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
       "question": "ปุ่มกระดูกงอกบริเวณข้อนิ้วมือส่วนกลาง (PIP joint) ในผู้ป่วยข้อเสื่อม เรียกว่าอะไร?",
       "questionImage": "",
       "answer": "Bouchard&#039;s nodes<br> จำ B มาก่อน H (Bouchard ข้อกลางนิ้ว PIP, Heberden ข้อปลายนิ้ว DIP)",
@@ -23539,44 +23918,20 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::8",
-      "itemNo": "6",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
-      "question": "เสียงกรอบแกรบในข้อขณะเคลื่อนไหวที่ตรวจพบในโรคข้อเสื่อม เรียกว่าอะไร?",
-      "questionImage": "",
-      "answer": "Crepitus<br> เกิดจากการเสียดสีกันของผิวข้อที่ขรุขระและสูญเสียน้ำหล่อเลี้ยงข้อ",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::9",
+      "id": "1. Musculoskeleton::7",
       "itemNo": "7",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
       "question": "ลักษณะเด่น 4 ประการที่พบบนภาพถ่ายรังสีเอกซเรย์ของข้อเสื่อมมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "1. ข้อแคบไม่สมมาตร 2. กระดูกงอก (Osteophytes) 3. กระดูกใต้ข้อแข็งหนา 4. ถุงน้ำใต้กระดูก<br> ต่างจาก RA ที่ช่องว่างแคบแบบสมมาตรและมีกระดูกกร่อน (Bone erosions)",
+      "answer": "1. ข้อแคบไม่สมมาตร <br>2. กระดูกงอก (Osteophytes) <br>3. กระดูกใต้ข้อแข็งหนา <br>4. ถุงน้ำใต้กระดูก<br> <br>ต่างจาก RA ที่ช่องว่างแคบแบบสมมาตรและมีกระดูกกร่อน (Bone erosions)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::10",
-      "itemNo": "8",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
-      "question": "ปัจจัยเสี่ยงที่ไม่สามารถแก้ไขได้ในการเกิดโรคข้อเสื่อมมีอะไรบ้าง?",
-      "questionImage": "",
-      "answer": "อายุที่มากขึ้น (สำคัญที่สุด), เพศหญิงหลังหมดประจำเดือน, พันธุกรรม, และโครงสร้างข้อแต่กำเนิด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::11",
-      "itemNo": "9",
+      "id": "1. Musculoskeleton::8",
+      "itemNo": "6",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23587,8 +23942,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::12",
-      "itemNo": "10",
+      "id": "1. Musculoskeleton::9",
+      "itemNo": "7",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23599,8 +23954,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::13",
-      "itemNo": "11",
+      "id": "1. Musculoskeleton::10",
+      "itemNo": "8",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23611,8 +23966,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::14",
-      "itemNo": "12",
+      "id": "1. Musculoskeleton::11",
+      "itemNo": "9",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23623,8 +23978,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::15",
-      "itemNo": "13",
+      "id": "1. Musculoskeleton::12",
+      "itemNo": "10",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23635,8 +23990,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::16",
-      "itemNo": "14",
+      "id": "1. Musculoskeleton::13",
+      "itemNo": "11",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23647,8 +24002,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::17",
-      "itemNo": "15",
+      "id": "1. Musculoskeleton::14",
+      "itemNo": "12",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23659,8 +24014,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::18",
-      "itemNo": "16",
+      "id": "1. Musculoskeleton::15",
+      "itemNo": "13",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23671,8 +24026,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::19",
-      "itemNo": "17",
+      "id": "1. Musculoskeleton::16",
+      "itemNo": "14",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23683,8 +24038,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::20",
-      "itemNo": "18",
+      "id": "1. Musculoskeleton::17",
+      "itemNo": "15",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23695,8 +24050,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::21",
-      "itemNo": "19",
+      "id": "1. Musculoskeleton::18",
+      "itemNo": "16",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23707,8 +24062,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::22",
-      "itemNo": "20",
+      "id": "1. Musculoskeleton::19",
+      "itemNo": "17",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23719,8 +24074,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::23",
-      "itemNo": "21",
+      "id": "1. Musculoskeleton::20",
+      "itemNo": "18",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23731,8 +24086,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::24",
-      "itemNo": "22",
+      "id": "1. Musculoskeleton::21",
+      "itemNo": "19",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23743,8 +24098,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::25",
-      "itemNo": "23",
+      "id": "1. Musculoskeleton::22",
+      "itemNo": "20",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23755,8 +24110,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::26",
-      "itemNo": "24",
+      "id": "1. Musculoskeleton::23",
+      "itemNo": "21",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23767,8 +24122,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::27",
-      "itemNo": "25",
+      "id": "1. Musculoskeleton::24",
+      "itemNo": "22",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23779,8 +24134,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::28",
-      "itemNo": "26",
+      "id": "1. Musculoskeleton::25",
+      "itemNo": "23",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23791,8 +24146,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::29",
-      "itemNo": "27",
+      "id": "1. Musculoskeleton::26",
+      "itemNo": "24",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23803,8 +24158,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::30",
-      "itemNo": "28",
+      "id": "1. Musculoskeleton::27",
+      "itemNo": "25",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23815,8 +24170,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::31",
-      "itemNo": "29",
+      "id": "1. Musculoskeleton::28",
+      "itemNo": "26",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23827,8 +24182,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::32",
-      "itemNo": "30",
+      "id": "1. Musculoskeleton::29",
+      "itemNo": "27",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23839,8 +24194,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::33",
-      "itemNo": "31",
+      "id": "1. Musculoskeleton::30",
+      "itemNo": "28",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23851,8 +24206,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::34",
-      "itemNo": "32",
+      "id": "1. Musculoskeleton::31",
+      "itemNo": "29",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23863,8 +24218,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::35",
-      "itemNo": "33",
+      "id": "1. Musculoskeleton::32",
+      "itemNo": "30",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23875,8 +24230,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::36",
-      "itemNo": "34",
+      "id": "1. Musculoskeleton::33",
+      "itemNo": "31",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23887,8 +24242,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::37",
-      "itemNo": "35",
+      "id": "1. Musculoskeleton::34",
+      "itemNo": "32",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23899,8 +24254,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::38",
-      "itemNo": "36",
+      "id": "1. Musculoskeleton::35",
+      "itemNo": "33",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23911,8 +24266,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::39",
-      "itemNo": "37",
+      "id": "1. Musculoskeleton::36",
+      "itemNo": "34",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23923,8 +24278,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::40",
-      "itemNo": "38",
+      "id": "1. Musculoskeleton::37",
+      "itemNo": "35",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23935,8 +24290,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::41",
-      "itemNo": "39",
+      "id": "1. Musculoskeleton::38",
+      "itemNo": "36",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23947,8 +24302,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::42",
-      "itemNo": "40",
+      "id": "1. Musculoskeleton::39",
+      "itemNo": "37",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23959,8 +24314,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::43",
-      "itemNo": "41",
+      "id": "1. Musculoskeleton::40",
+      "itemNo": "38",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23971,8 +24326,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::44",
-      "itemNo": "42",
+      "id": "1. Musculoskeleton::41",
+      "itemNo": "39",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23983,8 +24338,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::45",
-      "itemNo": "43",
+      "id": "1. Musculoskeleton::42",
+      "itemNo": "40",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -23995,8 +24350,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::46",
-      "itemNo": "44",
+      "id": "1. Musculoskeleton::43",
+      "itemNo": "41",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -24007,8 +24362,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::47",
-      "itemNo": "45",
+      "id": "1. Musculoskeleton::44",
+      "itemNo": "42",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -24019,8 +24374,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::48",
-      "itemNo": "46",
+      "id": "1. Musculoskeleton::45",
+      "itemNo": "43",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24031,8 +24386,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::49",
-      "itemNo": "47",
+      "id": "1. Musculoskeleton::46",
+      "itemNo": "44",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24043,8 +24398,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::50",
-      "itemNo": "48",
+      "id": "1. Musculoskeleton::47",
+      "itemNo": "45",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24055,8 +24410,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::51",
-      "itemNo": "49",
+      "id": "1. Musculoskeleton::48",
+      "itemNo": "46",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24067,8 +24422,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::52",
-      "itemNo": "50",
+      "id": "1. Musculoskeleton::49",
+      "itemNo": "47",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24079,8 +24434,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::53",
-      "itemNo": "51",
+      "id": "1. Musculoskeleton::50",
+      "itemNo": "48",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24091,8 +24446,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::54",
-      "itemNo": "52",
+      "id": "1. Musculoskeleton::51",
+      "itemNo": "49",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24103,8 +24458,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::55",
-      "itemNo": "53",
+      "id": "1. Musculoskeleton::52",
+      "itemNo": "50",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24115,8 +24470,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::56",
-      "itemNo": "54",
+      "id": "1. Musculoskeleton::53",
+      "itemNo": "51",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24127,8 +24482,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::57",
-      "itemNo": "55",
+      "id": "1. Musculoskeleton::54",
+      "itemNo": "52",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24139,8 +24494,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::58",
-      "itemNo": "56",
+      "id": "1. Musculoskeleton::55",
+      "itemNo": "53",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24151,8 +24506,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::59",
-      "itemNo": "57",
+      "id": "1. Musculoskeleton::56",
+      "itemNo": "54",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24163,8 +24518,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::60",
-      "itemNo": "58",
+      "id": "1. Musculoskeleton::57",
+      "itemNo": "55",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24175,8 +24530,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::61",
-      "itemNo": "59",
+      "id": "1. Musculoskeleton::58",
+      "itemNo": "56",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24187,8 +24542,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::62",
-      "itemNo": "60",
+      "id": "1. Musculoskeleton::59",
+      "itemNo": "57",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24199,8 +24554,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::63",
-      "itemNo": "61",
+      "id": "1. Musculoskeleton::60",
+      "itemNo": "58",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24211,8 +24566,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::64",
-      "itemNo": "62",
+      "id": "1. Musculoskeleton::61",
+      "itemNo": "59",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24223,8 +24578,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::65",
-      "itemNo": "63",
+      "id": "1. Musculoskeleton::62",
+      "itemNo": "60",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24235,8 +24590,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::66",
-      "itemNo": "64",
+      "id": "1. Musculoskeleton::63",
+      "itemNo": "61",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24247,8 +24602,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::67",
-      "itemNo": "65",
+      "id": "1. Musculoskeleton::64",
+      "itemNo": "62",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24259,8 +24614,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::68",
-      "itemNo": "66",
+      "id": "1. Musculoskeleton::65",
+      "itemNo": "63",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24271,8 +24626,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::69",
-      "itemNo": "67",
+      "id": "1. Musculoskeleton::66",
+      "itemNo": "64",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24283,8 +24638,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::70",
-      "itemNo": "68",
+      "id": "1. Musculoskeleton::67",
+      "itemNo": "65",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24295,8 +24650,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::71",
-      "itemNo": "69",
+      "id": "1. Musculoskeleton::68",
+      "itemNo": "66",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24307,8 +24662,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::72",
-      "itemNo": "70",
+      "id": "1. Musculoskeleton::69",
+      "itemNo": "67",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24319,8 +24674,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::73",
-      "itemNo": "71",
+      "id": "1. Musculoskeleton::70",
+      "itemNo": "68",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24331,8 +24686,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::74",
-      "itemNo": "72",
+      "id": "1. Musculoskeleton::71",
+      "itemNo": "69",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24343,8 +24698,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::75",
-      "itemNo": "73",
+      "id": "1. Musculoskeleton::72",
+      "itemNo": "70",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24355,8 +24710,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::76",
-      "itemNo": "74",
+      "id": "1. Musculoskeleton::73",
+      "itemNo": "71",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24367,8 +24722,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::77",
-      "itemNo": "75",
+      "id": "1. Musculoskeleton::74",
+      "itemNo": "72",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24379,8 +24734,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::78",
-      "itemNo": "76",
+      "id": "1. Musculoskeleton::75",
+      "itemNo": "73",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24391,8 +24746,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::79",
-      "itemNo": "77",
+      "id": "1. Musculoskeleton::76",
+      "itemNo": "74",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24403,8 +24758,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::80",
-      "itemNo": "78",
+      "id": "1. Musculoskeleton::77",
+      "itemNo": "75",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24415,8 +24770,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::81",
-      "itemNo": "79",
+      "id": "1. Musculoskeleton::78",
+      "itemNo": "76",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24427,8 +24782,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::82",
-      "itemNo": "80",
+      "id": "1. Musculoskeleton::79",
+      "itemNo": "77",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24439,8 +24794,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::83",
-      "itemNo": "81",
+      "id": "1. Musculoskeleton::80",
+      "itemNo": "78",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24451,8 +24806,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::84",
-      "itemNo": "82",
+      "id": "1. Musculoskeleton::81",
+      "itemNo": "79",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24463,8 +24818,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::85",
-      "itemNo": "83",
+      "id": "1. Musculoskeleton::82",
+      "itemNo": "80",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24475,8 +24830,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::86",
-      "itemNo": "84",
+      "id": "1. Musculoskeleton::83",
+      "itemNo": "81",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24487,8 +24842,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::87",
-      "itemNo": "85",
+      "id": "1. Musculoskeleton::84",
+      "itemNo": "82",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24499,8 +24854,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::88",
-      "itemNo": "86",
+      "id": "1. Musculoskeleton::85",
+      "itemNo": "83",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24511,8 +24866,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::89",
-      "itemNo": "87",
+      "id": "1. Musculoskeleton::86",
+      "itemNo": "84",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24523,8 +24878,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::90",
-      "itemNo": "88",
+      "id": "1. Musculoskeleton::87",
+      "itemNo": "85",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24535,8 +24890,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::91",
-      "itemNo": "89",
+      "id": "1. Musculoskeleton::88",
+      "itemNo": "86",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24547,8 +24902,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::92",
-      "itemNo": "90",
+      "id": "1. Musculoskeleton::89",
+      "itemNo": "87",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -24559,8 +24914,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::93",
-      "itemNo": "91",
+      "id": "1. Musculoskeleton::90",
+      "itemNo": "88",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24571,8 +24926,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::94",
-      "itemNo": "92",
+      "id": "1. Musculoskeleton::91",
+      "itemNo": "89",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24583,8 +24938,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::95",
-      "itemNo": "93",
+      "id": "1. Musculoskeleton::92",
+      "itemNo": "90",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24595,8 +24950,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::96",
-      "itemNo": "94",
+      "id": "1. Musculoskeleton::93",
+      "itemNo": "91",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24607,8 +24962,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::97",
-      "itemNo": "95",
+      "id": "1. Musculoskeleton::94",
+      "itemNo": "92",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24619,8 +24974,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::98",
-      "itemNo": "96",
+      "id": "1. Musculoskeleton::95",
+      "itemNo": "93",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24631,8 +24986,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::99",
-      "itemNo": "97",
+      "id": "1. Musculoskeleton::96",
+      "itemNo": "94",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24643,8 +24998,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::100",
-      "itemNo": "98",
+      "id": "1. Musculoskeleton::97",
+      "itemNo": "95",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24655,8 +25010,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::101",
-      "itemNo": "99",
+      "id": "1. Musculoskeleton::98",
+      "itemNo": "96",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24667,8 +25022,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::102",
-      "itemNo": "100",
+      "id": "1. Musculoskeleton::99",
+      "itemNo": "97",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24679,8 +25034,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::103",
-      "itemNo": "101",
+      "id": "1. Musculoskeleton::100",
+      "itemNo": "98",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24691,8 +25046,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::104",
-      "itemNo": "102",
+      "id": "1. Musculoskeleton::101",
+      "itemNo": "99",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24703,8 +25058,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::105",
-      "itemNo": "103",
+      "id": "1. Musculoskeleton::102",
+      "itemNo": "100",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24715,8 +25070,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::106",
-      "itemNo": "104",
+      "id": "1. Musculoskeleton::103",
+      "itemNo": "101",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24727,8 +25082,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::107",
-      "itemNo": "105",
+      "id": "1. Musculoskeleton::104",
+      "itemNo": "102",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24739,8 +25094,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::108",
-      "itemNo": "106",
+      "id": "1. Musculoskeleton::105",
+      "itemNo": "103",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24751,8 +25106,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::109",
-      "itemNo": "107",
+      "id": "1. Musculoskeleton::106",
+      "itemNo": "104",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24763,8 +25118,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::110",
-      "itemNo": "108",
+      "id": "1. Musculoskeleton::107",
+      "itemNo": "105",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24775,8 +25130,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::111",
-      "itemNo": "109",
+      "id": "1. Musculoskeleton::108",
+      "itemNo": "106",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24787,8 +25142,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::112",
-      "itemNo": "110",
+      "id": "1. Musculoskeleton::109",
+      "itemNo": "107",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24799,8 +25154,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::113",
-      "itemNo": "111",
+      "id": "1. Musculoskeleton::110",
+      "itemNo": "108",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24811,8 +25166,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::114",
-      "itemNo": "112",
+      "id": "1. Musculoskeleton::111",
+      "itemNo": "109",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24823,8 +25178,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::115",
-      "itemNo": "113",
+      "id": "1. Musculoskeleton::112",
+      "itemNo": "110",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24835,8 +25190,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::116",
-      "itemNo": "114",
+      "id": "1. Musculoskeleton::113",
+      "itemNo": "111",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24847,8 +25202,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::117",
-      "itemNo": "115",
+      "id": "1. Musculoskeleton::114",
+      "itemNo": "112",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24859,8 +25214,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::118",
-      "itemNo": "116",
+      "id": "1. Musculoskeleton::115",
+      "itemNo": "113",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24871,8 +25226,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::119",
-      "itemNo": "117",
+      "id": "1. Musculoskeleton::116",
+      "itemNo": "114",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24883,8 +25238,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::120",
-      "itemNo": "118",
+      "id": "1. Musculoskeleton::117",
+      "itemNo": "115",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24895,8 +25250,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::121",
-      "itemNo": "119",
+      "id": "1. Musculoskeleton::118",
+      "itemNo": "116",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24907,8 +25262,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::122",
-      "itemNo": "120",
+      "id": "1. Musculoskeleton::119",
+      "itemNo": "117",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24919,8 +25274,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::123",
-      "itemNo": "121",
+      "id": "1. Musculoskeleton::120",
+      "itemNo": "118",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24931,8 +25286,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::124",
-      "itemNo": "122",
+      "id": "1. Musculoskeleton::121",
+      "itemNo": "119",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24943,8 +25298,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::125",
-      "itemNo": "123",
+      "id": "1. Musculoskeleton::122",
+      "itemNo": "120",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24955,8 +25310,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::126",
-      "itemNo": "124",
+      "id": "1. Musculoskeleton::123",
+      "itemNo": "121",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24967,8 +25322,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::127",
-      "itemNo": "125",
+      "id": "1. Musculoskeleton::124",
+      "itemNo": "122",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24979,8 +25334,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::128",
-      "itemNo": "126",
+      "id": "1. Musculoskeleton::125",
+      "itemNo": "123",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -24991,8 +25346,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::129",
-      "itemNo": "127",
+      "id": "1. Musculoskeleton::126",
+      "itemNo": "124",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25003,8 +25358,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::130",
-      "itemNo": "128",
+      "id": "1. Musculoskeleton::127",
+      "itemNo": "125",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25015,8 +25370,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::131",
-      "itemNo": "129",
+      "id": "1. Musculoskeleton::128",
+      "itemNo": "126",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25027,8 +25382,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::132",
-      "itemNo": "130",
+      "id": "1. Musculoskeleton::129",
+      "itemNo": "127",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25039,8 +25394,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::133",
-      "itemNo": "131",
+      "id": "1. Musculoskeleton::130",
+      "itemNo": "128",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25051,8 +25406,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::134",
-      "itemNo": "132",
+      "id": "1. Musculoskeleton::131",
+      "itemNo": "129",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25063,8 +25418,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::135",
-      "itemNo": "133",
+      "id": "1. Musculoskeleton::132",
+      "itemNo": "130",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25075,8 +25430,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::136",
-      "itemNo": "134",
+      "id": "1. Musculoskeleton::133",
+      "itemNo": "131",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25087,8 +25442,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::137",
-      "itemNo": "135",
+      "id": "1. Musculoskeleton::134",
+      "itemNo": "132",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -25099,8 +25454,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::138",
-      "itemNo": "136",
+      "id": "1. Musculoskeleton::135",
+      "itemNo": "133",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25111,8 +25466,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::139",
-      "itemNo": "137",
+      "id": "1. Musculoskeleton::136",
+      "itemNo": "134",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25123,8 +25478,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::140",
-      "itemNo": "138",
+      "id": "1. Musculoskeleton::137",
+      "itemNo": "135",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25135,8 +25490,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::141",
-      "itemNo": "139",
+      "id": "1. Musculoskeleton::138",
+      "itemNo": "136",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25147,8 +25502,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::142",
-      "itemNo": "140",
+      "id": "1. Musculoskeleton::139",
+      "itemNo": "137",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25159,8 +25514,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::143",
-      "itemNo": "141",
+      "id": "1. Musculoskeleton::140",
+      "itemNo": "138",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25171,8 +25526,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::144",
-      "itemNo": "142",
+      "id": "1. Musculoskeleton::141",
+      "itemNo": "139",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25183,8 +25538,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::145",
-      "itemNo": "143",
+      "id": "1. Musculoskeleton::142",
+      "itemNo": "140",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25195,8 +25550,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::146",
-      "itemNo": "144",
+      "id": "1. Musculoskeleton::143",
+      "itemNo": "141",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25207,8 +25562,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::147",
-      "itemNo": "145",
+      "id": "1. Musculoskeleton::144",
+      "itemNo": "142",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25219,8 +25574,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::148",
-      "itemNo": "146",
+      "id": "1. Musculoskeleton::145",
+      "itemNo": "143",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25231,8 +25586,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::149",
-      "itemNo": "147",
+      "id": "1. Musculoskeleton::146",
+      "itemNo": "144",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25243,8 +25598,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::150",
-      "itemNo": "148",
+      "id": "1. Musculoskeleton::147",
+      "itemNo": "145",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25255,8 +25610,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::151",
-      "itemNo": "149",
+      "id": "1. Musculoskeleton::148",
+      "itemNo": "146",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25267,8 +25622,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::152",
-      "itemNo": "150",
+      "id": "1. Musculoskeleton::149",
+      "itemNo": "147",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25279,8 +25634,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::153",
-      "itemNo": "151",
+      "id": "1. Musculoskeleton::150",
+      "itemNo": "148",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25291,8 +25646,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::154",
-      "itemNo": "152",
+      "id": "1. Musculoskeleton::151",
+      "itemNo": "149",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25303,8 +25658,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::155",
-      "itemNo": "153",
+      "id": "1. Musculoskeleton::152",
+      "itemNo": "150",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25315,8 +25670,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::156",
-      "itemNo": "154",
+      "id": "1. Musculoskeleton::153",
+      "itemNo": "151",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25327,8 +25682,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::157",
-      "itemNo": "155",
+      "id": "1. Musculoskeleton::154",
+      "itemNo": "152",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25339,8 +25694,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::158",
-      "itemNo": "156",
+      "id": "1. Musculoskeleton::155",
+      "itemNo": "153",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25351,8 +25706,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::159",
-      "itemNo": "157",
+      "id": "1. Musculoskeleton::156",
+      "itemNo": "154",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25363,8 +25718,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::160",
-      "itemNo": "158",
+      "id": "1. Musculoskeleton::157",
+      "itemNo": "155",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25375,8 +25730,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::161",
-      "itemNo": "159",
+      "id": "1. Musculoskeleton::158",
+      "itemNo": "156",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25387,8 +25742,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::162",
-      "itemNo": "160",
+      "id": "1. Musculoskeleton::159",
+      "itemNo": "157",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25399,8 +25754,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::163",
-      "itemNo": "161",
+      "id": "1. Musculoskeleton::160",
+      "itemNo": "158",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25411,8 +25766,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::164",
-      "itemNo": "162",
+      "id": "1. Musculoskeleton::161",
+      "itemNo": "159",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25423,8 +25778,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::165",
-      "itemNo": "163",
+      "id": "1. Musculoskeleton::162",
+      "itemNo": "160",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25435,8 +25790,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::166",
-      "itemNo": "164",
+      "id": "1. Musculoskeleton::163",
+      "itemNo": "161",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25447,8 +25802,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::167",
-      "itemNo": "165",
+      "id": "1. Musculoskeleton::164",
+      "itemNo": "162",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25459,8 +25814,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::168",
-      "itemNo": "166",
+      "id": "1. Musculoskeleton::165",
+      "itemNo": "163",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25471,8 +25826,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::169",
-      "itemNo": "167",
+      "id": "1. Musculoskeleton::166",
+      "itemNo": "164",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25483,8 +25838,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::170",
-      "itemNo": "168",
+      "id": "1. Musculoskeleton::167",
+      "itemNo": "165",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25495,8 +25850,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::171",
-      "itemNo": "169",
+      "id": "1. Musculoskeleton::168",
+      "itemNo": "166",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25507,8 +25862,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::172",
-      "itemNo": "170",
+      "id": "1. Musculoskeleton::169",
+      "itemNo": "167",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25519,8 +25874,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::173",
-      "itemNo": "171",
+      "id": "1. Musculoskeleton::170",
+      "itemNo": "168",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25531,8 +25886,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::174",
-      "itemNo": "172",
+      "id": "1. Musculoskeleton::171",
+      "itemNo": "169",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25543,8 +25898,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::175",
-      "itemNo": "173",
+      "id": "1. Musculoskeleton::172",
+      "itemNo": "170",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25555,8 +25910,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::176",
-      "itemNo": "174",
+      "id": "1. Musculoskeleton::173",
+      "itemNo": "171",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25567,8 +25922,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::177",
-      "itemNo": "175",
+      "id": "1. Musculoskeleton::174",
+      "itemNo": "172",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25579,8 +25934,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::178",
-      "itemNo": "176",
+      "id": "1. Musculoskeleton::175",
+      "itemNo": "173",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25591,8 +25946,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::179",
-      "itemNo": "177",
+      "id": "1. Musculoskeleton::176",
+      "itemNo": "174",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25603,8 +25958,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::180",
-      "itemNo": "178",
+      "id": "1. Musculoskeleton::177",
+      "itemNo": "175",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25615,8 +25970,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::181",
-      "itemNo": "179",
+      "id": "1. Musculoskeleton::178",
+      "itemNo": "176",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -25627,8 +25982,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::182",
-      "itemNo": "180",
+      "id": "1. Musculoskeleton::179",
+      "itemNo": "177",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -32186,7 +32541,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Concomitant Quadruple Therapy 14 วันประกอบด้วยยาใด?",
       "questionImage": "",
-      "answer": "PPI (วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Amoxicillin</b> (1 g วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Clarithromycin</b> (500 mg วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Metronidazole</b> (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
+      "answer": "&lt;b&gt;PPI&lt;/b&gt; (วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Amoxicillin</b>&lt;/b&gt; (1 g วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Clarithromycin</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง) +<br> &lt;b&gt;<b style=\"color:#0284c7;\">Metronidazole</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
       "answerImage": "",
       "note": ""
     },
@@ -34286,7 +34641,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์การจำแนกโรคจมูกอักเสบจากภูมิแพ้ตามแนวทาง ARIA อาการแบบมีช่วงเว้น (Intermittent) คือเท่าใด?",
       "questionImage": "",
-      "answer": "มีอาการน้อยกว่า 4 วันต่อสัปดาห์ หรือมีอาการติดต่อกันนานน้อยกว่า 4 สัปดาห์<br> (หากมีอาการตั้งแต่ 4 วันต่อสัปดาห์ และนานตั้งแต่ 4 สัปดาห์ขึ้นไป จัดเป็น Persistent)",
+      "answer": "มีอาการน้อยกว่า 4 วันต่อสัปดาห์ <br>หรือมีอาการติดต่อกันนานน้อยกว่า 4 สัปดาห์<br><br>(หากมีอาการตั้งแต่ 4 วันต่อสัปดาห์ และนานตั้งแต่ 4 สัปดาห์ขึ้นไป จัดเป็น Persistent)",
       "answerImage": "",
       "note": ""
     },
@@ -34298,7 +34653,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์ที่บ่งชี้ว่าโรคภูมิแพ้โพรงจมูกเป็นระดับปานกลางถึงรุนแรง (Moderate-to-Severe) ตามเกณฑ์ ARIA คืออะไร?",
       "questionImage": "",
-      "answer": "มีผลกระทบต่อคุณภาพชีวิตข้อใดข้อหนึ่ง: การนอนหลับถูกรบกวน, กิจวัตรประจำวันบกพร่อง,<br> การเรียน/การทำงานบกพร่อง, หรือมีอาการรบกวนที่สร้างความรำคาญใจอย่างมาก",
+      "answer": "มีผลกระทบต่อคุณภาพชีวิตข้อใดข้อหนึ่ง: <br>1. การนอนหลับถูกรบกวน, <br>2. กิจวัตรประจำวันบกพร่อง,<br>3. การเรียน/การทำงานบกพร่อง<br>4. หรือมีอาการรบกวนที่สร้างความรำคาญใจอย่างมาก",
       "answerImage": "",
       "note": ""
     },
@@ -34322,7 +34677,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยากลุ่มใดที่มีประสิทธิภาพสูงที่สุดในการรักษาโรคจมูกอักเสบจากภูมิแพ้ทุกอาการ?",
       "questionImage": "",
-      "answer": "Intranasal Corticosteroids (INCS เช่น Fluticasone, Mometasone, Budesonide)<br> มีประสิทธิผลสูงสุดในการลดทั้งอาการคัดจมูก น้ำมูกไหล จาม คัน และอาการทางตา",
+      "answer": "Intranasal Corticosteroids<br> (INCS เช่น Fluticasone, Mometasone, Budesonide)<br> มีประสิทธิผลสูงสุดในการลดทั้งอาการคัดจมูก น้ำมูกไหล จาม คัน และอาการทางตา",
       "answerImage": "",
       "note": ""
     },
@@ -37819,6 +38174,342 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2585"
     },
     {
+      "id": "9. Neurologic::152",
+      "itemNo": "150",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "นิยามเวลาในการวินิจฉัยภาวะชักต่อเนื่อง (Status Epilepticus) คือชักนานตั้งแต่กี่นาทีขึ้นไป?",
+      "questionImage": "",
+      "answer": "ชักเกร็งกระตุกต่อเนื่องนานตั้งแต่ 5 นาทีขึ้นไป (&gt;= 5 นาที)<br> หรือมีอาการชักตั้งแต่ 2 ครั้งขึ้นไปโดยระหว่างนั้นผู้ป่วยไม่ฟื้นคืนสติ จัดเป็นภาวะฉุกเฉินทางการแพทย์",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::153",
+      "itemNo": "151",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกมาตรฐานในระยะแรก (5-20 นาทีแรก) ของภาวะ Status Epilepticus คือยากลุ่มใดและยาตัวใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่ม Benzodiazepines: IV Lorazepam (0.1 mg/kg หรือ 4 mg) หรือ IV Diazepam (10 mg)<br> (หากไม่มีเส้นเลือดดำให้ฉีด IM Midazolam 10 mg ทันที)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::154",
+      "itemNo": "152",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยาฉีดทางเลือกในระยะที่สอง (20-40 นาที) หากผู้ป่วยยังไม่หยุดชักหลังได้รับ Benzodiazepines คืออะไร?",
+      "questionImage": "",
+      "answer": "IV Levetiracetam (60 mg/kg), IV Sodium Valproate (40 mg/kg), หรือ IV Fosphenytoin (20 mg PE/kg)<br> เป็นยากันชักออกฤทธิ์ยาวที่ไม่กดการหายใจ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::155",
+      "itemNo": "153",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "เภสัชจลนศาสตร์ของยา Phenytoin มีลักษณะพิเศษอย่างไรที่ทำให้ระดับยาในเลือดเปลี่ยนแปลงได้เร็วมาก?",
+      "questionImage": "",
+      "answer": "จลนศาสตร์แบบอิ่มตัวไม่เป็นเส้นตรง (Non-linear / Michaelis-Menten kinetics)<br> การเพิ่มขนาดยาเพียงเล็กน้อยอาจทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดดจนเกิดพิษเฉียบพลัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::156",
+      "itemNo": "154",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ช่วงระดับความเข้มข้นของยา Phenytoin ในเลือดที่ให้ผลการรักษา (Therapeutic range) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "10 ถึง 20 mcg/mL (Total phenytoin)<br> (หากผู้ป่วยมีภาวะอัลบูมินในเลือดต่ำ ต้องคำนวณปรับค่าด้วยสูตร Sheiner-Tozer equation)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::157",
+      "itemNo": "155",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการพิษเฉียบพลันที่บ่งชี้ว่าระดับยา Phenytoin ในเลือดสูงเกินค่าควบคุมมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "ตากระตุก (Nystagmus), เดินเซทรงตัวไม่อยู่ (Ataxia), มองเห็นภาพซ้อน (Diplopia), และซึมสับสน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::158",
+      "itemNo": "156",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ก่อนเริ่มยา Carbamazepine ในประชากรไทยและเอเชีย จำเป็นต้องตรวจคัดกรองยีนใด?",
+      "questionImage": "",
+      "answer": "ยีน HLA-B*1502<br> หากให้ผลบวก ห้ามใช้ยาเด็ดขาดเพราะเพิ่มความเสี่ยงต่อการเกิดผื่นแพ้ยารุนแรงชนิด SJS และ TEN สูงมาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::159",
+      "itemNo": "157",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ปรากฏการณ์ Autoinduction ของยา Carbamazepine ส่งผลต่อระดับยาในเลือดอย่างไร?",
+      "questionImage": "",
+      "answer": "ยาจะกระตุ้นเอนไซม์ CYP3A4 ให้ทำลายตัวเองมากขึ้น ทำให้ระดับยาในเลือดลดลงหลังกินไป 3-5 สัปดาห์<br> จำเป็นต้องปรับเพิ่มขนาดยาขึ้นเพื่อให้ได้ระดับยาในการรักษาคงที่",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::160",
+      "itemNo": "158",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "Sodium Valproate (Depakine) เป็นยาทางเลือกแรกในการรักษาอาการชักชนิดใด?",
+      "questionImage": "",
+      "answer": "ชักแบบทั้งตัว (Generalized seizures) เช่น Generalized tonic-clonic, Myoclonic, และ Absence seizures<br> เป็นยากันชักที่ออกฤทธิ์กว้างครอบคลุมการชักเกือบทุกรูปแบบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::161",
+      "itemNo": "159",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์สำคัญที่พบบ่อยของยา Sodium Valproate คืออะไร?",
+      "questionImage": "",
+      "answer": "น้ำหนักตัวเพิ่มขึ้นอย่างมาก ผมร่วง ตับอักเสบ ตับอ่อนอักเสบเฉียบพลัน และแอมโมเนียในเลือดสูง (Hyperammonemia)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::162",
+      "itemNo": "160",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยา Ethosuximide มีข้อบ่งใช้จำเพาะเป็น <b style=\"color:#16a34a;\">First-line</b> ในการรักษาอาการชักชนิดใด?",
+      "questionImage": "",
+      "answer": "อาการชักเหม่อในเด็ก (Absence seizures / Petit mal)<br> ออกฤทธิ์ยับยั้ง T-type calcium channels ในสมองส่วนทาลามัสโดยไม่มีผลต่อการชักชนิดอื่น",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::163",
+      "itemNo": "161",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ปฏิกิริยาระหว่างยาของ Sodium Valproate เมื่อใช้ร่วมกับ Lamotrigine คืออะไรและต้องปรับยาอย่างไร?",
+      "questionImage": "",
+      "answer": "Valproate ยับยั้งกระบวนการ Glucuronidation ของ Lamotrigine ทำให้ระดับยา Lamotrigine สูงขึ้น 2 เท่า<br> ต้อง ลดขนาดยาเริ่มต้นของ Lamotrigine ลง 50% และปรับขึ้นช้าๆ เพื่อป้องกันการเกิดผื่นแพ้ SJS",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::164",
+      "itemNo": "162",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์ทางระบบประสาทและจิตเวชที่พบบ่อยของยา Levetiracetam (Keppra) คืออะไร?",
+      "questionImage": "",
+      "answer": "อารมณ์ฉุนเฉียว หงุดหงิดง่าย ก้าวร้าว ซึมเศร้า และวิตกกังวล (Keppra rage)<br> แต่มีข้อดีคือไม่ผ่านการเปลี่ยนสภาพที่ตับ (ขับทางไตเป็นหลัก) จึงแทบไม่มีปฏิกิริยาระหว่างยา",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::165",
+      "itemNo": "163",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "หญิงวัยเจริญพันธุ์ที่เป็นโรคลมชักและวางแผนตั้งครรภ์ ควรเลือกยากันชักตัวใดที่มีความปลอดภัยสูงสุด?",
+      "questionImage": "",
+      "answer": "Levetiracetam หรือ Lamotrigine ร่วมกับเสริม Folic Acid ขนาดสูง (4-5 mg ต่อวัน)<br> และหลีกเลี่ยง Sodium Valproate อย่างเด็ดขาด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::166",
+      "itemNo": "164",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ช่วงเวลาทอง (Golden period) ในการบริหารยาละลายลิ่มเลือด IV rtPA (Alteplase) ในโรคหลอดเลือดสมองตีบเฉียบพลันคือเท่าใด?",
+      "questionImage": "",
+      "answer": "ภายใน 4.5 ชั่วโมงแรก นับตั้งแต่เวลาที่ผู้ป่วยเริ่มมีอาการผิดปกติ (Onset to needle time)<br> เพื่อช่วยฟื้นฟูเนื้อสมองส่วน Penumbra และลดความพิการระยะยาว",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::167",
+      "itemNo": "165",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "เกณฑ์ระดับความดันโลหิตที่ต้องควบคุมก่อนเริ่มฉีดยาละลายลิ่มเลือด IV Alteplase คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ความดันโลหิตต้องต่ำกว่า 185/110 mmHg (SBP &lt; 185 และ DBP &lt; 110)<br> และต้องคุมให้ต่ำกว่า 180/105 mmHg ต่อเนื่องนาน 24 ชั่วโมงหลังฉีดยา เพื่อป้องกันเลือดออกในสมอง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::168",
+      "itemNo": "166",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ขนาดยาและการบริหารยา IV Alteplase ในผู้ป่วยโรคหลอดเลือดสมองตีบเฉียบพลันคือเท่าใด?",
+      "questionImage": "",
+      "answer": "ขนาด 0.9 mg/kg (ขนาดยาสูงสุดไม่เกิน 90 mg) โดยให้ 10% แรกฉีดแบบ IV bolus ใน 1 นาที<br> และอีก 90% ที่เหลือหยดเข้าทางหลอดเลือดดำต่อเนื่องนาน 60 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::169",
+      "itemNo": "167",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "หลังได้รับยาละลายลิ่มเลือด IV Alteplase ต้องงดยาต้านเกล็ดเลือดและยาต้านการแข็งตัวของเลือดนานเท่าใด?",
+      "questionImage": "",
+      "answer": "ต้องงดยาต้านเกล็ดเลือดและยาต้านการแข็งตัวของเลือดทุกชนิดเป็นเวลาอย่างน้อย 24 ชั่วโมง<br> และต้องทำ CT สมองซ้ำหลัง 24 ชั่วโมงเพื่อยืนยันว่าไม่มีภาวะเลือดออกในสมองก่อนเริ่มยาต้านเกล็ดเลือด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::170",
+      "itemNo": "168",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยาต้านเกล็ดเลือดทางเลือกแรกสำหรับป้องกันสโตรกขาดเลือดซ้ำระยะยาวในผู้ป่วย Non-cardioembolic stroke คือยาใด?",
+      "questionImage": "",
+      "answer": "Aspirin (81 ถึง 325 mg ต่อวัน) หรือ Clopidogrel (75 mg ต่อวัน)<br> เริ่มยาภายใน 24 ถึง 48 ชั่วโมงแรกหลังเกิดอาการ (กรณีไม่ได้ยาละลายลิ่มเลือด)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::171",
+      "itemNo": "169",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ข้อบ่งชี้ในการให้ยาต้านเกล็ดเลือดคู่ (DAPT: Aspirin + Clopidogrel) ระยะสั้น 21 วันในผู้ป่วยสโตรกคืออะไร?",
+      "questionImage": "",
+      "answer": "ผู้ป่วยที่มีอาการสโตรกตีบชนิดไม่รุนแรง (Minor ischemic stroke NIHSS &lt;= 3)<br> หรือผู้ป่วยสมองขาดเลือดชั่วคราวความเสี่ยงสูง (High-risk TIA ที่มี ABCD2 score &gt;= 4) เพื่อลดการเกิดสโตรกซ้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::172",
+      "itemNo": "170",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยาป้องกันสโตรกทางเลือกแรกสำหรับผู้ป่วยที่มีภาวะหัวใจห้องบนสั่นพลิ้ว (Atrial Fibrillation) คือยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่ม Direct Oral Anticoagulants (DOACs เช่น Apixaban, Rivaroxaban, Dabigatran)<br> มีประสิทธิภาพเหนือกว่า Warfarin และมีความเสี่ยงต่อภาวะเลือดออกในสมองต่ำกว่าอย่างชัดเจน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::173",
+      "itemNo": "171",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "เป้าหมายการควบคุมระดับไขมัน LDL-C ในผู้ป่วยที่มีโรคหลอดเลือดสมองตีบจากหลอดเลือดแดงแข็ง (Atherosclerosis) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ระดับ LDL-C น้อยกว่า 70 mg/dL (หรือลดลง &gt;= 50% จากค่าเริ่มต้น)<br> โดยให้ยากลุ่ม High-intensity statin (เช่น Atorvastatin 40-80 mg หรือ Rosuvastatin 20-40 mg)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::174",
+      "itemNo": "172",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยา Nimodipine มีบทบาทสำคัญอย่างไรในผู้ป่วยที่มีเลือดออกใต้เยื่อหุ้มสมอง (Subarachnoid Hemorrhage / SAH)?",
+      "questionImage": "",
+      "answer": "รับประทานขนาด 60 mg ทุก 4 ชั่วโมง ต่อเนื่องนาน 21 วัน<br> เพื่อป้องกันภาวะหลอดเลือดสมองหดเกร็ง (Cerebral vasospasm) และภาวะสมองขาดเลือดตามหลัง (DCI)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::175",
+      "itemNo": "173",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยากลุ่ม Gabapentinoids (Gabapentin, Pregabalin) ออกฤทธิ์ระงับอาการปวดประสาทด้วยกลไกใด?",
+      "questionImage": "",
+      "answer": "จับกับแอลฟา-2-เดลตา ซับยูนิต (Alpha-2-delta subunit) ของช่องแคลเซียมที่ไวต่อแรงดันไฟฟ้าในไขสันหลัง<br> ลดการหลั่งสารสื่อประสาทก่อความเจ็บปวด เช่น Glutamate และ Substance P",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::176",
+      "itemNo": "174",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ข้อควรระวังสำคัญในการปรับขนาดยา Gabapentin และ Pregabalin คืออะไร?",
+      "questionImage": "",
+      "answer": "ยาถูกขับออกทางไตในรูปเดิมเกือบทั้งหมด (Renally excreted unchanged)<br> ต้องปรับลดขนาดยาตามค่าการทำงานของไต (CrCl) เพื่อป้องกันอาการง่วงซึม มึนงง สับสน และกล้ามเนื้อกระตุก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::177",
+      "itemNo": "175",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยาในกลุ่ม SNRIs ตัวใดที่มีข้อบ่งชี้ระดับ <b style=\"color:#16a34a;\">First-line</b> ในการรักษาอาการปวดปลายประสาทจากโรคเบาหวาน (DPNP)?",
+      "questionImage": "",
+      "answer": "Duloxetine (ขนาด 60 mg วันละครั้ง)<br> ช่วยเพิ่มสาร Serotonin และ Norepinephrine ในวิถียับยั้งความเจ็บปวดจากสมองสู่ไขสันหลัง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::178",
+      "itemNo": "176",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกมาตรฐาน (<b style=\"color:#16a34a;\">Drug of choice</b>) ในการรักษาโรคปวดเส้นประสาทใบหน้า (Trigeminal neuralgia) คือยาใด?",
+      "questionImage": "",
+      "answer": "Carbamazepine (ขนาดเริ่มต้น 100-200 mg วันละ 1-2 ครั้ง แล้วค่อยๆ ปรับขึ้น)<br> หรือ Oxcarbazepine มีประสิทธิผลระงับอาการปวดแปล๊บคล้ายไฟช็อตที่ใบหน้าได้ดีที่สุด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::179",
+      "itemNo": "177",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "แผ่นแปะเฉพาะที่ 5% Lidocaine patch มีข้อบ่งใช้เด่นและคำแนะนำในการใช้อย่างไร?",
+      "questionImage": "",
+      "answer": "ใช้บรรเทาอาการปวดแสบร้อนปลายประสาทหลังงูสวัด (Postherpetic neuralgia / PHN)<br> แปะบริเวณผิวหนังที่ปวดวันละ 1 ครั้ง นานไม่เกิน 12 ชั่วโมงต่อวัน (แปะ 12 ชม. พัก 12 ชม.)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
       "id": "10. Psychiatric::3",
       "itemNo": "1",
       "group": "10. Psychiatric",
@@ -38403,6 +39094,90 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ยา Propranolol และกลุ่ม \\beta-adrenoceptor antagonists มีประโยชน์อย่างไรในแง่ของความวิตกกังวล?",
       "questionImage": "",
       "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน โดยรับประทานก่อนเริ่มงาน 30-60 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::53",
+      "itemNo": "50",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกในการรักษาโรคสมาธิสั้น (ADHD) ในเด็กและวัยรุ่นคือยาใดและออกฤทธิ์อย่างไร?",
+      "questionImage": "",
+      "answer": "Methylphenidate (Ritalin, Concerta) ออกฤทธิ์กระตุ้นระบบประสาทส่วนกลางโดยยับยั้ง DAT และ NET<br> ช่วยเพิ่มสมาธิ ลดความหุนหันพลันแล่น จัดเป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::54",
+      "itemNo": "51",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์และการตรวจติดตามที่สำคัญในเด็กที่รับประทานยา Methylphenidate คืออะไร?",
+      "questionImage": "",
+      "answer": "เบื่ออาหาร น้ำหนักลด นอนไม่หลับ หัวใจเต้นเร็ว และความดันโลหิตสูงขึ้น<br> ต้องติดตามกราฟการเจริญเติบโต (ส่วนสูงและน้ำหนัก) ทุก 6 เดือน และตรวจความดันโลหิตสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::55",
+      "itemNo": "52",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยารักษาโรคสมาธิสั้นกลุ่มที่ไม่ใช่สารกระตุ้นประสาท (Non-stimulant) ที่นิยมใช้เมื่อมีข้อห้ามใช้ Methylphenidate คือยาใด?",
+      "questionImage": "",
+      "answer": "Atomoxetine (Strattera) ออกฤทธิ์ยับยั้ง Selective Norepinephrine Reuptake Inhibitor (NRI)<br> ไม่เสี่ยงต่อการติดยา เหมาะสำหรับผู้ป่วยที่มีประวัติติดสารเสพติดหรือมีอาการกระตุก (Tics) ร่วมด้วย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::56",
+      "itemNo": "53",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "อาการแสดงของภาวะถอนสุราเฉียบพลัน (Alcohol Withdrawal Syndrome) มีลักษณะอย่างไร?",
+      "questionImage": "",
+      "answer": "มือสั่น เหงื่อแตก กระสับกระส่าย คลื่นไส้ หัวใจเต้นเร็ว <b style=\"color:#dc2626;\">ชัก</b> และอาจเกิดเพ้อสับสน (Delirium Tremens)<br> มักเกิดขึ้นหลังหยุดหรือลดปริมาณการดื่มสุราภายใน 6-48 ชั่วโมง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::57",
+      "itemNo": "54",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกในการรักษาและป้องกันอาการถอนสุรารุนแรงคือยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยาในกลุ่ม Benzodiazepines (เช่น Diazepam, Chlordiazepoxide หรือ Lorazepam ในรายตับแข็ง)<br> ช่วยเพิ่มฤทธิ์ของ GABA ลดการตื่นตัวของสมอง ป้องกันอาการชักและภาวะเพ้อสับสน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::58",
+      "itemNo": "55",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "กฎเหล็กในการให้สารน้ำและวิตามินบี 1 ในผู้ป่วยติดสุราเรื้อรังเพื่อป้องกัน Wernicke&#039;s Encephalopathy คืออะไร?",
+      "questionImage": "",
+      "answer": "ต้องให้ Vitamin B1 (Thiamine) ทางหลอดเลือดดำ ก่อนหรือพร้อมกับการให้น้ำตาลกลูโคส (Dextrose) เสมอ<br> ห้ามให้น้ำตาลกลูโคสก่อน Thiamine เด็ดขาด เพราะจะดึง Thiamine ไปใช้จนหมดและกระตุ้นให้สมองเสื่อมถาวรเฉียบพลัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::59",
+      "itemNo": "56",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาที่ช่วยรักษาภาวะติดสุราเรื้อรังโดยทำให้เกิดปฏิกิริยาไม่พึงประสงค์รุนแรงเมื่อดื่มแอลกอฮอล์คือยาใด?",
+      "questionImage": "",
+      "answer": "Disulfiram (Antabuse) ยับยั้งเอนไซม์ Aldehyde dehydrogenase<br> ทำให้เกิดการคั่งของ Acetaldehyde ส่งผลให้หน้าแดง หายใจลำบาก คลื่นไส้อาเจียน และความดันตกทันทีที่ดื่มแอลกอฮอล์",
       "answerImage": "",
       "note": ""
     },
@@ -40450,7 +41225,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::45",
       "itemNo": "43",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Aprepitant มีกลไกการออกฤทธิ์อย่างไร และเด่นในการป้องกัน CINV ระยะใด?",
       "questionImage": "",
@@ -40462,7 +41237,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::46",
       "itemNo": "44",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "สูตรการบริหารยา Aprepitant ชนิดรับประทาน 3 วัน มีขนาดการใช้อย่างไร?",
       "questionImage": "",
@@ -40474,7 +41249,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::47",
       "itemNo": "45",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Fosaprepitant แตกต่างจาก Aprepitant อย่างไร และมีขนาดบริหารยาอย่างไร?",
       "questionImage": "",
@@ -40486,7 +41261,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::48",
       "itemNo": "46",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดต้องลดขนาดยา <b style=\"color:#0284c7;\">Dexamethasone</b> ลงเมื่อใช้ร่วมกับยา Aprepitant?",
       "questionImage": "",
@@ -40498,7 +41273,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::49",
       "itemNo": "47",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาฉีด Ondansetron ทางหลอดเลือดดำจำกัดขนาดยาสูงสุดต่อครั้งไม่เกินเท่าใด เพราะเหตุใด?",
       "questionImage": "",
@@ -40510,7 +41285,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::50",
       "itemNo": "48",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Palonosetron มีคุณสมบัติเด่นเหนือกว่ายากลุ่ม 5-HT3 รุ่นแรกอย่างไร?",
       "questionImage": "",
@@ -40522,7 +41297,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::51",
       "itemNo": "49",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Olanzapine มีบทบาทอย่างไรในการรักษา CINV และขนาดที่แนะนำคือเท่าใด?",
       "questionImage": "",
@@ -40534,7 +41309,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::52",
       "itemNo": "50",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญของ Olanzapine ในผู้ป่วยมะเร็งคืออะไร และจัดการอย่างไร?",
       "questionImage": "",
@@ -40546,7 +41321,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::53",
       "itemNo": "51",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Lorazepam มีบทบาทอย่างไรใน Anticipatory CINV และบริหารยาอย่างไร?",
       "questionImage": "",
@@ -40558,7 +41333,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::54",
       "itemNo": "52",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "หากผู้ป่วยที่ได้รับ Metoclopramide เกิดอาการคอบิดเกร็ง ตาเหลือก (EPS) รักษาด้วยยาใด?",
       "questionImage": "",
@@ -40570,7 +41345,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::55",
       "itemNo": "53",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การอมน้ำแข็ง (Oral Cryotherapy) มีประโยชน์ในการป้องกันเยื่อบุช่องปากอักเสบจากยาใด?",
       "questionImage": "",
@@ -40582,7 +41357,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::56",
       "itemNo": "54",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "น้ำยาบ้วนปากสูตรผสม (Magic Mouthwash) นิยมผสมสารใดบ้างเพื่อบรรเทาแผลในปาก?",
       "questionImage": "",
@@ -40594,7 +41369,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::57",
       "itemNo": "55",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ข้อบ่งชี้ในการให้ยา G-CSF เพื่อป้องกันภาวะเม็ดเลือดขาวต่ำติดเชื้อ (Primary Prophylaxis) คืออะไร?",
       "questionImage": "",
@@ -40606,7 +41381,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::58",
       "itemNo": "56",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เปรียบเทียบวิธีการบริหารยาระหว่าง Filgrastim และ Pegfilgrastim?",
       "questionImage": "",
@@ -40618,7 +41393,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::59",
       "itemNo": "57",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "กฎการเว้นระยะเวลาในการฉีดยา G-CSF สัมพันธ์กับยาเคมีบำบัดอย่างไร?",
       "questionImage": "",
@@ -40630,7 +41405,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::60",
       "itemNo": "58",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงที่พบบ่อยที่สุดของยากลุ่ม G-CSF คืออะไร และรักษาด้วยยาใด?",
       "questionImage": "",
@@ -40642,7 +41417,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::61",
       "itemNo": "59",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงมีคำเตือนการใช้ยากระตุ้นการสร้างเม็ดเลือดแดง (ESAs) ในผู้ป่วยมะเร็ง?",
       "questionImage": "",
@@ -40654,7 +41429,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::62",
       "itemNo": "60",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาชนิดใดใช้ลดความเสี่ยงกระดูกหักและการกดทับไขสันหลังในผู้ป่วยมะเร็งลุกลามไปกระดูก?",
       "questionImage": "",
@@ -40666,7 +41441,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::63",
       "itemNo": "61",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การป้องกันภาวะกระดูกขากรรไกรตาย (ONJ) จากการใช้ Zoledronic acid หรือ Denosumab คืออะไร?",
       "questionImage": "",
@@ -40678,7 +41453,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::64",
       "itemNo": "62",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "อาการปวดกำเริบฉับพลัน (Breakthrough Pain) ในผู้ป่วยมะเร็งมีหลักการคำนวณขนาดยาแก้ปวดอย่างไร?",
       "questionImage": "",
@@ -40690,7 +41465,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::65",
       "itemNo": "63",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การป้องกันภาวะท้องผูกจากการใช้ยาแก้ปวดกลุ่ม Opioids ในผู้ป่วยมะเร็งมีแนวทางอย่างไร?",
       "questionImage": "",
@@ -40702,7 +41477,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::66",
       "itemNo": "64",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "<b style=\"color:#0284c7;\">Dexamethasone</b> มีประโยชน์อย่างไรในการบรรเทาอาการปวดจากมะเร็งลุกลามไปกระดูก?",
       "questionImage": "",
@@ -40714,7 +41489,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::67",
       "itemNo": "65",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "สรุปแผนการให้ยาต้านอาเจียนในวันที่ 2-4 หลังได้รับยาเคมีกลุ่ม HEC?",
       "questionImage": "",
@@ -40726,7 +41501,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::68",
       "itemNo": "66",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "มะเร็งเต้านมชนิดตัวรับฮอร์โมนเป็นบวก (HR-positive) หมายถึงมีการตรวจพบตัวรับใด?",
       "questionImage": "",
@@ -40738,7 +41513,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::69",
       "itemNo": "67",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาต้านฮอร์โมนมาตรฐานทางเลือกแรกในสตรี &#039;ก่อนหมดประจำเดือน&#039; ที่เป็นมะเร็งเต้านม HR+ คืออะไร?",
       "questionImage": "",
@@ -40750,7 +41525,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::70",
       "itemNo": "68",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "กรณีสตรีก่อนหมดประจำเดือนที่มีความเสี่ยงสูง มีทางเลือกการรักษาด้วยฮอร์โมนอย่างไร?",
       "questionImage": "",
@@ -40762,7 +41537,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::71",
       "itemNo": "69",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Tamoxifen มีความเสี่ยงต่อการเกิดโรคร้ายแรงใดที่ต้องติดตามอย่างใกล้ชิด?",
       "questionImage": "",
@@ -40774,7 +41549,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::72",
       "itemNo": "70",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Tamoxifen ต้องอาศัยเอนไซม์ใดในการเปลี่ยนเป็นสารออกฤทธิ์หลัก (Active Metabolite)?",
       "questionImage": "",
@@ -40786,7 +41561,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::73",
       "itemNo": "71",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงห้ามใช้ Tamoxifen ร่วมกับยาต้านซึมเศร้า Fluoxetine หรือ Paroxetine?",
       "questionImage": "",
@@ -40798,7 +41573,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::74",
       "itemNo": "72",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาต้านฮอร์โมนทางเลือกแรกที่มีประสิทธิภาพสูงสุดในสตรี &#039;หลังหมดประจำเดือน&#039; คือกลุ่มใด?",
       "questionImage": "",
@@ -40810,7 +41585,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::75",
       "itemNo": "73",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงใช้ยากลุ่ม Aromatase Inhibitors ได้ผลเฉพาะในสตรีหลังหมดประจำเดือน?",
       "questionImage": "",
@@ -40822,7 +41597,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::76",
       "itemNo": "74",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญระยะยาวของยากลุ่ม Aromatase Inhibitors คืออะไร?",
       "questionImage": "",
@@ -40834,7 +41609,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::77",
       "itemNo": "75",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การตรวจติดตามความหนาแน่นกระดูกในผู้ป่วยที่ได้รับยา Aromatase Inhibitor ทำอย่างไร?",
       "questionImage": "",
@@ -40846,7 +41621,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::78",
       "itemNo": "76",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เกณฑ์การตรวจยืนยันว่าเป็นมะเร็งเต้านมชนิด HER2-positive คืออะไร?",
       "questionImage": "",
@@ -40858,7 +41633,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::79",
       "itemNo": "77",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Trastuzumab (Herceptin) มีกลไกการออกฤทธิ์ในการรักษามะเร็งเต้านมอย่างไร?",
       "questionImage": "",
@@ -40870,7 +41645,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::80",
       "itemNo": "78",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "พิษต่อหัวใจจาก Trastuzumab มีลักษณะแตกต่างจาก Doxorubicin อย่างไร?",
       "questionImage": "",
@@ -40882,7 +41657,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::81",
       "itemNo": "79",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การตรวจติดตามการทำงานของหัวใจในผู้ป่วยที่ได้รับ Trastuzumab มีแนวทางอย่างไร?",
       "questionImage": "",
@@ -40894,7 +41669,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::82",
       "itemNo": "80",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เหตุใดจึงมีข้อห้ามเด็ดขาดไม่ให้ยา Trastuzumab พร้อมกับ Doxorubicin ในเวลาเดียวกัน?",
       "questionImage": "",
@@ -40906,7 +41681,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::83",
       "itemNo": "81",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Pertuzumab (Perjeta) มีกลไกเสริมฤทธิ์ร่วมกับ Trastuzumab อย่างไร?",
       "questionImage": "",
@@ -40918,7 +41693,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::84",
       "itemNo": "82",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Trastuzumab Emtansine (T-DM1) มีโครงสร้างและกลไกการออกฤทธิ์อย่างไร?",
       "questionImage": "",
@@ -40930,7 +41705,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::85",
       "itemNo": "83",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Trastuzumab Deruxtecan (Enhertu) มีคำเตือนกล่องดำ (Black Box Warning) เรื่องใด?",
       "questionImage": "",
@@ -40942,7 +41717,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::86",
       "itemNo": "84",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Triple-Negative Breast Cancer (TNBC) มีลักษณะและแนวทางการรักษาอย่างไร?",
       "questionImage": "",
@@ -40954,7 +41729,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::87",
       "itemNo": "85",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัด FOLFOX ในมะเร็งลำไส้ใหญ่ ประกอบด้วยตัวยาใดบ้าง?",
       "questionImage": "",
@@ -40966,7 +41741,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::88",
       "itemNo": "86",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัด FOLFIRI ประกอบด้วยตัวยาใดบ้าง?",
       "questionImage": "",
@@ -40978,7 +41753,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::89",
       "itemNo": "87",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Capecitabine (Xeloda) เปลี่ยนเป็น 5-Fluorouracil ในร่างกายได้อย่างไร?",
       "questionImage": "",
@@ -40990,7 +41765,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::90",
       "itemNo": "88",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "5-Fluorouracil มีกลไกการออกฤทธิ์ยับยั้งเซลล์มะเร็งอย่างไร?",
       "questionImage": "",
@@ -41002,7 +41777,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::91",
       "itemNo": "89",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "บทบาทของ Leucovorin เมื่อใช้ร่วมกับยา 5-Fluorouracil คืออะไร?",
       "questionImage": "",
@@ -41014,7 +41789,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::92",
       "itemNo": "90",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ภาวะ Hand-Foot Syndrome (PPE) จากยา Capecitabine/5-FU มีลักษณะและดูแลอย่างไร?",
       "questionImage": "",
@@ -41026,7 +41801,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::93",
       "itemNo": "91",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ภาวะพร่องเอนไซม์ Dihydropyrimidine Dehydrogenase (DPD) ส่งผลต่อ 5-FU อย่างไร?",
       "questionImage": "",
@@ -41038,7 +41813,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::94",
       "itemNo": "92",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ยาชนิดใดเป็นยาแก้พิษเฉพาะ (Antidote) ในกรณีได้รับยา 5-FU หรือ Capecitabine เกินขนาด?",
       "questionImage": "",
@@ -41050,7 +41825,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::95",
       "itemNo": "93",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การตรวจยีน KRAS และ NRAS มีความสำคัญต่อการเลือกยา Anti-EGFR ในมะเร็งลำไส้อย่างไร?",
       "questionImage": "",
@@ -41062,7 +41837,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::96",
       "itemNo": "94",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผื่นคล้ายสิว (Acneiform Rash) จาก Cetuximab มีความสำคัญทางคลินิกอย่างไร?",
       "questionImage": "",
@@ -41074,7 +41849,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::97",
       "itemNo": "95",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ยากลุ่ม Anti-EGFR (Cetuximab/Panitumumab) ทำให้เกิดความผิดปกติของเกลือแร่ใด?",
       "questionImage": "",
@@ -41086,7 +41861,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::98",
       "itemNo": "96",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Bevacizumab (Avastin) มีกลไกการออกฤทธิ์อย่างไรในการรักษามะเร็งลำไส้ใหญ่?",
       "questionImage": "",
@@ -41098,7 +41873,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::99",
       "itemNo": "97",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผลข้างเคียงเฉพาะของ Bevacizumab ที่ต้องตรวจติดตามสม่ำเสมอมีอะไรบ้าง?",
       "questionImage": "",
@@ -41110,7 +41885,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::100",
       "itemNo": "98",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เหตุใดต้องหยุดยา Bevacizumab ล่วงหน้าอย่างน้อย 4-6 สัปดาห์ก่อนการผ่าตัดใหญ่?",
       "questionImage": "",
@@ -41122,7 +41897,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::101",
       "itemNo": "99",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผู้ป่วยมะเร็งลำไส้ใหญ่ที่มีลักษณะ MSI-High หรือ dMMR ตอบสนองต่อการรักษาด้วยยาใด?",
       "questionImage": "",
@@ -41134,7 +41909,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::102",
       "itemNo": "100",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งลำไส้ใหญ่ที่มีการกลายพันธุ์ของยีน BRAF V600E มีแนวทางการรักษาด้วยยามุ่งเป้าอย่างไร?",
       "questionImage": "",
@@ -41146,7 +41921,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::103",
       "itemNo": "101",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งปอดชนิดเซลล์เล็ก (SCLC) แตกต่างจากชนิดเซลล์ไม่เล็ก (NSCLC) ในแง่การดำเนินโรคอย่างไร?",
       "questionImage": "",
@@ -41158,7 +41933,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::104",
       "itemNo": "102",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การกลายพันธุ์ของยีน EGFR ชนิดใดที่พบบ่อยและตอบสนองดีต่อยากลุ่ม EGFR-TKIs?",
       "questionImage": "",
@@ -41170,7 +41945,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::105",
       "itemNo": "103",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Osimertinib (Tagrisso) มีข้อได้เปรียบอย่างไรในการรักษา NSCLC ที่มี EGFR Mutation?",
       "questionImage": "",
@@ -41182,7 +41957,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::106",
       "itemNo": "104",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผลข้างเคียงที่พบบ่อยของยากลุ่ม EGFR-TKIs (เช่น Osimertinib, Gefitinib) คืออะไร?",
       "questionImage": "",
@@ -41194,7 +41969,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::107",
       "itemNo": "105",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งปอดที่มีการจัดเรียงตัวใหม่ของยีน ALK (EML4-ALK) นิยมรักษาด้วยยาใดเป็นทางเลือกแรก?",
       "questionImage": "",
@@ -41206,7 +41981,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::108",
       "itemNo": "106",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เกณฑ์การให้ยาเดี่ยว Pembrolizumab เป็นการรักษาทางเลือกแรกในมะเร็งปอด NSCLC คืออะไร?",
       "questionImage": "",
@@ -41218,7 +41993,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::109",
       "itemNo": "107",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัดมาตรฐานทางเลือกแรกสำหรับมะเร็งปอดชนิดเซลล์เล็ก (SCLC) คือสูตรใด?",
       "questionImage": "",
@@ -41230,7 +42005,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::110",
       "itemNo": "108",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เป้าหมายของระดับฮอร์โมนเทสโทสเตอโรนในการรักษาด้วย Androgen Deprivation Therapy (ADT) คือเท่าใด?",
       "questionImage": "",
@@ -41242,7 +42017,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::111",
       "itemNo": "109",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ปรากฏการณ์ Flare Up จากยาฉีดกลุ่ม GnRH Agonists (Leuprolide, Goserelin) เกิดขึ้นได้อย่างไร?",
       "questionImage": "",
@@ -41254,7 +42029,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::112",
       "itemNo": "110",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "การป้องกันอันตรายจากปรากฏการณ์ Testosterone Flare มีแนวทางปฏิบัติอย่างไร?",
       "questionImage": "",
@@ -41266,7 +42041,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::113",
       "itemNo": "111",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยากลุ่ม GnRH Antagonists (Degarelix, Relugolix) มีข้อดีเหนือกว่ากลุ่ม Agonists อย่างไร?",
       "questionImage": "",
@@ -41278,7 +42053,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::114",
       "itemNo": "112",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Abiraterone Acetate (Zytiga) มีกลไกการยับยั้งมะเร็งต่อมลูกหมากอย่างไร?",
       "questionImage": "",
@@ -41290,7 +42065,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::115",
       "itemNo": "113",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เหตุใดการให้ยา Abiraterone จึงต้องรับประทานคู่กับยา Prednisone เสมอ?",
       "questionImage": "",
@@ -41302,7 +42077,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::116",
       "itemNo": "114",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Enzalutamide (Xtandi) มีกลไกอย่างไร และมีคำเตือนความปลอดภัยเรื่องใด?",
       "questionImage": "",
@@ -41314,7 +42089,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::117",
       "itemNo": "115",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยภาวะไข้ (Fever) ใน Febrile Neutropenia (FN) กำหนดไว้อย่างไร?",
       "questionImage": "",
@@ -41326,7 +42101,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::118",
       "itemNo": "116",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยภาวะเม็ดเลือดขาวต่ำ (Neutropenia) ใน FN กำหนดค่า ANC เท่าใด?",
       "questionImage": "",
@@ -41338,7 +42113,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::119",
       "itemNo": "117",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สูตรการคำนวณค่า Absolute Neutrophil Count (ANC) มีวิธีคำนวณอย่างไร?",
       "questionImage": "",
@@ -41350,7 +42125,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::120",
       "itemNo": "118",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กฎชั่วโมงทอง (Golden Hour) ในการรักษาผู้ป่วย Febrile Neutropenia มีข้อกำหนดอย่างไร?",
       "questionImage": "",
@@ -41362,7 +42137,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::121",
       "itemNo": "119",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาปฏิชีวนะฉีดเดี่ยวทางเลือกแรกสำหรับผู้ป่วย Febrile Neutropenia คือยากลุ่มใด?",
       "questionImage": "",
@@ -41374,7 +42149,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::122",
       "itemNo": "120",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ข้อบ่งชี้ในการเพิ่มยา <b style=\"color:#0284c7;\">Vancomycin</b> ตั้งแต่เริ่มต้นในผู้ป่วย Febrile Neutropenia คืออะไร?",
       "questionImage": "",
@@ -41386,7 +42161,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::123",
       "itemNo": "121",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กลุ่มอาการสลายตัวของเนื้องอก (Tumor Lysis Syndrome: TLS) มักเกิดจากมะเร็งชนิดใด?",
       "questionImage": "",
@@ -41398,7 +42173,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::124",
       "itemNo": "122",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ความผิดปกติของเกลือแร่ 4 ประการตามเกณฑ์ Cairo-Bishop ในภาวะ TLS มีอะไรบ้าง?",
       "questionImage": "",
@@ -41410,7 +42185,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::125",
       "itemNo": "123",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "การป้องกันภาวะกรดยูริกสูงในผู้ป่วย TLS ที่มีความเสี่ยงปานกลางมีแนวทางอย่างไร?",
       "questionImage": "",
@@ -41422,7 +42197,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::126",
       "itemNo": "124",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Rasburicase (Elitek) มีกลไกอย่างไร และมีข้อได้เปรียบเหนือกว่า Allopurinol อย่างไร?",
       "questionImage": "",
@@ -41434,7 +42209,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::127",
       "itemNo": "125",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เหตุใดการใช้ยา Rasburicase จึงมีข้อห้ามใช้อย่างเด็ดขาดในผู้ป่วยที่มีภาวะพร่องเอนไซม์ G6PD?",
       "questionImage": "",
@@ -41446,7 +42221,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::128",
       "itemNo": "126",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สาเหตุส่วนใหญ่ของภาวะแคลเซียมในเลือดสูงจากโรคมะเร็ง (HCM) เกิดจากกลไกใด?",
       "questionImage": "",
@@ -41458,7 +42233,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::129",
       "itemNo": "127",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สูตรคำนวณค่าแคลเซียมปรับแก้ตามระดับอัลบูมิน (Corrected Calcium) คืออะไร?",
       "questionImage": "",
@@ -41470,7 +42245,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::130",
       "itemNo": "128",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ขั้นตอนแรกที่สำคัญที่สุดในการรักษาภาวะฉุกเฉินแคลเซียมในเลือดสูงจากมะเร็งคืออะไร?",
       "questionImage": "",
@@ -41482,7 +42257,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::131",
       "itemNo": "129",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาทางเลือกหลักในการลดระดับแคลเซียมระยะยาวในภาวะ HCM คือยาใดและบริหารอย่างไร?",
       "questionImage": "",
@@ -41494,7 +42269,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::132",
       "itemNo": "130",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Calcitonin มีบทบาทอย่างไรในการรักษา HCM และมีข้อจำกัดเรื่องระยะเวลาการใช้อย่างไร?",
       "questionImage": "",
@@ -41506,7 +42281,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::133",
       "itemNo": "131",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Denosumab (Xgeva 120 mg) มีบทบาทอย่างไรในการรักษาภาวะแคลเซียมในเลือดสูงจากมะเร็ง?",
       "questionImage": "",
@@ -41518,7 +42293,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::134",
       "itemNo": "132",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "อาการแสดงเตือนสำคัญของภาวะไขสันหลังถูกกดทับจากมะเร็ง (Spinal Cord Compression) คืออะไร?",
       "questionImage": "",
@@ -41530,7 +42305,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::135",
       "itemNo": "133",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาชนิดแรกที่ต้องฉีดทันทีเมื่อสงสัยภาวะไขสันหลังถูกกดทับจากมะเร็งคือยาใด?",
       "questionImage": "",
@@ -41542,7 +42317,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::136",
       "itemNo": "134",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กลุ่มอาการ Superior Vena Cava (SVC) Syndrome มีลักษณะทางคลินิกเด่นอย่างไร?",
       "questionImage": "",
@@ -41554,7 +42329,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::137",
       "itemNo": "135",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สรุปเป้าหมายเวลาวิกฤตในการรักษา Febrile Neutropenia และ Spinal Cord Compression?",
       "questionImage": "",
@@ -46673,18 +47448,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
-      "question": "ปุ่มกระดูกงอกบริเวณข้อนิ้วมือส่วนปลายสุด (DIP joint) ในผู้ป่วยข้อเสื่อม เรียกว่าอะไร?",
-      "questionImage": "",
-      "answer": "Heberden&#039;s nodes<br> เกิดจากกระดูกงอก (Osteophytes) ที่ข้อ Distal Interphalangeal",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::7",
-      "itemNo": "5",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
       "question": "ปุ่มกระดูกงอกบริเวณข้อนิ้วมือส่วนกลาง (PIP joint) ในผู้ป่วยข้อเสื่อม เรียกว่าอะไร?",
       "questionImage": "",
       "answer": "Bouchard&#039;s nodes<br> จำ B มาก่อน H (Bouchard ข้อกลางนิ้ว PIP, Heberden ข้อปลายนิ้ว DIP)",
@@ -46692,44 +47455,20 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::8",
-      "itemNo": "6",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
-      "question": "เสียงกรอบแกรบในข้อขณะเคลื่อนไหวที่ตรวจพบในโรคข้อเสื่อม เรียกว่าอะไร?",
-      "questionImage": "",
-      "answer": "Crepitus<br> เกิดจากการเสียดสีกันของผิวข้อที่ขรุขระและสูญเสียน้ำหล่อเลี้ยงข้อ",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::9",
+      "id": "1. Musculoskeleton::7",
       "itemNo": "7",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
       "question": "ลักษณะเด่น 4 ประการที่พบบนภาพถ่ายรังสีเอกซเรย์ของข้อเสื่อมมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "1. ข้อแคบไม่สมมาตร 2. กระดูกงอก (Osteophytes) 3. กระดูกใต้ข้อแข็งหนา 4. ถุงน้ำใต้กระดูก<br> ต่างจาก RA ที่ช่องว่างแคบแบบสมมาตรและมีกระดูกกร่อน (Bone erosions)",
+      "answer": "1. ข้อแคบไม่สมมาตร <br>2. กระดูกงอก (Osteophytes) <br>3. กระดูกใต้ข้อแข็งหนา <br>4. ถุงน้ำใต้กระดูก<br> <br>ต่างจาก RA ที่ช่องว่างแคบแบบสมมาตรและมีกระดูกกร่อน (Bone erosions)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::10",
-      "itemNo": "8",
-      "group": "1. Musculoskeleton",
-      "subTopic": "Osteoarthritis",
-      "track": "Clinic",
-      "question": "ปัจจัยเสี่ยงที่ไม่สามารถแก้ไขได้ในการเกิดโรคข้อเสื่อมมีอะไรบ้าง?",
-      "questionImage": "",
-      "answer": "อายุที่มากขึ้น (สำคัญที่สุด), เพศหญิงหลังหมดประจำเดือน, พันธุกรรม, และโครงสร้างข้อแต่กำเนิด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "1. Musculoskeleton::11",
-      "itemNo": "9",
+      "id": "1. Musculoskeleton::8",
+      "itemNo": "6",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46740,8 +47479,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::12",
-      "itemNo": "10",
+      "id": "1. Musculoskeleton::9",
+      "itemNo": "7",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46752,8 +47491,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::13",
-      "itemNo": "11",
+      "id": "1. Musculoskeleton::10",
+      "itemNo": "8",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46764,8 +47503,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::14",
-      "itemNo": "12",
+      "id": "1. Musculoskeleton::11",
+      "itemNo": "9",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46776,8 +47515,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::15",
-      "itemNo": "13",
+      "id": "1. Musculoskeleton::12",
+      "itemNo": "10",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46788,8 +47527,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::16",
-      "itemNo": "14",
+      "id": "1. Musculoskeleton::13",
+      "itemNo": "11",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46800,8 +47539,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::17",
-      "itemNo": "15",
+      "id": "1. Musculoskeleton::14",
+      "itemNo": "12",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46812,8 +47551,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::18",
-      "itemNo": "16",
+      "id": "1. Musculoskeleton::15",
+      "itemNo": "13",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46824,8 +47563,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::19",
-      "itemNo": "17",
+      "id": "1. Musculoskeleton::16",
+      "itemNo": "14",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46836,8 +47575,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::20",
-      "itemNo": "18",
+      "id": "1. Musculoskeleton::17",
+      "itemNo": "15",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46848,8 +47587,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::21",
-      "itemNo": "19",
+      "id": "1. Musculoskeleton::18",
+      "itemNo": "16",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46860,8 +47599,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::22",
-      "itemNo": "20",
+      "id": "1. Musculoskeleton::19",
+      "itemNo": "17",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46872,8 +47611,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::23",
-      "itemNo": "21",
+      "id": "1. Musculoskeleton::20",
+      "itemNo": "18",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46884,8 +47623,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::24",
-      "itemNo": "22",
+      "id": "1. Musculoskeleton::21",
+      "itemNo": "19",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46896,8 +47635,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::25",
-      "itemNo": "23",
+      "id": "1. Musculoskeleton::22",
+      "itemNo": "20",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46908,8 +47647,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::26",
-      "itemNo": "24",
+      "id": "1. Musculoskeleton::23",
+      "itemNo": "21",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46920,8 +47659,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::27",
-      "itemNo": "25",
+      "id": "1. Musculoskeleton::24",
+      "itemNo": "22",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46932,8 +47671,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::28",
-      "itemNo": "26",
+      "id": "1. Musculoskeleton::25",
+      "itemNo": "23",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46944,8 +47683,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::29",
-      "itemNo": "27",
+      "id": "1. Musculoskeleton::26",
+      "itemNo": "24",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46956,8 +47695,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::30",
-      "itemNo": "28",
+      "id": "1. Musculoskeleton::27",
+      "itemNo": "25",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46968,8 +47707,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::31",
-      "itemNo": "29",
+      "id": "1. Musculoskeleton::28",
+      "itemNo": "26",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46980,8 +47719,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::32",
-      "itemNo": "30",
+      "id": "1. Musculoskeleton::29",
+      "itemNo": "27",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -46992,8 +47731,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::33",
-      "itemNo": "31",
+      "id": "1. Musculoskeleton::30",
+      "itemNo": "28",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47004,8 +47743,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::34",
-      "itemNo": "32",
+      "id": "1. Musculoskeleton::31",
+      "itemNo": "29",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47016,8 +47755,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::35",
-      "itemNo": "33",
+      "id": "1. Musculoskeleton::32",
+      "itemNo": "30",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47028,8 +47767,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::36",
-      "itemNo": "34",
+      "id": "1. Musculoskeleton::33",
+      "itemNo": "31",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47040,8 +47779,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::37",
-      "itemNo": "35",
+      "id": "1. Musculoskeleton::34",
+      "itemNo": "32",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47052,8 +47791,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::38",
-      "itemNo": "36",
+      "id": "1. Musculoskeleton::35",
+      "itemNo": "33",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47064,8 +47803,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::39",
-      "itemNo": "37",
+      "id": "1. Musculoskeleton::36",
+      "itemNo": "34",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47076,8 +47815,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::40",
-      "itemNo": "38",
+      "id": "1. Musculoskeleton::37",
+      "itemNo": "35",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47088,8 +47827,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::41",
-      "itemNo": "39",
+      "id": "1. Musculoskeleton::38",
+      "itemNo": "36",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47100,8 +47839,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::42",
-      "itemNo": "40",
+      "id": "1. Musculoskeleton::39",
+      "itemNo": "37",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47112,8 +47851,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::43",
-      "itemNo": "41",
+      "id": "1. Musculoskeleton::40",
+      "itemNo": "38",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47124,8 +47863,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::44",
-      "itemNo": "42",
+      "id": "1. Musculoskeleton::41",
+      "itemNo": "39",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47136,8 +47875,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::45",
-      "itemNo": "43",
+      "id": "1. Musculoskeleton::42",
+      "itemNo": "40",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47148,8 +47887,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::46",
-      "itemNo": "44",
+      "id": "1. Musculoskeleton::43",
+      "itemNo": "41",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47160,8 +47899,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::47",
-      "itemNo": "45",
+      "id": "1. Musculoskeleton::44",
+      "itemNo": "42",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoarthritis",
       "track": "Clinic",
@@ -47172,8 +47911,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::48",
-      "itemNo": "46",
+      "id": "1. Musculoskeleton::45",
+      "itemNo": "43",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47184,8 +47923,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::49",
-      "itemNo": "47",
+      "id": "1. Musculoskeleton::46",
+      "itemNo": "44",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47196,8 +47935,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::50",
-      "itemNo": "48",
+      "id": "1. Musculoskeleton::47",
+      "itemNo": "45",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47208,8 +47947,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::51",
-      "itemNo": "49",
+      "id": "1. Musculoskeleton::48",
+      "itemNo": "46",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47220,8 +47959,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::52",
-      "itemNo": "50",
+      "id": "1. Musculoskeleton::49",
+      "itemNo": "47",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47232,8 +47971,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::53",
-      "itemNo": "51",
+      "id": "1. Musculoskeleton::50",
+      "itemNo": "48",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47244,8 +47983,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::54",
-      "itemNo": "52",
+      "id": "1. Musculoskeleton::51",
+      "itemNo": "49",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47256,8 +47995,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::55",
-      "itemNo": "53",
+      "id": "1. Musculoskeleton::52",
+      "itemNo": "50",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47268,8 +48007,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::56",
-      "itemNo": "54",
+      "id": "1. Musculoskeleton::53",
+      "itemNo": "51",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47280,8 +48019,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::57",
-      "itemNo": "55",
+      "id": "1. Musculoskeleton::54",
+      "itemNo": "52",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47292,8 +48031,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::58",
-      "itemNo": "56",
+      "id": "1. Musculoskeleton::55",
+      "itemNo": "53",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47304,8 +48043,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::59",
-      "itemNo": "57",
+      "id": "1. Musculoskeleton::56",
+      "itemNo": "54",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47316,8 +48055,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::60",
-      "itemNo": "58",
+      "id": "1. Musculoskeleton::57",
+      "itemNo": "55",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47328,8 +48067,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::61",
-      "itemNo": "59",
+      "id": "1. Musculoskeleton::58",
+      "itemNo": "56",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47340,8 +48079,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::62",
-      "itemNo": "60",
+      "id": "1. Musculoskeleton::59",
+      "itemNo": "57",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47352,8 +48091,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::63",
-      "itemNo": "61",
+      "id": "1. Musculoskeleton::60",
+      "itemNo": "58",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47364,8 +48103,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::64",
-      "itemNo": "62",
+      "id": "1. Musculoskeleton::61",
+      "itemNo": "59",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47376,8 +48115,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::65",
-      "itemNo": "63",
+      "id": "1. Musculoskeleton::62",
+      "itemNo": "60",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47388,8 +48127,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::66",
-      "itemNo": "64",
+      "id": "1. Musculoskeleton::63",
+      "itemNo": "61",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47400,8 +48139,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::67",
-      "itemNo": "65",
+      "id": "1. Musculoskeleton::64",
+      "itemNo": "62",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47412,8 +48151,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::68",
-      "itemNo": "66",
+      "id": "1. Musculoskeleton::65",
+      "itemNo": "63",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47424,8 +48163,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::69",
-      "itemNo": "67",
+      "id": "1. Musculoskeleton::66",
+      "itemNo": "64",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47436,8 +48175,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::70",
-      "itemNo": "68",
+      "id": "1. Musculoskeleton::67",
+      "itemNo": "65",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47448,8 +48187,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::71",
-      "itemNo": "69",
+      "id": "1. Musculoskeleton::68",
+      "itemNo": "66",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47460,8 +48199,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::72",
-      "itemNo": "70",
+      "id": "1. Musculoskeleton::69",
+      "itemNo": "67",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47472,8 +48211,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::73",
-      "itemNo": "71",
+      "id": "1. Musculoskeleton::70",
+      "itemNo": "68",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47484,8 +48223,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::74",
-      "itemNo": "72",
+      "id": "1. Musculoskeleton::71",
+      "itemNo": "69",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47496,8 +48235,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::75",
-      "itemNo": "73",
+      "id": "1. Musculoskeleton::72",
+      "itemNo": "70",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47508,8 +48247,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::76",
-      "itemNo": "74",
+      "id": "1. Musculoskeleton::73",
+      "itemNo": "71",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47520,8 +48259,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::77",
-      "itemNo": "75",
+      "id": "1. Musculoskeleton::74",
+      "itemNo": "72",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47532,8 +48271,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::78",
-      "itemNo": "76",
+      "id": "1. Musculoskeleton::75",
+      "itemNo": "73",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47544,8 +48283,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::79",
-      "itemNo": "77",
+      "id": "1. Musculoskeleton::76",
+      "itemNo": "74",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47556,8 +48295,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::80",
-      "itemNo": "78",
+      "id": "1. Musculoskeleton::77",
+      "itemNo": "75",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47568,8 +48307,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::81",
-      "itemNo": "79",
+      "id": "1. Musculoskeleton::78",
+      "itemNo": "76",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47580,8 +48319,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::82",
-      "itemNo": "80",
+      "id": "1. Musculoskeleton::79",
+      "itemNo": "77",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47592,8 +48331,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::83",
-      "itemNo": "81",
+      "id": "1. Musculoskeleton::80",
+      "itemNo": "78",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47604,8 +48343,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::84",
-      "itemNo": "82",
+      "id": "1. Musculoskeleton::81",
+      "itemNo": "79",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47616,8 +48355,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::85",
-      "itemNo": "83",
+      "id": "1. Musculoskeleton::82",
+      "itemNo": "80",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47628,8 +48367,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::86",
-      "itemNo": "84",
+      "id": "1. Musculoskeleton::83",
+      "itemNo": "81",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47640,8 +48379,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::87",
-      "itemNo": "85",
+      "id": "1. Musculoskeleton::84",
+      "itemNo": "82",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47652,8 +48391,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::88",
-      "itemNo": "86",
+      "id": "1. Musculoskeleton::85",
+      "itemNo": "83",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47664,8 +48403,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::89",
-      "itemNo": "87",
+      "id": "1. Musculoskeleton::86",
+      "itemNo": "84",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47676,8 +48415,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::90",
-      "itemNo": "88",
+      "id": "1. Musculoskeleton::87",
+      "itemNo": "85",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47688,8 +48427,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::91",
-      "itemNo": "89",
+      "id": "1. Musculoskeleton::88",
+      "itemNo": "86",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47700,8 +48439,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::92",
-      "itemNo": "90",
+      "id": "1. Musculoskeleton::89",
+      "itemNo": "87",
       "group": "1. Musculoskeleton",
       "subTopic": "Osteoporosis",
       "track": "Clinic",
@@ -47712,8 +48451,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::93",
-      "itemNo": "91",
+      "id": "1. Musculoskeleton::90",
+      "itemNo": "88",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47724,8 +48463,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::94",
-      "itemNo": "92",
+      "id": "1. Musculoskeleton::91",
+      "itemNo": "89",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47736,8 +48475,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::95",
-      "itemNo": "93",
+      "id": "1. Musculoskeleton::92",
+      "itemNo": "90",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47748,8 +48487,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::96",
-      "itemNo": "94",
+      "id": "1. Musculoskeleton::93",
+      "itemNo": "91",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47760,8 +48499,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::97",
-      "itemNo": "95",
+      "id": "1. Musculoskeleton::94",
+      "itemNo": "92",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47772,8 +48511,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::98",
-      "itemNo": "96",
+      "id": "1. Musculoskeleton::95",
+      "itemNo": "93",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47784,8 +48523,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::99",
-      "itemNo": "97",
+      "id": "1. Musculoskeleton::96",
+      "itemNo": "94",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47796,8 +48535,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::100",
-      "itemNo": "98",
+      "id": "1. Musculoskeleton::97",
+      "itemNo": "95",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47808,8 +48547,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::101",
-      "itemNo": "99",
+      "id": "1. Musculoskeleton::98",
+      "itemNo": "96",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47820,8 +48559,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::102",
-      "itemNo": "100",
+      "id": "1. Musculoskeleton::99",
+      "itemNo": "97",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47832,8 +48571,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::103",
-      "itemNo": "101",
+      "id": "1. Musculoskeleton::100",
+      "itemNo": "98",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47844,8 +48583,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::104",
-      "itemNo": "102",
+      "id": "1. Musculoskeleton::101",
+      "itemNo": "99",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47856,8 +48595,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::105",
-      "itemNo": "103",
+      "id": "1. Musculoskeleton::102",
+      "itemNo": "100",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47868,8 +48607,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::106",
-      "itemNo": "104",
+      "id": "1. Musculoskeleton::103",
+      "itemNo": "101",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47880,8 +48619,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::107",
-      "itemNo": "105",
+      "id": "1. Musculoskeleton::104",
+      "itemNo": "102",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47892,8 +48631,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::108",
-      "itemNo": "106",
+      "id": "1. Musculoskeleton::105",
+      "itemNo": "103",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47904,8 +48643,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::109",
-      "itemNo": "107",
+      "id": "1. Musculoskeleton::106",
+      "itemNo": "104",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47916,8 +48655,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::110",
-      "itemNo": "108",
+      "id": "1. Musculoskeleton::107",
+      "itemNo": "105",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47928,8 +48667,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::111",
-      "itemNo": "109",
+      "id": "1. Musculoskeleton::108",
+      "itemNo": "106",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47940,8 +48679,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::112",
-      "itemNo": "110",
+      "id": "1. Musculoskeleton::109",
+      "itemNo": "107",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47952,8 +48691,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::113",
-      "itemNo": "111",
+      "id": "1. Musculoskeleton::110",
+      "itemNo": "108",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47964,8 +48703,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::114",
-      "itemNo": "112",
+      "id": "1. Musculoskeleton::111",
+      "itemNo": "109",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47976,8 +48715,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::115",
-      "itemNo": "113",
+      "id": "1. Musculoskeleton::112",
+      "itemNo": "110",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -47988,8 +48727,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::116",
-      "itemNo": "114",
+      "id": "1. Musculoskeleton::113",
+      "itemNo": "111",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48000,8 +48739,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::117",
-      "itemNo": "115",
+      "id": "1. Musculoskeleton::114",
+      "itemNo": "112",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48012,8 +48751,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::118",
-      "itemNo": "116",
+      "id": "1. Musculoskeleton::115",
+      "itemNo": "113",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48024,8 +48763,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::119",
-      "itemNo": "117",
+      "id": "1. Musculoskeleton::116",
+      "itemNo": "114",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48036,8 +48775,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::120",
-      "itemNo": "118",
+      "id": "1. Musculoskeleton::117",
+      "itemNo": "115",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48048,8 +48787,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::121",
-      "itemNo": "119",
+      "id": "1. Musculoskeleton::118",
+      "itemNo": "116",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48060,8 +48799,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::122",
-      "itemNo": "120",
+      "id": "1. Musculoskeleton::119",
+      "itemNo": "117",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48072,8 +48811,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::123",
-      "itemNo": "121",
+      "id": "1. Musculoskeleton::120",
+      "itemNo": "118",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48084,8 +48823,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::124",
-      "itemNo": "122",
+      "id": "1. Musculoskeleton::121",
+      "itemNo": "119",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48096,8 +48835,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::125",
-      "itemNo": "123",
+      "id": "1. Musculoskeleton::122",
+      "itemNo": "120",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48108,8 +48847,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::126",
-      "itemNo": "124",
+      "id": "1. Musculoskeleton::123",
+      "itemNo": "121",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48120,8 +48859,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::127",
-      "itemNo": "125",
+      "id": "1. Musculoskeleton::124",
+      "itemNo": "122",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48132,8 +48871,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::128",
-      "itemNo": "126",
+      "id": "1. Musculoskeleton::125",
+      "itemNo": "123",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48144,8 +48883,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::129",
-      "itemNo": "127",
+      "id": "1. Musculoskeleton::126",
+      "itemNo": "124",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48156,8 +48895,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::130",
-      "itemNo": "128",
+      "id": "1. Musculoskeleton::127",
+      "itemNo": "125",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48168,8 +48907,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::131",
-      "itemNo": "129",
+      "id": "1. Musculoskeleton::128",
+      "itemNo": "126",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48180,8 +48919,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::132",
-      "itemNo": "130",
+      "id": "1. Musculoskeleton::129",
+      "itemNo": "127",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48192,8 +48931,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::133",
-      "itemNo": "131",
+      "id": "1. Musculoskeleton::130",
+      "itemNo": "128",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48204,8 +48943,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::134",
-      "itemNo": "132",
+      "id": "1. Musculoskeleton::131",
+      "itemNo": "129",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48216,8 +48955,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::135",
-      "itemNo": "133",
+      "id": "1. Musculoskeleton::132",
+      "itemNo": "130",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48228,8 +48967,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::136",
-      "itemNo": "134",
+      "id": "1. Musculoskeleton::133",
+      "itemNo": "131",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48240,8 +48979,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::137",
-      "itemNo": "135",
+      "id": "1. Musculoskeleton::134",
+      "itemNo": "132",
       "group": "1. Musculoskeleton",
       "subTopic": "Rheumatoid Arthritis",
       "track": "Clinic",
@@ -48252,8 +48991,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::138",
-      "itemNo": "136",
+      "id": "1. Musculoskeleton::135",
+      "itemNo": "133",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48264,8 +49003,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::139",
-      "itemNo": "137",
+      "id": "1. Musculoskeleton::136",
+      "itemNo": "134",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48276,8 +49015,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::140",
-      "itemNo": "138",
+      "id": "1. Musculoskeleton::137",
+      "itemNo": "135",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48288,8 +49027,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::141",
-      "itemNo": "139",
+      "id": "1. Musculoskeleton::138",
+      "itemNo": "136",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48300,8 +49039,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::142",
-      "itemNo": "140",
+      "id": "1. Musculoskeleton::139",
+      "itemNo": "137",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48312,8 +49051,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::143",
-      "itemNo": "141",
+      "id": "1. Musculoskeleton::140",
+      "itemNo": "138",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48324,8 +49063,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::144",
-      "itemNo": "142",
+      "id": "1. Musculoskeleton::141",
+      "itemNo": "139",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48336,8 +49075,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::145",
-      "itemNo": "143",
+      "id": "1. Musculoskeleton::142",
+      "itemNo": "140",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48348,8 +49087,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::146",
-      "itemNo": "144",
+      "id": "1. Musculoskeleton::143",
+      "itemNo": "141",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48360,8 +49099,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::147",
-      "itemNo": "145",
+      "id": "1. Musculoskeleton::144",
+      "itemNo": "142",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48372,8 +49111,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::148",
-      "itemNo": "146",
+      "id": "1. Musculoskeleton::145",
+      "itemNo": "143",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48384,8 +49123,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::149",
-      "itemNo": "147",
+      "id": "1. Musculoskeleton::146",
+      "itemNo": "144",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48396,8 +49135,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::150",
-      "itemNo": "148",
+      "id": "1. Musculoskeleton::147",
+      "itemNo": "145",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48408,8 +49147,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::151",
-      "itemNo": "149",
+      "id": "1. Musculoskeleton::148",
+      "itemNo": "146",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48420,8 +49159,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::152",
-      "itemNo": "150",
+      "id": "1. Musculoskeleton::149",
+      "itemNo": "147",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48432,8 +49171,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::153",
-      "itemNo": "151",
+      "id": "1. Musculoskeleton::150",
+      "itemNo": "148",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48444,8 +49183,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::154",
-      "itemNo": "152",
+      "id": "1. Musculoskeleton::151",
+      "itemNo": "149",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48456,8 +49195,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::155",
-      "itemNo": "153",
+      "id": "1. Musculoskeleton::152",
+      "itemNo": "150",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48468,8 +49207,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::156",
-      "itemNo": "154",
+      "id": "1. Musculoskeleton::153",
+      "itemNo": "151",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48480,8 +49219,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::157",
-      "itemNo": "155",
+      "id": "1. Musculoskeleton::154",
+      "itemNo": "152",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48492,8 +49231,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::158",
-      "itemNo": "156",
+      "id": "1. Musculoskeleton::155",
+      "itemNo": "153",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48504,8 +49243,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::159",
-      "itemNo": "157",
+      "id": "1. Musculoskeleton::156",
+      "itemNo": "154",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48516,8 +49255,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::160",
-      "itemNo": "158",
+      "id": "1. Musculoskeleton::157",
+      "itemNo": "155",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48528,8 +49267,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::161",
-      "itemNo": "159",
+      "id": "1. Musculoskeleton::158",
+      "itemNo": "156",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48540,8 +49279,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::162",
-      "itemNo": "160",
+      "id": "1. Musculoskeleton::159",
+      "itemNo": "157",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48552,8 +49291,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::163",
-      "itemNo": "161",
+      "id": "1. Musculoskeleton::160",
+      "itemNo": "158",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48564,8 +49303,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::164",
-      "itemNo": "162",
+      "id": "1. Musculoskeleton::161",
+      "itemNo": "159",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48576,8 +49315,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::165",
-      "itemNo": "163",
+      "id": "1. Musculoskeleton::162",
+      "itemNo": "160",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48588,8 +49327,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::166",
-      "itemNo": "164",
+      "id": "1. Musculoskeleton::163",
+      "itemNo": "161",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48600,8 +49339,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::167",
-      "itemNo": "165",
+      "id": "1. Musculoskeleton::164",
+      "itemNo": "162",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48612,8 +49351,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::168",
-      "itemNo": "166",
+      "id": "1. Musculoskeleton::165",
+      "itemNo": "163",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48624,8 +49363,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::169",
-      "itemNo": "167",
+      "id": "1. Musculoskeleton::166",
+      "itemNo": "164",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48636,8 +49375,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::170",
-      "itemNo": "168",
+      "id": "1. Musculoskeleton::167",
+      "itemNo": "165",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48648,8 +49387,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::171",
-      "itemNo": "169",
+      "id": "1. Musculoskeleton::168",
+      "itemNo": "166",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48660,8 +49399,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::172",
-      "itemNo": "170",
+      "id": "1. Musculoskeleton::169",
+      "itemNo": "167",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48672,8 +49411,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::173",
-      "itemNo": "171",
+      "id": "1. Musculoskeleton::170",
+      "itemNo": "168",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48684,8 +49423,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::174",
-      "itemNo": "172",
+      "id": "1. Musculoskeleton::171",
+      "itemNo": "169",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48696,8 +49435,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::175",
-      "itemNo": "173",
+      "id": "1. Musculoskeleton::172",
+      "itemNo": "170",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48708,8 +49447,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::176",
-      "itemNo": "174",
+      "id": "1. Musculoskeleton::173",
+      "itemNo": "171",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48720,8 +49459,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::177",
-      "itemNo": "175",
+      "id": "1. Musculoskeleton::174",
+      "itemNo": "172",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48732,8 +49471,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::178",
-      "itemNo": "176",
+      "id": "1. Musculoskeleton::175",
+      "itemNo": "173",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48744,8 +49483,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::179",
-      "itemNo": "177",
+      "id": "1. Musculoskeleton::176",
+      "itemNo": "174",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48756,8 +49495,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::180",
-      "itemNo": "178",
+      "id": "1. Musculoskeleton::177",
+      "itemNo": "175",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48768,8 +49507,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::181",
-      "itemNo": "179",
+      "id": "1. Musculoskeleton::178",
+      "itemNo": "176",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -48780,8 +49519,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "1. Musculoskeleton::182",
-      "itemNo": "180",
+      "id": "1. Musculoskeleton::179",
+      "itemNo": "177",
       "group": "1. Musculoskeleton",
       "subTopic": "Gout & Hyperuricemia",
       "track": "Clinic",
@@ -55339,7 +56078,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Concomitant Quadruple Therapy 14 วันประกอบด้วยยาใด?",
       "questionImage": "",
-      "answer": "PPI (วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Amoxicillin</b> (1 g วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Clarithromycin</b> (500 mg วันละ 2 ครั้ง) + <b style=\"color:#0284c7;\">Metronidazole</b> (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
+      "answer": "&lt;b&gt;PPI&lt;/b&gt; (วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Amoxicillin</b>&lt;/b&gt; (1 g วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Clarithromycin</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง) +<br> &lt;b&gt;<b style=\"color:#0284c7;\">Metronidazole</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
       "answerImage": "",
       "note": ""
     },
@@ -57439,7 +58178,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์การจำแนกโรคจมูกอักเสบจากภูมิแพ้ตามแนวทาง ARIA อาการแบบมีช่วงเว้น (Intermittent) คือเท่าใด?",
       "questionImage": "",
-      "answer": "มีอาการน้อยกว่า 4 วันต่อสัปดาห์ หรือมีอาการติดต่อกันนานน้อยกว่า 4 สัปดาห์<br> (หากมีอาการตั้งแต่ 4 วันต่อสัปดาห์ และนานตั้งแต่ 4 สัปดาห์ขึ้นไป จัดเป็น Persistent)",
+      "answer": "มีอาการน้อยกว่า 4 วันต่อสัปดาห์ <br>หรือมีอาการติดต่อกันนานน้อยกว่า 4 สัปดาห์<br><br>(หากมีอาการตั้งแต่ 4 วันต่อสัปดาห์ และนานตั้งแต่ 4 สัปดาห์ขึ้นไป จัดเป็น Persistent)",
       "answerImage": "",
       "note": ""
     },
@@ -57451,7 +58190,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์ที่บ่งชี้ว่าโรคภูมิแพ้โพรงจมูกเป็นระดับปานกลางถึงรุนแรง (Moderate-to-Severe) ตามเกณฑ์ ARIA คืออะไร?",
       "questionImage": "",
-      "answer": "มีผลกระทบต่อคุณภาพชีวิตข้อใดข้อหนึ่ง: การนอนหลับถูกรบกวน, กิจวัตรประจำวันบกพร่อง,<br> การเรียน/การทำงานบกพร่อง, หรือมีอาการรบกวนที่สร้างความรำคาญใจอย่างมาก",
+      "answer": "มีผลกระทบต่อคุณภาพชีวิตข้อใดข้อหนึ่ง: <br>1. การนอนหลับถูกรบกวน, <br>2. กิจวัตรประจำวันบกพร่อง,<br>3. การเรียน/การทำงานบกพร่อง<br>4. หรือมีอาการรบกวนที่สร้างความรำคาญใจอย่างมาก",
       "answerImage": "",
       "note": ""
     },
@@ -57475,7 +58214,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยากลุ่มใดที่มีประสิทธิภาพสูงที่สุดในการรักษาโรคจมูกอักเสบจากภูมิแพ้ทุกอาการ?",
       "questionImage": "",
-      "answer": "Intranasal Corticosteroids (INCS เช่น Fluticasone, Mometasone, Budesonide)<br> มีประสิทธิผลสูงสุดในการลดทั้งอาการคัดจมูก น้ำมูกไหล จาม คัน และอาการทางตา",
+      "answer": "Intranasal Corticosteroids<br> (INCS เช่น Fluticasone, Mometasone, Budesonide)<br> มีประสิทธิผลสูงสุดในการลดทั้งอาการคัดจมูก น้ำมูกไหล จาม คัน และอาการทางตา",
       "answerImage": "",
       "note": ""
     },
@@ -60972,6 +61711,342 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "อ้างอิง: คำแนะนำสำหรับการวินิจฉัยและดูแลรักษาโรคนอนไม่หลับในประเทศไทย สำหรับผู้ใหญ่ พ.ศ.2585"
     },
     {
+      "id": "9. Neurologic::152",
+      "itemNo": "150",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "นิยามเวลาในการวินิจฉัยภาวะชักต่อเนื่อง (Status Epilepticus) คือชักนานตั้งแต่กี่นาทีขึ้นไป?",
+      "questionImage": "",
+      "answer": "ชักเกร็งกระตุกต่อเนื่องนานตั้งแต่ 5 นาทีขึ้นไป (&gt;= 5 นาที)<br> หรือมีอาการชักตั้งแต่ 2 ครั้งขึ้นไปโดยระหว่างนั้นผู้ป่วยไม่ฟื้นคืนสติ จัดเป็นภาวะฉุกเฉินทางการแพทย์",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::153",
+      "itemNo": "151",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกมาตรฐานในระยะแรก (5-20 นาทีแรก) ของภาวะ Status Epilepticus คือยากลุ่มใดและยาตัวใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่ม Benzodiazepines: IV Lorazepam (0.1 mg/kg หรือ 4 mg) หรือ IV Diazepam (10 mg)<br> (หากไม่มีเส้นเลือดดำให้ฉีด IM Midazolam 10 mg ทันที)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::154",
+      "itemNo": "152",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยาฉีดทางเลือกในระยะที่สอง (20-40 นาที) หากผู้ป่วยยังไม่หยุดชักหลังได้รับ Benzodiazepines คืออะไร?",
+      "questionImage": "",
+      "answer": "IV Levetiracetam (60 mg/kg), IV Sodium Valproate (40 mg/kg), หรือ IV Fosphenytoin (20 mg PE/kg)<br> เป็นยากันชักออกฤทธิ์ยาวที่ไม่กดการหายใจ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::155",
+      "itemNo": "153",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "เภสัชจลนศาสตร์ของยา Phenytoin มีลักษณะพิเศษอย่างไรที่ทำให้ระดับยาในเลือดเปลี่ยนแปลงได้เร็วมาก?",
+      "questionImage": "",
+      "answer": "จลนศาสตร์แบบอิ่มตัวไม่เป็นเส้นตรง (Non-linear / Michaelis-Menten kinetics)<br> การเพิ่มขนาดยาเพียงเล็กน้อยอาจทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดดจนเกิดพิษเฉียบพลัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::156",
+      "itemNo": "154",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ช่วงระดับความเข้มข้นของยา Phenytoin ในเลือดที่ให้ผลการรักษา (Therapeutic range) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "10 ถึง 20 mcg/mL (Total phenytoin)<br> (หากผู้ป่วยมีภาวะอัลบูมินในเลือดต่ำ ต้องคำนวณปรับค่าด้วยสูตร Sheiner-Tozer equation)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::157",
+      "itemNo": "155",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการพิษเฉียบพลันที่บ่งชี้ว่าระดับยา Phenytoin ในเลือดสูงเกินค่าควบคุมมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "ตากระตุก (Nystagmus), เดินเซทรงตัวไม่อยู่ (Ataxia), มองเห็นภาพซ้อน (Diplopia), และซึมสับสน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::158",
+      "itemNo": "156",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ก่อนเริ่มยา Carbamazepine ในประชากรไทยและเอเชีย จำเป็นต้องตรวจคัดกรองยีนใด?",
+      "questionImage": "",
+      "answer": "ยีน HLA-B*1502<br> หากให้ผลบวก ห้ามใช้ยาเด็ดขาดเพราะเพิ่มความเสี่ยงต่อการเกิดผื่นแพ้ยารุนแรงชนิด SJS และ TEN สูงมาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::159",
+      "itemNo": "157",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ปรากฏการณ์ Autoinduction ของยา Carbamazepine ส่งผลต่อระดับยาในเลือดอย่างไร?",
+      "questionImage": "",
+      "answer": "ยาจะกระตุ้นเอนไซม์ CYP3A4 ให้ทำลายตัวเองมากขึ้น ทำให้ระดับยาในเลือดลดลงหลังกินไป 3-5 สัปดาห์<br> จำเป็นต้องปรับเพิ่มขนาดยาขึ้นเพื่อให้ได้ระดับยาในการรักษาคงที่",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::160",
+      "itemNo": "158",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "Sodium Valproate (Depakine) เป็นยาทางเลือกแรกในการรักษาอาการชักชนิดใด?",
+      "questionImage": "",
+      "answer": "ชักแบบทั้งตัว (Generalized seizures) เช่น Generalized tonic-clonic, Myoclonic, และ Absence seizures<br> เป็นยากันชักที่ออกฤทธิ์กว้างครอบคลุมการชักเกือบทุกรูปแบบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::161",
+      "itemNo": "159",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์สำคัญที่พบบ่อยของยา Sodium Valproate คืออะไร?",
+      "questionImage": "",
+      "answer": "น้ำหนักตัวเพิ่มขึ้นอย่างมาก ผมร่วง ตับอักเสบ ตับอ่อนอักเสบเฉียบพลัน และแอมโมเนียในเลือดสูง (Hyperammonemia)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::162",
+      "itemNo": "160",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ยา Ethosuximide มีข้อบ่งใช้จำเพาะเป็น <b style=\"color:#16a34a;\">First-line</b> ในการรักษาอาการชักชนิดใด?",
+      "questionImage": "",
+      "answer": "อาการชักเหม่อในเด็ก (Absence seizures / Petit mal)<br> ออกฤทธิ์ยับยั้ง T-type calcium channels ในสมองส่วนทาลามัสโดยไม่มีผลต่อการชักชนิดอื่น",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::163",
+      "itemNo": "161",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "ปฏิกิริยาระหว่างยาของ Sodium Valproate เมื่อใช้ร่วมกับ Lamotrigine คืออะไรและต้องปรับยาอย่างไร?",
+      "questionImage": "",
+      "answer": "Valproate ยับยั้งกระบวนการ Glucuronidation ของ Lamotrigine ทำให้ระดับยา Lamotrigine สูงขึ้น 2 เท่า<br> ต้อง ลดขนาดยาเริ่มต้นของ Lamotrigine ลง 50% และปรับขึ้นช้าๆ เพื่อป้องกันการเกิดผื่นแพ้ SJS",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::164",
+      "itemNo": "162",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์ทางระบบประสาทและจิตเวชที่พบบ่อยของยา Levetiracetam (Keppra) คืออะไร?",
+      "questionImage": "",
+      "answer": "อารมณ์ฉุนเฉียว หงุดหงิดง่าย ก้าวร้าว ซึมเศร้า และวิตกกังวล (Keppra rage)<br> แต่มีข้อดีคือไม่ผ่านการเปลี่ยนสภาพที่ตับ (ขับทางไตเป็นหลัก) จึงแทบไม่มีปฏิกิริยาระหว่างยา",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::165",
+      "itemNo": "163",
+      "group": "9. Neurologic",
+      "subTopic": "Epilepsy & Seizures",
+      "track": "Clinic",
+      "question": "หญิงวัยเจริญพันธุ์ที่เป็นโรคลมชักและวางแผนตั้งครรภ์ ควรเลือกยากันชักตัวใดที่มีความปลอดภัยสูงสุด?",
+      "questionImage": "",
+      "answer": "Levetiracetam หรือ Lamotrigine ร่วมกับเสริม Folic Acid ขนาดสูง (4-5 mg ต่อวัน)<br> และหลีกเลี่ยง Sodium Valproate อย่างเด็ดขาด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::166",
+      "itemNo": "164",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ช่วงเวลาทอง (Golden period) ในการบริหารยาละลายลิ่มเลือด IV rtPA (Alteplase) ในโรคหลอดเลือดสมองตีบเฉียบพลันคือเท่าใด?",
+      "questionImage": "",
+      "answer": "ภายใน 4.5 ชั่วโมงแรก นับตั้งแต่เวลาที่ผู้ป่วยเริ่มมีอาการผิดปกติ (Onset to needle time)<br> เพื่อช่วยฟื้นฟูเนื้อสมองส่วน Penumbra และลดความพิการระยะยาว",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::167",
+      "itemNo": "165",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "เกณฑ์ระดับความดันโลหิตที่ต้องควบคุมก่อนเริ่มฉีดยาละลายลิ่มเลือด IV Alteplase คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ความดันโลหิตต้องต่ำกว่า 185/110 mmHg (SBP &lt; 185 และ DBP &lt; 110)<br> และต้องคุมให้ต่ำกว่า 180/105 mmHg ต่อเนื่องนาน 24 ชั่วโมงหลังฉีดยา เพื่อป้องกันเลือดออกในสมอง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::168",
+      "itemNo": "166",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ขนาดยาและการบริหารยา IV Alteplase ในผู้ป่วยโรคหลอดเลือดสมองตีบเฉียบพลันคือเท่าใด?",
+      "questionImage": "",
+      "answer": "ขนาด 0.9 mg/kg (ขนาดยาสูงสุดไม่เกิน 90 mg) โดยให้ 10% แรกฉีดแบบ IV bolus ใน 1 นาที<br> และอีก 90% ที่เหลือหยดเข้าทางหลอดเลือดดำต่อเนื่องนาน 60 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::169",
+      "itemNo": "167",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "หลังได้รับยาละลายลิ่มเลือด IV Alteplase ต้องงดยาต้านเกล็ดเลือดและยาต้านการแข็งตัวของเลือดนานเท่าใด?",
+      "questionImage": "",
+      "answer": "ต้องงดยาต้านเกล็ดเลือดและยาต้านการแข็งตัวของเลือดทุกชนิดเป็นเวลาอย่างน้อย 24 ชั่วโมง<br> และต้องทำ CT สมองซ้ำหลัง 24 ชั่วโมงเพื่อยืนยันว่าไม่มีภาวะเลือดออกในสมองก่อนเริ่มยาต้านเกล็ดเลือด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::170",
+      "itemNo": "168",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยาต้านเกล็ดเลือดทางเลือกแรกสำหรับป้องกันสโตรกขาดเลือดซ้ำระยะยาวในผู้ป่วย Non-cardioembolic stroke คือยาใด?",
+      "questionImage": "",
+      "answer": "Aspirin (81 ถึง 325 mg ต่อวัน) หรือ Clopidogrel (75 mg ต่อวัน)<br> เริ่มยาภายใน 24 ถึง 48 ชั่วโมงแรกหลังเกิดอาการ (กรณีไม่ได้ยาละลายลิ่มเลือด)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::171",
+      "itemNo": "169",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ข้อบ่งชี้ในการให้ยาต้านเกล็ดเลือดคู่ (DAPT: Aspirin + Clopidogrel) ระยะสั้น 21 วันในผู้ป่วยสโตรกคืออะไร?",
+      "questionImage": "",
+      "answer": "ผู้ป่วยที่มีอาการสโตรกตีบชนิดไม่รุนแรง (Minor ischemic stroke NIHSS &lt;= 3)<br> หรือผู้ป่วยสมองขาดเลือดชั่วคราวความเสี่ยงสูง (High-risk TIA ที่มี ABCD2 score &gt;= 4) เพื่อลดการเกิดสโตรกซ้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::172",
+      "itemNo": "170",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยาป้องกันสโตรกทางเลือกแรกสำหรับผู้ป่วยที่มีภาวะหัวใจห้องบนสั่นพลิ้ว (Atrial Fibrillation) คือยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยากลุ่ม Direct Oral Anticoagulants (DOACs เช่น Apixaban, Rivaroxaban, Dabigatran)<br> มีประสิทธิภาพเหนือกว่า Warfarin และมีความเสี่ยงต่อภาวะเลือดออกในสมองต่ำกว่าอย่างชัดเจน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::173",
+      "itemNo": "171",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "เป้าหมายการควบคุมระดับไขมัน LDL-C ในผู้ป่วยที่มีโรคหลอดเลือดสมองตีบจากหลอดเลือดแดงแข็ง (Atherosclerosis) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "ระดับ LDL-C น้อยกว่า 70 mg/dL (หรือลดลง &gt;= 50% จากค่าเริ่มต้น)<br> โดยให้ยากลุ่ม High-intensity statin (เช่น Atorvastatin 40-80 mg หรือ Rosuvastatin 20-40 mg)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::174",
+      "itemNo": "172",
+      "group": "9. Neurologic",
+      "subTopic": "Stroke & Cerebrovascular",
+      "track": "Clinic",
+      "question": "ยา Nimodipine มีบทบาทสำคัญอย่างไรในผู้ป่วยที่มีเลือดออกใต้เยื่อหุ้มสมอง (Subarachnoid Hemorrhage / SAH)?",
+      "questionImage": "",
+      "answer": "รับประทานขนาด 60 mg ทุก 4 ชั่วโมง ต่อเนื่องนาน 21 วัน<br> เพื่อป้องกันภาวะหลอดเลือดสมองหดเกร็ง (Cerebral vasospasm) และภาวะสมองขาดเลือดตามหลัง (DCI)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::175",
+      "itemNo": "173",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยากลุ่ม Gabapentinoids (Gabapentin, Pregabalin) ออกฤทธิ์ระงับอาการปวดประสาทด้วยกลไกใด?",
+      "questionImage": "",
+      "answer": "จับกับแอลฟา-2-เดลตา ซับยูนิต (Alpha-2-delta subunit) ของช่องแคลเซียมที่ไวต่อแรงดันไฟฟ้าในไขสันหลัง<br> ลดการหลั่งสารสื่อประสาทก่อความเจ็บปวด เช่น Glutamate และ Substance P",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::176",
+      "itemNo": "174",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ข้อควรระวังสำคัญในการปรับขนาดยา Gabapentin และ Pregabalin คืออะไร?",
+      "questionImage": "",
+      "answer": "ยาถูกขับออกทางไตในรูปเดิมเกือบทั้งหมด (Renally excreted unchanged)<br> ต้องปรับลดขนาดยาตามค่าการทำงานของไต (CrCl) เพื่อป้องกันอาการง่วงซึม มึนงง สับสน และกล้ามเนื้อกระตุก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::177",
+      "itemNo": "175",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยาในกลุ่ม SNRIs ตัวใดที่มีข้อบ่งชี้ระดับ <b style=\"color:#16a34a;\">First-line</b> ในการรักษาอาการปวดปลายประสาทจากโรคเบาหวาน (DPNP)?",
+      "questionImage": "",
+      "answer": "Duloxetine (ขนาด 60 mg วันละครั้ง)<br> ช่วยเพิ่มสาร Serotonin และ Norepinephrine ในวิถียับยั้งความเจ็บปวดจากสมองสู่ไขสันหลัง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::178",
+      "itemNo": "176",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกมาตรฐาน (<b style=\"color:#16a34a;\">Drug of choice</b>) ในการรักษาโรคปวดเส้นประสาทใบหน้า (Trigeminal neuralgia) คือยาใด?",
+      "questionImage": "",
+      "answer": "Carbamazepine (ขนาดเริ่มต้น 100-200 mg วันละ 1-2 ครั้ง แล้วค่อยๆ ปรับขึ้น)<br> หรือ Oxcarbazepine มีประสิทธิผลระงับอาการปวดแปล๊บคล้ายไฟช็อตที่ใบหน้าได้ดีที่สุด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "9. Neurologic::179",
+      "itemNo": "177",
+      "group": "9. Neurologic",
+      "subTopic": "Neuropathic Pain",
+      "track": "Clinic",
+      "question": "แผ่นแปะเฉพาะที่ 5% Lidocaine patch มีข้อบ่งใช้เด่นและคำแนะนำในการใช้อย่างไร?",
+      "questionImage": "",
+      "answer": "ใช้บรรเทาอาการปวดแสบร้อนปลายประสาทหลังงูสวัด (Postherpetic neuralgia / PHN)<br> แปะบริเวณผิวหนังที่ปวดวันละ 1 ครั้ง นานไม่เกิน 12 ชั่วโมงต่อวัน (แปะ 12 ชม. พัก 12 ชม.)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
       "id": "10. Psychiatric::3",
       "itemNo": "1",
       "group": "10. Psychiatric",
@@ -61556,6 +62631,90 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "question": "ยา Propranolol และกลุ่ม \\beta-adrenoceptor antagonists มีประโยชน์อย่างไรในแง่ของความวิตกกังวล?",
       "questionImage": "",
       "answer": "ใช้เพื่อป้องกันและควบคุมอาการแสดงทางร่างกายของความวิตกกังวลในสถานการณ์เฉพาะหน้า หรือความวิตกกังวลจากการแสดงออก (Situational / Performance anxiety) เช่น อาการใจสั่นและมือสั่นก่อนพรีเซนต์งาน โดยรับประทานก่อนเริ่มงาน 30-60 นาที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::53",
+      "itemNo": "50",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกในการรักษาโรคสมาธิสั้น (ADHD) ในเด็กและวัยรุ่นคือยาใดและออกฤทธิ์อย่างไร?",
+      "questionImage": "",
+      "answer": "Methylphenidate (Ritalin, Concerta) ออกฤทธิ์กระตุ้นระบบประสาทส่วนกลางโดยยับยั้ง DAT และ NET<br> ช่วยเพิ่มสมาธิ ลดความหุนหันพลันแล่น จัดเป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::54",
+      "itemNo": "51",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "อาการไม่พึงประสงค์และการตรวจติดตามที่สำคัญในเด็กที่รับประทานยา Methylphenidate คืออะไร?",
+      "questionImage": "",
+      "answer": "เบื่ออาหาร น้ำหนักลด นอนไม่หลับ หัวใจเต้นเร็ว และความดันโลหิตสูงขึ้น<br> ต้องติดตามกราฟการเจริญเติบโต (ส่วนสูงและน้ำหนัก) ทุก 6 เดือน และตรวจความดันโลหิตสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::55",
+      "itemNo": "52",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยารักษาโรคสมาธิสั้นกลุ่มที่ไม่ใช่สารกระตุ้นประสาท (Non-stimulant) ที่นิยมใช้เมื่อมีข้อห้ามใช้ Methylphenidate คือยาใด?",
+      "questionImage": "",
+      "answer": "Atomoxetine (Strattera) ออกฤทธิ์ยับยั้ง Selective Norepinephrine Reuptake Inhibitor (NRI)<br> ไม่เสี่ยงต่อการติดยา เหมาะสำหรับผู้ป่วยที่มีประวัติติดสารเสพติดหรือมีอาการกระตุก (Tics) ร่วมด้วย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::56",
+      "itemNo": "53",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "อาการแสดงของภาวะถอนสุราเฉียบพลัน (Alcohol Withdrawal Syndrome) มีลักษณะอย่างไร?",
+      "questionImage": "",
+      "answer": "มือสั่น เหงื่อแตก กระสับกระส่าย คลื่นไส้ หัวใจเต้นเร็ว <b style=\"color:#dc2626;\">ชัก</b> และอาจเกิดเพ้อสับสน (Delirium Tremens)<br> มักเกิดขึ้นหลังหยุดหรือลดปริมาณการดื่มสุราภายใน 6-48 ชั่วโมง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::57",
+      "itemNo": "54",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาทางเลือกแรกในการรักษาและป้องกันอาการถอนสุรารุนแรงคือยากลุ่มใด?",
+      "questionImage": "",
+      "answer": "ยาในกลุ่ม Benzodiazepines (เช่น Diazepam, Chlordiazepoxide หรือ Lorazepam ในรายตับแข็ง)<br> ช่วยเพิ่มฤทธิ์ของ GABA ลดการตื่นตัวของสมอง ป้องกันอาการชักและภาวะเพ้อสับสน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::58",
+      "itemNo": "55",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "กฎเหล็กในการให้สารน้ำและวิตามินบี 1 ในผู้ป่วยติดสุราเรื้อรังเพื่อป้องกัน Wernicke&#039;s Encephalopathy คืออะไร?",
+      "questionImage": "",
+      "answer": "ต้องให้ Vitamin B1 (Thiamine) ทางหลอดเลือดดำ ก่อนหรือพร้อมกับการให้น้ำตาลกลูโคส (Dextrose) เสมอ<br> ห้ามให้น้ำตาลกลูโคสก่อน Thiamine เด็ดขาด เพราะจะดึง Thiamine ไปใช้จนหมดและกระตุ้นให้สมองเสื่อมถาวรเฉียบพลัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "10. Psychiatric::59",
+      "itemNo": "56",
+      "group": "10. Psychiatric",
+      "subTopic": "10.1 Drug & alcohol abuse (ติดสารเสพติด/สุรา)",
+      "track": "Clinic",
+      "question": "ยาที่ช่วยรักษาภาวะติดสุราเรื้อรังโดยทำให้เกิดปฏิกิริยาไม่พึงประสงค์รุนแรงเมื่อดื่มแอลกอฮอล์คือยาใด?",
+      "questionImage": "",
+      "answer": "Disulfiram (Antabuse) ยับยั้งเอนไซม์ Aldehyde dehydrogenase<br> ทำให้เกิดการคั่งของ Acetaldehyde ส่งผลให้หน้าแดง หายใจลำบาก คลื่นไส้อาเจียน และความดันตกทันทีที่ดื่มแอลกอฮอล์",
       "answerImage": "",
       "note": ""
     },
@@ -63603,7 +64762,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::45",
       "itemNo": "43",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Aprepitant มีกลไกการออกฤทธิ์อย่างไร และเด่นในการป้องกัน CINV ระยะใด?",
       "questionImage": "",
@@ -63615,7 +64774,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::46",
       "itemNo": "44",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "สูตรการบริหารยา Aprepitant ชนิดรับประทาน 3 วัน มีขนาดการใช้อย่างไร?",
       "questionImage": "",
@@ -63627,7 +64786,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::47",
       "itemNo": "45",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Fosaprepitant แตกต่างจาก Aprepitant อย่างไร และมีขนาดบริหารยาอย่างไร?",
       "questionImage": "",
@@ -63639,7 +64798,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::48",
       "itemNo": "46",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดต้องลดขนาดยา <b style=\"color:#0284c7;\">Dexamethasone</b> ลงเมื่อใช้ร่วมกับยา Aprepitant?",
       "questionImage": "",
@@ -63651,7 +64810,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::49",
       "itemNo": "47",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาฉีด Ondansetron ทางหลอดเลือดดำจำกัดขนาดยาสูงสุดต่อครั้งไม่เกินเท่าใด เพราะเหตุใด?",
       "questionImage": "",
@@ -63663,7 +64822,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::50",
       "itemNo": "48",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Palonosetron มีคุณสมบัติเด่นเหนือกว่ายากลุ่ม 5-HT3 รุ่นแรกอย่างไร?",
       "questionImage": "",
@@ -63675,7 +64834,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::51",
       "itemNo": "49",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Olanzapine มีบทบาทอย่างไรในการรักษา CINV และขนาดที่แนะนำคือเท่าใด?",
       "questionImage": "",
@@ -63687,7 +64846,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::52",
       "itemNo": "50",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญของ Olanzapine ในผู้ป่วยมะเร็งคืออะไร และจัดการอย่างไร?",
       "questionImage": "",
@@ -63699,7 +64858,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::53",
       "itemNo": "51",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Lorazepam มีบทบาทอย่างไรใน Anticipatory CINV และบริหารยาอย่างไร?",
       "questionImage": "",
@@ -63711,7 +64870,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::54",
       "itemNo": "52",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "หากผู้ป่วยที่ได้รับ Metoclopramide เกิดอาการคอบิดเกร็ง ตาเหลือก (EPS) รักษาด้วยยาใด?",
       "questionImage": "",
@@ -63723,7 +64882,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::55",
       "itemNo": "53",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การอมน้ำแข็ง (Oral Cryotherapy) มีประโยชน์ในการป้องกันเยื่อบุช่องปากอักเสบจากยาใด?",
       "questionImage": "",
@@ -63735,7 +64894,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::56",
       "itemNo": "54",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "น้ำยาบ้วนปากสูตรผสม (Magic Mouthwash) นิยมผสมสารใดบ้างเพื่อบรรเทาแผลในปาก?",
       "questionImage": "",
@@ -63747,7 +64906,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::57",
       "itemNo": "55",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ข้อบ่งชี้ในการให้ยา G-CSF เพื่อป้องกันภาวะเม็ดเลือดขาวต่ำติดเชื้อ (Primary Prophylaxis) คืออะไร?",
       "questionImage": "",
@@ -63759,7 +64918,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::58",
       "itemNo": "56",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เปรียบเทียบวิธีการบริหารยาระหว่าง Filgrastim และ Pegfilgrastim?",
       "questionImage": "",
@@ -63771,7 +64930,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::59",
       "itemNo": "57",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "กฎการเว้นระยะเวลาในการฉีดยา G-CSF สัมพันธ์กับยาเคมีบำบัดอย่างไร?",
       "questionImage": "",
@@ -63783,7 +64942,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::60",
       "itemNo": "58",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงที่พบบ่อยที่สุดของยากลุ่ม G-CSF คืออะไร และรักษาด้วยยาใด?",
       "questionImage": "",
@@ -63795,7 +64954,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::61",
       "itemNo": "59",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงมีคำเตือนการใช้ยากระตุ้นการสร้างเม็ดเลือดแดง (ESAs) ในผู้ป่วยมะเร็ง?",
       "questionImage": "",
@@ -63807,7 +64966,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::62",
       "itemNo": "60",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาชนิดใดใช้ลดความเสี่ยงกระดูกหักและการกดทับไขสันหลังในผู้ป่วยมะเร็งลุกลามไปกระดูก?",
       "questionImage": "",
@@ -63819,7 +64978,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::63",
       "itemNo": "61",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การป้องกันภาวะกระดูกขากรรไกรตาย (ONJ) จากการใช้ Zoledronic acid หรือ Denosumab คืออะไร?",
       "questionImage": "",
@@ -63831,7 +64990,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::64",
       "itemNo": "62",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "อาการปวดกำเริบฉับพลัน (Breakthrough Pain) ในผู้ป่วยมะเร็งมีหลักการคำนวณขนาดยาแก้ปวดอย่างไร?",
       "questionImage": "",
@@ -63843,7 +65002,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::65",
       "itemNo": "63",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การป้องกันภาวะท้องผูกจากการใช้ยาแก้ปวดกลุ่ม Opioids ในผู้ป่วยมะเร็งมีแนวทางอย่างไร?",
       "questionImage": "",
@@ -63855,7 +65014,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::66",
       "itemNo": "64",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "<b style=\"color:#0284c7;\">Dexamethasone</b> มีประโยชน์อย่างไรในการบรรเทาอาการปวดจากมะเร็งลุกลามไปกระดูก?",
       "questionImage": "",
@@ -63867,7 +65026,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::67",
       "itemNo": "65",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "สรุปแผนการให้ยาต้านอาเจียนในวันที่ 2-4 หลังได้รับยาเคมีกลุ่ม HEC?",
       "questionImage": "",
@@ -63879,7 +65038,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::68",
       "itemNo": "66",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "มะเร็งเต้านมชนิดตัวรับฮอร์โมนเป็นบวก (HR-positive) หมายถึงมีการตรวจพบตัวรับใด?",
       "questionImage": "",
@@ -63891,7 +65050,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::69",
       "itemNo": "67",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาต้านฮอร์โมนมาตรฐานทางเลือกแรกในสตรี &#039;ก่อนหมดประจำเดือน&#039; ที่เป็นมะเร็งเต้านม HR+ คืออะไร?",
       "questionImage": "",
@@ -63903,7 +65062,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::70",
       "itemNo": "68",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "กรณีสตรีก่อนหมดประจำเดือนที่มีความเสี่ยงสูง มีทางเลือกการรักษาด้วยฮอร์โมนอย่างไร?",
       "questionImage": "",
@@ -63915,7 +65074,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::71",
       "itemNo": "69",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Tamoxifen มีความเสี่ยงต่อการเกิดโรคร้ายแรงใดที่ต้องติดตามอย่างใกล้ชิด?",
       "questionImage": "",
@@ -63927,7 +65086,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::72",
       "itemNo": "70",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Tamoxifen ต้องอาศัยเอนไซม์ใดในการเปลี่ยนเป็นสารออกฤทธิ์หลัก (Active Metabolite)?",
       "questionImage": "",
@@ -63939,7 +65098,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::73",
       "itemNo": "71",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงห้ามใช้ Tamoxifen ร่วมกับยาต้านซึมเศร้า Fluoxetine หรือ Paroxetine?",
       "questionImage": "",
@@ -63951,7 +65110,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::74",
       "itemNo": "72",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ยาต้านฮอร์โมนทางเลือกแรกที่มีประสิทธิภาพสูงสุดในสตรี &#039;หลังหมดประจำเดือน&#039; คือกลุ่มใด?",
       "questionImage": "",
@@ -63963,7 +65122,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::75",
       "itemNo": "73",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เหตุใดจึงใช้ยากลุ่ม Aromatase Inhibitors ได้ผลเฉพาะในสตรีหลังหมดประจำเดือน?",
       "questionImage": "",
@@ -63975,7 +65134,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::76",
       "itemNo": "74",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "ผลข้างเคียงสำคัญระยะยาวของยากลุ่ม Aromatase Inhibitors คืออะไร?",
       "questionImage": "",
@@ -63987,7 +65146,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::77",
       "itemNo": "75",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "การตรวจติดตามความหนาแน่นกระดูกในผู้ป่วยที่ได้รับยา Aromatase Inhibitor ทำอย่างไร?",
       "questionImage": "",
@@ -63999,7 +65158,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::78",
       "itemNo": "76",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "เกณฑ์การตรวจยืนยันว่าเป็นมะเร็งเต้านมชนิด HER2-positive คืออะไร?",
       "questionImage": "",
@@ -64011,7 +65170,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::79",
       "itemNo": "77",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Chemotherapy Principles & DLTs",
       "track": "Clinic",
       "question": "Trastuzumab (Herceptin) มีกลไกการออกฤทธิ์ในการรักษามะเร็งเต้านมอย่างไร?",
       "questionImage": "",
@@ -64023,7 +65182,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::80",
       "itemNo": "78",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "พิษต่อหัวใจจาก Trastuzumab มีลักษณะแตกต่างจาก Doxorubicin อย่างไร?",
       "questionImage": "",
@@ -64035,7 +65194,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::81",
       "itemNo": "79",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การตรวจติดตามการทำงานของหัวใจในผู้ป่วยที่ได้รับ Trastuzumab มีแนวทางอย่างไร?",
       "questionImage": "",
@@ -64047,7 +65206,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::82",
       "itemNo": "80",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เหตุใดจึงมีข้อห้ามเด็ดขาดไม่ให้ยา Trastuzumab พร้อมกับ Doxorubicin ในเวลาเดียวกัน?",
       "questionImage": "",
@@ -64059,7 +65218,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::83",
       "itemNo": "81",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Pertuzumab (Perjeta) มีกลไกเสริมฤทธิ์ร่วมกับ Trastuzumab อย่างไร?",
       "questionImage": "",
@@ -64071,7 +65230,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::84",
       "itemNo": "82",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Trastuzumab Emtansine (T-DM1) มีโครงสร้างและกลไกการออกฤทธิ์อย่างไร?",
       "questionImage": "",
@@ -64083,7 +65242,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::85",
       "itemNo": "83",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Trastuzumab Deruxtecan (Enhertu) มีคำเตือนกล่องดำ (Black Box Warning) เรื่องใด?",
       "questionImage": "",
@@ -64095,7 +65254,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::86",
       "itemNo": "84",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Triple-Negative Breast Cancer (TNBC) มีลักษณะและแนวทางการรักษาอย่างไร?",
       "questionImage": "",
@@ -64107,7 +65266,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::87",
       "itemNo": "85",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัด FOLFOX ในมะเร็งลำไส้ใหญ่ ประกอบด้วยตัวยาใดบ้าง?",
       "questionImage": "",
@@ -64119,7 +65278,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::88",
       "itemNo": "86",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัด FOLFIRI ประกอบด้วยตัวยาใดบ้าง?",
       "questionImage": "",
@@ -64131,7 +65290,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::89",
       "itemNo": "87",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Capecitabine (Xeloda) เปลี่ยนเป็น 5-Fluorouracil ในร่างกายได้อย่างไร?",
       "questionImage": "",
@@ -64143,7 +65302,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::90",
       "itemNo": "88",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "5-Fluorouracil มีกลไกการออกฤทธิ์ยับยั้งเซลล์มะเร็งอย่างไร?",
       "questionImage": "",
@@ -64155,7 +65314,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::91",
       "itemNo": "89",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "บทบาทของ Leucovorin เมื่อใช้ร่วมกับยา 5-Fluorouracil คืออะไร?",
       "questionImage": "",
@@ -64167,7 +65326,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::92",
       "itemNo": "90",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ภาวะ Hand-Foot Syndrome (PPE) จากยา Capecitabine/5-FU มีลักษณะและดูแลอย่างไร?",
       "questionImage": "",
@@ -64179,7 +65338,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::93",
       "itemNo": "91",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ภาวะพร่องเอนไซม์ Dihydropyrimidine Dehydrogenase (DPD) ส่งผลต่อ 5-FU อย่างไร?",
       "questionImage": "",
@@ -64191,7 +65350,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::94",
       "itemNo": "92",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ยาชนิดใดเป็นยาแก้พิษเฉพาะ (Antidote) ในกรณีได้รับยา 5-FU หรือ Capecitabine เกินขนาด?",
       "questionImage": "",
@@ -64203,7 +65362,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::95",
       "itemNo": "93",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การตรวจยีน KRAS และ NRAS มีความสำคัญต่อการเลือกยา Anti-EGFR ในมะเร็งลำไส้อย่างไร?",
       "questionImage": "",
@@ -64215,7 +65374,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::96",
       "itemNo": "94",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผื่นคล้ายสิว (Acneiform Rash) จาก Cetuximab มีความสำคัญทางคลินิกอย่างไร?",
       "questionImage": "",
@@ -64227,7 +65386,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::97",
       "itemNo": "95",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ยากลุ่ม Anti-EGFR (Cetuximab/Panitumumab) ทำให้เกิดความผิดปกติของเกลือแร่ใด?",
       "questionImage": "",
@@ -64239,7 +65398,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::98",
       "itemNo": "96",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Bevacizumab (Avastin) มีกลไกการออกฤทธิ์อย่างไรในการรักษามะเร็งลำไส้ใหญ่?",
       "questionImage": "",
@@ -64251,7 +65410,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::99",
       "itemNo": "97",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผลข้างเคียงเฉพาะของ Bevacizumab ที่ต้องตรวจติดตามสม่ำเสมอมีอะไรบ้าง?",
       "questionImage": "",
@@ -64263,7 +65422,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::100",
       "itemNo": "98",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เหตุใดต้องหยุดยา Bevacizumab ล่วงหน้าอย่างน้อย 4-6 สัปดาห์ก่อนการผ่าตัดใหญ่?",
       "questionImage": "",
@@ -64275,7 +65434,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::101",
       "itemNo": "99",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผู้ป่วยมะเร็งลำไส้ใหญ่ที่มีลักษณะ MSI-High หรือ dMMR ตอบสนองต่อการรักษาด้วยยาใด?",
       "questionImage": "",
@@ -64287,7 +65446,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::102",
       "itemNo": "100",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งลำไส้ใหญ่ที่มีการกลายพันธุ์ของยีน BRAF V600E มีแนวทางการรักษาด้วยยามุ่งเป้าอย่างไร?",
       "questionImage": "",
@@ -64299,7 +65458,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::103",
       "itemNo": "101",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งปอดชนิดเซลล์เล็ก (SCLC) แตกต่างจากชนิดเซลล์ไม่เล็ก (NSCLC) ในแง่การดำเนินโรคอย่างไร?",
       "questionImage": "",
@@ -64311,7 +65470,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::104",
       "itemNo": "102",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "การกลายพันธุ์ของยีน EGFR ชนิดใดที่พบบ่อยและตอบสนองดีต่อยากลุ่ม EGFR-TKIs?",
       "questionImage": "",
@@ -64323,7 +65482,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::105",
       "itemNo": "103",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "Osimertinib (Tagrisso) มีข้อได้เปรียบอย่างไรในการรักษา NSCLC ที่มี EGFR Mutation?",
       "questionImage": "",
@@ -64335,7 +65494,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::106",
       "itemNo": "104",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "ผลข้างเคียงที่พบบ่อยของยากลุ่ม EGFR-TKIs (เช่น Osimertinib, Gefitinib) คืออะไร?",
       "questionImage": "",
@@ -64347,7 +65506,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::107",
       "itemNo": "105",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "มะเร็งปอดที่มีการจัดเรียงตัวใหม่ของยีน ALK (EML4-ALK) นิยมรักษาด้วยยาใดเป็นทางเลือกแรก?",
       "questionImage": "",
@@ -64359,7 +65518,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::108",
       "itemNo": "106",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "เกณฑ์การให้ยาเดี่ยว Pembrolizumab เป็นการรักษาทางเลือกแรกในมะเร็งปอด NSCLC คืออะไร?",
       "questionImage": "",
@@ -64371,7 +65530,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::109",
       "itemNo": "107",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "CINV & Supportive Care",
       "track": "Clinic",
       "question": "สูตรยาเคมีบำบัดมาตรฐานทางเลือกแรกสำหรับมะเร็งปอดชนิดเซลล์เล็ก (SCLC) คือสูตรใด?",
       "questionImage": "",
@@ -64383,7 +65542,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::110",
       "itemNo": "108",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เป้าหมายของระดับฮอร์โมนเทสโทสเตอโรนในการรักษาด้วย Androgen Deprivation Therapy (ADT) คือเท่าใด?",
       "questionImage": "",
@@ -64395,7 +65554,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::111",
       "itemNo": "109",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ปรากฏการณ์ Flare Up จากยาฉีดกลุ่ม GnRH Agonists (Leuprolide, Goserelin) เกิดขึ้นได้อย่างไร?",
       "questionImage": "",
@@ -64407,7 +65566,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::112",
       "itemNo": "110",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "การป้องกันอันตรายจากปรากฏการณ์ Testosterone Flare มีแนวทางปฏิบัติอย่างไร?",
       "questionImage": "",
@@ -64419,7 +65578,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::113",
       "itemNo": "111",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยากลุ่ม GnRH Antagonists (Degarelix, Relugolix) มีข้อดีเหนือกว่ากลุ่ม Agonists อย่างไร?",
       "questionImage": "",
@@ -64431,7 +65590,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::114",
       "itemNo": "112",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Abiraterone Acetate (Zytiga) มีกลไกการยับยั้งมะเร็งต่อมลูกหมากอย่างไร?",
       "questionImage": "",
@@ -64443,7 +65602,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::115",
       "itemNo": "113",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เหตุใดการให้ยา Abiraterone จึงต้องรับประทานคู่กับยา Prednisone เสมอ?",
       "questionImage": "",
@@ -64455,7 +65614,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::116",
       "itemNo": "114",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Enzalutamide (Xtandi) มีกลไกอย่างไร และมีคำเตือนความปลอดภัยเรื่องใด?",
       "questionImage": "",
@@ -64467,7 +65626,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::117",
       "itemNo": "115",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยภาวะไข้ (Fever) ใน Febrile Neutropenia (FN) กำหนดไว้อย่างไร?",
       "questionImage": "",
@@ -64479,7 +65638,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::118",
       "itemNo": "116",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยภาวะเม็ดเลือดขาวต่ำ (Neutropenia) ใน FN กำหนดค่า ANC เท่าใด?",
       "questionImage": "",
@@ -64491,7 +65650,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::119",
       "itemNo": "117",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สูตรการคำนวณค่า Absolute Neutrophil Count (ANC) มีวิธีคำนวณอย่างไร?",
       "questionImage": "",
@@ -64503,7 +65662,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::120",
       "itemNo": "118",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กฎชั่วโมงทอง (Golden Hour) ในการรักษาผู้ป่วย Febrile Neutropenia มีข้อกำหนดอย่างไร?",
       "questionImage": "",
@@ -64515,7 +65674,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::121",
       "itemNo": "119",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาปฏิชีวนะฉีดเดี่ยวทางเลือกแรกสำหรับผู้ป่วย Febrile Neutropenia คือยากลุ่มใด?",
       "questionImage": "",
@@ -64527,7 +65686,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::122",
       "itemNo": "120",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ข้อบ่งชี้ในการเพิ่มยา <b style=\"color:#0284c7;\">Vancomycin</b> ตั้งแต่เริ่มต้นในผู้ป่วย Febrile Neutropenia คืออะไร?",
       "questionImage": "",
@@ -64539,7 +65698,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::123",
       "itemNo": "121",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กลุ่มอาการสลายตัวของเนื้องอก (Tumor Lysis Syndrome: TLS) มักเกิดจากมะเร็งชนิดใด?",
       "questionImage": "",
@@ -64551,7 +65710,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::124",
       "itemNo": "122",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ความผิดปกติของเกลือแร่ 4 ประการตามเกณฑ์ Cairo-Bishop ในภาวะ TLS มีอะไรบ้าง?",
       "questionImage": "",
@@ -64563,7 +65722,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::125",
       "itemNo": "123",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "การป้องกันภาวะกรดยูริกสูงในผู้ป่วย TLS ที่มีความเสี่ยงปานกลางมีแนวทางอย่างไร?",
       "questionImage": "",
@@ -64575,7 +65734,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::126",
       "itemNo": "124",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Rasburicase (Elitek) มีกลไกอย่างไร และมีข้อได้เปรียบเหนือกว่า Allopurinol อย่างไร?",
       "questionImage": "",
@@ -64587,7 +65746,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::127",
       "itemNo": "125",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "เหตุใดการใช้ยา Rasburicase จึงมีข้อห้ามใช้อย่างเด็ดขาดในผู้ป่วยที่มีภาวะพร่องเอนไซม์ G6PD?",
       "questionImage": "",
@@ -64599,7 +65758,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::128",
       "itemNo": "126",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สาเหตุส่วนใหญ่ของภาวะแคลเซียมในเลือดสูงจากโรคมะเร็ง (HCM) เกิดจากกลไกใด?",
       "questionImage": "",
@@ -64611,7 +65770,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::129",
       "itemNo": "127",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สูตรคำนวณค่าแคลเซียมปรับแก้ตามระดับอัลบูมิน (Corrected Calcium) คืออะไร?",
       "questionImage": "",
@@ -64623,7 +65782,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::130",
       "itemNo": "128",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ขั้นตอนแรกที่สำคัญที่สุดในการรักษาภาวะฉุกเฉินแคลเซียมในเลือดสูงจากมะเร็งคืออะไร?",
       "questionImage": "",
@@ -64635,7 +65794,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::131",
       "itemNo": "129",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาทางเลือกหลักในการลดระดับแคลเซียมระยะยาวในภาวะ HCM คือยาใดและบริหารอย่างไร?",
       "questionImage": "",
@@ -64647,7 +65806,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::132",
       "itemNo": "130",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Calcitonin มีบทบาทอย่างไรในการรักษา HCM และมีข้อจำกัดเรื่องระยะเวลาการใช้อย่างไร?",
       "questionImage": "",
@@ -64659,7 +65818,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::133",
       "itemNo": "131",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "Denosumab (Xgeva 120 mg) มีบทบาทอย่างไรในการรักษาภาวะแคลเซียมในเลือดสูงจากมะเร็ง?",
       "questionImage": "",
@@ -64671,7 +65830,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::134",
       "itemNo": "132",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "อาการแสดงเตือนสำคัญของภาวะไขสันหลังถูกกดทับจากมะเร็ง (Spinal Cord Compression) คืออะไร?",
       "questionImage": "",
@@ -64683,7 +65842,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::135",
       "itemNo": "133",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "ยาชนิดแรกที่ต้องฉีดทันทีเมื่อสงสัยภาวะไขสันหลังถูกกดทับจากมะเร็งคือยาใด?",
       "questionImage": "",
@@ -64695,7 +65854,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::136",
       "itemNo": "134",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "กลุ่มอาการ Superior Vena Cava (SVC) Syndrome มีลักษณะทางคลินิกเด่นอย่างไร?",
       "questionImage": "",
@@ -64707,7 +65866,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "14. Oncologic::137",
       "itemNo": "135",
       "group": "14. Oncologic",
-      "subTopic": "14.1 CINV & Supportive Care (การดูแลคนไข้มะเร็ง)",
+      "subTopic": "Breast & Colorectal Cancer",
       "track": "Clinic",
       "question": "สรุปเป้าหมายเวลาวิกฤตในการรักษา Febrile Neutropenia และ Spinal Cord Compression?",
       "questionImage": "",
