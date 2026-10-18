@@ -488,16 +488,51 @@
     .card-wrap {
       width: 100%; flex: 1; display: flex; align-items: stretch; min-height: 320px;
       perspective: 1200px;
+      touch-action: pan-y;
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
     }
 
     .card {
-      width: 100%; border-radius: var(--r-lg); cursor: pointer; position: relative;
+      width: 100%; border-radius: var(--r-lg); cursor: grab; position: relative;
       transform-style: preserve-3d;
-      transition: transform 0.42s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.2s;
+      transition: transform 0.42s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.2s, border-color 0.2s;
       box-shadow: var(--shadow-sm);
     }
     .card:hover { box-shadow: var(--shadow-md); }
-    .card:active { }
+    .card.is-dragging {
+      cursor: grabbing !important;
+      transition: none !important;
+    }
+    .card.swipe-snap-back {
+      transition: transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1), opacity 0.28s ease !important;
+    }
+    .card.swipe-fly-left {
+      transition: transform 0.24s cubic-bezier(0.2, 0.9, 0.3, 1), opacity 0.24s ease !important;
+      opacity: 0 !important;
+    }
+    .card.swipe-fly-right {
+      transition: transform 0.24s cubic-bezier(0.2, 0.9, 0.3, 1), opacity 0.24s ease !important;
+      opacity: 0 !important;
+    }
+
+    /* ── Swipe Visual Feedback Badge ── */
+    .swipe-action-badge {
+      position: absolute; top: 18px; z-index: 30;
+      padding: 6px 14px; border-radius: 100px;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.3px;
+      pointer-events: none; opacity: 0; transform: scale(0.85);
+      transition: opacity 0.12s ease, transform 0.12s ease;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .swipe-action-badge.left-badge { right: 18px; }
+    .swipe-action-badge.right-badge { left: 18px; }
+    .swipe-action-badge.mode-next { background: var(--clinic); color: #fff; border: 1.5px solid #fff; }
+    .swipe-action-badge.mode-prev { background: #475569; color: #fff; border: 1.5px solid #fff; }
+    .swipe-action-badge.mode-confident { background: var(--confident); color: #fff; border: 1.5px solid #fff; }
+    .swipe-action-badge.mode-unsure { background: var(--unsure); color: #fff; border: 1.5px solid #fff; }
 
     /* ── FRONT face (Question) ── */
     .card-face {
@@ -1389,6 +1424,8 @@
 
       <div class="stage">
         <div class="card-wrap">
+          <div class="swipe-action-badge left-badge" id="swipeLeftBadge"></div>
+          <div class="swipe-action-badge right-badge" id="swipeRightBadge"></div>
           <div class="card" id="flashcard" onclick="flipCard()" style="min-height:320px;">
 
             <!-- ── FRONT FACE (Question) ── -->
@@ -1477,6 +1514,7 @@
       </div>
 
       <div class="kbd-hints-bar">
+        <span class="kbd-chip" id="swipeHintChip">👆 ปัดซ้าย-ขวา เลื่อนข้อ</span>
         <span class="kbd-chip"><kbd>Space</kbd> พลิกการ์ด</span>
         <span class="kbd-chip"><kbd>←</kbd> <kbd>→</kbd> เลื่อนข้อ</span>
         <span class="kbd-chip"><kbd>1</kbd> ไม่มั่นใจ</span>
@@ -2946,8 +2984,172 @@ window.google.script.run = (function() {
     }
   }
 
+  function setupCardSwipeGestures() {
+    const card = document.getElementById('flashcard');
+    const leftBadge = document.getElementById('swipeLeftBadge');
+    const rightBadge = document.getElementById('swipeRightBadge');
+    if (!card) return;
+
+    let isPointerDown = false;
+    let startX = 0, startY = 0;
+    let currentDeltaX = 0, currentDeltaY = 0;
+    let hasMovedFar = false;
+    let suppressNextClick = false;
+    const SWIPE_THRESHOLD = 65;
+
+    function resetBadges() {
+      if (leftBadge) { leftBadge.style.opacity = '0'; leftBadge.style.transform = 'scale(0.85)'; }
+      if (rightBadge) { rightBadge.style.opacity = '0'; rightBadge.style.transform = 'scale(0.85)'; }
+    }
+
+    function updateSwipeFeedback(dx) {
+      const progress = Math.min(1, Math.abs(dx) / (SWIPE_THRESHOLD * 1.1));
+      if (dx < -15) {
+        // Swiping Left (👈)
+        if (rightBadge) rightBadge.style.opacity = '0';
+        if (leftBadge) {
+          if (studyMethod === 'smart') {
+            leftBadge.className = 'swipe-action-badge left-badge mode-unsure';
+            leftBadge.innerHTML = '✕ ไม่มั่นใจ';
+          } else {
+            leftBadge.className = 'swipe-action-badge left-badge mode-next';
+            leftBadge.innerHTML = 'ข้อถัดไป ➔';
+          }
+          leftBadge.style.opacity = String(progress);
+          leftBadge.style.transform = `scale(${0.85 + progress * 0.2})`;
+        }
+      } else if (dx > 15) {
+        // Swiping Right (👉)
+        if (leftBadge) leftBadge.style.opacity = '0';
+        if (rightBadge) {
+          if (studyMethod === 'smart') {
+            rightBadge.className = 'swipe-action-badge right-badge mode-confident';
+            rightBadge.innerHTML = '✓ มั่นใจ';
+          } else {
+            if (currentIndex <= 0 && !isReviewFinished) {
+              rightBadge.style.opacity = '0';
+              return;
+            }
+            rightBadge.className = 'swipe-action-badge right-badge mode-prev';
+            rightBadge.innerHTML = '⬅ ข้อก่อนหน้า';
+          }
+          rightBadge.style.opacity = String(progress);
+          rightBadge.style.transform = `scale(${0.85 + progress * 0.2})`;
+        }
+      } else {
+        resetBadges();
+      }
+    }
+
+    card.addEventListener('pointerdown', (e) => {
+      if (e.button && e.button !== 0) return; // Only primary mouse button or touch
+      if (e.target.closest('button, a, img, input, textarea, select, .btn-admin-edit-card, .btn-report-card')) return;
+      if (isReviewFinished || (studyMethod === 'smart' && smartQueue.length === 0) || viewCards.length === 0) return;
+
+      isPointerDown = true;
+      hasMovedFar = false;
+      startX = e.clientX;
+      startY = e.clientY;
+      currentDeltaX = 0;
+      currentDeltaY = 0;
+      card.classList.remove('swipe-snap-back', 'swipe-fly-left', 'swipe-fly-right', 'anim-next', 'anim-prev');
+      resetBadges();
+    });
+
+    window.addEventListener('pointermove', (e) => {
+      if (!isPointerDown) return;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+
+      if (!hasMovedFar) {
+        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+        // If user is scrolling vertically on mobile, release drag and let browser scroll
+        if (Math.abs(dy) > Math.abs(dx) * 1.3) {
+          isPointerDown = false;
+          resetBadges();
+          return;
+        }
+        hasMovedFar = true;
+        suppressNextClick = true;
+        card.classList.add('is-dragging');
+      }
+
+      if (hasMovedFar) {
+        currentDeltaX = dx;
+        // Resistance if trying to swipe right on first card in standard mode
+        let effectiveDx = dx;
+        if (studyMethod !== 'smart' && dx > 0 && currentIndex <= 0 && !isReviewFinished) {
+          effectiveDx = dx * 0.25;
+        }
+        const rotateDeg = (effectiveDx / 22).toFixed(2);
+        const baseFlip = isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+        card.style.transform = `translate3d(${effectiveDx}px, 0, 0) rotateZ(${rotateDeg}deg) ${baseFlip}`;
+        updateSwipeFeedback(effectiveDx);
+      }
+    });
+
+    const handlePointerEnd = () => {
+      if (!isPointerDown) return;
+      isPointerDown = false;
+      card.classList.remove('is-dragging');
+      resetBadges();
+
+      if (hasMovedFar) {
+        const baseFlip = isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+        if (currentDeltaX < -SWIPE_THRESHOLD) {
+          // Swiped Left 👈
+          card.classList.add('swipe-fly-left');
+          card.style.transform = `translate3d(-115%, 0, 0) rotateZ(-12deg) ${baseFlip}`;
+          setTimeout(() => {
+            card.classList.remove('swipe-fly-left');
+            card.style.transform = '';
+            if (studyMethod === 'smart') {
+              markCard('ไม่มั่นใจ');
+            } else {
+              goNext();
+            }
+          }, 190);
+        } else if (currentDeltaX > SWIPE_THRESHOLD && (studyMethod === 'smart' || currentIndex > 0 || isReviewFinished)) {
+          // Swiped Right 👉
+          card.classList.add('swipe-fly-right');
+          card.style.transform = `translate3d(115%, 0, 0) rotateZ(12deg) ${baseFlip}`;
+          setTimeout(() => {
+            card.classList.remove('swipe-fly-right');
+            card.style.transform = '';
+            if (studyMethod === 'smart') {
+              markCard('มั่นใจ');
+            } else {
+              goPrev();
+            }
+          }, 190);
+        } else {
+          // Snap Back to Center
+          card.classList.add('swipe-snap-back');
+          card.style.transform = '';
+          setTimeout(() => {
+            card.classList.remove('swipe-snap-back');
+          }, 280);
+        }
+        setTimeout(() => { suppressNextClick = false; }, 80);
+      }
+    };
+
+    window.addEventListener('pointerup', handlePointerEnd);
+    window.addEventListener('pointercancel', handlePointerEnd);
+
+    // Intercept click so dragging doesn't accidentally flip the card
+    card.addEventListener('click', (e) => {
+      if (suppressNextClick) {
+        e.stopPropagation();
+        e.preventDefault();
+        suppressNextClick = false;
+      }
+    }, true);
+  }
+
   window.addEventListener('load', () => {
     if (typeof setupPaperPasteZones === 'function') setupPaperPasteZones();
+    if (typeof setupCardSwipeGestures === 'function') setupCardSwipeGestures();
     const savedTrack = localStorage.getItem(LS_TRACK);
     if (savedTrack) currentTrack = savedTrack;
 
@@ -3263,6 +3465,7 @@ window.google.script.run = (function() {
     const btnSmart = document.getElementById('btnMethodSmart');
     const prevBtn  = document.getElementById('prevBtn');
     const fillEl   = document.getElementById('progressFill');
+    const swipeHint = document.getElementById('swipeHintChip');
 
     btnStd.classList.toggle('active', studyMethod === 'standard');
     btnSmart.classList.toggle('active', studyMethod === 'smart');
@@ -3270,9 +3473,11 @@ window.google.script.run = (function() {
     if (studyMethod === 'smart') {
       fillEl.classList.add('smart-fill');
       if (prevBtn) prevBtn.style.visibility = 'hidden';
+      if (swipeHint) swipeHint.innerHTML = '👆 ปัดซ้าย ✕ ไม่มั่นใจ · ปัดขวา ✓ มั่นใจ';
     } else {
       fillEl.classList.remove('smart-fill');
       if (prevBtn) prevBtn.style.visibility = 'visible';
+      if (swipeHint) swipeHint.innerHTML = '👆 ปัดซ้าย ข้อถัดไป · ปัดขวา ย้อนกลับ';
     }
   }
 
