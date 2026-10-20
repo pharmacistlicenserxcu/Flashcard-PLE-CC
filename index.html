@@ -327,16 +327,16 @@
     }
     .btn-eval-subtopic {
       display: inline-flex; align-items: center; gap: 5px;
-      padding: 6.5px 12px; border: 1px solid #fde68a; border-radius: 9px;
-      background: linear-gradient(135deg, #fef9c3 0%, #fef08a 100%);
-      color: #854d0e; font-family: inherit; font-size: 12px; font-weight: 700;
-      cursor: pointer; white-space: nowrap; flex-shrink: 0;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;
+      padding: 6.5px 12px; border: 1px solid var(--border); border-radius: 9px;
+      background: var(--card); color: var(--ink-soft); font-family: inherit;
+      font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; flex-shrink: 0;
+      box-shadow: var(--shadow-sm); transition: all 0.15s ease;
     }
+    .btn-eval-subtopic svg { stroke: var(--sap); flex-shrink: 0; }
     .btn-eval-subtopic:hover {
-      background: linear-gradient(135deg, #fef08a 0%, #fde047 100%);
-      transform: translateY(-1px); box-shadow: 0 2px 6px rgba(234, 179, 8, 0.28);
+      border-color: var(--clinic); color: var(--clinic); background: var(--clinic-soft);
     }
+    .btn-eval-subtopic:hover svg { stroke: var(--clinic); }
     .btn-eval-subtopic:active { transform: translateY(0); }
 
     .eyebrow-right {
@@ -613,14 +613,17 @@
     .answer-block { display: none; text-align: left; width: 100%; animation: fadeInAnswer 0.22s cubic-bezier(0.2, 0.9, 0.3, 1); }
     .answer-block.show { display: block; }
     @keyframes fadeInAnswer { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
-    .answer-label { font-size: 11px; font-weight: 700; color: var(--confident); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
+    .answer-label { display: none; }
     .answer-text { font-size: 16px; line-height: 1.65; color: var(--ink); font-weight: 500; }
 
 
-    .celebration-box { text-align: center; padding: 10px 0; }
-    .celebration-icon { font-size: 42px; margin-bottom: 6px; animation: bounce 0.6s infinite alternate ease-in-out; }
-    @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(-6px); } }
-    .celebration-title { font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .celebration-box { text-align: center; padding: 14px 4px; }
+    .celebration-icon {
+      width: 48px; height: 48px; border-radius: 50%; margin: 0 auto 10px;
+      background: var(--confident-soft); color: var(--confident); border: 1px solid var(--confident-border);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .celebration-title { font-size: 19px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
     .celebration-sub { font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; margin-bottom: 14px; }
     .celebration-stats { display: flex; justify-content: center; gap: 10px; margin-bottom: 18px; }
     .c-stat-pill { padding: 5px 12px; border-radius: 9px; font-size: 12.5px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; }
@@ -800,15 +803,16 @@
     .lobby-user-pill svg { stroke: var(--ink-soft); }
 
     .lobby-greeting {
-      background: var(--card); border: 1px solid var(--border); border-radius: 18px;
-      padding: 16px 18px; margin-bottom: 14px; box-shadow: var(--shadow-sm);
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 12px 16px; margin-bottom: 14px; box-shadow: var(--shadow-sm);
+      display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
     }
-    .lobby-greeting h2 { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
-    .lobby-greeting p { font-size: 13px; color: var(--ink-soft); }
+    .lobby-greeting h2 { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+    .lobby-greeting p { font-size: 12.5px; color: var(--ink-soft); }
     .lobby-streak-badge {
       display: inline-flex; align-items: center; gap: 5px;
-      background: #FFF7ED; border: 1px solid #FED7AA; color: #C2410C;
-      font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-top: 8px;
+      background: var(--clinic-soft); border: 1px solid var(--clinic-border); color: var(--clinic-pill);
+      font-size: 12px; font-weight: 700; padding: 4px 11px; border-radius: 20px; white-space: nowrap;
     }
 
     .lobby-section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
@@ -1157,13 +1161,18 @@
       background: #fee2e2; border-color: #ef4444; color: #b91c1c; transform: translateY(-1px);
     }
     .lobby-tool-btn.create-card-btn {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      color: #ffffff; border-color: #059669; font-weight: 800;
-      box-shadow: 0 3px 10px rgba(16, 185, 129, 0.25);
+      background: var(--confident);
+      color: #ffffff; border-color: var(--confident); font-weight: 700;
     }
+    .lobby-tool-btn.create-card-btn svg { stroke: #ffffff; }
     .lobby-tool-btn.create-card-btn:hover {
-      background: linear-gradient(135deg, #059669 0%, #047857 100%);
-      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4); transform: translateY(-1px);
+      background: #125E3F; border-color: #125E3F; color: #ffffff; transform: translateY(-1px);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
     }
 
     .btn-admin-edit-card {
@@ -1194,9 +1203,11 @@
   <div id="authOverlay">
     <div class="auth-card">
       <div class="auth-logo">
-        <div class="auth-logo-badge">💊</div>
+        <div class="auth-logo-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a4.95 4.95 0 1 1 7-7l7 7a4.95 4.95 0 1 1-7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+        </div>
         <h1>PLE-CC Flashcard</h1>
-        <p>คลัง Flashcard เตรียมสอบใบประกอบวิชาชีพเภสัชกรรม</p>
+        <p>คลังทบทวนสอบใบประกอบวิชาชีพเภสัชกรรม</p>
       </div>
 
       <div class="auth-tabs">
@@ -1207,11 +1218,11 @@
       <div class="auth-panel active" id="panelSignIn">
         <div class="auth-error" id="signinError"></div>
         <div class="form-group">
-          <label>ชื่อผู้ใช้ (Username)</label>
-          <input class="form-input" type="text" id="siUsername" placeholder="เช่น somchai" autocomplete="username">
+          <label>ชื่อผู้ใช้</label>
+          <input class="form-input" type="text" id="siUsername" placeholder="กรอกชื่อผู้ใช้" autocomplete="username">
         </div>
         <div class="form-group">
-          <label>รหัสผ่าน (Password)</label>
+          <label>รหัสผ่าน</label>
           <div class="input-wrap">
             <input class="form-input has-icon" type="password" id="siPassword" placeholder="••••••••" autocomplete="current-password">
             <button class="input-icon" type="button" onclick="togglePw('siPassword', this)">
@@ -1225,7 +1236,7 @@
         </button>
         <div style="text-align:center; margin-top:12px;">
           <button onclick="doAnonymousLogin()" style="background:none; border:none; color:var(--ink-soft); font-size:12.5px; font-weight:600; cursor:pointer; text-decoration:underline;">
-            👤 ทดลองใช้งานทั่วไป (Anonymous)
+            เข้าใช้งานแบบไม่ระบุตัวตน
           </button>
         </div>
       </div>
@@ -1233,15 +1244,15 @@
       <div class="auth-panel" id="panelSignUp">
         <div class="auth-error" id="signupError"></div>
         <div class="form-group">
-          <label>ชื่อผู้ใช้ (Username)</label>
-          <input class="form-input" type="text" id="suUsername" placeholder="ภาษาอังกฤษ ตัวเลข 4-20 ตัว">
+          <label>ชื่อผู้ใช้</label>
+          <input class="form-input" type="text" id="suUsername" placeholder="ภาษาอังกฤษหรือตัวเลข 4-20 ตัว">
         </div>
         <div class="form-group">
-          <label>ชื่อที่ต้องการให้แสดง (Display Name)</label>
-          <input class="form-input" type="text" id="suDisplayName" placeholder="เช่น สมชาย ใจดี">
+          <label>ชื่อที่ใช้แสดง</label>
+          <input class="form-input" type="text" id="suDisplayName" placeholder="ชื่อเล่น หรือชื่อจริง">
         </div>
         <div class="form-group">
-          <label>รหัสผ่าน (Password)</label>
+          <label>รหัสผ่าน</label>
           <div class="input-wrap">
             <input class="form-input has-icon" type="password" id="suPassword" placeholder="อย่างน้อย 6 ตัวอักษร">
             <button class="input-icon" type="button" onclick="togglePw('suPassword', this)">
@@ -1264,17 +1275,19 @@
   <!-- ══ LOADING SCREEN ══ -->
   <div id="loadingScreen" class="loading-wrap" style="display:none;">
     <div class="spinner"></div>
-    กำลังโหลดข้อมูล Flashcard...
+    กำลังโหลดคลังข้อสอบ...
   </div>
 
   <!-- ══ LOBBY VIEW ══ -->
   <div id="lobbyView" style="display:none;">
     <div class="lobby-header">
       <div class="lobby-logo">
-        <div class="lobby-logo-icon">💊</div>
+        <div class="lobby-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a4.95 4.95 0 1 1 7-7l7 7a4.95 4.95 0 1 1-7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+        </div>
         <div class="lobby-logo-text">
           <h1>PLE-CC Flashcard</h1>
-          <p>คลัง Flashcard เตรียมสอบใบประกอบเภสัชกรรม</p>
+          <p>คลังทบทวนสอบใบประกอบวิชาชีพเภสัชกรรม</p>
         </div>
       </div>
       <div style="display:flex; align-items:center; gap:5px;">
@@ -1282,13 +1295,13 @@
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           <span id="lobbyUserNameBadge">-</span>
         </div>
-        <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
-          <span style="font-size:13px;">📖</span>
+        <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือและคีย์ลัด">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </button>
-        <button class="icon-btn" onclick="toggleFullscreen()" title="โหมดเต็มจอ">
+        <button class="icon-btn" onclick="toggleFullscreen()" title="เต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
         </button>
-        <button class="icon-btn" onclick="syncDataFromSheet()" title="อัปเดตข้อมูลจาก Google Sheet">
+        <button class="icon-btn" onclick="syncDataFromSheet()" title="ซิงค์ข้อมูลล่าสุด">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
         </button>
         <button class="icon-btn" onclick="doLogout()" title="ออกจากระบบ">
@@ -1300,74 +1313,76 @@
     <!-- OSPE THEMED TRACK SWITCHER -->
     <div class="track-tabs-bar">
       <button class="track-tab-btn clinic active" id="btnTrackClinic" onclick="switchTrack('clinic')">
-        🩺 Clinic (16 กลุ่ม)
+        Clinic (16)
       </button>
       <button class="track-tab-btn product" id="btnTrackProduct" onclick="switchTrack('product')">
-        🧪 Product (12 กลุ่ม)
+        Product (12)
       </button>
       <button class="track-tab-btn sap" id="btnTrackSAP" onclick="switchTrack('sap')">
-        💼 SAP
+        SAP
       </button>
       <button class="track-tab-btn all" id="btnTrackAll" onclick="switchTrack('all')">
-        🌟 ทั้งหมด
+        ทั้งหมด
       </button>
     </div>
 
     <div class="lobby-greeting">
-      <h2>สวัสดี, <span id="lobbyGreetingName">-</span> 👋</h2>
-      <p id="lobbyGreetingTrackDesc">เลือก Deck ด้านล่างเพื่อเริ่มฝึกจำ หรือเลือกโหมด <b>Smart Learning</b> เพื่อจำได้แม่นยำขึ้น</p>
-      <div class="lobby-streak-badge" id="lobbyStreakBadge">🔥 กำลังโหลดข้อมูล...</div>
+      <div>
+        <h2>สวัสดี, <span id="lobbyGreetingName">-</span></h2>
+        <p id="lobbyGreetingTrackDesc">เภสัชกรรมคลินิก · 16 หมวด</p>
+      </div>
+      <div class="lobby-streak-badge" id="lobbyStreakBadge">กำลังโหลด...</div>
     </div>
 
     <div class="lobby-section-head">
-      <h3 id="lobbySectionDeckTitle">เลือก Deck ฝึกจำ (Clinic 16 กลุ่ม)</h3>
+      <h3 id="lobbySectionDeckTitle">หมวดวิชา</h3>
     </div>
 
     <div class="lobby-dropdown-wrap">
       <select class="lobby-dropdown" id="lobbyCatSelect" onchange="onLobbyCatSelectChange()">
-        <option value="">🗂 เลือกหมวดวิชาด่วน...</option>
+        <option value="">ค้นหาหรือเลือกหมวดวิชา...</option>
       </select>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
     </div>
 
     <div class="deck-grid" id="lobbyDeckGrid">
-      <div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:20px;">กำลังโหลด Decks...</div>
+      <div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:20px;">กำลังโหลดหมวดวิชา...</div>
     </div>
 
     <div class="lobby-section-head">
-      <h3>เครื่องมือการเรียนรู้</h3>
+      <h3>โหมดฝึกฝนและเครื่องมือ</h3>
     </div>
     <div class="lobby-quick-tools">
       <button class="lobby-tool-btn primary" onclick="enterStudyAll('standard')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        เรียนทุก Deck
+        ทบทวนทุกหมวด
       </button>
       <button class="lobby-tool-btn smart-btn" onclick="enterStudyAll('smart')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-        🧠 Smart Mode
+        Smart Mode
       </button>
       <button class="lobby-tool-btn" onclick="openRandomModal()">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
-        🎲 สุ่ม Flashcard
+        สุ่มโจทย์
       </button>
       <button class="lobby-tool-btn" onclick="switchAppMode('browse')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        Browse คลัง
+        ค้นหาคลังโจทย์
       </button>
-      <button class="lobby-tool-btn" onclick="openReportHistoryModal()" style="color:#1e40af; border-color:#bfdbfe; background:#eff6ff;">
+      <button class="lobby-tool-btn" onclick="openReportHistoryModal()">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        📋 ติดตามปัญหา
+        สถานะแจ้งแก้ไข
       </button>
-      <button class="lobby-tool-btn create-card-btn" id="btnLobbyCreateCard" onclick="openCreateCardPaperModal()" style="display:none;" title="เพิ่ม Flashcard ใหม่ลงในชีต (Admin Only)">
+      <button class="lobby-tool-btn create-card-btn" id="btnLobbyCreateCard" onclick="openCreateCardPaperModal()" style="display:none;" title="เพิ่มการ์ดใหม่ (Admin)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        ➕ สร้าง Flashcard ใหม่
+        เพิ่มการ์ดใหม่
       </button>
     </div>
 
     <!-- Lobby Footer Copyright -->
     <div class="app-copyright-footer">
-      <div>© 2026 คณะทำงานโครงการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม ปีการศึกษา 2569 | ฝ่ายวิชาการ · พัฒนาโดย แม็กนั่ม นิสิตเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ชั้นปีที่ 5</div>
-      <div style="margin-top:4px;"><a onclick="openGuidelineModal()">📖 คู่มือการใช้งาน & คีย์ลัด</a> · <a onclick="openReportHistoryModal()" style="font-weight:600; color:var(--primary); cursor:pointer;">📋 ประวัติการแจ้งปัญหา & สถานะ</a> · <a onclick="syncDataFromSheet()">🔄 รีเฟรชข้อมูล</a></div>
+      <div>© 2026 โครงการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม ฝ่ายวิชาการ · คณะเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+      <div style="margin-top:4px;"><a onclick="openGuidelineModal()">คู่มือและคีย์ลัด</a> · <a onclick="openReportHistoryModal()">สถานะแจ้งแก้ไข</a> · <a onclick="syncDataFromSheet()">ซิงค์ข้อมูล</a></div>
     </div>
   </div>
 
@@ -1388,24 +1403,24 @@
       </div>
       
       <div class="topbar-right">
-        <button class="icon-btn" onclick="openReportHistoryModal()" title="ประวัติการแจ้งปัญหา & สถานะการแก้ไข">
-          <span style="font-size:13px;">📋</span>
+        <button class="icon-btn" onclick="openReportHistoryModal()" title="สถานะแจ้งแก้ไข">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </button>
-        <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
-          <span style="font-size:13px;">📖</span>
+        <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือและคีย์ลัด">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </button>
         <button class="icon-btn" onclick="toggleFullscreen()" title="เต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
         </button>
-        <button class="icon-btn" onclick="shuffleCards()" title="สลับลำดับการ์ด (Shuffle)">
+        <button class="icon-btn" onclick="shuffleCards()" title="สลับลำดับการ์ด">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
         </button>
       </div>
     </div>
 
     <div id="randomBanner" style="display:none; background:var(--clinic); color:#fff; padding:7px 14px; font-size:12.5px; font-weight:700; align-items:center; justify-content:space-between; margin:4px 12px 0; border-radius:10px;">
-      <span id="randomBannerText">🎲 โหมดสุ่ม Flashcard</span>
-      <button onclick="exitRandomMode()" style="background:rgba(255,255,255,0.2); border:none; color:#fff; border-radius:6px; padding:3px 8px; font-size:11.5px; font-weight:700; cursor:pointer;">✕ ออกจากโหมดสุ่ม</button>
+      <span id="randomBannerText">โหมดสุ่มโจทย์</span>
+      <button onclick="exitRandomMode()" style="background:rgba(255,255,255,0.2); border:none; color:#fff; border-radius:6px; padding:3px 8px; font-size:11.5px; font-weight:700; cursor:pointer;">จบการสุ่ม</button>
     </div>
 
     <!-- CLEAN CENTERED STUDY VIEWPORT (NO LEFT RAIL) -->
@@ -1413,23 +1428,24 @@
       <div class="study-mode-segmented" id="studyModeSegmented">
         <button class="sm-seg-btn active" id="btnMethodStandard" onclick="switchStudyMethod('standard')">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          📖 ทบทวนทั่วไป
+          ทบทวนตามลำดับ
         </button>
         <button class="sm-seg-btn smart-mode" id="btnMethodSmart" onclick="switchStudyMethod('smart')">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-          🧠 Smart Mode
+          Smart Mode
         </button>
       </div>
 
       <div class="subtopic-selector-row" id="subtopicSelectorRow">
         <div class="subtopic-select-wrap">
           <select class="subtopic-dropdown" id="studySubtopicSelect" onchange="onStudySubtopicSelectChange()">
-            <option value="__all__">📂 ทุกหัวข้อย่อยในหมวดนี้</option>
+            <option value="__all__">ทุกหัวข้อย่อย</option>
           </select>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
-        <button class="btn-eval-subtopic" id="btnEvalSubtopic" onclick="openSubtopicEvalModal(event)" title="ประเมินภาพรวมหัวข้อย่อยนี้">
-          <span>⭐ ประเมินเนื้อหา</span>
+        <button class="btn-eval-subtopic" id="btnEvalSubtopic" onclick="openSubtopicEvalModal(event)" title="ให้คะแนนหัวข้อนี้">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>ประเมิน</span>
         </button>
       </div>
 
@@ -1450,12 +1466,12 @@
               <div class="card-eyebrow">
                 <span class="tag clinic-tag" id="cardTag">-</span>
                 <div class="eyebrow-right">
-                  <button class="btn-admin-edit-card" id="btnAdminEditCardFront" onclick="openCardPaperEditorForCurrent(event)" title="✏️ แก้ไข Flashcard บนแผ่นกระดาษ (Admin)" style="display:none;">
-                    <span>✏️ แก้ไข</span>
+                  <button class="btn-admin-edit-card" id="btnAdminEditCardFront" onclick="openCardPaperEditorForCurrent(event)" title="แก้ไขการ์ด (Admin)" style="display:none;">
+                    <span>แก้ไข</span>
                   </button>
-                  <button class="btn-report-card" id="btnReportCard" onclick="openReportCardModal(event)" title="แจ้งปัญหาข้อนี้ (ข้อสอบผิด/เฉลยไม่ตรง/รูปหาย)">
+                  <button class="btn-report-card" id="btnReportCard" onclick="openReportCardModal(event)" title="แจ้งข้อผิดพลาด">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-                    <span>แจ้งปัญหา</span>
+                    <span>แจ้งแก้ไข</span>
                   </button>
                   <div class="card-status-dot dot-new" id="cardStatusDot"></div>
                 </div>
@@ -1466,22 +1482,22 @@
               </div>
 
               <div class="card-body">
-                <div class="question-text" id="questionText">กำลังโหลด Flashcard...</div>
+                <div class="question-text" id="questionText">กำลังโหลด...</div>
               </div>
 
               <div class="flip-hint" id="flipHint">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7-7 7 7"/></svg>
-                แตะการ์ดเพื่อดูคำตอบ
+                แตะเพื่อดูเฉลย
               </div>
             </div>
 
             <!-- ── BACK FACE (Answer) ── -->
             <div class="card-face card-face-back">
               <div class="card-eyebrow" style="opacity:0.9;">
-                <span style="font-size:11px; font-weight:700; color:var(--confident); text-transform:uppercase; letter-spacing:0.5px;">✅ คำตอบ</span>
+                <span style="font-size:11px; font-weight:700; color:var(--confident); text-transform:uppercase; letter-spacing:0.5px;">เฉลย</span>
                 <div class="eyebrow-right">
-                  <button class="btn-admin-edit-card" id="btnAdminEditCardBack" onclick="openCardPaperEditorForCurrent(event)" title="✏️ แก้ไข Flashcard บนแผ่นกระดาษ (Admin)" style="display:none;">
-                    <span>✏️ แก้ไข</span>
+                  <button class="btn-admin-edit-card" id="btnAdminEditCardBack" onclick="openCardPaperEditorForCurrent(event)" title="แก้ไขการ์ด (Admin)" style="display:none;">
+                    <span>แก้ไข</span>
                   </button>
                   <div class="card-status-dot dot-new" id="cardStatusDotBack"></div>
                 </div>
@@ -1501,7 +1517,7 @@
 
               <div class="flip-hint">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-                แตะอีกครั้งเพื่อกลับ
+                แตะเพื่อพลิกกลับ
               </div>
             </div>
 
@@ -1512,7 +1528,7 @@
           <button class="nav-arrow" id="prevBtn" onclick="goPrev()" aria-label="ข้อก่อนหน้า" title="ข้อก่อนหน้า">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
           </button>
-          <span class="card-index" id="cardIndexText">ข้อ 0 จาก 0</span>
+          <span class="card-index" id="cardIndexText">0 / 0</span>
           <button class="nav-arrow" id="nextBtn" onclick="goNext()" aria-label="ข้อถัดไป" title="ข้อถัดไป">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
@@ -1531,8 +1547,8 @@
       </div>
 
       <div class="kbd-hints-bar">
-        <span class="kbd-chip" id="swipeHintChip">👆 ปัดซ้าย-ขวา เลื่อนข้อ</span>
-        <span class="kbd-chip"><kbd>Space</kbd> พลิกการ์ด</span>
+        <span class="kbd-chip" id="swipeHintChip">ปัดซ้าย-ขวา เลื่อนข้อ</span>
+        <span class="kbd-chip"><kbd>Space</kbd> พลิก</span>
         <span class="kbd-chip"><kbd>←</kbd> <kbd>→</kbd> เลื่อนข้อ</span>
         <span class="kbd-chip"><kbd>1</kbd> ไม่มั่นใจ</span>
         <span class="kbd-chip"><kbd>2</kbd> มั่นใจ</span>
@@ -1569,8 +1585,8 @@
         </button>
       </div>
       <div class="titles">
-        <div class="deck-name">Browse คลัง Flashcard</div>
-        <div class="deck-sub" id="browseResultCount">พบ 0 ข้อ</div>
+        <div class="deck-name">คลังโจทย์ทั้งหมด</div>
+        <div class="deck-sub" id="browseResultCount">0 ข้อ</div>
       </div>
       <div class="topbar-right">
         <button class="icon-btn" onclick="toggleAllBrowseAnswers()" title="แสดง/ซ่อน เฉลยทั้งหมด">
@@ -1581,29 +1597,29 @@
 
     <div class="browse-search-bar">
       <svg class="browse-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="text" id="browseSearchInput" class="browse-search-input" placeholder="พิมพ์ค้นหา Flashcard หรือคำตอบ..." oninput="onBrowseFilterChange()">
+      <input type="text" id="browseSearchInput" class="browse-search-input" placeholder="ค้นหาโจทย์หรือคำสำคัญ..." oninput="onBrowseFilterChange()">
       <button class="browse-clear-btn" id="browseSearchClear" onclick="clearBrowseSearch()" style="display:none;">✕</button>
     </div>
 
     <div class="browse-selects-row">
       <div class="b-select-wrap">
         <select id="browseCatSelect" class="b-select" onchange="onBrowseCatChange()">
-          <option value="__all__">🗂 ทุกหมวดวิชา</option>
+          <option value="__all__">ทุกหมวดวิชา</option>
         </select>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
       <div class="b-select-wrap" id="browseSubtopicWrap">
         <select id="browseSubtopicSelect" class="b-select" onchange="onBrowseFilterChange()">
-          <option value="__all__">📂 ทุกหัวข้อย่อย</option>
+          <option value="__all__">ทุกหัวข้อย่อย</option>
         </select>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
       <div class="b-select-wrap">
         <select id="browseStatusSelect" class="b-select" onchange="onBrowseFilterChange()">
-          <option value="all">🏷️ ทุกสถานะ</option>
+          <option value="all">ทุกสถานะ</option>
           <option value="confident">✓ มั่นใจ</option>
           <option value="notconfident">△ ไม่มั่นใจ</option>
-          <option value="new">○ ยังไม่เคยเรียน</option>
+          <option value="new">○ ยังไม่เคยทำ</option>
         </select>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
@@ -1616,40 +1632,40 @@
   <div class="sheet-scrim" id="scrim" onclick="toggleSheet(false)"></div>
   <div class="sheet" id="sheet">
     <div class="sheet-handle"></div>
-    <div class="sheet-title">เครื่องมือเพิ่มเติม</div>
+    <div class="sheet-title">เมนูเพิ่มเติม</div>
     <div class="sheet-grid">
       <button class="sheet-item" onclick="toggleSheet(false); switchAppMode('browse');">
         <div class="s-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <span>โหมด Browse</span>
+        <span>ค้นหาคลังโจทย์</span>
       </button>
       <button class="sheet-item" onclick="toggleSheet(false); openRandomModal();">
         <div class="s-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg></div>
-        <span>สุ่ม Flashcard</span>
+        <span>สุ่มโจทย์</span>
       </button>
       <button class="sheet-item" onclick="toggleSheet(false); openExportModal();">
         <div class="s-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
-        <span>Export</span>
+        <span>ส่งออก CSV</span>
       </button>
       <button class="sheet-item" onclick="toggleSheet(false); syncDataFromSheet();">
         <div class="s-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg></div>
-        <span>รีเฟรช</span>
+        <span>ซิงค์ข้อมูล</span>
       </button>
     </div>
     <div class="sheet-divider"></div>
     <div class="sheet-row" onclick="toggleSheet(false); openGuidelineModal();">
-      <span>📖 คู่มือการใช้งาน & คีย์ลัด</span>
+      <span>คู่มือและคีย์ลัด</span>
       <span class="r-right"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
     </div>
     <div class="sheet-row" onclick="toggleSheet(false); toggleIndexPanel();">
-      <span>📚 สารบัญหมวดวิชา & หัวข้อย่อย</span>
+      <span>สารบัญหมวดวิชา</span>
       <span class="r-right"><span id="sheetCurrentGroupLabel">ทั้งหมด</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
     </div>
     <div class="sheet-row" onclick="toggleSheet(false); toggleStats();">
-      <span>📊 สถิติความจำของฉัน</span>
+      <span>สถิติการทบทวน</span>
       <span class="r-right"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
     </div>
     <div class="sheet-row" onclick="doLogout();">
-      <span>🚪 ออกจากระบบ</span>
+      <span>ออกจากระบบ</span>
       <span class="r-right"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
     </div>
   </div>
@@ -1660,48 +1676,41 @@
   <div class="modal-overlay" id="guidelineModal">
     <div class="modal-box" style="max-width:490px;">
       <div class="modal-head">
-        <h3>📖 คู่มือการใช้งาน & คีย์ลัด</h3>
+        <h3>คู่มือและคีย์ลัด</h3>
         <button class="modal-close" onclick="closeGuidelineModal()">✕</button>
       </div>
       
       <div class="guide-card">
-        <h4>🎯 โครงสร้างคลัง Flashcard 3 สายวิชา</h4>
+        <h4>โครงสร้างเนื้อหา 3 สายวิชา</h4>
         <ul>
-          <li><b style="color:var(--clinic);">🩺 Clinic (PLE-CC):</b> 16 กลุ่มโรคคลินิก (Cardio, Endo, Neuro ฯลฯ)</li>
-          <li><b style="color:var(--product);">🧪 Product (PLE-Product):</b> 12 กลุ่มวิชาบริบาลและผลิตภัณฑ์ (Titrations, Calc ฯลฯ)</li>
-          <li><b style="color:var(--sap);">💼 SAP:</b> สังคมเภสัชกรรม กฎหมาย และบริหาร</li>
+          <li><b style="color:var(--clinic);">Clinic (PLE-CC):</b> เภสัชกรรมคลินิก 16 กลุ่มโรค</li>
+          <li><b style="color:var(--product);">Product (PLE-Product):</b> เภสัชอุตสาหกรรมและผลิตภัณฑ์ 12 หมวด</li>
+          <li><b style="color:var(--sap);">SAP:</b> เภสัชศาสตร์สังคม กฎหมาย และการบริหาร</li>
         </ul>
       </div>
 
       <div class="guide-card">
-        <h4>🧠 โหมดการเรียนรู้ (Study Modes)</h4>
+        <h4>โหมดการฝึกฝน</h4>
         <ul>
-          <li><b>📖 โหมดทบทวนทั่วไป:</b> ฝึกไล่ตามลำดับการ์ด หรือสลับการ์ด (Shuffle) พร้อมสรุปผลเมื่อจบรอบ</li>
-          <li><b>🧠 โหมด Smart Learning:</b> จำแม่นยำ 100%! ข้อที่ตอบ <i>"มั่นใจ"</i> จะตัดออกทันที ส่วนข้อที่ตอบ <i>"ไม่มั่นใจ"</i> จะวนกลับมาถามซ้ำอัตโนมัติ</li>
-          <li><b>🎲 โหมดสุ่ม Flashcard (Cross-Track Mock):</b> สุ่มการ์ดข้ามสายวิชาได้แบบเกลี่ยน้ำหนักเฉลี่ยเท่าๆ กันทุกกลุ่ม</li>
+          <li><b>ทบทวนตามลำดับ:</b> เปิดดูทีละข้อตามลำดับ หรือกดสลับลำดับการ์ด</li>
+          <li><b>Smart Mode:</b> ข้อที่กด <i>"มั่นใจ"</i> จะถูกคัดออก ส่วนข้อที่กด <i>"ไม่มั่นใจ"</i> จะวนกลับมาถามซ้ำจนกว่าจะจำได้ครบ</li>
+          <li><b>สุ่มโจทย์:</b> สุ่มโจทย์ข้ามหมวดวิชาโดยกระจายสัดส่วนเท่ากันทุกกลุ่มที่เลือก</li>
         </ul>
       </div>
 
       <div class="guide-card">
-        <h4>⌨️ คีย์ลัดบนคอมพิวเตอร์ / iPad Keyboard</h4>
+        <h4>การควบคุมและคีย์ลัด</h4>
         <table class="kbd-table">
-          <tr><td style="width:130px;"><kbd>Spacebar</kbd></td><td>พลิกการ์ด เพื่อดูคำตอบ / ปิดคำตอบ</td></tr>
-          <tr><td><kbd>→</kbd> หรือ <kbd>D</kbd></td><td>ไปยังข้อถัดไป</td></tr>
-          <tr><td><kbd>←</kbd> หรือ <kbd>A</kbd></td><td>ย้อนกลับไปข้อก่อนหน้า</td></tr>
-          <tr><td><kbd>1</kbd> หรือ <kbd>↓</kbd> หรือ <kbd>X</kbd></td><td>บันทึกผล <b>"ไม่มั่นใจ"</b></td></tr>
-          <tr><td><kbd>2</kbd> หรือ <kbd>↑</kbd> หรือ <kbd>C</kbd></td><td>บันทึกผล <b>"มั่นใจ"</b></td></tr>
+          <tr><td style="width:130px;">ปัดซ้าย / ปัดขวา</td><td>เลื่อนข้อ (โหมดปกติ) หรือ ประเมินไม่มั่นใจ/มั่นใจ (Smart Mode)</td></tr>
+          <tr><td><kbd>Spacebar</kbd></td><td>พลิกการ์ดดูเฉลย</td></tr>
+          <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>ข้อถัดไป / ข้อก่อนหน้า</td></tr>
+          <tr><td><kbd>1</kbd> หรือ <kbd>↓</kbd></td><td>ไม่มั่นใจ</td></tr>
+          <tr><td><kbd>2</kbd> หรือ <kbd>↑</kbd></td><td>มั่นใจ</td></tr>
         </table>
       </div>
 
-      <div style="background:var(--card); border:1.5px solid var(--clinic-border); border-radius:14px; padding:14px; text-align:center; margin-top:8px;">
-        <div style="font-size:15px; font-weight:700; color:var(--clinic); margin-bottom:6px;">✨ PLE-CC Flashcard System</div>
-        <div style="font-size:11.5px; color:var(--ink-soft); line-height:1.6;">
-          © 2026 คณะทำงานโครงการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม ปีการศึกษา 2569 | ฝ่ายวิชาการ · พัฒนาโดย แม็กนั่ม นิสิตเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ชั้นปีที่ 5
-        </div>
-      </div>
-
-      <button class="submit-btn" onclick="closeGuidelineModal()" style="margin-top:16px;">
-        เข้าใจแล้ว เริ่มฝึกเลย!
+      <button class="submit-btn" onclick="closeGuidelineModal()" style="margin-top:12px;">
+        รับทราบ
       </button>
     </div>
   </div>
@@ -1710,23 +1719,23 @@
   <div class="modal-overlay" id="randomModal">
     <div class="modal-box">
       <div class="modal-head">
-        <h3>🎲 สุ่ม Flashcard (Cross-Track Mock)</h3>
+        <h3>สุ่มโจทย์คละหมวด</h3>
         <button class="modal-close" onclick="closeRandomModal()">✕</button>
       </div>
-      <p style="font-size:12px; color:var(--ink-soft); margin-bottom:10px;">เลือกหมวด/หัวข้อย่อยข้ามสายวิชาได้ตามต้องการ ระบบจะ <b>เกลี่ยน้ำหนักเฉลี่ยเท่ากันทุกกลุ่ม</b> อย่างแม่นยำ</p>
+      <p style="font-size:12px; color:var(--ink-soft); margin-bottom:10px;">เลือกหมวดหรือหัวข้อย่อยที่ต้องการ ระบบจะสุ่มกระจายสัดส่วนเท่ากันทุกกลุ่ม</p>
       
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; font-size:12px; font-weight:700;">
         <div style="display:flex; gap:8px;">
-          <button onclick="toggleSelectAllRandomTree(true)" style="background:none; border:none; color:var(--clinic); font-weight:700; cursor:pointer;">✓ เลือกทั้งหมด</button>
-          <button onclick="toggleSelectAllRandomTree(false)" style="background:none; border:none; color:var(--unsure); font-weight:700; cursor:pointer;">✕ ยกเลิกทั้งหมด</button>
+          <button onclick="toggleSelectAllRandomTree(true)" style="background:none; border:none; color:var(--clinic); font-weight:700; cursor:pointer;">เลือกทั้งหมด</button>
+          <button onclick="toggleSelectAllRandomTree(false)" style="background:none; border:none; color:var(--unsure); font-weight:700; cursor:pointer;">ล้างที่เลือก</button>
         </div>
-        <button onclick="expandCollapseAllRandomTree()" id="btnToggleTreeExpand" style="background:none; border:none; color:var(--smart); font-weight:700; cursor:pointer;">▼ ขยาย/ยุบทั้งหมด</button>
+        <button onclick="expandCollapseAllRandomTree()" id="btnToggleTreeExpand" style="background:none; border:none; color:var(--smart); font-weight:700; cursor:pointer;">ขยาย/ยุบรายการ</button>
       </div>
       
       <div id="catCheckList" style="max-height:280px; overflow-y:auto; margin-bottom:14px; border:1px solid var(--border); border-radius:11px; padding:6px; background:var(--bg);"></div>
       
       <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
-        <span style="font-size:13px; font-weight:700;">จำนวนข้อที่ต้องการสุ่ม:</span>
+        <span style="font-size:13px; font-weight:700;">จำนวนข้อ</span>
         <div style="display:flex; align-items:center; gap:5px;">
           <input type="number" id="randomCountInput" value="20" min="1" max="500" style="width:72px; padding:6px; border:1px solid var(--border); border-radius:7px; text-align:center; font-weight:700; font-family:'IBM Plex Mono'; font-size:13.5px;">
           <span style="font-size:12px; color:var(--ink-soft); font-weight:600;">ข้อ</span>
@@ -1742,7 +1751,7 @@
 
       <button class="submit-btn" onclick="startRandomStudy()">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        เริ่มสุ่ม Flashcard (เกลี่ยน้ำหนักเฉลี่ย)
+        เริ่มสุ่มโจทย์
       </button>
     </div>
   </div>
@@ -1751,7 +1760,7 @@
   <div class="modal-overlay" id="exportModal">
     <div class="modal-box">
       <div class="modal-head">
-        <h3>📥 Export Goodnotes CSV</h3>
+        <h3>ส่งออกไฟล์ CSV (Goodnotes / Anki)</h3>
         <button class="modal-close" onclick="closeExportModal()">✕</button>
       </div>
       <div class="form-group">
@@ -1774,7 +1783,7 @@
       </div>
       <button class="submit-btn" onclick="executeExportCSV()">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        ดาวน์โหลด CSV (2 คอลัมน์)
+        ดาวน์โหลด CSV
       </button>
     </div>
   </div>
@@ -1783,7 +1792,7 @@
   <div class="modal-overlay" id="indexModal">
     <div class="modal-box">
       <div class="modal-head">
-        <h3>📚 สารบัญหมวดวิชา & หัวข้อย่อย</h3>
+        <h3>สารบัญหมวดวิชา</h3>
         <button class="modal-close" onclick="toggleIndexPanel()">✕</button>
       </div>
       <div id="indexPanelContent" style="max-height:65vh; overflow-y:auto;"></div>
@@ -1794,7 +1803,7 @@
   <div class="modal-overlay" id="statsModal">
     <div class="modal-box">
       <div class="modal-head">
-        <h3>📊 สถิติความจำของฉัน</h3>
+        <h3>สถิติการทบทวน</h3>
         <button class="modal-close" onclick="toggleStats()">✕</button>
       </div>
       <div id="statsPanelContent" style="max-height:60vh; overflow-y:auto;"></div>
@@ -1805,7 +1814,7 @@
   <div class="modal-overlay" id="subtopicEvalModal">
     <div class="modal-box" style="max-width:520px;">
       <div class="modal-head">
-        <h3>⭐ ประเมินภาพรวมเนื้อหา (Subtopic Evaluation)</h3>
+        <h3>ประเมินคุณภาพชุดข้อสอบ</h3>
         <button class="modal-close" onclick="closeSubtopicEvalModal()">✕</button>
       </div>
 
@@ -1822,58 +1831,55 @@
 
       <!-- ข้อที่ 1 -->
       <div class="eval-criterion-card" id="critCard_accuracy">
-        <div class="eval-crit-num">ข้อที่ 1</div>
-        <div class="eval-crit-title">ด้านความถูกต้องและตรงประเด็น (Content Accuracy & Relevance)</div>
-        <div class="eval-crit-desc">คำถามและคำตอบมีความถูกต้อง สมบูรณ์ และตรงกับวัตถุประสงค์การเรียนรู้หรือไม่</div>
+        <div class="eval-crit-title">1. ความถูกต้องของเนื้อหา</div>
+        <div class="eval-crit-desc">โจทย์และเฉลยถูกต้องตามแนวทางเวชปฏิบัติและตรงประเด็นการสอบ</div>
         <div class="star-rating-row" data-criterion="accuracy">
           <button type="button" class="star-btn" onclick="setCriterionRating('accuracy', 1)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('accuracy', 2)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('accuracy', 3)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('accuracy', 4)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('accuracy', 5)">★</button>
-          <span class="star-score-text" id="scoreText_accuracy">แตะให้คะแนน (1-5)</span>
+          <span class="star-score-text" id="scoreText_accuracy">เลือก 1-5 ดาว</span>
         </div>
       </div>
 
       <!-- ข้อที่ 2 -->
       <div class="eval-criterion-card" id="critCard_clarity">
-        <div class="eval-crit-num">ข้อที่ 2</div>
-        <div class="eval-crit-title">ด้านความชัดเจนและเข้าใจง่าย (Clarity & Readability)</div>
-        <div class="eval-crit-desc">ภาษาที่ใช้ในการตั้งคำถามและคำตอบมีความชัดเจน สื่อสารได้ตรงจุด และจัดรูปแบบให้อ่านง่ายหรือไม่</div>
+        <div class="eval-crit-title">2. ความกระชับและอ่านเข้าใจง่าย</div>
+        <div class="eval-crit-desc">สำนวนภาษาชัดเจนและการจัดวางเนื้อหาอ่านง่าย</div>
         <div class="star-rating-row" data-criterion="clarity">
           <button type="button" class="star-btn" onclick="setCriterionRating('clarity', 1)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('clarity', 2)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('clarity', 3)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('clarity', 4)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('clarity', 5)">★</button>
-          <span class="star-score-text" id="scoreText_clarity">แตะให้คะแนน (1-5)</span>
+          <span class="star-score-text" id="scoreText_clarity">เลือก 1-5 ดาว</span>
         </div>
       </div>
 
       <!-- ข้อที่ 3 -->
       <div class="eval-criterion-card" id="critCard_utility">
-        <div class="eval-crit-num">ข้อที่ 3</div>
-        <div class="eval-crit-title">ด้านประโยชน์และการช่วยกระตุ้นการจำ (Learning Impact & Utility)</div>
-        <div class="eval-crit-desc">Flashcard ชุดนี้ช่วยให้ท่านเข้าใจ เชื่อมโยงความรู้ หรือจดจำจุดสำคัญในการเตรียมสอบได้ดีขึ้นหรือไม่</div>
+        <div class="eval-crit-title">3. ประโยชน์ต่อการทบทวน</div>
+        <div class="eval-crit-desc">ช่วยสรุปประเด็นสำคัญและกระตุ้นความจำได้ดี</div>
         <div class="star-rating-row" data-criterion="utility">
           <button type="button" class="star-btn" onclick="setCriterionRating('utility', 1)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('utility', 2)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('utility', 3)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('utility', 4)">★</button>
           <button type="button" class="star-btn" onclick="setCriterionRating('utility', 5)">★</button>
-          <span class="star-score-text" id="scoreText_utility">แตะให้คะแนน (1-5)</span>
+          <span class="star-score-text" id="scoreText_utility">เลือก 1-5 ดาว</span>
         </div>
       </div>
 
       <!-- ข้อเสนอแนะเพิ่มเติม -->
       <div class="form-group" style="margin-top:10px;">
-        <label>ข้อเสนอแนะเพิ่มเติม (Optional):</label>
-        <textarea class="form-input" id="evalSubtopicComment" rows="3" placeholder="ระบุความคิดเห็นหรือข้อเสนอแนะเพื่อการปรับปรุงให้ดียิ่งขึ้น..." style="resize:vertical;"></textarea>
+        <label>ข้อเสนอแนะเพิ่มเติม (ถ้ามี)</label>
+        <textarea class="form-input" id="evalSubtopicComment" rows="3" placeholder="ระบุข้อเสนอแนะ..." style="resize:vertical;"></textarea>
       </div>
 
       <button class="submit-btn" id="btnSubmitEval" onclick="submitSubtopicEvaluation()" style="margin-top:8px;">
         <span class="btn-spinner" id="evalSpinner" style="display:none;"></span>
-        <span id="evalBtnText">บันทึกการประเมิน</span>
+        <span id="evalBtnText">ส่งผลประเมิน</span>
       </button>
     </div>
   </div>
@@ -1882,13 +1888,13 @@
   <div class="modal-overlay" id="reportCardModal">
     <div class="modal-box" style="max-width:500px;">
       <div class="modal-head">
-        <h3>🚩 แจ้งปัญหาเกี่ยวกับข้อสอบนี้</h3>
+        <h3>แจ้งแก้ไขข้อสอบ</h3>
         <button class="modal-close" onclick="closeReportCardModal()">✕</button>
       </div>
 
       <div class="eval-meta-banner" style="margin-bottom:10px;">
         <div class="eval-meta-row">
-          <span class="eval-meta-label">ตำแหน่ง:</span>
+          <span class="eval-meta-label">ข้อที่แจ้ง:</span>
           <span class="eval-meta-val" id="reportCardLoc">-</span>
         </div>
       </div>
@@ -1896,29 +1902,29 @@
       <div class="report-card-preview" id="reportCardPreview">คำถาม: ...</div>
 
       <div class="form-group">
-        <label>ประเภทปัญหาที่พบ:</label>
+        <label>ประเด็นที่พบ</label>
         <select class="form-input" id="reportIssueType">
-          <option value="เฉลยไม่ถูกต้อง / ขัดแย้งกับ Guideline ปัจจุบัน">เฉลยไม่ถูกต้อง / ขัดแย้งกับ Guideline ปัจจุบัน</option>
-          <option value="โจทย์กำกวม / พิมพ์ตกหล่น / คำผิด">โจทย์กำกวม / พิมพ์ตกหล่น / คำผิด</option>
-          <option value="รูปภาพประกอบไม่แสดง / รูปไม่ตรงข้อ">รูปภาพประกอบไม่แสดง / รูปไม่ตรงข้อ</option>
-          <option value="คำอธิบายเฉลยไม่ละเอียด / อยากให้เพิ่มจุดเน้น">คำอธิบายเฉลยไม่ละเอียด / อยากให้เพิ่มจุดเน้น</option>
-          <option value="อื่นๆ (ระบุในรายละเอียด)">อื่นๆ (ระบุในรายละเอียด)</option>
+          <option value="เฉลยไม่ถูกต้อง / ขัดแย้งกับ Guideline ปัจจุบัน">เฉลยไม่ถูกต้อง หรือขัดกับแนวทางปัจจุบัน</option>
+          <option value="โจทย์กำกวม / พิมพ์ตกหล่น / คำผิด">โจทย์กำกวม หรือสะกดผิด</option>
+          <option value="รูปภาพประกอบไม่แสดง / รูปไม่ตรงข้อ">รูปภาพไม่แสดง หรือไม่ตรงข้อ</option>
+          <option value="คำอธิบายเฉลยไม่ละเอียด / อยากให้เพิ่มจุดเน้น">ต้องการให้เพิ่มคำอธิบายเฉลย</option>
+          <option value="อื่นๆ (ระบุในรายละเอียด)">อื่นๆ</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label>รายละเอียดปัญหาที่พบ หรือเฉลยที่ถูกต้อง: <span style="color:#ef4444;">*</span></label>
-        <textarea class="form-input" id="reportIssueDetail" rows="4" placeholder="โปรดระบุจุดที่ผิด ข้อความที่ถูกต้อง หรือเหตุผลพร้อม Reference (ถ้ามี)..." style="resize:vertical;"></textarea>
+        <label>รายละเอียดหรือข้อมูลที่ถูกต้อง <span style="color:#ef4444;">*</span></label>
+        <textarea class="form-input" id="reportIssueDetail" rows="4" placeholder="ระบุจุดที่ควรแก้ไข หรืออ้างอิงที่ถูกต้อง..." style="resize:vertical;"></textarea>
       </div>
 
       <button class="submit-btn" id="btnSubmitReport" onclick="submitCardReport()" style="background:#dc2626;">
         <span class="btn-spinner" id="reportSpinner" style="display:none;"></span>
-        <span id="reportBtnText">ส่งรายงานข้อผิดพลาด</span>
+        <span id="reportBtnText">ส่งแจ้งแก้ไข</span>
       </button>
 
       <div style="text-align:center; margin-top:10px;">
         <a onclick="openReportHistoryModal()" style="font-size:12px; color:var(--ink-soft); text-decoration:underline; cursor:pointer;">
-          📋 ตรวจสอบประวัติ & สถานะปัญหาที่เคยแจ้งทั้งหมด
+          ดูรายการแจ้งแก้ไขทั้งหมด
         </a>
       </div>
     </div>
@@ -1929,11 +1935,11 @@
     <div class="modal-box report-hist-box">
       <div class="modal-head" style="margin-bottom:8px;">
         <div style="display:flex; align-items:center; gap:8px;">
-          <h3 style="margin:0; font-size:16px;">📋 ประวัติการแจ้งปัญหา & สถานะการแก้ไข</h3>
+          <h3 style="margin:0; font-size:16px;">สถานะการแจ้งแก้ไข</h3>
           <span id="reportHistTotalCount" style="font-size:11px; font-weight:700; background:#eff6ff; color:#1e40af; border:1px solid #bfdbfe; padding:2px 8px; border-radius:12px;">0 รายการ</span>
         </div>
         <div style="display:flex; align-items:center; gap:6px;">
-          <button class="icon-btn" id="btnRefreshReportHist" onclick="loadReportHistory(true)" title="รีเฟรชข้อมูลล่าสุด" style="width:30px; height:30px; border-radius:8px;">
+          <button class="icon-btn" id="btnRefreshReportHist" onclick="loadReportHistory(true)" title="อัปเดตข้อมูล" style="width:30px; height:30px; border-radius:8px;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
           </button>
           <button class="modal-close" onclick="closeReportHistoryModal()">✕</button>
@@ -1942,10 +1948,10 @@
 
       <div class="report-hist-filter-bar">
         <button class="report-filter-pill active" data-filter="all" onclick="setReportFilter('all')">ทั้งหมด</button>
-        <button class="report-filter-pill" data-filter="pending" onclick="setReportFilter('pending')">🟡 รอดำเนินการ</button>
-        <button class="report-filter-pill" data-filter="progress" onclick="setReportFilter('progress')">🔵 กำลังตรวจสอบ</button>
-        <button class="report-filter-pill" data-filter="fixed" onclick="setReportFilter('fixed')">🟢 แก้ไขแล้ว</button>
-        <button class="report-filter-pill" data-filter="invalid" onclick="setReportFilter('invalid')">⚪ เฉลยเดิมถูกต้อง</button>
+        <button class="report-filter-pill" data-filter="pending" onclick="setReportFilter('pending')">รอดำเนินการ</button>
+        <button class="report-filter-pill" data-filter="progress" onclick="setReportFilter('progress')">กำลังตรวจสอบ</button>
+        <button class="report-filter-pill" data-filter="fixed" onclick="setReportFilter('fixed')">แก้ไขแล้ว</button>
+        <button class="report-filter-pill" data-filter="invalid" onclick="setReportFilter('invalid')">คงตามเฉลยเดิม</button>
       </div>
 
       <div class="report-list-container" id="reportHistList">
@@ -1960,27 +1966,29 @@
       <div class="paper-head">
         <div class="paper-head-top">
           <div class="paper-crest-title">
-            <span class="paper-crest-icon">📝</span>
+            <span class="paper-crest-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </span>
             <div class="paper-crest-text">
-              <h3>คณะเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย · โครงการเตรียมสอบใบประกอบวิชาชีพ</h3>
-              <p>แผ่นกระดาษข้อสอบและเฉลย Flashcard (Official Flashcard Review & Edit Sheet)</p>
+              <h3>ระบบจัดการคลังข้อสอบ PLE-CC Flashcard</h3>
+              <p>แก้ไขหรือเพิ่มการ์ดลงในฐานข้อมูล Google Sheet โดยตรง</p>
             </div>
           </div>
           <button type="button" class="paper-close-btn" onclick="closePaperEditorModal()" title="ปิดหน้าต่าง">✕</button>
         </div>
 
         <div class="paper-meta-strip">
-          <span class="paper-meta-pill" id="peSheetPillFixed">📍 ชีต: <b id="peSheetNameBadge">-</b></span>
+          <span class="paper-meta-pill" id="peSheetPillFixed">ชีต: <b id="peSheetNameBadge">-</b></span>
           <div id="peSheetSelectWrap" style="display:none; align-items:center; gap:6px;">
-            <span style="font-size:11px; font-weight:700; color:#0369a1;">📍 เลือกชีตหมวด:</span>
+            <span style="font-size:11px; font-weight:700; color:#0369a1;">เลือกชีตหมวด:</span>
             <select id="peSheetSelect" class="paper-input" style="padding:3px 8px; font-size:11.5px; font-weight:700; width:auto;" onchange="onPeSheetSelectChange()">
               <!-- Dynamic options -->
             </select>
           </div>
-          <span class="paper-meta-pill">🔢 แถวที่: <b id="peRowNumBadge">-</b></span>
-          <span class="paper-meta-pill">📌 ข้อที่: <b id="peItemNoBadge">-</b></span>
-          <span class="paper-meta-pill">🏷️ สายวิชา: <b id="peTrackBadge">Clinic</b></span>
-          <span class="paper-admin-pill" id="peModePill">👑 Admin Flashcard Editor</span>
+          <span class="paper-meta-pill">แถวที่: <b id="peRowNumBadge">-</b></span>
+          <span class="paper-meta-pill">ข้อที่: <b id="peItemNoBadge">-</b></span>
+          <span class="paper-meta-pill">สายวิชา: <b id="peTrackBadge">Clinic</b></span>
+          <span class="paper-admin-pill" id="peModePill">Admin Editor</span>
         </div>
       </div>
 
@@ -1990,9 +1998,9 @@
       <!-- ① QUESTION / FRONT FACE SECTION (ข้อความโจทย์หน้าการ์ด) -->
       <div style="margin-bottom:20px;">
         <div class="paper-sec-head">
-          <span>📌 ข้อความคำถาม / โจทย์หน้าการ์ด (Question / Front Face)</span>
+          <span>โจทย์ (ด้านหน้า)</span>
           <div style="display:flex; align-items:center; gap:6px;">
-            <span style="font-size:11px; color:#64748b;">เลขข้อในชีต:</span>
+            <span style="font-size:11px; color:#64748b;">เลขข้อ:</span>
             <input type="text" id="peItemNoInput" style="width:65px; padding:4px 8px; border:1.5px solid #cbd5e1; border-radius:6px; font-weight:700; font-size:12px; text-align:center;">
           </div>
         </div>
@@ -2011,35 +2019,35 @@
           <span class="paper-color-dot" style="background:#7c3aed;" onclick="applyTextFormat('peQuestionInput', 'color', '#7c3aed')" title="สีม่วง"></span>
           <span class="paper-tool-sep"></span>
           <span style="font-size:10.5px; color:#64748b; font-weight:600;">ไฮไลต์:</span>
-          <button type="button" class="paper-tool-btn" style="background:#fef08a; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#fef08a')" title="ไฮไลต์เหลือง">🟡</button>
-          <button type="button" class="paper-tool-btn" style="background:#e0f2fe; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#e0f2fe')" title="ไฮไลต์ฟ้า">🔵</button>
-          <button type="button" class="paper-tool-btn" style="background:#dcfce7; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#dcfce7')" title="ไฮไลต์เขียว">🟢</button>
+          <button type="button" class="paper-tool-btn" style="background:#fef08a; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#fef08a')" title="ไฮไลต์เหลือง">เหลือง</button>
+          <button type="button" class="paper-tool-btn" style="background:#e0f2fe; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#e0f2fe')" title="ไฮไลต์ฟ้า">ฟ้า</button>
+          <button type="button" class="paper-tool-btn" style="background:#dcfce7; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peQuestionInput', 'highlight', '#dcfce7')" title="ไฮไลต์เขียว">เขียว</button>
         </div>
-        <textarea class="paper-textarea" id="peQuestionInput" rows="4" placeholder="พิมพ์ข้อความโจทย์หรือคำถามหน้าการ์ด..." style="border-radius:0 0 10px 10px;"></textarea>
+        <textarea class="paper-textarea" id="peQuestionInput" rows="4" placeholder="พิมพ์โจทย์หรือคำถาม..." style="border-radius:0 0 10px 10px;"></textarea>
 
         <!-- Question Image Input & Live Preview & Upload/Paste -->
         <div style="margin-top:10px;">
           <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
-            <label class="paper-label" style="margin-bottom:0;">🖼️ รูปภาพคำถาม (URL, อัปโหลดไฟล์ หรือวางภาพ Ctrl+V)</label>
-            <span style="font-size:11px; color:#0284c7; font-weight:600;">💡 วางภาพด้วย Ctrl+V ได้ทันที</span>
+            <label class="paper-label" style="margin-bottom:0;">รูปภาพประกอบโจทย์</label>
+            <span style="font-size:11px; color:#0284c7; font-weight:600;">รองรับการวางภาพด้วย Ctrl+V</span>
           </div>
           <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-            <input type="text" class="paper-input" id="peQuestionImgInput" placeholder="https://... หรือ drive.google.com/... หรือวางภาพ" style="flex:1; min-width:200px;" oninput="updatePaperImagePreview('question')">
+            <input type="text" class="paper-input" id="peQuestionImgInput" placeholder="วางลิงก์รูปภาพ หรือกด Ctrl+V" style="flex:1; min-width:200px;" oninput="updatePaperImagePreview('question')">
             <input type="file" id="peQuestionFileInput" accept="image/*" style="display:none;" onchange="handleImageFileInput(this, 'question')">
-            <button type="button" class="paper-tool-btn" onclick="document.getElementById('peQuestionFileInput').click()" style="padding:6px 12px; height:auto; font-size:12px; background:#f0f9ff; border-color:#bae6fd; color:#0284c7;">📁 อัปโหลดรูป</button>
+            <button type="button" class="paper-tool-btn" onclick="document.getElementById('peQuestionFileInput').click()" style="padding:6px 12px; height:auto; font-size:12px; background:#f0f9ff; border-color:#bae6fd; color:#0284c7;">เลือกไฟล์รูป</button>
             <button type="button" class="paper-btn-cancel" onclick="clearPaperImage('question')" style="padding:6px 12px; font-size:11.5px;">ล้างรูป</button>
           </div>
 
           <!-- Drag / Paste dropzone -->
-          <div class="paper-paste-zone" id="peQuestionPasteZone" tabindex="0" title="คลิกที่นี่แล้วกด Ctrl+V เพื่อวางรูปภาพทันที">
-            <span style="font-size:12px; color:#64748b;">📋 คลิกที่นี่แล้วกด <b>Ctrl + V</b> เพื่อวางรูปภาพที่แคปไว้ หรือลากไฟล์มาวาง</span>
+          <div class="paper-paste-zone" id="peQuestionPasteZone" tabindex="0" title="คลิกที่นี่แล้วกด Ctrl+V เพื่อวางรูปภาพ">
+            <span style="font-size:12px; color:#64748b;">คลิกพื้นที่นี้แล้วกด <b>Ctrl + V</b> เพื่อวางรูปภาพ หรือลากไฟล์มาวาง</span>
           </div>
 
           <div class="paper-img-preview-box" id="peQuestionImgPreviewWrap" style="display:none;">
             <img id="peQuestionImgPreview" src="" alt="พรีวิวรูปคำถาม">
             <div style="flex:1;">
-              <div style="font-size:11.5px; font-weight:700; color:#0f172a;">พรีวิวรูปคำถามสด</div>
-              <div style="font-size:10.5px; color:#64748b;" id="peQuestionImgMetaText">รูปจะแสดงผลบนหน้าการ์ดทันที</div>
+              <div style="font-size:11.5px; font-weight:700; color:#0f172a;">ตัวอย่างรูปโจทย์</div>
+              <div style="font-size:10.5px; color:#64748b;" id="peQuestionImgMetaText">พร้อมแสดงผล</div>
             </div>
             <button type="button" class="paper-tool-btn" onclick="clearPaperImage('question')" style="color:#ef4444; border-color:#fecaca;" title="ลบภาพ">✕</button>
           </div>
@@ -2049,16 +2057,16 @@
       <!-- ② ANSWER / BACK FACE SECTION (คำตอบและเฉลยหลังการ์ด) -->
       <div style="margin-bottom:20px;">
         <div class="paper-sec-head">
-          <span>📖 คำตอบและเฉลยละเอียดหลังการ์ด (Answer / Back Face)</span>
+          <span>เฉลยและคำอธิบาย (ด้านหลัง)</span>
         </div>
 
         <!-- Rule 3.6 Template Buttons -->
         <div class="paper-tmpl-bar">
-          <span style="font-size:11px; color:#475569; font-weight:700; align-self:center;">แทรกโครงสร้าง:</span>
-          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('correct')">+ 💡 คำอธิบายและจุดเน้น</button>
-          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('topic')">+ ▶ หัวข้อย่อย</button>
-          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('subitem')">+ ↳ ประเด็นสำคัญ</button>
-          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('note')">+ ✦ หมายเหตุ / ข้อยกเว้น</button>
+          <span style="font-size:11px; color:#475569; font-weight:700; align-self:center;">แทรกหัวข้อ:</span>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('correct')">+ คำอธิบาย</button>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('topic')">+ ▶ หัวข้อหลัก</button>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('subitem')">+ ↳ รายละเอียด</button>
+          <button type="button" class="paper-tmpl-chip" onclick="insertFlashcardTemplate('note')">+ ✦ หมายเหตุ</button>
         </div>
 
         <!-- Answer Rich Toolbar -->
@@ -2075,35 +2083,35 @@
           <span class="paper-color-dot" style="background:#7c3aed;" onclick="applyTextFormat('peAnswerInput', 'color', '#7c3aed')" title="สีม่วง"></span>
           <span class="paper-tool-sep"></span>
           <span style="font-size:10.5px; color:#64748b; font-weight:600;">ไฮไลต์:</span>
-          <button type="button" class="paper-tool-btn" style="background:#fef08a; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#fef08a')" title="ไฮไลต์เหลือง">🟡</button>
-          <button type="button" class="paper-tool-btn" style="background:#e0f2fe; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#e0f2fe')" title="ไฮไลต์ฟ้า">🔵</button>
-          <button type="button" class="paper-tool-btn" style="background:#dcfce7; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#dcfce7')" title="ไฮไลต์เขียว">🟢</button>
+          <button type="button" class="paper-tool-btn" style="background:#fef08a; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#fef08a')" title="ไฮไลต์เหลือง">เหลือง</button>
+          <button type="button" class="paper-tool-btn" style="background:#e0f2fe; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#e0f2fe')" title="ไฮไลต์ฟ้า">ฟ้า</button>
+          <button type="button" class="paper-tool-btn" style="background:#dcfce7; font-size:11px; padding:2px 6px;" onclick="applyTextFormat('peAnswerInput', 'highlight', '#dcfce7')" title="ไฮไลต์เขียว">เขียว</button>
         </div>
-        <textarea class="paper-textarea" id="peAnswerInput" rows="7" placeholder="พิมพ์คำตอบ เฉลย หรือเนื้อหาทบทวนหลังการ์ด..." style="border-radius:0 0 10px 10px;"></textarea>
+        <textarea class="paper-textarea" id="peAnswerInput" rows="7" placeholder="พิมพ์เฉลยและคำอธิบาย..." style="border-radius:0 0 10px 10px;"></textarea>
 
         <!-- Answer Image Input & Live Preview & Upload/Paste -->
         <div style="margin-top:10px;">
           <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
-            <label class="paper-label" style="margin-bottom:0;">🖼️ รูปภาพเฉลย (URL, อัปโหลดไฟล์ หรือวางภาพ Ctrl+V)</label>
-            <span style="font-size:11px; color:#0284c7; font-weight:600;">💡 วางภาพด้วย Ctrl+V ได้ทันที</span>
+            <label class="paper-label" style="margin-bottom:0;">รูปภาพประกอบเฉลย</label>
+            <span style="font-size:11px; color:#0284c7; font-weight:600;">รองรับการวางภาพด้วย Ctrl+V</span>
           </div>
           <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-            <input type="text" class="paper-input" id="peAnswerImgInput" placeholder="https://... หรือ drive.google.com/... หรือวางภาพ" style="flex:1; min-width:200px;" oninput="updatePaperImagePreview('answer')">
+            <input type="text" class="paper-input" id="peAnswerImgInput" placeholder="วางลิงก์รูปภาพ หรือกด Ctrl+V" style="flex:1; min-width:200px;" oninput="updatePaperImagePreview('answer')">
             <input type="file" id="peAnswerFileInput" accept="image/*" style="display:none;" onchange="handleImageFileInput(this, 'answer')">
-            <button type="button" class="paper-tool-btn" onclick="document.getElementById('peAnswerFileInput').click()" style="padding:6px 12px; height:auto; font-size:12px; background:#f0f9ff; border-color:#bae6fd; color:#0284c7;">📁 อัปโหลดรูป</button>
+            <button type="button" class="paper-tool-btn" onclick="document.getElementById('peAnswerFileInput').click()" style="padding:6px 12px; height:auto; font-size:12px; background:#f0f9ff; border-color:#bae6fd; color:#0284c7;">เลือกไฟล์รูป</button>
             <button type="button" class="paper-btn-cancel" onclick="clearPaperImage('answer')" style="padding:6px 12px; font-size:11.5px;">ล้างรูป</button>
           </div>
 
           <!-- Drag / Paste dropzone -->
-          <div class="paper-paste-zone" id="peAnswerPasteZone" tabindex="0" title="คลิกที่นี่แล้วกด Ctrl+V เพื่อวางรูปภาพทันที">
-            <span style="font-size:12px; color:#64748b;">📋 คลิกที่นี่แล้วกด <b>Ctrl + V</b> เพื่อวางรูปภาพที่แคปไว้ หรือลากไฟล์มาวาง</span>
+          <div class="paper-paste-zone" id="peAnswerPasteZone" tabindex="0" title="คลิกที่นี่แล้วกด Ctrl+V เพื่อวางรูปภาพ">
+            <span style="font-size:12px; color:#64748b;">คลิกพื้นที่นี้แล้วกด <b>Ctrl + V</b> เพื่อวางรูปภาพ หรือลากไฟล์มาวาง</span>
           </div>
 
           <div class="paper-img-preview-box" id="peAnswerImgPreviewWrap" style="display:none;">
             <img id="peAnswerImgPreview" src="" alt="พรีวิวรูปเฉลย">
             <div style="flex:1;">
-              <div style="font-size:11.5px; font-weight:700; color:#0f172a;">พรีวิวรูปเฉลยสด</div>
-              <div style="font-size:10.5px; color:#64748b;" id="peAnswerImgMetaText">รูปจะแสดงผลบนหลังการ์ดทันที</div>
+              <div style="font-size:11.5px; font-weight:700; color:#0f172a;">ตัวอย่างรูปเฉลย</div>
+              <div style="font-size:10.5px; color:#64748b;" id="peAnswerImgMetaText">พร้อมแสดงผล</div>
             </div>
             <button type="button" class="paper-tool-btn" onclick="clearPaperImage('answer')" style="color:#ef4444; border-color:#fecaca;" title="ลบภาพ">✕</button>
           </div>
@@ -2112,43 +2120,43 @@
 
       <!-- ③ METADATA SECTION (หัวข้อย่อย, สายวิชา, หมายเหตุ) -->
       <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px 16px; margin-bottom:20px;">
-        <div style="font-size:12px; font-weight:700; color:#334155; margin-bottom:10px;">📑 ข้อมูลการจัดหมวดและการจำแนกข้อสอบ (Metadata)</div>
+        <div style="font-size:12px; font-weight:700; color:#334155; margin-bottom:10px;">ข้อมูลหมวดหมู่</div>
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:10px;">
           <div>
-            <label class="paper-label">หัวข้อย่อย / เรื่อง (Subtopic - Searchable Dropdown)</label>
-            <input type="text" class="paper-input" id="peSubtopicInput" list="peSubtopicDatalist" placeholder="พิมพ์เพื่อค้นหา หรือเลือกหัวข้อ..." autocomplete="off">
+            <label class="paper-label">หัวข้อย่อย (Subtopic)</label>
+            <input type="text" class="paper-input" id="peSubtopicInput" list="peSubtopicDatalist" placeholder="พิมพ์หรือเลือกหัวข้อย่อย..." autocomplete="off">
             <datalist id="peSubtopicDatalist"></datalist>
           </div>
           <div>
-            <label class="paper-label">สายวิชา (Track)</label>
+            <label class="paper-label">สายวิชา</label>
             <select class="paper-input" id="peTrackSelect">
-              <option value="Clinic">Clinic (คลินิก 16 กลุ่ม)</option>
-              <option value="Product">Product (ผลิตภัณฑ์ 12 กลุ่ม)</option>
-              <option value="SAP">SAP (สังคมและกฎหมาย)</option>
+              <option value="Clinic">Clinic (16 หมวด)</option>
+              <option value="Product">Product (12 หมวด)</option>
+              <option value="SAP">SAP</option>
             </select>
           </div>
         </div>
         <div style="margin-top:10px;">
-          <label class="paper-label">หมายเหตุ (Note)</label>
-          <input type="text" class="paper-input" id="peNoteInput" placeholder="ข้อความหมายเหตุประกอบ">
+          <label class="paper-label">หมายเหตุ</label>
+          <input type="text" class="paper-input" id="peNoteInput" placeholder="หมายเหตุเพิ่มเติม (ถ้ามี)">
         </div>
       </div>
 
       <!-- ④ FOOTER & ACTIONS -->
       <div class="paper-footer">
         <div class="paper-editor-sign">
-          <span>👑 ผู้แก้ไข (Admin):</span>
-          <b id="peEditorNameDisplay">Maxnum (ประธานโครงการ)</b>
+          <span>ผู้แก้ไข:</span>
+          <b id="peEditorNameDisplay">Admin</b>
         </div>
         <div class="paper-btn-group">
-          <button type="button" class="paper-btn-delete" id="btnDeletePaperEditor" onclick="deleteCurrentEditingCard()" style="display:none;" title="ลบ Flashcard นี้ออกจาก Google Sheet">
+          <button type="button" class="paper-btn-delete" id="btnDeletePaperEditor" onclick="deleteCurrentEditingCard()" style="display:none;" title="ลบการ์ดนี้ออกจากชีต">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
-            <span id="btnDeletePaperEditorText">🗑️ ลบการ์ดนี้</span>
+            <span id="btnDeletePaperEditorText">ลบการ์ด</span>
           </button>
-          <button type="button" class="paper-btn-cancel" onclick="closePaperEditorModal()">✕ ยกเลิก</button>
+          <button type="button" class="paper-btn-cancel" onclick="closePaperEditorModal()">ยกเลิก</button>
           <button type="button" class="paper-btn-save" id="btnSavePaperEditor" onclick="savePaperEditorData()">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-            <span id="btnSavePaperEditorText">💾 บันทึก & ซิงค์ลง Google Sheet</span>
+            <span id="btnSavePaperEditorText">บันทึกข้อมูล</span>
           </button>
         </div>
       </div>
@@ -3339,17 +3347,17 @@ window.google.script.run = (function() {
     const titleEl = document.getElementById('lobbySectionDeckTitle');
 
     if (track === 'clinic') {
-      descEl.innerHTML = '🩺 สายวิชา <b>Clinical Pharmacy (PLE-CC)</b> — 16 กลุ่มโรคคลินิก';
-      titleEl.textContent = 'เลือก Deck ฝึกจำ (Clinical 16 กลุ่มโรค)';
+      descEl.textContent = 'เภสัชกรรมคลินิก · 16 หมวด';
+      titleEl.textContent = 'หมวดวิชา';
     } else if (track === 'product') {
-      descEl.innerHTML = '🧪 สายวิชา <b>Pharmaceutical Sciences (PLE-Product)</b> — 12 กลุ่มวิชาบริบาลและผลิตภัณฑ์';
-      titleEl.textContent = 'เลือก Deck ฝึกจำ (Product 12 กลุ่มวิชา)';
+      descEl.textContent = 'เภสัชอุตสาหกรรมและผลิตภัณฑ์ · 12 หมวด';
+      titleEl.textContent = 'หมวดวิชา';
     } else if (track === 'sap') {
-      descEl.innerHTML = '💼 สายวิชา <b>Social & Administrative Pharmacy (SAP)</b> — สังคมเภสัชกรรมและกฎหมาย';
-      titleEl.textContent = 'เลือก Deck ฝึกจำ (SAP สังคมฯ)';
+      descEl.textContent = 'เภสัชศาสตร์สังคมและบริหาร';
+      titleEl.textContent = 'หมวดวิชา';
     } else {
-      descEl.innerHTML = '🌟 <b>รวมทุกสายวิชา (All Decks)</b> — ครอบคลุมทั้ง Clinical Pharmacy, Product & SAP';
-      titleEl.textContent = 'เลือก Deck ฝึกจำ (รวมทุกหมวดวิชา)';
+      descEl.textContent = 'รวมทุกหมวดวิชา';
+      titleEl.textContent = 'หมวดวิชาทั้งหมด';
     }
 
     buildLobby();
@@ -3386,7 +3394,7 @@ window.google.script.run = (function() {
       const d = new Date(p.timestamp), now = new Date();
       return d.getFullYear()===now.getFullYear() && d.getMonth()===now.getMonth() && d.getDate()===now.getDate();
     }).length;
-    document.getElementById('lobbyStreakBadge').innerHTML = todayTotal > 0 ? `🔥 วันนี้ฝึกไปแล้ว ${todayTotal} ข้อ` : `📚 วันนี้ยังไม่ได้เริ่มฝึก มาลุยกัน!`;
+    document.getElementById('lobbyStreakBadge').textContent = todayTotal > 0 ? `วันนี้ ${todayTotal} ข้อ` : `เริ่มทบทวนวันนี้`;
 
     // Show Create Card Button in Lobby for Admins Only
     const isAdmin = (typeof isUserAllowedAdmin === 'function') && currentUser && isUserAllowedAdmin(currentUser.username);
@@ -3394,15 +3402,14 @@ window.google.script.run = (function() {
     if (btnCreate) btnCreate.style.display = isAdmin ? 'inline-flex' : 'none';
 
     const sel = document.getElementById('lobbyCatSelect');
-    sel.innerHTML = '<option value="">🗂 เลือกหมวดวิชาด่วน...</option>';
+    sel.innerHTML = '<option value="">ค้นหาหรือเลือกหมวดวิชา...</option>';
 
     let html = '';
     visCats.forEach((cat, idx) => {
       const norm = normalizeTrack(cat.track);
       const em = getCategoryEmoji(cat.name, idx, cat.track);
       const shortName = cat.name.replace(/^Product\s*Group\s*\d+:?\s*/i, '').replace(/^\d+\.\s*/, '').split(/[:(（]/)[0].trim();
-      const trackBadge = norm === 'product' ? '🧪' : norm === 'sap' ? '💼' : '🩺';
-      sel.innerHTML += `<option value="${cat.name}">${em} ${trackBadge} ${shortName} (${cat.count} ข้อ)</option>`;
+      sel.innerHTML += `<option value="${cat.name}">${shortName} (${cat.count})</option>`;
 
       const confCat = Object.values(userProgress).filter(p => p.category === cat.name && p.status === 'มั่นใจ').length;
       const pct     = cat.count ? Math.round((confCat / cat.count) * 100) : 0;
@@ -3416,7 +3423,7 @@ window.google.script.run = (function() {
             <div class="deck-emoji">${em}</div>
             <span class="deck-pct-badge ${pctBadgeClass}">${pct}%</span>
           </div>
-          <div class="deck-name">${trackBadge} ${shortName}</div>
+          <div class="deck-name">${shortName}</div>
           <div class="deck-count">${cat.count} ข้อ</div>
           <div class="deck-bar"><div class="deck-bar-fill ${fillClass}" style="width:${pct}%"></div></div>
         </div>`;
@@ -3470,10 +3477,10 @@ window.google.script.run = (function() {
 
     if (studyMethod === 'smart') {
       initSmartLearningQueue();
-      showToast('🧠 เริ่ม Smart Mode (วนซ้ำข้อที่ไม่มั่นใจ)');
+      showToast('Smart Mode: ทบทวนซ้ำข้อที่ยังไม่มั่นใจ');
     } else {
       applyFilter(currentFilter, true);
-      showToast('📖 โหมดทบทวนทั่วไป');
+      showToast('โหมดทบทวนตามลำดับ');
     }
   }
 
@@ -3490,11 +3497,11 @@ window.google.script.run = (function() {
     if (studyMethod === 'smart') {
       fillEl.classList.add('smart-fill');
       if (prevBtn) prevBtn.style.visibility = 'hidden';
-      if (swipeHint) swipeHint.innerHTML = '👆 ปัดซ้าย ✕ ไม่มั่นใจ · ปัดขวา ✓ มั่นใจ';
+      if (swipeHint) swipeHint.textContent = 'ปัดซ้าย ไม่มั่นใจ · ปัดขวา มั่นใจ';
     } else {
       fillEl.classList.remove('smart-fill');
       if (prevBtn) prevBtn.style.visibility = 'visible';
-      if (swipeHint) swipeHint.innerHTML = '👆 ปัดซ้าย ข้อถัดไป · ปัดขวา ย้อนกลับ';
+      if (swipeHint) swipeHint.textContent = 'ปัดซ้าย-ขวา เลื่อนข้อ';
     }
   }
 
@@ -3538,18 +3545,18 @@ window.google.script.run = (function() {
     if (validSubs.length === 0) {
       rowEl.style.display = 'flex';
       currentSubTopic = null;
-      selectEl.innerHTML = `<option value="__all__">📂 เนื้อหาทั้งหมดในหมวด (${allCards.length} ข้อ)</option>`;
+      selectEl.innerHTML = `<option value="__all__">ทุกหัวข้อย่อย (${allCards.length} ข้อ)</option>`;
       selectEl.value = '__all__';
       return;
     }
 
     rowEl.style.display = 'flex';
     let countTotal = allCards.length;
-    let html = `<option value="__all__">📂 ทุกหัวข้อย่อยในหมวด (${countTotal} ข้อ)</option>`;
+    let html = `<option value="__all__">ทุกหัวข้อย่อย (${countTotal} ข้อ)</option>`;
 
     validSubs.forEach(sub => {
       const subCardsCount = subMap[sub];
-      html += `<option value="${sub.replace(/"/g, '&quot;')}">• ${sub} (${subCardsCount} ข้อ)</option>`;
+      html += `<option value="${sub.replace(/"/g, '&quot;')}">${sub} (${subCardsCount})</option>`;
     });
 
     selectEl.innerHTML = html;
@@ -3707,16 +3714,16 @@ window.google.script.run = (function() {
     }
 
     if (studyMethod === 'smart' && smartQueue.length === 0 && smartInitialCount > 0) {
-      document.getElementById('cardTag').textContent = '🎉 พิชิตสมบูรณ์ 100%';
+      document.getElementById('cardTag').textContent = 'ครบทุกข้อแล้ว';
       document.getElementById('cardTag').className = 'tag smart-tag';
       document.getElementById('questionText').innerHTML = `
         <div class="celebration-box">
-          <div class="celebration-icon">🏆</div>
-          <div class="celebration-title">ยอดเยี่ยมมาก!</div>
-          <div class="celebration-sub">คุณตอบ "มั่นใจ" ครบทุกข้อในชุดนี้แล้ว</div>
+          <div class="celebration-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="celebration-title">ทบทวนครบทุกข้อแล้ว</div>
+          <div class="celebration-sub">ประเมิน "มั่นใจ" ครบทั้งชุดเรียบร้อย</div>
           <div class="celebration-actions">
-            <button class="submit-btn" onclick="initSmartLearningQueue()" style="font-size:13px; padding:10px;">🔄 ฝึกรอบใหม่</button>
-            <button class="lobby-tool-btn" onclick="showLobby()" style="font-size:13px; padding:10px;">🏠 กลับหน้า Lobby</button>
+            <button class="submit-btn" onclick="initSmartLearningQueue()" style="font-size:13px; padding:10px;">เริ่มรอบใหม่</button>
+            <button class="lobby-tool-btn" onclick="showLobby()" style="font-size:13px; padding:10px;">กลับหน้าหลัก</button>
           </div>
         </div>`;
       document.getElementById('answerText').innerHTML = '';
@@ -3731,21 +3738,21 @@ window.google.script.run = (function() {
       const confCount = viewCards.filter(c => cardStatus(c) === 'มั่นใจ').length;
       const unsureCount = totalInReview - confCount;
 
-      document.getElementById('cardTag').textContent = '🎉 จบรอบการทบทวน';
+      document.getElementById('cardTag').textContent = 'สรุปผลการทบทวน';
       document.getElementById('cardTag').className = 'tag';
       document.getElementById('questionText').innerHTML = `
         <div class="celebration-box">
-          <div class="celebration-icon">🎉</div>
-          <div class="celebration-title">ทบทวนครบทั้งชุดแล้ว!</div>
-          <div class="celebration-sub">ยอดเยี่ยมมากที่ทบทวนจนจบครบทุกข้อ</div>
+          <div class="celebration-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="celebration-title">จบรอบการทบทวน</div>
+          <div class="celebration-sub">ทบทวนครบทั้ง ${totalInReview} ข้อ</div>
           <div class="celebration-stats">
-            <span class="c-stat-pill conf">✓ มั่นใจ ${confCount} ข้อ</span>
-            <span class="c-stat-pill unsure">✕ ไม่มั่นใจ ${unsureCount} ข้อ</span>
+            <span class="c-stat-pill conf">✓ มั่นใจ ${confCount}</span>
+            <span class="c-stat-pill unsure">✕ ไม่มั่นใจ ${unsureCount}</span>
           </div>
           <div class="celebration-actions">
-            <button class="submit-btn" onclick="restartReview()" style="font-size:13px; padding:10px;">🔄 ทบทวนใหม่อีกรอบ</button>
-            <button class="lobby-tool-btn smart-btn" onclick="switchStudyMethod('smart')" style="font-size:13px; padding:10px;">🧠 ติวต่อด้วย Smart Mode</button>
-            <button class="lobby-tool-btn" onclick="showLobby()" style="font-size:13px; padding:10px;">🏠 กลับหน้า Lobby</button>
+            <button class="submit-btn" onclick="restartReview()" style="font-size:13px; padding:10px;">ทบทวนอีกครั้ง</button>
+            <button class="lobby-tool-btn smart-btn" onclick="switchStudyMethod('smart')" style="font-size:13px; padding:10px;">ฝึกต่อด้วย Smart Mode</button>
+            <button class="lobby-tool-btn" onclick="showLobby()" style="font-size:13px; padding:10px;">กลับหน้าหลัก</button>
           </div>
         </div>`;
       document.getElementById('answerText').innerHTML = '';
@@ -3757,7 +3764,7 @@ window.google.script.run = (function() {
 
     if (viewCards.length === 0) {
       document.getElementById('cardTag').textContent = '-';
-      document.getElementById('questionText').innerHTML = '📭 ไม่พบ Flashcard ในตัวกรองนี้';
+      document.getElementById('questionText').innerHTML = 'ไม่พบการ์ดในหมวดนี้';
       document.getElementById('answerText').innerHTML = '';
       document.getElementById('qImgWrap').classList.remove('show');
       document.getElementById('aImgWrap').classList.remove('show');
@@ -3770,7 +3777,7 @@ window.google.script.run = (function() {
     const today  = isStudiedToday(card);
     const norm = normalizeTrack(card.track);
 
-    const tagText = (studyMethod === 'smart' ? '🧠 ' : '') + (card.group || '') + (card.subTopic ? ' · ' + card.subTopic : '') + (card.itemNo ? ` · ข้อ ${card.itemNo}` : '');
+    const tagText = (card.group || '') + (card.subTopic ? ' · ' + card.subTopic : '') + (card.itemNo ? ` · #${card.itemNo}` : '');
     const tagEl = document.getElementById('cardTag');
     tagEl.textContent = tagText;
     
@@ -3812,14 +3819,14 @@ window.google.script.run = (function() {
       const total = smartInitialCount;
       const done  = smartMasteredCount;
       const left  = smartQueue.length;
-      document.getElementById('cardIndexText').textContent = `🎯 ${done}/${total} (เหลือ ${left})`;
+      document.getElementById('cardIndexText').textContent = `${done}/${total} · เหลือ ${left}`;
       document.getElementById('progressCount').textContent = `${done}/${total}`;
       document.getElementById('prevBtn').disabled = true;
       document.getElementById('nextBtn').disabled = left <= 1;
       document.getElementById('unsureBtn').disabled    = left === 0;
       document.getElementById('confidentBtn').disabled = left === 0;
     } else if (isReviewFinished) {
-      document.getElementById('cardIndexText').textContent = `🎉 ครบ ${viewCards.length} ข้อ`;
+      document.getElementById('cardIndexText').textContent = `ครบ ${viewCards.length} ข้อ`;
       document.getElementById('progressCount').textContent = `${viewCards.length}/${viewCards.length}`;
       document.getElementById('prevBtn').disabled = false;
       document.getElementById('nextBtn').disabled = true;
@@ -3828,7 +3835,7 @@ window.google.script.run = (function() {
     } else {
       const total = viewCards.length;
       const current = total ? currentIndex + 1 : 0;
-      document.getElementById('cardIndexText').textContent = `ข้อ ${current} จาก ${total}`;
+      document.getElementById('cardIndexText').textContent = `${current} / ${total}`;
       document.getElementById('progressCount').textContent = `${current}/${total}`;
       document.getElementById('prevBtn').disabled = currentIndex <= 0;
       document.getElementById('nextBtn').disabled = false;
@@ -3934,18 +3941,18 @@ window.google.script.run = (function() {
       if (status === 'มั่นใจ') {
         smartQueue.splice(currentIndex, 1);
         smartMasteredCount++;
-        showToast('🎯 มั่นใจแล้ว!');
+        showToast('✓ มั่นใจ');
       } else {
         const current = smartQueue.splice(currentIndex, 1)[0];
         reinsertSmartCard(current, 5);
-        showToast('🧠 Active Recall: จะวนกลับมาทวนในอีก ~5 ข้อ');
+        showToast('จะวนกลับมาถามซ้ำ');
       }
       viewCards = smartQueue;
       currentIndex = 0;
       renderProgress();
       setTimeout(() => renderCard('next'), 250);
     } else {
-      showToast(status === 'มั่นใจ' ? '✅ บันทึก: มั่นใจ' : '📌 บันทึก: ไม่มั่นใจ');
+      showToast(status === 'มั่นใจ' ? '✓ มั่นใจ' : '✕ ไม่มั่นใจ');
       renderProgress();
       setTimeout(goNext, 250);
     }
@@ -4456,13 +4463,13 @@ window.google.script.run = (function() {
       updateStudyMethodUI();
 
       const numGroups = selections.length;
-      document.getElementById('studyDeckName').textContent = `🎲 สุ่ม Flashcard ${allCards.length} ข้อ`;
-      document.getElementById('studyDeckSub').textContent  = `เฉลี่ยจาก ${numGroups} หมวดวิชา (${selectedSubCount} หัวข้อย่อย)`;
+      document.getElementById('studyDeckName').textContent = `สุ่มโจทย์ ${allCards.length} ข้อ`;
+      document.getElementById('studyDeckSub').textContent  = `จาก ${numGroups} หมวดวิชา (${selectedSubCount} หัวข้อย่อย)`;
       document.getElementById('randomBanner').style.display = 'flex';
-      document.getElementById('randomBannerText').textContent = `🎲 สุ่ม Flashcard ${allCards.length} ข้อ (เกลี่ยน้ำหนักเฉลี่ย ${numGroups} หมวด)`;
+      document.getElementById('randomBannerText').textContent = `โหมดสุ่มโจทย์ ${allCards.length} ข้อ (${numGroups} หมวด)`;
       currentIndex = 0;
       applyFilter('all', true);
-      showToast(`🎲 สุ่ม Flashcard ${allCards.length} ข้อ (คละเฉลี่ยเท่าๆ กัน) เรียบร้อย!`);
+      showToast(`สุ่มโจทย์ ${allCards.length} ข้อแล้ว`);
     }
 
     google.script.run
@@ -4644,7 +4651,7 @@ window.google.script.run = (function() {
 
   // ─── SYNC FROM SHEET ───
   function syncDataFromSheet() {
-    showToast('🔄 กำลังล้างแคชและซิงค์ข้อมูลใหม่จาก Google Sheet...');
+    showToast('กำลังซิงค์ข้อมูลล่าสุด...');
     clearAllLocalCache();
     browseCardsCache = null;
     google.script.run
@@ -4655,9 +4662,9 @@ window.google.script.run = (function() {
         if (currentAppMode === 'study' && currentCategory) {
           selectCategory(currentCategory, currentSubTopic, null);
         }
-        showToast('⚡ ซิงค์ข้อมูลสดใหม่ล่าสุด 100% เรียบร้อย!');
+        showToast('อัปเดตข้อมูลล่าสุดแล้ว');
       })
-      .withFailureHandler(err => showToast('❌ ไม่สามารถซิงค์ได้: ' + err.message))
+      .withFailureHandler(err => showToast('ซิงค์ไม่สำเร็จ: ' + err.message))
       .forceSyncLatest();
   }
 
@@ -4679,25 +4686,25 @@ window.google.script.run = (function() {
   let evalRatings = { accuracy: 0, clarity: 0, utility: 0 };
   const EVAL_RATING_DESCS = {
     accuracy: {
-      1: '⭐ 1 - ไม่ถูกต้อง/ไม่ตรงประเด็นเลย',
-      2: '⭐ 2 - พอใช้ ยังมีจุดผิดพลาด',
-      3: '⭐ 3 - ปานกลาง ตรงประเด็นบางส่วน',
-      4: '⭐ 4 - ดี มีความถูกต้องเป็นส่วนใหญ่',
-      5: '⭐ 5 - ถูกต้อง สมบูรณ์ ดีเยี่ยม 🎯'
+      1: '1 - ต้องปรับปรุง',
+      2: '2 - พอใช้',
+      3: '3 - ปานกลาง',
+      4: '4 - ดี',
+      5: '5 - ดีมาก'
     },
     clarity: {
-      1: '⭐ 1 - คลุมเครือ/อ่านยากมาก',
-      2: '⭐ 2 - พอใช้ สำนวนยังสับสน',
-      3: '⭐ 3 - ปานกลาง พอเข้าใจได้',
-      4: '⭐ 4 - ดี ชัดเจนเข้าใจง่าย',
-      5: '⭐ 5 - ชัดเจน ภาษาดี อ่านง่ายมาก ✨'
+      1: '1 - ต้องปรับปรุง',
+      2: '2 - พอใช้',
+      3: '3 - ปานกลาง',
+      4: '4 - ดี',
+      5: '5 - ดีมาก'
     },
     utility: {
-      1: '⭐ 1 - ไม่ช่วยเลย',
-      2: '⭐ 2 - ช่วยได้เล็กน้อย',
-      3: '⭐ 3 - ปานกลาง ทบทวนได้',
-      4: '⭐ 4 - ดี ช่วยกระตุ้นความจำ',
-      5: '⭐ 5 - มีประโยชน์และช่วยจำได้ดีเยี่ยม 🚀'
+      1: '1 - ต้องปรับปรุง',
+      2: '2 - พอใช้',
+      3: '3 - ปานกลาง',
+      4: '4 - ดี',
+      5: '5 - ดีมาก'
     }
   };
 
