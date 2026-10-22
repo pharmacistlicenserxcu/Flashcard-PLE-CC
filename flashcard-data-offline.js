@@ -17,7 +17,7 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "2. Cardiovascular",
     "track": "Clinic",
-    "count": 225,
+    "count": 223,
     "subtopics": [
       "Coronary Artery Disease",
       "Dyslipidemia",
@@ -54,7 +54,7 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "5. Gastrointestinal",
     "track": "Clinic",
-    "count": 118,
+    "count": 116,
     "subtopics": [
       "Diarrhea & Constipation",
       "Gastroesophageal Reflux Disease",
@@ -68,7 +68,7 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "6. Hematologic",
     "track": "Clinic",
-    "count": 62,
+    "count": 61,
     "subtopics": [
       "Anticoagulation & Hemostasis",
       "Hemolytic Anemias & Coagulation",
@@ -239,14 +239,20 @@ window.OFFLINE_CATEGORIES = [
   {
     "name": "6. Solid Dosage Forms",
     "track": "Product",
-    "count": 0,
-    "subtopics": []
+    "count": 15,
+    "subtopics": [
+      "Tablet defects"
+    ]
   },
   {
     "name": "7. Liquid & Semisolids",
     "track": "Product",
-    "count": 0,
-    "subtopics": []
+    "count": 56,
+    "subtopics": [
+      "Solution, Syrup, Elixir",
+      "emulsion",
+      "suspension"
+    ]
   },
   {
     "name": "8. Biopharm & Drug Release",
@@ -2419,7 +2425,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยโรคความดันโลหิตสูงจากการวัดในสถานพยาบาล (Office BP) คือเท่าใด?",
       "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
-      "answer": "SBP &gt;= 140 mmHg หรือ DBP &gt;= 90 mmHg (&gt;= 140/90 mmHg)<br> วัดถูกต้องอย่างน้อย 2 ครั้งในการตรวจ และตรวจซ้ำ 2-3 ครั้งต่างวาระกัน (เว้นแต่ความดันสูงวิกฤต &gt;= 180/110)",
+      "answer": "SBP &amp;gt;= 140 mmHg หรือ DBP &gt;= 90 mmHg (&gt;= 140/90 mmHg)<br> วัดถูกต้องอย่างน้อย 2 ครั้งในการตรวจ และตรวจซ้ำ 2-3 ครั้งต่างวาระกัน (เว้นแต่ความดันสูงวิกฤต &gt;= 180/110)",
       "answerImage": "",
       "note": ""
     },
@@ -2455,7 +2461,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "การตรวจคัดกรองภาวะความเสียหายต่ออวัยวะเป้าหมาย (TOD) จากความดันสูงมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "1. หัวใจ: ECG หรือ Echo ดู LVH 2. ไต: ค่า eGFR และ UACR ดู Microalbuminuria 3. ตา: ส่อง Fundoscopy 4. สมอง: ประเมินประวัติ TIA/Stroke",
+      "answer": "1. หัวใจ: ECG หรือ Echo ดู LVH <br>2. ไต: ค่า eGFR และ UACR ดู Microalbuminuria <br>3. ตา: ส่อง Fundoscopy <br>4. สมอง: ประเมินประวัติ TIA/Stroke",
       "answerImage": "",
       "note": ""
     },
@@ -2597,9 +2603,9 @@ window.OFFLINE_CARDS = {
       "group": "2. Cardiovascular",
       "subTopic": "Hypertension",
       "track": "Clinic",
-      "question": "ระบบเรนิน-แองจิโอเทนซิน-อัลโดสเตอโรน (RAAS) ส่งผลให้ความดันโลหิตสูงขึ้นผ่านกลไกใด?",
+      "question": "RAAS System ส่งผลให้ความดันโลหิตสูงขึ้นผ่านกลไกใด?",
       "questionImage": "",
-      "answer": "Angiotensin II ทำให้หลอดเลือดหดตัวโดยตรง และกระตุ้นต่อมหมวกไตให้หลั่ง Aldosterone ดูดกลับโซเดียมและน้ำที่ไต",
+      "answer": "Angiotensin II ทำให้หลอดเลือดหดตัวโดยตรง <br>และกระตุ้นต่อมหมวกไตให้หลั่ง Aldosterone ดูดกลับโซเดียมและน้ำที่ไต",
       "answerImage": "",
       "note": ""
     },
@@ -2681,7 +2687,7 @@ window.OFFLINE_CARDS = {
       "group": "2. Cardiovascular",
       "subTopic": "Hypertension",
       "track": "Clinic",
-      "question": "ในผู้ป่วยเบาหวานร่วมกับมีไข่ขาวในปัสสาวะ (Albuminuria) ยาตัวแรกที่ต้องเลือกใช้คือกลุ่มใด?",
+      "question": "ในผู้ป่วยเบาหวานร่วมกับมีโปรตีนในปัสสาวะ (Albuminuria) ยาตัวแรกที่ต้องเลือกใช้คือกลุ่มใด?",
       "questionImage": "",
       "answer": "ยากลุ่ม ACEIs หรือ ARBs<br> เนื่องจากมีฤทธิ์ขยายหลอดเลือดไตขาออก (Efferent arteriole) ลดความดันใน Glomerulus และชะลอไตเสื่อม",
       "answerImage": "",
@@ -2827,7 +2833,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ผลข้างเคียงต่อระบบเมแทบอลิซึมและเกลือแร่ของยาขับปัสสาวะ Thiazides มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "ทำให้เกลือแร่ต่ำ: Hypokalemia, Hyponatremia, Hypomagnesemia<br> ทำให้สารชีวเคมีสูง: Hyperuricemia (ระวังเกาต์), Hyperglycemia, และ Hypercalcemia",
+      "answer": "ทำให้เกลือแร่ต่ำ: Hypokalemia, Hyponatremia, Hypomagnesemia<br><br>ทำให้สารเคมีอื่น ๆ สูงHyperuricemia (ระวังเกาต์), Hyperglycemia, และ Hypercalcemia",
       "answerImage": "",
       "note": ""
     },
@@ -2943,11 +2949,11 @@ window.OFFLINE_CARDS = {
       "id": "2. Cardiovascular::47",
       "itemNo": "45",
       "group": "2. Cardiovascular",
-      "subTopic": "Hypertension",
+      "subTopic": "Dyslipidemia",
       "track": "Clinic",
-      "question": "ความดันโลหิตในเวลากลางคืนแบบ Non-Dipping Pattern จากการตรวจ ABPM มีความสำคัญอย่างไร?",
+      "question": "เกณฑ์การจำแนกระดับไขมันในเลือด (Lipid Profile) ปกติและผิดปกติทางคลินิกมีค่าตัวเลขอย่างไร?",
       "questionImage": "",
-      "answer": "ปกติเวลานอนความดันควรลดลง 10-20% หากลดลงน้อยกว่า 10% (Non-dipper) จะสัมพันธ์กับความเสี่ยงต่อโรคหลอดเลือดสมองและหัวใจตายสูงขึ้นมาก",
+      "answer": "TC &lt; 200, TG &lt; 150, HDL-C &gt; 40 (ชาย) หรือ &gt; 50 (หญิง), และ LDL-C &lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
       "answerImage": "",
       "note": ""
     },
@@ -2959,25 +2965,13 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "เกณฑ์การจำแนกระดับไขมันในเลือด (Lipid Profile) ปกติและผิดปกติทางคลินิกมีค่าตัวเลขอย่างไร?",
       "questionImage": "",
-      "answer": "TC &lt; 200, TG &lt; 150, HDL-C &gt; 40 (ชาย) หรือ &gt; 50 (หญิง), และ LDL-C &lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
+      "answer": "TC &amp;lt; 200, <br>TG &amp;lt; 150, <br>HDL-C &amp;gt; 40 (ชาย) หรือ &amp;gt; 50 (หญิง), <br>และ LDL-C &amp;lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "2. Cardiovascular::49",
       "itemNo": "47",
-      "group": "2. Cardiovascular",
-      "subTopic": "Dyslipidemia",
-      "track": "Clinic",
-      "question": "สูตร Friedewald Equation ใช้คำนวณค่า LDL-C อย่างไร และมีข้อจำกัดห้ามใช้เมื่อใด?",
-      "questionImage": "",
-      "answer": "LDL-C = TC - HDL - (TG / 5)<br> <b style=\"color:#dc2626;\">ข้อห้ามใช้เด็ดขาด</b>: เมื่อระดับไตรกลีเซอไรด์ (TG) มากกว่า 400 mg/dL (&gt; 400 mg/dL) เพราะค่าที่คำนวณได้จะต่ำกว่าความเป็นจริงมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::50",
-      "itemNo": "48",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -2988,8 +2982,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::51",
-      "itemNo": "49",
+      "id": "2. Cardiovascular::50",
+      "itemNo": "48",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3000,8 +2994,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::52",
-      "itemNo": "50",
+      "id": "2. Cardiovascular::51",
+      "itemNo": "49",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3012,8 +3006,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::53",
-      "itemNo": "51",
+      "id": "2. Cardiovascular::52",
+      "itemNo": "50",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3024,8 +3018,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::54",
-      "itemNo": "52",
+      "id": "2. Cardiovascular::53",
+      "itemNo": "51",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3036,8 +3030,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::55",
-      "itemNo": "53",
+      "id": "2. Cardiovascular::54",
+      "itemNo": "52",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3048,8 +3042,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::56",
-      "itemNo": "54",
+      "id": "2. Cardiovascular::55",
+      "itemNo": "53",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3060,32 +3054,20 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::57",
+      "id": "2. Cardiovascular::56",
       "itemNo": "55",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
       "question": "ยากลุ่มใดบ้างที่ส่งผลข้างเคียงทำให้ระดับไตรกลีเซอไรด์ในเลือดสูงขึ้นอย่างมีนัยสำคัญ?",
       "questionImage": "",
-      "answer": "ยากลุ่มเอสโตรเจนชนิดรับประทาน (Oral Estrogens), ยาสเตียรอยด์, ยารักษาเอชไอวีกลุ่ม PIs, และยากรดวิตามินเอ (Isotretinoin)",
+      "answer": "Oral Estrogens), ยาสเตียรอยด์, ยารักษาเอชไอวีกลุ่ม PIs, และยากรดวิตามินเอ (Isotretinoin)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::58",
-      "itemNo": "56",
-      "group": "2. Cardiovascular",
-      "subTopic": "Dyslipidemia",
-      "track": "Clinic",
-      "question": "การดื่มแอลกอฮอล์ปริมาณมากส่งผลต่อระบบไขมันในเลือดอย่างไร?",
-      "questionImage": "",
-      "answer": "กระตุ้นตับให้สังเคราะห์กรดไขมันและสร้าง VLDL เพิ่มขึ้นอย่างมาก ส่งผลให้ระดับไตรกลีเซอไรด์ในเลือดพุ่งสูงขึ้นอย่างรวดเร็ว",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::59",
-      "itemNo": "57",
+      "id": "2. Cardiovascular::57",
+      "itemNo": "55",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3096,8 +3078,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::60",
-      "itemNo": "58",
+      "id": "2. Cardiovascular::58",
+      "itemNo": "56",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3108,8 +3090,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::61",
-      "itemNo": "59",
+      "id": "2. Cardiovascular::59",
+      "itemNo": "57",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3120,8 +3102,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::62",
-      "itemNo": "60",
+      "id": "2. Cardiovascular::60",
+      "itemNo": "58",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3132,8 +3114,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::63",
-      "itemNo": "61",
+      "id": "2. Cardiovascular::61",
+      "itemNo": "59",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3144,8 +3126,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::64",
-      "itemNo": "62",
+      "id": "2. Cardiovascular::62",
+      "itemNo": "60",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3156,8 +3138,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::65",
-      "itemNo": "63",
+      "id": "2. Cardiovascular::63",
+      "itemNo": "61",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3168,8 +3150,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::66",
-      "itemNo": "64",
+      "id": "2. Cardiovascular::64",
+      "itemNo": "62",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3180,8 +3162,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::67",
-      "itemNo": "65",
+      "id": "2. Cardiovascular::65",
+      "itemNo": "63",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3192,20 +3174,20 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::68",
-      "itemNo": "66",
+      "id": "2. Cardiovascular::66",
+      "itemNo": "65",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
-      "question": "เกณฑ์การจำแนกระดับความเข้มข้นของยาสแตติน (Statin Intensity) กำหนดขนาดยาอย่างไร?",
+      "question": "กลุ่มผู้ป่วย 4 กลุ่มหลักที่ได้รับประโยชน์ชัดเจนจากยาสแตติน (Statin Benefit Groups) มีกลุ่มใดบ้าง?",
       "questionImage": "",
-      "answer": "High-Intensity (ลด LDL &gt;= 50%): Atorvastatin 40-80 mg หรือ Rosuvastatin 20-40 mg<br> Moderate-Intensity (ลด LDL 30-49%): Atorvastatin 10-20 mg หรือ Rosuvastatin 5-10 mg หรือ Simvastatin 20-40 mg",
+      "answer": "1. มีโรคหลอดเลือดหัวใจและสมองแล้ว (Clinical ASCVD)<br> 2. LDL-C &amp;gt;= 190 mg/dL <br>3. เบาหวานอายุ 40-75 ปี <br>4. ความเสี่ยง 10-year ASCVD &amp;gt;= 7.5%",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::69",
-      "itemNo": "67",
+      "id": "2. Cardiovascular::67",
+      "itemNo": "65",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3216,8 +3198,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::70",
-      "itemNo": "68",
+      "id": "2. Cardiovascular::68",
+      "itemNo": "66",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3228,8 +3210,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::71",
-      "itemNo": "69",
+      "id": "2. Cardiovascular::69",
+      "itemNo": "67",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3240,8 +3222,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::72",
-      "itemNo": "70",
+      "id": "2. Cardiovascular::70",
+      "itemNo": "68",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3252,8 +3234,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::73",
-      "itemNo": "71",
+      "id": "2. Cardiovascular::71",
+      "itemNo": "69",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3264,8 +3246,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::74",
-      "itemNo": "72",
+      "id": "2. Cardiovascular::72",
+      "itemNo": "70",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3276,8 +3258,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::75",
-      "itemNo": "73",
+      "id": "2. Cardiovascular::73",
+      "itemNo": "71",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3288,8 +3270,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::76",
-      "itemNo": "74",
+      "id": "2. Cardiovascular::74",
+      "itemNo": "72",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3300,8 +3282,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::77",
-      "itemNo": "75",
+      "id": "2. Cardiovascular::75",
+      "itemNo": "73",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3312,8 +3294,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::78",
-      "itemNo": "76",
+      "id": "2. Cardiovascular::76",
+      "itemNo": "74",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3324,8 +3306,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::79",
-      "itemNo": "77",
+      "id": "2. Cardiovascular::77",
+      "itemNo": "75",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3336,8 +3318,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::80",
-      "itemNo": "78",
+      "id": "2. Cardiovascular::78",
+      "itemNo": "76",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3348,8 +3330,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::81",
-      "itemNo": "79",
+      "id": "2. Cardiovascular::79",
+      "itemNo": "77",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3360,8 +3342,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::82",
-      "itemNo": "80",
+      "id": "2. Cardiovascular::80",
+      "itemNo": "78",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3372,8 +3354,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::83",
-      "itemNo": "81",
+      "id": "2. Cardiovascular::81",
+      "itemNo": "79",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3384,8 +3366,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::84",
-      "itemNo": "82",
+      "id": "2. Cardiovascular::82",
+      "itemNo": "80",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3396,8 +3378,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::85",
-      "itemNo": "83",
+      "id": "2. Cardiovascular::83",
+      "itemNo": "81",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3408,8 +3390,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::86",
-      "itemNo": "84",
+      "id": "2. Cardiovascular::84",
+      "itemNo": "82",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3420,8 +3402,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::87",
-      "itemNo": "85",
+      "id": "2. Cardiovascular::85",
+      "itemNo": "83",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3432,8 +3414,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::88",
-      "itemNo": "86",
+      "id": "2. Cardiovascular::86",
+      "itemNo": "84",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3444,8 +3426,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::89",
-      "itemNo": "87",
+      "id": "2. Cardiovascular::87",
+      "itemNo": "85",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3456,8 +3438,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::90",
-      "itemNo": "88",
+      "id": "2. Cardiovascular::88",
+      "itemNo": "86",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3468,8 +3450,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::91",
-      "itemNo": "89",
+      "id": "2. Cardiovascular::89",
+      "itemNo": "87",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -3480,14 +3462,38 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::92",
-      "itemNo": "90",
+      "id": "2. Cardiovascular::90",
+      "itemNo": "88",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
       "question": "แนวทางการจัดการเมื่อผู้ป่วยทนต่ออาการปวดเมื่อยกล้ามเนื้อจากยาสแตตินไม่ได้ (Statin Intolerance) คืออะไร?",
       "questionImage": "",
       "answer": "หยุดยาชั่วคราวให้หายปวด จากนั้นเริ่มใหม่ด้วยสแตตินตัวเดิมขนาดต่ำลง หรือเปลี่ยนเป็นสแตตินชนิดชอบน้ำ (Rosuvastatin/Pravastatin) หรือให้แบบวันเว้นวัน หรือสัปดาห์ละ 2-3 ครั้ง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "2. Cardiovascular::91",
+      "itemNo": "89",
+      "group": "2. Cardiovascular",
+      "subTopic": "Coronary Artery Disease",
+      "track": "Clinic",
+      "question": "กลุ่มอาการหลอดเลือดหัวใจเฉียบพลัน (ACS) จำแนกออกเป็นกี่ชนิดตามลักษณะทางคลินิกและ ECG?",
+      "questionImage": "",
+      "answer": "3 ชนิด: 1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "2. Cardiovascular::92",
+      "itemNo": "90",
+      "group": "2. Cardiovascular",
+      "subTopic": "Coronary Artery Disease",
+      "track": "Clinic",
+      "question": "สารบ่งชี้ทางชีวภาพ (Cardiac Biomarker) ตัวใดเป็นมาตรฐานสูงสุด (Gold Standard) ในการวินิจฉัยกล้ามเนื้อหัวใจตาย?",
+      "questionImage": "",
+      "answer": "Cardiac Troponin (cTnI หรือ cTnT) โดยเฉพาะ High-Sensitivity Troponin (hs-cTn)<br> มีความไวและความจำเพาะต่อเนื้อเยื่อกล้ามเนื้อหัวใจบาดเจ็บสูงสุด เริ่มขึ้นใน 2-3 ชม. และคงอยู่นาน 7-14 วัน",
       "answerImage": "",
       "note": ""
     },
@@ -3499,7 +3505,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "กลุ่มอาการหลอดเลือดหัวใจเฉียบพลัน (ACS) จำแนกออกเป็นกี่ชนิดตามลักษณะทางคลินิกและ ECG?",
       "questionImage": "",
-      "answer": "3 ชนิด: 1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
+      "answer": "3 ชนิด: <br>1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง)<br>2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง)<br>3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
       "answerImage": "",
       "note": ""
     },
@@ -3509,9 +3515,9 @@ window.OFFLINE_CARDS = {
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
-      "question": "สารบ่งชี้ทางชีวภาพ (Cardiac Biomarker) ตัวใดเป็นมาตรฐานสูงสุด (Gold Standard) ในการวินิจฉัยกล้ามเนื้อหัวใจตาย?",
+      "question": "อาการแสดงของภาวะกล้ามเนื้อหัวใจขาดเลือดเฉียบพลันที่ไม่จำเพาะ (Atypical ACS) พบบ่อยในกลุ่มใดและมีอาการอย่างไร?",
       "questionImage": "",
-      "answer": "Cardiac Troponin (cTnI หรือ cTnT) โดยเฉพาะ High-Sensitivity Troponin (hs-cTn)<br> มีความไวและความจำเพาะต่อเนื้อเยื่อกล้ามเนื้อหัวใจบาดเจ็บสูงสุด เริ่มขึ้นใน 2-3 ชม. และคงอยู่นาน 7-14 วัน",
+      "answer": "พบบ่อยในผู้สูงอายุ หญิง เบาหวาน และโรคไต มักไม่มีอาการเจ็บแน่นหน้าอก (Silent Ischemia)<br> แต่มาด้วยเหนื่อยหอบ หายใจลำบากเฉียบพลัน เหงื่อแตก หน้ามืด หรือปวดแสบลิ้นปี่คล้ายโรคกระเพาะ",
       "answerImage": "",
       "note": ""
     },
@@ -3523,7 +3529,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ลักษณะอาการเจ็บหน้าอกแบบตรงแบบ (Typical Angina) ในโรคหลอดเลือดหัวใจเรื้อรังมีลักษณะอย่างไร?",
       "questionImage": "",
-      "answer": "1. แน่นตื้อเหมือนมีของหนักทับกึ่งกลางอก ร้าวไปกรามหรือแขนซ้าย 2. สัมพันธ์กับการออกแรงหรืออารมณ์ตึงเครียด 3. ทุเลาลงภายใน 5 นาทีเมื่อได้พักหรืออมยาใต้ลิ้น NTG",
+      "answer": "1. แน่นตื้อเหมือนมีของหนักทับกึ่งกลางอก ร้าวไปกรามหรือแขนซ้าย <br>2. สัมพันธ์กับการออกแรงหรืออารมณ์ตึงเครียด <br>3. ทุเลาลงภายใน 5 นาทีเมื่อได้พักหรืออมยาใต้ลิ้น NTG",
       "answerImage": "",
       "note": ""
     },
@@ -3533,9 +3539,9 @@ window.OFFLINE_CARDS = {
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
-      "question": "อาการแสดงของภาวะกล้ามเนื้อหัวใจขาดเลือดเฉียบพลันที่ไม่จำเพาะ (Atypical ACS) พบบ่อยในกลุ่มใดและมีอาการอย่างไร?",
+      "question": "การตรวจคลื่นไฟฟ้าหัวใจ (ECG) ชนิด 12 ลีด ควรทำให้เสร็จสิ้นภายในเวลากี่นาทีหลังผู้ป่วยมาถึงห้องฉุกเฉิน?",
       "questionImage": "",
-      "answer": "พบบ่อยในผู้สูงอายุ หญิง เบาหวาน และโรคไต มักไม่มีอาการเจ็บแน่นหน้าอก (Silent Ischemia)<br> แต่มาด้วยเหนื่อยหอบ หายใจลำบากเฉียบพลัน เหงื่อแตก หน้ามืด หรือปวดแสบลิ้นปี่คล้ายโรคกระเพาะ",
+      "answer": "ต้องทำให้เสร็จและแปลผลโดยแพทย์ภายใน 10 นาที (Door-to-ECG time &lt;= 10 นาที) เพื่อคัดแยกผู้ป่วยกลุ่ม STEMI ไปเปิดหลอดเลือดเร่งด่วน",
       "answerImage": "",
       "note": ""
     },
@@ -3547,37 +3553,13 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "อาการเจ็บหน้าอกแบบ Unstable Angina แตกต่างจาก Stable Angina อย่างไร?",
       "questionImage": "",
-      "answer": "เจ็บแน่นขณะพัก (Rest angina นาน &gt; 20 นาที), เกิดขึ้นใหม่รุนแรง (New-onset), หรือมีแบบแผนปวดรุนแรงถี่ขึ้นกว่าเดิม (Crescendo pattern)",
+      "answer": "เจ็บแน่นขณะพัก (Rest angina นาน &amp;gt; 20 นาที),<br> เกิดขึ้นใหม่รุนแรง (New-onset), <br>หรือมีแบบแผนปวดรุนแรงถี่ขึ้นกว่าเดิม (Crescendo pattern)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "2. Cardiovascular::98",
       "itemNo": "96",
-      "group": "2. Cardiovascular",
-      "subTopic": "Coronary Artery Disease",
-      "track": "Clinic",
-      "question": "การตรวจคลื่นไฟฟ้าหัวใจ (ECG) ชนิด 12 ลีด ควรทำให้เสร็จสิ้นภายในเวลากี่นาทีหลังผู้ป่วยมาถึงห้องฉุกเฉิน?",
-      "questionImage": "",
-      "answer": "ต้องทำให้เสร็จและแปลผลโดยแพทย์ภายใน 10 นาที (Door-to-ECG time &lt;= 10 นาที) เพื่อคัดแยกผู้ป่วยกลุ่ม STEMI ไปเปิดหลอดเลือดเร่งด่วน",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::99",
-      "itemNo": "97",
-      "group": "2. Cardiovascular",
-      "subTopic": "Coronary Artery Disease",
-      "track": "Clinic",
-      "question": "ลักษณะคลื่นไฟฟ้าหัวใจที่บ่งชี้ภาวะ STEMI ตามเกณฑ์มาตรฐานคืออะไร?",
-      "questionImage": "",
-      "answer": "มี ST-segment elevation ใหม่ที่จุด J ในอย่างน้อย 2 ลีดต่อเนื่องกัน (&gt;= 1 mm ในลีดทั่วไป หรือ &gt;= 1.5-2.5 mm ในลีด V2-V3) หรือพบ New LBBB",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::100",
-      "itemNo": "98",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3588,8 +3570,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::101",
-      "itemNo": "99",
+      "id": "2. Cardiovascular::99",
+      "itemNo": "97",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3600,8 +3582,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::102",
-      "itemNo": "100",
+      "id": "2. Cardiovascular::100",
+      "itemNo": "98",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3612,8 +3594,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::103",
-      "itemNo": "101",
+      "id": "2. Cardiovascular::101",
+      "itemNo": "99",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3624,8 +3606,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::104",
-      "itemNo": "102",
+      "id": "2. Cardiovascular::102",
+      "itemNo": "100",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3636,8 +3618,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::105",
-      "itemNo": "103",
+      "id": "2. Cardiovascular::103",
+      "itemNo": "101",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3648,8 +3630,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::106",
-      "itemNo": "104",
+      "id": "2. Cardiovascular::104",
+      "itemNo": "102",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3660,8 +3642,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::107",
-      "itemNo": "105",
+      "id": "2. Cardiovascular::105",
+      "itemNo": "103",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3672,8 +3654,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::108",
-      "itemNo": "106",
+      "id": "2. Cardiovascular::106",
+      "itemNo": "104",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3684,8 +3666,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::109",
-      "itemNo": "107",
+      "id": "2. Cardiovascular::107",
+      "itemNo": "105",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3696,8 +3678,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::110",
-      "itemNo": "108",
+      "id": "2. Cardiovascular::108",
+      "itemNo": "106",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3708,8 +3690,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::111",
-      "itemNo": "109",
+      "id": "2. Cardiovascular::109",
+      "itemNo": "107",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3720,8 +3702,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::112",
-      "itemNo": "110",
+      "id": "2. Cardiovascular::110",
+      "itemNo": "108",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3732,8 +3714,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::113",
-      "itemNo": "111",
+      "id": "2. Cardiovascular::111",
+      "itemNo": "109",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3744,8 +3726,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::114",
-      "itemNo": "112",
+      "id": "2. Cardiovascular::112",
+      "itemNo": "110",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3756,8 +3738,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::115",
-      "itemNo": "113",
+      "id": "2. Cardiovascular::113",
+      "itemNo": "111",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3768,8 +3750,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::116",
-      "itemNo": "114",
+      "id": "2. Cardiovascular::114",
+      "itemNo": "112",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3780,8 +3762,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::117",
-      "itemNo": "115",
+      "id": "2. Cardiovascular::115",
+      "itemNo": "113",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3792,8 +3774,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::118",
-      "itemNo": "116",
+      "id": "2. Cardiovascular::116",
+      "itemNo": "114",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3804,8 +3786,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::119",
-      "itemNo": "117",
+      "id": "2. Cardiovascular::117",
+      "itemNo": "115",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3816,8 +3798,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::120",
-      "itemNo": "118",
+      "id": "2. Cardiovascular::118",
+      "itemNo": "116",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3828,8 +3810,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::121",
-      "itemNo": "119",
+      "id": "2. Cardiovascular::119",
+      "itemNo": "117",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3840,8 +3822,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::122",
-      "itemNo": "120",
+      "id": "2. Cardiovascular::120",
+      "itemNo": "118",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3852,8 +3834,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::123",
-      "itemNo": "121",
+      "id": "2. Cardiovascular::121",
+      "itemNo": "119",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3864,8 +3846,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::124",
-      "itemNo": "122",
+      "id": "2. Cardiovascular::122",
+      "itemNo": "120",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3876,8 +3858,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::125",
-      "itemNo": "123",
+      "id": "2. Cardiovascular::123",
+      "itemNo": "121",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3888,8 +3870,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::126",
-      "itemNo": "124",
+      "id": "2. Cardiovascular::124",
+      "itemNo": "122",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3900,8 +3882,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::127",
-      "itemNo": "125",
+      "id": "2. Cardiovascular::125",
+      "itemNo": "123",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3912,8 +3894,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::128",
-      "itemNo": "126",
+      "id": "2. Cardiovascular::126",
+      "itemNo": "124",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3924,8 +3906,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::129",
-      "itemNo": "127",
+      "id": "2. Cardiovascular::127",
+      "itemNo": "125",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3936,8 +3918,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::130",
-      "itemNo": "128",
+      "id": "2. Cardiovascular::128",
+      "itemNo": "126",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3948,8 +3930,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::131",
-      "itemNo": "129",
+      "id": "2. Cardiovascular::129",
+      "itemNo": "127",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3960,8 +3942,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::132",
-      "itemNo": "130",
+      "id": "2. Cardiovascular::130",
+      "itemNo": "128",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3972,8 +3954,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::133",
-      "itemNo": "131",
+      "id": "2. Cardiovascular::131",
+      "itemNo": "129",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3984,8 +3966,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::134",
-      "itemNo": "132",
+      "id": "2. Cardiovascular::132",
+      "itemNo": "130",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -3996,8 +3978,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::135",
-      "itemNo": "133",
+      "id": "2. Cardiovascular::133",
+      "itemNo": "131",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -4008,8 +3990,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::136",
-      "itemNo": "134",
+      "id": "2. Cardiovascular::134",
+      "itemNo": "132",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -4020,8 +4002,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::137",
-      "itemNo": "135",
+      "id": "2. Cardiovascular::135",
+      "itemNo": "133",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -4032,8 +4014,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::138",
-      "itemNo": "136",
+      "id": "2. Cardiovascular::136",
+      "itemNo": "134",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4044,8 +4026,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::139",
-      "itemNo": "137",
+      "id": "2. Cardiovascular::137",
+      "itemNo": "135",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4056,8 +4038,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::140",
-      "itemNo": "138",
+      "id": "2. Cardiovascular::138",
+      "itemNo": "136",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4068,8 +4050,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::141",
-      "itemNo": "139",
+      "id": "2. Cardiovascular::139",
+      "itemNo": "137",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4080,8 +4062,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::142",
-      "itemNo": "140",
+      "id": "2. Cardiovascular::140",
+      "itemNo": "138",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4092,8 +4074,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::143",
-      "itemNo": "141",
+      "id": "2. Cardiovascular::141",
+      "itemNo": "139",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4104,8 +4086,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::144",
-      "itemNo": "142",
+      "id": "2. Cardiovascular::142",
+      "itemNo": "140",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4116,8 +4098,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::145",
-      "itemNo": "143",
+      "id": "2. Cardiovascular::143",
+      "itemNo": "141",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4128,8 +4110,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::146",
-      "itemNo": "144",
+      "id": "2. Cardiovascular::144",
+      "itemNo": "142",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4140,8 +4122,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::147",
-      "itemNo": "145",
+      "id": "2. Cardiovascular::145",
+      "itemNo": "143",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4152,8 +4134,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::148",
-      "itemNo": "146",
+      "id": "2. Cardiovascular::146",
+      "itemNo": "144",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4164,8 +4146,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::149",
-      "itemNo": "147",
+      "id": "2. Cardiovascular::147",
+      "itemNo": "145",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4176,8 +4158,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::150",
-      "itemNo": "148",
+      "id": "2. Cardiovascular::148",
+      "itemNo": "146",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4188,8 +4170,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::151",
-      "itemNo": "149",
+      "id": "2. Cardiovascular::149",
+      "itemNo": "147",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4200,8 +4182,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::152",
-      "itemNo": "150",
+      "id": "2. Cardiovascular::150",
+      "itemNo": "148",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4212,8 +4194,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::153",
-      "itemNo": "151",
+      "id": "2. Cardiovascular::151",
+      "itemNo": "149",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4224,8 +4206,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::154",
-      "itemNo": "152",
+      "id": "2. Cardiovascular::152",
+      "itemNo": "150",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4236,8 +4218,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::155",
-      "itemNo": "153",
+      "id": "2. Cardiovascular::153",
+      "itemNo": "151",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4248,8 +4230,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::156",
-      "itemNo": "154",
+      "id": "2. Cardiovascular::154",
+      "itemNo": "152",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4260,8 +4242,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::157",
-      "itemNo": "155",
+      "id": "2. Cardiovascular::155",
+      "itemNo": "153",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4272,8 +4254,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::158",
-      "itemNo": "156",
+      "id": "2. Cardiovascular::156",
+      "itemNo": "154",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4284,8 +4266,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::159",
-      "itemNo": "157",
+      "id": "2. Cardiovascular::157",
+      "itemNo": "155",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4296,8 +4278,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::160",
-      "itemNo": "158",
+      "id": "2. Cardiovascular::158",
+      "itemNo": "156",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4308,8 +4290,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::161",
-      "itemNo": "159",
+      "id": "2. Cardiovascular::159",
+      "itemNo": "157",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4320,8 +4302,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::162",
-      "itemNo": "160",
+      "id": "2. Cardiovascular::160",
+      "itemNo": "158",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4332,8 +4314,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::163",
-      "itemNo": "161",
+      "id": "2. Cardiovascular::161",
+      "itemNo": "159",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4344,8 +4326,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::164",
-      "itemNo": "162",
+      "id": "2. Cardiovascular::162",
+      "itemNo": "160",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4356,8 +4338,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::165",
-      "itemNo": "163",
+      "id": "2. Cardiovascular::163",
+      "itemNo": "161",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4368,8 +4350,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::166",
-      "itemNo": "164",
+      "id": "2. Cardiovascular::164",
+      "itemNo": "162",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4380,8 +4362,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::167",
-      "itemNo": "165",
+      "id": "2. Cardiovascular::165",
+      "itemNo": "163",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4392,8 +4374,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::168",
-      "itemNo": "166",
+      "id": "2. Cardiovascular::166",
+      "itemNo": "164",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4404,8 +4386,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::169",
-      "itemNo": "167",
+      "id": "2. Cardiovascular::167",
+      "itemNo": "165",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4416,8 +4398,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::170",
-      "itemNo": "168",
+      "id": "2. Cardiovascular::168",
+      "itemNo": "166",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4428,8 +4410,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::171",
-      "itemNo": "169",
+      "id": "2. Cardiovascular::169",
+      "itemNo": "167",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4440,8 +4422,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::172",
-      "itemNo": "170",
+      "id": "2. Cardiovascular::170",
+      "itemNo": "168",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4452,8 +4434,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::173",
-      "itemNo": "171",
+      "id": "2. Cardiovascular::171",
+      "itemNo": "169",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4464,8 +4446,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::174",
-      "itemNo": "172",
+      "id": "2. Cardiovascular::172",
+      "itemNo": "170",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4476,8 +4458,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::175",
-      "itemNo": "173",
+      "id": "2. Cardiovascular::173",
+      "itemNo": "171",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4488,8 +4470,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::176",
-      "itemNo": "174",
+      "id": "2. Cardiovascular::174",
+      "itemNo": "172",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4500,8 +4482,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::177",
-      "itemNo": "175",
+      "id": "2. Cardiovascular::175",
+      "itemNo": "173",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4512,8 +4494,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::178",
-      "itemNo": "176",
+      "id": "2. Cardiovascular::176",
+      "itemNo": "174",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4524,8 +4506,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::179",
-      "itemNo": "177",
+      "id": "2. Cardiovascular::177",
+      "itemNo": "175",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4536,8 +4518,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::180",
-      "itemNo": "178",
+      "id": "2. Cardiovascular::178",
+      "itemNo": "176",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4548,8 +4530,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::181",
-      "itemNo": "179",
+      "id": "2. Cardiovascular::179",
+      "itemNo": "177",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4560,8 +4542,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::182",
-      "itemNo": "180",
+      "id": "2. Cardiovascular::180",
+      "itemNo": "178",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -4572,8 +4554,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::183",
-      "itemNo": "181",
+      "id": "2. Cardiovascular::181",
+      "itemNo": "179",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4584,8 +4566,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::184",
-      "itemNo": "182",
+      "id": "2. Cardiovascular::182",
+      "itemNo": "180",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4596,8 +4578,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::185",
-      "itemNo": "183",
+      "id": "2. Cardiovascular::183",
+      "itemNo": "181",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4608,8 +4590,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::186",
-      "itemNo": "184",
+      "id": "2. Cardiovascular::184",
+      "itemNo": "182",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4620,8 +4602,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::187",
-      "itemNo": "185",
+      "id": "2. Cardiovascular::185",
+      "itemNo": "183",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4632,8 +4614,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::188",
-      "itemNo": "186",
+      "id": "2. Cardiovascular::186",
+      "itemNo": "184",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4644,8 +4626,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::189",
-      "itemNo": "187",
+      "id": "2. Cardiovascular::187",
+      "itemNo": "185",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4656,8 +4638,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::190",
-      "itemNo": "188",
+      "id": "2. Cardiovascular::188",
+      "itemNo": "186",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4668,8 +4650,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::191",
-      "itemNo": "189",
+      "id": "2. Cardiovascular::189",
+      "itemNo": "187",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4680,8 +4662,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::192",
-      "itemNo": "190",
+      "id": "2. Cardiovascular::190",
+      "itemNo": "188",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4692,8 +4674,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::193",
-      "itemNo": "191",
+      "id": "2. Cardiovascular::191",
+      "itemNo": "189",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4704,8 +4686,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::194",
-      "itemNo": "192",
+      "id": "2. Cardiovascular::192",
+      "itemNo": "190",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4716,8 +4698,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::195",
-      "itemNo": "193",
+      "id": "2. Cardiovascular::193",
+      "itemNo": "191",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4728,8 +4710,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::196",
-      "itemNo": "194",
+      "id": "2. Cardiovascular::194",
+      "itemNo": "192",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4740,8 +4722,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::197",
-      "itemNo": "195",
+      "id": "2. Cardiovascular::195",
+      "itemNo": "193",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4752,8 +4734,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::198",
-      "itemNo": "196",
+      "id": "2. Cardiovascular::196",
+      "itemNo": "194",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4764,8 +4746,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::199",
-      "itemNo": "197",
+      "id": "2. Cardiovascular::197",
+      "itemNo": "195",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4776,8 +4758,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::200",
-      "itemNo": "198",
+      "id": "2. Cardiovascular::198",
+      "itemNo": "196",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4788,8 +4770,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::201",
-      "itemNo": "199",
+      "id": "2. Cardiovascular::199",
+      "itemNo": "197",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4800,8 +4782,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::202",
-      "itemNo": "200",
+      "id": "2. Cardiovascular::200",
+      "itemNo": "198",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4812,8 +4794,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::203",
-      "itemNo": "201",
+      "id": "2. Cardiovascular::201",
+      "itemNo": "199",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4824,8 +4806,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::204",
-      "itemNo": "202",
+      "id": "2. Cardiovascular::202",
+      "itemNo": "200",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4836,8 +4818,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::205",
-      "itemNo": "203",
+      "id": "2. Cardiovascular::203",
+      "itemNo": "201",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4848,8 +4830,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::206",
-      "itemNo": "204",
+      "id": "2. Cardiovascular::204",
+      "itemNo": "202",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4860,8 +4842,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::207",
-      "itemNo": "205",
+      "id": "2. Cardiovascular::205",
+      "itemNo": "203",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4872,8 +4854,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::208",
-      "itemNo": "206",
+      "id": "2. Cardiovascular::206",
+      "itemNo": "204",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4884,8 +4866,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::209",
-      "itemNo": "207",
+      "id": "2. Cardiovascular::207",
+      "itemNo": "205",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4896,8 +4878,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::210",
-      "itemNo": "208",
+      "id": "2. Cardiovascular::208",
+      "itemNo": "206",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4908,8 +4890,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::211",
-      "itemNo": "209",
+      "id": "2. Cardiovascular::209",
+      "itemNo": "207",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4920,8 +4902,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::212",
-      "itemNo": "210",
+      "id": "2. Cardiovascular::210",
+      "itemNo": "208",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4932,8 +4914,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::213",
-      "itemNo": "211",
+      "id": "2. Cardiovascular::211",
+      "itemNo": "209",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4944,8 +4926,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::214",
-      "itemNo": "212",
+      "id": "2. Cardiovascular::212",
+      "itemNo": "210",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4956,8 +4938,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::215",
-      "itemNo": "213",
+      "id": "2. Cardiovascular::213",
+      "itemNo": "211",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4968,8 +4950,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::216",
-      "itemNo": "214",
+      "id": "2. Cardiovascular::214",
+      "itemNo": "212",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4980,8 +4962,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::217",
-      "itemNo": "215",
+      "id": "2. Cardiovascular::215",
+      "itemNo": "213",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -4992,8 +4974,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::218",
-      "itemNo": "216",
+      "id": "2. Cardiovascular::216",
+      "itemNo": "214",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5004,8 +4986,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::219",
-      "itemNo": "217",
+      "id": "2. Cardiovascular::217",
+      "itemNo": "215",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5016,8 +4998,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::220",
-      "itemNo": "218",
+      "id": "2. Cardiovascular::218",
+      "itemNo": "216",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5028,8 +5010,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::221",
-      "itemNo": "219",
+      "id": "2. Cardiovascular::219",
+      "itemNo": "217",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5040,8 +5022,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::222",
-      "itemNo": "220",
+      "id": "2. Cardiovascular::220",
+      "itemNo": "218",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5052,8 +5034,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::223",
-      "itemNo": "221",
+      "id": "2. Cardiovascular::221",
+      "itemNo": "219",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5064,8 +5046,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::224",
-      "itemNo": "222",
+      "id": "2. Cardiovascular::222",
+      "itemNo": "220",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5076,8 +5058,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::225",
-      "itemNo": "223",
+      "id": "2. Cardiovascular::223",
+      "itemNo": "221",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5088,8 +5070,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::226",
-      "itemNo": "224",
+      "id": "2. Cardiovascular::224",
+      "itemNo": "222",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -5100,8 +5082,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::227",
-      "itemNo": "225",
+      "id": "2. Cardiovascular::225",
+      "itemNo": "223",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -8903,18 +8885,6 @@ window.OFFLINE_CARDS = {
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
-      "question": "ลักษณะอาการปวดท้องของแผลในกระเพาะอาหาร (GU) แตกต่างจากแผลในลำไส้เล็กส่วนต้น (DU) อย่างไร?",
-      "questionImage": "",
-      "answer": "แผลกระเพาะ (GU) ปวดมากขึ้นหลังรับประทานอาหาร สัมพันธ์กับน้ำหนักลด<br> ส่วนแผลลำไส้เล็ก (DU) ปวดเวลาท้องว่างและอาการทุเลาลงเมื่อรับประทานอาหาร มักปวดปลุกให้ตื่นกลางดึก",
-      "answerImage": "",
-      "note": "Peptic Ulcer & GERD"
-    },
-    {
-      "id": "5. Gastrointestinal::4",
-      "itemNo": "2",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
       "question": "สาเหตุหลัก 2 ประการที่ทำให้เกิดโรคแผลเปื่อยเปปติก (Peptic Ulcer Disease) คืออะไร?",
       "questionImage": "",
       "answer": "การติดเชื้อแบคทีเรีย Helicobacter pylori และการใช้ยาแก้ปวดกลุ่ม NSAIDs หรือ Aspirin<br> ทั้งสองสาเหตุคิดเป็นมากกว่า 90% ของผู้ป่วย PUD ทั้งหมด",
@@ -8922,8 +8892,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::5",
-      "itemNo": "3",
+      "id": "5. Gastrointestinal::4",
+      "itemNo": "2",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -8934,14 +8904,26 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::6",
-      "itemNo": "4",
+      "id": "5. Gastrointestinal::5",
+      "itemNo": "3",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ก่อนตรวจยืนยันการติดเชื้อ H. pylori ด้วยวิธี Urea Breath Test (UBT) ต้องหยุดยาใดล่วงหน้า?",
       "questionImage": "",
       "answer": "ต้องหยุดยากลุ่ม PPIs อย่างน้อย 2 สัปดาห์ และหยุดยาปฏิชีวนะหรือยาบิสมัทอย่างน้อย 4 สัปดาห์<br> เพื่อป้องกันผลลบปลอม (False-negative result)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::6",
+      "itemNo": "4",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Bismuth Quadruple Therapy 14 วันประกอบด้วยยาใดบ้าง?",
+      "questionImage": "",
+      "answer": "PPI (วันละ 2 ครั้ง) + Bismuth subsalicylate + <b style=\"color:#0284c7;\">Metronidazole</b> + Tetracycline นาน 14 วัน<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
       "answerImage": "",
       "note": ""
     },
@@ -8953,7 +8935,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Bismuth Quadruple Therapy 14 วันประกอบด้วยยาใดบ้าง?",
       "questionImage": "",
-      "answer": "PPI (วันละ 2 ครั้ง) + Bismuth subsalicylate + <b style=\"color:#0284c7;\">Metronidazole</b> + Tetracycline นาน 14 วัน<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
+      "answer": "&lt;span style=&quot;color:#2563eb; font-weight:600;&quot;&gt;PPI (วันละ 2 ครั้ง) + <br>Bismuth subsalicylate + <br><b style=\"color:#0284c7;\">Metronidazole</b> + <br>Tetracycline นาน 14 วัน&lt;/span&gt;<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
       "answerImage": "",
       "note": ""
     },
@@ -8965,25 +8947,13 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Concomitant Quadruple Therapy 14 วันประกอบด้วยยาใด?",
       "questionImage": "",
-      "answer": "&lt;b&gt;PPI&lt;/b&gt; (วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Amoxicillin</b>&lt;/b&gt; (1 g วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Clarithromycin</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง) +<br> &lt;b&gt;<b style=\"color:#0284c7;\">Metronidazole</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
+      "answer": "&lt;span style=&quot;color:#2563eb; font-weight:600;&quot;&gt;PPI (วันละ 2 ครั้ง) + <br><b style=\"color:#0284c7;\">Amoxicillin</b> (1 g วันละ 2 ครั้ง) + <br><b style=\"color:#0284c7;\">Clarithromycin</b> (500 mg วันละ 2 ครั้ง) +<br> <b style=\"color:#0284c7;\">Metronidazole</b> (500 mg วันละ 2 ครั้ง)&lt;/span&gt;<br> รับประทานต่อเนื่องนาน 14 วัน",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::9",
       "itemNo": "7",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
-      "question": "เพราะเหตุใดจึงไม่แนะนำสูตร <b style=\"color:#0284c7;\">Clarithromycin</b> Triple Therapy ในประเทศไทยเป็นอันดับแรก?",
-      "questionImage": "",
-      "answer": "เนื่องจากอัตราการดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> ของเชื้อ H. pylori ในไทยสูงเกิน 15%<br> ส่งผลให้อัตราความสำเร็จในการกำจัดเชื้อด้วยสูตรสามยาลดต่ำลงอย่างมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::10",
-      "itemNo": "8",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -8994,8 +8964,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::11",
-      "itemNo": "9",
+      "id": "5. Gastrointestinal::10",
+      "itemNo": "8",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9006,8 +8976,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::12",
-      "itemNo": "10",
+      "id": "5. Gastrointestinal::11",
+      "itemNo": "9",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9018,14 +8988,26 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::13",
-      "itemNo": "11",
+      "id": "5. Gastrointestinal::12",
+      "itemNo": "10",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ยากลุ่ม NSAIDs ทำให้เกิดแผลในกระเพาะอาหารด้วยกลไกหลักใด?",
       "questionImage": "",
       "answer": "ยับยั้งเอนไซม์ COX-1 ขัดขวางการสังเคราะห์โพรสตาแกลนดิน (PGE2, PGI2)<br> ทำให้เมือกปกป้องเยื่อบุกระเพาะลดลง การหลั่งไบคาร์บอเนตลดลง และเลือดไปเลี้ยงเยื่อบุลดลง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::13",
+      "itemNo": "11",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "ปัจจัยเสี่ยงสำคัญที่ทำให้ผู้ใช้ยา NSAIDs เสี่ยงต่อการเกิดแผลและเลือดออกในทางเดินอาหารมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "อายุเกิน 65 ปี, มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร, ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
       "answerImage": "",
       "note": ""
     },
@@ -9037,25 +9019,13 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ปัจจัยเสี่ยงสำคัญที่ทำให้ผู้ใช้ยา NSAIDs เสี่ยงต่อการเกิดแผลและเลือดออกในทางเดินอาหารมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "อายุเกิน 65 ปี, มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร, ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
+      "answer": "อายุเกิน 65 ปี,<br> มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร,<br> ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::15",
       "itemNo": "13",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
-      "question": "แนวทางป้องกันแผลทางเดินอาหารในผู้ป่วยที่มีความเสี่ยงสูงมากที่จำเป็นต้องใช้ NSAIDs คืออะไร?",
-      "questionImage": "",
-      "answer": "เลือกใช้ยากลุ่ม Selective COX-2 inhibitor (เช่น Celecoxib) ร่วมกับการให้ยา PPI ควบคู่เสมอ<br> เพื่อลดความเสี่ยงต่อการเกิดแผลและเลือดออกในกระเพาะอาหารให้ต่ำที่สุด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::16",
-      "itemNo": "14",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9066,8 +9036,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::17",
-      "itemNo": "15",
+      "id": "5. Gastrointestinal::16",
+      "itemNo": "14",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9078,8 +9048,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::18",
-      "itemNo": "16",
+      "id": "5. Gastrointestinal::17",
+      "itemNo": "15",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9090,8 +9060,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::19",
-      "itemNo": "17",
+      "id": "5. Gastrointestinal::18",
+      "itemNo": "16",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9102,8 +9072,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::20",
-      "itemNo": "18",
+      "id": "5. Gastrointestinal::19",
+      "itemNo": "17",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9114,8 +9084,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::21",
-      "itemNo": "19",
+      "id": "5. Gastrointestinal::20",
+      "itemNo": "18",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9126,8 +9096,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::22",
-      "itemNo": "20",
+      "id": "5. Gastrointestinal::21",
+      "itemNo": "19",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9138,8 +9108,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::23",
-      "itemNo": "21",
+      "id": "5. Gastrointestinal::22",
+      "itemNo": "20",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9150,8 +9120,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::24",
-      "itemNo": "22",
+      "id": "5. Gastrointestinal::23",
+      "itemNo": "21",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9162,8 +9132,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::25",
-      "itemNo": "23",
+      "id": "5. Gastrointestinal::24",
+      "itemNo": "22",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -9174,14 +9144,26 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::26",
-      "itemNo": "24",
+      "id": "5. Gastrointestinal::25",
+      "itemNo": "23",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ยา Potassium-competitive acid blockers (P-CABs เช่น Vonoprazan) มีจุดเด่นเหนือ PPIs อย่างไร?",
       "questionImage": "",
       "answer": "ออกฤทธิ์ยับยั้งปั๊มกรดได้ทันทีโดยไม่ต้องรอการกระตุ้นจากกรด ออกฤทธิ์เร็ว คงตัวในสภาวะกรด<br> และไม่อาศัยการเปลี่ยนแปลงผ่านเอนไซม์ CYP2C19 ทำให้ได้ผลการกำจัด H. pylori สูงมาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::26",
+      "itemNo": "24",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "ยาลดกรดชนิดใดที่ทำให้เกิดอาการท้องผูก และชนิดใดทำให้เกิดอาการท้องเสีย?",
+      "questionImage": "",
+      "answer": "ยาลดกรดที่มี อะลูมิเนียม (Aluminum hydroxide) ทำให้ ท้องผูก<br> ส่วนยาลดกรดที่มี แมกนีเซียม (Magnesium hydroxide) ทำให้ ถ่ายเหลวท้องเสีย จึงมักผสมร่วมกัน",
       "answerImage": "",
       "note": ""
     },
@@ -9193,7 +9175,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ยาลดกรดชนิดใดที่ทำให้เกิดอาการท้องผูก และชนิดใดทำให้เกิดอาการท้องเสีย?",
       "questionImage": "",
-      "answer": "ยาลดกรดที่มี อะลูมิเนียม (Aluminum hydroxide) ทำให้ ท้องผูก<br> ส่วนยาลดกรดที่มี แมกนีเซียม (Magnesium hydroxide) ทำให้ ถ่ายเหลวท้องเสีย จึงมักผสมร่วมกัน",
+      "answer": "Aluminum hydroxide ทำให้ ท้องผูก<br>Magnesium hydroxide ทำให้ ถ่ายเหลวท้องเสีย<br><br> จึงมักผสมร่วมกัน",
       "answerImage": "",
       "note": ""
     },
@@ -9203,9 +9185,9 @@ window.OFFLINE_CARDS = {
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
-      "question": "กลไกพยาธิสรีรวิทยาที่สำคัญที่สุดในการเกิดโรคกรดไหลย้อน (GERD) คืออะไร?",
+      "question": "อาการแสดงแบบฉบับ (Typical symptoms) 2 ประการของโรคกรดไหลย้อนคืออะไร?",
       "questionImage": "",
-      "answer": "การคลายตัวชั่วคราวของหูรูดหลอดอาหารส่วนล่างบ่อยผิดปกติ (Transient LES Relaxations / TLESRs)<br> ทำให้กรดและน้ำย่อยจากกระเพาะอาหารไหลย้อนขึ้นสู่หลอดอาหาร",
+      "answer": "อาการแสบร้อนกลางอก (Heartburn) และอาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
       "answerImage": "",
       "note": ""
     },
@@ -9217,25 +9199,13 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "อาการแสดงแบบฉบับ (Typical symptoms) 2 ประการของโรคกรดไหลย้อนคืออะไร?",
       "questionImage": "",
-      "answer": "อาการแสบร้อนกลางอก (Heartburn) และอาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
+      "answer": "อาการแสบร้อนกลางอก (Heartburn) <br>อาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::30",
       "itemNo": "28",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Gastroesophageal Reflux Disease",
-      "track": "Clinic",
-      "question": "อาการนอกหลอดอาหาร (Extraesophageal symptoms) ที่อาจเกิดจากกรดไหลย้อนมีอะไรบ้าง?",
-      "questionImage": "",
-      "answer": "ไอเรื้อรังโดยไม่ทราบสาเหตุ, เสียงแหบ, เจ็บคอเรื้อรัง, หอบหืดกำเริบ, และฟันสึกกร่อนจากกรด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::31",
-      "itemNo": "29",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9246,20 +9216,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::32",
-      "itemNo": "30",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Gastroesophageal Reflux Disease",
-      "track": "Clinic",
-      "question": "การปรับเปลี่ยนพฤติกรรมข้อใดที่มีหลักฐานทางคลินิกชัดเจนที่สุดในการลดอาการกรดไหลย้อน?",
-      "questionImage": "",
-      "answer": "การลดน้ำหนักตัวในผู้ที่มีน้ำหนักเกินหรืออ้วน (Weight loss)<br> ช่วยลดแรงดันในช่องท้องที่ดันกรดให้ไหลย้อนขึ้นสู่หลอดอาหาร",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::33",
-      "itemNo": "31",
+      "id": "5. Gastrointestinal::31",
+      "itemNo": "29",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9270,8 +9228,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::34",
-      "itemNo": "32",
+      "id": "5. Gastrointestinal::32",
+      "itemNo": "30",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9282,8 +9240,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::35",
-      "itemNo": "33",
+      "id": "5. Gastrointestinal::33",
+      "itemNo": "31",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9294,8 +9252,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::36",
-      "itemNo": "34",
+      "id": "5. Gastrointestinal::34",
+      "itemNo": "32",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9306,8 +9264,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::37",
-      "itemNo": "35",
+      "id": "5. Gastrointestinal::35",
+      "itemNo": "33",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9318,8 +9276,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::38",
-      "itemNo": "36",
+      "id": "5. Gastrointestinal::36",
+      "itemNo": "34",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9330,8 +9288,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::39",
-      "itemNo": "37",
+      "id": "5. Gastrointestinal::37",
+      "itemNo": "35",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9342,8 +9300,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::40",
-      "itemNo": "38",
+      "id": "5. Gastrointestinal::38",
+      "itemNo": "36",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9354,8 +9312,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::41",
-      "itemNo": "39",
+      "id": "5. Gastrointestinal::39",
+      "itemNo": "37",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9366,8 +9324,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::42",
-      "itemNo": "40",
+      "id": "5. Gastrointestinal::40",
+      "itemNo": "38",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -9378,8 +9336,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::43",
-      "itemNo": "41",
+      "id": "5. Gastrointestinal::41",
+      "itemNo": "39",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9390,8 +9348,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::44",
-      "itemNo": "42",
+      "id": "5. Gastrointestinal::42",
+      "itemNo": "40",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9402,8 +9360,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::45",
-      "itemNo": "43",
+      "id": "5. Gastrointestinal::43",
+      "itemNo": "41",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9414,8 +9372,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::46",
-      "itemNo": "44",
+      "id": "5. Gastrointestinal::44",
+      "itemNo": "42",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9426,8 +9384,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::47",
-      "itemNo": "45",
+      "id": "5. Gastrointestinal::45",
+      "itemNo": "43",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9438,8 +9396,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::48",
-      "itemNo": "46",
+      "id": "5. Gastrointestinal::46",
+      "itemNo": "44",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9450,8 +9408,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::49",
-      "itemNo": "47",
+      "id": "5. Gastrointestinal::47",
+      "itemNo": "45",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9462,8 +9420,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::50",
-      "itemNo": "48",
+      "id": "5. Gastrointestinal::48",
+      "itemNo": "46",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9474,8 +9432,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::51",
-      "itemNo": "49",
+      "id": "5. Gastrointestinal::49",
+      "itemNo": "47",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9486,8 +9444,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::52",
-      "itemNo": "50",
+      "id": "5. Gastrointestinal::50",
+      "itemNo": "48",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9498,8 +9456,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::53",
-      "itemNo": "51",
+      "id": "5. Gastrointestinal::51",
+      "itemNo": "49",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9510,8 +9468,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::54",
-      "itemNo": "52",
+      "id": "5. Gastrointestinal::52",
+      "itemNo": "50",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9522,8 +9480,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::55",
-      "itemNo": "53",
+      "id": "5. Gastrointestinal::53",
+      "itemNo": "51",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9534,8 +9492,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::56",
-      "itemNo": "54",
+      "id": "5. Gastrointestinal::54",
+      "itemNo": "52",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9546,8 +9504,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::57",
-      "itemNo": "55",
+      "id": "5. Gastrointestinal::55",
+      "itemNo": "53",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -9558,8 +9516,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::58",
-      "itemNo": "56",
+      "id": "5. Gastrointestinal::56",
+      "itemNo": "54",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9570,8 +9528,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::59",
-      "itemNo": "57",
+      "id": "5. Gastrointestinal::57",
+      "itemNo": "55",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9582,8 +9540,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::60",
-      "itemNo": "58",
+      "id": "5. Gastrointestinal::58",
+      "itemNo": "56",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9594,8 +9552,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::61",
-      "itemNo": "59",
+      "id": "5. Gastrointestinal::59",
+      "itemNo": "57",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9606,8 +9564,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::62",
-      "itemNo": "60",
+      "id": "5. Gastrointestinal::60",
+      "itemNo": "58",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9618,8 +9576,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::63",
-      "itemNo": "61",
+      "id": "5. Gastrointestinal::61",
+      "itemNo": "59",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9630,8 +9588,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::64",
-      "itemNo": "62",
+      "id": "5. Gastrointestinal::62",
+      "itemNo": "60",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9642,8 +9600,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::65",
-      "itemNo": "63",
+      "id": "5. Gastrointestinal::63",
+      "itemNo": "61",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9654,8 +9612,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::66",
-      "itemNo": "64",
+      "id": "5. Gastrointestinal::64",
+      "itemNo": "62",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9666,8 +9624,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::67",
-      "itemNo": "65",
+      "id": "5. Gastrointestinal::65",
+      "itemNo": "63",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9678,8 +9636,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::68",
-      "itemNo": "66",
+      "id": "5. Gastrointestinal::66",
+      "itemNo": "64",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9690,8 +9648,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::69",
-      "itemNo": "67",
+      "id": "5. Gastrointestinal::67",
+      "itemNo": "65",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9702,8 +9660,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::70",
-      "itemNo": "68",
+      "id": "5. Gastrointestinal::68",
+      "itemNo": "66",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9714,8 +9672,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::71",
-      "itemNo": "69",
+      "id": "5. Gastrointestinal::69",
+      "itemNo": "67",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9726,8 +9684,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::72",
-      "itemNo": "70",
+      "id": "5. Gastrointestinal::70",
+      "itemNo": "68",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9738,8 +9696,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::73",
-      "itemNo": "71",
+      "id": "5. Gastrointestinal::71",
+      "itemNo": "69",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9750,8 +9708,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::74",
-      "itemNo": "72",
+      "id": "5. Gastrointestinal::72",
+      "itemNo": "70",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9762,8 +9720,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::75",
-      "itemNo": "73",
+      "id": "5. Gastrointestinal::73",
+      "itemNo": "71",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -9774,14 +9732,38 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::76",
-      "itemNo": "74",
+      "id": "5. Gastrointestinal::74",
+      "itemNo": "72",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
       "question": "ศูนย์ควบคุมการอาเจียน Chemoreceptor Trigger Zone (CTZ) ตั้งอยู่ที่ใดและมีลักษณะพิเศษอย่างไร?",
       "questionImage": "",
       "answer": "ตั้งอยู่ที่บริเวณ Area postrema ที่ก้นของโพรงสมองที่ 4 (4th ventricle)<br> เป็นบริเวณที่ อยู่นอกแนวป้องกัน Blood-Brain Barrier (BBB) จึงไวต่อสารพิษและยาในกระแสเลือดโดยตรง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::75",
+      "itemNo": "73",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Nausea & Vomiting",
+      "track": "Clinic",
+      "question": "ตัวรับหลักที่เกี่ยวข้องกับการส่งสัญญาณอาการเมารถเมาเรือ (Motion sickness) ในระบบประสาทการทรงตัวคืออะไร?",
+      "questionImage": "",
+      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือต้านโคลิเนอร์จิกเป็นหลัก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::76",
+      "itemNo": "74",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Nausea & Vomiting",
+      "track": "Clinic",
+      "question": "Dimenhydrinate (ยาแก้แพ้แก้เมา) ควรรับประทานเวลาใดเพื่อให้ได้ผลป้องกันการเมารถเมาเรือสูงสุด?",
+      "questionImage": "",
+      "answer": "รับประทานก่อนออกเดินทางประมาณ 30 ถึง 60 นาที<br> เพื่อให้ตัวยาถูกดูดซึมและออกฤทธิ์ปิดกั้นตัวรับในระบบประสาทการทรงตัวได้ทัน",
       "answerImage": "",
       "note": ""
     },
@@ -9793,37 +9775,13 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ตัวรับหลักที่เกี่ยวข้องกับการส่งสัญญาณอาการเมารถเมาเรือ (Motion sickness) ในระบบประสาทการทรงตัวคืออะไร?",
       "questionImage": "",
-      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือต้านโคลิเนอร์จิกเป็นหลัก",
+      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือ anticholinergic เป็นหลัก",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::78",
       "itemNo": "76",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Nausea & Vomiting",
-      "track": "Clinic",
-      "question": "Dimenhydrinate (ยาแก้แพ้แก้เมา) ควรรับประทานเวลาใดเพื่อให้ได้ผลป้องกันการเมารถเมาเรือสูงสุด?",
-      "questionImage": "",
-      "answer": "รับประทานก่อนออกเดินทางประมาณ 30 ถึง 60 นาที<br> เพื่อให้ตัวยาถูกดูดซึมและออกฤทธิ์ปิดกั้นตัวรับในระบบประสาทการทรงตัวได้ทัน",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::79",
-      "itemNo": "77",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Nausea & Vomiting",
-      "track": "Clinic",
-      "question": "แผ่นแปะแก้เมารถ Scopolamine (Hyoscine patch) มีคำแนะนำในการแปะและการเปลี่ยนแผ่นอย่างไร?",
-      "questionImage": "",
-      "answer": "แปะที่ผิวหนังหลังใบหูอย่างน้อย 4 ชั่วโมงก่อนออกเดินทาง<br> แผ่นแปะ 1 แผ่นออกฤทธิ์ได้นานถึง 72 ชั่วโมง (3 วัน) ล้างมือให้สะอาดหลังแปะเพื่อเลี่ยงยาเข้าตา",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::80",
-      "itemNo": "78",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9834,8 +9792,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::81",
-      "itemNo": "79",
+      "id": "5. Gastrointestinal::79",
+      "itemNo": "77",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9846,8 +9804,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::82",
-      "itemNo": "80",
+      "id": "5. Gastrointestinal::80",
+      "itemNo": "78",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9858,8 +9816,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::83",
-      "itemNo": "81",
+      "id": "5. Gastrointestinal::81",
+      "itemNo": "79",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9870,8 +9828,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::84",
-      "itemNo": "82",
+      "id": "5. Gastrointestinal::82",
+      "itemNo": "80",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9882,8 +9840,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::85",
-      "itemNo": "83",
+      "id": "5. Gastrointestinal::83",
+      "itemNo": "81",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9894,8 +9852,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::86",
-      "itemNo": "84",
+      "id": "5. Gastrointestinal::84",
+      "itemNo": "82",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9906,8 +9864,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::87",
-      "itemNo": "85",
+      "id": "5. Gastrointestinal::85",
+      "itemNo": "83",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9918,8 +9876,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::88",
-      "itemNo": "86",
+      "id": "5. Gastrointestinal::86",
+      "itemNo": "84",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -9930,8 +9888,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::89",
-      "itemNo": "87",
+      "id": "5. Gastrointestinal::87",
+      "itemNo": "85",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -9942,8 +9900,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::90",
-      "itemNo": "88",
+      "id": "5. Gastrointestinal::88",
+      "itemNo": "86",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -9954,8 +9912,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::91",
-      "itemNo": "89",
+      "id": "5. Gastrointestinal::89",
+      "itemNo": "87",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -9966,8 +9924,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::92",
-      "itemNo": "90",
+      "id": "5. Gastrointestinal::90",
+      "itemNo": "88",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -9978,8 +9936,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::93",
-      "itemNo": "91",
+      "id": "5. Gastrointestinal::91",
+      "itemNo": "89",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -9990,8 +9948,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::94",
-      "itemNo": "92",
+      "id": "5. Gastrointestinal::92",
+      "itemNo": "90",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10002,8 +9960,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::95",
-      "itemNo": "93",
+      "id": "5. Gastrointestinal::93",
+      "itemNo": "91",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10014,8 +9972,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::96",
-      "itemNo": "94",
+      "id": "5. Gastrointestinal::94",
+      "itemNo": "92",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10026,8 +9984,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::97",
-      "itemNo": "95",
+      "id": "5. Gastrointestinal::95",
+      "itemNo": "93",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10038,8 +9996,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::98",
-      "itemNo": "96",
+      "id": "5. Gastrointestinal::96",
+      "itemNo": "94",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10050,8 +10008,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::99",
-      "itemNo": "97",
+      "id": "5. Gastrointestinal::97",
+      "itemNo": "95",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10062,8 +10020,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::100",
-      "itemNo": "98",
+      "id": "5. Gastrointestinal::98",
+      "itemNo": "96",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10074,8 +10032,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::101",
-      "itemNo": "99",
+      "id": "5. Gastrointestinal::99",
+      "itemNo": "97",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10086,8 +10044,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::102",
-      "itemNo": "100",
+      "id": "5. Gastrointestinal::100",
+      "itemNo": "98",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10098,8 +10056,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::103",
-      "itemNo": "101",
+      "id": "5. Gastrointestinal::101",
+      "itemNo": "99",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10110,8 +10068,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::104",
-      "itemNo": "102",
+      "id": "5. Gastrointestinal::102",
+      "itemNo": "100",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -10122,8 +10080,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::105",
-      "itemNo": "103",
+      "id": "5. Gastrointestinal::103",
+      "itemNo": "101",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10134,8 +10092,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::106",
-      "itemNo": "104",
+      "id": "5. Gastrointestinal::104",
+      "itemNo": "102",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10146,8 +10104,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::107",
-      "itemNo": "105",
+      "id": "5. Gastrointestinal::105",
+      "itemNo": "103",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10158,8 +10116,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::108",
-      "itemNo": "106",
+      "id": "5. Gastrointestinal::106",
+      "itemNo": "104",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10170,8 +10128,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::109",
-      "itemNo": "107",
+      "id": "5. Gastrointestinal::107",
+      "itemNo": "105",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10182,8 +10140,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::110",
-      "itemNo": "108",
+      "id": "5. Gastrointestinal::108",
+      "itemNo": "106",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10194,8 +10152,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::111",
-      "itemNo": "109",
+      "id": "5. Gastrointestinal::109",
+      "itemNo": "107",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10206,8 +10164,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::112",
-      "itemNo": "110",
+      "id": "5. Gastrointestinal::110",
+      "itemNo": "108",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10218,8 +10176,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::113",
-      "itemNo": "111",
+      "id": "5. Gastrointestinal::111",
+      "itemNo": "109",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10230,12 +10188,36 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
+      "id": "5. Gastrointestinal::112",
+      "itemNo": "110",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Viral Hepatitis & Cirrhosis",
+      "track": "Clinic",
+      "question": "ยากลุ่มยับยั้งเอนไซม์โปรติเอส (NS3/4A Protease Inhibitors เช่น Glecaprevir) มีข้อห้ามใช้ในผู้ป่วยตับกลุ่มใด?",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::113",
+      "itemNo": "111",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Viral Hepatitis & Cirrhosis",
+      "track": "Clinic",
+      "question": "อัตราส่วนของยาขับปัสสาวะ Spironolactone ต่อ Furosemide ในการรักษาภาวะท้องมาน (Ascites) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
+    },
+    {
       "id": "5. Gastrointestinal::114",
       "itemNo": "112",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "ยากลุ่มยับยั้งเอนไซม์โปรติเอส (NS3/4A Protease Inhibitors เช่น Glecaprevir) มีข้อห้ามใช้ในผู้ป่วยตับกลุ่มใด?",
+      "question": "ข้อบ่งชี้ในการให้ยา IV Albumin ระหว่างการเจาะระบายน้ำในช่องท้องปริมาณมาก (LVP) คืออะไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -10247,7 +10229,7 @@ window.OFFLINE_CARDS = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "อัตราส่วนของยาขับปัสสาวะ Spironolactone ต่อ Furosemide ในการรักษาภาวะท้องมาน (Ascites) คือเท่าใด?",
+      "question": "เกณฑ์การวินิจฉัยภาวะเยื่อบุช่องท้องอักเสบติดเชื้อเอง (Spontaneous Bacterial Peritonitis / SBP) คืออะไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -10259,7 +10241,7 @@ window.OFFLINE_CARDS = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "ข้อบ่งชี้ในการให้ยา IV Albumin ระหว่างการเจาะระบายน้ำในช่องท้องปริมาณมาก (LVP) คืออะไร?",
+      "question": "ยาปฏิชีวนะทางเลือกแรกในการรักษาภาวะ SBP ในผู้ป่วยโรคตับแข็งคือยาใด?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -10271,7 +10253,7 @@ window.OFFLINE_CARDS = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "เกณฑ์การวินิจฉัยภาวะเยื่อบุช่องท้องอักเสบติดเชื้อเอง (Spontaneous Bacterial Peritonitis / SBP) คืออะไร?",
+      "question": "ยาทางเลือกแรกในการรักษาภาวะทางสมองจากโรคตับ (Hepatic Encephalopathy) คือยาใดและปรับขนาดอย่างไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -10280,30 +10262,6 @@ window.OFFLINE_CARDS = {
     {
       "id": "5. Gastrointestinal::118",
       "itemNo": "116",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Viral Hepatitis & Cirrhosis",
-      "track": "Clinic",
-      "question": "ยาปฏิชีวนะทางเลือกแรกในการรักษาภาวะ SBP ในผู้ป่วยโรคตับแข็งคือยาใด?",
-      "questionImage": "",
-      "answer": "",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::119",
-      "itemNo": "117",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Viral Hepatitis & Cirrhosis",
-      "track": "Clinic",
-      "question": "ยาทางเลือกแรกในการรักษาภาวะทางสมองจากโรคตับ (Hepatic Encephalopathy) คือยาใดและปรับขนาดอย่างไร?",
-      "questionImage": "",
-      "answer": "",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::120",
-      "itemNo": "118",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -10345,7 +10303,7 @@ window.OFFLINE_CARDS = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "รูปแบบผลตรวจค่าเคมีของธาตุเหล็ก (Iron studies) ในผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็กเป็นอย่างไร?",
+      "question": "รูปแบบผลตรวจค่าเคมีของธาตุเหล็ก (Iron studies) ในผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็ก จะได้ผลเป็นอย่างไร",
       "questionImage": "",
       "answer": "Serum Iron ต่ำ, Serum Ferritin ต่ำ, แต่ค่า Total Iron-Binding Capacity (TIBC) สูงขึ้น<br> และค่า Transferrin Saturation (TSAT) ต่ำกว่า 20%",
       "answerImage": "",
@@ -10359,7 +10317,7 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ลักษณะทางคลินิกจำเพาะของผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็กเรื้อรังรุนแรงมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "เล็บบุ๋มเป็นรูปช้อน (Koilonychia / Spoon nails), แผลมุมปาก (Angular cheilitis),<br> และพฤติกรรมชอบกินสิ่งที่ไม่ใช่อาหาร เช่น น้ำแข็ง ดิน หรือข้าวสารดิบ (Pica)",
+      "answer": "เล็บบุ๋มเป็นรูปช้อน (Koilonychia / Spoon nails)<br>แผลมุมปาก (Angular cheilitis),<br>และพฤติกรรมชอบกินสิ่งที่ไม่ใช่อาหาร เช่น น้ำแข็ง ดิน หรือข้าวสารดิบ (Pica)",
       "answerImage": "",
       "note": ""
     },
@@ -10369,9 +10327,9 @@ window.OFFLINE_CARDS = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "ดัชนี Mentzer Index คำนวณอย่างไรและใช้แยกโรคโลหิตจางกลุ่มใด?",
+      "question": "ปริมาณธาตุเหล็กบริสุทธิ์ (Elemental Iron) ที่แนะนำในการรักษาภาวะโลหิตจางจากการขาดธาตุเหล็กคือเท่าใด?",
       "questionImage": "",
-      "answer": "คำนวณจาก MCV หารด้วยจำนวนเม็ดเลือดแดง (RBC count)<br> หาก &lt; 13 สงสัยพาหะธาลัสซีเมีย (Thalassemia trait) หาก &gt; 13 สงสัยขาดธาตุเหล็ก (IDA)",
+      "answer": "100 ถึง 200 mg ของ Elemental Iron ต่อวัน (แบ่งให้วันละ 2-3 ครั้ง)<br> หรือรับประทานวันเว้นวัน (Alternate-day dosing) เพื่อลดการหลั่งฮอร์โมน Hepcidin และลดผลข้างเคียง",
       "answerImage": "",
       "note": ""
     },
@@ -10381,9 +10339,9 @@ window.OFFLINE_CARDS = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "ปริมาณธาตุเหล็กบริสุทธิ์ (Elemental Iron) ที่แนะนำในการรักษาภาวะโลหิตจางจากการขาดธาตุเหล็กคือเท่าใด?",
+      "question": "ยา Ferrous sulfate, Ferrous fumarate และ Ferrous gluconate มีปริมาณ Elemental Iron ร้อยละเท่าใด?",
       "questionImage": "",
-      "answer": "100 ถึง 200 mg ของ Elemental Iron ต่อวัน (แบ่งให้วันละ 2-3 ครั้ง)<br> หรือรับประทานวันเว้นวัน (Alternate-day dosing) เพื่อลดการหลั่งฮอร์โมน Hepcidin และลดผลข้างเคียง",
+      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg), Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
       "answerImage": "",
       "note": ""
     },
@@ -10395,25 +10353,13 @@ window.OFFLINE_CARDS = {
       "track": "Clinic",
       "question": "ยา Ferrous sulfate, Ferrous fumarate และ Ferrous gluconate มีปริมาณ Elemental Iron ร้อยละเท่าใด?",
       "questionImage": "",
-      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg), Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
+      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg)<br>Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "6. Hematologic::10",
       "itemNo": "8",
-      "group": "6. Hematologic",
-      "subTopic": "Microcytic & Megaloblastic Anemia",
-      "track": "Clinic",
-      "question": "คำแนะนำในการรับประทานยาบำรุงธาตุเหล็กชนิดเม็ดเพื่อให้ร่างกายดูดซึมได้ดีที่สุดคืออะไร?",
-      "questionImage": "",
-      "answer": "รับประทานขณะท้องว่างก่อนอาหาร 1 ชั่วโมง หรือพร้อมน้ำส้ม/วิตามินซี (ความเป็นกรดช่วยดูดซึม)<br> หากมีอาการคลื่นไส้ แน่นท้อง ท้องผูก ให้เปลี่ยนมารับประทานหลังอาหารทันที",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "6. Hematologic::11",
-      "itemNo": "9",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10424,8 +10370,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::12",
-      "itemNo": "10",
+      "id": "6. Hematologic::11",
+      "itemNo": "9",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10436,8 +10382,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::13",
-      "itemNo": "11",
+      "id": "6. Hematologic::12",
+      "itemNo": "10",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10448,8 +10394,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::14",
-      "itemNo": "12",
+      "id": "6. Hematologic::13",
+      "itemNo": "11",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10460,8 +10406,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::15",
-      "itemNo": "13",
+      "id": "6. Hematologic::14",
+      "itemNo": "12",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10472,8 +10418,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::16",
-      "itemNo": "14",
+      "id": "6. Hematologic::15",
+      "itemNo": "13",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10484,8 +10430,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::17",
-      "itemNo": "15",
+      "id": "6. Hematologic::16",
+      "itemNo": "14",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10496,8 +10442,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::18",
-      "itemNo": "16",
+      "id": "6. Hematologic::17",
+      "itemNo": "15",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10508,8 +10454,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::19",
-      "itemNo": "17",
+      "id": "6. Hematologic::18",
+      "itemNo": "16",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10520,8 +10466,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::20",
-      "itemNo": "18",
+      "id": "6. Hematologic::19",
+      "itemNo": "17",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10532,8 +10478,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::21",
-      "itemNo": "19",
+      "id": "6. Hematologic::20",
+      "itemNo": "18",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10544,8 +10490,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::22",
-      "itemNo": "20",
+      "id": "6. Hematologic::21",
+      "itemNo": "19",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10556,8 +10502,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::23",
-      "itemNo": "21",
+      "id": "6. Hematologic::22",
+      "itemNo": "20",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10568,8 +10514,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::24",
-      "itemNo": "22",
+      "id": "6. Hematologic::23",
+      "itemNo": "21",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10580,8 +10526,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::25",
-      "itemNo": "23",
+      "id": "6. Hematologic::24",
+      "itemNo": "22",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10592,8 +10538,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::26",
-      "itemNo": "24",
+      "id": "6. Hematologic::25",
+      "itemNo": "23",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10604,8 +10550,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::27",
-      "itemNo": "25",
+      "id": "6. Hematologic::26",
+      "itemNo": "24",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10616,8 +10562,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::28",
-      "itemNo": "26",
+      "id": "6. Hematologic::27",
+      "itemNo": "25",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10628,8 +10574,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::29",
-      "itemNo": "27",
+      "id": "6. Hematologic::28",
+      "itemNo": "26",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10640,8 +10586,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::30",
-      "itemNo": "28",
+      "id": "6. Hematologic::29",
+      "itemNo": "27",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -10652,8 +10598,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::31",
-      "itemNo": "29",
+      "id": "6. Hematologic::30",
+      "itemNo": "28",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10664,8 +10610,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::32",
-      "itemNo": "30",
+      "id": "6. Hematologic::31",
+      "itemNo": "29",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10676,8 +10622,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::33",
-      "itemNo": "31",
+      "id": "6. Hematologic::32",
+      "itemNo": "30",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10688,8 +10634,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::34",
-      "itemNo": "32",
+      "id": "6. Hematologic::33",
+      "itemNo": "31",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10700,8 +10646,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::35",
-      "itemNo": "33",
+      "id": "6. Hematologic::34",
+      "itemNo": "32",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10712,8 +10658,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::36",
-      "itemNo": "34",
+      "id": "6. Hematologic::35",
+      "itemNo": "33",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10724,8 +10670,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::37",
-      "itemNo": "35",
+      "id": "6. Hematologic::36",
+      "itemNo": "34",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10736,8 +10682,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::38",
-      "itemNo": "36",
+      "id": "6. Hematologic::37",
+      "itemNo": "35",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10748,8 +10694,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::39",
-      "itemNo": "37",
+      "id": "6. Hematologic::38",
+      "itemNo": "36",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10760,8 +10706,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::40",
-      "itemNo": "38",
+      "id": "6. Hematologic::39",
+      "itemNo": "37",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10772,8 +10718,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::41",
-      "itemNo": "39",
+      "id": "6. Hematologic::40",
+      "itemNo": "38",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10784,8 +10730,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::42",
-      "itemNo": "40",
+      "id": "6. Hematologic::41",
+      "itemNo": "39",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10796,8 +10742,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::43",
-      "itemNo": "41",
+      "id": "6. Hematologic::42",
+      "itemNo": "40",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10808,8 +10754,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::44",
-      "itemNo": "42",
+      "id": "6. Hematologic::43",
+      "itemNo": "41",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10820,8 +10766,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::45",
-      "itemNo": "43",
+      "id": "6. Hematologic::44",
+      "itemNo": "42",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10832,8 +10778,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::46",
-      "itemNo": "44",
+      "id": "6. Hematologic::45",
+      "itemNo": "43",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10844,8 +10790,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::47",
-      "itemNo": "45",
+      "id": "6. Hematologic::46",
+      "itemNo": "44",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10856,8 +10802,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::48",
-      "itemNo": "46",
+      "id": "6. Hematologic::47",
+      "itemNo": "45",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10868,8 +10814,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::49",
-      "itemNo": "47",
+      "id": "6. Hematologic::48",
+      "itemNo": "46",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10880,8 +10826,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::50",
-      "itemNo": "48",
+      "id": "6. Hematologic::49",
+      "itemNo": "47",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10892,8 +10838,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::51",
-      "itemNo": "49",
+      "id": "6. Hematologic::50",
+      "itemNo": "48",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10904,8 +10850,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::52",
-      "itemNo": "50",
+      "id": "6. Hematologic::51",
+      "itemNo": "49",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10916,8 +10862,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::53",
-      "itemNo": "51",
+      "id": "6. Hematologic::52",
+      "itemNo": "50",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10928,8 +10874,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::54",
-      "itemNo": "52",
+      "id": "6. Hematologic::53",
+      "itemNo": "51",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -10940,8 +10886,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::55",
-      "itemNo": "53",
+      "id": "6. Hematologic::54",
+      "itemNo": "52",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -10952,8 +10898,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::56",
-      "itemNo": "54",
+      "id": "6. Hematologic::55",
+      "itemNo": "53",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -10964,8 +10910,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::57",
-      "itemNo": "55",
+      "id": "6. Hematologic::56",
+      "itemNo": "54",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -10976,8 +10922,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::58",
-      "itemNo": "56",
+      "id": "6. Hematologic::57",
+      "itemNo": "55",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -10988,8 +10934,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::59",
-      "itemNo": "57",
+      "id": "6. Hematologic::58",
+      "itemNo": "56",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -11000,8 +10946,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::60",
-      "itemNo": "58",
+      "id": "6. Hematologic::59",
+      "itemNo": "57",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -11012,8 +10958,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::61",
-      "itemNo": "59",
+      "id": "6. Hematologic::60",
+      "itemNo": "58",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -11024,8 +10970,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::62",
-      "itemNo": "60",
+      "id": "6. Hematologic::61",
+      "itemNo": "59",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -11036,8 +10982,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::63",
-      "itemNo": "61",
+      "id": "6. Hematologic::62",
+      "itemNo": "60",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -11048,8 +10994,8 @@ window.OFFLINE_CARDS = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::64",
-      "itemNo": "62",
+      "id": "6. Hematologic::63",
+      "itemNo": "61",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -23497,8 +23443,862 @@ window.OFFLINE_CARDS = {
       "note": "Lab IDQ4 P.7 Exercise 10"
     }
   ],
-  "6. Solid Dosage Forms": [],
-  "7. Liquid & Semisolids": [],
+  "6. Solid Dosage Forms": [
+    {
+      "id": "6. Solid Dosage Forms::3",
+      "itemNo": "1",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "Tablet defects",
+      "track": "Product",
+      "question": "Picking กับ Sticking ต่างกันอย่างไร? และแต่ละอันมีต้นเหตุหลักจากอะไร",
+      "questionImage": "",
+      "answer": "Picking = เนื้อยาติดในร่องตัวอักษร/โลโก้ (tooling: enclosed areas เช่น A, B) / Sticking = ติดทั้งผิวหน้า punch (วัสดุ: low m.p., moisture, hygroscopic additive)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::4",
+      "itemNo": "2",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ถ้าเม็ดยามีตัวอักษร “B” แล้วเกิด picking แก้ทาง tooling ได้อย่างไร (2 วิธี) และแก้ทางสูตรได้อย่างไร",
+      "questionImage": "",
+      "answer": "Tooling: ใช้ตัวอักษรใหญ่ขึ้น/ไม่มีตัวอักษร; เคลือบ punch ด้วย chromium. สูตร: เพิ่ม lubricant (metal stearate), glidant (colloidal SiO₂) หรือ talc",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::5",
+      "itemNo": "3",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "บอกสาเหตุของ Sticking 3 ข้อ พร้อมตัวอย่างสาร",
+      "questionImage": "",
+      "answer": "1) Low m.p. substance เช่น stearic acid, PEG, API บางตัว 2) Excess moisture ใน granule 3) Hygroscopic additive เช่น propylene glycol",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::6",
+      "itemNo": "4",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "สูตร Aspirin ใช้ Mg stearate แล้วเม็ดติด die — เรียกปัญหานี้ว่าอะไร แก้อย่างไร",
+      "questionImage": "",
+      "answer": "Binding in the die — Aspirin + Mg-St เกิด sticky mass →เปลี่ยนเป็น non-reactive lubricant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::7",
+      "itemNo": "5",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Mottling คืออะไร? สาเหตุใน process ที่สำคัญที่สุดและวิธีแก้",
+      "questionImage": "",
+      "answer": "สีไม่สม่ำเสมอบนผิวเม็ดจาก color migration; drying temperature สูง ดันสีจากในออกผิว granule → ลดอุณหภูมิอบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::8",
+      "itemNo": "6",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Crack บนผิวเม็ดจาก tablet expansion ระหว่าง ejection แก้ทางสูตรอย่างไร",
+      "questionImage": "",
+      "answer": "เลือกวัสดุ plastic deformation มากกว่า elastic; คุม granule size ไม่ใหญ่เกินและ distribution แคบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::9",
+      "itemNo": "7",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Chipped edge จากรูปทรงเม็ด แก้อย่างไร — และ punch แบบเดียวกันนี้เป็นสาเหตุของ defect ใด",
+      "questionImage": "",
+      "answer": "เม็ดขอบคม → ใช้ concave/beveled-edge punch; แต่ deep concave/beveled เป็นสาเหตุของ capping (แก้ด้วย flat punch)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::10",
+      "itemNo": "8",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "นิยาม Capping vs Lamination",
+      "questionImage": "",
+      "answer": "Capping = crown บน/ล่าง หลุดบางส่วน/ทั้งหมด; Lamination = แยกเป็น ≥2 ชั้นแนวนอน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::11",
+      "itemNo": "9",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "กลไกหลักที่อธิบาย capping คืออะไร และเกี่ยวกับ speed อย่างไร",
+      "questionImage": "",
+      "answer": "Air entrapment — speed สูง อากาศหนีไม่ทันก่อน ejection → ขยายตัว → capping; แก้ด้วย ลด turret speed / pre-compression ช้า = เพิ่ม dwell time",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::12",
+      "itemNo": "10",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ยกตัวอย่างวัสดุที่ทำให้ capping ง่าย 2 กลุ่ม",
+      "questionImage": "",
+      "answer": "Poor compressibility: paracetamol, ibuprofen, activated charcoal / Elastic deformation: alginic acid, rice starch",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::13",
+      "itemNo": "11",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Capping จาก formulation: granule แห้งเกิน และ binder ไม่พอ แก้อย่างไร",
+      "questionImage": "",
+      "answer": "แห้งเกิน → ทำให้ชื้นพอดี / เติม hygroscopic (sorbitol, PEG-4000); binder ไม่พอ → เพิ่ม binder หรือ dry binder (pregelatinized starch, PVP)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::14",
+      "itemNo": "12",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Soft tablet มีสาเหตุอะไร 3 ข้อ และเติมสารใดช่วยได้",
+      "questionImage": "",
+      "answer": "Low compaction, excess fatty lubricant, สูตรไม่เหมาะ →เพิ่มสาร plastic deformation สูง: lactose, MCC",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::15",
+      "itemNo": "13",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Protracted disintegration มีสาเหตุอะไรบ้าง (5 ข้อ)",
+      "questionImage": "",
+      "answer": "Lubricant มาก/ผสมนาน, binder สูง, low m.p. substance, disintegrant น้อย/อ่อน, compression pressure สูง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::16",
+      "itemNo": "14",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Weight variation ต่างจาก Variation in drug content อย่างไร (สาเหตุหลักของแต่ละอัน)",
+      "questionImage": "",
+      "answer": "Weight: flow/การป้อนเข้า die — lubricant/glidant ไม่พอ, granule size กว้าง, speed สูง, เครื่องไม่มั่นคง. Content: homogeneity ของ mix ก่อน/หลัง granulation, %fines สูง — เน้น low-dose",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::17",
+      "itemNo": "15",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ทำไม Mg stearate ปริมาณมาก/ผสมนานทำให้ dissolution ช้า และแก้อย่างไร",
+      "questionImage": "",
+      "answer": "Mg-St สร้าง hydrophobic film เคลือบอนุภาค → น้ำซึมเข้าไม่ได้ → disintegration ช้า → dissolution ช้า; แก้: คุมชนิด+เวลา lubrication (+ wetting agent, superdisintegrant intra/extragranular)",
+      "answerImage": "",
+      "note": ""
+    }
+  ],
+  "7. Liquid & Semisolids": [
+    {
+      "id": "7. Liquid & Semisolids::3",
+      "itemNo": "1",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตำรับยาน้ำเสื่อมจาก oxidation และพบว่าไอออนโลหะอาจเป็นตัวเร่งปฏิกิริยา ควรพิจารณาสารใดเพื่อจับโลหะ?<br><br>A. CMC<br>B. EDTA (disodium edetate)<br>C. Sucrose<br>D. Tween 80",
+      "questionImage": "",
+      "answer": "B — EDTA เป็น chelating agent ช่วยจับไอออนโลหะที่อาจเร่ง oxidation",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::4",
+      "itemNo": "2",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตัวยาสำคัญละลายในน้ำได้ไม่ดี เภสัชกรต้องการปรับระบบตัวทำละลายเพื่อช่วยการละลาย สารใดอาจเหมาะสม?<br><br>A. FD&amp;C coloring agent<br>B. Propylene glycol<br>C. Methylparaben เพียงอย่างเดียว<br>D. Sodium chloride เพียงอย่างเดียว",
+      "questionImage": "",
+      "answer": "A — Sodium metabisulfite ใช้เป็น antioxidant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::5",
+      "itemNo": "3",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตัวยาสำคัญในตำรับไวต่อ oxidation และต้องการเติมสารช่วยลดการเสื่อมจากปฏิกิริยานี้ สารใดเหมาะสมที่สุดตามหน้าที่?<br><br>A. Sodium metabisulfite<br>B. Methylparaben<br>C. HPMC<br>D. Saccharin",
+      "questionImage": "",
+      "answer": "A — Sodium metabisulfite ใช้เป็น antioxidant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::6",
+      "itemNo": "4",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ยาน้ำมีความหนืดต่ำกว่าที่ต้องการ และสูตรตำรับสามารถปรับความหนืดได้ ควรพิจารณาสารใด?<br><br>A. CMC<br>B. EDTA<br>C. Sodium benzoate<br>D. Citric acid",
+      "questionImage": "",
+      "answer": "A — CMC ใช้เพิ่มความหนืด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::7",
+      "itemNo": "5",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ยาน้ำมีความเสี่ยงต่อการเจริญของจุลชีพ ต้องการเลือกสารช่วยที่มีหน้าที่เป็น preservative ควรเลือกข้อใด?<br><br>A. CMC<br>B. Methylparaben<br>C. Tween 80<br>D. EDTA",
+      "questionImage": "",
+      "answer": "B — Methylparaben เป็น preservative",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::8",
+      "itemNo": "6",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ในตำรับต้องการสารช่วยรักษาความชุ่มชื้นและลดการสูญเสียความชื้น ควรพิจารณาสารใด?<br><br>A. Glycerin<br>B. EDTA<br>C. Sodium metabisulfite<br>D. FD&amp;C dye",
+      "questionImage": "",
+      "answer": "A — Glycerin เป็น humectant และอาจช่วยด้านความหนืดได้ด้วย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::9",
+      "itemNo": "7",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ข้อใดอธิบายความแตกต่างโดยทั่วไปของ syrup และ elixir ได้เหมาะสมที่สุด?<br><br>A. Syrup เป็นตำรับน้ำเชื่อมที่มีน้ำตาลสูง ส่วน elixir เป็นสารละลายใสที่มีน้ำและมักมีแอลกอฮอล์ร่วมด้วย<br><br>B. Syrup ต้องมีแอลกอฮอล์เสมอ ส่วน elixir ห้ามมีแอลกอฮอล์<br><br>C. ทั้งสองชนิดต้องมีตัวยาสำคัญเป็นของแข็งแขวนลอย<br><br>D. ทั้งสองชนิดแตกต่างกันเฉพาะสีเท่านั้น",
+      "questionImage": "",
+      "answer": "A — Syrup เด่นที่น้ำตาลหรือน้ำเชื่อม ส่วน elixir โดยทั่วไปเป็นสารละลายให้รับประทานที่มีน้ำและแอลกอฮอล์ร่วมด้วย รายละเอียดขึ้นกับนิยามและสูตรตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::10",
+      "itemNo": "8",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "การเลือก vehicle หรือตัวทำละลายสำหรับตำรับควรพิจารณาสิ่งใดเป็นหลัก?<br><br>A. เลือกตัวทำละลายที่มีราคาถูกที่สุดเสมอ<br>B. เลือกตัวทำละลายที่มีกลิ่นหอมที่สุด<br>C. พิจารณาความสามารถในการละลาย ความเข้ากันได้ และความเหมาะสมกับตำรับ<br>D. ใช้น้ำเป็นตัวทำละลายเพียงชนิดเดียวในทุกตำรับ",
+      "questionImage": "",
+      "answer": "C — ต้องพิจารณาการละลาย ความเข้ากันได้ ความคงตัว และความเหมาะสมต่อการใช้",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::11",
+      "itemNo": "1",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "เหตุใดอนุภาคขนาดเล็กใน suspension จึงไม่คงตัวทาง thermodynamic และมีวิธีทำให้ระบบคงตัวได้อย่างไร?",
+      "questionImage": "",
+      "answer": "เพราะอนุภาคเล็กมี specific surface area มาก ทำให้ surface free energy สูง และทำให้ระบบลดพลังงานโดย (1) ลดพื้นที่ผิวรวม ด้วยการจับกันของอนุภาค  (2) ลดแรงตึงผิวด้วยการเติม surfactant เช่น SLS หรือ Tween 80",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::12",
+      "itemNo": "2",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "flocculation กับ aggregation (caking) ต่างกันอย่างไร",
+      "questionImage": "",
+      "answer": "Flocculation = จับกันหลวม ๆ ด้วยแรงอ่อน เขย่าแล้วกระจายกลับได้ง่าย; Aggregation = จับกันแน่นถาวร (crystal growth, claying/caking) ทำลายแรงยึดได้ยาก กระจายกลับไม่ได้",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::13",
+      "itemNo": "3",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "Degree of flocculation (β) บอกอะไร และค่า β = 1 หมายความว่าอย่างไร?",
+      "questionImage": "",
+      "answer": "β = F ของระบบ flocculated ÷ F ของระบบ deflocculated แสดง ระดับ flocculation ที่เกิดขึ้นเมื่อเทียบกับอนุภาคเดี่ยว ค่า β = 1 หมายถึงปริมาตรตะกอนไม่ต่างจากระบบ deflocculated คือไม่มี flocculation เพิ่ม; β ยิ่งมากยิ่งเกิด flocculation มาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::14",
+      "itemNo": "4",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "ระบบ deflocculated และ flocculated ต่างกันอย่างไรในด้านอัตราการตกตะกอน ลักษณะตะกอน และน้ำใสด้านบน?",
+      "questionImage": "",
+      "answer": "ระบบ deflocculated และ flocculated ต่างกันอย่างไรในด้านอัตราการตกตะกอน ลักษณะตะกอน และน้ำใสด้านบน?",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::15",
+      "itemNo": "5",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "โครงสร้างของสารช่วยแขวนตะกอนที่เหมาะสมใน structured vehicle ควรมีพฤติกรรมการไหลแบบใด และเพราะเหตุใด?",
+      "questionImage": "",
+      "answer": "ควรเป็น plastic หรือ pseudoplastic ที่มี thixotropy เพราะเมื่อตั้งทิ้งไว้ความหนืดสูงจึงพยุงอนุภาคไม่ให้ตกเร็ว แต่เมื่อเขย่าความหนืดลดลงมาก จึงเทออกง่ายและผงยากระจายตัวสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::16",
+      "itemNo": "6",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "ผงยามีประจุบวก ควรเลือก flocculating agent และ suspending agent ประจุใด เพราะเหตุใด?",
+      "questionImage": "",
+      "answer": "ใช้ electrolyte ประจุลบ เป็น flocculating agent และเลือก suspending agent ประจุลบ เพื่อไม่ให้เกิดความไม่เข้ากันของประจุ (suspending agent ประจุตรงข้ามอาจตกตะกอนร่วมกับ electrolyte/เสียสภาพ flocculation)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::17",
+      "itemNo": "7",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "Ostwald ripening คืออะไร เกิดขึ้นได้อย่างไร และป้องกันได้อย่างไร?",
+      "questionImage": "",
+      "answer": "การที่อนุภาคใหญ่ขึ้นระหว่างเก็บเมื่ออุณหภูมิเปลี่ยน: ตัวยาละลายมากเมื่ออุณหภูมิสูง แล้วตกผลึกกลับบนอนุภาคใหญ่เมื่อเย็นลง ป้องกันได้โดยเติมโพลิเมอร์ เช่น PVP",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::18",
+      "itemNo": "8",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "เภสัชกรจะเตรียม suspension เฉพาะคราวจากยาเม็ดสำหรับผู้ป่วยที่กลืนยาเม็ดไม่ได้ ไม่ควรเลือกยาเม็ดชนิดใด ข้อควรระวังและ BUD เป็นอย่างไร?",
+      "questionImage": "",
+      "answer": "<b style=\"color:#dc2626;\">ห้ามใช้</b> enteric-coated และ controlled-release tablets เพราะทำลายระบบปลดปล่อยยา และBUD ของยารับประทานที่มีน้ำ ไม่เกิน 14 วัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::34",
+      "itemNo": "17",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "นิยามของ Emulsion ทางเภสัชกรรมคืออะไร และมีองค์ประกอบหลักกี่ส่วน?",
+      "questionImage": "",
+      "answer": "▶ นิยามของ Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ระบบกระจายตัวของของเหลว 2 ชนิดที่ไม่ผสมกัน (Immiscible liquids)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ของเหลวหนึ่งแตกกระจายเป็นหยดเล็กๆ (Dispersed phase / Internal phase) ในของเหลวอีกชนิดหนึ่ง (Continuous phase / External phase)<br> <br> ▶ องค์ประกอบหลัก 3 ส่วน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. เฟสน้ำมัน (Oil phase): Oils, fats, waxes, nonpolar actives<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. เฟสน้ำ (Water phase): Water, hydrophilic actives, preservatives<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สารทำอิมัลชัน (Emulsifier / Emulsifying agent): ตัวประสานรอยต่อระหว่าง 2 เฟส",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::35",
+      "itemNo": "18",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "กฎของแบนครอฟต์ (Bancroft’s Rule) กล่าวไว้อย่างไร และนำไปใช้อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ กฎของแบนครอฟต์ (Bancroft’s Rule):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>&quot;เฟสที่สารทำอิมัลชัน (Emulsifier) ละลายได้ดีกว่า จะกลายเป็น External phase (Continuous phase) เสมอ&quot;<br> <br> ▶ การนำไปประยุกต์ใช้:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันที่ชอบน้ำ (Hydrophilic, ละลายในน้ำได้ดีกว่า, HLB สูง) ➔ จะได้ O/W emulsion<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันที่ชอบน้ำมัน (Lipophilic, ละลายในน้ำมันได้ดีกว่า, HLB ต่ำ) ➔ จะได้ W/O emulsion<br> ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::36",
+      "itemNo": "19",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": " สรุป 3 รูปแบบของ Interfacial Film ที่สารทำอิมัลชันสร้างขึ้นเพื่อป้องกัน Coalescence?",
+      "questionImage": "",
+      "answer": "▶ 1. Monomolecular Film (ฟิล์มชั้นเดี่ยว):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจาก Surfactants ขนาดโมเลกุลเล็ก เรียงตัวที่ผิวประจันเพื่อลดแรงตึงผิว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ให้ทั้งแรงผลักทางไฟฟ้า (กรณี Ionic) หรือ Steric barrier (กรณี Non-ionic)<br> <br> ▶ 2. Multimolecular Film (ฟิล์มหลายชั้น):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจาก Hydrophilic polymers / Hydrocolloids (Acacia, Tragacanth, Gelatin)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ฟิล์มมีความหนา ยืดหยุ่นเหนียวคล้ายเจล (Viscoelastic film) ขวางกั้นการชนกัน ไม่ค่อยลดแรงตึงผิว<br> <br> ▶ 3. Solid Particle Film (ฟิล์มอนุภาคของแข็ง):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากผงของแข็งขนาดละเอียดมาก (Finely divided solids เช่น Bentonite, Mg(OH)2)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไปดูดซับล้อมรอบผิวหยดอนุภาค เป็นเกราะป้องกันเชิงกล (Mechanical barrier) เรียกว่า Pickering emulsion",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::37",
+      "itemNo": "20",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[8] Steric Stabilization ทำงานอย่างไร และสารกลุ่มใดที่ให้ผลนี้เด่นชัด?",
+      "questionImage": "",
+      "answer": "▶ กลไก Steric Stabilization<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดขึ้นเมื่อสารทำอิมัลชันสายยาวถูกดูดซับที่ผิวหยดน้ำมัน โดยส่วนหางสายโพลีเมอร์ที่ชอบน้ำจะยื่นยาวออกไปในเฟสต่อเนื่อง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อหยดอนุภาคเคลื่อนที่เข้ามาใกล้กัน โซ่โพลีเมอร์จะซ้อนทับกัน (Chain overlap) และเกิดการผลักัน<br> <br> ▶ สารกลุ่มที่ให้ผลนี้เด่นชัด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Non-ionic surfactants โมเลกุลใหญ่ เช่น Polysorbates (Tweens), PEG esters<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Polymeric surfactants เช่น Poloxamer 188 (Pluronic F-68)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::38",
+      "itemNo": "21",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[10] Primary Emulsifier ต่างจาก Secondary Emulsifier (Stabilizer) อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ 1. Primary Emulsifier (สารทำอิมัลชันแท้):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สามารถทำให้เกิดอิมัลชันได้ด้วยตัวเอง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ลดแรงตึงระหว่างผิว หรือสร้างฟิล์มหุ้มรอบหยดเฟสภายในโดยตรง เช่น Acacia, Surfactants, Purified Lecithin<br> <br> ▶ 2. Secondary Emulsifier / Emulsion Stabilizer (สารทำอิมัลชันเสริม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไม่สามารถทำให้เกิดอิมัลชันได้ดีเมื่อใช้เดี่ยวๆ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ส่งเสริมความคงตัว โดยการเพิ่มความหนืดของเฟสภายนอก (Thickener) หรือร่วมสร้างฟิล์มเชิงซ้อนที่ผิวประจัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตัวอย่าง: Tragacanth (ใช้เสริม Acacia), Cetyl alcohol, Stearyl alcohol, Carbomer, Methylcellulose",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::39",
+      "itemNo": "22",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[11] เปรียบเทียบข้อดี-ข้อจำกัดระหว่าง Acacia และ Tragacanth ในตำรับอิมัลชัน?",
+      "questionImage": "",
+      "answer": "▶ 1. Acacia <br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดี: สารทำอิมัลชันแท้ที่ดีที่สุดสำหรับยาน้ำรับประทาน รสชาติดี ปลอดภัย ไม่เป็นพิษ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อจำกัด: ความหนืดต่ำมาก เกิด Creaming ได้ง่าย และเหนียวเหนอะหนะจึงไม่นิยมใช้ในยาทาภายนอก<br> <br> ▶ 2. Tragacanth:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดี: ให้ความหนืดสูงกว่า Acacia ประมาณ 10 เท่า ใช้ได้ทั้งยาน้ำรับประทานและยาทาภายนอก นิยมใช้เป็น Secondary EA ร่วมกับ Acacia เพื่อป้องกัน Creaming<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อจำกัด: หากใช้เดี่ยวๆ จะได้หยดอิมัลชันที่ค่อนข้างหยาบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::40",
+      "itemNo": "23",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[12] Cellulose Derivatives (MC, Na CMC, HPMC) มีจุดเด่นเหนือกว่า Natural Gums อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ จุดเด่นของ Cellulose Derivatives:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ความบริสุทธิ์สม่ำเสมอ: เป็นสารกึ่งสังเคราะห์ (Semi-synthetic) คุณภาพคงที่ในทุกล็อตผลิต<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ทนทานต่อสภาวะกรด-ด่าง: ไม่ตกตะกอนง่ายในช่วง pH กว้าง และทนต่อ Electrolytes ได้ดีกว่า Acacia<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. ไม่เป็นแหล่งอาหารของจุลินทรีย์: โอกาสบูดเสียหรือขึ้นราน้อยกว่า Natural gums อย่างมาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารกลุ่มไม่มีประจุ (Non-ionic เช่น MC, HPMC): เข้ากันได้กับสารอื่นหลากหลาย ไม่เกิดอันตรกิริยากับประจุตรงข้าม<br> ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::41",
+      "itemNo": "24",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[14] Phospholipids (Lecithin) มีคุณสมบัติเด่นอย่างไร และทำไมจึงเป็นสารหลักใน IV Fat Emulsion?",
+      "questionImage": "",
+      "answer": "▶ คุณสมบัติเด่นของ Lecithin (Phosphatidylcholine):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารจากธรรมชาติ สกัดได้จากไข่แดง (Egg yolk) หรือถั่วเหลือง (Soybean)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารลดแรงตึงผิวชนิด Amphoteric (Zwitterion) มีทั้งขั้วบวกและลบในโมเลกุล ปลอดภัย ไม่ระคายเคือง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ย่อยสลายได้ทางชีวภาพ (Biodegradable) และร่างกายนำไปเผาผลาญในกระบวนการทางสรีรวิทยาได้ตามปกติ<br> <br> ▶ เหตุผลที่ได้รับเลือกในยาฉีดทางหลอดเลือดดำ (IV Fat Emulsion):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารทำอิมัลชันที่ผ่านการรับรองจาก US FDA ให้ใช้ฉีดเข้าหลอดเลือดดำได้<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ให้หยดไขมันขนาดเล็กสม่ำเสมอ (&lt; 0.5 ไมโครเมตร) ไม่ทำให้เม็ดเลือดแตก (Non-hemolytic)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::42",
+      "itemNo": "25",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[15] Pickering Emulsion คืออะไร มีสารตัวอย่างอะไรบ้าง และชนิดของอิมัลชันขึ้นกับอะไร?",
+      "questionImage": "",
+      "answer": "▶ Pickering Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>อิมัลชันที่ทำให้คงตัวด้วย &quot;ผงของแข็งขนาดเล็กละเอียดมาก&quot; (Finely divided solids) โดยไม่มีสารลดแรงตึงผิว (Surfactant-free emulsion)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลไก: ผงของแข็งไปเรียงตัวที่ผิวประจัน กลายเป็น Mechanical barrier แข็งแกร่งขวางการรวมตัว<br> <br> ▶ ชนิดของอิมัลชันขึ้นกับมุมสัมผัส (Contact angle: θ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผงของแข็งที่ชอบน้ำ (Hydrophilic, มุมสัมผัส θ &lt; 90°) ➔ ให้ O/W emulsion<br>  ✦ ตัวอย่าง: Magnesium hydroxide, Aluminum hydroxide, Bentonite, Veegum, Kaolin<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผงของแข็งที่ชอบน้ำมัน (Lipophilic, มุมสัมผัส θ &gt; 90°) ➔ ให้ W/O emulsion<br>  ✦ ตัวอย่าง: Carbon black, Talc, Hydrophobic silica",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::43",
+      "itemNo": "26",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[16] เปรียบเทียบสบู่โลหะประจุเดี่ยว (Monovalent soaps) กับสบู่โลหะประจุคู่ (Polyvalent soaps)?",
+      "questionImage": "",
+      "answer": "▶ 1. Monovalent Soaps (สบู่ประจุเดี่ยว):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากกรดไขมันทำปฏิกิริยากับเบสประจุเดี่ยว (Na+, K+, Triethanolamine [TEA]) เช่น Sodium stearate, Potassium oleate<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W emulsion (เนื่องจากชอบน้ำมากกว่า)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ล้างน้ำออกง่าย pH เป็นด่าง ไม่ทนต่อกรด<br> <br> ▶ 2. Polyvalent / Metallic Soaps (สบู่ประจุคู่หรือหลายประจุ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากกรดไขมันทำปฏิกิริยากับเบสประจุคู่ (Ca2+, Mg2+, Zn2+, Al3+) เช่น Calcium oleate, Zinc stearate<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: W/O emulsion (เนื่องจากชอบน้ำมันมากกว่า)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ทนน้ำ ไม่ลอกหลุดง่าย นิยมในยาทาแผลไฟไหม้ ครีมกันน้ำ (Water-resistant creams)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::44",
+      "itemNo": "27",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[17] Non-ionic Surfactants กลุ่ม Spans และ Tweens ต่างกันอย่างไรทั้งชื่อเคมีและชนิดอิมัลชันที่ได้?",
+      "questionImage": "",
+      "answer": "▶ 1. กลุ่ม Spans (Sorbitan Fatty Acid Esters):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ชอบน้ำมัน (Lipophilic), ค่า HLB ต่ำ (1.8 - 8.6)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: W/O emulsifier (เช่น Span 20, Span 60, Span 80)<br> <br> ▶ 2. กลุ่ม Tweens / Polysorbates (Polyoxyethylene Sorbitan Esters):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ชอบน้ำ (Hydrophilic), ค่า HLB สูง (9.6 - 16.7)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W emulsifier (เช่น Tween 20, Tween 60, Tween 80)<br> <br> ✦ ข้อดีร่วมกัน: ปลอดภัย ไม่ระคายเคือง ไม่แตกตัวเป็นไอออน ทนต่อการเปลี่ยนแปลง pH และเกลือได้ดีเยี่ยม",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::45",
+      "itemNo": "28",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[21] เหตุใดการใช้ Mixed Emulsifiers (เช่น Tween คู่กับ Span) จึงให้ผลดีกว่าการใช้ Surfactant เดี่ยว?",
+      "questionImage": "",
+      "answer": "▶ ประโยชน์ของการใช้ Mixed Emulsifiers:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. เกิด Complex Film ที่แน่นหนา: ส่วนชอบน้ำมันของ Span และ Tween จะแทรกสลับกันที่รอยต่อ ทำให้อนุภาคเรียงตัวชิดกันอย่างแน่นหนา (Rigid &amp; tightly packed film)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ลดแรงตึงผิวประจันได้ต่ำกว่าการใช้ตัวเดียวเดี่ยวๆ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. เกิดชั้น Liquid crystalline lamellar layers ที่ช่วยเสริมความคงตัว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. ป้องกันการแพร่ออก (Desorption) ของสารทำอิมัลชันออกจากผิวประจัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>5. ปรับค่าความหนืดและความคงตัวต่ออุณหภูมิและการเติมเกลือได้ดีกว่า",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::46",
+      "itemNo": "29",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[23] สัดส่วน Primary Emulsion (Oil : Water : Gum) ของน้ำมันประเภท Fixed oil, Mineral oil และ Volatile oil คือเท่าใด?",
+      "questionImage": "",
+      "answer": "▶ สัดส่วนทองคำ Primary Emulsion (น้ำมัน : น้ำ : กัม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Fixed Vegetable Oils (เช่น Castor oil, Almond oil, Cod liver oil): 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Mineral Oil (Liquid Paraffin): 3 : 2 : 1 หรือ 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. Volatile Oils / Essential Oils (เช่น Peppermint oil, Turpentine oil): 2 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. Oleoresin: 1 : 2 : 1<br> <br> ✦ ข้อสังเกต: ปริมาณ Gum จะแปรผันตามพื้นที่ผิวและความยากง่ายในการกระจายตัวของน้ำมัน ยิ่งน้ำมันหนืดต่ำหรือระเหยง่ายต้องใช้กัมสัดส่วนสูงขึ้น",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::47",
+      "itemNo": "30",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[24] อธิบายขั้นตอนและเทคนิคสำคัญของ Dry Gum Method (Continental Method)?",
+      "questionImage": "",
+      "answer": "▶ ขั้นตอนของ Dry Gum Method:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ใช้โกรกและสากที่ แห้งสนิท 100% บดผสมผง Acacia กับ น้ำมัน ทั้งหมดในโกรกจนผงกระจายตัวทั่ว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. เติมน้ำส่วน Primary Emulsion ทั้งหมดในคราวเดียว (รวดเดียว ห้ามแบ่งเติม)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. บดอย่างเร็ว แรง และสม่ำเสมอใน ทิศทางเดียวตลอด ด้วยแรงเหวี่ยง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สังเกตเมื่อเกิด Primary Emulsion สมบูรณ์:<br>  ✦ เกิดเสียงดังคลิก/เปรี๊ยะ (Clicking sound) ชัดเจน<br>  ✦ เนื้อตำรับข้นเหนียวและเปลี่ยนเป็นสีขาวขุ่นทึบ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>5. เติมสารอื่นๆ ที่ละลายน้ำหรือเจือจางน้ำแล้วลงไปทีละน้อย บดปรับปริมาตรจนครบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::48",
+      "itemNo": "31",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[25] อธิบายขั้นตอน Wet Gum Method (English Method) และปรากฏการณ์ &quot;Ropy&quot; พร้อมวิธีแก้ไข?",
+      "questionImage": "",
+      "answer": "▶ ขั้นตอนของ Wet Gum Method:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. บดผง Acacia กับน้ำส่วน Primary Emulsion จนได้เนื้อ Mucilage เนียนพองตัวเต็มที่<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ค่อยๆ รินน้ำมันลงตรงกลาง ทีละน้อย (Portion-wise) บดให้เข้ากันเป็นเนื้อเดียวก่อนเติมส่วนต่อไป<br> <br> ▶ ปรากฏการณ์ &quot;Ropy&quot; (ข้อสอบออกบ่อย):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ลักษณะ: อิมัลชันข้นเหนียวจัด เนื้อขาดๆ หรือผิวด้าน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สาเหตุ: หยดน้ำมันแตกตัวละเอียดมากจนพื้นที่ผิวสูงเกินไป ทำให้อิมัลชันขาดน้ำหล่อเลี้ยง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>วิธีแก้ไข: หยุดบดทันที ➔ เติมน้ำลงไปเล็กน้อย (2-3 หยด) แล้วบดต่อ เนื้ออิมัลชันจะกลับมาเนียนนุ่มทันที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::49",
+      "itemNo": "32",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[30] Creaming คืออะไร มีกี่แบบ และแตกต่างจาก Coalescence อย่างไรในแง่การคืนสภาพ?",
+      "questionImage": "",
+      "answer": "▶ Creaming:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การเคลื่อนที่แยกชั้นของหยดเฟสภายในตามแรงโน้มถ่วง (ความหนาแน่นต่างกัน)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Upward Creaming: หยดน้ำมันลอยขึ้นด้านบน (พบบ่อยใน O/W เพราะน้ำมันเบากว่าน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Downward Creaming (Sedimentation): หยดจมลงด้านล่าง (พบบ่อยใน W/O หรือน้ำมันหนักกว่าน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การคืนสภาพ: ผันกลับได้ (Reversible) โดยการเขย่าขวดเบาๆ เพราะฟิล์มหุ้มหยดยังคงสมบูรณ์<br> <br> ▶ จุดต่างจาก Coalescence / Breaking:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Coalescence ฟิล์ม interfacial แตกทำลาย หยดน้ำมันหลอมรวมเป็นเนื้อเดียวกันอย่างถาวร ผันกลับไม่ได้ (Irreversible) เขย่าอย่างไรก็ไม่รวมตัว ต้องทิ้งตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::50",
+      "itemNo": "33",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[32] Flocculation ในอิมัลชันเกิดจากอะไร และส่งผลดีหรือผลเสียต่อตำรับอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ สาเหตุการเกิด Flocculation:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หยดอนุภาคเคลื่อนที่เข้ามาเกาะกลุ่มกันหลวมๆ โดยยังมีชั้นฟิล์มกั้นอยู่ ไม่ได้รวมเนื้อกัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในทางทฤษฎี DLVO เกิดขึ้นเมื่ออนุภาคตกอยู่ในหลุมพลังงานดึงดูดขั้นที่สอง (Secondary minimum)<br> <br> ▶ ผลต่อตำรับ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผลเสีย: การเกาะกลุ่มทำให้ขนาดกลุ่มก้อน (Cluster size) ใหญ่ขึ้น ส่งผลให้อัตราเร็วในการเกิด Creaming เร็วขึ้นอย่างมาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผลดี/การคืนสภาพ: อนุภาคไม่หลอมรวมกัน (No coalescence) สามารถเขย่าให้กระจายตัวกลับเป็นเนื้อเดียวกันได้ง่าย (Reversible)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::51",
+      "itemNo": "34",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[33] Phase Inversion คืออะไร มีสาเหตุเกิดจากปัจจัยใดได้บ้าง?",
+      "questionImage": "",
+      "answer": "▶ Phase Inversion (การกลับเฟส):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปรากฏการณ์ที่ชนิดของอิมัลชันพลิกกลับขั้ว เช่น จาก O/W กลายเป็น W/O หรือกลับกัน<br> <br> ▶ ปัจจัยที่ทำให้เกิด Phase Inversion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. อุณหภูมิเปลี่ยนแปลงผ่าน Phase Inversion Temperature (PIT): การเพิ่มอุณหภูมิทำให้ Non-ionic surfactant สูญเสีย Hydrogen bond กับน้ำ กลายเป็นชอบน้ำมันมากขึ้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. การเติม Electrolyte ที่เปลี่ยนประจุสบู่: เช่น เติม CaCl2 ลงใน O/W emulsion ที่ใช้ Sodium stearate สบู่จะเปลี่ยนเป็น Calcium stearate กลายเป็น W/O ทันที<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สัดส่วนเฟสภายในเกินจุดวิกฤต (Critical Phase Volume Ratio): หากปริมาตรเฟสภายในเกิน 74% หยดอนุภาคจะอัดแน่นจนระบบถูกบีบให้กลับเฟส",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::52",
+      "itemNo": "35",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[36] อธิบายหลักการและการแปลผล Dilution Test และ Dye Solubility Test ในการทดสอบชนิดอิมัลชัน?",
+      "questionImage": "",
+      "answer": "▶ 1. Dilution Test (การทดสอบการเจือจาง):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลักการ: อิมัลชันจะเจือจางเข้ากันได้เป็นเนื้อเดียวกับของเหลวที่เป็น External phase เท่านั้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การแปลผล: หยดน้ำลงไปแล้วผสมกลืนเนียน = O/W emulsion (ถ้าหยดน้ำมันจะแยกชั้น) / ในทางกลับกัน ถ้าหยดน้ำมันแล้วผสมเนียน = W/O emulsion<br> <br> ▶ 2. Dye Solubility Test (การทดสอบด้วยสีย้อม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สีย้อมละลายน้ำ (Water-soluble dye เช่น Amaranth, Methylene blue): กระจายสีสม่ำเสมอทั่วตำรับ = O/W / ถ้ารวมตัวเป็นหยดสี = W/O<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สีย้อมละลายน้ำมัน (Oil-soluble dye เช่น Sudan III, Scarlet red): กระจายสีสม่ำเสมอทั่วตำรับ = W/O / ถ้ารวมตัวเป็นหยดสี = O/W",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::53",
+      "itemNo": "36",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[39] พฤติกรรมการไหล (Rheological properties) ในอิมัลชันที่ดีควรเป็นแบบใด และมีผลต่อการใช้งานอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ พฤติกรรมการไหลที่ต้องการ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ควรมีการไหลแบบ Non-Newtonian Flow โดยเฉพาะแบบ Pseudoplastic ร่วมกับ Thixotropy<br> <br> ▶ ผลดีต่อการใช้งาน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในสภาวะตั้งนิ่ง: มีความหนืดสูง ป้องกันไม่ให้อนุภาคเคลื่อนที่แยกชั้น (ลด Creaming)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อออกแรงเขย่าหรือบีบหลอด (Shear stress): ความหนืดจะลดลงอย่างรวดเร็ว ทำให้เทยาออกจากขวดหรือบีบยาครีมได้ง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อทาลงบนผิวหนัง: เกลี่ยง่าย เรียบเนียน ไม่เหนอะหนะ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อหยุดให้แรง: ความหนืดจะค่อยๆ คืนกลับมาอย่างช้าๆ (Thixotropic recovery)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::54",
+      "itemNo": "37",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[41] ข้อกำหนดมาตรฐานที่เคร่งครัดของ IV Fat Emulsion (เช่น Intralipid®) ตาม USP มีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "▶ ข้อกำหนดมาตรฐาน IV Fat Emulsion (USP &lt;729&gt;):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ชนิดของอิมัลชัน: ต้องเป็น O/W emulsion เท่านั้น (ห้ามฉีด W/O เข้าหลอดเลือดดำเด็ดขาด เพราะทำให้เกิด Fat embolism ปิดกั้นการไหลเวียนเลือด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ขนาดหยดไขมันเฉลี่ย (Mean droplet size): ต้องน้อยกว่า 0.5 ไมโครเมตร<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. ปริมาณหยดขนาดใหญ่ (PFAT5): ปริมาณหยดไขมันขนาดเกิน 5 ไมโครเมตร ต้องมีไม่เกิน 0.05% เพื่อไม่ให้อุดตันหลอดเลือดฝอยปอด (Pulmonary capillaries)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารช่วยปรับความดันออสโมติก: ต้องใช้น้ำตาลกลีเซอรอล (Glycerol 2.5%) ปรับให้ Isotonic <b style=\"color:#dc2626;\">ห้ามใช้</b> Electrolytes ปริมาณสูงเพราะบดบังประจุทำให้ไขมันแตกตัว",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::55",
+      "itemNo": "38",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[42] ฉลากยาช่วย (Auxiliary Labels) และข้อแนะนำในการเลือกภาชนะบรรจุอิมัลชันมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "▶ ฉลากช่วยบังคับที่ขาดไม่ได้:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. &quot;เขย่าขวดก่อนใช้ยาทุกครั้ง&quot; (SHAKE WELL BEFORE USE): สำคัญที่สุด เพื่อกระจายเฟสภายในให้สม่ำเสมอหากเกิด Creaming เล็กน้อย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. &quot;ยาใช้ภายนอก ห้ามรับประทาน&quot; (FOR EXTERNAL USE ONLY): ติดเด่นชัดด้วยตัวอักษรสีแดงสำหรับยาทา ครีม โลชัน<br> <br> ▶ การเลือกภาชนะบรรจุ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ยาน้ำรับประทาน: บรรจุในขวดแก้วหรือพลาสติกปากกว้างพอสมควร (Wide-mouth bottle) เพื่อให้เทยาที่มีความหนืดได้สะดวก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลีกเลี่ยงขวดทรงสูงแคบเพราะเทยาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ยาภายนอก: บรรจุในหลอดบีบ (Collapsible tube) หรือขวดหัวปั๊ม เพื่อป้องกันการปนเปื้อน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::56",
+      "itemNo": "39",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[43] Beyond-Use Date (BUD) สำหรับตำรับอิมัลชันที่ปรุงเฉพาะราย (Extemporaneous Compounding) ตาม USP กำหนดไว้อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ กำหนดอายุการใช้งาน (BUD) ตาม USP Compounding Standards:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Water-containing Oral Formulations (ยาน้ำอิมัลชันรับประทานที่มีน้ำในตำรับ):<br>  ✦ กำหนด BUD ไม่เกิน 14 วัน<br>  ✦ ต้องเก็บในตู้เย็น (Controlled Cold Temperature 2 - 8 °C) เท่านั้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Water-containing Topical / Dermal Formulations (ยาครีมหรือโลชันทาภายนอกที่มีน้ำ):<br>  ✦ กำหนด BUD ไม่เกิน 30 วัน<br>  ✦ เก็บที่อุณหภูมิห้องควบคุม (Controlled Room Temperature 20 - 25 °C)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::57",
+      "itemNo": "40",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[44] เทคนิคการเติมตัวยาสำคัญ (Active Ingredients) ลงในตำรับอิมัลชันแต่ละประเภททำอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ เทคนิคการเติมตัวยาสำคัญตามคุณสมบัติ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. สารทนความร้อนและละลายได้: ละลายลงในเฟสน้ำหรือเฟสน้ำมันโดยตรงตั้งแต่ก่อนให้ความร้อน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ของเหลวระเหยง่ายหรือสารไวความร้อน (Volatile oils, Fragrance): เติมลงในตำรับหลังจากกวนอิมัลชันจนอุณหภูมิลดลงต่ำกว่า 40 °C<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สารของแข็งที่ละลายได้แต่ไม่ทนความร้อน: ละลายในน้ำปริมาณเล็กน้อย แล้วค่อยๆ บดผสมเข้ากับอิมัลชันที่เย็นตัวแล้ว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารของแข็งที่ไม่ละลาย (Insoluble solids): ต้องบดลดขนาดผงยาให้ละเอียด (Levigation) ร่วมกับอิมัลชันเล็กน้อยบนแผ่นกระจกหรือในโกรกก่อนผสมรวม",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::58",
+      "itemNo": "41",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 1: Liquid Paraffin Emulsion HF 2542]<br> Rx<br>  Liquid paraffin 50.0 mL<br>  Acacia 7.5 g<br>  Tragacanth 1.0 g<br>  Glycerin 10.0 mL<br>  Citric acid 0.05 g<br>  Sodium chloride 0.30 g<br>  Paraben concentrate 2.0 mL<br>  Vanillin tincture 0.4 mL<br>  Purified water to 100.0 mL<br> <br> จงระบุ: 1. ชนิดของอิมัลชัน 2. บทบาทหน้าที่ของสารแต่ละตัว 3. วิเคราะห์สัดส่วน Primary Emulsion ที่ใช้จริงว่าสอดคล้องกับทฤษฎีอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: O/W Emulsion (ยาน้ำรับประทาน)<br> <br> ▶ 2. บทบาทหน้าที่ของสารแต่ละตัว:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Liquid paraffin: ตัวยาสำคัญ (Active ingredient / Lubricating cathartic ยาระบายหล่อลื่น)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Acacia: สารทำอิมัลชันหลัก (Primary emulsifier) ให้ฟิล์ม Multimolecular film หุ้มหยดน้ำมัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Tragacanth: สารทำอิมัลชันเสริม (Secondary emulsifier / Thickener) เพิ่มความหนืด ลดการเกิด Creaming<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Glycerin: สารให้ความชื้นและรสหวาน (Sweetener / Viscosity enhancer)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Citric acid: สารปรับ pH (Acidifying agent / Buffer) ให้สารกันเสียพาราเบนออกฤทธิ์ได้ดี<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Sodium chloride: สารปรับสมดุลและลดแรงผลักประจุส่วนเกินอย่างพอเหมาะ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Paraben concentrate: สารกันเสียต้านจุลินทรีย์ (Antimicrobial preservative)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Vanillin tincture: สารแต่งกลิ่นรส (Flavoring agent) กลบกลิ่นน้ำมัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Purified water: กระสายยาเฟสภายนอก (Continuous phase / Vehicle)<br> <br> ▶ 3. วิเคราะห์สัดส่วน Primary Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตามทฤษฎี Mineral oil ใช้ O : W : G = 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปริมาณกัมรวม = Acacia (7.5 g) + Tragacanth (1.0 g) = 8.5 g<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>น้ำมัน 50 mL คิดกัมตามทฤษฎีต้องใช้ 12.5 g แต่ตำรับนี้ใช้กัม 8.5 g และคำนวณน้ำส่วนทำ Primary = (7.5 + 1) × 2 = 17 mL<br>  ✦ จุดสำคัญ: การมี Tragacanth ช่วยเสริมความหนืดสูงมาก ทำให้สามารถลดสัดส่วนกัม Acacia ลงได้โดยที่ตำรับยังคงตัวดี",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::59",
+      "itemNo": "42",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 2: Calamine Liniment / Lime Water Soap]<br> Rx<br>  Calamine 3 g<br>  Zinc oxide 2 g<br>  Olive oil 30 mL<br>  Lime water (Calcium hydroxide solution) 30 mL<br> <br> จงระบุ: 1. ชนิดของอิมัลชันที่เกิดขึ้น 2. สารทำอิมัลชันในตำรับนี้คืออะไร เกิดขึ้นได้อย่างไร 3. ข้อบ่งใช้และคุณสมบัติเด่นของตำรับ?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: W/O Emulsion (Water-in-Oil)<br> <br> ▶ 2. การเกิดสารทำอิมัลชัน (In-Situ Soap Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันไม่ได้เติมลงไปโดยตรง แต่เกิดจากปฏิกิริยาสดขณะผสม (In-situ soap)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปฏิกิริยา: กรดไขมันอิสระ Oleic acid (ใน Olive oil) ทำปฏิกิริยากับ Calcium hydroxide (Ca(OH)2 ใน Lime water)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ได้เกลือสบู่: แคลเซียมโอเลเอต (Calcium oleate) ซึ่งเป็น Metallic / Polyvalent soap (สบู่ประจุคู่ Ca2+)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตามกฎ Bancroft&#039;s Rule: สบู่ประจุคู่ชอบน้ำมันมากกว่าน้ำ จึงเหนี่ยวนำให้เกิดอิมัลชันชนิด W/O เสมอ!<br> <br> ▶ 3. หน้าที่ของสารอื่นๆ และคุณสมบัติเด่น:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Calamine + Zinc oxide: สารฝาดสมาน (Astringent), ลดการคันระคายเคือง (Antipruritic), ป้องกันความเปียกชื้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อบ่งใช้: ยาทาภายนอกบรรเทาผื่นคัน แผลไฟไหม้ น้ำร้อนลวก แผลกดทับ<br>  ✦ คุณสมบัติเด่น: เนื่องจากเป็น W/O จึงมีคุณสมบัติกันน้ำ (Water-resistant) เคลือบผิวได้ทนนาน ไม่ถูกล้างออกง่ายด้วยเหงื่อหรือน้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::60",
+      "itemNo": "43",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 3: Topical Lotion (Tween 80 &amp; Span 80 / Beaker Method)]<br> Rx<br>  Mineral oil 35 %<br>  Lanolin 1 %<br>  Cetyl alcohol 1 %<br>  Span 80 1.9 %<br>  Tween 80 5.1 %<br>  Glycerin 5 %<br>  Paraben concentrate 1 %<br>  Purified water 50 %<br>  M.ft. Lotions 100 mL<br> <br> จงระบุ: 1. ตำรับนี้เป็นอิมัลชันชนิดใด เพราะเหตุใด (ชี้แจง 2 ปัจจัย) 2. แยกองค์ประกอบเข้า Oil Phase และ Water Phase 3. การควบคุมอุณหภูมิในการเตรียม Beaker Method?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: O/W Emulsion (Oil-in-Water)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ 1: สัดส่วนสารทำอิมัลชัน Tween 80 (HLB 15.0, ชอบน้ำ) มีถึง 5.1% ซึ่งมากกว่า Span 80 (HLB 4.3, 1.9%) อย่างมาก ทำให้ค่า HLB รวมค่อนไปทางสูง (~12) เหนี่ยวนำให้เกิด O/W<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ 2: ปริมาณเฟสน้ำ (Purified water 50% + Glycerin 5%) สูงกว่าเฟสน้ำมัน<br> <br> ▶ 2. การแยกเฟสสำหรับเตรียม:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Oil Phase: Mineral oil (35%), Lanolin (1%), Cetyl alcohol (1%), Span 80 (1.9%)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Water Phase: Tween 80 (5.1%), Glycerin (5%), Paraben concentrate (1%), Purified water (50%)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>บทบาท Cetyl alcohol &amp; Lanolin: ทำหน้าที่เป็น Secondary emulsifiers / Thickeners / Emollients ช่วยเสริมความคงตัว<br> <br> ▶ 3. การควบคุมอุณหภูมิ (Beaker Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลอม Oil phase ที่อุณหภูมิ 60 - 70 °C (จน Cetyl alcohol และ Lanolin ละลายหมด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>อุ่น Water phase ที่อุณหภูมิ 65 - 75 °C (ต้องสูงกว่าเฟสน้ำมัน 3 - 5 °C เสมอ เพื่อป้องกันสารกลุ่มแวกซ์จับเป็นก้อนแข็งขณะเทผสม)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ค่อยๆ เท Oil phase (เฟสภายใน) ลงใน Water phase (เฟสภายนอก) เป็นสายพร้อมคนผสมสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::61",
+      "itemNo": "44",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 4: Lipomul IV Fat Emulsion]<br> Rx<br>  Cottonseed oil 15 %<br>  Dextrose 4 %<br>  Poloxamer 188 0.3 %<br>  Lecithin 1.2 %<br>  Water for injection qs 100 mL<br> <br> จงระบุ: 1. ข้อกำหนดสำคัญที่สุดของยาฉีด IV Emulsion 2. บทบาทของ Lecithin และ Poloxamer 188 3. เหตุใดจึงใช้ Dextrose ในตำรับนี้แทนที่จะใช้ NaCl?",
+      "questionImage": "",
+      "answer": "▶ 1. ข้อกำหนดสำคัญที่สุดของ IV Fat Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ต้องเป็น O/W Emulsion เท่านั้น (ห้ามเป็น W/O เด็ดขาดเพราะทำให้เกิด Fat embolism ปิดกั้นหลอดเลือด เสียชีวิตทันที)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ขนาดหยดไขมันเฉลี่ยต้อง &lt; 0.5 ไมโครเมตร และไม่มีหยดขนาด &gt; 5 ไมโครเมตร (PFAT5 &lt; 0.05%) เพื่อไม่ให้อุดตันหลอดเลือดฝอยปอด<br> <br> ▶ 2. บทบาทของสารทำอิมัลชันคู่:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Lecithin (1.2%): Primary emulsifier สารลดแรงตึงผิวชนิด Amphoteric จากธรรมชาติ เข้ากับร่างกายได้ดีเยี่ยม ไม่ทำลายเม็ดเลือดแดง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Poloxamer 188 (Pluronic F-68, 0.3%): Co-emulsifier ให้ผล Steric stabilization ขวางไม่ให้อนุภาคชนกัน<br> <br> ▶ 3. เหตุผลที่ใช้ Dextrose (หรือ Glycerol) แทน NaCl:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ปรับความดันออสโมติกให้เป็น Isotonic (ป้องกันเม็ดเลือดแดงแตก Hemolysis)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>🚨 จุดตัดข้อสอบ: ห้ามใช้สารอิเล็กโทรไลต์อย่าง NaCl ปริมาณสูงเด็ดขาด! เพราะประจุ Na+ และ Cl- จะไปบดบังประจุ (Compress electrical double layer) ทำให้ค่า Zeta potential ลดลง ส่งผลให้อิมัลชันเกิด Flocculation และ Coalescence แยกชั้นทันที!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::62",
+      "itemNo": "45",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 5: Concentrated Peppermint Emulsion BP 1999]<br> Rx<br>  Peppermint oil 20 mL<br>  Polysorbate 20 (Tween 20) 1 mL<br>  Double-strength chloroform water 500 mL<br>  Purified water, freshly boiled and cooled to 1000 mL<br> <br> จงระบุ: 1. น้ำมันเปปเปอร์มิ้นต์จัดเป็นน้ำมันประเภทใด 2. วิธีการเตรียมที่เหมาะสมที่สุดในระดับ Extemporaneous คือวิธีใด 3. บทบาทของ Polysorbate 20 และ Double-strength chloroform water?",
+      "questionImage": "",
+      "answer": "▶ 1. ประเภทของน้ำมัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Peppermint oil จัดเป็น Volatile oil (น้ำมันหอมระเหย / น้ำมันระเหยง่าย ความหนืดต่ำ)<br> <br> ▶ 2. วิธีการเตรียมที่เหมาะสมที่สุด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Forbes Bottle Method (หรือเตรียมด้วยวิธีบดในขวดแห้งสนิท)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สัดส่วนทองคำหากใช้กัม Acacia: Oil : Water : Gum = 2 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ใช้ขวด: ป้องกันการระเหยสูญเสียตัวยาสำคัญและกลิ่นหอมออกสู่อากาศระหว่างบดในโกรก<br> <br> ▶ 3. บทบาทของสารในสูตรตำรับ BP:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Polysorbate 20 (Tween 20): สารลดแรงตึงผิวชนิด Non-ionic (HLB สูง 16.7) ทำหน้าที่เป็น O/W emulsifier และช่วยละลายน้ำมันหอมระเหย (Solubilizer) ทำให้ตำรับมีความคงตัวดีและหยดน้ำมันละเอียด<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Double-strength chloroform water: สารกันเสียต้านจุลินทรีย์ (Preservative) และช่วยแต่งรสหวานปร่าสดชื่น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Freshly boiled and cooled purified water: ใช้น้ำต้มสุกที่ทิ้งให้เย็นเพื่อไล่ออกซิเจนและกำจัดเชื้อจุลินทรีย์ ป้องกันการออกซิเดชันของน้ำมันหอมระเหย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::63",
+      "itemNo": "46",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 6: Liquid Paraffin Oral Emulsion BP 2010 (Auxiliary Method)]<br> Rx<br>  Liquid paraffin 500 mL<br>  Vanillin 500 mg<br>  Chloroform 2.5 mL<br>  Benzoic acid solution 20 mL<br>  Methylcellulose 20 20 g<br>  Saccharin sodium 50 mg<br>  Water qs 1000 mL<br> <br> จงระบุ: 1. สารทำอิมัลชันในตำรับนี้คือสารใด และมีข้อดีเหนือกว่า Acacia อย่างไร 2. ตำรับนี้เตรียมด้วยเทคนิคใด 3. คำแนะนำการใช้ยาทางคลินิกแก่ผู้ป่วย?",
+      "questionImage": "",
+      "answer": "▶ 1. สารทำอิมัลชันและข้อดี:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันคือ Methylcellulose 20 (Cellulose derivative, Semi-synthetic polymer)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดีเหนือกว่า Acacia:<br>  ✦ เป็นสารไม่มีประจุ (Non-ionic) ทนทานต่อการเปลี่ยนแปลง pH และอิเล็กโทรไลต์ได้ดีกว่า<br>  ✦ ไม่บูดเสียง่ายและไม่เป็นแหล่งเพาะพันธุ์ของเชื้อรา/แบคทีเรียเหมือนกัมธรรมชาติ<br>  ✦ ควบคุมความบริสุทธิ์และระดับความหนืดได้สม่ำเสมอกว่าในทุกล็อตผลิต<br> <br> ▶ 2. เทคนิคการเตรียม (Auxiliary Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เนื่องจาก Methylcellulose ไม่ได้ลดแรงตึงผิวโดยตรงเหมือน Surfactants แต่สร้าง Viscous protective film<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การเตรียมจึงต้องผสมให้เข้ากันก่อน แล้วนำไปผ่านเครื่องมือช่วยลดขนาด เช่น Homogenizer หรือ Colloid mill เพื่อบดรีดหยดน้ำมันให้แตกตัวละเอียดและคงตัว<br> <br> ▶ 3. คำแนะนำการใช้ยาทางคลินิก (Patient Counseling Pearls):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เขย่าขวดก่อนรินยาทุกครั้ง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ห้ามรับประทานก่อนนอนทันที (ให้รับประทานก่อนนอนอย่างน้อย 1-2 ชั่วโมง หรือตอนเช้า) เพื่อป้องกันการสำลักน้ำมันเข้าปอดจนเกิดโรคปอดอักเสบจากไขมัน (Lipoid pneumonia)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไม่ควรใช้ติดต่อกันเป็นเวลานานเกิน 1 สัปดาห์ เพราะจะขัดขวางการดูดซึมวิตามินที่ละลายในไขมัน (A, D, E, K)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::64",
+      "itemNo": "47",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 7: Triethanolamine Stearate Lotion (Amine Soap)]<br> Rx<br>  Menthol 0.04 g<br>  Stearic acid 2.40 g<br>  Cetyl alcohol 1.20 g<br>  Wool fat (Lanolin) 0.80 g<br>  Liquid petrolatum (Mineral oil) 4.00 g<br>  Triethanolamine (TEA) 1.20 mL<br>  Water 88.00 mL<br>  Perfume qs<br> <br> จงระบุ: 1. สารทำอิมัลชันหลักเกิดขึ้นจากปฏิกิริยาระหว่างสารใด และได้อิมัลชันชนิดใด 2. เหตุใดจึงใส่ Stearic acid เกินปริมาณสัดส่วนทำปฏิกิริยาพอดี?",
+      "questionImage": "",
+      "answer": "▶ 1. การเกิดสารทำอิมัลชัน (Amine Soap In-Situ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันเกิดจากปฏิกิริยาสะปอนนิฟิเคชันระหว่าง Stearic acid (ในเฟสน้ำมัน) กับ Triethanolamine (TEA ในเฟสน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ได้เกลือสบู่เอมีน: ไตรเอทานอลเอมีนสเตียเรต (Triethanolamine stearate)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W Emulsion (เนื่องจากเป็นสบู่ประจุเดี่ยว Monovalent amine soap ที่ละลายน้ำได้ดี และให้ pH อ่อนโยนประมาณ 7.5 - 8.0 ไม่ระคายเคืองผิวเท่าสบู่โซเดียม/โพแทสเซียม)<br> <br> ▶ 2. เหตุผลที่ใส่ Stearic acid มากเกินพอ (Excess Stearic Acid):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในตำรับมี Stearic acid ส่วนเกินที่ไม่ได้ทำปฏิกิริยากับ TEA<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กรดสเตียริกส่วนเกินนี้จะทำหน้าที่เป็น:<br>  ✦ สารเพิ่มความหนืด (Thickener &amp; Consistency agent) ช่วยให้โลชันข้นเนียน<br>  ✦ สารให้ความเหลือบมุข (Pearlescent effect) ทำให้เนื้อโลชันมีความแวววาว สวยงาม น่าใช้<br>  ✦ สารเคลือบผิวให้ความนุ่มชุ่มชื้น (Emollient) ร่วมกับ Cetyl alcohol และ Wool fat",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::65",
+      "itemNo": "48",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 8: Cetrimide Antiseptic Cream / Emulsifying Wax]<br> Rx<br>  Cetrimide 5 g<br>  Cetostearyl alcohol 50 g<br>  Liquid paraffin 500 g<br>  Purified water to 1000 g<br> <br> จงระบุ: 1. ชนิดของสารทำอิมัลชันและประจุไฟฟ้า 2. บทบาทหน้าที่ของ Cetostearyl alcohol 3. 🚨 ข้อห้ามใช้และสารที่เข้ากันไม่ได้เด็ดขาด (Incompatibility) ของตำรับนี้?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดและประจุของสารทำอิมัลชัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Cetrimide (Cetrimonium bromide): สารลดแรงตึงผิวชนิดประจุบวก (Cationic surfactant)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W Emulsion (มีคุณสมบัติเป็นทั้ง O/W emulsifier และยาฆ่าเชื้อแบคทีเรีย Antiseptic ในตัว)<br> <br> ▶ 2. บทบาทของ Cetostearyl alcohol:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่เป็น Non-ionic emulsion stabilizer และ Thickening agent<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อใช้ร่วมกับ Cetrimide จะเกิดเป็น Cetrimide Emulsifying Wax ก่อให้เกิด Complex viscoelastic film หุ้มหยดน้ำมัน ทำให้เนื้อครีมข้นเนียนและคงตัวสูง<br> <br> ▶ 3. 🚨 ข้อห้ามและสารที่เข้ากันไม่ได้เด็ดขาด (Fatal Incompatibilities):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ห้ามผสมกับสารที่มีประจุลบ (Anionic substances) เด็ดขาด: เช่น สบู่โซเดียม/โพแทสเซียม, Sodium lauryl sulfate (SLS), กัมธรรมชาติที่มีประจุลบ (Acacia, Tragacanth, Sodium alginate, Carbomer)<br>  ✦ ผลกระทบ: ประจุบวกของ Cetrimide จะจับกับประจุลบ เกิดการตกตะกอน (Insoluble complex) ทำให้สูญเสียฤทธิ์ฆ่าเชื้อและอิมัลชันแตกตัวทันที<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ข้อควรระวัง: ห้ามใช้กับดวงตาหรือเนื้อเยื่ออ่อนที่บอบบางเพราะสารประจุบวกระคายเคืองสูง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::66",
+      "itemNo": "49",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 1 - Slide 1 หน้า 15]<br> ข้อใด &quot;ไม่ใช่&quot; ประโยชน์ของ O/W Emulsion?<br> A. ใช้เตรียมยารับประทานได้<br> B. เพิ่มความคงตัวของตัวยาที่ละลายในน้ำมัน<br> C. ควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ<br> D. กลบกลิ่นรสของตัวยาที่ชอบน้ำมัน<br> E. ทุกข้อเป็นประโยชน์",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ C. ควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในอิมัลชันชนิด O/W นั้น &quot;น้ำเป็นเฟสภายนอก (Continuous / External phase)&quot;<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หากตัวยาละลายในน้ำ (Water-soluble drug) ตัวยาจะกระจายตัวอยู่อย่างอิสระในเฟสน้ำภายนอก เมื่อรับประทานหรือสัมผัสร่างกาย ยาจะถูกดูดซึมและปลดปล่อยออกมาทันที ไม่สามารถชะลอหรือควบคุมการปลดปล่อยได้!<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หากต้องการควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ ต้องใช้ระบบ W/O หรือ Multiple emulsion แบบ W/O/W (โดยกักเก็บตัวยาไว้ในหยดน้ำชั้นในสุด แล้วให้น้ำมันทำหน้าที่เป็นแผงกั้นชะลอการแพร่ออก)<br> <br> ▶ วิเคราะห์ตัวเลือกอื่นๆ (ซึ่งเป็นประโยชน์จริงของ O/W):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A: ถูกต้อง O/W เป็นชนิดเดียวที่เหมาะกับยาน้ำรับประทานเพราะไม่มันเลี่ยนและกลืนง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ B: ถูกต้อง ช่วยปกป้องตัวยาในน้ำมันจากการสัมผัสอากาศภายนอกโดยตรง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D: ถูกต้อง หยดน้ำมันที่มีกลิ่นรสแย่จะถูกเฟสน้ำภายนอกห่อหุ้มไว้ ทำให้ลิ้นสัมผัสเฉพาะรสหวาน/แต่งกลิ่นของเฟสน้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::67",
+      "itemNo": "50",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 2 - Slide 1 หน้า 30]<br> กลไกข้อใดที่สารทำอิมัลชัน &quot;ทุกชนิด&quot; ต้องทำให้เกิดขึ้นเพื่อให้เกิดอิมัลชันที่คงตัวดี?<br> A. ลดแรงตึงที่ผิวประจันระหว่างน้ำและน้ำมัน<br> B. เกิดฟิล์มที่ผิวประจันหุ้มรอบหยดเฟสภายใน<br> C. เกิดการกีดขวางเนื่องจากขนาดของสารทำอิมัลชัน (Steric effect)<br> D. เกิดแรงผลักทางไฟฟ้าระหว่างหยดเฟสภายใน (Electrostatic repulsion)<br> E. เพิ่มความข้นหนืดของอิมัลชัน",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. เกิดฟิล์มที่ผิวประจันหุ้มรอบหยดเฟสภายใน (Interfacial film formation)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลไกการเกิดฟิล์มกั้นทางกลที่ผิวรอยต่อ (Interfacial film / Mechanical barrier) เป็น &quot;กลไกสากลเพียงข้อเดียวที่สารทำอิมัลชันทุกประเภทต้องมี&quot; ไม่ว่าจะเป็น Monomolecular, Multimolecular หรือ Solid particle film เพื่อขัดขวางไม่ให้หยดอนุภาคเกิดการหลอมรวมตัวกัน (Coalescence)<br> <br> ▶ เหตุผลที่ตัวเลือกอื่นไม่ใช่สารทุกชนิด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A: ผิด เพราะสารกลุ่ม Hydrocolloids (Acacia, Gelatin) และ Finely divided solids แทบจะไม่ลดแรงตึงผิวประจันเลย (มีเฉพาะ Surfactants เท่านั้นที่ลดแรงตึงผิวเด่นชัด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ C: ผิด มีเฉพาะ Non-ionic surfactants สายยาวหรือ Polymers เท่านั้นที่ให้ Steric effect<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D: ผิด มีเฉพาะ Ionic surfactants หรือสารที่มีประจุเท่านั้น สารกลุ่ม Non-ionic ไม่มีแรงผลักทางไฟฟ้า<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ E: ผิด สารลดแรงตึงผิวโมเลกุลเล็กหลายตัวไม่ได้เพิ่มความหนืดของตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::68",
+      "itemNo": "51",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 3 - Slide 1 หน้า 63]<br> สารทำอิมัลชันในข้อใด &quot;ทนกรดได้น้อยที่สุด&quot; (สลายตัวง่ายที่สุดเมื่อเจอสภาวะกรด)?<br> A. Sodium stearate<br> B. Calcium stearate<br> C. Sorbitan monostearate<br> D. Triethanolamine stearate<br> E. Polyoxyethylene sorbitan monostearate",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ A. Sodium stearate (สบู่อัลคาไลประจุเดี่ยว)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Sodium stearate จัดเป็น Alkali metal soap (สบู่โลหะแอลคาไลประจุเดี่ยว) เมื่ออยู่ในสภาวะกรด (pH ต่ำ) ไอออน H+ ในกรดจะเข้าไปจับกับ Stearate ion ทันที ทำให้เปลี่ยนรูปกลับไปเป็น Free stearic acid (กรดไขมันอิสระที่ไม่ละลายน้ำและไม่มีฤทธิ์ลดแรงตึงผิว) ส่งผลให้อิมัลชันแตกตัวทันที จึงทนกรดได้ต่ำที่สุดในบรรดาตัวเลือกทั้งหมด!<br> <br> ▶ ลำดับความทนกรดของสารทำอิมัลชัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลุ่ม Non-ionic (ข้อ C: Span 60, ข้อ E: Tween 60) ➔ ทนกรดได้ดีที่สุด เพราะไม่มีประจุ ไม่แตกตัวเป็นไอออน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Amine soap (ข้อ D: Triethanolamine stearate) ➔ ทนกรดได้ปานกลาง (ทนกว่า Alkali soaps)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Metallic soap (ข้อ B: Calcium stearate) ➔ ทนกรดได้มากกว่าสบู่โซเดียม<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Alkali soap (ข้อ A: Sodium stearate) ➔ ไวต่อกรดมากที่สุด (ทนกรดน้อยที่สุด)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::69",
+      "itemNo": "52",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 4 - Slide 1 หน้า 64]<br> สารทำอิมัลชันในข้อใด &quot;เข้ากันไม่ได้กับสารที่มีประจุลบ&quot; (Incompatible with Anionic substances)?<br> A. Acacia<br> B. Cetrimide<br> C. Sodium stearate<br> D. Sorbitan monostearate<br> E. Polyoxyethylene sorbitan monostearate",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. Cetrimide (เซทริไมด์)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Cetrimide เป็นสารลดแรงตึงผิวกลุ่ม Cationic surfactant (Quaternary ammonium salt) ซึ่งแตกตัวให้ประจุบวก (+) ในสารละลาย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>🚨 Fatal Incompatibility: เมื่อนำสารประจุบวกมาเจอกับสารประจุลบ (Anionic substances เช่น สบู่, SLS, กัม Acacia/Tragacanth, Sodium alginate, Carbomer) ประจุบวกและลบจะดึงดูดกันทันที เกิดเป็นสารประกอบเชิงซ้อนที่ไม่ละลายน้ำและตกตะกอน (Precipitation / Insoluble complex) ทำให้สูญเสียฤทธิ์ฆ่าเชื้อและอิมัลชันแตกตัวทันที<br> <br> ▶ วิเคราะห์ตัวเลือกอื่น:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A (Acacia) &amp; ข้อ C (Sodium stearate): เป็นสารที่มีประจุลบ จึงเข้ากับสารประจุลบได้<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D (Sorbitan monostearate / Span) &amp; ข้อ E (Polysorbate / Tween): เป็นสารไม่มีประจุ (Non-ionic) เข้ากันได้กับสารเกือบทุกประจุ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::70",
+      "itemNo": "53",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 5 - Slide 1 หน้า 65]<br> สารทำอิมัลชันในข้อใด นิยมนำมาใช้ร่วมกับ &quot;High HLB Surfactant&quot; มากที่สุด เพื่อเสริมความคงตัวของอิมัลชัน?<br> A. Polysorbate<br> B. Fatty alcohol (เช่น Cetyl alcohol, Stearyl alcohol)<br> C. Sodium lauryl sulfate<br> D. Sodium stearate<br> E. Polyoxyethylene (21) stearyl ether",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. Fatty alcohol (เช่น Cetyl alcohol, Stearyl alcohol, Cetostearyl alcohol)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>High HLB Surfactant (เช่น Polysorbates, SLS, สบู่) จะชอบน้ำมาก มีส่วนหัวชอบน้ำขนาดใหญ่ เมื่ออยู่เดี่ยวๆ ฟิล์มที่ผิวรอยต่ออาจหลวมและถูกชะล้างหลุดง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การใส่ Fatty alcohol (ซึ่งมี HLB ต่ำ ชอบน้ำมันมาก มีสายไฮโดรคาร์บอนยาวและหัวขั้ว OH เล็ก) จะเข้าไปแทรกสลับระหว่างโมเลกุลของ High HLB Surfactant ที่ผิวรอยต่อ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ก่อให้เกิด &quot;Complex Condensed Interfacial Film&quot; ที่อัดแน่นและยืดหยุ่นสูง (Rigid &amp; tightly packed film) และสร้างชั้นผลึกเหลว (Liquid crystalline lamellar phase) พร้อมทั้งช่วยเพิ่มความหนืด (Viscosity builder) ทำให้ตำรับคงตัวสูงสุด นิยมใช้ในสูตรครีมและโลชันเกือบทุกชนิด!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::71",
+      "itemNo": "54",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz Slide 2 หน้า 42]<br> พิจารณาสูตรตำรับต่อไปนี้:<br> Rx<br>  Mineral oil 35 %<br>  Lanolin 1 %<br>  Cetyl alcohol 1 %<br>  Span 80 1.9 %<br>  Tween 80 5.1 %<br>  Glycerin 5 %<br>  Paraben concentrate 1 %<br>  Purified water 50 %<br>  M.ft. Lotions 100 mL<br> <br> ตำรับนี้จัดเป็นอิมัลชันชนิดใด เพราะเหตุใด?<br> A. W/O เพราะปริมาณเฟสน้ำมันมาก<br> B. W/O เพราะปริมาณ Span 80 มาก<br> C. O/W เพราะปริมาณเฟสน้ำมาก<br> D. O/W เพราะปริมาณ Tween 80 มาก",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ D. O/W เพราะปริมาณ Tween 80 มาก<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ (อาจารย์ดักจุดตาย!):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กฎของแบนครอฟต์ (Bancroft&#039;s Rule) ระบุชัดเจนว่า ชนิดของอิมัลชันขึ้นอยู่กับ &quot;คุณสมบัติของสารทำอิมัลชัน&quot; ไม่ได้ขึ้นกับปริมาตรของน้ำหรือน้ำมันเป็นหลัก!<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในตำรับนี้มีสารทำอิมัลชันผสมกัน 2 ชนิด:<br>  ✦ Tween 80 (ชอบน้ำ, High HLB = 15.0) มีปริมาณถึง 5.1%<br>  ✦ Span 80 (ชอบน้ำมัน, Low HLB = 4.3) มีปริมาณเพียง 1.9%<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อคำนวณ HLB รวมของสารทำอิมัลชันผสม:<br>  [(5.1 × 15.0) + (1.9 × 4.3)] / (5.1 + 1.9) = (76.5 + 8.17) / 7.0 = 12.09<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ค่า HLB รวมเท่ากับ 12.09 ซึ่งอยู่ในช่วง HLB 8 - 16 (O/W emulsifier) ทำให้สารทำอิมัลชันละลายในน้ำได้ดีกว่า จึงเหนี่ยวนำให้เกิด O/W Emulsion เสมอ!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::72",
+      "itemNo": "55",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz คำนวณ Slide 2 หน้า 19 &amp; 21: Required HLB ของน้ำมันผสม]<br> พิจารณาสูตรตำรับต่อไปนี้:<br> Rx<br>  Mineral oil (RHLB = 12) 35 %<br>  Lanolin (RHLB = 10) 1 %<br>  Cetyl alcohol (RHLB = 15) 1 %<br>  Emulsifiers 7 %<br>  Purified water 56 %<br>  M.ft. O/W emulsions 100 g<br> <br> ค่า Required HLB (RHLB) ที่เหมาะสมที่สุดของตำรับนี้คือข้อใด?<br> A. 10.50<br> B. 11.35<br> C. 12.03<br> D. 12.85<br> E. 13.50",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ C. 12.03<br> <br> ▶ ขั้นตอนการแสดงวิธีคิดอย่างละเอียด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. หาปริมาณรวมของเฟสน้ำมันทั้งหมด (Total Oil Phase):<br>  ✦ Mineral oil (35%) + Lanolin (1%) + Cetyl alcohol (1%) = 37% (หรือ 37 g ใน 100 g)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. หาสัดส่วนน้ำหนัก (Weight fraction) ของน้ำมันแต่ละชนิด:<br>  ✦ สัดส่วน Mineral oil = 35 / 37<br>  ✦ สัดส่วน Lanolin = 1 / 37<br>  ✦ สัดส่วน Cetyl alcohol = 1 / 37<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. คำนวณแบบถ่วงน้ำหนัก (Weight-averaged RHLB):<br>  ✦ RHLB รวม = (35/37 × 12) + (1/37 × 10) + (1/37 × 15)<br>  ✦ RHLB รวม = 11.35 + 0.27 + 0.41 = 12.03<br>  ✦ สรุป: เพื่อให้อิมัลชันตำรับนี้มีความคงตัวสูงสุด ต้องเลือกคู่สารทำอิมัลชันที่ผสมกันแล้วได้ค่า HLB เท่ากับ 12.03",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::73",
+      "itemNo": "56",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz เทคนิคตั้งตำรับ Slide 2 หน้า 30 &amp; 31: Primary Emulsion กรณีพิเศษ]<br> หากเภสัชกรต้องการเตรียม Primary Emulsion ของตำรับที่มี &quot;น้ำมันน้อยกว่า 20%&quot; (เช่น Calciferol solution 3%) หรือมี &quot;ตัวยาของแข็งละลายในน้ำมัน&quot; (เช่น Salol 2 g) ข้อใดกล่าวถูกต้องที่สุด?<br> A. ปริมาณน้ำมันน้อยกว่า 20% ให้เพิ่มปริมาณน้ำเป็น 2 เท่าทันที<br> B. ปริมาณน้ำมันน้อยกว่า 20% ให้เติม Bland oil (เช่น Arachis oil) เพิ่มจนสัดส่วนน้ำมันเพียงพอต่อการเกิด Primary emulsion<br> C. ตัวยาของแข็งละลายในน้ำมัน ให้ลดปริมาณกัม Acacia ลงครึ่งหนึ่งเพื่อป้องกันไม่ให้ตำรับเหนียวเกินไป<br> D. ตัวยาของแข็งละลายในน้ำมัน สามารถบดผสมกับน้ำโดยตรงได้โดยไม่ต้องใช้น้ำมันช่วย<br> E. ทั้งสองกรณีใช้สัดส่วน Oil:Water:Gum = 4:2:1 ตามปกติโดยไม่ต้องปรับสูตร",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. ปริมาณน้ำมันน้อยกว่า 20% ให้เติม Bland oil (เช่น Arachis oil) เพิ่มจนสัดส่วนน้ำมันเพียงพอต่อการเกิด Primary emulsion<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. กรณีน้ำมันน้อยกว่า 20% (Low Oil Content):<br>  ✦ หากปริมาณน้ำมันน้อยเกินไป หยดน้ำมันจะไม่สามารถอัดแน่นพอที่จะเกิด Primary Emulsion ที่เสถียรได้<br>  ✦ วิธีแก้ไขที่ถูกต้อง: ต้องเติมน้ำมันพืชที่ไม่มีฤทธิ์ทางยา (Bland oil เช่น Arachis oil หรือ Almond oil) เพิ่มเข้าไปในตำรับ เพื่อปรับให้ปริมาณน้ำมันรวมเพิ่มขึ้นจนเพียงพอต่อการฟอร์มตัว แล้วจึงคำนวณตามสัดส่วน Fixed oil (4 : 2 : 1)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. กรณีตัวยาของแข็งละลายในน้ำมัน (Salol 2 g):<br>  ✦ ข้อ C &amp; D ผิด เพราะต้องละลายตัวยาใน Bland oil ก่อน และต้อง &quot;บวกเพิ่มผง Acacia และน้ำขึ้นอีก 50% ของที่คำนวณได้&quot; (กฎ 4:3:1.5) เพื่อให้ฟิล์มแข็งแรงพอพยุงอนุภาคตัวยาไว้ได้โดยไม่แยกชั้น",
+      "answerImage": "",
+      "note": ""
+    }
+  ],
   "8. Biopharm & Drug Release": [],
   "9. Sterile & Special Forms": [],
   "10. Biotech Products": [
@@ -26001,7 +26801,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยโรคความดันโลหิตสูงจากการวัดในสถานพยาบาล (Office BP) คือเท่าใด?",
       "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
-      "answer": "SBP &gt;= 140 mmHg หรือ DBP &gt;= 90 mmHg (&gt;= 140/90 mmHg)<br> วัดถูกต้องอย่างน้อย 2 ครั้งในการตรวจ และตรวจซ้ำ 2-3 ครั้งต่างวาระกัน (เว้นแต่ความดันสูงวิกฤต &gt;= 180/110)",
+      "answer": "SBP &amp;gt;= 140 mmHg หรือ DBP &gt;= 90 mmHg (&gt;= 140/90 mmHg)<br> วัดถูกต้องอย่างน้อย 2 ครั้งในการตรวจ และตรวจซ้ำ 2-3 ครั้งต่างวาระกัน (เว้นแต่ความดันสูงวิกฤต &gt;= 180/110)",
       "answerImage": "",
       "note": ""
     },
@@ -26037,7 +26837,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "การตรวจคัดกรองภาวะความเสียหายต่ออวัยวะเป้าหมาย (TOD) จากความดันสูงมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "1. หัวใจ: ECG หรือ Echo ดู LVH 2. ไต: ค่า eGFR และ UACR ดู Microalbuminuria 3. ตา: ส่อง Fundoscopy 4. สมอง: ประเมินประวัติ TIA/Stroke",
+      "answer": "1. หัวใจ: ECG หรือ Echo ดู LVH <br>2. ไต: ค่า eGFR และ UACR ดู Microalbuminuria <br>3. ตา: ส่อง Fundoscopy <br>4. สมอง: ประเมินประวัติ TIA/Stroke",
       "answerImage": "",
       "note": ""
     },
@@ -26179,9 +26979,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Hypertension",
       "track": "Clinic",
-      "question": "ระบบเรนิน-แองจิโอเทนซิน-อัลโดสเตอโรน (RAAS) ส่งผลให้ความดันโลหิตสูงขึ้นผ่านกลไกใด?",
+      "question": "RAAS System ส่งผลให้ความดันโลหิตสูงขึ้นผ่านกลไกใด?",
       "questionImage": "",
-      "answer": "Angiotensin II ทำให้หลอดเลือดหดตัวโดยตรง และกระตุ้นต่อมหมวกไตให้หลั่ง Aldosterone ดูดกลับโซเดียมและน้ำที่ไต",
+      "answer": "Angiotensin II ทำให้หลอดเลือดหดตัวโดยตรง <br>และกระตุ้นต่อมหมวกไตให้หลั่ง Aldosterone ดูดกลับโซเดียมและน้ำที่ไต",
       "answerImage": "",
       "note": ""
     },
@@ -26263,7 +27063,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Hypertension",
       "track": "Clinic",
-      "question": "ในผู้ป่วยเบาหวานร่วมกับมีไข่ขาวในปัสสาวะ (Albuminuria) ยาตัวแรกที่ต้องเลือกใช้คือกลุ่มใด?",
+      "question": "ในผู้ป่วยเบาหวานร่วมกับมีโปรตีนในปัสสาวะ (Albuminuria) ยาตัวแรกที่ต้องเลือกใช้คือกลุ่มใด?",
       "questionImage": "",
       "answer": "ยากลุ่ม ACEIs หรือ ARBs<br> เนื่องจากมีฤทธิ์ขยายหลอดเลือดไตขาออก (Efferent arteriole) ลดความดันใน Glomerulus และชะลอไตเสื่อม",
       "answerImage": "",
@@ -26409,7 +27209,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ผลข้างเคียงต่อระบบเมแทบอลิซึมและเกลือแร่ของยาขับปัสสาวะ Thiazides มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "ทำให้เกลือแร่ต่ำ: Hypokalemia, Hyponatremia, Hypomagnesemia<br> ทำให้สารชีวเคมีสูง: Hyperuricemia (ระวังเกาต์), Hyperglycemia, และ Hypercalcemia",
+      "answer": "ทำให้เกลือแร่ต่ำ: Hypokalemia, Hyponatremia, Hypomagnesemia<br><br>ทำให้สารเคมีอื่น ๆ สูงHyperuricemia (ระวังเกาต์), Hyperglycemia, และ Hypercalcemia",
       "answerImage": "",
       "note": ""
     },
@@ -26525,11 +27325,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "2. Cardiovascular::47",
       "itemNo": "45",
       "group": "2. Cardiovascular",
-      "subTopic": "Hypertension",
+      "subTopic": "Dyslipidemia",
       "track": "Clinic",
-      "question": "ความดันโลหิตในเวลากลางคืนแบบ Non-Dipping Pattern จากการตรวจ ABPM มีความสำคัญอย่างไร?",
+      "question": "เกณฑ์การจำแนกระดับไขมันในเลือด (Lipid Profile) ปกติและผิดปกติทางคลินิกมีค่าตัวเลขอย่างไร?",
       "questionImage": "",
-      "answer": "ปกติเวลานอนความดันควรลดลง 10-20% หากลดลงน้อยกว่า 10% (Non-dipper) จะสัมพันธ์กับความเสี่ยงต่อโรคหลอดเลือดสมองและหัวใจตายสูงขึ้นมาก",
+      "answer": "TC &lt; 200, TG &lt; 150, HDL-C &gt; 40 (ชาย) หรือ &gt; 50 (หญิง), และ LDL-C &lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
       "answerImage": "",
       "note": ""
     },
@@ -26541,25 +27341,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์การจำแนกระดับไขมันในเลือด (Lipid Profile) ปกติและผิดปกติทางคลินิกมีค่าตัวเลขอย่างไร?",
       "questionImage": "",
-      "answer": "TC &lt; 200, TG &lt; 150, HDL-C &gt; 40 (ชาย) หรือ &gt; 50 (หญิง), และ LDL-C &lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
+      "answer": "TC &amp;lt; 200, <br>TG &amp;lt; 150, <br>HDL-C &amp;gt; 40 (ชาย) หรือ &amp;gt; 50 (หญิง), <br>และ LDL-C &amp;lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "2. Cardiovascular::49",
       "itemNo": "47",
-      "group": "2. Cardiovascular",
-      "subTopic": "Dyslipidemia",
-      "track": "Clinic",
-      "question": "สูตร Friedewald Equation ใช้คำนวณค่า LDL-C อย่างไร และมีข้อจำกัดห้ามใช้เมื่อใด?",
-      "questionImage": "",
-      "answer": "LDL-C = TC - HDL - (TG / 5)<br> <b style=\"color:#dc2626;\">ข้อห้ามใช้เด็ดขาด</b>: เมื่อระดับไตรกลีเซอไรด์ (TG) มากกว่า 400 mg/dL (&gt; 400 mg/dL) เพราะค่าที่คำนวณได้จะต่ำกว่าความเป็นจริงมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::50",
-      "itemNo": "48",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26570,8 +27358,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::51",
-      "itemNo": "49",
+      "id": "2. Cardiovascular::50",
+      "itemNo": "48",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26582,8 +27370,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::52",
-      "itemNo": "50",
+      "id": "2. Cardiovascular::51",
+      "itemNo": "49",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26594,8 +27382,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::53",
-      "itemNo": "51",
+      "id": "2. Cardiovascular::52",
+      "itemNo": "50",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26606,8 +27394,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::54",
-      "itemNo": "52",
+      "id": "2. Cardiovascular::53",
+      "itemNo": "51",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26618,8 +27406,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::55",
-      "itemNo": "53",
+      "id": "2. Cardiovascular::54",
+      "itemNo": "52",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26630,8 +27418,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::56",
-      "itemNo": "54",
+      "id": "2. Cardiovascular::55",
+      "itemNo": "53",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26642,32 +27430,20 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::57",
+      "id": "2. Cardiovascular::56",
       "itemNo": "55",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
       "question": "ยากลุ่มใดบ้างที่ส่งผลข้างเคียงทำให้ระดับไตรกลีเซอไรด์ในเลือดสูงขึ้นอย่างมีนัยสำคัญ?",
       "questionImage": "",
-      "answer": "ยากลุ่มเอสโตรเจนชนิดรับประทาน (Oral Estrogens), ยาสเตียรอยด์, ยารักษาเอชไอวีกลุ่ม PIs, และยากรดวิตามินเอ (Isotretinoin)",
+      "answer": "Oral Estrogens), ยาสเตียรอยด์, ยารักษาเอชไอวีกลุ่ม PIs, และยากรดวิตามินเอ (Isotretinoin)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::58",
-      "itemNo": "56",
-      "group": "2. Cardiovascular",
-      "subTopic": "Dyslipidemia",
-      "track": "Clinic",
-      "question": "การดื่มแอลกอฮอล์ปริมาณมากส่งผลต่อระบบไขมันในเลือดอย่างไร?",
-      "questionImage": "",
-      "answer": "กระตุ้นตับให้สังเคราะห์กรดไขมันและสร้าง VLDL เพิ่มขึ้นอย่างมาก ส่งผลให้ระดับไตรกลีเซอไรด์ในเลือดพุ่งสูงขึ้นอย่างรวดเร็ว",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::59",
-      "itemNo": "57",
+      "id": "2. Cardiovascular::57",
+      "itemNo": "55",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26678,8 +27454,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::60",
-      "itemNo": "58",
+      "id": "2. Cardiovascular::58",
+      "itemNo": "56",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26690,8 +27466,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::61",
-      "itemNo": "59",
+      "id": "2. Cardiovascular::59",
+      "itemNo": "57",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26702,8 +27478,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::62",
-      "itemNo": "60",
+      "id": "2. Cardiovascular::60",
+      "itemNo": "58",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26714,8 +27490,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::63",
-      "itemNo": "61",
+      "id": "2. Cardiovascular::61",
+      "itemNo": "59",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26726,8 +27502,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::64",
-      "itemNo": "62",
+      "id": "2. Cardiovascular::62",
+      "itemNo": "60",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26738,8 +27514,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::65",
-      "itemNo": "63",
+      "id": "2. Cardiovascular::63",
+      "itemNo": "61",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26750,8 +27526,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::66",
-      "itemNo": "64",
+      "id": "2. Cardiovascular::64",
+      "itemNo": "62",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26762,8 +27538,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::67",
-      "itemNo": "65",
+      "id": "2. Cardiovascular::65",
+      "itemNo": "63",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26774,20 +27550,20 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::68",
-      "itemNo": "66",
+      "id": "2. Cardiovascular::66",
+      "itemNo": "65",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
-      "question": "เกณฑ์การจำแนกระดับความเข้มข้นของยาสแตติน (Statin Intensity) กำหนดขนาดยาอย่างไร?",
+      "question": "กลุ่มผู้ป่วย 4 กลุ่มหลักที่ได้รับประโยชน์ชัดเจนจากยาสแตติน (Statin Benefit Groups) มีกลุ่มใดบ้าง?",
       "questionImage": "",
-      "answer": "High-Intensity (ลด LDL &gt;= 50%): Atorvastatin 40-80 mg หรือ Rosuvastatin 20-40 mg<br> Moderate-Intensity (ลด LDL 30-49%): Atorvastatin 10-20 mg หรือ Rosuvastatin 5-10 mg หรือ Simvastatin 20-40 mg",
+      "answer": "1. มีโรคหลอดเลือดหัวใจและสมองแล้ว (Clinical ASCVD)<br> 2. LDL-C &amp;gt;= 190 mg/dL <br>3. เบาหวานอายุ 40-75 ปี <br>4. ความเสี่ยง 10-year ASCVD &amp;gt;= 7.5%",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::69",
-      "itemNo": "67",
+      "id": "2. Cardiovascular::67",
+      "itemNo": "65",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26798,8 +27574,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::70",
-      "itemNo": "68",
+      "id": "2. Cardiovascular::68",
+      "itemNo": "66",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26810,8 +27586,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::71",
-      "itemNo": "69",
+      "id": "2. Cardiovascular::69",
+      "itemNo": "67",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26822,8 +27598,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::72",
-      "itemNo": "70",
+      "id": "2. Cardiovascular::70",
+      "itemNo": "68",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26834,8 +27610,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::73",
-      "itemNo": "71",
+      "id": "2. Cardiovascular::71",
+      "itemNo": "69",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26846,8 +27622,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::74",
-      "itemNo": "72",
+      "id": "2. Cardiovascular::72",
+      "itemNo": "70",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26858,8 +27634,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::75",
-      "itemNo": "73",
+      "id": "2. Cardiovascular::73",
+      "itemNo": "71",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26870,8 +27646,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::76",
-      "itemNo": "74",
+      "id": "2. Cardiovascular::74",
+      "itemNo": "72",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26882,8 +27658,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::77",
-      "itemNo": "75",
+      "id": "2. Cardiovascular::75",
+      "itemNo": "73",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26894,8 +27670,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::78",
-      "itemNo": "76",
+      "id": "2. Cardiovascular::76",
+      "itemNo": "74",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26906,8 +27682,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::79",
-      "itemNo": "77",
+      "id": "2. Cardiovascular::77",
+      "itemNo": "75",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26918,8 +27694,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::80",
-      "itemNo": "78",
+      "id": "2. Cardiovascular::78",
+      "itemNo": "76",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26930,8 +27706,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::81",
-      "itemNo": "79",
+      "id": "2. Cardiovascular::79",
+      "itemNo": "77",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26942,8 +27718,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::82",
-      "itemNo": "80",
+      "id": "2. Cardiovascular::80",
+      "itemNo": "78",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26954,8 +27730,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::83",
-      "itemNo": "81",
+      "id": "2. Cardiovascular::81",
+      "itemNo": "79",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26966,8 +27742,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::84",
-      "itemNo": "82",
+      "id": "2. Cardiovascular::82",
+      "itemNo": "80",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26978,8 +27754,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::85",
-      "itemNo": "83",
+      "id": "2. Cardiovascular::83",
+      "itemNo": "81",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -26990,8 +27766,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::86",
-      "itemNo": "84",
+      "id": "2. Cardiovascular::84",
+      "itemNo": "82",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -27002,8 +27778,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::87",
-      "itemNo": "85",
+      "id": "2. Cardiovascular::85",
+      "itemNo": "83",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -27014,8 +27790,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::88",
-      "itemNo": "86",
+      "id": "2. Cardiovascular::86",
+      "itemNo": "84",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -27026,8 +27802,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::89",
-      "itemNo": "87",
+      "id": "2. Cardiovascular::87",
+      "itemNo": "85",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -27038,8 +27814,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::90",
-      "itemNo": "88",
+      "id": "2. Cardiovascular::88",
+      "itemNo": "86",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -27050,8 +27826,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::91",
-      "itemNo": "89",
+      "id": "2. Cardiovascular::89",
+      "itemNo": "87",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -27062,14 +27838,38 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::92",
-      "itemNo": "90",
+      "id": "2. Cardiovascular::90",
+      "itemNo": "88",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
       "question": "แนวทางการจัดการเมื่อผู้ป่วยทนต่ออาการปวดเมื่อยกล้ามเนื้อจากยาสแตตินไม่ได้ (Statin Intolerance) คืออะไร?",
       "questionImage": "",
       "answer": "หยุดยาชั่วคราวให้หายปวด จากนั้นเริ่มใหม่ด้วยสแตตินตัวเดิมขนาดต่ำลง หรือเปลี่ยนเป็นสแตตินชนิดชอบน้ำ (Rosuvastatin/Pravastatin) หรือให้แบบวันเว้นวัน หรือสัปดาห์ละ 2-3 ครั้ง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "2. Cardiovascular::91",
+      "itemNo": "89",
+      "group": "2. Cardiovascular",
+      "subTopic": "Coronary Artery Disease",
+      "track": "Clinic",
+      "question": "กลุ่มอาการหลอดเลือดหัวใจเฉียบพลัน (ACS) จำแนกออกเป็นกี่ชนิดตามลักษณะทางคลินิกและ ECG?",
+      "questionImage": "",
+      "answer": "3 ชนิด: 1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "2. Cardiovascular::92",
+      "itemNo": "90",
+      "group": "2. Cardiovascular",
+      "subTopic": "Coronary Artery Disease",
+      "track": "Clinic",
+      "question": "สารบ่งชี้ทางชีวภาพ (Cardiac Biomarker) ตัวใดเป็นมาตรฐานสูงสุด (Gold Standard) ในการวินิจฉัยกล้ามเนื้อหัวใจตาย?",
+      "questionImage": "",
+      "answer": "Cardiac Troponin (cTnI หรือ cTnT) โดยเฉพาะ High-Sensitivity Troponin (hs-cTn)<br> มีความไวและความจำเพาะต่อเนื้อเยื่อกล้ามเนื้อหัวใจบาดเจ็บสูงสุด เริ่มขึ้นใน 2-3 ชม. และคงอยู่นาน 7-14 วัน",
       "answerImage": "",
       "note": ""
     },
@@ -27081,7 +27881,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "กลุ่มอาการหลอดเลือดหัวใจเฉียบพลัน (ACS) จำแนกออกเป็นกี่ชนิดตามลักษณะทางคลินิกและ ECG?",
       "questionImage": "",
-      "answer": "3 ชนิด: 1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
+      "answer": "3 ชนิด: <br>1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง)<br>2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง)<br>3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
       "answerImage": "",
       "note": ""
     },
@@ -27091,9 +27891,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
-      "question": "สารบ่งชี้ทางชีวภาพ (Cardiac Biomarker) ตัวใดเป็นมาตรฐานสูงสุด (Gold Standard) ในการวินิจฉัยกล้ามเนื้อหัวใจตาย?",
+      "question": "อาการแสดงของภาวะกล้ามเนื้อหัวใจขาดเลือดเฉียบพลันที่ไม่จำเพาะ (Atypical ACS) พบบ่อยในกลุ่มใดและมีอาการอย่างไร?",
       "questionImage": "",
-      "answer": "Cardiac Troponin (cTnI หรือ cTnT) โดยเฉพาะ High-Sensitivity Troponin (hs-cTn)<br> มีความไวและความจำเพาะต่อเนื้อเยื่อกล้ามเนื้อหัวใจบาดเจ็บสูงสุด เริ่มขึ้นใน 2-3 ชม. และคงอยู่นาน 7-14 วัน",
+      "answer": "พบบ่อยในผู้สูงอายุ หญิง เบาหวาน และโรคไต มักไม่มีอาการเจ็บแน่นหน้าอก (Silent Ischemia)<br> แต่มาด้วยเหนื่อยหอบ หายใจลำบากเฉียบพลัน เหงื่อแตก หน้ามืด หรือปวดแสบลิ้นปี่คล้ายโรคกระเพาะ",
       "answerImage": "",
       "note": ""
     },
@@ -27105,7 +27905,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ลักษณะอาการเจ็บหน้าอกแบบตรงแบบ (Typical Angina) ในโรคหลอดเลือดหัวใจเรื้อรังมีลักษณะอย่างไร?",
       "questionImage": "",
-      "answer": "1. แน่นตื้อเหมือนมีของหนักทับกึ่งกลางอก ร้าวไปกรามหรือแขนซ้าย 2. สัมพันธ์กับการออกแรงหรืออารมณ์ตึงเครียด 3. ทุเลาลงภายใน 5 นาทีเมื่อได้พักหรืออมยาใต้ลิ้น NTG",
+      "answer": "1. แน่นตื้อเหมือนมีของหนักทับกึ่งกลางอก ร้าวไปกรามหรือแขนซ้าย <br>2. สัมพันธ์กับการออกแรงหรืออารมณ์ตึงเครียด <br>3. ทุเลาลงภายใน 5 นาทีเมื่อได้พักหรืออมยาใต้ลิ้น NTG",
       "answerImage": "",
       "note": ""
     },
@@ -27115,9 +27915,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
-      "question": "อาการแสดงของภาวะกล้ามเนื้อหัวใจขาดเลือดเฉียบพลันที่ไม่จำเพาะ (Atypical ACS) พบบ่อยในกลุ่มใดและมีอาการอย่างไร?",
+      "question": "การตรวจคลื่นไฟฟ้าหัวใจ (ECG) ชนิด 12 ลีด ควรทำให้เสร็จสิ้นภายในเวลากี่นาทีหลังผู้ป่วยมาถึงห้องฉุกเฉิน?",
       "questionImage": "",
-      "answer": "พบบ่อยในผู้สูงอายุ หญิง เบาหวาน และโรคไต มักไม่มีอาการเจ็บแน่นหน้าอก (Silent Ischemia)<br> แต่มาด้วยเหนื่อยหอบ หายใจลำบากเฉียบพลัน เหงื่อแตก หน้ามืด หรือปวดแสบลิ้นปี่คล้ายโรคกระเพาะ",
+      "answer": "ต้องทำให้เสร็จและแปลผลโดยแพทย์ภายใน 10 นาที (Door-to-ECG time &lt;= 10 นาที) เพื่อคัดแยกผู้ป่วยกลุ่ม STEMI ไปเปิดหลอดเลือดเร่งด่วน",
       "answerImage": "",
       "note": ""
     },
@@ -27129,37 +27929,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "อาการเจ็บหน้าอกแบบ Unstable Angina แตกต่างจาก Stable Angina อย่างไร?",
       "questionImage": "",
-      "answer": "เจ็บแน่นขณะพัก (Rest angina นาน &gt; 20 นาที), เกิดขึ้นใหม่รุนแรง (New-onset), หรือมีแบบแผนปวดรุนแรงถี่ขึ้นกว่าเดิม (Crescendo pattern)",
+      "answer": "เจ็บแน่นขณะพัก (Rest angina นาน &amp;gt; 20 นาที),<br> เกิดขึ้นใหม่รุนแรง (New-onset), <br>หรือมีแบบแผนปวดรุนแรงถี่ขึ้นกว่าเดิม (Crescendo pattern)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "2. Cardiovascular::98",
       "itemNo": "96",
-      "group": "2. Cardiovascular",
-      "subTopic": "Coronary Artery Disease",
-      "track": "Clinic",
-      "question": "การตรวจคลื่นไฟฟ้าหัวใจ (ECG) ชนิด 12 ลีด ควรทำให้เสร็จสิ้นภายในเวลากี่นาทีหลังผู้ป่วยมาถึงห้องฉุกเฉิน?",
-      "questionImage": "",
-      "answer": "ต้องทำให้เสร็จและแปลผลโดยแพทย์ภายใน 10 นาที (Door-to-ECG time &lt;= 10 นาที) เพื่อคัดแยกผู้ป่วยกลุ่ม STEMI ไปเปิดหลอดเลือดเร่งด่วน",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::99",
-      "itemNo": "97",
-      "group": "2. Cardiovascular",
-      "subTopic": "Coronary Artery Disease",
-      "track": "Clinic",
-      "question": "ลักษณะคลื่นไฟฟ้าหัวใจที่บ่งชี้ภาวะ STEMI ตามเกณฑ์มาตรฐานคืออะไร?",
-      "questionImage": "",
-      "answer": "มี ST-segment elevation ใหม่ที่จุด J ในอย่างน้อย 2 ลีดต่อเนื่องกัน (&gt;= 1 mm ในลีดทั่วไป หรือ &gt;= 1.5-2.5 mm ในลีด V2-V3) หรือพบ New LBBB",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::100",
-      "itemNo": "98",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27170,8 +27946,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::101",
-      "itemNo": "99",
+      "id": "2. Cardiovascular::99",
+      "itemNo": "97",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27182,8 +27958,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::102",
-      "itemNo": "100",
+      "id": "2. Cardiovascular::100",
+      "itemNo": "98",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27194,8 +27970,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::103",
-      "itemNo": "101",
+      "id": "2. Cardiovascular::101",
+      "itemNo": "99",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27206,8 +27982,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::104",
-      "itemNo": "102",
+      "id": "2. Cardiovascular::102",
+      "itemNo": "100",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27218,8 +27994,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::105",
-      "itemNo": "103",
+      "id": "2. Cardiovascular::103",
+      "itemNo": "101",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27230,8 +28006,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::106",
-      "itemNo": "104",
+      "id": "2. Cardiovascular::104",
+      "itemNo": "102",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27242,8 +28018,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::107",
-      "itemNo": "105",
+      "id": "2. Cardiovascular::105",
+      "itemNo": "103",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27254,8 +28030,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::108",
-      "itemNo": "106",
+      "id": "2. Cardiovascular::106",
+      "itemNo": "104",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27266,8 +28042,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::109",
-      "itemNo": "107",
+      "id": "2. Cardiovascular::107",
+      "itemNo": "105",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27278,8 +28054,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::110",
-      "itemNo": "108",
+      "id": "2. Cardiovascular::108",
+      "itemNo": "106",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27290,8 +28066,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::111",
-      "itemNo": "109",
+      "id": "2. Cardiovascular::109",
+      "itemNo": "107",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27302,8 +28078,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::112",
-      "itemNo": "110",
+      "id": "2. Cardiovascular::110",
+      "itemNo": "108",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27314,8 +28090,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::113",
-      "itemNo": "111",
+      "id": "2. Cardiovascular::111",
+      "itemNo": "109",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27326,8 +28102,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::114",
-      "itemNo": "112",
+      "id": "2. Cardiovascular::112",
+      "itemNo": "110",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27338,8 +28114,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::115",
-      "itemNo": "113",
+      "id": "2. Cardiovascular::113",
+      "itemNo": "111",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27350,8 +28126,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::116",
-      "itemNo": "114",
+      "id": "2. Cardiovascular::114",
+      "itemNo": "112",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27362,8 +28138,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::117",
-      "itemNo": "115",
+      "id": "2. Cardiovascular::115",
+      "itemNo": "113",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27374,8 +28150,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::118",
-      "itemNo": "116",
+      "id": "2. Cardiovascular::116",
+      "itemNo": "114",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27386,8 +28162,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::119",
-      "itemNo": "117",
+      "id": "2. Cardiovascular::117",
+      "itemNo": "115",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27398,8 +28174,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::120",
-      "itemNo": "118",
+      "id": "2. Cardiovascular::118",
+      "itemNo": "116",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27410,8 +28186,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::121",
-      "itemNo": "119",
+      "id": "2. Cardiovascular::119",
+      "itemNo": "117",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27422,8 +28198,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::122",
-      "itemNo": "120",
+      "id": "2. Cardiovascular::120",
+      "itemNo": "118",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27434,8 +28210,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::123",
-      "itemNo": "121",
+      "id": "2. Cardiovascular::121",
+      "itemNo": "119",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27446,8 +28222,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::124",
-      "itemNo": "122",
+      "id": "2. Cardiovascular::122",
+      "itemNo": "120",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27458,8 +28234,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::125",
-      "itemNo": "123",
+      "id": "2. Cardiovascular::123",
+      "itemNo": "121",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27470,8 +28246,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::126",
-      "itemNo": "124",
+      "id": "2. Cardiovascular::124",
+      "itemNo": "122",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27482,8 +28258,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::127",
-      "itemNo": "125",
+      "id": "2. Cardiovascular::125",
+      "itemNo": "123",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27494,8 +28270,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::128",
-      "itemNo": "126",
+      "id": "2. Cardiovascular::126",
+      "itemNo": "124",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27506,8 +28282,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::129",
-      "itemNo": "127",
+      "id": "2. Cardiovascular::127",
+      "itemNo": "125",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27518,8 +28294,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::130",
-      "itemNo": "128",
+      "id": "2. Cardiovascular::128",
+      "itemNo": "126",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27530,8 +28306,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::131",
-      "itemNo": "129",
+      "id": "2. Cardiovascular::129",
+      "itemNo": "127",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27542,8 +28318,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::132",
-      "itemNo": "130",
+      "id": "2. Cardiovascular::130",
+      "itemNo": "128",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27554,8 +28330,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::133",
-      "itemNo": "131",
+      "id": "2. Cardiovascular::131",
+      "itemNo": "129",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27566,8 +28342,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::134",
-      "itemNo": "132",
+      "id": "2. Cardiovascular::132",
+      "itemNo": "130",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27578,8 +28354,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::135",
-      "itemNo": "133",
+      "id": "2. Cardiovascular::133",
+      "itemNo": "131",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27590,8 +28366,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::136",
-      "itemNo": "134",
+      "id": "2. Cardiovascular::134",
+      "itemNo": "132",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27602,8 +28378,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::137",
-      "itemNo": "135",
+      "id": "2. Cardiovascular::135",
+      "itemNo": "133",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -27614,8 +28390,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::138",
-      "itemNo": "136",
+      "id": "2. Cardiovascular::136",
+      "itemNo": "134",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27626,8 +28402,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::139",
-      "itemNo": "137",
+      "id": "2. Cardiovascular::137",
+      "itemNo": "135",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27638,8 +28414,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::140",
-      "itemNo": "138",
+      "id": "2. Cardiovascular::138",
+      "itemNo": "136",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27650,8 +28426,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::141",
-      "itemNo": "139",
+      "id": "2. Cardiovascular::139",
+      "itemNo": "137",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27662,8 +28438,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::142",
-      "itemNo": "140",
+      "id": "2. Cardiovascular::140",
+      "itemNo": "138",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27674,8 +28450,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::143",
-      "itemNo": "141",
+      "id": "2. Cardiovascular::141",
+      "itemNo": "139",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27686,8 +28462,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::144",
-      "itemNo": "142",
+      "id": "2. Cardiovascular::142",
+      "itemNo": "140",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27698,8 +28474,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::145",
-      "itemNo": "143",
+      "id": "2. Cardiovascular::143",
+      "itemNo": "141",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27710,8 +28486,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::146",
-      "itemNo": "144",
+      "id": "2. Cardiovascular::144",
+      "itemNo": "142",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27722,8 +28498,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::147",
-      "itemNo": "145",
+      "id": "2. Cardiovascular::145",
+      "itemNo": "143",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27734,8 +28510,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::148",
-      "itemNo": "146",
+      "id": "2. Cardiovascular::146",
+      "itemNo": "144",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27746,8 +28522,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::149",
-      "itemNo": "147",
+      "id": "2. Cardiovascular::147",
+      "itemNo": "145",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27758,8 +28534,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::150",
-      "itemNo": "148",
+      "id": "2. Cardiovascular::148",
+      "itemNo": "146",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27770,8 +28546,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::151",
-      "itemNo": "149",
+      "id": "2. Cardiovascular::149",
+      "itemNo": "147",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27782,8 +28558,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::152",
-      "itemNo": "150",
+      "id": "2. Cardiovascular::150",
+      "itemNo": "148",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27794,8 +28570,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::153",
-      "itemNo": "151",
+      "id": "2. Cardiovascular::151",
+      "itemNo": "149",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27806,8 +28582,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::154",
-      "itemNo": "152",
+      "id": "2. Cardiovascular::152",
+      "itemNo": "150",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27818,8 +28594,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::155",
-      "itemNo": "153",
+      "id": "2. Cardiovascular::153",
+      "itemNo": "151",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27830,8 +28606,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::156",
-      "itemNo": "154",
+      "id": "2. Cardiovascular::154",
+      "itemNo": "152",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27842,8 +28618,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::157",
-      "itemNo": "155",
+      "id": "2. Cardiovascular::155",
+      "itemNo": "153",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27854,8 +28630,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::158",
-      "itemNo": "156",
+      "id": "2. Cardiovascular::156",
+      "itemNo": "154",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27866,8 +28642,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::159",
-      "itemNo": "157",
+      "id": "2. Cardiovascular::157",
+      "itemNo": "155",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27878,8 +28654,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::160",
-      "itemNo": "158",
+      "id": "2. Cardiovascular::158",
+      "itemNo": "156",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27890,8 +28666,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::161",
-      "itemNo": "159",
+      "id": "2. Cardiovascular::159",
+      "itemNo": "157",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27902,8 +28678,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::162",
-      "itemNo": "160",
+      "id": "2. Cardiovascular::160",
+      "itemNo": "158",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27914,8 +28690,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::163",
-      "itemNo": "161",
+      "id": "2. Cardiovascular::161",
+      "itemNo": "159",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27926,8 +28702,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::164",
-      "itemNo": "162",
+      "id": "2. Cardiovascular::162",
+      "itemNo": "160",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27938,8 +28714,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::165",
-      "itemNo": "163",
+      "id": "2. Cardiovascular::163",
+      "itemNo": "161",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27950,8 +28726,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::166",
-      "itemNo": "164",
+      "id": "2. Cardiovascular::164",
+      "itemNo": "162",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27962,8 +28738,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::167",
-      "itemNo": "165",
+      "id": "2. Cardiovascular::165",
+      "itemNo": "163",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27974,8 +28750,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::168",
-      "itemNo": "166",
+      "id": "2. Cardiovascular::166",
+      "itemNo": "164",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27986,8 +28762,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::169",
-      "itemNo": "167",
+      "id": "2. Cardiovascular::167",
+      "itemNo": "165",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -27998,8 +28774,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::170",
-      "itemNo": "168",
+      "id": "2. Cardiovascular::168",
+      "itemNo": "166",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28010,8 +28786,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::171",
-      "itemNo": "169",
+      "id": "2. Cardiovascular::169",
+      "itemNo": "167",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28022,8 +28798,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::172",
-      "itemNo": "170",
+      "id": "2. Cardiovascular::170",
+      "itemNo": "168",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28034,8 +28810,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::173",
-      "itemNo": "171",
+      "id": "2. Cardiovascular::171",
+      "itemNo": "169",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28046,8 +28822,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::174",
-      "itemNo": "172",
+      "id": "2. Cardiovascular::172",
+      "itemNo": "170",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28058,8 +28834,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::175",
-      "itemNo": "173",
+      "id": "2. Cardiovascular::173",
+      "itemNo": "171",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28070,8 +28846,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::176",
-      "itemNo": "174",
+      "id": "2. Cardiovascular::174",
+      "itemNo": "172",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28082,8 +28858,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::177",
-      "itemNo": "175",
+      "id": "2. Cardiovascular::175",
+      "itemNo": "173",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28094,8 +28870,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::178",
-      "itemNo": "176",
+      "id": "2. Cardiovascular::176",
+      "itemNo": "174",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28106,8 +28882,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::179",
-      "itemNo": "177",
+      "id": "2. Cardiovascular::177",
+      "itemNo": "175",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28118,8 +28894,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::180",
-      "itemNo": "178",
+      "id": "2. Cardiovascular::178",
+      "itemNo": "176",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28130,8 +28906,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::181",
-      "itemNo": "179",
+      "id": "2. Cardiovascular::179",
+      "itemNo": "177",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28142,8 +28918,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::182",
-      "itemNo": "180",
+      "id": "2. Cardiovascular::180",
+      "itemNo": "178",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -28154,8 +28930,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::183",
-      "itemNo": "181",
+      "id": "2. Cardiovascular::181",
+      "itemNo": "179",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28166,8 +28942,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::184",
-      "itemNo": "182",
+      "id": "2. Cardiovascular::182",
+      "itemNo": "180",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28178,8 +28954,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::185",
-      "itemNo": "183",
+      "id": "2. Cardiovascular::183",
+      "itemNo": "181",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28190,8 +28966,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::186",
-      "itemNo": "184",
+      "id": "2. Cardiovascular::184",
+      "itemNo": "182",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28202,8 +28978,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::187",
-      "itemNo": "185",
+      "id": "2. Cardiovascular::185",
+      "itemNo": "183",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28214,8 +28990,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::188",
-      "itemNo": "186",
+      "id": "2. Cardiovascular::186",
+      "itemNo": "184",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28226,8 +29002,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::189",
-      "itemNo": "187",
+      "id": "2. Cardiovascular::187",
+      "itemNo": "185",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28238,8 +29014,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::190",
-      "itemNo": "188",
+      "id": "2. Cardiovascular::188",
+      "itemNo": "186",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28250,8 +29026,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::191",
-      "itemNo": "189",
+      "id": "2. Cardiovascular::189",
+      "itemNo": "187",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28262,8 +29038,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::192",
-      "itemNo": "190",
+      "id": "2. Cardiovascular::190",
+      "itemNo": "188",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28274,8 +29050,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::193",
-      "itemNo": "191",
+      "id": "2. Cardiovascular::191",
+      "itemNo": "189",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28286,8 +29062,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::194",
-      "itemNo": "192",
+      "id": "2. Cardiovascular::192",
+      "itemNo": "190",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28298,8 +29074,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::195",
-      "itemNo": "193",
+      "id": "2. Cardiovascular::193",
+      "itemNo": "191",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28310,8 +29086,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::196",
-      "itemNo": "194",
+      "id": "2. Cardiovascular::194",
+      "itemNo": "192",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28322,8 +29098,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::197",
-      "itemNo": "195",
+      "id": "2. Cardiovascular::195",
+      "itemNo": "193",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28334,8 +29110,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::198",
-      "itemNo": "196",
+      "id": "2. Cardiovascular::196",
+      "itemNo": "194",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28346,8 +29122,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::199",
-      "itemNo": "197",
+      "id": "2. Cardiovascular::197",
+      "itemNo": "195",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28358,8 +29134,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::200",
-      "itemNo": "198",
+      "id": "2. Cardiovascular::198",
+      "itemNo": "196",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28370,8 +29146,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::201",
-      "itemNo": "199",
+      "id": "2. Cardiovascular::199",
+      "itemNo": "197",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28382,8 +29158,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::202",
-      "itemNo": "200",
+      "id": "2. Cardiovascular::200",
+      "itemNo": "198",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28394,8 +29170,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::203",
-      "itemNo": "201",
+      "id": "2. Cardiovascular::201",
+      "itemNo": "199",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28406,8 +29182,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::204",
-      "itemNo": "202",
+      "id": "2. Cardiovascular::202",
+      "itemNo": "200",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28418,8 +29194,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::205",
-      "itemNo": "203",
+      "id": "2. Cardiovascular::203",
+      "itemNo": "201",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28430,8 +29206,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::206",
-      "itemNo": "204",
+      "id": "2. Cardiovascular::204",
+      "itemNo": "202",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28442,8 +29218,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::207",
-      "itemNo": "205",
+      "id": "2. Cardiovascular::205",
+      "itemNo": "203",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28454,8 +29230,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::208",
-      "itemNo": "206",
+      "id": "2. Cardiovascular::206",
+      "itemNo": "204",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28466,8 +29242,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::209",
-      "itemNo": "207",
+      "id": "2. Cardiovascular::207",
+      "itemNo": "205",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28478,8 +29254,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::210",
-      "itemNo": "208",
+      "id": "2. Cardiovascular::208",
+      "itemNo": "206",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28490,8 +29266,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::211",
-      "itemNo": "209",
+      "id": "2. Cardiovascular::209",
+      "itemNo": "207",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28502,8 +29278,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::212",
-      "itemNo": "210",
+      "id": "2. Cardiovascular::210",
+      "itemNo": "208",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28514,8 +29290,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::213",
-      "itemNo": "211",
+      "id": "2. Cardiovascular::211",
+      "itemNo": "209",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28526,8 +29302,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::214",
-      "itemNo": "212",
+      "id": "2. Cardiovascular::212",
+      "itemNo": "210",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28538,8 +29314,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::215",
-      "itemNo": "213",
+      "id": "2. Cardiovascular::213",
+      "itemNo": "211",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28550,8 +29326,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::216",
-      "itemNo": "214",
+      "id": "2. Cardiovascular::214",
+      "itemNo": "212",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28562,8 +29338,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::217",
-      "itemNo": "215",
+      "id": "2. Cardiovascular::215",
+      "itemNo": "213",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28574,8 +29350,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::218",
-      "itemNo": "216",
+      "id": "2. Cardiovascular::216",
+      "itemNo": "214",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28586,8 +29362,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::219",
-      "itemNo": "217",
+      "id": "2. Cardiovascular::217",
+      "itemNo": "215",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28598,8 +29374,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::220",
-      "itemNo": "218",
+      "id": "2. Cardiovascular::218",
+      "itemNo": "216",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28610,8 +29386,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::221",
-      "itemNo": "219",
+      "id": "2. Cardiovascular::219",
+      "itemNo": "217",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28622,8 +29398,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::222",
-      "itemNo": "220",
+      "id": "2. Cardiovascular::220",
+      "itemNo": "218",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28634,8 +29410,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::223",
-      "itemNo": "221",
+      "id": "2. Cardiovascular::221",
+      "itemNo": "219",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28646,8 +29422,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::224",
-      "itemNo": "222",
+      "id": "2. Cardiovascular::222",
+      "itemNo": "220",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28658,8 +29434,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::225",
-      "itemNo": "223",
+      "id": "2. Cardiovascular::223",
+      "itemNo": "221",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28670,8 +29446,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::226",
-      "itemNo": "224",
+      "id": "2. Cardiovascular::224",
+      "itemNo": "222",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -28682,8 +29458,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::227",
-      "itemNo": "225",
+      "id": "2. Cardiovascular::225",
+      "itemNo": "223",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -32479,18 +33255,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
-      "question": "ลักษณะอาการปวดท้องของแผลในกระเพาะอาหาร (GU) แตกต่างจากแผลในลำไส้เล็กส่วนต้น (DU) อย่างไร?",
-      "questionImage": "",
-      "answer": "แผลกระเพาะ (GU) ปวดมากขึ้นหลังรับประทานอาหาร สัมพันธ์กับน้ำหนักลด<br> ส่วนแผลลำไส้เล็ก (DU) ปวดเวลาท้องว่างและอาการทุเลาลงเมื่อรับประทานอาหาร มักปวดปลุกให้ตื่นกลางดึก",
-      "answerImage": "",
-      "note": "Peptic Ulcer & GERD"
-    },
-    {
-      "id": "5. Gastrointestinal::4",
-      "itemNo": "2",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
       "question": "สาเหตุหลัก 2 ประการที่ทำให้เกิดโรคแผลเปื่อยเปปติก (Peptic Ulcer Disease) คืออะไร?",
       "questionImage": "",
       "answer": "การติดเชื้อแบคทีเรีย Helicobacter pylori และการใช้ยาแก้ปวดกลุ่ม NSAIDs หรือ Aspirin<br> ทั้งสองสาเหตุคิดเป็นมากกว่า 90% ของผู้ป่วย PUD ทั้งหมด",
@@ -32498,8 +33262,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::5",
-      "itemNo": "3",
+      "id": "5. Gastrointestinal::4",
+      "itemNo": "2",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32510,14 +33274,26 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::6",
-      "itemNo": "4",
+      "id": "5. Gastrointestinal::5",
+      "itemNo": "3",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ก่อนตรวจยืนยันการติดเชื้อ H. pylori ด้วยวิธี Urea Breath Test (UBT) ต้องหยุดยาใดล่วงหน้า?",
       "questionImage": "",
       "answer": "ต้องหยุดยากลุ่ม PPIs อย่างน้อย 2 สัปดาห์ และหยุดยาปฏิชีวนะหรือยาบิสมัทอย่างน้อย 4 สัปดาห์<br> เพื่อป้องกันผลลบปลอม (False-negative result)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::6",
+      "itemNo": "4",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Bismuth Quadruple Therapy 14 วันประกอบด้วยยาใดบ้าง?",
+      "questionImage": "",
+      "answer": "PPI (วันละ 2 ครั้ง) + Bismuth subsalicylate + <b style=\"color:#0284c7;\">Metronidazole</b> + Tetracycline นาน 14 วัน<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
       "answerImage": "",
       "note": ""
     },
@@ -32529,7 +33305,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Bismuth Quadruple Therapy 14 วันประกอบด้วยยาใดบ้าง?",
       "questionImage": "",
-      "answer": "PPI (วันละ 2 ครั้ง) + Bismuth subsalicylate + <b style=\"color:#0284c7;\">Metronidazole</b> + Tetracycline นาน 14 วัน<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
+      "answer": "&lt;span style=&quot;color:#2563eb; font-weight:600;&quot;&gt;PPI (วันละ 2 ครั้ง) + <br>Bismuth subsalicylate + <br><b style=\"color:#0284c7;\">Metronidazole</b> + <br>Tetracycline นาน 14 วัน&lt;/span&gt;<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
       "answerImage": "",
       "note": ""
     },
@@ -32541,25 +33317,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Concomitant Quadruple Therapy 14 วันประกอบด้วยยาใด?",
       "questionImage": "",
-      "answer": "&lt;b&gt;PPI&lt;/b&gt; (วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Amoxicillin</b>&lt;/b&gt; (1 g วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Clarithromycin</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง) +<br> &lt;b&gt;<b style=\"color:#0284c7;\">Metronidazole</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
+      "answer": "&lt;span style=&quot;color:#2563eb; font-weight:600;&quot;&gt;PPI (วันละ 2 ครั้ง) + <br><b style=\"color:#0284c7;\">Amoxicillin</b> (1 g วันละ 2 ครั้ง) + <br><b style=\"color:#0284c7;\">Clarithromycin</b> (500 mg วันละ 2 ครั้ง) +<br> <b style=\"color:#0284c7;\">Metronidazole</b> (500 mg วันละ 2 ครั้ง)&lt;/span&gt;<br> รับประทานต่อเนื่องนาน 14 วัน",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::9",
       "itemNo": "7",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
-      "question": "เพราะเหตุใดจึงไม่แนะนำสูตร <b style=\"color:#0284c7;\">Clarithromycin</b> Triple Therapy ในประเทศไทยเป็นอันดับแรก?",
-      "questionImage": "",
-      "answer": "เนื่องจากอัตราการดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> ของเชื้อ H. pylori ในไทยสูงเกิน 15%<br> ส่งผลให้อัตราความสำเร็จในการกำจัดเชื้อด้วยสูตรสามยาลดต่ำลงอย่างมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::10",
-      "itemNo": "8",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32570,8 +33334,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::11",
-      "itemNo": "9",
+      "id": "5. Gastrointestinal::10",
+      "itemNo": "8",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32582,8 +33346,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::12",
-      "itemNo": "10",
+      "id": "5. Gastrointestinal::11",
+      "itemNo": "9",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32594,14 +33358,26 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::13",
-      "itemNo": "11",
+      "id": "5. Gastrointestinal::12",
+      "itemNo": "10",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ยากลุ่ม NSAIDs ทำให้เกิดแผลในกระเพาะอาหารด้วยกลไกหลักใด?",
       "questionImage": "",
       "answer": "ยับยั้งเอนไซม์ COX-1 ขัดขวางการสังเคราะห์โพรสตาแกลนดิน (PGE2, PGI2)<br> ทำให้เมือกปกป้องเยื่อบุกระเพาะลดลง การหลั่งไบคาร์บอเนตลดลง และเลือดไปเลี้ยงเยื่อบุลดลง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::13",
+      "itemNo": "11",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "ปัจจัยเสี่ยงสำคัญที่ทำให้ผู้ใช้ยา NSAIDs เสี่ยงต่อการเกิดแผลและเลือดออกในทางเดินอาหารมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "อายุเกิน 65 ปี, มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร, ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
       "answerImage": "",
       "note": ""
     },
@@ -32613,25 +33389,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ปัจจัยเสี่ยงสำคัญที่ทำให้ผู้ใช้ยา NSAIDs เสี่ยงต่อการเกิดแผลและเลือดออกในทางเดินอาหารมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "อายุเกิน 65 ปี, มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร, ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
+      "answer": "อายุเกิน 65 ปี,<br> มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร,<br> ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::15",
       "itemNo": "13",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
-      "question": "แนวทางป้องกันแผลทางเดินอาหารในผู้ป่วยที่มีความเสี่ยงสูงมากที่จำเป็นต้องใช้ NSAIDs คืออะไร?",
-      "questionImage": "",
-      "answer": "เลือกใช้ยากลุ่ม Selective COX-2 inhibitor (เช่น Celecoxib) ร่วมกับการให้ยา PPI ควบคู่เสมอ<br> เพื่อลดความเสี่ยงต่อการเกิดแผลและเลือดออกในกระเพาะอาหารให้ต่ำที่สุด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::16",
-      "itemNo": "14",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32642,8 +33406,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::17",
-      "itemNo": "15",
+      "id": "5. Gastrointestinal::16",
+      "itemNo": "14",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32654,8 +33418,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::18",
-      "itemNo": "16",
+      "id": "5. Gastrointestinal::17",
+      "itemNo": "15",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32666,8 +33430,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::19",
-      "itemNo": "17",
+      "id": "5. Gastrointestinal::18",
+      "itemNo": "16",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32678,8 +33442,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::20",
-      "itemNo": "18",
+      "id": "5. Gastrointestinal::19",
+      "itemNo": "17",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32690,8 +33454,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::21",
-      "itemNo": "19",
+      "id": "5. Gastrointestinal::20",
+      "itemNo": "18",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32702,8 +33466,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::22",
-      "itemNo": "20",
+      "id": "5. Gastrointestinal::21",
+      "itemNo": "19",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32714,8 +33478,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::23",
-      "itemNo": "21",
+      "id": "5. Gastrointestinal::22",
+      "itemNo": "20",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32726,8 +33490,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::24",
-      "itemNo": "22",
+      "id": "5. Gastrointestinal::23",
+      "itemNo": "21",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32738,8 +33502,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::25",
-      "itemNo": "23",
+      "id": "5. Gastrointestinal::24",
+      "itemNo": "22",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -32750,14 +33514,26 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::26",
-      "itemNo": "24",
+      "id": "5. Gastrointestinal::25",
+      "itemNo": "23",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ยา Potassium-competitive acid blockers (P-CABs เช่น Vonoprazan) มีจุดเด่นเหนือ PPIs อย่างไร?",
       "questionImage": "",
       "answer": "ออกฤทธิ์ยับยั้งปั๊มกรดได้ทันทีโดยไม่ต้องรอการกระตุ้นจากกรด ออกฤทธิ์เร็ว คงตัวในสภาวะกรด<br> และไม่อาศัยการเปลี่ยนแปลงผ่านเอนไซม์ CYP2C19 ทำให้ได้ผลการกำจัด H. pylori สูงมาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::26",
+      "itemNo": "24",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "ยาลดกรดชนิดใดที่ทำให้เกิดอาการท้องผูก และชนิดใดทำให้เกิดอาการท้องเสีย?",
+      "questionImage": "",
+      "answer": "ยาลดกรดที่มี อะลูมิเนียม (Aluminum hydroxide) ทำให้ ท้องผูก<br> ส่วนยาลดกรดที่มี แมกนีเซียม (Magnesium hydroxide) ทำให้ ถ่ายเหลวท้องเสีย จึงมักผสมร่วมกัน",
       "answerImage": "",
       "note": ""
     },
@@ -32769,7 +33545,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยาลดกรดชนิดใดที่ทำให้เกิดอาการท้องผูก และชนิดใดทำให้เกิดอาการท้องเสีย?",
       "questionImage": "",
-      "answer": "ยาลดกรดที่มี อะลูมิเนียม (Aluminum hydroxide) ทำให้ ท้องผูก<br> ส่วนยาลดกรดที่มี แมกนีเซียม (Magnesium hydroxide) ทำให้ ถ่ายเหลวท้องเสีย จึงมักผสมร่วมกัน",
+      "answer": "Aluminum hydroxide ทำให้ ท้องผูก<br>Magnesium hydroxide ทำให้ ถ่ายเหลวท้องเสีย<br><br> จึงมักผสมร่วมกัน",
       "answerImage": "",
       "note": ""
     },
@@ -32779,9 +33555,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
-      "question": "กลไกพยาธิสรีรวิทยาที่สำคัญที่สุดในการเกิดโรคกรดไหลย้อน (GERD) คืออะไร?",
+      "question": "อาการแสดงแบบฉบับ (Typical symptoms) 2 ประการของโรคกรดไหลย้อนคืออะไร?",
       "questionImage": "",
-      "answer": "การคลายตัวชั่วคราวของหูรูดหลอดอาหารส่วนล่างบ่อยผิดปกติ (Transient LES Relaxations / TLESRs)<br> ทำให้กรดและน้ำย่อยจากกระเพาะอาหารไหลย้อนขึ้นสู่หลอดอาหาร",
+      "answer": "อาการแสบร้อนกลางอก (Heartburn) และอาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
       "answerImage": "",
       "note": ""
     },
@@ -32793,25 +33569,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "อาการแสดงแบบฉบับ (Typical symptoms) 2 ประการของโรคกรดไหลย้อนคืออะไร?",
       "questionImage": "",
-      "answer": "อาการแสบร้อนกลางอก (Heartburn) และอาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
+      "answer": "อาการแสบร้อนกลางอก (Heartburn) <br>อาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::30",
       "itemNo": "28",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Gastroesophageal Reflux Disease",
-      "track": "Clinic",
-      "question": "อาการนอกหลอดอาหาร (Extraesophageal symptoms) ที่อาจเกิดจากกรดไหลย้อนมีอะไรบ้าง?",
-      "questionImage": "",
-      "answer": "ไอเรื้อรังโดยไม่ทราบสาเหตุ, เสียงแหบ, เจ็บคอเรื้อรัง, หอบหืดกำเริบ, และฟันสึกกร่อนจากกรด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::31",
-      "itemNo": "29",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32822,20 +33586,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::32",
-      "itemNo": "30",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Gastroesophageal Reflux Disease",
-      "track": "Clinic",
-      "question": "การปรับเปลี่ยนพฤติกรรมข้อใดที่มีหลักฐานทางคลินิกชัดเจนที่สุดในการลดอาการกรดไหลย้อน?",
-      "questionImage": "",
-      "answer": "การลดน้ำหนักตัวในผู้ที่มีน้ำหนักเกินหรืออ้วน (Weight loss)<br> ช่วยลดแรงดันในช่องท้องที่ดันกรดให้ไหลย้อนขึ้นสู่หลอดอาหาร",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::33",
-      "itemNo": "31",
+      "id": "5. Gastrointestinal::31",
+      "itemNo": "29",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32846,8 +33598,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::34",
-      "itemNo": "32",
+      "id": "5. Gastrointestinal::32",
+      "itemNo": "30",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32858,8 +33610,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::35",
-      "itemNo": "33",
+      "id": "5. Gastrointestinal::33",
+      "itemNo": "31",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32870,8 +33622,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::36",
-      "itemNo": "34",
+      "id": "5. Gastrointestinal::34",
+      "itemNo": "32",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32882,8 +33634,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::37",
-      "itemNo": "35",
+      "id": "5. Gastrointestinal::35",
+      "itemNo": "33",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32894,8 +33646,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::38",
-      "itemNo": "36",
+      "id": "5. Gastrointestinal::36",
+      "itemNo": "34",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32906,8 +33658,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::39",
-      "itemNo": "37",
+      "id": "5. Gastrointestinal::37",
+      "itemNo": "35",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32918,8 +33670,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::40",
-      "itemNo": "38",
+      "id": "5. Gastrointestinal::38",
+      "itemNo": "36",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32930,8 +33682,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::41",
-      "itemNo": "39",
+      "id": "5. Gastrointestinal::39",
+      "itemNo": "37",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32942,8 +33694,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::42",
-      "itemNo": "40",
+      "id": "5. Gastrointestinal::40",
+      "itemNo": "38",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -32954,8 +33706,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::43",
-      "itemNo": "41",
+      "id": "5. Gastrointestinal::41",
+      "itemNo": "39",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -32966,8 +33718,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::44",
-      "itemNo": "42",
+      "id": "5. Gastrointestinal::42",
+      "itemNo": "40",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -32978,8 +33730,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::45",
-      "itemNo": "43",
+      "id": "5. Gastrointestinal::43",
+      "itemNo": "41",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -32990,8 +33742,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::46",
-      "itemNo": "44",
+      "id": "5. Gastrointestinal::44",
+      "itemNo": "42",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33002,8 +33754,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::47",
-      "itemNo": "45",
+      "id": "5. Gastrointestinal::45",
+      "itemNo": "43",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33014,8 +33766,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::48",
-      "itemNo": "46",
+      "id": "5. Gastrointestinal::46",
+      "itemNo": "44",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33026,8 +33778,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::49",
-      "itemNo": "47",
+      "id": "5. Gastrointestinal::47",
+      "itemNo": "45",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33038,8 +33790,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::50",
-      "itemNo": "48",
+      "id": "5. Gastrointestinal::48",
+      "itemNo": "46",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33050,8 +33802,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::51",
-      "itemNo": "49",
+      "id": "5. Gastrointestinal::49",
+      "itemNo": "47",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33062,8 +33814,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::52",
-      "itemNo": "50",
+      "id": "5. Gastrointestinal::50",
+      "itemNo": "48",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33074,8 +33826,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::53",
-      "itemNo": "51",
+      "id": "5. Gastrointestinal::51",
+      "itemNo": "49",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33086,8 +33838,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::54",
-      "itemNo": "52",
+      "id": "5. Gastrointestinal::52",
+      "itemNo": "50",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33098,8 +33850,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::55",
-      "itemNo": "53",
+      "id": "5. Gastrointestinal::53",
+      "itemNo": "51",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33110,8 +33862,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::56",
-      "itemNo": "54",
+      "id": "5. Gastrointestinal::54",
+      "itemNo": "52",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33122,8 +33874,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::57",
-      "itemNo": "55",
+      "id": "5. Gastrointestinal::55",
+      "itemNo": "53",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -33134,8 +33886,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::58",
-      "itemNo": "56",
+      "id": "5. Gastrointestinal::56",
+      "itemNo": "54",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33146,8 +33898,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::59",
-      "itemNo": "57",
+      "id": "5. Gastrointestinal::57",
+      "itemNo": "55",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33158,8 +33910,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::60",
-      "itemNo": "58",
+      "id": "5. Gastrointestinal::58",
+      "itemNo": "56",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33170,8 +33922,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::61",
-      "itemNo": "59",
+      "id": "5. Gastrointestinal::59",
+      "itemNo": "57",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33182,8 +33934,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::62",
-      "itemNo": "60",
+      "id": "5. Gastrointestinal::60",
+      "itemNo": "58",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33194,8 +33946,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::63",
-      "itemNo": "61",
+      "id": "5. Gastrointestinal::61",
+      "itemNo": "59",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33206,8 +33958,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::64",
-      "itemNo": "62",
+      "id": "5. Gastrointestinal::62",
+      "itemNo": "60",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33218,8 +33970,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::65",
-      "itemNo": "63",
+      "id": "5. Gastrointestinal::63",
+      "itemNo": "61",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33230,8 +33982,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::66",
-      "itemNo": "64",
+      "id": "5. Gastrointestinal::64",
+      "itemNo": "62",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33242,8 +33994,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::67",
-      "itemNo": "65",
+      "id": "5. Gastrointestinal::65",
+      "itemNo": "63",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33254,8 +34006,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::68",
-      "itemNo": "66",
+      "id": "5. Gastrointestinal::66",
+      "itemNo": "64",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33266,8 +34018,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::69",
-      "itemNo": "67",
+      "id": "5. Gastrointestinal::67",
+      "itemNo": "65",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33278,8 +34030,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::70",
-      "itemNo": "68",
+      "id": "5. Gastrointestinal::68",
+      "itemNo": "66",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33290,8 +34042,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::71",
-      "itemNo": "69",
+      "id": "5. Gastrointestinal::69",
+      "itemNo": "67",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33302,8 +34054,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::72",
-      "itemNo": "70",
+      "id": "5. Gastrointestinal::70",
+      "itemNo": "68",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33314,8 +34066,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::73",
-      "itemNo": "71",
+      "id": "5. Gastrointestinal::71",
+      "itemNo": "69",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33326,8 +34078,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::74",
-      "itemNo": "72",
+      "id": "5. Gastrointestinal::72",
+      "itemNo": "70",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33338,8 +34090,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::75",
-      "itemNo": "73",
+      "id": "5. Gastrointestinal::73",
+      "itemNo": "71",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -33350,14 +34102,38 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::76",
-      "itemNo": "74",
+      "id": "5. Gastrointestinal::74",
+      "itemNo": "72",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
       "question": "ศูนย์ควบคุมการอาเจียน Chemoreceptor Trigger Zone (CTZ) ตั้งอยู่ที่ใดและมีลักษณะพิเศษอย่างไร?",
       "questionImage": "",
       "answer": "ตั้งอยู่ที่บริเวณ Area postrema ที่ก้นของโพรงสมองที่ 4 (4th ventricle)<br> เป็นบริเวณที่ อยู่นอกแนวป้องกัน Blood-Brain Barrier (BBB) จึงไวต่อสารพิษและยาในกระแสเลือดโดยตรง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::75",
+      "itemNo": "73",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Nausea & Vomiting",
+      "track": "Clinic",
+      "question": "ตัวรับหลักที่เกี่ยวข้องกับการส่งสัญญาณอาการเมารถเมาเรือ (Motion sickness) ในระบบประสาทการทรงตัวคืออะไร?",
+      "questionImage": "",
+      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือต้านโคลิเนอร์จิกเป็นหลัก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::76",
+      "itemNo": "74",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Nausea & Vomiting",
+      "track": "Clinic",
+      "question": "Dimenhydrinate (ยาแก้แพ้แก้เมา) ควรรับประทานเวลาใดเพื่อให้ได้ผลป้องกันการเมารถเมาเรือสูงสุด?",
+      "questionImage": "",
+      "answer": "รับประทานก่อนออกเดินทางประมาณ 30 ถึง 60 นาที<br> เพื่อให้ตัวยาถูกดูดซึมและออกฤทธิ์ปิดกั้นตัวรับในระบบประสาทการทรงตัวได้ทัน",
       "answerImage": "",
       "note": ""
     },
@@ -33369,37 +34145,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ตัวรับหลักที่เกี่ยวข้องกับการส่งสัญญาณอาการเมารถเมาเรือ (Motion sickness) ในระบบประสาทการทรงตัวคืออะไร?",
       "questionImage": "",
-      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือต้านโคลิเนอร์จิกเป็นหลัก",
+      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือ anticholinergic เป็นหลัก",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::78",
       "itemNo": "76",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Nausea & Vomiting",
-      "track": "Clinic",
-      "question": "Dimenhydrinate (ยาแก้แพ้แก้เมา) ควรรับประทานเวลาใดเพื่อให้ได้ผลป้องกันการเมารถเมาเรือสูงสุด?",
-      "questionImage": "",
-      "answer": "รับประทานก่อนออกเดินทางประมาณ 30 ถึง 60 นาที<br> เพื่อให้ตัวยาถูกดูดซึมและออกฤทธิ์ปิดกั้นตัวรับในระบบประสาทการทรงตัวได้ทัน",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::79",
-      "itemNo": "77",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Nausea & Vomiting",
-      "track": "Clinic",
-      "question": "แผ่นแปะแก้เมารถ Scopolamine (Hyoscine patch) มีคำแนะนำในการแปะและการเปลี่ยนแผ่นอย่างไร?",
-      "questionImage": "",
-      "answer": "แปะที่ผิวหนังหลังใบหูอย่างน้อย 4 ชั่วโมงก่อนออกเดินทาง<br> แผ่นแปะ 1 แผ่นออกฤทธิ์ได้นานถึง 72 ชั่วโมง (3 วัน) ล้างมือให้สะอาดหลังแปะเพื่อเลี่ยงยาเข้าตา",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::80",
-      "itemNo": "78",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33410,8 +34162,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::81",
-      "itemNo": "79",
+      "id": "5. Gastrointestinal::79",
+      "itemNo": "77",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33422,8 +34174,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::82",
-      "itemNo": "80",
+      "id": "5. Gastrointestinal::80",
+      "itemNo": "78",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33434,8 +34186,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::83",
-      "itemNo": "81",
+      "id": "5. Gastrointestinal::81",
+      "itemNo": "79",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33446,8 +34198,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::84",
-      "itemNo": "82",
+      "id": "5. Gastrointestinal::82",
+      "itemNo": "80",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33458,8 +34210,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::85",
-      "itemNo": "83",
+      "id": "5. Gastrointestinal::83",
+      "itemNo": "81",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33470,8 +34222,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::86",
-      "itemNo": "84",
+      "id": "5. Gastrointestinal::84",
+      "itemNo": "82",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33482,8 +34234,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::87",
-      "itemNo": "85",
+      "id": "5. Gastrointestinal::85",
+      "itemNo": "83",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33494,8 +34246,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::88",
-      "itemNo": "86",
+      "id": "5. Gastrointestinal::86",
+      "itemNo": "84",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -33506,8 +34258,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::89",
-      "itemNo": "87",
+      "id": "5. Gastrointestinal::87",
+      "itemNo": "85",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33518,8 +34270,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::90",
-      "itemNo": "88",
+      "id": "5. Gastrointestinal::88",
+      "itemNo": "86",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33530,8 +34282,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::91",
-      "itemNo": "89",
+      "id": "5. Gastrointestinal::89",
+      "itemNo": "87",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33542,8 +34294,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::92",
-      "itemNo": "90",
+      "id": "5. Gastrointestinal::90",
+      "itemNo": "88",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33554,8 +34306,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::93",
-      "itemNo": "91",
+      "id": "5. Gastrointestinal::91",
+      "itemNo": "89",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33566,8 +34318,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::94",
-      "itemNo": "92",
+      "id": "5. Gastrointestinal::92",
+      "itemNo": "90",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33578,8 +34330,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::95",
-      "itemNo": "93",
+      "id": "5. Gastrointestinal::93",
+      "itemNo": "91",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33590,8 +34342,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::96",
-      "itemNo": "94",
+      "id": "5. Gastrointestinal::94",
+      "itemNo": "92",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33602,8 +34354,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::97",
-      "itemNo": "95",
+      "id": "5. Gastrointestinal::95",
+      "itemNo": "93",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33614,8 +34366,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::98",
-      "itemNo": "96",
+      "id": "5. Gastrointestinal::96",
+      "itemNo": "94",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33626,8 +34378,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::99",
-      "itemNo": "97",
+      "id": "5. Gastrointestinal::97",
+      "itemNo": "95",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33638,8 +34390,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::100",
-      "itemNo": "98",
+      "id": "5. Gastrointestinal::98",
+      "itemNo": "96",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33650,8 +34402,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::101",
-      "itemNo": "99",
+      "id": "5. Gastrointestinal::99",
+      "itemNo": "97",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33662,8 +34414,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::102",
-      "itemNo": "100",
+      "id": "5. Gastrointestinal::100",
+      "itemNo": "98",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33674,8 +34426,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::103",
-      "itemNo": "101",
+      "id": "5. Gastrointestinal::101",
+      "itemNo": "99",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33686,8 +34438,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::104",
-      "itemNo": "102",
+      "id": "5. Gastrointestinal::102",
+      "itemNo": "100",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -33698,8 +34450,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::105",
-      "itemNo": "103",
+      "id": "5. Gastrointestinal::103",
+      "itemNo": "101",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33710,8 +34462,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::106",
-      "itemNo": "104",
+      "id": "5. Gastrointestinal::104",
+      "itemNo": "102",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33722,8 +34474,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::107",
-      "itemNo": "105",
+      "id": "5. Gastrointestinal::105",
+      "itemNo": "103",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33734,8 +34486,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::108",
-      "itemNo": "106",
+      "id": "5. Gastrointestinal::106",
+      "itemNo": "104",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33746,8 +34498,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::109",
-      "itemNo": "107",
+      "id": "5. Gastrointestinal::107",
+      "itemNo": "105",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33758,8 +34510,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::110",
-      "itemNo": "108",
+      "id": "5. Gastrointestinal::108",
+      "itemNo": "106",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33770,8 +34522,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::111",
-      "itemNo": "109",
+      "id": "5. Gastrointestinal::109",
+      "itemNo": "107",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33782,8 +34534,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::112",
-      "itemNo": "110",
+      "id": "5. Gastrointestinal::110",
+      "itemNo": "108",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33794,8 +34546,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::113",
-      "itemNo": "111",
+      "id": "5. Gastrointestinal::111",
+      "itemNo": "109",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33806,12 +34558,36 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
+      "id": "5. Gastrointestinal::112",
+      "itemNo": "110",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Viral Hepatitis & Cirrhosis",
+      "track": "Clinic",
+      "question": "ยากลุ่มยับยั้งเอนไซม์โปรติเอส (NS3/4A Protease Inhibitors เช่น Glecaprevir) มีข้อห้ามใช้ในผู้ป่วยตับกลุ่มใด?",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::113",
+      "itemNo": "111",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Viral Hepatitis & Cirrhosis",
+      "track": "Clinic",
+      "question": "อัตราส่วนของยาขับปัสสาวะ Spironolactone ต่อ Furosemide ในการรักษาภาวะท้องมาน (Ascites) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
+    },
+    {
       "id": "5. Gastrointestinal::114",
       "itemNo": "112",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "ยากลุ่มยับยั้งเอนไซม์โปรติเอส (NS3/4A Protease Inhibitors เช่น Glecaprevir) มีข้อห้ามใช้ในผู้ป่วยตับกลุ่มใด?",
+      "question": "ข้อบ่งชี้ในการให้ยา IV Albumin ระหว่างการเจาะระบายน้ำในช่องท้องปริมาณมาก (LVP) คืออะไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -33823,7 +34599,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "อัตราส่วนของยาขับปัสสาวะ Spironolactone ต่อ Furosemide ในการรักษาภาวะท้องมาน (Ascites) คือเท่าใด?",
+      "question": "เกณฑ์การวินิจฉัยภาวะเยื่อบุช่องท้องอักเสบติดเชื้อเอง (Spontaneous Bacterial Peritonitis / SBP) คืออะไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -33835,7 +34611,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "ข้อบ่งชี้ในการให้ยา IV Albumin ระหว่างการเจาะระบายน้ำในช่องท้องปริมาณมาก (LVP) คืออะไร?",
+      "question": "ยาปฏิชีวนะทางเลือกแรกในการรักษาภาวะ SBP ในผู้ป่วยโรคตับแข็งคือยาใด?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -33847,7 +34623,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "เกณฑ์การวินิจฉัยภาวะเยื่อบุช่องท้องอักเสบติดเชื้อเอง (Spontaneous Bacterial Peritonitis / SBP) คืออะไร?",
+      "question": "ยาทางเลือกแรกในการรักษาภาวะทางสมองจากโรคตับ (Hepatic Encephalopathy) คือยาใดและปรับขนาดอย่างไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -33856,30 +34632,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
     {
       "id": "5. Gastrointestinal::118",
       "itemNo": "116",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Viral Hepatitis & Cirrhosis",
-      "track": "Clinic",
-      "question": "ยาปฏิชีวนะทางเลือกแรกในการรักษาภาวะ SBP ในผู้ป่วยโรคตับแข็งคือยาใด?",
-      "questionImage": "",
-      "answer": "",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::119",
-      "itemNo": "117",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Viral Hepatitis & Cirrhosis",
-      "track": "Clinic",
-      "question": "ยาทางเลือกแรกในการรักษาภาวะทางสมองจากโรคตับ (Hepatic Encephalopathy) คือยาใดและปรับขนาดอย่างไร?",
-      "questionImage": "",
-      "answer": "",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::120",
-      "itemNo": "118",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -33919,7 +34671,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "รูปแบบผลตรวจค่าเคมีของธาตุเหล็ก (Iron studies) ในผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็กเป็นอย่างไร?",
+      "question": "รูปแบบผลตรวจค่าเคมีของธาตุเหล็ก (Iron studies) ในผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็ก จะได้ผลเป็นอย่างไร",
       "questionImage": "",
       "answer": "Serum Iron ต่ำ, Serum Ferritin ต่ำ, แต่ค่า Total Iron-Binding Capacity (TIBC) สูงขึ้น<br> และค่า Transferrin Saturation (TSAT) ต่ำกว่า 20%",
       "answerImage": "",
@@ -33933,7 +34685,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ลักษณะทางคลินิกจำเพาะของผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็กเรื้อรังรุนแรงมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "เล็บบุ๋มเป็นรูปช้อน (Koilonychia / Spoon nails), แผลมุมปาก (Angular cheilitis),<br> และพฤติกรรมชอบกินสิ่งที่ไม่ใช่อาหาร เช่น น้ำแข็ง ดิน หรือข้าวสารดิบ (Pica)",
+      "answer": "เล็บบุ๋มเป็นรูปช้อน (Koilonychia / Spoon nails)<br>แผลมุมปาก (Angular cheilitis),<br>และพฤติกรรมชอบกินสิ่งที่ไม่ใช่อาหาร เช่น น้ำแข็ง ดิน หรือข้าวสารดิบ (Pica)",
       "answerImage": "",
       "note": ""
     },
@@ -33943,9 +34695,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "ดัชนี Mentzer Index คำนวณอย่างไรและใช้แยกโรคโลหิตจางกลุ่มใด?",
+      "question": "ปริมาณธาตุเหล็กบริสุทธิ์ (Elemental Iron) ที่แนะนำในการรักษาภาวะโลหิตจางจากการขาดธาตุเหล็กคือเท่าใด?",
       "questionImage": "",
-      "answer": "คำนวณจาก MCV หารด้วยจำนวนเม็ดเลือดแดง (RBC count)<br> หาก &lt; 13 สงสัยพาหะธาลัสซีเมีย (Thalassemia trait) หาก &gt; 13 สงสัยขาดธาตุเหล็ก (IDA)",
+      "answer": "100 ถึง 200 mg ของ Elemental Iron ต่อวัน (แบ่งให้วันละ 2-3 ครั้ง)<br> หรือรับประทานวันเว้นวัน (Alternate-day dosing) เพื่อลดการหลั่งฮอร์โมน Hepcidin และลดผลข้างเคียง",
       "answerImage": "",
       "note": ""
     },
@@ -33955,9 +34707,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "ปริมาณธาตุเหล็กบริสุทธิ์ (Elemental Iron) ที่แนะนำในการรักษาภาวะโลหิตจางจากการขาดธาตุเหล็กคือเท่าใด?",
+      "question": "ยา Ferrous sulfate, Ferrous fumarate และ Ferrous gluconate มีปริมาณ Elemental Iron ร้อยละเท่าใด?",
       "questionImage": "",
-      "answer": "100 ถึง 200 mg ของ Elemental Iron ต่อวัน (แบ่งให้วันละ 2-3 ครั้ง)<br> หรือรับประทานวันเว้นวัน (Alternate-day dosing) เพื่อลดการหลั่งฮอร์โมน Hepcidin และลดผลข้างเคียง",
+      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg), Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
       "answerImage": "",
       "note": ""
     },
@@ -33969,25 +34721,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยา Ferrous sulfate, Ferrous fumarate และ Ferrous gluconate มีปริมาณ Elemental Iron ร้อยละเท่าใด?",
       "questionImage": "",
-      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg), Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
+      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg)<br>Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "6. Hematologic::10",
       "itemNo": "8",
-      "group": "6. Hematologic",
-      "subTopic": "Microcytic & Megaloblastic Anemia",
-      "track": "Clinic",
-      "question": "คำแนะนำในการรับประทานยาบำรุงธาตุเหล็กชนิดเม็ดเพื่อให้ร่างกายดูดซึมได้ดีที่สุดคืออะไร?",
-      "questionImage": "",
-      "answer": "รับประทานขณะท้องว่างก่อนอาหาร 1 ชั่วโมง หรือพร้อมน้ำส้ม/วิตามินซี (ความเป็นกรดช่วยดูดซึม)<br> หากมีอาการคลื่นไส้ แน่นท้อง ท้องผูก ให้เปลี่ยนมารับประทานหลังอาหารทันที",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "6. Hematologic::11",
-      "itemNo": "9",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -33998,8 +34738,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::12",
-      "itemNo": "10",
+      "id": "6. Hematologic::11",
+      "itemNo": "9",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34010,8 +34750,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::13",
-      "itemNo": "11",
+      "id": "6. Hematologic::12",
+      "itemNo": "10",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34022,8 +34762,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::14",
-      "itemNo": "12",
+      "id": "6. Hematologic::13",
+      "itemNo": "11",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34034,8 +34774,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::15",
-      "itemNo": "13",
+      "id": "6. Hematologic::14",
+      "itemNo": "12",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34046,8 +34786,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::16",
-      "itemNo": "14",
+      "id": "6. Hematologic::15",
+      "itemNo": "13",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34058,8 +34798,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::17",
-      "itemNo": "15",
+      "id": "6. Hematologic::16",
+      "itemNo": "14",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34070,8 +34810,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::18",
-      "itemNo": "16",
+      "id": "6. Hematologic::17",
+      "itemNo": "15",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34082,8 +34822,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::19",
-      "itemNo": "17",
+      "id": "6. Hematologic::18",
+      "itemNo": "16",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34094,8 +34834,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::20",
-      "itemNo": "18",
+      "id": "6. Hematologic::19",
+      "itemNo": "17",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34106,8 +34846,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::21",
-      "itemNo": "19",
+      "id": "6. Hematologic::20",
+      "itemNo": "18",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34118,8 +34858,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::22",
-      "itemNo": "20",
+      "id": "6. Hematologic::21",
+      "itemNo": "19",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34130,8 +34870,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::23",
-      "itemNo": "21",
+      "id": "6. Hematologic::22",
+      "itemNo": "20",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34142,8 +34882,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::24",
-      "itemNo": "22",
+      "id": "6. Hematologic::23",
+      "itemNo": "21",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34154,8 +34894,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::25",
-      "itemNo": "23",
+      "id": "6. Hematologic::24",
+      "itemNo": "22",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34166,8 +34906,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::26",
-      "itemNo": "24",
+      "id": "6. Hematologic::25",
+      "itemNo": "23",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34178,8 +34918,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::27",
-      "itemNo": "25",
+      "id": "6. Hematologic::26",
+      "itemNo": "24",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34190,8 +34930,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::28",
-      "itemNo": "26",
+      "id": "6. Hematologic::27",
+      "itemNo": "25",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34202,8 +34942,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::29",
-      "itemNo": "27",
+      "id": "6. Hematologic::28",
+      "itemNo": "26",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34214,8 +34954,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::30",
-      "itemNo": "28",
+      "id": "6. Hematologic::29",
+      "itemNo": "27",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -34226,8 +34966,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::31",
-      "itemNo": "29",
+      "id": "6. Hematologic::30",
+      "itemNo": "28",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34238,8 +34978,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::32",
-      "itemNo": "30",
+      "id": "6. Hematologic::31",
+      "itemNo": "29",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34250,8 +34990,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::33",
-      "itemNo": "31",
+      "id": "6. Hematologic::32",
+      "itemNo": "30",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34262,8 +35002,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::34",
-      "itemNo": "32",
+      "id": "6. Hematologic::33",
+      "itemNo": "31",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34274,8 +35014,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::35",
-      "itemNo": "33",
+      "id": "6. Hematologic::34",
+      "itemNo": "32",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34286,8 +35026,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::36",
-      "itemNo": "34",
+      "id": "6. Hematologic::35",
+      "itemNo": "33",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34298,8 +35038,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::37",
-      "itemNo": "35",
+      "id": "6. Hematologic::36",
+      "itemNo": "34",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34310,8 +35050,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::38",
-      "itemNo": "36",
+      "id": "6. Hematologic::37",
+      "itemNo": "35",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34322,8 +35062,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::39",
-      "itemNo": "37",
+      "id": "6. Hematologic::38",
+      "itemNo": "36",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34334,8 +35074,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::40",
-      "itemNo": "38",
+      "id": "6. Hematologic::39",
+      "itemNo": "37",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34346,8 +35086,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::41",
-      "itemNo": "39",
+      "id": "6. Hematologic::40",
+      "itemNo": "38",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34358,8 +35098,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::42",
-      "itemNo": "40",
+      "id": "6. Hematologic::41",
+      "itemNo": "39",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34370,8 +35110,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::43",
-      "itemNo": "41",
+      "id": "6. Hematologic::42",
+      "itemNo": "40",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34382,8 +35122,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::44",
-      "itemNo": "42",
+      "id": "6. Hematologic::43",
+      "itemNo": "41",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34394,8 +35134,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::45",
-      "itemNo": "43",
+      "id": "6. Hematologic::44",
+      "itemNo": "42",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34406,8 +35146,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::46",
-      "itemNo": "44",
+      "id": "6. Hematologic::45",
+      "itemNo": "43",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34418,8 +35158,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::47",
-      "itemNo": "45",
+      "id": "6. Hematologic::46",
+      "itemNo": "44",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34430,8 +35170,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::48",
-      "itemNo": "46",
+      "id": "6. Hematologic::47",
+      "itemNo": "45",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34442,8 +35182,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::49",
-      "itemNo": "47",
+      "id": "6. Hematologic::48",
+      "itemNo": "46",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34454,8 +35194,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::50",
-      "itemNo": "48",
+      "id": "6. Hematologic::49",
+      "itemNo": "47",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34466,8 +35206,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::51",
-      "itemNo": "49",
+      "id": "6. Hematologic::50",
+      "itemNo": "48",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34478,8 +35218,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::52",
-      "itemNo": "50",
+      "id": "6. Hematologic::51",
+      "itemNo": "49",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34490,8 +35230,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::53",
-      "itemNo": "51",
+      "id": "6. Hematologic::52",
+      "itemNo": "50",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34502,8 +35242,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::54",
-      "itemNo": "52",
+      "id": "6. Hematologic::53",
+      "itemNo": "51",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -34514,8 +35254,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::55",
-      "itemNo": "53",
+      "id": "6. Hematologic::54",
+      "itemNo": "52",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34526,8 +35266,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::56",
-      "itemNo": "54",
+      "id": "6. Hematologic::55",
+      "itemNo": "53",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34538,8 +35278,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::57",
-      "itemNo": "55",
+      "id": "6. Hematologic::56",
+      "itemNo": "54",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34550,8 +35290,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::58",
-      "itemNo": "56",
+      "id": "6. Hematologic::57",
+      "itemNo": "55",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34562,8 +35302,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::59",
-      "itemNo": "57",
+      "id": "6. Hematologic::58",
+      "itemNo": "56",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34574,8 +35314,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::60",
-      "itemNo": "58",
+      "id": "6. Hematologic::59",
+      "itemNo": "57",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34586,8 +35326,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::61",
-      "itemNo": "59",
+      "id": "6. Hematologic::60",
+      "itemNo": "58",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34598,8 +35338,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::62",
-      "itemNo": "60",
+      "id": "6. Hematologic::61",
+      "itemNo": "59",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34610,8 +35350,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::63",
-      "itemNo": "61",
+      "id": "6. Hematologic::62",
+      "itemNo": "60",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -34622,8 +35362,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::64",
-      "itemNo": "62",
+      "id": "6. Hematologic::63",
+      "itemNo": "61",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -47044,6 +47784,858 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": "Lab IDQ4 P.7 Exercise 10"
     },
     {
+      "id": "6. Solid Dosage Forms::3",
+      "itemNo": "1",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "Tablet defects",
+      "track": "Product",
+      "question": "Picking กับ Sticking ต่างกันอย่างไร? และแต่ละอันมีต้นเหตุหลักจากอะไร",
+      "questionImage": "",
+      "answer": "Picking = เนื้อยาติดในร่องตัวอักษร/โลโก้ (tooling: enclosed areas เช่น A, B) / Sticking = ติดทั้งผิวหน้า punch (วัสดุ: low m.p., moisture, hygroscopic additive)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::4",
+      "itemNo": "2",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ถ้าเม็ดยามีตัวอักษร “B” แล้วเกิด picking แก้ทาง tooling ได้อย่างไร (2 วิธี) และแก้ทางสูตรได้อย่างไร",
+      "questionImage": "",
+      "answer": "Tooling: ใช้ตัวอักษรใหญ่ขึ้น/ไม่มีตัวอักษร; เคลือบ punch ด้วย chromium. สูตร: เพิ่ม lubricant (metal stearate), glidant (colloidal SiO₂) หรือ talc",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::5",
+      "itemNo": "3",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "บอกสาเหตุของ Sticking 3 ข้อ พร้อมตัวอย่างสาร",
+      "questionImage": "",
+      "answer": "1) Low m.p. substance เช่น stearic acid, PEG, API บางตัว 2) Excess moisture ใน granule 3) Hygroscopic additive เช่น propylene glycol",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::6",
+      "itemNo": "4",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "สูตร Aspirin ใช้ Mg stearate แล้วเม็ดติด die — เรียกปัญหานี้ว่าอะไร แก้อย่างไร",
+      "questionImage": "",
+      "answer": "Binding in the die — Aspirin + Mg-St เกิด sticky mass →เปลี่ยนเป็น non-reactive lubricant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::7",
+      "itemNo": "5",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Mottling คืออะไร? สาเหตุใน process ที่สำคัญที่สุดและวิธีแก้",
+      "questionImage": "",
+      "answer": "สีไม่สม่ำเสมอบนผิวเม็ดจาก color migration; drying temperature สูง ดันสีจากในออกผิว granule → ลดอุณหภูมิอบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::8",
+      "itemNo": "6",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Crack บนผิวเม็ดจาก tablet expansion ระหว่าง ejection แก้ทางสูตรอย่างไร",
+      "questionImage": "",
+      "answer": "เลือกวัสดุ plastic deformation มากกว่า elastic; คุม granule size ไม่ใหญ่เกินและ distribution แคบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::9",
+      "itemNo": "7",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Chipped edge จากรูปทรงเม็ด แก้อย่างไร — และ punch แบบเดียวกันนี้เป็นสาเหตุของ defect ใด",
+      "questionImage": "",
+      "answer": "เม็ดขอบคม → ใช้ concave/beveled-edge punch; แต่ deep concave/beveled เป็นสาเหตุของ capping (แก้ด้วย flat punch)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::10",
+      "itemNo": "8",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "นิยาม Capping vs Lamination",
+      "questionImage": "",
+      "answer": "Capping = crown บน/ล่าง หลุดบางส่วน/ทั้งหมด; Lamination = แยกเป็น ≥2 ชั้นแนวนอน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::11",
+      "itemNo": "9",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "กลไกหลักที่อธิบาย capping คืออะไร และเกี่ยวกับ speed อย่างไร",
+      "questionImage": "",
+      "answer": "Air entrapment — speed สูง อากาศหนีไม่ทันก่อน ejection → ขยายตัว → capping; แก้ด้วย ลด turret speed / pre-compression ช้า = เพิ่ม dwell time",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::12",
+      "itemNo": "10",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ยกตัวอย่างวัสดุที่ทำให้ capping ง่าย 2 กลุ่ม",
+      "questionImage": "",
+      "answer": "Poor compressibility: paracetamol, ibuprofen, activated charcoal / Elastic deformation: alginic acid, rice starch",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::13",
+      "itemNo": "11",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Capping จาก formulation: granule แห้งเกิน และ binder ไม่พอ แก้อย่างไร",
+      "questionImage": "",
+      "answer": "แห้งเกิน → ทำให้ชื้นพอดี / เติม hygroscopic (sorbitol, PEG-4000); binder ไม่พอ → เพิ่ม binder หรือ dry binder (pregelatinized starch, PVP)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::14",
+      "itemNo": "12",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Soft tablet มีสาเหตุอะไร 3 ข้อ และเติมสารใดช่วยได้",
+      "questionImage": "",
+      "answer": "Low compaction, excess fatty lubricant, สูตรไม่เหมาะ →เพิ่มสาร plastic deformation สูง: lactose, MCC",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::15",
+      "itemNo": "13",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Protracted disintegration มีสาเหตุอะไรบ้าง (5 ข้อ)",
+      "questionImage": "",
+      "answer": "Lubricant มาก/ผสมนาน, binder สูง, low m.p. substance, disintegrant น้อย/อ่อน, compression pressure สูง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::16",
+      "itemNo": "14",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Weight variation ต่างจาก Variation in drug content อย่างไร (สาเหตุหลักของแต่ละอัน)",
+      "questionImage": "",
+      "answer": "Weight: flow/การป้อนเข้า die — lubricant/glidant ไม่พอ, granule size กว้าง, speed สูง, เครื่องไม่มั่นคง. Content: homogeneity ของ mix ก่อน/หลัง granulation, %fines สูง — เน้น low-dose",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::17",
+      "itemNo": "15",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ทำไม Mg stearate ปริมาณมาก/ผสมนานทำให้ dissolution ช้า และแก้อย่างไร",
+      "questionImage": "",
+      "answer": "Mg-St สร้าง hydrophobic film เคลือบอนุภาค → น้ำซึมเข้าไม่ได้ → disintegration ช้า → dissolution ช้า; แก้: คุมชนิด+เวลา lubrication (+ wetting agent, superdisintegrant intra/extragranular)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::3",
+      "itemNo": "1",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตำรับยาน้ำเสื่อมจาก oxidation และพบว่าไอออนโลหะอาจเป็นตัวเร่งปฏิกิริยา ควรพิจารณาสารใดเพื่อจับโลหะ?<br><br>A. CMC<br>B. EDTA (disodium edetate)<br>C. Sucrose<br>D. Tween 80",
+      "questionImage": "",
+      "answer": "B — EDTA เป็น chelating agent ช่วยจับไอออนโลหะที่อาจเร่ง oxidation",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::4",
+      "itemNo": "2",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตัวยาสำคัญละลายในน้ำได้ไม่ดี เภสัชกรต้องการปรับระบบตัวทำละลายเพื่อช่วยการละลาย สารใดอาจเหมาะสม?<br><br>A. FD&amp;C coloring agent<br>B. Propylene glycol<br>C. Methylparaben เพียงอย่างเดียว<br>D. Sodium chloride เพียงอย่างเดียว",
+      "questionImage": "",
+      "answer": "A — Sodium metabisulfite ใช้เป็น antioxidant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::5",
+      "itemNo": "3",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตัวยาสำคัญในตำรับไวต่อ oxidation และต้องการเติมสารช่วยลดการเสื่อมจากปฏิกิริยานี้ สารใดเหมาะสมที่สุดตามหน้าที่?<br><br>A. Sodium metabisulfite<br>B. Methylparaben<br>C. HPMC<br>D. Saccharin",
+      "questionImage": "",
+      "answer": "A — Sodium metabisulfite ใช้เป็น antioxidant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::6",
+      "itemNo": "4",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ยาน้ำมีความหนืดต่ำกว่าที่ต้องการ และสูตรตำรับสามารถปรับความหนืดได้ ควรพิจารณาสารใด?<br><br>A. CMC<br>B. EDTA<br>C. Sodium benzoate<br>D. Citric acid",
+      "questionImage": "",
+      "answer": "A — CMC ใช้เพิ่มความหนืด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::7",
+      "itemNo": "5",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ยาน้ำมีความเสี่ยงต่อการเจริญของจุลชีพ ต้องการเลือกสารช่วยที่มีหน้าที่เป็น preservative ควรเลือกข้อใด?<br><br>A. CMC<br>B. Methylparaben<br>C. Tween 80<br>D. EDTA",
+      "questionImage": "",
+      "answer": "B — Methylparaben เป็น preservative",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::8",
+      "itemNo": "6",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ในตำรับต้องการสารช่วยรักษาความชุ่มชื้นและลดการสูญเสียความชื้น ควรพิจารณาสารใด?<br><br>A. Glycerin<br>B. EDTA<br>C. Sodium metabisulfite<br>D. FD&amp;C dye",
+      "questionImage": "",
+      "answer": "A — Glycerin เป็น humectant และอาจช่วยด้านความหนืดได้ด้วย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::9",
+      "itemNo": "7",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ข้อใดอธิบายความแตกต่างโดยทั่วไปของ syrup และ elixir ได้เหมาะสมที่สุด?<br><br>A. Syrup เป็นตำรับน้ำเชื่อมที่มีน้ำตาลสูง ส่วน elixir เป็นสารละลายใสที่มีน้ำและมักมีแอลกอฮอล์ร่วมด้วย<br><br>B. Syrup ต้องมีแอลกอฮอล์เสมอ ส่วน elixir ห้ามมีแอลกอฮอล์<br><br>C. ทั้งสองชนิดต้องมีตัวยาสำคัญเป็นของแข็งแขวนลอย<br><br>D. ทั้งสองชนิดแตกต่างกันเฉพาะสีเท่านั้น",
+      "questionImage": "",
+      "answer": "A — Syrup เด่นที่น้ำตาลหรือน้ำเชื่อม ส่วน elixir โดยทั่วไปเป็นสารละลายให้รับประทานที่มีน้ำและแอลกอฮอล์ร่วมด้วย รายละเอียดขึ้นกับนิยามและสูตรตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::10",
+      "itemNo": "8",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "การเลือก vehicle หรือตัวทำละลายสำหรับตำรับควรพิจารณาสิ่งใดเป็นหลัก?<br><br>A. เลือกตัวทำละลายที่มีราคาถูกที่สุดเสมอ<br>B. เลือกตัวทำละลายที่มีกลิ่นหอมที่สุด<br>C. พิจารณาความสามารถในการละลาย ความเข้ากันได้ และความเหมาะสมกับตำรับ<br>D. ใช้น้ำเป็นตัวทำละลายเพียงชนิดเดียวในทุกตำรับ",
+      "questionImage": "",
+      "answer": "C — ต้องพิจารณาการละลาย ความเข้ากันได้ ความคงตัว และความเหมาะสมต่อการใช้",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::11",
+      "itemNo": "1",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "เหตุใดอนุภาคขนาดเล็กใน suspension จึงไม่คงตัวทาง thermodynamic และมีวิธีทำให้ระบบคงตัวได้อย่างไร?",
+      "questionImage": "",
+      "answer": "เพราะอนุภาคเล็กมี specific surface area มาก ทำให้ surface free energy สูง และทำให้ระบบลดพลังงานโดย (1) ลดพื้นที่ผิวรวม ด้วยการจับกันของอนุภาค  (2) ลดแรงตึงผิวด้วยการเติม surfactant เช่น SLS หรือ Tween 80",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::12",
+      "itemNo": "2",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "flocculation กับ aggregation (caking) ต่างกันอย่างไร",
+      "questionImage": "",
+      "answer": "Flocculation = จับกันหลวม ๆ ด้วยแรงอ่อน เขย่าแล้วกระจายกลับได้ง่าย; Aggregation = จับกันแน่นถาวร (crystal growth, claying/caking) ทำลายแรงยึดได้ยาก กระจายกลับไม่ได้",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::13",
+      "itemNo": "3",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "Degree of flocculation (β) บอกอะไร และค่า β = 1 หมายความว่าอย่างไร?",
+      "questionImage": "",
+      "answer": "β = F ของระบบ flocculated ÷ F ของระบบ deflocculated แสดง ระดับ flocculation ที่เกิดขึ้นเมื่อเทียบกับอนุภาคเดี่ยว ค่า β = 1 หมายถึงปริมาตรตะกอนไม่ต่างจากระบบ deflocculated คือไม่มี flocculation เพิ่ม; β ยิ่งมากยิ่งเกิด flocculation มาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::14",
+      "itemNo": "4",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "ระบบ deflocculated และ flocculated ต่างกันอย่างไรในด้านอัตราการตกตะกอน ลักษณะตะกอน และน้ำใสด้านบน?",
+      "questionImage": "",
+      "answer": "ระบบ deflocculated และ flocculated ต่างกันอย่างไรในด้านอัตราการตกตะกอน ลักษณะตะกอน และน้ำใสด้านบน?",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::15",
+      "itemNo": "5",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "โครงสร้างของสารช่วยแขวนตะกอนที่เหมาะสมใน structured vehicle ควรมีพฤติกรรมการไหลแบบใด และเพราะเหตุใด?",
+      "questionImage": "",
+      "answer": "ควรเป็น plastic หรือ pseudoplastic ที่มี thixotropy เพราะเมื่อตั้งทิ้งไว้ความหนืดสูงจึงพยุงอนุภาคไม่ให้ตกเร็ว แต่เมื่อเขย่าความหนืดลดลงมาก จึงเทออกง่ายและผงยากระจายตัวสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::16",
+      "itemNo": "6",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "ผงยามีประจุบวก ควรเลือก flocculating agent และ suspending agent ประจุใด เพราะเหตุใด?",
+      "questionImage": "",
+      "answer": "ใช้ electrolyte ประจุลบ เป็น flocculating agent และเลือก suspending agent ประจุลบ เพื่อไม่ให้เกิดความไม่เข้ากันของประจุ (suspending agent ประจุตรงข้ามอาจตกตะกอนร่วมกับ electrolyte/เสียสภาพ flocculation)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::17",
+      "itemNo": "7",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "Ostwald ripening คืออะไร เกิดขึ้นได้อย่างไร และป้องกันได้อย่างไร?",
+      "questionImage": "",
+      "answer": "การที่อนุภาคใหญ่ขึ้นระหว่างเก็บเมื่ออุณหภูมิเปลี่ยน: ตัวยาละลายมากเมื่ออุณหภูมิสูง แล้วตกผลึกกลับบนอนุภาคใหญ่เมื่อเย็นลง ป้องกันได้โดยเติมโพลิเมอร์ เช่น PVP",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::18",
+      "itemNo": "8",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "เภสัชกรจะเตรียม suspension เฉพาะคราวจากยาเม็ดสำหรับผู้ป่วยที่กลืนยาเม็ดไม่ได้ ไม่ควรเลือกยาเม็ดชนิดใด ข้อควรระวังและ BUD เป็นอย่างไร?",
+      "questionImage": "",
+      "answer": "<b style=\"color:#dc2626;\">ห้ามใช้</b> enteric-coated และ controlled-release tablets เพราะทำลายระบบปลดปล่อยยา และBUD ของยารับประทานที่มีน้ำ ไม่เกิน 14 วัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::34",
+      "itemNo": "17",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "นิยามของ Emulsion ทางเภสัชกรรมคืออะไร และมีองค์ประกอบหลักกี่ส่วน?",
+      "questionImage": "",
+      "answer": "▶ นิยามของ Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ระบบกระจายตัวของของเหลว 2 ชนิดที่ไม่ผสมกัน (Immiscible liquids)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ของเหลวหนึ่งแตกกระจายเป็นหยดเล็กๆ (Dispersed phase / Internal phase) ในของเหลวอีกชนิดหนึ่ง (Continuous phase / External phase)<br> <br> ▶ องค์ประกอบหลัก 3 ส่วน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. เฟสน้ำมัน (Oil phase): Oils, fats, waxes, nonpolar actives<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. เฟสน้ำ (Water phase): Water, hydrophilic actives, preservatives<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สารทำอิมัลชัน (Emulsifier / Emulsifying agent): ตัวประสานรอยต่อระหว่าง 2 เฟส",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::35",
+      "itemNo": "18",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "กฎของแบนครอฟต์ (Bancroft’s Rule) กล่าวไว้อย่างไร และนำไปใช้อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ กฎของแบนครอฟต์ (Bancroft’s Rule):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>&quot;เฟสที่สารทำอิมัลชัน (Emulsifier) ละลายได้ดีกว่า จะกลายเป็น External phase (Continuous phase) เสมอ&quot;<br> <br> ▶ การนำไปประยุกต์ใช้:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันที่ชอบน้ำ (Hydrophilic, ละลายในน้ำได้ดีกว่า, HLB สูง) ➔ จะได้ O/W emulsion<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันที่ชอบน้ำมัน (Lipophilic, ละลายในน้ำมันได้ดีกว่า, HLB ต่ำ) ➔ จะได้ W/O emulsion<br> ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::36",
+      "itemNo": "19",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": " สรุป 3 รูปแบบของ Interfacial Film ที่สารทำอิมัลชันสร้างขึ้นเพื่อป้องกัน Coalescence?",
+      "questionImage": "",
+      "answer": "▶ 1. Monomolecular Film (ฟิล์มชั้นเดี่ยว):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจาก Surfactants ขนาดโมเลกุลเล็ก เรียงตัวที่ผิวประจันเพื่อลดแรงตึงผิว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ให้ทั้งแรงผลักทางไฟฟ้า (กรณี Ionic) หรือ Steric barrier (กรณี Non-ionic)<br> <br> ▶ 2. Multimolecular Film (ฟิล์มหลายชั้น):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจาก Hydrophilic polymers / Hydrocolloids (Acacia, Tragacanth, Gelatin)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ฟิล์มมีความหนา ยืดหยุ่นเหนียวคล้ายเจล (Viscoelastic film) ขวางกั้นการชนกัน ไม่ค่อยลดแรงตึงผิว<br> <br> ▶ 3. Solid Particle Film (ฟิล์มอนุภาคของแข็ง):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากผงของแข็งขนาดละเอียดมาก (Finely divided solids เช่น Bentonite, Mg(OH)2)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไปดูดซับล้อมรอบผิวหยดอนุภาค เป็นเกราะป้องกันเชิงกล (Mechanical barrier) เรียกว่า Pickering emulsion",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::37",
+      "itemNo": "20",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[8] Steric Stabilization ทำงานอย่างไร และสารกลุ่มใดที่ให้ผลนี้เด่นชัด?",
+      "questionImage": "",
+      "answer": "▶ กลไก Steric Stabilization<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดขึ้นเมื่อสารทำอิมัลชันสายยาวถูกดูดซับที่ผิวหยดน้ำมัน โดยส่วนหางสายโพลีเมอร์ที่ชอบน้ำจะยื่นยาวออกไปในเฟสต่อเนื่อง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อหยดอนุภาคเคลื่อนที่เข้ามาใกล้กัน โซ่โพลีเมอร์จะซ้อนทับกัน (Chain overlap) และเกิดการผลักัน<br> <br> ▶ สารกลุ่มที่ให้ผลนี้เด่นชัด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Non-ionic surfactants โมเลกุลใหญ่ เช่น Polysorbates (Tweens), PEG esters<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Polymeric surfactants เช่น Poloxamer 188 (Pluronic F-68)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::38",
+      "itemNo": "21",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[10] Primary Emulsifier ต่างจาก Secondary Emulsifier (Stabilizer) อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ 1. Primary Emulsifier (สารทำอิมัลชันแท้):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สามารถทำให้เกิดอิมัลชันได้ด้วยตัวเอง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ลดแรงตึงระหว่างผิว หรือสร้างฟิล์มหุ้มรอบหยดเฟสภายในโดยตรง เช่น Acacia, Surfactants, Purified Lecithin<br> <br> ▶ 2. Secondary Emulsifier / Emulsion Stabilizer (สารทำอิมัลชันเสริม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไม่สามารถทำให้เกิดอิมัลชันได้ดีเมื่อใช้เดี่ยวๆ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ส่งเสริมความคงตัว โดยการเพิ่มความหนืดของเฟสภายนอก (Thickener) หรือร่วมสร้างฟิล์มเชิงซ้อนที่ผิวประจัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตัวอย่าง: Tragacanth (ใช้เสริม Acacia), Cetyl alcohol, Stearyl alcohol, Carbomer, Methylcellulose",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::39",
+      "itemNo": "22",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[11] เปรียบเทียบข้อดี-ข้อจำกัดระหว่าง Acacia และ Tragacanth ในตำรับอิมัลชัน?",
+      "questionImage": "",
+      "answer": "▶ 1. Acacia <br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดี: สารทำอิมัลชันแท้ที่ดีที่สุดสำหรับยาน้ำรับประทาน รสชาติดี ปลอดภัย ไม่เป็นพิษ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อจำกัด: ความหนืดต่ำมาก เกิด Creaming ได้ง่าย และเหนียวเหนอะหนะจึงไม่นิยมใช้ในยาทาภายนอก<br> <br> ▶ 2. Tragacanth:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดี: ให้ความหนืดสูงกว่า Acacia ประมาณ 10 เท่า ใช้ได้ทั้งยาน้ำรับประทานและยาทาภายนอก นิยมใช้เป็น Secondary EA ร่วมกับ Acacia เพื่อป้องกัน Creaming<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อจำกัด: หากใช้เดี่ยวๆ จะได้หยดอิมัลชันที่ค่อนข้างหยาบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::40",
+      "itemNo": "23",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[12] Cellulose Derivatives (MC, Na CMC, HPMC) มีจุดเด่นเหนือกว่า Natural Gums อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ จุดเด่นของ Cellulose Derivatives:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ความบริสุทธิ์สม่ำเสมอ: เป็นสารกึ่งสังเคราะห์ (Semi-synthetic) คุณภาพคงที่ในทุกล็อตผลิต<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ทนทานต่อสภาวะกรด-ด่าง: ไม่ตกตะกอนง่ายในช่วง pH กว้าง และทนต่อ Electrolytes ได้ดีกว่า Acacia<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. ไม่เป็นแหล่งอาหารของจุลินทรีย์: โอกาสบูดเสียหรือขึ้นราน้อยกว่า Natural gums อย่างมาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารกลุ่มไม่มีประจุ (Non-ionic เช่น MC, HPMC): เข้ากันได้กับสารอื่นหลากหลาย ไม่เกิดอันตรกิริยากับประจุตรงข้าม<br> ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::41",
+      "itemNo": "24",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[14] Phospholipids (Lecithin) มีคุณสมบัติเด่นอย่างไร และทำไมจึงเป็นสารหลักใน IV Fat Emulsion?",
+      "questionImage": "",
+      "answer": "▶ คุณสมบัติเด่นของ Lecithin (Phosphatidylcholine):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารจากธรรมชาติ สกัดได้จากไข่แดง (Egg yolk) หรือถั่วเหลือง (Soybean)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารลดแรงตึงผิวชนิด Amphoteric (Zwitterion) มีทั้งขั้วบวกและลบในโมเลกุล ปลอดภัย ไม่ระคายเคือง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ย่อยสลายได้ทางชีวภาพ (Biodegradable) และร่างกายนำไปเผาผลาญในกระบวนการทางสรีรวิทยาได้ตามปกติ<br> <br> ▶ เหตุผลที่ได้รับเลือกในยาฉีดทางหลอดเลือดดำ (IV Fat Emulsion):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารทำอิมัลชันที่ผ่านการรับรองจาก US FDA ให้ใช้ฉีดเข้าหลอดเลือดดำได้<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ให้หยดไขมันขนาดเล็กสม่ำเสมอ (&lt; 0.5 ไมโครเมตร) ไม่ทำให้เม็ดเลือดแตก (Non-hemolytic)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::42",
+      "itemNo": "25",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[15] Pickering Emulsion คืออะไร มีสารตัวอย่างอะไรบ้าง และชนิดของอิมัลชันขึ้นกับอะไร?",
+      "questionImage": "",
+      "answer": "▶ Pickering Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>อิมัลชันที่ทำให้คงตัวด้วย &quot;ผงของแข็งขนาดเล็กละเอียดมาก&quot; (Finely divided solids) โดยไม่มีสารลดแรงตึงผิว (Surfactant-free emulsion)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลไก: ผงของแข็งไปเรียงตัวที่ผิวประจัน กลายเป็น Mechanical barrier แข็งแกร่งขวางการรวมตัว<br> <br> ▶ ชนิดของอิมัลชันขึ้นกับมุมสัมผัส (Contact angle: θ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผงของแข็งที่ชอบน้ำ (Hydrophilic, มุมสัมผัส θ &lt; 90°) ➔ ให้ O/W emulsion<br>  ✦ ตัวอย่าง: Magnesium hydroxide, Aluminum hydroxide, Bentonite, Veegum, Kaolin<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผงของแข็งที่ชอบน้ำมัน (Lipophilic, มุมสัมผัส θ &gt; 90°) ➔ ให้ W/O emulsion<br>  ✦ ตัวอย่าง: Carbon black, Talc, Hydrophobic silica",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::43",
+      "itemNo": "26",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[16] เปรียบเทียบสบู่โลหะประจุเดี่ยว (Monovalent soaps) กับสบู่โลหะประจุคู่ (Polyvalent soaps)?",
+      "questionImage": "",
+      "answer": "▶ 1. Monovalent Soaps (สบู่ประจุเดี่ยว):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากกรดไขมันทำปฏิกิริยากับเบสประจุเดี่ยว (Na+, K+, Triethanolamine [TEA]) เช่น Sodium stearate, Potassium oleate<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W emulsion (เนื่องจากชอบน้ำมากกว่า)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ล้างน้ำออกง่าย pH เป็นด่าง ไม่ทนต่อกรด<br> <br> ▶ 2. Polyvalent / Metallic Soaps (สบู่ประจุคู่หรือหลายประจุ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากกรดไขมันทำปฏิกิริยากับเบสประจุคู่ (Ca2+, Mg2+, Zn2+, Al3+) เช่น Calcium oleate, Zinc stearate<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: W/O emulsion (เนื่องจากชอบน้ำมันมากกว่า)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ทนน้ำ ไม่ลอกหลุดง่าย นิยมในยาทาแผลไฟไหม้ ครีมกันน้ำ (Water-resistant creams)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::44",
+      "itemNo": "27",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[17] Non-ionic Surfactants กลุ่ม Spans และ Tweens ต่างกันอย่างไรทั้งชื่อเคมีและชนิดอิมัลชันที่ได้?",
+      "questionImage": "",
+      "answer": "▶ 1. กลุ่ม Spans (Sorbitan Fatty Acid Esters):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ชอบน้ำมัน (Lipophilic), ค่า HLB ต่ำ (1.8 - 8.6)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: W/O emulsifier (เช่น Span 20, Span 60, Span 80)<br> <br> ▶ 2. กลุ่ม Tweens / Polysorbates (Polyoxyethylene Sorbitan Esters):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ชอบน้ำ (Hydrophilic), ค่า HLB สูง (9.6 - 16.7)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W emulsifier (เช่น Tween 20, Tween 60, Tween 80)<br> <br> ✦ ข้อดีร่วมกัน: ปลอดภัย ไม่ระคายเคือง ไม่แตกตัวเป็นไอออน ทนต่อการเปลี่ยนแปลง pH และเกลือได้ดีเยี่ยม",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::45",
+      "itemNo": "28",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[21] เหตุใดการใช้ Mixed Emulsifiers (เช่น Tween คู่กับ Span) จึงให้ผลดีกว่าการใช้ Surfactant เดี่ยว?",
+      "questionImage": "",
+      "answer": "▶ ประโยชน์ของการใช้ Mixed Emulsifiers:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. เกิด Complex Film ที่แน่นหนา: ส่วนชอบน้ำมันของ Span และ Tween จะแทรกสลับกันที่รอยต่อ ทำให้อนุภาคเรียงตัวชิดกันอย่างแน่นหนา (Rigid &amp; tightly packed film)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ลดแรงตึงผิวประจันได้ต่ำกว่าการใช้ตัวเดียวเดี่ยวๆ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. เกิดชั้น Liquid crystalline lamellar layers ที่ช่วยเสริมความคงตัว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. ป้องกันการแพร่ออก (Desorption) ของสารทำอิมัลชันออกจากผิวประจัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>5. ปรับค่าความหนืดและความคงตัวต่ออุณหภูมิและการเติมเกลือได้ดีกว่า",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::46",
+      "itemNo": "29",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[23] สัดส่วน Primary Emulsion (Oil : Water : Gum) ของน้ำมันประเภท Fixed oil, Mineral oil และ Volatile oil คือเท่าใด?",
+      "questionImage": "",
+      "answer": "▶ สัดส่วนทองคำ Primary Emulsion (น้ำมัน : น้ำ : กัม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Fixed Vegetable Oils (เช่น Castor oil, Almond oil, Cod liver oil): 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Mineral Oil (Liquid Paraffin): 3 : 2 : 1 หรือ 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. Volatile Oils / Essential Oils (เช่น Peppermint oil, Turpentine oil): 2 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. Oleoresin: 1 : 2 : 1<br> <br> ✦ ข้อสังเกต: ปริมาณ Gum จะแปรผันตามพื้นที่ผิวและความยากง่ายในการกระจายตัวของน้ำมัน ยิ่งน้ำมันหนืดต่ำหรือระเหยง่ายต้องใช้กัมสัดส่วนสูงขึ้น",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::47",
+      "itemNo": "30",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[24] อธิบายขั้นตอนและเทคนิคสำคัญของ Dry Gum Method (Continental Method)?",
+      "questionImage": "",
+      "answer": "▶ ขั้นตอนของ Dry Gum Method:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ใช้โกรกและสากที่ แห้งสนิท 100% บดผสมผง Acacia กับ น้ำมัน ทั้งหมดในโกรกจนผงกระจายตัวทั่ว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. เติมน้ำส่วน Primary Emulsion ทั้งหมดในคราวเดียว (รวดเดียว ห้ามแบ่งเติม)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. บดอย่างเร็ว แรง และสม่ำเสมอใน ทิศทางเดียวตลอด ด้วยแรงเหวี่ยง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สังเกตเมื่อเกิด Primary Emulsion สมบูรณ์:<br>  ✦ เกิดเสียงดังคลิก/เปรี๊ยะ (Clicking sound) ชัดเจน<br>  ✦ เนื้อตำรับข้นเหนียวและเปลี่ยนเป็นสีขาวขุ่นทึบ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>5. เติมสารอื่นๆ ที่ละลายน้ำหรือเจือจางน้ำแล้วลงไปทีละน้อย บดปรับปริมาตรจนครบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::48",
+      "itemNo": "31",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[25] อธิบายขั้นตอน Wet Gum Method (English Method) และปรากฏการณ์ &quot;Ropy&quot; พร้อมวิธีแก้ไข?",
+      "questionImage": "",
+      "answer": "▶ ขั้นตอนของ Wet Gum Method:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. บดผง Acacia กับน้ำส่วน Primary Emulsion จนได้เนื้อ Mucilage เนียนพองตัวเต็มที่<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ค่อยๆ รินน้ำมันลงตรงกลาง ทีละน้อย (Portion-wise) บดให้เข้ากันเป็นเนื้อเดียวก่อนเติมส่วนต่อไป<br> <br> ▶ ปรากฏการณ์ &quot;Ropy&quot; (ข้อสอบออกบ่อย):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ลักษณะ: อิมัลชันข้นเหนียวจัด เนื้อขาดๆ หรือผิวด้าน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สาเหตุ: หยดน้ำมันแตกตัวละเอียดมากจนพื้นที่ผิวสูงเกินไป ทำให้อิมัลชันขาดน้ำหล่อเลี้ยง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>วิธีแก้ไข: หยุดบดทันที ➔ เติมน้ำลงไปเล็กน้อย (2-3 หยด) แล้วบดต่อ เนื้ออิมัลชันจะกลับมาเนียนนุ่มทันที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::49",
+      "itemNo": "32",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[30] Creaming คืออะไร มีกี่แบบ และแตกต่างจาก Coalescence อย่างไรในแง่การคืนสภาพ?",
+      "questionImage": "",
+      "answer": "▶ Creaming:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การเคลื่อนที่แยกชั้นของหยดเฟสภายในตามแรงโน้มถ่วง (ความหนาแน่นต่างกัน)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Upward Creaming: หยดน้ำมันลอยขึ้นด้านบน (พบบ่อยใน O/W เพราะน้ำมันเบากว่าน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Downward Creaming (Sedimentation): หยดจมลงด้านล่าง (พบบ่อยใน W/O หรือน้ำมันหนักกว่าน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การคืนสภาพ: ผันกลับได้ (Reversible) โดยการเขย่าขวดเบาๆ เพราะฟิล์มหุ้มหยดยังคงสมบูรณ์<br> <br> ▶ จุดต่างจาก Coalescence / Breaking:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Coalescence ฟิล์ม interfacial แตกทำลาย หยดน้ำมันหลอมรวมเป็นเนื้อเดียวกันอย่างถาวร ผันกลับไม่ได้ (Irreversible) เขย่าอย่างไรก็ไม่รวมตัว ต้องทิ้งตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::50",
+      "itemNo": "33",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[32] Flocculation ในอิมัลชันเกิดจากอะไร และส่งผลดีหรือผลเสียต่อตำรับอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ สาเหตุการเกิด Flocculation:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หยดอนุภาคเคลื่อนที่เข้ามาเกาะกลุ่มกันหลวมๆ โดยยังมีชั้นฟิล์มกั้นอยู่ ไม่ได้รวมเนื้อกัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในทางทฤษฎี DLVO เกิดขึ้นเมื่ออนุภาคตกอยู่ในหลุมพลังงานดึงดูดขั้นที่สอง (Secondary minimum)<br> <br> ▶ ผลต่อตำรับ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผลเสีย: การเกาะกลุ่มทำให้ขนาดกลุ่มก้อน (Cluster size) ใหญ่ขึ้น ส่งผลให้อัตราเร็วในการเกิด Creaming เร็วขึ้นอย่างมาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผลดี/การคืนสภาพ: อนุภาคไม่หลอมรวมกัน (No coalescence) สามารถเขย่าให้กระจายตัวกลับเป็นเนื้อเดียวกันได้ง่าย (Reversible)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::51",
+      "itemNo": "34",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[33] Phase Inversion คืออะไร มีสาเหตุเกิดจากปัจจัยใดได้บ้าง?",
+      "questionImage": "",
+      "answer": "▶ Phase Inversion (การกลับเฟส):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปรากฏการณ์ที่ชนิดของอิมัลชันพลิกกลับขั้ว เช่น จาก O/W กลายเป็น W/O หรือกลับกัน<br> <br> ▶ ปัจจัยที่ทำให้เกิด Phase Inversion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. อุณหภูมิเปลี่ยนแปลงผ่าน Phase Inversion Temperature (PIT): การเพิ่มอุณหภูมิทำให้ Non-ionic surfactant สูญเสีย Hydrogen bond กับน้ำ กลายเป็นชอบน้ำมันมากขึ้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. การเติม Electrolyte ที่เปลี่ยนประจุสบู่: เช่น เติม CaCl2 ลงใน O/W emulsion ที่ใช้ Sodium stearate สบู่จะเปลี่ยนเป็น Calcium stearate กลายเป็น W/O ทันที<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สัดส่วนเฟสภายในเกินจุดวิกฤต (Critical Phase Volume Ratio): หากปริมาตรเฟสภายในเกิน 74% หยดอนุภาคจะอัดแน่นจนระบบถูกบีบให้กลับเฟส",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::52",
+      "itemNo": "35",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[36] อธิบายหลักการและการแปลผล Dilution Test และ Dye Solubility Test ในการทดสอบชนิดอิมัลชัน?",
+      "questionImage": "",
+      "answer": "▶ 1. Dilution Test (การทดสอบการเจือจาง):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลักการ: อิมัลชันจะเจือจางเข้ากันได้เป็นเนื้อเดียวกับของเหลวที่เป็น External phase เท่านั้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การแปลผล: หยดน้ำลงไปแล้วผสมกลืนเนียน = O/W emulsion (ถ้าหยดน้ำมันจะแยกชั้น) / ในทางกลับกัน ถ้าหยดน้ำมันแล้วผสมเนียน = W/O emulsion<br> <br> ▶ 2. Dye Solubility Test (การทดสอบด้วยสีย้อม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สีย้อมละลายน้ำ (Water-soluble dye เช่น Amaranth, Methylene blue): กระจายสีสม่ำเสมอทั่วตำรับ = O/W / ถ้ารวมตัวเป็นหยดสี = W/O<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สีย้อมละลายน้ำมัน (Oil-soluble dye เช่น Sudan III, Scarlet red): กระจายสีสม่ำเสมอทั่วตำรับ = W/O / ถ้ารวมตัวเป็นหยดสี = O/W",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::53",
+      "itemNo": "36",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[39] พฤติกรรมการไหล (Rheological properties) ในอิมัลชันที่ดีควรเป็นแบบใด และมีผลต่อการใช้งานอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ พฤติกรรมการไหลที่ต้องการ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ควรมีการไหลแบบ Non-Newtonian Flow โดยเฉพาะแบบ Pseudoplastic ร่วมกับ Thixotropy<br> <br> ▶ ผลดีต่อการใช้งาน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในสภาวะตั้งนิ่ง: มีความหนืดสูง ป้องกันไม่ให้อนุภาคเคลื่อนที่แยกชั้น (ลด Creaming)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อออกแรงเขย่าหรือบีบหลอด (Shear stress): ความหนืดจะลดลงอย่างรวดเร็ว ทำให้เทยาออกจากขวดหรือบีบยาครีมได้ง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อทาลงบนผิวหนัง: เกลี่ยง่าย เรียบเนียน ไม่เหนอะหนะ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อหยุดให้แรง: ความหนืดจะค่อยๆ คืนกลับมาอย่างช้าๆ (Thixotropic recovery)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::54",
+      "itemNo": "37",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[41] ข้อกำหนดมาตรฐานที่เคร่งครัดของ IV Fat Emulsion (เช่น Intralipid®) ตาม USP มีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "▶ ข้อกำหนดมาตรฐาน IV Fat Emulsion (USP &lt;729&gt;):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ชนิดของอิมัลชัน: ต้องเป็น O/W emulsion เท่านั้น (ห้ามฉีด W/O เข้าหลอดเลือดดำเด็ดขาด เพราะทำให้เกิด Fat embolism ปิดกั้นการไหลเวียนเลือด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ขนาดหยดไขมันเฉลี่ย (Mean droplet size): ต้องน้อยกว่า 0.5 ไมโครเมตร<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. ปริมาณหยดขนาดใหญ่ (PFAT5): ปริมาณหยดไขมันขนาดเกิน 5 ไมโครเมตร ต้องมีไม่เกิน 0.05% เพื่อไม่ให้อุดตันหลอดเลือดฝอยปอด (Pulmonary capillaries)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารช่วยปรับความดันออสโมติก: ต้องใช้น้ำตาลกลีเซอรอล (Glycerol 2.5%) ปรับให้ Isotonic <b style=\"color:#dc2626;\">ห้ามใช้</b> Electrolytes ปริมาณสูงเพราะบดบังประจุทำให้ไขมันแตกตัว",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::55",
+      "itemNo": "38",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[42] ฉลากยาช่วย (Auxiliary Labels) และข้อแนะนำในการเลือกภาชนะบรรจุอิมัลชันมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "▶ ฉลากช่วยบังคับที่ขาดไม่ได้:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. &quot;เขย่าขวดก่อนใช้ยาทุกครั้ง&quot; (SHAKE WELL BEFORE USE): สำคัญที่สุด เพื่อกระจายเฟสภายในให้สม่ำเสมอหากเกิด Creaming เล็กน้อย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. &quot;ยาใช้ภายนอก ห้ามรับประทาน&quot; (FOR EXTERNAL USE ONLY): ติดเด่นชัดด้วยตัวอักษรสีแดงสำหรับยาทา ครีม โลชัน<br> <br> ▶ การเลือกภาชนะบรรจุ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ยาน้ำรับประทาน: บรรจุในขวดแก้วหรือพลาสติกปากกว้างพอสมควร (Wide-mouth bottle) เพื่อให้เทยาที่มีความหนืดได้สะดวก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลีกเลี่ยงขวดทรงสูงแคบเพราะเทยาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ยาภายนอก: บรรจุในหลอดบีบ (Collapsible tube) หรือขวดหัวปั๊ม เพื่อป้องกันการปนเปื้อน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::56",
+      "itemNo": "39",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[43] Beyond-Use Date (BUD) สำหรับตำรับอิมัลชันที่ปรุงเฉพาะราย (Extemporaneous Compounding) ตาม USP กำหนดไว้อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ กำหนดอายุการใช้งาน (BUD) ตาม USP Compounding Standards:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Water-containing Oral Formulations (ยาน้ำอิมัลชันรับประทานที่มีน้ำในตำรับ):<br>  ✦ กำหนด BUD ไม่เกิน 14 วัน<br>  ✦ ต้องเก็บในตู้เย็น (Controlled Cold Temperature 2 - 8 °C) เท่านั้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Water-containing Topical / Dermal Formulations (ยาครีมหรือโลชันทาภายนอกที่มีน้ำ):<br>  ✦ กำหนด BUD ไม่เกิน 30 วัน<br>  ✦ เก็บที่อุณหภูมิห้องควบคุม (Controlled Room Temperature 20 - 25 °C)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::57",
+      "itemNo": "40",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[44] เทคนิคการเติมตัวยาสำคัญ (Active Ingredients) ลงในตำรับอิมัลชันแต่ละประเภททำอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ เทคนิคการเติมตัวยาสำคัญตามคุณสมบัติ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. สารทนความร้อนและละลายได้: ละลายลงในเฟสน้ำหรือเฟสน้ำมันโดยตรงตั้งแต่ก่อนให้ความร้อน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ของเหลวระเหยง่ายหรือสารไวความร้อน (Volatile oils, Fragrance): เติมลงในตำรับหลังจากกวนอิมัลชันจนอุณหภูมิลดลงต่ำกว่า 40 °C<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สารของแข็งที่ละลายได้แต่ไม่ทนความร้อน: ละลายในน้ำปริมาณเล็กน้อย แล้วค่อยๆ บดผสมเข้ากับอิมัลชันที่เย็นตัวแล้ว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารของแข็งที่ไม่ละลาย (Insoluble solids): ต้องบดลดขนาดผงยาให้ละเอียด (Levigation) ร่วมกับอิมัลชันเล็กน้อยบนแผ่นกระจกหรือในโกรกก่อนผสมรวม",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::58",
+      "itemNo": "41",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 1: Liquid Paraffin Emulsion HF 2542]<br> Rx<br>  Liquid paraffin 50.0 mL<br>  Acacia 7.5 g<br>  Tragacanth 1.0 g<br>  Glycerin 10.0 mL<br>  Citric acid 0.05 g<br>  Sodium chloride 0.30 g<br>  Paraben concentrate 2.0 mL<br>  Vanillin tincture 0.4 mL<br>  Purified water to 100.0 mL<br> <br> จงระบุ: 1. ชนิดของอิมัลชัน 2. บทบาทหน้าที่ของสารแต่ละตัว 3. วิเคราะห์สัดส่วน Primary Emulsion ที่ใช้จริงว่าสอดคล้องกับทฤษฎีอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: O/W Emulsion (ยาน้ำรับประทาน)<br> <br> ▶ 2. บทบาทหน้าที่ของสารแต่ละตัว:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Liquid paraffin: ตัวยาสำคัญ (Active ingredient / Lubricating cathartic ยาระบายหล่อลื่น)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Acacia: สารทำอิมัลชันหลัก (Primary emulsifier) ให้ฟิล์ม Multimolecular film หุ้มหยดน้ำมัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Tragacanth: สารทำอิมัลชันเสริม (Secondary emulsifier / Thickener) เพิ่มความหนืด ลดการเกิด Creaming<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Glycerin: สารให้ความชื้นและรสหวาน (Sweetener / Viscosity enhancer)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Citric acid: สารปรับ pH (Acidifying agent / Buffer) ให้สารกันเสียพาราเบนออกฤทธิ์ได้ดี<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Sodium chloride: สารปรับสมดุลและลดแรงผลักประจุส่วนเกินอย่างพอเหมาะ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Paraben concentrate: สารกันเสียต้านจุลินทรีย์ (Antimicrobial preservative)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Vanillin tincture: สารแต่งกลิ่นรส (Flavoring agent) กลบกลิ่นน้ำมัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Purified water: กระสายยาเฟสภายนอก (Continuous phase / Vehicle)<br> <br> ▶ 3. วิเคราะห์สัดส่วน Primary Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตามทฤษฎี Mineral oil ใช้ O : W : G = 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปริมาณกัมรวม = Acacia (7.5 g) + Tragacanth (1.0 g) = 8.5 g<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>น้ำมัน 50 mL คิดกัมตามทฤษฎีต้องใช้ 12.5 g แต่ตำรับนี้ใช้กัม 8.5 g และคำนวณน้ำส่วนทำ Primary = (7.5 + 1) × 2 = 17 mL<br>  ✦ จุดสำคัญ: การมี Tragacanth ช่วยเสริมความหนืดสูงมาก ทำให้สามารถลดสัดส่วนกัม Acacia ลงได้โดยที่ตำรับยังคงตัวดี",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::59",
+      "itemNo": "42",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 2: Calamine Liniment / Lime Water Soap]<br> Rx<br>  Calamine 3 g<br>  Zinc oxide 2 g<br>  Olive oil 30 mL<br>  Lime water (Calcium hydroxide solution) 30 mL<br> <br> จงระบุ: 1. ชนิดของอิมัลชันที่เกิดขึ้น 2. สารทำอิมัลชันในตำรับนี้คืออะไร เกิดขึ้นได้อย่างไร 3. ข้อบ่งใช้และคุณสมบัติเด่นของตำรับ?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: W/O Emulsion (Water-in-Oil)<br> <br> ▶ 2. การเกิดสารทำอิมัลชัน (In-Situ Soap Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันไม่ได้เติมลงไปโดยตรง แต่เกิดจากปฏิกิริยาสดขณะผสม (In-situ soap)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปฏิกิริยา: กรดไขมันอิสระ Oleic acid (ใน Olive oil) ทำปฏิกิริยากับ Calcium hydroxide (Ca(OH)2 ใน Lime water)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ได้เกลือสบู่: แคลเซียมโอเลเอต (Calcium oleate) ซึ่งเป็น Metallic / Polyvalent soap (สบู่ประจุคู่ Ca2+)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตามกฎ Bancroft&#039;s Rule: สบู่ประจุคู่ชอบน้ำมันมากกว่าน้ำ จึงเหนี่ยวนำให้เกิดอิมัลชันชนิด W/O เสมอ!<br> <br> ▶ 3. หน้าที่ของสารอื่นๆ และคุณสมบัติเด่น:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Calamine + Zinc oxide: สารฝาดสมาน (Astringent), ลดการคันระคายเคือง (Antipruritic), ป้องกันความเปียกชื้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อบ่งใช้: ยาทาภายนอกบรรเทาผื่นคัน แผลไฟไหม้ น้ำร้อนลวก แผลกดทับ<br>  ✦ คุณสมบัติเด่น: เนื่องจากเป็น W/O จึงมีคุณสมบัติกันน้ำ (Water-resistant) เคลือบผิวได้ทนนาน ไม่ถูกล้างออกง่ายด้วยเหงื่อหรือน้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::60",
+      "itemNo": "43",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 3: Topical Lotion (Tween 80 &amp; Span 80 / Beaker Method)]<br> Rx<br>  Mineral oil 35 %<br>  Lanolin 1 %<br>  Cetyl alcohol 1 %<br>  Span 80 1.9 %<br>  Tween 80 5.1 %<br>  Glycerin 5 %<br>  Paraben concentrate 1 %<br>  Purified water 50 %<br>  M.ft. Lotions 100 mL<br> <br> จงระบุ: 1. ตำรับนี้เป็นอิมัลชันชนิดใด เพราะเหตุใด (ชี้แจง 2 ปัจจัย) 2. แยกองค์ประกอบเข้า Oil Phase และ Water Phase 3. การควบคุมอุณหภูมิในการเตรียม Beaker Method?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: O/W Emulsion (Oil-in-Water)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ 1: สัดส่วนสารทำอิมัลชัน Tween 80 (HLB 15.0, ชอบน้ำ) มีถึง 5.1% ซึ่งมากกว่า Span 80 (HLB 4.3, 1.9%) อย่างมาก ทำให้ค่า HLB รวมค่อนไปทางสูง (~12) เหนี่ยวนำให้เกิด O/W<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ 2: ปริมาณเฟสน้ำ (Purified water 50% + Glycerin 5%) สูงกว่าเฟสน้ำมัน<br> <br> ▶ 2. การแยกเฟสสำหรับเตรียม:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Oil Phase: Mineral oil (35%), Lanolin (1%), Cetyl alcohol (1%), Span 80 (1.9%)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Water Phase: Tween 80 (5.1%), Glycerin (5%), Paraben concentrate (1%), Purified water (50%)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>บทบาท Cetyl alcohol &amp; Lanolin: ทำหน้าที่เป็น Secondary emulsifiers / Thickeners / Emollients ช่วยเสริมความคงตัว<br> <br> ▶ 3. การควบคุมอุณหภูมิ (Beaker Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลอม Oil phase ที่อุณหภูมิ 60 - 70 °C (จน Cetyl alcohol และ Lanolin ละลายหมด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>อุ่น Water phase ที่อุณหภูมิ 65 - 75 °C (ต้องสูงกว่าเฟสน้ำมัน 3 - 5 °C เสมอ เพื่อป้องกันสารกลุ่มแวกซ์จับเป็นก้อนแข็งขณะเทผสม)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ค่อยๆ เท Oil phase (เฟสภายใน) ลงใน Water phase (เฟสภายนอก) เป็นสายพร้อมคนผสมสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::61",
+      "itemNo": "44",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 4: Lipomul IV Fat Emulsion]<br> Rx<br>  Cottonseed oil 15 %<br>  Dextrose 4 %<br>  Poloxamer 188 0.3 %<br>  Lecithin 1.2 %<br>  Water for injection qs 100 mL<br> <br> จงระบุ: 1. ข้อกำหนดสำคัญที่สุดของยาฉีด IV Emulsion 2. บทบาทของ Lecithin และ Poloxamer 188 3. เหตุใดจึงใช้ Dextrose ในตำรับนี้แทนที่จะใช้ NaCl?",
+      "questionImage": "",
+      "answer": "▶ 1. ข้อกำหนดสำคัญที่สุดของ IV Fat Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ต้องเป็น O/W Emulsion เท่านั้น (ห้ามเป็น W/O เด็ดขาดเพราะทำให้เกิด Fat embolism ปิดกั้นหลอดเลือด เสียชีวิตทันที)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ขนาดหยดไขมันเฉลี่ยต้อง &lt; 0.5 ไมโครเมตร และไม่มีหยดขนาด &gt; 5 ไมโครเมตร (PFAT5 &lt; 0.05%) เพื่อไม่ให้อุดตันหลอดเลือดฝอยปอด<br> <br> ▶ 2. บทบาทของสารทำอิมัลชันคู่:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Lecithin (1.2%): Primary emulsifier สารลดแรงตึงผิวชนิด Amphoteric จากธรรมชาติ เข้ากับร่างกายได้ดีเยี่ยม ไม่ทำลายเม็ดเลือดแดง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Poloxamer 188 (Pluronic F-68, 0.3%): Co-emulsifier ให้ผล Steric stabilization ขวางไม่ให้อนุภาคชนกัน<br> <br> ▶ 3. เหตุผลที่ใช้ Dextrose (หรือ Glycerol) แทน NaCl:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ปรับความดันออสโมติกให้เป็น Isotonic (ป้องกันเม็ดเลือดแดงแตก Hemolysis)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>🚨 จุดตัดข้อสอบ: ห้ามใช้สารอิเล็กโทรไลต์อย่าง NaCl ปริมาณสูงเด็ดขาด! เพราะประจุ Na+ และ Cl- จะไปบดบังประจุ (Compress electrical double layer) ทำให้ค่า Zeta potential ลดลง ส่งผลให้อิมัลชันเกิด Flocculation และ Coalescence แยกชั้นทันที!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::62",
+      "itemNo": "45",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 5: Concentrated Peppermint Emulsion BP 1999]<br> Rx<br>  Peppermint oil 20 mL<br>  Polysorbate 20 (Tween 20) 1 mL<br>  Double-strength chloroform water 500 mL<br>  Purified water, freshly boiled and cooled to 1000 mL<br> <br> จงระบุ: 1. น้ำมันเปปเปอร์มิ้นต์จัดเป็นน้ำมันประเภทใด 2. วิธีการเตรียมที่เหมาะสมที่สุดในระดับ Extemporaneous คือวิธีใด 3. บทบาทของ Polysorbate 20 และ Double-strength chloroform water?",
+      "questionImage": "",
+      "answer": "▶ 1. ประเภทของน้ำมัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Peppermint oil จัดเป็น Volatile oil (น้ำมันหอมระเหย / น้ำมันระเหยง่าย ความหนืดต่ำ)<br> <br> ▶ 2. วิธีการเตรียมที่เหมาะสมที่สุด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Forbes Bottle Method (หรือเตรียมด้วยวิธีบดในขวดแห้งสนิท)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สัดส่วนทองคำหากใช้กัม Acacia: Oil : Water : Gum = 2 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ใช้ขวด: ป้องกันการระเหยสูญเสียตัวยาสำคัญและกลิ่นหอมออกสู่อากาศระหว่างบดในโกรก<br> <br> ▶ 3. บทบาทของสารในสูตรตำรับ BP:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Polysorbate 20 (Tween 20): สารลดแรงตึงผิวชนิด Non-ionic (HLB สูง 16.7) ทำหน้าที่เป็น O/W emulsifier และช่วยละลายน้ำมันหอมระเหย (Solubilizer) ทำให้ตำรับมีความคงตัวดีและหยดน้ำมันละเอียด<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Double-strength chloroform water: สารกันเสียต้านจุลินทรีย์ (Preservative) และช่วยแต่งรสหวานปร่าสดชื่น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Freshly boiled and cooled purified water: ใช้น้ำต้มสุกที่ทิ้งให้เย็นเพื่อไล่ออกซิเจนและกำจัดเชื้อจุลินทรีย์ ป้องกันการออกซิเดชันของน้ำมันหอมระเหย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::63",
+      "itemNo": "46",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 6: Liquid Paraffin Oral Emulsion BP 2010 (Auxiliary Method)]<br> Rx<br>  Liquid paraffin 500 mL<br>  Vanillin 500 mg<br>  Chloroform 2.5 mL<br>  Benzoic acid solution 20 mL<br>  Methylcellulose 20 20 g<br>  Saccharin sodium 50 mg<br>  Water qs 1000 mL<br> <br> จงระบุ: 1. สารทำอิมัลชันในตำรับนี้คือสารใด และมีข้อดีเหนือกว่า Acacia อย่างไร 2. ตำรับนี้เตรียมด้วยเทคนิคใด 3. คำแนะนำการใช้ยาทางคลินิกแก่ผู้ป่วย?",
+      "questionImage": "",
+      "answer": "▶ 1. สารทำอิมัลชันและข้อดี:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันคือ Methylcellulose 20 (Cellulose derivative, Semi-synthetic polymer)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดีเหนือกว่า Acacia:<br>  ✦ เป็นสารไม่มีประจุ (Non-ionic) ทนทานต่อการเปลี่ยนแปลง pH และอิเล็กโทรไลต์ได้ดีกว่า<br>  ✦ ไม่บูดเสียง่ายและไม่เป็นแหล่งเพาะพันธุ์ของเชื้อรา/แบคทีเรียเหมือนกัมธรรมชาติ<br>  ✦ ควบคุมความบริสุทธิ์และระดับความหนืดได้สม่ำเสมอกว่าในทุกล็อตผลิต<br> <br> ▶ 2. เทคนิคการเตรียม (Auxiliary Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เนื่องจาก Methylcellulose ไม่ได้ลดแรงตึงผิวโดยตรงเหมือน Surfactants แต่สร้าง Viscous protective film<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การเตรียมจึงต้องผสมให้เข้ากันก่อน แล้วนำไปผ่านเครื่องมือช่วยลดขนาด เช่น Homogenizer หรือ Colloid mill เพื่อบดรีดหยดน้ำมันให้แตกตัวละเอียดและคงตัว<br> <br> ▶ 3. คำแนะนำการใช้ยาทางคลินิก (Patient Counseling Pearls):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เขย่าขวดก่อนรินยาทุกครั้ง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ห้ามรับประทานก่อนนอนทันที (ให้รับประทานก่อนนอนอย่างน้อย 1-2 ชั่วโมง หรือตอนเช้า) เพื่อป้องกันการสำลักน้ำมันเข้าปอดจนเกิดโรคปอดอักเสบจากไขมัน (Lipoid pneumonia)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไม่ควรใช้ติดต่อกันเป็นเวลานานเกิน 1 สัปดาห์ เพราะจะขัดขวางการดูดซึมวิตามินที่ละลายในไขมัน (A, D, E, K)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::64",
+      "itemNo": "47",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 7: Triethanolamine Stearate Lotion (Amine Soap)]<br> Rx<br>  Menthol 0.04 g<br>  Stearic acid 2.40 g<br>  Cetyl alcohol 1.20 g<br>  Wool fat (Lanolin) 0.80 g<br>  Liquid petrolatum (Mineral oil) 4.00 g<br>  Triethanolamine (TEA) 1.20 mL<br>  Water 88.00 mL<br>  Perfume qs<br> <br> จงระบุ: 1. สารทำอิมัลชันหลักเกิดขึ้นจากปฏิกิริยาระหว่างสารใด และได้อิมัลชันชนิดใด 2. เหตุใดจึงใส่ Stearic acid เกินปริมาณสัดส่วนทำปฏิกิริยาพอดี?",
+      "questionImage": "",
+      "answer": "▶ 1. การเกิดสารทำอิมัลชัน (Amine Soap In-Situ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันเกิดจากปฏิกิริยาสะปอนนิฟิเคชันระหว่าง Stearic acid (ในเฟสน้ำมัน) กับ Triethanolamine (TEA ในเฟสน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ได้เกลือสบู่เอมีน: ไตรเอทานอลเอมีนสเตียเรต (Triethanolamine stearate)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W Emulsion (เนื่องจากเป็นสบู่ประจุเดี่ยว Monovalent amine soap ที่ละลายน้ำได้ดี และให้ pH อ่อนโยนประมาณ 7.5 - 8.0 ไม่ระคายเคืองผิวเท่าสบู่โซเดียม/โพแทสเซียม)<br> <br> ▶ 2. เหตุผลที่ใส่ Stearic acid มากเกินพอ (Excess Stearic Acid):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในตำรับมี Stearic acid ส่วนเกินที่ไม่ได้ทำปฏิกิริยากับ TEA<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กรดสเตียริกส่วนเกินนี้จะทำหน้าที่เป็น:<br>  ✦ สารเพิ่มความหนืด (Thickener &amp; Consistency agent) ช่วยให้โลชันข้นเนียน<br>  ✦ สารให้ความเหลือบมุข (Pearlescent effect) ทำให้เนื้อโลชันมีความแวววาว สวยงาม น่าใช้<br>  ✦ สารเคลือบผิวให้ความนุ่มชุ่มชื้น (Emollient) ร่วมกับ Cetyl alcohol และ Wool fat",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::65",
+      "itemNo": "48",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 8: Cetrimide Antiseptic Cream / Emulsifying Wax]<br> Rx<br>  Cetrimide 5 g<br>  Cetostearyl alcohol 50 g<br>  Liquid paraffin 500 g<br>  Purified water to 1000 g<br> <br> จงระบุ: 1. ชนิดของสารทำอิมัลชันและประจุไฟฟ้า 2. บทบาทหน้าที่ของ Cetostearyl alcohol 3. 🚨 ข้อห้ามใช้และสารที่เข้ากันไม่ได้เด็ดขาด (Incompatibility) ของตำรับนี้?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดและประจุของสารทำอิมัลชัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Cetrimide (Cetrimonium bromide): สารลดแรงตึงผิวชนิดประจุบวก (Cationic surfactant)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W Emulsion (มีคุณสมบัติเป็นทั้ง O/W emulsifier และยาฆ่าเชื้อแบคทีเรีย Antiseptic ในตัว)<br> <br> ▶ 2. บทบาทของ Cetostearyl alcohol:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่เป็น Non-ionic emulsion stabilizer และ Thickening agent<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อใช้ร่วมกับ Cetrimide จะเกิดเป็น Cetrimide Emulsifying Wax ก่อให้เกิด Complex viscoelastic film หุ้มหยดน้ำมัน ทำให้เนื้อครีมข้นเนียนและคงตัวสูง<br> <br> ▶ 3. 🚨 ข้อห้ามและสารที่เข้ากันไม่ได้เด็ดขาด (Fatal Incompatibilities):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ห้ามผสมกับสารที่มีประจุลบ (Anionic substances) เด็ดขาด: เช่น สบู่โซเดียม/โพแทสเซียม, Sodium lauryl sulfate (SLS), กัมธรรมชาติที่มีประจุลบ (Acacia, Tragacanth, Sodium alginate, Carbomer)<br>  ✦ ผลกระทบ: ประจุบวกของ Cetrimide จะจับกับประจุลบ เกิดการตกตะกอน (Insoluble complex) ทำให้สูญเสียฤทธิ์ฆ่าเชื้อและอิมัลชันแตกตัวทันที<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ข้อควรระวัง: ห้ามใช้กับดวงตาหรือเนื้อเยื่ออ่อนที่บอบบางเพราะสารประจุบวกระคายเคืองสูง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::66",
+      "itemNo": "49",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 1 - Slide 1 หน้า 15]<br> ข้อใด &quot;ไม่ใช่&quot; ประโยชน์ของ O/W Emulsion?<br> A. ใช้เตรียมยารับประทานได้<br> B. เพิ่มความคงตัวของตัวยาที่ละลายในน้ำมัน<br> C. ควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ<br> D. กลบกลิ่นรสของตัวยาที่ชอบน้ำมัน<br> E. ทุกข้อเป็นประโยชน์",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ C. ควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในอิมัลชันชนิด O/W นั้น &quot;น้ำเป็นเฟสภายนอก (Continuous / External phase)&quot;<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หากตัวยาละลายในน้ำ (Water-soluble drug) ตัวยาจะกระจายตัวอยู่อย่างอิสระในเฟสน้ำภายนอก เมื่อรับประทานหรือสัมผัสร่างกาย ยาจะถูกดูดซึมและปลดปล่อยออกมาทันที ไม่สามารถชะลอหรือควบคุมการปลดปล่อยได้!<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หากต้องการควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ ต้องใช้ระบบ W/O หรือ Multiple emulsion แบบ W/O/W (โดยกักเก็บตัวยาไว้ในหยดน้ำชั้นในสุด แล้วให้น้ำมันทำหน้าที่เป็นแผงกั้นชะลอการแพร่ออก)<br> <br> ▶ วิเคราะห์ตัวเลือกอื่นๆ (ซึ่งเป็นประโยชน์จริงของ O/W):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A: ถูกต้อง O/W เป็นชนิดเดียวที่เหมาะกับยาน้ำรับประทานเพราะไม่มันเลี่ยนและกลืนง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ B: ถูกต้อง ช่วยปกป้องตัวยาในน้ำมันจากการสัมผัสอากาศภายนอกโดยตรง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D: ถูกต้อง หยดน้ำมันที่มีกลิ่นรสแย่จะถูกเฟสน้ำภายนอกห่อหุ้มไว้ ทำให้ลิ้นสัมผัสเฉพาะรสหวาน/แต่งกลิ่นของเฟสน้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::67",
+      "itemNo": "50",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 2 - Slide 1 หน้า 30]<br> กลไกข้อใดที่สารทำอิมัลชัน &quot;ทุกชนิด&quot; ต้องทำให้เกิดขึ้นเพื่อให้เกิดอิมัลชันที่คงตัวดี?<br> A. ลดแรงตึงที่ผิวประจันระหว่างน้ำและน้ำมัน<br> B. เกิดฟิล์มที่ผิวประจันหุ้มรอบหยดเฟสภายใน<br> C. เกิดการกีดขวางเนื่องจากขนาดของสารทำอิมัลชัน (Steric effect)<br> D. เกิดแรงผลักทางไฟฟ้าระหว่างหยดเฟสภายใน (Electrostatic repulsion)<br> E. เพิ่มความข้นหนืดของอิมัลชัน",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. เกิดฟิล์มที่ผิวประจันหุ้มรอบหยดเฟสภายใน (Interfacial film formation)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลไกการเกิดฟิล์มกั้นทางกลที่ผิวรอยต่อ (Interfacial film / Mechanical barrier) เป็น &quot;กลไกสากลเพียงข้อเดียวที่สารทำอิมัลชันทุกประเภทต้องมี&quot; ไม่ว่าจะเป็น Monomolecular, Multimolecular หรือ Solid particle film เพื่อขัดขวางไม่ให้หยดอนุภาคเกิดการหลอมรวมตัวกัน (Coalescence)<br> <br> ▶ เหตุผลที่ตัวเลือกอื่นไม่ใช่สารทุกชนิด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A: ผิด เพราะสารกลุ่ม Hydrocolloids (Acacia, Gelatin) และ Finely divided solids แทบจะไม่ลดแรงตึงผิวประจันเลย (มีเฉพาะ Surfactants เท่านั้นที่ลดแรงตึงผิวเด่นชัด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ C: ผิด มีเฉพาะ Non-ionic surfactants สายยาวหรือ Polymers เท่านั้นที่ให้ Steric effect<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D: ผิด มีเฉพาะ Ionic surfactants หรือสารที่มีประจุเท่านั้น สารกลุ่ม Non-ionic ไม่มีแรงผลักทางไฟฟ้า<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ E: ผิด สารลดแรงตึงผิวโมเลกุลเล็กหลายตัวไม่ได้เพิ่มความหนืดของตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::68",
+      "itemNo": "51",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 3 - Slide 1 หน้า 63]<br> สารทำอิมัลชันในข้อใด &quot;ทนกรดได้น้อยที่สุด&quot; (สลายตัวง่ายที่สุดเมื่อเจอสภาวะกรด)?<br> A. Sodium stearate<br> B. Calcium stearate<br> C. Sorbitan monostearate<br> D. Triethanolamine stearate<br> E. Polyoxyethylene sorbitan monostearate",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ A. Sodium stearate (สบู่อัลคาไลประจุเดี่ยว)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Sodium stearate จัดเป็น Alkali metal soap (สบู่โลหะแอลคาไลประจุเดี่ยว) เมื่ออยู่ในสภาวะกรด (pH ต่ำ) ไอออน H+ ในกรดจะเข้าไปจับกับ Stearate ion ทันที ทำให้เปลี่ยนรูปกลับไปเป็น Free stearic acid (กรดไขมันอิสระที่ไม่ละลายน้ำและไม่มีฤทธิ์ลดแรงตึงผิว) ส่งผลให้อิมัลชันแตกตัวทันที จึงทนกรดได้ต่ำที่สุดในบรรดาตัวเลือกทั้งหมด!<br> <br> ▶ ลำดับความทนกรดของสารทำอิมัลชัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลุ่ม Non-ionic (ข้อ C: Span 60, ข้อ E: Tween 60) ➔ ทนกรดได้ดีที่สุด เพราะไม่มีประจุ ไม่แตกตัวเป็นไอออน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Amine soap (ข้อ D: Triethanolamine stearate) ➔ ทนกรดได้ปานกลาง (ทนกว่า Alkali soaps)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Metallic soap (ข้อ B: Calcium stearate) ➔ ทนกรดได้มากกว่าสบู่โซเดียม<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Alkali soap (ข้อ A: Sodium stearate) ➔ ไวต่อกรดมากที่สุด (ทนกรดน้อยที่สุด)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::69",
+      "itemNo": "52",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 4 - Slide 1 หน้า 64]<br> สารทำอิมัลชันในข้อใด &quot;เข้ากันไม่ได้กับสารที่มีประจุลบ&quot; (Incompatible with Anionic substances)?<br> A. Acacia<br> B. Cetrimide<br> C. Sodium stearate<br> D. Sorbitan monostearate<br> E. Polyoxyethylene sorbitan monostearate",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. Cetrimide (เซทริไมด์)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Cetrimide เป็นสารลดแรงตึงผิวกลุ่ม Cationic surfactant (Quaternary ammonium salt) ซึ่งแตกตัวให้ประจุบวก (+) ในสารละลาย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>🚨 Fatal Incompatibility: เมื่อนำสารประจุบวกมาเจอกับสารประจุลบ (Anionic substances เช่น สบู่, SLS, กัม Acacia/Tragacanth, Sodium alginate, Carbomer) ประจุบวกและลบจะดึงดูดกันทันที เกิดเป็นสารประกอบเชิงซ้อนที่ไม่ละลายน้ำและตกตะกอน (Precipitation / Insoluble complex) ทำให้สูญเสียฤทธิ์ฆ่าเชื้อและอิมัลชันแตกตัวทันที<br> <br> ▶ วิเคราะห์ตัวเลือกอื่น:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A (Acacia) &amp; ข้อ C (Sodium stearate): เป็นสารที่มีประจุลบ จึงเข้ากับสารประจุลบได้<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D (Sorbitan monostearate / Span) &amp; ข้อ E (Polysorbate / Tween): เป็นสารไม่มีประจุ (Non-ionic) เข้ากันได้กับสารเกือบทุกประจุ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::70",
+      "itemNo": "53",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 5 - Slide 1 หน้า 65]<br> สารทำอิมัลชันในข้อใด นิยมนำมาใช้ร่วมกับ &quot;High HLB Surfactant&quot; มากที่สุด เพื่อเสริมความคงตัวของอิมัลชัน?<br> A. Polysorbate<br> B. Fatty alcohol (เช่น Cetyl alcohol, Stearyl alcohol)<br> C. Sodium lauryl sulfate<br> D. Sodium stearate<br> E. Polyoxyethylene (21) stearyl ether",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. Fatty alcohol (เช่น Cetyl alcohol, Stearyl alcohol, Cetostearyl alcohol)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>High HLB Surfactant (เช่น Polysorbates, SLS, สบู่) จะชอบน้ำมาก มีส่วนหัวชอบน้ำขนาดใหญ่ เมื่ออยู่เดี่ยวๆ ฟิล์มที่ผิวรอยต่ออาจหลวมและถูกชะล้างหลุดง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การใส่ Fatty alcohol (ซึ่งมี HLB ต่ำ ชอบน้ำมันมาก มีสายไฮโดรคาร์บอนยาวและหัวขั้ว OH เล็ก) จะเข้าไปแทรกสลับระหว่างโมเลกุลของ High HLB Surfactant ที่ผิวรอยต่อ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ก่อให้เกิด &quot;Complex Condensed Interfacial Film&quot; ที่อัดแน่นและยืดหยุ่นสูง (Rigid &amp; tightly packed film) และสร้างชั้นผลึกเหลว (Liquid crystalline lamellar phase) พร้อมทั้งช่วยเพิ่มความหนืด (Viscosity builder) ทำให้ตำรับคงตัวสูงสุด นิยมใช้ในสูตรครีมและโลชันเกือบทุกชนิด!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::71",
+      "itemNo": "54",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz Slide 2 หน้า 42]<br> พิจารณาสูตรตำรับต่อไปนี้:<br> Rx<br>  Mineral oil 35 %<br>  Lanolin 1 %<br>  Cetyl alcohol 1 %<br>  Span 80 1.9 %<br>  Tween 80 5.1 %<br>  Glycerin 5 %<br>  Paraben concentrate 1 %<br>  Purified water 50 %<br>  M.ft. Lotions 100 mL<br> <br> ตำรับนี้จัดเป็นอิมัลชันชนิดใด เพราะเหตุใด?<br> A. W/O เพราะปริมาณเฟสน้ำมันมาก<br> B. W/O เพราะปริมาณ Span 80 มาก<br> C. O/W เพราะปริมาณเฟสน้ำมาก<br> D. O/W เพราะปริมาณ Tween 80 มาก",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ D. O/W เพราะปริมาณ Tween 80 มาก<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ (อาจารย์ดักจุดตาย!):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กฎของแบนครอฟต์ (Bancroft&#039;s Rule) ระบุชัดเจนว่า ชนิดของอิมัลชันขึ้นอยู่กับ &quot;คุณสมบัติของสารทำอิมัลชัน&quot; ไม่ได้ขึ้นกับปริมาตรของน้ำหรือน้ำมันเป็นหลัก!<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในตำรับนี้มีสารทำอิมัลชันผสมกัน 2 ชนิด:<br>  ✦ Tween 80 (ชอบน้ำ, High HLB = 15.0) มีปริมาณถึง 5.1%<br>  ✦ Span 80 (ชอบน้ำมัน, Low HLB = 4.3) มีปริมาณเพียง 1.9%<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อคำนวณ HLB รวมของสารทำอิมัลชันผสม:<br>  [(5.1 × 15.0) + (1.9 × 4.3)] / (5.1 + 1.9) = (76.5 + 8.17) / 7.0 = 12.09<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ค่า HLB รวมเท่ากับ 12.09 ซึ่งอยู่ในช่วง HLB 8 - 16 (O/W emulsifier) ทำให้สารทำอิมัลชันละลายในน้ำได้ดีกว่า จึงเหนี่ยวนำให้เกิด O/W Emulsion เสมอ!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::72",
+      "itemNo": "55",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz คำนวณ Slide 2 หน้า 19 &amp; 21: Required HLB ของน้ำมันผสม]<br> พิจารณาสูตรตำรับต่อไปนี้:<br> Rx<br>  Mineral oil (RHLB = 12) 35 %<br>  Lanolin (RHLB = 10) 1 %<br>  Cetyl alcohol (RHLB = 15) 1 %<br>  Emulsifiers 7 %<br>  Purified water 56 %<br>  M.ft. O/W emulsions 100 g<br> <br> ค่า Required HLB (RHLB) ที่เหมาะสมที่สุดของตำรับนี้คือข้อใด?<br> A. 10.50<br> B. 11.35<br> C. 12.03<br> D. 12.85<br> E. 13.50",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ C. 12.03<br> <br> ▶ ขั้นตอนการแสดงวิธีคิดอย่างละเอียด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. หาปริมาณรวมของเฟสน้ำมันทั้งหมด (Total Oil Phase):<br>  ✦ Mineral oil (35%) + Lanolin (1%) + Cetyl alcohol (1%) = 37% (หรือ 37 g ใน 100 g)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. หาสัดส่วนน้ำหนัก (Weight fraction) ของน้ำมันแต่ละชนิด:<br>  ✦ สัดส่วน Mineral oil = 35 / 37<br>  ✦ สัดส่วน Lanolin = 1 / 37<br>  ✦ สัดส่วน Cetyl alcohol = 1 / 37<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. คำนวณแบบถ่วงน้ำหนัก (Weight-averaged RHLB):<br>  ✦ RHLB รวม = (35/37 × 12) + (1/37 × 10) + (1/37 × 15)<br>  ✦ RHLB รวม = 11.35 + 0.27 + 0.41 = 12.03<br>  ✦ สรุป: เพื่อให้อิมัลชันตำรับนี้มีความคงตัวสูงสุด ต้องเลือกคู่สารทำอิมัลชันที่ผสมกันแล้วได้ค่า HLB เท่ากับ 12.03",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::73",
+      "itemNo": "56",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz เทคนิคตั้งตำรับ Slide 2 หน้า 30 &amp; 31: Primary Emulsion กรณีพิเศษ]<br> หากเภสัชกรต้องการเตรียม Primary Emulsion ของตำรับที่มี &quot;น้ำมันน้อยกว่า 20%&quot; (เช่น Calciferol solution 3%) หรือมี &quot;ตัวยาของแข็งละลายในน้ำมัน&quot; (เช่น Salol 2 g) ข้อใดกล่าวถูกต้องที่สุด?<br> A. ปริมาณน้ำมันน้อยกว่า 20% ให้เพิ่มปริมาณน้ำเป็น 2 เท่าทันที<br> B. ปริมาณน้ำมันน้อยกว่า 20% ให้เติม Bland oil (เช่น Arachis oil) เพิ่มจนสัดส่วนน้ำมันเพียงพอต่อการเกิด Primary emulsion<br> C. ตัวยาของแข็งละลายในน้ำมัน ให้ลดปริมาณกัม Acacia ลงครึ่งหนึ่งเพื่อป้องกันไม่ให้ตำรับเหนียวเกินไป<br> D. ตัวยาของแข็งละลายในน้ำมัน สามารถบดผสมกับน้ำโดยตรงได้โดยไม่ต้องใช้น้ำมันช่วย<br> E. ทั้งสองกรณีใช้สัดส่วน Oil:Water:Gum = 4:2:1 ตามปกติโดยไม่ต้องปรับสูตร",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. ปริมาณน้ำมันน้อยกว่า 20% ให้เติม Bland oil (เช่น Arachis oil) เพิ่มจนสัดส่วนน้ำมันเพียงพอต่อการเกิด Primary emulsion<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. กรณีน้ำมันน้อยกว่า 20% (Low Oil Content):<br>  ✦ หากปริมาณน้ำมันน้อยเกินไป หยดน้ำมันจะไม่สามารถอัดแน่นพอที่จะเกิด Primary Emulsion ที่เสถียรได้<br>  ✦ วิธีแก้ไขที่ถูกต้อง: ต้องเติมน้ำมันพืชที่ไม่มีฤทธิ์ทางยา (Bland oil เช่น Arachis oil หรือ Almond oil) เพิ่มเข้าไปในตำรับ เพื่อปรับให้ปริมาณน้ำมันรวมเพิ่มขึ้นจนเพียงพอต่อการฟอร์มตัว แล้วจึงคำนวณตามสัดส่วน Fixed oil (4 : 2 : 1)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. กรณีตัวยาของแข็งละลายในน้ำมัน (Salol 2 g):<br>  ✦ ข้อ C &amp; D ผิด เพราะต้องละลายตัวยาใน Bland oil ก่อน และต้อง &quot;บวกเพิ่มผง Acacia และน้ำขึ้นอีก 50% ของที่คำนวณได้&quot; (กฎ 4:3:1.5) เพื่อให้ฟิล์มแข็งแรงพอพยุงอนุภาคตัวยาไว้ได้โดยไม่แยกชั้น",
+      "answerImage": "",
+      "note": ""
+    },
+    {
       "id": "10. Biotech Products::3",
       "itemNo": "1",
       "group": "10. Biotech Products",
@@ -49538,7 +51130,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์การวินิจฉัยโรคความดันโลหิตสูงจากการวัดในสถานพยาบาล (Office BP) คือเท่าใด?",
       "questionImage": "images/extracted_2__Cardiovascular_r3_c2.png",
-      "answer": "SBP &gt;= 140 mmHg หรือ DBP &gt;= 90 mmHg (&gt;= 140/90 mmHg)<br> วัดถูกต้องอย่างน้อย 2 ครั้งในการตรวจ และตรวจซ้ำ 2-3 ครั้งต่างวาระกัน (เว้นแต่ความดันสูงวิกฤต &gt;= 180/110)",
+      "answer": "SBP &amp;gt;= 140 mmHg หรือ DBP &gt;= 90 mmHg (&gt;= 140/90 mmHg)<br> วัดถูกต้องอย่างน้อย 2 ครั้งในการตรวจ และตรวจซ้ำ 2-3 ครั้งต่างวาระกัน (เว้นแต่ความดันสูงวิกฤต &gt;= 180/110)",
       "answerImage": "",
       "note": ""
     },
@@ -49574,7 +51166,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "การตรวจคัดกรองภาวะความเสียหายต่ออวัยวะเป้าหมาย (TOD) จากความดันสูงมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "1. หัวใจ: ECG หรือ Echo ดู LVH 2. ไต: ค่า eGFR และ UACR ดู Microalbuminuria 3. ตา: ส่อง Fundoscopy 4. สมอง: ประเมินประวัติ TIA/Stroke",
+      "answer": "1. หัวใจ: ECG หรือ Echo ดู LVH <br>2. ไต: ค่า eGFR และ UACR ดู Microalbuminuria <br>3. ตา: ส่อง Fundoscopy <br>4. สมอง: ประเมินประวัติ TIA/Stroke",
       "answerImage": "",
       "note": ""
     },
@@ -49716,9 +51308,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Hypertension",
       "track": "Clinic",
-      "question": "ระบบเรนิน-แองจิโอเทนซิน-อัลโดสเตอโรน (RAAS) ส่งผลให้ความดันโลหิตสูงขึ้นผ่านกลไกใด?",
+      "question": "RAAS System ส่งผลให้ความดันโลหิตสูงขึ้นผ่านกลไกใด?",
       "questionImage": "",
-      "answer": "Angiotensin II ทำให้หลอดเลือดหดตัวโดยตรง และกระตุ้นต่อมหมวกไตให้หลั่ง Aldosterone ดูดกลับโซเดียมและน้ำที่ไต",
+      "answer": "Angiotensin II ทำให้หลอดเลือดหดตัวโดยตรง <br>และกระตุ้นต่อมหมวกไตให้หลั่ง Aldosterone ดูดกลับโซเดียมและน้ำที่ไต",
       "answerImage": "",
       "note": ""
     },
@@ -49800,7 +51392,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Hypertension",
       "track": "Clinic",
-      "question": "ในผู้ป่วยเบาหวานร่วมกับมีไข่ขาวในปัสสาวะ (Albuminuria) ยาตัวแรกที่ต้องเลือกใช้คือกลุ่มใด?",
+      "question": "ในผู้ป่วยเบาหวานร่วมกับมีโปรตีนในปัสสาวะ (Albuminuria) ยาตัวแรกที่ต้องเลือกใช้คือกลุ่มใด?",
       "questionImage": "",
       "answer": "ยากลุ่ม ACEIs หรือ ARBs<br> เนื่องจากมีฤทธิ์ขยายหลอดเลือดไตขาออก (Efferent arteriole) ลดความดันใน Glomerulus และชะลอไตเสื่อม",
       "answerImage": "",
@@ -49946,7 +51538,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ผลข้างเคียงต่อระบบเมแทบอลิซึมและเกลือแร่ของยาขับปัสสาวะ Thiazides มีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "ทำให้เกลือแร่ต่ำ: Hypokalemia, Hyponatremia, Hypomagnesemia<br> ทำให้สารชีวเคมีสูง: Hyperuricemia (ระวังเกาต์), Hyperglycemia, และ Hypercalcemia",
+      "answer": "ทำให้เกลือแร่ต่ำ: Hypokalemia, Hyponatremia, Hypomagnesemia<br><br>ทำให้สารเคมีอื่น ๆ สูงHyperuricemia (ระวังเกาต์), Hyperglycemia, และ Hypercalcemia",
       "answerImage": "",
       "note": ""
     },
@@ -50062,11 +51654,11 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "id": "2. Cardiovascular::47",
       "itemNo": "45",
       "group": "2. Cardiovascular",
-      "subTopic": "Hypertension",
+      "subTopic": "Dyslipidemia",
       "track": "Clinic",
-      "question": "ความดันโลหิตในเวลากลางคืนแบบ Non-Dipping Pattern จากการตรวจ ABPM มีความสำคัญอย่างไร?",
+      "question": "เกณฑ์การจำแนกระดับไขมันในเลือด (Lipid Profile) ปกติและผิดปกติทางคลินิกมีค่าตัวเลขอย่างไร?",
       "questionImage": "",
-      "answer": "ปกติเวลานอนความดันควรลดลง 10-20% หากลดลงน้อยกว่า 10% (Non-dipper) จะสัมพันธ์กับความเสี่ยงต่อโรคหลอดเลือดสมองและหัวใจตายสูงขึ้นมาก",
+      "answer": "TC &lt; 200, TG &lt; 150, HDL-C &gt; 40 (ชาย) หรือ &gt; 50 (หญิง), และ LDL-C &lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
       "answerImage": "",
       "note": ""
     },
@@ -50078,25 +51670,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "เกณฑ์การจำแนกระดับไขมันในเลือด (Lipid Profile) ปกติและผิดปกติทางคลินิกมีค่าตัวเลขอย่างไร?",
       "questionImage": "",
-      "answer": "TC &lt; 200, TG &lt; 150, HDL-C &gt; 40 (ชาย) หรือ &gt; 50 (หญิง), และ LDL-C &lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
+      "answer": "TC &amp;lt; 200, <br>TG &amp;lt; 150, <br>HDL-C &amp;gt; 40 (ชาย) หรือ &amp;gt; 50 (หญิง), <br>และ LDL-C &amp;lt; 100 mg/dL (ในคนทั่วไปที่ไม่มีโรคร่วม)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "2. Cardiovascular::49",
       "itemNo": "47",
-      "group": "2. Cardiovascular",
-      "subTopic": "Dyslipidemia",
-      "track": "Clinic",
-      "question": "สูตร Friedewald Equation ใช้คำนวณค่า LDL-C อย่างไร และมีข้อจำกัดห้ามใช้เมื่อใด?",
-      "questionImage": "",
-      "answer": "LDL-C = TC - HDL - (TG / 5)<br> <b style=\"color:#dc2626;\">ข้อห้ามใช้เด็ดขาด</b>: เมื่อระดับไตรกลีเซอไรด์ (TG) มากกว่า 400 mg/dL (&gt; 400 mg/dL) เพราะค่าที่คำนวณได้จะต่ำกว่าความเป็นจริงมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::50",
-      "itemNo": "48",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50107,8 +51687,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::51",
-      "itemNo": "49",
+      "id": "2. Cardiovascular::50",
+      "itemNo": "48",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50119,8 +51699,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::52",
-      "itemNo": "50",
+      "id": "2. Cardiovascular::51",
+      "itemNo": "49",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50131,8 +51711,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::53",
-      "itemNo": "51",
+      "id": "2. Cardiovascular::52",
+      "itemNo": "50",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50143,8 +51723,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::54",
-      "itemNo": "52",
+      "id": "2. Cardiovascular::53",
+      "itemNo": "51",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50155,8 +51735,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::55",
-      "itemNo": "53",
+      "id": "2. Cardiovascular::54",
+      "itemNo": "52",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50167,8 +51747,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::56",
-      "itemNo": "54",
+      "id": "2. Cardiovascular::55",
+      "itemNo": "53",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50179,32 +51759,20 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::57",
+      "id": "2. Cardiovascular::56",
       "itemNo": "55",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
       "question": "ยากลุ่มใดบ้างที่ส่งผลข้างเคียงทำให้ระดับไตรกลีเซอไรด์ในเลือดสูงขึ้นอย่างมีนัยสำคัญ?",
       "questionImage": "",
-      "answer": "ยากลุ่มเอสโตรเจนชนิดรับประทาน (Oral Estrogens), ยาสเตียรอยด์, ยารักษาเอชไอวีกลุ่ม PIs, และยากรดวิตามินเอ (Isotretinoin)",
+      "answer": "Oral Estrogens), ยาสเตียรอยด์, ยารักษาเอชไอวีกลุ่ม PIs, และยากรดวิตามินเอ (Isotretinoin)",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::58",
-      "itemNo": "56",
-      "group": "2. Cardiovascular",
-      "subTopic": "Dyslipidemia",
-      "track": "Clinic",
-      "question": "การดื่มแอลกอฮอล์ปริมาณมากส่งผลต่อระบบไขมันในเลือดอย่างไร?",
-      "questionImage": "",
-      "answer": "กระตุ้นตับให้สังเคราะห์กรดไขมันและสร้าง VLDL เพิ่มขึ้นอย่างมาก ส่งผลให้ระดับไตรกลีเซอไรด์ในเลือดพุ่งสูงขึ้นอย่างรวดเร็ว",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::59",
-      "itemNo": "57",
+      "id": "2. Cardiovascular::57",
+      "itemNo": "55",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50215,8 +51783,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::60",
-      "itemNo": "58",
+      "id": "2. Cardiovascular::58",
+      "itemNo": "56",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50227,8 +51795,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::61",
-      "itemNo": "59",
+      "id": "2. Cardiovascular::59",
+      "itemNo": "57",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50239,8 +51807,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::62",
-      "itemNo": "60",
+      "id": "2. Cardiovascular::60",
+      "itemNo": "58",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50251,8 +51819,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::63",
-      "itemNo": "61",
+      "id": "2. Cardiovascular::61",
+      "itemNo": "59",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50263,8 +51831,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::64",
-      "itemNo": "62",
+      "id": "2. Cardiovascular::62",
+      "itemNo": "60",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50275,8 +51843,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::65",
-      "itemNo": "63",
+      "id": "2. Cardiovascular::63",
+      "itemNo": "61",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50287,8 +51855,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::66",
-      "itemNo": "64",
+      "id": "2. Cardiovascular::64",
+      "itemNo": "62",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50299,8 +51867,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::67",
-      "itemNo": "65",
+      "id": "2. Cardiovascular::65",
+      "itemNo": "63",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50311,20 +51879,20 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::68",
-      "itemNo": "66",
+      "id": "2. Cardiovascular::66",
+      "itemNo": "65",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
-      "question": "เกณฑ์การจำแนกระดับความเข้มข้นของยาสแตติน (Statin Intensity) กำหนดขนาดยาอย่างไร?",
+      "question": "กลุ่มผู้ป่วย 4 กลุ่มหลักที่ได้รับประโยชน์ชัดเจนจากยาสแตติน (Statin Benefit Groups) มีกลุ่มใดบ้าง?",
       "questionImage": "",
-      "answer": "High-Intensity (ลด LDL &gt;= 50%): Atorvastatin 40-80 mg หรือ Rosuvastatin 20-40 mg<br> Moderate-Intensity (ลด LDL 30-49%): Atorvastatin 10-20 mg หรือ Rosuvastatin 5-10 mg หรือ Simvastatin 20-40 mg",
+      "answer": "1. มีโรคหลอดเลือดหัวใจและสมองแล้ว (Clinical ASCVD)<br> 2. LDL-C &amp;gt;= 190 mg/dL <br>3. เบาหวานอายุ 40-75 ปี <br>4. ความเสี่ยง 10-year ASCVD &amp;gt;= 7.5%",
       "answerImage": "",
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::69",
-      "itemNo": "67",
+      "id": "2. Cardiovascular::67",
+      "itemNo": "65",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50335,8 +51903,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::70",
-      "itemNo": "68",
+      "id": "2. Cardiovascular::68",
+      "itemNo": "66",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50347,8 +51915,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::71",
-      "itemNo": "69",
+      "id": "2. Cardiovascular::69",
+      "itemNo": "67",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50359,8 +51927,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::72",
-      "itemNo": "70",
+      "id": "2. Cardiovascular::70",
+      "itemNo": "68",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50371,8 +51939,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::73",
-      "itemNo": "71",
+      "id": "2. Cardiovascular::71",
+      "itemNo": "69",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50383,8 +51951,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::74",
-      "itemNo": "72",
+      "id": "2. Cardiovascular::72",
+      "itemNo": "70",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50395,8 +51963,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::75",
-      "itemNo": "73",
+      "id": "2. Cardiovascular::73",
+      "itemNo": "71",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50407,8 +51975,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::76",
-      "itemNo": "74",
+      "id": "2. Cardiovascular::74",
+      "itemNo": "72",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50419,8 +51987,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::77",
-      "itemNo": "75",
+      "id": "2. Cardiovascular::75",
+      "itemNo": "73",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50431,8 +51999,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::78",
-      "itemNo": "76",
+      "id": "2. Cardiovascular::76",
+      "itemNo": "74",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50443,8 +52011,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::79",
-      "itemNo": "77",
+      "id": "2. Cardiovascular::77",
+      "itemNo": "75",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50455,8 +52023,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::80",
-      "itemNo": "78",
+      "id": "2. Cardiovascular::78",
+      "itemNo": "76",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50467,8 +52035,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::81",
-      "itemNo": "79",
+      "id": "2. Cardiovascular::79",
+      "itemNo": "77",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50479,8 +52047,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::82",
-      "itemNo": "80",
+      "id": "2. Cardiovascular::80",
+      "itemNo": "78",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50491,8 +52059,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::83",
-      "itemNo": "81",
+      "id": "2. Cardiovascular::81",
+      "itemNo": "79",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50503,8 +52071,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::84",
-      "itemNo": "82",
+      "id": "2. Cardiovascular::82",
+      "itemNo": "80",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50515,8 +52083,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::85",
-      "itemNo": "83",
+      "id": "2. Cardiovascular::83",
+      "itemNo": "81",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50527,8 +52095,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::86",
-      "itemNo": "84",
+      "id": "2. Cardiovascular::84",
+      "itemNo": "82",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50539,8 +52107,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::87",
-      "itemNo": "85",
+      "id": "2. Cardiovascular::85",
+      "itemNo": "83",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50551,8 +52119,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::88",
-      "itemNo": "86",
+      "id": "2. Cardiovascular::86",
+      "itemNo": "84",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50563,8 +52131,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::89",
-      "itemNo": "87",
+      "id": "2. Cardiovascular::87",
+      "itemNo": "85",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50575,8 +52143,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::90",
-      "itemNo": "88",
+      "id": "2. Cardiovascular::88",
+      "itemNo": "86",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50587,8 +52155,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::91",
-      "itemNo": "89",
+      "id": "2. Cardiovascular::89",
+      "itemNo": "87",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
@@ -50599,14 +52167,38 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::92",
-      "itemNo": "90",
+      "id": "2. Cardiovascular::90",
+      "itemNo": "88",
       "group": "2. Cardiovascular",
       "subTopic": "Dyslipidemia",
       "track": "Clinic",
       "question": "แนวทางการจัดการเมื่อผู้ป่วยทนต่ออาการปวดเมื่อยกล้ามเนื้อจากยาสแตตินไม่ได้ (Statin Intolerance) คืออะไร?",
       "questionImage": "",
       "answer": "หยุดยาชั่วคราวให้หายปวด จากนั้นเริ่มใหม่ด้วยสแตตินตัวเดิมขนาดต่ำลง หรือเปลี่ยนเป็นสแตตินชนิดชอบน้ำ (Rosuvastatin/Pravastatin) หรือให้แบบวันเว้นวัน หรือสัปดาห์ละ 2-3 ครั้ง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "2. Cardiovascular::91",
+      "itemNo": "89",
+      "group": "2. Cardiovascular",
+      "subTopic": "Coronary Artery Disease",
+      "track": "Clinic",
+      "question": "กลุ่มอาการหลอดเลือดหัวใจเฉียบพลัน (ACS) จำแนกออกเป็นกี่ชนิดตามลักษณะทางคลินิกและ ECG?",
+      "questionImage": "",
+      "answer": "3 ชนิด: 1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "2. Cardiovascular::92",
+      "itemNo": "90",
+      "group": "2. Cardiovascular",
+      "subTopic": "Coronary Artery Disease",
+      "track": "Clinic",
+      "question": "สารบ่งชี้ทางชีวภาพ (Cardiac Biomarker) ตัวใดเป็นมาตรฐานสูงสุด (Gold Standard) ในการวินิจฉัยกล้ามเนื้อหัวใจตาย?",
+      "questionImage": "",
+      "answer": "Cardiac Troponin (cTnI หรือ cTnT) โดยเฉพาะ High-Sensitivity Troponin (hs-cTn)<br> มีความไวและความจำเพาะต่อเนื้อเยื่อกล้ามเนื้อหัวใจบาดเจ็บสูงสุด เริ่มขึ้นใน 2-3 ชม. และคงอยู่นาน 7-14 วัน",
       "answerImage": "",
       "note": ""
     },
@@ -50618,7 +52210,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "กลุ่มอาการหลอดเลือดหัวใจเฉียบพลัน (ACS) จำแนกออกเป็นกี่ชนิดตามลักษณะทางคลินิกและ ECG?",
       "questionImage": "",
-      "answer": "3 ชนิด: 1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง) 3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
+      "answer": "3 ชนิด: <br>1. STEMI (ST ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง)<br>2. NSTEMI (ST ไม่ยก คาร์ดิแอกไบโอมาร์กเกอร์สูง)<br>3. Unstable Angina (ST ไม่ยก มาร์กเกอร์ไม่สูง)",
       "answerImage": "",
       "note": ""
     },
@@ -50628,9 +52220,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
-      "question": "สารบ่งชี้ทางชีวภาพ (Cardiac Biomarker) ตัวใดเป็นมาตรฐานสูงสุด (Gold Standard) ในการวินิจฉัยกล้ามเนื้อหัวใจตาย?",
+      "question": "อาการแสดงของภาวะกล้ามเนื้อหัวใจขาดเลือดเฉียบพลันที่ไม่จำเพาะ (Atypical ACS) พบบ่อยในกลุ่มใดและมีอาการอย่างไร?",
       "questionImage": "",
-      "answer": "Cardiac Troponin (cTnI หรือ cTnT) โดยเฉพาะ High-Sensitivity Troponin (hs-cTn)<br> มีความไวและความจำเพาะต่อเนื้อเยื่อกล้ามเนื้อหัวใจบาดเจ็บสูงสุด เริ่มขึ้นใน 2-3 ชม. และคงอยู่นาน 7-14 วัน",
+      "answer": "พบบ่อยในผู้สูงอายุ หญิง เบาหวาน และโรคไต มักไม่มีอาการเจ็บแน่นหน้าอก (Silent Ischemia)<br> แต่มาด้วยเหนื่อยหอบ หายใจลำบากเฉียบพลัน เหงื่อแตก หน้ามืด หรือปวดแสบลิ้นปี่คล้ายโรคกระเพาะ",
       "answerImage": "",
       "note": ""
     },
@@ -50642,7 +52234,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ลักษณะอาการเจ็บหน้าอกแบบตรงแบบ (Typical Angina) ในโรคหลอดเลือดหัวใจเรื้อรังมีลักษณะอย่างไร?",
       "questionImage": "",
-      "answer": "1. แน่นตื้อเหมือนมีของหนักทับกึ่งกลางอก ร้าวไปกรามหรือแขนซ้าย 2. สัมพันธ์กับการออกแรงหรืออารมณ์ตึงเครียด 3. ทุเลาลงภายใน 5 นาทีเมื่อได้พักหรืออมยาใต้ลิ้น NTG",
+      "answer": "1. แน่นตื้อเหมือนมีของหนักทับกึ่งกลางอก ร้าวไปกรามหรือแขนซ้าย <br>2. สัมพันธ์กับการออกแรงหรืออารมณ์ตึงเครียด <br>3. ทุเลาลงภายใน 5 นาทีเมื่อได้พักหรืออมยาใต้ลิ้น NTG",
       "answerImage": "",
       "note": ""
     },
@@ -50652,9 +52244,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
-      "question": "อาการแสดงของภาวะกล้ามเนื้อหัวใจขาดเลือดเฉียบพลันที่ไม่จำเพาะ (Atypical ACS) พบบ่อยในกลุ่มใดและมีอาการอย่างไร?",
+      "question": "การตรวจคลื่นไฟฟ้าหัวใจ (ECG) ชนิด 12 ลีด ควรทำให้เสร็จสิ้นภายในเวลากี่นาทีหลังผู้ป่วยมาถึงห้องฉุกเฉิน?",
       "questionImage": "",
-      "answer": "พบบ่อยในผู้สูงอายุ หญิง เบาหวาน และโรคไต มักไม่มีอาการเจ็บแน่นหน้าอก (Silent Ischemia)<br> แต่มาด้วยเหนื่อยหอบ หายใจลำบากเฉียบพลัน เหงื่อแตก หน้ามืด หรือปวดแสบลิ้นปี่คล้ายโรคกระเพาะ",
+      "answer": "ต้องทำให้เสร็จและแปลผลโดยแพทย์ภายใน 10 นาที (Door-to-ECG time &lt;= 10 นาที) เพื่อคัดแยกผู้ป่วยกลุ่ม STEMI ไปเปิดหลอดเลือดเร่งด่วน",
       "answerImage": "",
       "note": ""
     },
@@ -50666,37 +52258,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "อาการเจ็บหน้าอกแบบ Unstable Angina แตกต่างจาก Stable Angina อย่างไร?",
       "questionImage": "",
-      "answer": "เจ็บแน่นขณะพัก (Rest angina นาน &gt; 20 นาที), เกิดขึ้นใหม่รุนแรง (New-onset), หรือมีแบบแผนปวดรุนแรงถี่ขึ้นกว่าเดิม (Crescendo pattern)",
+      "answer": "เจ็บแน่นขณะพัก (Rest angina นาน &amp;gt; 20 นาที),<br> เกิดขึ้นใหม่รุนแรง (New-onset), <br>หรือมีแบบแผนปวดรุนแรงถี่ขึ้นกว่าเดิม (Crescendo pattern)",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "2. Cardiovascular::98",
       "itemNo": "96",
-      "group": "2. Cardiovascular",
-      "subTopic": "Coronary Artery Disease",
-      "track": "Clinic",
-      "question": "การตรวจคลื่นไฟฟ้าหัวใจ (ECG) ชนิด 12 ลีด ควรทำให้เสร็จสิ้นภายในเวลากี่นาทีหลังผู้ป่วยมาถึงห้องฉุกเฉิน?",
-      "questionImage": "",
-      "answer": "ต้องทำให้เสร็จและแปลผลโดยแพทย์ภายใน 10 นาที (Door-to-ECG time &lt;= 10 นาที) เพื่อคัดแยกผู้ป่วยกลุ่ม STEMI ไปเปิดหลอดเลือดเร่งด่วน",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::99",
-      "itemNo": "97",
-      "group": "2. Cardiovascular",
-      "subTopic": "Coronary Artery Disease",
-      "track": "Clinic",
-      "question": "ลักษณะคลื่นไฟฟ้าหัวใจที่บ่งชี้ภาวะ STEMI ตามเกณฑ์มาตรฐานคืออะไร?",
-      "questionImage": "",
-      "answer": "มี ST-segment elevation ใหม่ที่จุด J ในอย่างน้อย 2 ลีดต่อเนื่องกัน (&gt;= 1 mm ในลีดทั่วไป หรือ &gt;= 1.5-2.5 mm ในลีด V2-V3) หรือพบ New LBBB",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "2. Cardiovascular::100",
-      "itemNo": "98",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50707,8 +52275,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::101",
-      "itemNo": "99",
+      "id": "2. Cardiovascular::99",
+      "itemNo": "97",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50719,8 +52287,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::102",
-      "itemNo": "100",
+      "id": "2. Cardiovascular::100",
+      "itemNo": "98",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50731,8 +52299,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::103",
-      "itemNo": "101",
+      "id": "2. Cardiovascular::101",
+      "itemNo": "99",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50743,8 +52311,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::104",
-      "itemNo": "102",
+      "id": "2. Cardiovascular::102",
+      "itemNo": "100",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50755,8 +52323,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::105",
-      "itemNo": "103",
+      "id": "2. Cardiovascular::103",
+      "itemNo": "101",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50767,8 +52335,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::106",
-      "itemNo": "104",
+      "id": "2. Cardiovascular::104",
+      "itemNo": "102",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50779,8 +52347,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::107",
-      "itemNo": "105",
+      "id": "2. Cardiovascular::105",
+      "itemNo": "103",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50791,8 +52359,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::108",
-      "itemNo": "106",
+      "id": "2. Cardiovascular::106",
+      "itemNo": "104",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50803,8 +52371,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::109",
-      "itemNo": "107",
+      "id": "2. Cardiovascular::107",
+      "itemNo": "105",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50815,8 +52383,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::110",
-      "itemNo": "108",
+      "id": "2. Cardiovascular::108",
+      "itemNo": "106",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50827,8 +52395,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::111",
-      "itemNo": "109",
+      "id": "2. Cardiovascular::109",
+      "itemNo": "107",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50839,8 +52407,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::112",
-      "itemNo": "110",
+      "id": "2. Cardiovascular::110",
+      "itemNo": "108",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50851,8 +52419,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::113",
-      "itemNo": "111",
+      "id": "2. Cardiovascular::111",
+      "itemNo": "109",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50863,8 +52431,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::114",
-      "itemNo": "112",
+      "id": "2. Cardiovascular::112",
+      "itemNo": "110",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50875,8 +52443,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::115",
-      "itemNo": "113",
+      "id": "2. Cardiovascular::113",
+      "itemNo": "111",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50887,8 +52455,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::116",
-      "itemNo": "114",
+      "id": "2. Cardiovascular::114",
+      "itemNo": "112",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50899,8 +52467,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::117",
-      "itemNo": "115",
+      "id": "2. Cardiovascular::115",
+      "itemNo": "113",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50911,8 +52479,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::118",
-      "itemNo": "116",
+      "id": "2. Cardiovascular::116",
+      "itemNo": "114",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50923,8 +52491,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::119",
-      "itemNo": "117",
+      "id": "2. Cardiovascular::117",
+      "itemNo": "115",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50935,8 +52503,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::120",
-      "itemNo": "118",
+      "id": "2. Cardiovascular::118",
+      "itemNo": "116",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50947,8 +52515,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::121",
-      "itemNo": "119",
+      "id": "2. Cardiovascular::119",
+      "itemNo": "117",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50959,8 +52527,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::122",
-      "itemNo": "120",
+      "id": "2. Cardiovascular::120",
+      "itemNo": "118",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50971,8 +52539,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::123",
-      "itemNo": "121",
+      "id": "2. Cardiovascular::121",
+      "itemNo": "119",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50983,8 +52551,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::124",
-      "itemNo": "122",
+      "id": "2. Cardiovascular::122",
+      "itemNo": "120",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -50995,8 +52563,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::125",
-      "itemNo": "123",
+      "id": "2. Cardiovascular::123",
+      "itemNo": "121",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51007,8 +52575,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::126",
-      "itemNo": "124",
+      "id": "2. Cardiovascular::124",
+      "itemNo": "122",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51019,8 +52587,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::127",
-      "itemNo": "125",
+      "id": "2. Cardiovascular::125",
+      "itemNo": "123",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51031,8 +52599,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::128",
-      "itemNo": "126",
+      "id": "2. Cardiovascular::126",
+      "itemNo": "124",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51043,8 +52611,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::129",
-      "itemNo": "127",
+      "id": "2. Cardiovascular::127",
+      "itemNo": "125",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51055,8 +52623,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::130",
-      "itemNo": "128",
+      "id": "2. Cardiovascular::128",
+      "itemNo": "126",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51067,8 +52635,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::131",
-      "itemNo": "129",
+      "id": "2. Cardiovascular::129",
+      "itemNo": "127",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51079,8 +52647,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::132",
-      "itemNo": "130",
+      "id": "2. Cardiovascular::130",
+      "itemNo": "128",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51091,8 +52659,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::133",
-      "itemNo": "131",
+      "id": "2. Cardiovascular::131",
+      "itemNo": "129",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51103,8 +52671,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::134",
-      "itemNo": "132",
+      "id": "2. Cardiovascular::132",
+      "itemNo": "130",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51115,8 +52683,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::135",
-      "itemNo": "133",
+      "id": "2. Cardiovascular::133",
+      "itemNo": "131",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51127,8 +52695,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::136",
-      "itemNo": "134",
+      "id": "2. Cardiovascular::134",
+      "itemNo": "132",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51139,8 +52707,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::137",
-      "itemNo": "135",
+      "id": "2. Cardiovascular::135",
+      "itemNo": "133",
       "group": "2. Cardiovascular",
       "subTopic": "Coronary Artery Disease",
       "track": "Clinic",
@@ -51151,8 +52719,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::138",
-      "itemNo": "136",
+      "id": "2. Cardiovascular::136",
+      "itemNo": "134",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51163,8 +52731,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::139",
-      "itemNo": "137",
+      "id": "2. Cardiovascular::137",
+      "itemNo": "135",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51175,8 +52743,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::140",
-      "itemNo": "138",
+      "id": "2. Cardiovascular::138",
+      "itemNo": "136",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51187,8 +52755,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::141",
-      "itemNo": "139",
+      "id": "2. Cardiovascular::139",
+      "itemNo": "137",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51199,8 +52767,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::142",
-      "itemNo": "140",
+      "id": "2. Cardiovascular::140",
+      "itemNo": "138",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51211,8 +52779,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::143",
-      "itemNo": "141",
+      "id": "2. Cardiovascular::141",
+      "itemNo": "139",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51223,8 +52791,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::144",
-      "itemNo": "142",
+      "id": "2. Cardiovascular::142",
+      "itemNo": "140",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51235,8 +52803,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::145",
-      "itemNo": "143",
+      "id": "2. Cardiovascular::143",
+      "itemNo": "141",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51247,8 +52815,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::146",
-      "itemNo": "144",
+      "id": "2. Cardiovascular::144",
+      "itemNo": "142",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51259,8 +52827,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::147",
-      "itemNo": "145",
+      "id": "2. Cardiovascular::145",
+      "itemNo": "143",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51271,8 +52839,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::148",
-      "itemNo": "146",
+      "id": "2. Cardiovascular::146",
+      "itemNo": "144",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51283,8 +52851,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::149",
-      "itemNo": "147",
+      "id": "2. Cardiovascular::147",
+      "itemNo": "145",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51295,8 +52863,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::150",
-      "itemNo": "148",
+      "id": "2. Cardiovascular::148",
+      "itemNo": "146",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51307,8 +52875,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::151",
-      "itemNo": "149",
+      "id": "2. Cardiovascular::149",
+      "itemNo": "147",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51319,8 +52887,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::152",
-      "itemNo": "150",
+      "id": "2. Cardiovascular::150",
+      "itemNo": "148",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51331,8 +52899,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::153",
-      "itemNo": "151",
+      "id": "2. Cardiovascular::151",
+      "itemNo": "149",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51343,8 +52911,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::154",
-      "itemNo": "152",
+      "id": "2. Cardiovascular::152",
+      "itemNo": "150",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51355,8 +52923,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::155",
-      "itemNo": "153",
+      "id": "2. Cardiovascular::153",
+      "itemNo": "151",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51367,8 +52935,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::156",
-      "itemNo": "154",
+      "id": "2. Cardiovascular::154",
+      "itemNo": "152",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51379,8 +52947,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::157",
-      "itemNo": "155",
+      "id": "2. Cardiovascular::155",
+      "itemNo": "153",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51391,8 +52959,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::158",
-      "itemNo": "156",
+      "id": "2. Cardiovascular::156",
+      "itemNo": "154",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51403,8 +52971,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::159",
-      "itemNo": "157",
+      "id": "2. Cardiovascular::157",
+      "itemNo": "155",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51415,8 +52983,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::160",
-      "itemNo": "158",
+      "id": "2. Cardiovascular::158",
+      "itemNo": "156",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51427,8 +52995,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::161",
-      "itemNo": "159",
+      "id": "2. Cardiovascular::159",
+      "itemNo": "157",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51439,8 +53007,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::162",
-      "itemNo": "160",
+      "id": "2. Cardiovascular::160",
+      "itemNo": "158",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51451,8 +53019,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::163",
-      "itemNo": "161",
+      "id": "2. Cardiovascular::161",
+      "itemNo": "159",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51463,8 +53031,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::164",
-      "itemNo": "162",
+      "id": "2. Cardiovascular::162",
+      "itemNo": "160",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51475,8 +53043,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::165",
-      "itemNo": "163",
+      "id": "2. Cardiovascular::163",
+      "itemNo": "161",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51487,8 +53055,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::166",
-      "itemNo": "164",
+      "id": "2. Cardiovascular::164",
+      "itemNo": "162",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51499,8 +53067,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::167",
-      "itemNo": "165",
+      "id": "2. Cardiovascular::165",
+      "itemNo": "163",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51511,8 +53079,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::168",
-      "itemNo": "166",
+      "id": "2. Cardiovascular::166",
+      "itemNo": "164",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51523,8 +53091,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::169",
-      "itemNo": "167",
+      "id": "2. Cardiovascular::167",
+      "itemNo": "165",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51535,8 +53103,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::170",
-      "itemNo": "168",
+      "id": "2. Cardiovascular::168",
+      "itemNo": "166",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51547,8 +53115,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::171",
-      "itemNo": "169",
+      "id": "2. Cardiovascular::169",
+      "itemNo": "167",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51559,8 +53127,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::172",
-      "itemNo": "170",
+      "id": "2. Cardiovascular::170",
+      "itemNo": "168",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51571,8 +53139,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::173",
-      "itemNo": "171",
+      "id": "2. Cardiovascular::171",
+      "itemNo": "169",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51583,8 +53151,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::174",
-      "itemNo": "172",
+      "id": "2. Cardiovascular::172",
+      "itemNo": "170",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51595,8 +53163,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::175",
-      "itemNo": "173",
+      "id": "2. Cardiovascular::173",
+      "itemNo": "171",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51607,8 +53175,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::176",
-      "itemNo": "174",
+      "id": "2. Cardiovascular::174",
+      "itemNo": "172",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51619,8 +53187,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::177",
-      "itemNo": "175",
+      "id": "2. Cardiovascular::175",
+      "itemNo": "173",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51631,8 +53199,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::178",
-      "itemNo": "176",
+      "id": "2. Cardiovascular::176",
+      "itemNo": "174",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51643,8 +53211,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::179",
-      "itemNo": "177",
+      "id": "2. Cardiovascular::177",
+      "itemNo": "175",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51655,8 +53223,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::180",
-      "itemNo": "178",
+      "id": "2. Cardiovascular::178",
+      "itemNo": "176",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51667,8 +53235,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::181",
-      "itemNo": "179",
+      "id": "2. Cardiovascular::179",
+      "itemNo": "177",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51679,8 +53247,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::182",
-      "itemNo": "180",
+      "id": "2. Cardiovascular::180",
+      "itemNo": "178",
       "group": "2. Cardiovascular",
       "subTopic": "Heart Failure",
       "track": "Clinic",
@@ -51691,8 +53259,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::183",
-      "itemNo": "181",
+      "id": "2. Cardiovascular::181",
+      "itemNo": "179",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51703,8 +53271,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::184",
-      "itemNo": "182",
+      "id": "2. Cardiovascular::182",
+      "itemNo": "180",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51715,8 +53283,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::185",
-      "itemNo": "183",
+      "id": "2. Cardiovascular::183",
+      "itemNo": "181",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51727,8 +53295,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::186",
-      "itemNo": "184",
+      "id": "2. Cardiovascular::184",
+      "itemNo": "182",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51739,8 +53307,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::187",
-      "itemNo": "185",
+      "id": "2. Cardiovascular::185",
+      "itemNo": "183",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51751,8 +53319,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::188",
-      "itemNo": "186",
+      "id": "2. Cardiovascular::186",
+      "itemNo": "184",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51763,8 +53331,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::189",
-      "itemNo": "187",
+      "id": "2. Cardiovascular::187",
+      "itemNo": "185",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51775,8 +53343,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::190",
-      "itemNo": "188",
+      "id": "2. Cardiovascular::188",
+      "itemNo": "186",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51787,8 +53355,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::191",
-      "itemNo": "189",
+      "id": "2. Cardiovascular::189",
+      "itemNo": "187",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51799,8 +53367,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::192",
-      "itemNo": "190",
+      "id": "2. Cardiovascular::190",
+      "itemNo": "188",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51811,8 +53379,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::193",
-      "itemNo": "191",
+      "id": "2. Cardiovascular::191",
+      "itemNo": "189",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51823,8 +53391,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::194",
-      "itemNo": "192",
+      "id": "2. Cardiovascular::192",
+      "itemNo": "190",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51835,8 +53403,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::195",
-      "itemNo": "193",
+      "id": "2. Cardiovascular::193",
+      "itemNo": "191",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51847,8 +53415,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::196",
-      "itemNo": "194",
+      "id": "2. Cardiovascular::194",
+      "itemNo": "192",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51859,8 +53427,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::197",
-      "itemNo": "195",
+      "id": "2. Cardiovascular::195",
+      "itemNo": "193",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51871,8 +53439,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::198",
-      "itemNo": "196",
+      "id": "2. Cardiovascular::196",
+      "itemNo": "194",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51883,8 +53451,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::199",
-      "itemNo": "197",
+      "id": "2. Cardiovascular::197",
+      "itemNo": "195",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51895,8 +53463,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::200",
-      "itemNo": "198",
+      "id": "2. Cardiovascular::198",
+      "itemNo": "196",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51907,8 +53475,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::201",
-      "itemNo": "199",
+      "id": "2. Cardiovascular::199",
+      "itemNo": "197",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51919,8 +53487,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::202",
-      "itemNo": "200",
+      "id": "2. Cardiovascular::200",
+      "itemNo": "198",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51931,8 +53499,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::203",
-      "itemNo": "201",
+      "id": "2. Cardiovascular::201",
+      "itemNo": "199",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51943,8 +53511,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::204",
-      "itemNo": "202",
+      "id": "2. Cardiovascular::202",
+      "itemNo": "200",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51955,8 +53523,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::205",
-      "itemNo": "203",
+      "id": "2. Cardiovascular::203",
+      "itemNo": "201",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51967,8 +53535,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::206",
-      "itemNo": "204",
+      "id": "2. Cardiovascular::204",
+      "itemNo": "202",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51979,8 +53547,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::207",
-      "itemNo": "205",
+      "id": "2. Cardiovascular::205",
+      "itemNo": "203",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -51991,8 +53559,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::208",
-      "itemNo": "206",
+      "id": "2. Cardiovascular::206",
+      "itemNo": "204",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52003,8 +53571,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::209",
-      "itemNo": "207",
+      "id": "2. Cardiovascular::207",
+      "itemNo": "205",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52015,8 +53583,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::210",
-      "itemNo": "208",
+      "id": "2. Cardiovascular::208",
+      "itemNo": "206",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52027,8 +53595,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::211",
-      "itemNo": "209",
+      "id": "2. Cardiovascular::209",
+      "itemNo": "207",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52039,8 +53607,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::212",
-      "itemNo": "210",
+      "id": "2. Cardiovascular::210",
+      "itemNo": "208",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52051,8 +53619,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::213",
-      "itemNo": "211",
+      "id": "2. Cardiovascular::211",
+      "itemNo": "209",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52063,8 +53631,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::214",
-      "itemNo": "212",
+      "id": "2. Cardiovascular::212",
+      "itemNo": "210",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52075,8 +53643,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::215",
-      "itemNo": "213",
+      "id": "2. Cardiovascular::213",
+      "itemNo": "211",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52087,8 +53655,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::216",
-      "itemNo": "214",
+      "id": "2. Cardiovascular::214",
+      "itemNo": "212",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52099,8 +53667,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::217",
-      "itemNo": "215",
+      "id": "2. Cardiovascular::215",
+      "itemNo": "213",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52111,8 +53679,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::218",
-      "itemNo": "216",
+      "id": "2. Cardiovascular::216",
+      "itemNo": "214",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52123,8 +53691,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::219",
-      "itemNo": "217",
+      "id": "2. Cardiovascular::217",
+      "itemNo": "215",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52135,8 +53703,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::220",
-      "itemNo": "218",
+      "id": "2. Cardiovascular::218",
+      "itemNo": "216",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52147,8 +53715,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::221",
-      "itemNo": "219",
+      "id": "2. Cardiovascular::219",
+      "itemNo": "217",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52159,8 +53727,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::222",
-      "itemNo": "220",
+      "id": "2. Cardiovascular::220",
+      "itemNo": "218",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52171,8 +53739,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::223",
-      "itemNo": "221",
+      "id": "2. Cardiovascular::221",
+      "itemNo": "219",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52183,8 +53751,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::224",
-      "itemNo": "222",
+      "id": "2. Cardiovascular::222",
+      "itemNo": "220",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52195,8 +53763,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::225",
-      "itemNo": "223",
+      "id": "2. Cardiovascular::223",
+      "itemNo": "221",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52207,8 +53775,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::226",
-      "itemNo": "224",
+      "id": "2. Cardiovascular::224",
+      "itemNo": "222",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -52219,8 +53787,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "2. Cardiovascular::227",
-      "itemNo": "225",
+      "id": "2. Cardiovascular::225",
+      "itemNo": "223",
       "group": "2. Cardiovascular",
       "subTopic": "Venous Thromboembolism",
       "track": "Clinic",
@@ -56016,18 +57584,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
-      "question": "ลักษณะอาการปวดท้องของแผลในกระเพาะอาหาร (GU) แตกต่างจากแผลในลำไส้เล็กส่วนต้น (DU) อย่างไร?",
-      "questionImage": "",
-      "answer": "แผลกระเพาะ (GU) ปวดมากขึ้นหลังรับประทานอาหาร สัมพันธ์กับน้ำหนักลด<br> ส่วนแผลลำไส้เล็ก (DU) ปวดเวลาท้องว่างและอาการทุเลาลงเมื่อรับประทานอาหาร มักปวดปลุกให้ตื่นกลางดึก",
-      "answerImage": "",
-      "note": "Peptic Ulcer & GERD"
-    },
-    {
-      "id": "5. Gastrointestinal::4",
-      "itemNo": "2",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
       "question": "สาเหตุหลัก 2 ประการที่ทำให้เกิดโรคแผลเปื่อยเปปติก (Peptic Ulcer Disease) คืออะไร?",
       "questionImage": "",
       "answer": "การติดเชื้อแบคทีเรีย Helicobacter pylori และการใช้ยาแก้ปวดกลุ่ม NSAIDs หรือ Aspirin<br> ทั้งสองสาเหตุคิดเป็นมากกว่า 90% ของผู้ป่วย PUD ทั้งหมด",
@@ -56035,8 +57591,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::5",
-      "itemNo": "3",
+      "id": "5. Gastrointestinal::4",
+      "itemNo": "2",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56047,14 +57603,26 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::6",
-      "itemNo": "4",
+      "id": "5. Gastrointestinal::5",
+      "itemNo": "3",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ก่อนตรวจยืนยันการติดเชื้อ H. pylori ด้วยวิธี Urea Breath Test (UBT) ต้องหยุดยาใดล่วงหน้า?",
       "questionImage": "",
       "answer": "ต้องหยุดยากลุ่ม PPIs อย่างน้อย 2 สัปดาห์ และหยุดยาปฏิชีวนะหรือยาบิสมัทอย่างน้อย 4 สัปดาห์<br> เพื่อป้องกันผลลบปลอม (False-negative result)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::6",
+      "itemNo": "4",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Bismuth Quadruple Therapy 14 วันประกอบด้วยยาใดบ้าง?",
+      "questionImage": "",
+      "answer": "PPI (วันละ 2 ครั้ง) + Bismuth subsalicylate + <b style=\"color:#0284c7;\">Metronidazole</b> + Tetracycline นาน 14 วัน<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
       "answerImage": "",
       "note": ""
     },
@@ -56066,7 +57634,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Bismuth Quadruple Therapy 14 วันประกอบด้วยยาใดบ้าง?",
       "questionImage": "",
-      "answer": "PPI (วันละ 2 ครั้ง) + Bismuth subsalicylate + <b style=\"color:#0284c7;\">Metronidazole</b> + Tetracycline นาน 14 วัน<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
+      "answer": "&lt;span style=&quot;color:#2563eb; font-weight:600;&quot;&gt;PPI (วันละ 2 ครั้ง) + <br>Bismuth subsalicylate + <br><b style=\"color:#0284c7;\">Metronidazole</b> + <br>Tetracycline นาน 14 วัน&lt;/span&gt;<br> เป็นสูตรทางเลือกแรกมาตรฐานในพื้นที่ที่มีอัตราเชื้อดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> สูง",
       "answerImage": "",
       "note": ""
     },
@@ -56078,25 +57646,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "สูตรยากำจัดเชื้อ H. pylori ชนิด Concomitant Quadruple Therapy 14 วันประกอบด้วยยาใด?",
       "questionImage": "",
-      "answer": "&lt;b&gt;PPI&lt;/b&gt; (วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Amoxicillin</b>&lt;/b&gt; (1 g วันละ 2 ครั้ง) + <br>&lt;b&gt;<b style=\"color:#0284c7;\">Clarithromycin</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง) +<br> &lt;b&gt;<b style=\"color:#0284c7;\">Metronidazole</b>&lt;/b&gt; (500 mg วันละ 2 ครั้ง)<br> รับประทานต่อเนื่องนาน 14 วัน",
+      "answer": "&lt;span style=&quot;color:#2563eb; font-weight:600;&quot;&gt;PPI (วันละ 2 ครั้ง) + <br><b style=\"color:#0284c7;\">Amoxicillin</b> (1 g วันละ 2 ครั้ง) + <br><b style=\"color:#0284c7;\">Clarithromycin</b> (500 mg วันละ 2 ครั้ง) +<br> <b style=\"color:#0284c7;\">Metronidazole</b> (500 mg วันละ 2 ครั้ง)&lt;/span&gt;<br> รับประทานต่อเนื่องนาน 14 วัน",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::9",
       "itemNo": "7",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
-      "question": "เพราะเหตุใดจึงไม่แนะนำสูตร <b style=\"color:#0284c7;\">Clarithromycin</b> Triple Therapy ในประเทศไทยเป็นอันดับแรก?",
-      "questionImage": "",
-      "answer": "เนื่องจากอัตราการดื้อยา <b style=\"color:#0284c7;\">Clarithromycin</b> ของเชื้อ H. pylori ในไทยสูงเกิน 15%<br> ส่งผลให้อัตราความสำเร็จในการกำจัดเชื้อด้วยสูตรสามยาลดต่ำลงอย่างมาก",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::10",
-      "itemNo": "8",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56107,8 +57663,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::11",
-      "itemNo": "9",
+      "id": "5. Gastrointestinal::10",
+      "itemNo": "8",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56119,8 +57675,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::12",
-      "itemNo": "10",
+      "id": "5. Gastrointestinal::11",
+      "itemNo": "9",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56131,14 +57687,26 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::13",
-      "itemNo": "11",
+      "id": "5. Gastrointestinal::12",
+      "itemNo": "10",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ยากลุ่ม NSAIDs ทำให้เกิดแผลในกระเพาะอาหารด้วยกลไกหลักใด?",
       "questionImage": "",
       "answer": "ยับยั้งเอนไซม์ COX-1 ขัดขวางการสังเคราะห์โพรสตาแกลนดิน (PGE2, PGI2)<br> ทำให้เมือกปกป้องเยื่อบุกระเพาะลดลง การหลั่งไบคาร์บอเนตลดลง และเลือดไปเลี้ยงเยื่อบุลดลง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::13",
+      "itemNo": "11",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "ปัจจัยเสี่ยงสำคัญที่ทำให้ผู้ใช้ยา NSAIDs เสี่ยงต่อการเกิดแผลและเลือดออกในทางเดินอาหารมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "อายุเกิน 65 ปี, มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร, ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
       "answerImage": "",
       "note": ""
     },
@@ -56150,25 +57718,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ปัจจัยเสี่ยงสำคัญที่ทำให้ผู้ใช้ยา NSAIDs เสี่ยงต่อการเกิดแผลและเลือดออกในทางเดินอาหารมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "อายุเกิน 65 ปี, มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร, ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
+      "answer": "อายุเกิน 65 ปี,<br> มีประวัติเคยเป็นแผลหรือเลือดออกในทางเดินอาหาร,<br> ใช้ยา NSAID ขนาดสูง,<br> และใช้ร่วมกับ Aspirin, Anticoagulants, Antiplatelets, สเตียรอยด์ หรือยากลุ่ม SSRIs",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::15",
       "itemNo": "13",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Peptic Ulcer Disease & H. pylori",
-      "track": "Clinic",
-      "question": "แนวทางป้องกันแผลทางเดินอาหารในผู้ป่วยที่มีความเสี่ยงสูงมากที่จำเป็นต้องใช้ NSAIDs คืออะไร?",
-      "questionImage": "",
-      "answer": "เลือกใช้ยากลุ่ม Selective COX-2 inhibitor (เช่น Celecoxib) ร่วมกับการให้ยา PPI ควบคู่เสมอ<br> เพื่อลดความเสี่ยงต่อการเกิดแผลและเลือดออกในกระเพาะอาหารให้ต่ำที่สุด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::16",
-      "itemNo": "14",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56179,8 +57735,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::17",
-      "itemNo": "15",
+      "id": "5. Gastrointestinal::16",
+      "itemNo": "14",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56191,8 +57747,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::18",
-      "itemNo": "16",
+      "id": "5. Gastrointestinal::17",
+      "itemNo": "15",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56203,8 +57759,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::19",
-      "itemNo": "17",
+      "id": "5. Gastrointestinal::18",
+      "itemNo": "16",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56215,8 +57771,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::20",
-      "itemNo": "18",
+      "id": "5. Gastrointestinal::19",
+      "itemNo": "17",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56227,8 +57783,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::21",
-      "itemNo": "19",
+      "id": "5. Gastrointestinal::20",
+      "itemNo": "18",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56239,8 +57795,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::22",
-      "itemNo": "20",
+      "id": "5. Gastrointestinal::21",
+      "itemNo": "19",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56251,8 +57807,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::23",
-      "itemNo": "21",
+      "id": "5. Gastrointestinal::22",
+      "itemNo": "20",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56263,8 +57819,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::24",
-      "itemNo": "22",
+      "id": "5. Gastrointestinal::23",
+      "itemNo": "21",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56275,8 +57831,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::25",
-      "itemNo": "23",
+      "id": "5. Gastrointestinal::24",
+      "itemNo": "22",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
@@ -56287,14 +57843,26 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::26",
-      "itemNo": "24",
+      "id": "5. Gastrointestinal::25",
+      "itemNo": "23",
       "group": "5. Gastrointestinal",
       "subTopic": "Peptic Ulcer Disease & H. pylori",
       "track": "Clinic",
       "question": "ยา Potassium-competitive acid blockers (P-CABs เช่น Vonoprazan) มีจุดเด่นเหนือ PPIs อย่างไร?",
       "questionImage": "",
       "answer": "ออกฤทธิ์ยับยั้งปั๊มกรดได้ทันทีโดยไม่ต้องรอการกระตุ้นจากกรด ออกฤทธิ์เร็ว คงตัวในสภาวะกรด<br> และไม่อาศัยการเปลี่ยนแปลงผ่านเอนไซม์ CYP2C19 ทำให้ได้ผลการกำจัด H. pylori สูงมาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::26",
+      "itemNo": "24",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Peptic Ulcer Disease & H. pylori",
+      "track": "Clinic",
+      "question": "ยาลดกรดชนิดใดที่ทำให้เกิดอาการท้องผูก และชนิดใดทำให้เกิดอาการท้องเสีย?",
+      "questionImage": "",
+      "answer": "ยาลดกรดที่มี อะลูมิเนียม (Aluminum hydroxide) ทำให้ ท้องผูก<br> ส่วนยาลดกรดที่มี แมกนีเซียม (Magnesium hydroxide) ทำให้ ถ่ายเหลวท้องเสีย จึงมักผสมร่วมกัน",
       "answerImage": "",
       "note": ""
     },
@@ -56306,7 +57874,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยาลดกรดชนิดใดที่ทำให้เกิดอาการท้องผูก และชนิดใดทำให้เกิดอาการท้องเสีย?",
       "questionImage": "",
-      "answer": "ยาลดกรดที่มี อะลูมิเนียม (Aluminum hydroxide) ทำให้ ท้องผูก<br> ส่วนยาลดกรดที่มี แมกนีเซียม (Magnesium hydroxide) ทำให้ ถ่ายเหลวท้องเสีย จึงมักผสมร่วมกัน",
+      "answer": "Aluminum hydroxide ทำให้ ท้องผูก<br>Magnesium hydroxide ทำให้ ถ่ายเหลวท้องเสีย<br><br> จึงมักผสมร่วมกัน",
       "answerImage": "",
       "note": ""
     },
@@ -56316,9 +57884,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
-      "question": "กลไกพยาธิสรีรวิทยาที่สำคัญที่สุดในการเกิดโรคกรดไหลย้อน (GERD) คืออะไร?",
+      "question": "อาการแสดงแบบฉบับ (Typical symptoms) 2 ประการของโรคกรดไหลย้อนคืออะไร?",
       "questionImage": "",
-      "answer": "การคลายตัวชั่วคราวของหูรูดหลอดอาหารส่วนล่างบ่อยผิดปกติ (Transient LES Relaxations / TLESRs)<br> ทำให้กรดและน้ำย่อยจากกระเพาะอาหารไหลย้อนขึ้นสู่หลอดอาหาร",
+      "answer": "อาการแสบร้อนกลางอก (Heartburn) และอาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
       "answerImage": "",
       "note": ""
     },
@@ -56330,25 +57898,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "อาการแสดงแบบฉบับ (Typical symptoms) 2 ประการของโรคกรดไหลย้อนคืออะไร?",
       "questionImage": "",
-      "answer": "อาการแสบร้อนกลางอก (Heartburn) และอาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
+      "answer": "อาการแสบร้อนกลางอก (Heartburn) <br>อาการขย้อนน้ำรสเปรี้ยวหรือขมขึ้นมาที่คอ (Acid regurgitation)<br> มักมีอาการมากขึ้นหลังมื้ออาหารหรือขณะนอนราบ",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::30",
       "itemNo": "28",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Gastroesophageal Reflux Disease",
-      "track": "Clinic",
-      "question": "อาการนอกหลอดอาหาร (Extraesophageal symptoms) ที่อาจเกิดจากกรดไหลย้อนมีอะไรบ้าง?",
-      "questionImage": "",
-      "answer": "ไอเรื้อรังโดยไม่ทราบสาเหตุ, เสียงแหบ, เจ็บคอเรื้อรัง, หอบหืดกำเริบ, และฟันสึกกร่อนจากกรด",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::31",
-      "itemNo": "29",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56359,20 +57915,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::32",
-      "itemNo": "30",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Gastroesophageal Reflux Disease",
-      "track": "Clinic",
-      "question": "การปรับเปลี่ยนพฤติกรรมข้อใดที่มีหลักฐานทางคลินิกชัดเจนที่สุดในการลดอาการกรดไหลย้อน?",
-      "questionImage": "",
-      "answer": "การลดน้ำหนักตัวในผู้ที่มีน้ำหนักเกินหรืออ้วน (Weight loss)<br> ช่วยลดแรงดันในช่องท้องที่ดันกรดให้ไหลย้อนขึ้นสู่หลอดอาหาร",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::33",
-      "itemNo": "31",
+      "id": "5. Gastrointestinal::31",
+      "itemNo": "29",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56383,8 +57927,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::34",
-      "itemNo": "32",
+      "id": "5. Gastrointestinal::32",
+      "itemNo": "30",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56395,8 +57939,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::35",
-      "itemNo": "33",
+      "id": "5. Gastrointestinal::33",
+      "itemNo": "31",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56407,8 +57951,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::36",
-      "itemNo": "34",
+      "id": "5. Gastrointestinal::34",
+      "itemNo": "32",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56419,8 +57963,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::37",
-      "itemNo": "35",
+      "id": "5. Gastrointestinal::35",
+      "itemNo": "33",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56431,8 +57975,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::38",
-      "itemNo": "36",
+      "id": "5. Gastrointestinal::36",
+      "itemNo": "34",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56443,8 +57987,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::39",
-      "itemNo": "37",
+      "id": "5. Gastrointestinal::37",
+      "itemNo": "35",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56455,8 +57999,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::40",
-      "itemNo": "38",
+      "id": "5. Gastrointestinal::38",
+      "itemNo": "36",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56467,8 +58011,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::41",
-      "itemNo": "39",
+      "id": "5. Gastrointestinal::39",
+      "itemNo": "37",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56479,8 +58023,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::42",
-      "itemNo": "40",
+      "id": "5. Gastrointestinal::40",
+      "itemNo": "38",
       "group": "5. Gastrointestinal",
       "subTopic": "Gastroesophageal Reflux Disease",
       "track": "Clinic",
@@ -56491,8 +58035,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::43",
-      "itemNo": "41",
+      "id": "5. Gastrointestinal::41",
+      "itemNo": "39",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56503,8 +58047,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::44",
-      "itemNo": "42",
+      "id": "5. Gastrointestinal::42",
+      "itemNo": "40",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56515,8 +58059,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::45",
-      "itemNo": "43",
+      "id": "5. Gastrointestinal::43",
+      "itemNo": "41",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56527,8 +58071,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::46",
-      "itemNo": "44",
+      "id": "5. Gastrointestinal::44",
+      "itemNo": "42",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56539,8 +58083,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::47",
-      "itemNo": "45",
+      "id": "5. Gastrointestinal::45",
+      "itemNo": "43",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56551,8 +58095,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::48",
-      "itemNo": "46",
+      "id": "5. Gastrointestinal::46",
+      "itemNo": "44",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56563,8 +58107,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::49",
-      "itemNo": "47",
+      "id": "5. Gastrointestinal::47",
+      "itemNo": "45",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56575,8 +58119,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::50",
-      "itemNo": "48",
+      "id": "5. Gastrointestinal::48",
+      "itemNo": "46",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56587,8 +58131,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::51",
-      "itemNo": "49",
+      "id": "5. Gastrointestinal::49",
+      "itemNo": "47",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56599,8 +58143,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::52",
-      "itemNo": "50",
+      "id": "5. Gastrointestinal::50",
+      "itemNo": "48",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56611,8 +58155,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::53",
-      "itemNo": "51",
+      "id": "5. Gastrointestinal::51",
+      "itemNo": "49",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56623,8 +58167,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::54",
-      "itemNo": "52",
+      "id": "5. Gastrointestinal::52",
+      "itemNo": "50",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56635,8 +58179,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::55",
-      "itemNo": "53",
+      "id": "5. Gastrointestinal::53",
+      "itemNo": "51",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56647,8 +58191,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::56",
-      "itemNo": "54",
+      "id": "5. Gastrointestinal::54",
+      "itemNo": "52",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56659,8 +58203,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::57",
-      "itemNo": "55",
+      "id": "5. Gastrointestinal::55",
+      "itemNo": "53",
       "group": "5. Gastrointestinal",
       "subTopic": "Upper GI Bleeding & SUP",
       "track": "Clinic",
@@ -56671,8 +58215,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::58",
-      "itemNo": "56",
+      "id": "5. Gastrointestinal::56",
+      "itemNo": "54",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56683,8 +58227,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::59",
-      "itemNo": "57",
+      "id": "5. Gastrointestinal::57",
+      "itemNo": "55",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56695,8 +58239,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::60",
-      "itemNo": "58",
+      "id": "5. Gastrointestinal::58",
+      "itemNo": "56",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56707,8 +58251,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::61",
-      "itemNo": "59",
+      "id": "5. Gastrointestinal::59",
+      "itemNo": "57",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56719,8 +58263,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::62",
-      "itemNo": "60",
+      "id": "5. Gastrointestinal::60",
+      "itemNo": "58",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56731,8 +58275,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::63",
-      "itemNo": "61",
+      "id": "5. Gastrointestinal::61",
+      "itemNo": "59",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56743,8 +58287,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::64",
-      "itemNo": "62",
+      "id": "5. Gastrointestinal::62",
+      "itemNo": "60",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56755,8 +58299,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::65",
-      "itemNo": "63",
+      "id": "5. Gastrointestinal::63",
+      "itemNo": "61",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56767,8 +58311,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::66",
-      "itemNo": "64",
+      "id": "5. Gastrointestinal::64",
+      "itemNo": "62",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56779,8 +58323,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::67",
-      "itemNo": "65",
+      "id": "5. Gastrointestinal::65",
+      "itemNo": "63",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56791,8 +58335,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::68",
-      "itemNo": "66",
+      "id": "5. Gastrointestinal::66",
+      "itemNo": "64",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56803,8 +58347,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::69",
-      "itemNo": "67",
+      "id": "5. Gastrointestinal::67",
+      "itemNo": "65",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56815,8 +58359,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::70",
-      "itemNo": "68",
+      "id": "5. Gastrointestinal::68",
+      "itemNo": "66",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56827,8 +58371,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::71",
-      "itemNo": "69",
+      "id": "5. Gastrointestinal::69",
+      "itemNo": "67",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56839,8 +58383,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::72",
-      "itemNo": "70",
+      "id": "5. Gastrointestinal::70",
+      "itemNo": "68",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56851,8 +58395,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::73",
-      "itemNo": "71",
+      "id": "5. Gastrointestinal::71",
+      "itemNo": "69",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56863,8 +58407,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::74",
-      "itemNo": "72",
+      "id": "5. Gastrointestinal::72",
+      "itemNo": "70",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56875,8 +58419,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::75",
-      "itemNo": "73",
+      "id": "5. Gastrointestinal::73",
+      "itemNo": "71",
       "group": "5. Gastrointestinal",
       "subTopic": "Diarrhea & Constipation",
       "track": "Clinic",
@@ -56887,14 +58431,38 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::76",
-      "itemNo": "74",
+      "id": "5. Gastrointestinal::74",
+      "itemNo": "72",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
       "question": "ศูนย์ควบคุมการอาเจียน Chemoreceptor Trigger Zone (CTZ) ตั้งอยู่ที่ใดและมีลักษณะพิเศษอย่างไร?",
       "questionImage": "",
       "answer": "ตั้งอยู่ที่บริเวณ Area postrema ที่ก้นของโพรงสมองที่ 4 (4th ventricle)<br> เป็นบริเวณที่ อยู่นอกแนวป้องกัน Blood-Brain Barrier (BBB) จึงไวต่อสารพิษและยาในกระแสเลือดโดยตรง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::75",
+      "itemNo": "73",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Nausea & Vomiting",
+      "track": "Clinic",
+      "question": "ตัวรับหลักที่เกี่ยวข้องกับการส่งสัญญาณอาการเมารถเมาเรือ (Motion sickness) ในระบบประสาทการทรงตัวคืออะไร?",
+      "questionImage": "",
+      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือต้านโคลิเนอร์จิกเป็นหลัก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::76",
+      "itemNo": "74",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Nausea & Vomiting",
+      "track": "Clinic",
+      "question": "Dimenhydrinate (ยาแก้แพ้แก้เมา) ควรรับประทานเวลาใดเพื่อให้ได้ผลป้องกันการเมารถเมาเรือสูงสุด?",
+      "questionImage": "",
+      "answer": "รับประทานก่อนออกเดินทางประมาณ 30 ถึง 60 นาที<br> เพื่อให้ตัวยาถูกดูดซึมและออกฤทธิ์ปิดกั้นตัวรับในระบบประสาทการทรงตัวได้ทัน",
       "answerImage": "",
       "note": ""
     },
@@ -56906,37 +58474,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ตัวรับหลักที่เกี่ยวข้องกับการส่งสัญญาณอาการเมารถเมาเรือ (Motion sickness) ในระบบประสาทการทรงตัวคืออะไร?",
       "questionImage": "",
-      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือต้านโคลิเนอร์จิกเป็นหลัก",
+      "answer": "Histamine H1 receptor และ Muscarinic M1 receptor ใน Vestibular system<br> ยาที่ใช้ป้องกันจึงต้องมีฤทธิ์ต้าน H1 หรือ anticholinergic เป็นหลัก",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "5. Gastrointestinal::78",
       "itemNo": "76",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Nausea & Vomiting",
-      "track": "Clinic",
-      "question": "Dimenhydrinate (ยาแก้แพ้แก้เมา) ควรรับประทานเวลาใดเพื่อให้ได้ผลป้องกันการเมารถเมาเรือสูงสุด?",
-      "questionImage": "",
-      "answer": "รับประทานก่อนออกเดินทางประมาณ 30 ถึง 60 นาที<br> เพื่อให้ตัวยาถูกดูดซึมและออกฤทธิ์ปิดกั้นตัวรับในระบบประสาทการทรงตัวได้ทัน",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::79",
-      "itemNo": "77",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Nausea & Vomiting",
-      "track": "Clinic",
-      "question": "แผ่นแปะแก้เมารถ Scopolamine (Hyoscine patch) มีคำแนะนำในการแปะและการเปลี่ยนแผ่นอย่างไร?",
-      "questionImage": "",
-      "answer": "แปะที่ผิวหนังหลังใบหูอย่างน้อย 4 ชั่วโมงก่อนออกเดินทาง<br> แผ่นแปะ 1 แผ่นออกฤทธิ์ได้นานถึง 72 ชั่วโมง (3 วัน) ล้างมือให้สะอาดหลังแปะเพื่อเลี่ยงยาเข้าตา",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::80",
-      "itemNo": "78",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -56947,8 +58491,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::81",
-      "itemNo": "79",
+      "id": "5. Gastrointestinal::79",
+      "itemNo": "77",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -56959,8 +58503,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::82",
-      "itemNo": "80",
+      "id": "5. Gastrointestinal::80",
+      "itemNo": "78",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -56971,8 +58515,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::83",
-      "itemNo": "81",
+      "id": "5. Gastrointestinal::81",
+      "itemNo": "79",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -56983,8 +58527,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::84",
-      "itemNo": "82",
+      "id": "5. Gastrointestinal::82",
+      "itemNo": "80",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -56995,8 +58539,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::85",
-      "itemNo": "83",
+      "id": "5. Gastrointestinal::83",
+      "itemNo": "81",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -57007,8 +58551,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::86",
-      "itemNo": "84",
+      "id": "5. Gastrointestinal::84",
+      "itemNo": "82",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -57019,8 +58563,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::87",
-      "itemNo": "85",
+      "id": "5. Gastrointestinal::85",
+      "itemNo": "83",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -57031,8 +58575,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::88",
-      "itemNo": "86",
+      "id": "5. Gastrointestinal::86",
+      "itemNo": "84",
       "group": "5. Gastrointestinal",
       "subTopic": "Nausea & Vomiting",
       "track": "Clinic",
@@ -57043,8 +58587,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::89",
-      "itemNo": "87",
+      "id": "5. Gastrointestinal::87",
+      "itemNo": "85",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57055,8 +58599,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::90",
-      "itemNo": "88",
+      "id": "5. Gastrointestinal::88",
+      "itemNo": "86",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57067,8 +58611,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::91",
-      "itemNo": "89",
+      "id": "5. Gastrointestinal::89",
+      "itemNo": "87",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57079,8 +58623,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::92",
-      "itemNo": "90",
+      "id": "5. Gastrointestinal::90",
+      "itemNo": "88",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57091,8 +58635,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::93",
-      "itemNo": "91",
+      "id": "5. Gastrointestinal::91",
+      "itemNo": "89",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57103,8 +58647,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::94",
-      "itemNo": "92",
+      "id": "5. Gastrointestinal::92",
+      "itemNo": "90",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57115,8 +58659,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::95",
-      "itemNo": "93",
+      "id": "5. Gastrointestinal::93",
+      "itemNo": "91",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57127,8 +58671,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::96",
-      "itemNo": "94",
+      "id": "5. Gastrointestinal::94",
+      "itemNo": "92",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57139,8 +58683,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::97",
-      "itemNo": "95",
+      "id": "5. Gastrointestinal::95",
+      "itemNo": "93",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57151,8 +58695,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::98",
-      "itemNo": "96",
+      "id": "5. Gastrointestinal::96",
+      "itemNo": "94",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57163,8 +58707,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::99",
-      "itemNo": "97",
+      "id": "5. Gastrointestinal::97",
+      "itemNo": "95",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57175,8 +58719,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::100",
-      "itemNo": "98",
+      "id": "5. Gastrointestinal::98",
+      "itemNo": "96",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57187,8 +58731,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::101",
-      "itemNo": "99",
+      "id": "5. Gastrointestinal::99",
+      "itemNo": "97",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57199,8 +58743,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::102",
-      "itemNo": "100",
+      "id": "5. Gastrointestinal::100",
+      "itemNo": "98",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57211,8 +58755,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::103",
-      "itemNo": "101",
+      "id": "5. Gastrointestinal::101",
+      "itemNo": "99",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57223,8 +58767,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::104",
-      "itemNo": "102",
+      "id": "5. Gastrointestinal::102",
+      "itemNo": "100",
       "group": "5. Gastrointestinal",
       "subTopic": "Inflammatory Bowel Disease",
       "track": "Clinic",
@@ -57235,8 +58779,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::105",
-      "itemNo": "103",
+      "id": "5. Gastrointestinal::103",
+      "itemNo": "101",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57247,8 +58791,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::106",
-      "itemNo": "104",
+      "id": "5. Gastrointestinal::104",
+      "itemNo": "102",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57259,8 +58803,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::107",
-      "itemNo": "105",
+      "id": "5. Gastrointestinal::105",
+      "itemNo": "103",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57271,8 +58815,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::108",
-      "itemNo": "106",
+      "id": "5. Gastrointestinal::106",
+      "itemNo": "104",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57283,8 +58827,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::109",
-      "itemNo": "107",
+      "id": "5. Gastrointestinal::107",
+      "itemNo": "105",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57295,8 +58839,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::110",
-      "itemNo": "108",
+      "id": "5. Gastrointestinal::108",
+      "itemNo": "106",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57307,8 +58851,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::111",
-      "itemNo": "109",
+      "id": "5. Gastrointestinal::109",
+      "itemNo": "107",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57319,8 +58863,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::112",
-      "itemNo": "110",
+      "id": "5. Gastrointestinal::110",
+      "itemNo": "108",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57331,8 +58875,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "5. Gastrointestinal::113",
-      "itemNo": "111",
+      "id": "5. Gastrointestinal::111",
+      "itemNo": "109",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57343,12 +58887,36 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
+      "id": "5. Gastrointestinal::112",
+      "itemNo": "110",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Viral Hepatitis & Cirrhosis",
+      "track": "Clinic",
+      "question": "ยากลุ่มยับยั้งเอนไซม์โปรติเอส (NS3/4A Protease Inhibitors เช่น Glecaprevir) มีข้อห้ามใช้ในผู้ป่วยตับกลุ่มใด?",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "5. Gastrointestinal::113",
+      "itemNo": "111",
+      "group": "5. Gastrointestinal",
+      "subTopic": "Viral Hepatitis & Cirrhosis",
+      "track": "Clinic",
+      "question": "อัตราส่วนของยาขับปัสสาวะ Spironolactone ต่อ Furosemide ในการรักษาภาวะท้องมาน (Ascites) คือเท่าใด?",
+      "questionImage": "",
+      "answer": "",
+      "answerImage": "",
+      "note": ""
+    },
+    {
       "id": "5. Gastrointestinal::114",
       "itemNo": "112",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "ยากลุ่มยับยั้งเอนไซม์โปรติเอส (NS3/4A Protease Inhibitors เช่น Glecaprevir) มีข้อห้ามใช้ในผู้ป่วยตับกลุ่มใด?",
+      "question": "ข้อบ่งชี้ในการให้ยา IV Albumin ระหว่างการเจาะระบายน้ำในช่องท้องปริมาณมาก (LVP) คืออะไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -57360,7 +58928,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "อัตราส่วนของยาขับปัสสาวะ Spironolactone ต่อ Furosemide ในการรักษาภาวะท้องมาน (Ascites) คือเท่าใด?",
+      "question": "เกณฑ์การวินิจฉัยภาวะเยื่อบุช่องท้องอักเสบติดเชื้อเอง (Spontaneous Bacterial Peritonitis / SBP) คืออะไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -57372,7 +58940,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "ข้อบ่งชี้ในการให้ยา IV Albumin ระหว่างการเจาะระบายน้ำในช่องท้องปริมาณมาก (LVP) คืออะไร?",
+      "question": "ยาปฏิชีวนะทางเลือกแรกในการรักษาภาวะ SBP ในผู้ป่วยโรคตับแข็งคือยาใด?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -57384,7 +58952,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
-      "question": "เกณฑ์การวินิจฉัยภาวะเยื่อบุช่องท้องอักเสบติดเชื้อเอง (Spontaneous Bacterial Peritonitis / SBP) คืออะไร?",
+      "question": "ยาทางเลือกแรกในการรักษาภาวะทางสมองจากโรคตับ (Hepatic Encephalopathy) คือยาใดและปรับขนาดอย่างไร?",
       "questionImage": "",
       "answer": "",
       "answerImage": "",
@@ -57393,30 +58961,6 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
     {
       "id": "5. Gastrointestinal::118",
       "itemNo": "116",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Viral Hepatitis & Cirrhosis",
-      "track": "Clinic",
-      "question": "ยาปฏิชีวนะทางเลือกแรกในการรักษาภาวะ SBP ในผู้ป่วยโรคตับแข็งคือยาใด?",
-      "questionImage": "",
-      "answer": "",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::119",
-      "itemNo": "117",
-      "group": "5. Gastrointestinal",
-      "subTopic": "Viral Hepatitis & Cirrhosis",
-      "track": "Clinic",
-      "question": "ยาทางเลือกแรกในการรักษาภาวะทางสมองจากโรคตับ (Hepatic Encephalopathy) คือยาใดและปรับขนาดอย่างไร?",
-      "questionImage": "",
-      "answer": "",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "5. Gastrointestinal::120",
-      "itemNo": "118",
       "group": "5. Gastrointestinal",
       "subTopic": "Viral Hepatitis & Cirrhosis",
       "track": "Clinic",
@@ -57456,7 +59000,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "รูปแบบผลตรวจค่าเคมีของธาตุเหล็ก (Iron studies) ในผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็กเป็นอย่างไร?",
+      "question": "รูปแบบผลตรวจค่าเคมีของธาตุเหล็ก (Iron studies) ในผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็ก จะได้ผลเป็นอย่างไร",
       "questionImage": "",
       "answer": "Serum Iron ต่ำ, Serum Ferritin ต่ำ, แต่ค่า Total Iron-Binding Capacity (TIBC) สูงขึ้น<br> และค่า Transferrin Saturation (TSAT) ต่ำกว่า 20%",
       "answerImage": "",
@@ -57470,7 +59014,7 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ลักษณะทางคลินิกจำเพาะของผู้ป่วยโรคโลหิตจางจากการขาดธาตุเหล็กเรื้อรังรุนแรงมีอะไรบ้าง?",
       "questionImage": "",
-      "answer": "เล็บบุ๋มเป็นรูปช้อน (Koilonychia / Spoon nails), แผลมุมปาก (Angular cheilitis),<br> และพฤติกรรมชอบกินสิ่งที่ไม่ใช่อาหาร เช่น น้ำแข็ง ดิน หรือข้าวสารดิบ (Pica)",
+      "answer": "เล็บบุ๋มเป็นรูปช้อน (Koilonychia / Spoon nails)<br>แผลมุมปาก (Angular cheilitis),<br>และพฤติกรรมชอบกินสิ่งที่ไม่ใช่อาหาร เช่น น้ำแข็ง ดิน หรือข้าวสารดิบ (Pica)",
       "answerImage": "",
       "note": ""
     },
@@ -57480,9 +59024,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "ดัชนี Mentzer Index คำนวณอย่างไรและใช้แยกโรคโลหิตจางกลุ่มใด?",
+      "question": "ปริมาณธาตุเหล็กบริสุทธิ์ (Elemental Iron) ที่แนะนำในการรักษาภาวะโลหิตจางจากการขาดธาตุเหล็กคือเท่าใด?",
       "questionImage": "",
-      "answer": "คำนวณจาก MCV หารด้วยจำนวนเม็ดเลือดแดง (RBC count)<br> หาก &lt; 13 สงสัยพาหะธาลัสซีเมีย (Thalassemia trait) หาก &gt; 13 สงสัยขาดธาตุเหล็ก (IDA)",
+      "answer": "100 ถึง 200 mg ของ Elemental Iron ต่อวัน (แบ่งให้วันละ 2-3 ครั้ง)<br> หรือรับประทานวันเว้นวัน (Alternate-day dosing) เพื่อลดการหลั่งฮอร์โมน Hepcidin และลดผลข้างเคียง",
       "answerImage": "",
       "note": ""
     },
@@ -57492,9 +59036,9 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
-      "question": "ปริมาณธาตุเหล็กบริสุทธิ์ (Elemental Iron) ที่แนะนำในการรักษาภาวะโลหิตจางจากการขาดธาตุเหล็กคือเท่าใด?",
+      "question": "ยา Ferrous sulfate, Ferrous fumarate และ Ferrous gluconate มีปริมาณ Elemental Iron ร้อยละเท่าใด?",
       "questionImage": "",
-      "answer": "100 ถึง 200 mg ของ Elemental Iron ต่อวัน (แบ่งให้วันละ 2-3 ครั้ง)<br> หรือรับประทานวันเว้นวัน (Alternate-day dosing) เพื่อลดการหลั่งฮอร์โมน Hepcidin และลดผลข้างเคียง",
+      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg), Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
       "answerImage": "",
       "note": ""
     },
@@ -57506,25 +59050,13 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "track": "Clinic",
       "question": "ยา Ferrous sulfate, Ferrous fumarate และ Ferrous gluconate มีปริมาณ Elemental Iron ร้อยละเท่าใด?",
       "questionImage": "",
-      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg), Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
+      "answer": "Ferrous sulfate มี 20% (300 mg มีเหล็ก 60 mg)<br>Ferrous fumarate มี 33% (มีเหล็กสูงสุด),<br> และ Ferrous gluconate มี 12% โดยน้ำหนัก",
       "answerImage": "",
       "note": ""
     },
     {
       "id": "6. Hematologic::10",
       "itemNo": "8",
-      "group": "6. Hematologic",
-      "subTopic": "Microcytic & Megaloblastic Anemia",
-      "track": "Clinic",
-      "question": "คำแนะนำในการรับประทานยาบำรุงธาตุเหล็กชนิดเม็ดเพื่อให้ร่างกายดูดซึมได้ดีที่สุดคืออะไร?",
-      "questionImage": "",
-      "answer": "รับประทานขณะท้องว่างก่อนอาหาร 1 ชั่วโมง หรือพร้อมน้ำส้ม/วิตามินซี (ความเป็นกรดช่วยดูดซึม)<br> หากมีอาการคลื่นไส้ แน่นท้อง ท้องผูก ให้เปลี่ยนมารับประทานหลังอาหารทันที",
-      "answerImage": "",
-      "note": ""
-    },
-    {
-      "id": "6. Hematologic::11",
-      "itemNo": "9",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57535,8 +59067,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::12",
-      "itemNo": "10",
+      "id": "6. Hematologic::11",
+      "itemNo": "9",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57547,8 +59079,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::13",
-      "itemNo": "11",
+      "id": "6. Hematologic::12",
+      "itemNo": "10",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57559,8 +59091,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::14",
-      "itemNo": "12",
+      "id": "6. Hematologic::13",
+      "itemNo": "11",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57571,8 +59103,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::15",
-      "itemNo": "13",
+      "id": "6. Hematologic::14",
+      "itemNo": "12",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57583,8 +59115,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::16",
-      "itemNo": "14",
+      "id": "6. Hematologic::15",
+      "itemNo": "13",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57595,8 +59127,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::17",
-      "itemNo": "15",
+      "id": "6. Hematologic::16",
+      "itemNo": "14",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57607,8 +59139,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::18",
-      "itemNo": "16",
+      "id": "6. Hematologic::17",
+      "itemNo": "15",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57619,8 +59151,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::19",
-      "itemNo": "17",
+      "id": "6. Hematologic::18",
+      "itemNo": "16",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57631,8 +59163,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::20",
-      "itemNo": "18",
+      "id": "6. Hematologic::19",
+      "itemNo": "17",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57643,8 +59175,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::21",
-      "itemNo": "19",
+      "id": "6. Hematologic::20",
+      "itemNo": "18",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57655,8 +59187,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::22",
-      "itemNo": "20",
+      "id": "6. Hematologic::21",
+      "itemNo": "19",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57667,8 +59199,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::23",
-      "itemNo": "21",
+      "id": "6. Hematologic::22",
+      "itemNo": "20",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57679,8 +59211,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::24",
-      "itemNo": "22",
+      "id": "6. Hematologic::23",
+      "itemNo": "21",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57691,8 +59223,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::25",
-      "itemNo": "23",
+      "id": "6. Hematologic::24",
+      "itemNo": "22",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57703,8 +59235,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::26",
-      "itemNo": "24",
+      "id": "6. Hematologic::25",
+      "itemNo": "23",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57715,8 +59247,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::27",
-      "itemNo": "25",
+      "id": "6. Hematologic::26",
+      "itemNo": "24",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57727,8 +59259,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::28",
-      "itemNo": "26",
+      "id": "6. Hematologic::27",
+      "itemNo": "25",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57739,8 +59271,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::29",
-      "itemNo": "27",
+      "id": "6. Hematologic::28",
+      "itemNo": "26",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57751,8 +59283,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::30",
-      "itemNo": "28",
+      "id": "6. Hematologic::29",
+      "itemNo": "27",
       "group": "6. Hematologic",
       "subTopic": "Microcytic & Megaloblastic Anemia",
       "track": "Clinic",
@@ -57763,8 +59295,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::31",
-      "itemNo": "29",
+      "id": "6. Hematologic::30",
+      "itemNo": "28",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57775,8 +59307,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::32",
-      "itemNo": "30",
+      "id": "6. Hematologic::31",
+      "itemNo": "29",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57787,8 +59319,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::33",
-      "itemNo": "31",
+      "id": "6. Hematologic::32",
+      "itemNo": "30",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57799,8 +59331,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::34",
-      "itemNo": "32",
+      "id": "6. Hematologic::33",
+      "itemNo": "31",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57811,8 +59343,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::35",
-      "itemNo": "33",
+      "id": "6. Hematologic::34",
+      "itemNo": "32",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57823,8 +59355,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::36",
-      "itemNo": "34",
+      "id": "6. Hematologic::35",
+      "itemNo": "33",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57835,8 +59367,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::37",
-      "itemNo": "35",
+      "id": "6. Hematologic::36",
+      "itemNo": "34",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57847,8 +59379,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::38",
-      "itemNo": "36",
+      "id": "6. Hematologic::37",
+      "itemNo": "35",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57859,8 +59391,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::39",
-      "itemNo": "37",
+      "id": "6. Hematologic::38",
+      "itemNo": "36",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57871,8 +59403,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::40",
-      "itemNo": "38",
+      "id": "6. Hematologic::39",
+      "itemNo": "37",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57883,8 +59415,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::41",
-      "itemNo": "39",
+      "id": "6. Hematologic::40",
+      "itemNo": "38",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57895,8 +59427,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::42",
-      "itemNo": "40",
+      "id": "6. Hematologic::41",
+      "itemNo": "39",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57907,8 +59439,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::43",
-      "itemNo": "41",
+      "id": "6. Hematologic::42",
+      "itemNo": "40",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57919,8 +59451,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::44",
-      "itemNo": "42",
+      "id": "6. Hematologic::43",
+      "itemNo": "41",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57931,8 +59463,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::45",
-      "itemNo": "43",
+      "id": "6. Hematologic::44",
+      "itemNo": "42",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57943,8 +59475,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::46",
-      "itemNo": "44",
+      "id": "6. Hematologic::45",
+      "itemNo": "43",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57955,8 +59487,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::47",
-      "itemNo": "45",
+      "id": "6. Hematologic::46",
+      "itemNo": "44",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57967,8 +59499,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::48",
-      "itemNo": "46",
+      "id": "6. Hematologic::47",
+      "itemNo": "45",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57979,8 +59511,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::49",
-      "itemNo": "47",
+      "id": "6. Hematologic::48",
+      "itemNo": "46",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -57991,8 +59523,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::50",
-      "itemNo": "48",
+      "id": "6. Hematologic::49",
+      "itemNo": "47",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -58003,8 +59535,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::51",
-      "itemNo": "49",
+      "id": "6. Hematologic::50",
+      "itemNo": "48",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -58015,8 +59547,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::52",
-      "itemNo": "50",
+      "id": "6. Hematologic::51",
+      "itemNo": "49",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -58027,8 +59559,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::53",
-      "itemNo": "51",
+      "id": "6. Hematologic::52",
+      "itemNo": "50",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -58039,8 +59571,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::54",
-      "itemNo": "52",
+      "id": "6. Hematologic::53",
+      "itemNo": "51",
       "group": "6. Hematologic",
       "subTopic": "Hemolytic Anemias & Coagulation",
       "track": "Clinic",
@@ -58051,8 +59583,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::55",
-      "itemNo": "53",
+      "id": "6. Hematologic::54",
+      "itemNo": "52",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58063,8 +59595,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::56",
-      "itemNo": "54",
+      "id": "6. Hematologic::55",
+      "itemNo": "53",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58075,8 +59607,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::57",
-      "itemNo": "55",
+      "id": "6. Hematologic::56",
+      "itemNo": "54",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58087,8 +59619,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::58",
-      "itemNo": "56",
+      "id": "6. Hematologic::57",
+      "itemNo": "55",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58099,8 +59631,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::59",
-      "itemNo": "57",
+      "id": "6. Hematologic::58",
+      "itemNo": "56",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58111,8 +59643,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::60",
-      "itemNo": "58",
+      "id": "6. Hematologic::59",
+      "itemNo": "57",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58123,8 +59655,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::61",
-      "itemNo": "59",
+      "id": "6. Hematologic::60",
+      "itemNo": "58",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58135,8 +59667,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::62",
-      "itemNo": "60",
+      "id": "6. Hematologic::61",
+      "itemNo": "59",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58147,8 +59679,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::63",
-      "itemNo": "61",
+      "id": "6. Hematologic::62",
+      "itemNo": "60",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -58159,8 +59691,8 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "note": ""
     },
     {
-      "id": "6. Hematologic::64",
-      "itemNo": "62",
+      "id": "6. Hematologic::63",
+      "itemNo": "61",
       "group": "6. Hematologic",
       "subTopic": "Anticoagulation & Hemostasis",
       "track": "Clinic",
@@ -70577,6 +72109,858 @@ window.OFFLINE_ALL_CARDS_BY_TRACK = {
       "answer": "<span style=\"color:#16a34a\"><b>▶ [คำตอบ]:</b></span><span style=\"color:#1e293b\"><br>ต้องใช้ 0.5% w/v </span><span style=\"color:#0284c7\"><b>Benzalkonium chloride</b></span><span style=\"color:#1e293b\"> solution = </span><span style=\"color:#16a34a\"><b>2.0 mL</b></span><span style=\"color:#1e293b\"><br><br></span><span style=\"color:#0284c7\"><b>▶ [วิธีคิดทีละ Step]:</b></span><span style=\"color:#1e293b\"><br>   ↳ </span><span style=\"color:#0284c7\"><b>Step 1:</b></span><span style=\"color:#1e293b\"> แปลง Ratio Strength (1:5,000) เป็น Percentage (% w/v)<br>     1:5,000 หมายถึง มีตัวยา 1 g ในสารละลาย 5,000 mL<br>     คิดเป็น % w/v = (1 g / 5,000 mL) × 100 = </span><span style=\"color:#16a34a\"><b>0.02% w/v</b></span><span style=\"color:#1e293b\"><br>   ↳ </span><span style=\"color:#0284c7\"><b>Step 2:</b></span><span style=\"color:#1e293b\"> ใช้สูตรการเจือจาง C1 × V1 = C2 × V2<br>     0.5% × V1 = </span><span style=\"color:#16a34a\"><b>0.02%</b></span><span style=\"color:#1e293b\"> × 50 mL<br>     V1 = (0.02 × 50) / 0.5 = 1.0 / 0.5 = </span><span style=\"color:#16a34a\"><b>2.0 mL</b></span>",
       "answerImage": "",
       "note": "Lab IDQ4 P.7 Exercise 10"
+    },
+    {
+      "id": "6. Solid Dosage Forms::3",
+      "itemNo": "1",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "Tablet defects",
+      "track": "Product",
+      "question": "Picking กับ Sticking ต่างกันอย่างไร? และแต่ละอันมีต้นเหตุหลักจากอะไร",
+      "questionImage": "",
+      "answer": "Picking = เนื้อยาติดในร่องตัวอักษร/โลโก้ (tooling: enclosed areas เช่น A, B) / Sticking = ติดทั้งผิวหน้า punch (วัสดุ: low m.p., moisture, hygroscopic additive)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::4",
+      "itemNo": "2",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ถ้าเม็ดยามีตัวอักษร “B” แล้วเกิด picking แก้ทาง tooling ได้อย่างไร (2 วิธี) และแก้ทางสูตรได้อย่างไร",
+      "questionImage": "",
+      "answer": "Tooling: ใช้ตัวอักษรใหญ่ขึ้น/ไม่มีตัวอักษร; เคลือบ punch ด้วย chromium. สูตร: เพิ่ม lubricant (metal stearate), glidant (colloidal SiO₂) หรือ talc",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::5",
+      "itemNo": "3",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "บอกสาเหตุของ Sticking 3 ข้อ พร้อมตัวอย่างสาร",
+      "questionImage": "",
+      "answer": "1) Low m.p. substance เช่น stearic acid, PEG, API บางตัว 2) Excess moisture ใน granule 3) Hygroscopic additive เช่น propylene glycol",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::6",
+      "itemNo": "4",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "สูตร Aspirin ใช้ Mg stearate แล้วเม็ดติด die — เรียกปัญหานี้ว่าอะไร แก้อย่างไร",
+      "questionImage": "",
+      "answer": "Binding in the die — Aspirin + Mg-St เกิด sticky mass →เปลี่ยนเป็น non-reactive lubricant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::7",
+      "itemNo": "5",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Mottling คืออะไร? สาเหตุใน process ที่สำคัญที่สุดและวิธีแก้",
+      "questionImage": "",
+      "answer": "สีไม่สม่ำเสมอบนผิวเม็ดจาก color migration; drying temperature สูง ดันสีจากในออกผิว granule → ลดอุณหภูมิอบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::8",
+      "itemNo": "6",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Crack บนผิวเม็ดจาก tablet expansion ระหว่าง ejection แก้ทางสูตรอย่างไร",
+      "questionImage": "",
+      "answer": "เลือกวัสดุ plastic deformation มากกว่า elastic; คุม granule size ไม่ใหญ่เกินและ distribution แคบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::9",
+      "itemNo": "7",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Chipped edge จากรูปทรงเม็ด แก้อย่างไร — และ punch แบบเดียวกันนี้เป็นสาเหตุของ defect ใด",
+      "questionImage": "",
+      "answer": "เม็ดขอบคม → ใช้ concave/beveled-edge punch; แต่ deep concave/beveled เป็นสาเหตุของ capping (แก้ด้วย flat punch)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::10",
+      "itemNo": "8",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "นิยาม Capping vs Lamination",
+      "questionImage": "",
+      "answer": "Capping = crown บน/ล่าง หลุดบางส่วน/ทั้งหมด; Lamination = แยกเป็น ≥2 ชั้นแนวนอน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::11",
+      "itemNo": "9",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "กลไกหลักที่อธิบาย capping คืออะไร และเกี่ยวกับ speed อย่างไร",
+      "questionImage": "",
+      "answer": "Air entrapment — speed สูง อากาศหนีไม่ทันก่อน ejection → ขยายตัว → capping; แก้ด้วย ลด turret speed / pre-compression ช้า = เพิ่ม dwell time",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::12",
+      "itemNo": "10",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ยกตัวอย่างวัสดุที่ทำให้ capping ง่าย 2 กลุ่ม",
+      "questionImage": "",
+      "answer": "Poor compressibility: paracetamol, ibuprofen, activated charcoal / Elastic deformation: alginic acid, rice starch",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::13",
+      "itemNo": "11",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Capping จาก formulation: granule แห้งเกิน และ binder ไม่พอ แก้อย่างไร",
+      "questionImage": "",
+      "answer": "แห้งเกิน → ทำให้ชื้นพอดี / เติม hygroscopic (sorbitol, PEG-4000); binder ไม่พอ → เพิ่ม binder หรือ dry binder (pregelatinized starch, PVP)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::14",
+      "itemNo": "12",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Soft tablet มีสาเหตุอะไร 3 ข้อ และเติมสารใดช่วยได้",
+      "questionImage": "",
+      "answer": "Low compaction, excess fatty lubricant, สูตรไม่เหมาะ →เพิ่มสาร plastic deformation สูง: lactose, MCC",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::15",
+      "itemNo": "13",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Protracted disintegration มีสาเหตุอะไรบ้าง (5 ข้อ)",
+      "questionImage": "",
+      "answer": "Lubricant มาก/ผสมนาน, binder สูง, low m.p. substance, disintegrant น้อย/อ่อน, compression pressure สูง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::16",
+      "itemNo": "14",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "Weight variation ต่างจาก Variation in drug content อย่างไร (สาเหตุหลักของแต่ละอัน)",
+      "questionImage": "",
+      "answer": "Weight: flow/การป้อนเข้า die — lubricant/glidant ไม่พอ, granule size กว้าง, speed สูง, เครื่องไม่มั่นคง. Content: homogeneity ของ mix ก่อน/หลัง granulation, %fines สูง — เน้น low-dose",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "6. Solid Dosage Forms::17",
+      "itemNo": "15",
+      "group": "6. Solid Dosage Forms",
+      "subTopic": "6. Solid Dosage Forms",
+      "track": "Product",
+      "question": "ทำไม Mg stearate ปริมาณมาก/ผสมนานทำให้ dissolution ช้า และแก้อย่างไร",
+      "questionImage": "",
+      "answer": "Mg-St สร้าง hydrophobic film เคลือบอนุภาค → น้ำซึมเข้าไม่ได้ → disintegration ช้า → dissolution ช้า; แก้: คุมชนิด+เวลา lubrication (+ wetting agent, superdisintegrant intra/extragranular)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::3",
+      "itemNo": "1",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตำรับยาน้ำเสื่อมจาก oxidation และพบว่าไอออนโลหะอาจเป็นตัวเร่งปฏิกิริยา ควรพิจารณาสารใดเพื่อจับโลหะ?<br><br>A. CMC<br>B. EDTA (disodium edetate)<br>C. Sucrose<br>D. Tween 80",
+      "questionImage": "",
+      "answer": "B — EDTA เป็น chelating agent ช่วยจับไอออนโลหะที่อาจเร่ง oxidation",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::4",
+      "itemNo": "2",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตัวยาสำคัญละลายในน้ำได้ไม่ดี เภสัชกรต้องการปรับระบบตัวทำละลายเพื่อช่วยการละลาย สารใดอาจเหมาะสม?<br><br>A. FD&amp;C coloring agent<br>B. Propylene glycol<br>C. Methylparaben เพียงอย่างเดียว<br>D. Sodium chloride เพียงอย่างเดียว",
+      "questionImage": "",
+      "answer": "A — Sodium metabisulfite ใช้เป็น antioxidant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::5",
+      "itemNo": "3",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ตัวยาสำคัญในตำรับไวต่อ oxidation และต้องการเติมสารช่วยลดการเสื่อมจากปฏิกิริยานี้ สารใดเหมาะสมที่สุดตามหน้าที่?<br><br>A. Sodium metabisulfite<br>B. Methylparaben<br>C. HPMC<br>D. Saccharin",
+      "questionImage": "",
+      "answer": "A — Sodium metabisulfite ใช้เป็น antioxidant",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::6",
+      "itemNo": "4",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ยาน้ำมีความหนืดต่ำกว่าที่ต้องการ และสูตรตำรับสามารถปรับความหนืดได้ ควรพิจารณาสารใด?<br><br>A. CMC<br>B. EDTA<br>C. Sodium benzoate<br>D. Citric acid",
+      "questionImage": "",
+      "answer": "A — CMC ใช้เพิ่มความหนืด",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::7",
+      "itemNo": "5",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ยาน้ำมีความเสี่ยงต่อการเจริญของจุลชีพ ต้องการเลือกสารช่วยที่มีหน้าที่เป็น preservative ควรเลือกข้อใด?<br><br>A. CMC<br>B. Methylparaben<br>C. Tween 80<br>D. EDTA",
+      "questionImage": "",
+      "answer": "B — Methylparaben เป็น preservative",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::8",
+      "itemNo": "6",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ในตำรับต้องการสารช่วยรักษาความชุ่มชื้นและลดการสูญเสียความชื้น ควรพิจารณาสารใด?<br><br>A. Glycerin<br>B. EDTA<br>C. Sodium metabisulfite<br>D. FD&amp;C dye",
+      "questionImage": "",
+      "answer": "A — Glycerin เป็น humectant และอาจช่วยด้านความหนืดได้ด้วย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::9",
+      "itemNo": "7",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "ข้อใดอธิบายความแตกต่างโดยทั่วไปของ syrup และ elixir ได้เหมาะสมที่สุด?<br><br>A. Syrup เป็นตำรับน้ำเชื่อมที่มีน้ำตาลสูง ส่วน elixir เป็นสารละลายใสที่มีน้ำและมักมีแอลกอฮอล์ร่วมด้วย<br><br>B. Syrup ต้องมีแอลกอฮอล์เสมอ ส่วน elixir ห้ามมีแอลกอฮอล์<br><br>C. ทั้งสองชนิดต้องมีตัวยาสำคัญเป็นของแข็งแขวนลอย<br><br>D. ทั้งสองชนิดแตกต่างกันเฉพาะสีเท่านั้น",
+      "questionImage": "",
+      "answer": "A — Syrup เด่นที่น้ำตาลหรือน้ำเชื่อม ส่วน elixir โดยทั่วไปเป็นสารละลายให้รับประทานที่มีน้ำและแอลกอฮอล์ร่วมด้วย รายละเอียดขึ้นกับนิยามและสูตรตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::10",
+      "itemNo": "8",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "Solution, Syrup, Elixir",
+      "track": "Product",
+      "question": "การเลือก vehicle หรือตัวทำละลายสำหรับตำรับควรพิจารณาสิ่งใดเป็นหลัก?<br><br>A. เลือกตัวทำละลายที่มีราคาถูกที่สุดเสมอ<br>B. เลือกตัวทำละลายที่มีกลิ่นหอมที่สุด<br>C. พิจารณาความสามารถในการละลาย ความเข้ากันได้ และความเหมาะสมกับตำรับ<br>D. ใช้น้ำเป็นตัวทำละลายเพียงชนิดเดียวในทุกตำรับ",
+      "questionImage": "",
+      "answer": "C — ต้องพิจารณาการละลาย ความเข้ากันได้ ความคงตัว และความเหมาะสมต่อการใช้",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::11",
+      "itemNo": "1",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "เหตุใดอนุภาคขนาดเล็กใน suspension จึงไม่คงตัวทาง thermodynamic และมีวิธีทำให้ระบบคงตัวได้อย่างไร?",
+      "questionImage": "",
+      "answer": "เพราะอนุภาคเล็กมี specific surface area มาก ทำให้ surface free energy สูง และทำให้ระบบลดพลังงานโดย (1) ลดพื้นที่ผิวรวม ด้วยการจับกันของอนุภาค  (2) ลดแรงตึงผิวด้วยการเติม surfactant เช่น SLS หรือ Tween 80",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::12",
+      "itemNo": "2",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "flocculation กับ aggregation (caking) ต่างกันอย่างไร",
+      "questionImage": "",
+      "answer": "Flocculation = จับกันหลวม ๆ ด้วยแรงอ่อน เขย่าแล้วกระจายกลับได้ง่าย; Aggregation = จับกันแน่นถาวร (crystal growth, claying/caking) ทำลายแรงยึดได้ยาก กระจายกลับไม่ได้",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::13",
+      "itemNo": "3",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "Degree of flocculation (β) บอกอะไร และค่า β = 1 หมายความว่าอย่างไร?",
+      "questionImage": "",
+      "answer": "β = F ของระบบ flocculated ÷ F ของระบบ deflocculated แสดง ระดับ flocculation ที่เกิดขึ้นเมื่อเทียบกับอนุภาคเดี่ยว ค่า β = 1 หมายถึงปริมาตรตะกอนไม่ต่างจากระบบ deflocculated คือไม่มี flocculation เพิ่ม; β ยิ่งมากยิ่งเกิด flocculation มาก",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::14",
+      "itemNo": "4",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "ระบบ deflocculated และ flocculated ต่างกันอย่างไรในด้านอัตราการตกตะกอน ลักษณะตะกอน และน้ำใสด้านบน?",
+      "questionImage": "",
+      "answer": "ระบบ deflocculated และ flocculated ต่างกันอย่างไรในด้านอัตราการตกตะกอน ลักษณะตะกอน และน้ำใสด้านบน?",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::15",
+      "itemNo": "5",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "โครงสร้างของสารช่วยแขวนตะกอนที่เหมาะสมใน structured vehicle ควรมีพฤติกรรมการไหลแบบใด และเพราะเหตุใด?",
+      "questionImage": "",
+      "answer": "ควรเป็น plastic หรือ pseudoplastic ที่มี thixotropy เพราะเมื่อตั้งทิ้งไว้ความหนืดสูงจึงพยุงอนุภาคไม่ให้ตกเร็ว แต่เมื่อเขย่าความหนืดลดลงมาก จึงเทออกง่ายและผงยากระจายตัวสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::16",
+      "itemNo": "6",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "ผงยามีประจุบวก ควรเลือก flocculating agent และ suspending agent ประจุใด เพราะเหตุใด?",
+      "questionImage": "",
+      "answer": "ใช้ electrolyte ประจุลบ เป็น flocculating agent และเลือก suspending agent ประจุลบ เพื่อไม่ให้เกิดความไม่เข้ากันของประจุ (suspending agent ประจุตรงข้ามอาจตกตะกอนร่วมกับ electrolyte/เสียสภาพ flocculation)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::17",
+      "itemNo": "7",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "Ostwald ripening คืออะไร เกิดขึ้นได้อย่างไร และป้องกันได้อย่างไร?",
+      "questionImage": "",
+      "answer": "การที่อนุภาคใหญ่ขึ้นระหว่างเก็บเมื่ออุณหภูมิเปลี่ยน: ตัวยาละลายมากเมื่ออุณหภูมิสูง แล้วตกผลึกกลับบนอนุภาคใหญ่เมื่อเย็นลง ป้องกันได้โดยเติมโพลิเมอร์ เช่น PVP",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::18",
+      "itemNo": "8",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "suspension",
+      "track": "Product",
+      "question": "เภสัชกรจะเตรียม suspension เฉพาะคราวจากยาเม็ดสำหรับผู้ป่วยที่กลืนยาเม็ดไม่ได้ ไม่ควรเลือกยาเม็ดชนิดใด ข้อควรระวังและ BUD เป็นอย่างไร?",
+      "questionImage": "",
+      "answer": "<b style=\"color:#dc2626;\">ห้ามใช้</b> enteric-coated และ controlled-release tablets เพราะทำลายระบบปลดปล่อยยา และBUD ของยารับประทานที่มีน้ำ ไม่เกิน 14 วัน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::34",
+      "itemNo": "17",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "นิยามของ Emulsion ทางเภสัชกรรมคืออะไร และมีองค์ประกอบหลักกี่ส่วน?",
+      "questionImage": "",
+      "answer": "▶ นิยามของ Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ระบบกระจายตัวของของเหลว 2 ชนิดที่ไม่ผสมกัน (Immiscible liquids)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ของเหลวหนึ่งแตกกระจายเป็นหยดเล็กๆ (Dispersed phase / Internal phase) ในของเหลวอีกชนิดหนึ่ง (Continuous phase / External phase)<br> <br> ▶ องค์ประกอบหลัก 3 ส่วน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. เฟสน้ำมัน (Oil phase): Oils, fats, waxes, nonpolar actives<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. เฟสน้ำ (Water phase): Water, hydrophilic actives, preservatives<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สารทำอิมัลชัน (Emulsifier / Emulsifying agent): ตัวประสานรอยต่อระหว่าง 2 เฟส",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::35",
+      "itemNo": "18",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "กฎของแบนครอฟต์ (Bancroft’s Rule) กล่าวไว้อย่างไร และนำไปใช้อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ กฎของแบนครอฟต์ (Bancroft’s Rule):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>&quot;เฟสที่สารทำอิมัลชัน (Emulsifier) ละลายได้ดีกว่า จะกลายเป็น External phase (Continuous phase) เสมอ&quot;<br> <br> ▶ การนำไปประยุกต์ใช้:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันที่ชอบน้ำ (Hydrophilic, ละลายในน้ำได้ดีกว่า, HLB สูง) ➔ จะได้ O/W emulsion<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันที่ชอบน้ำมัน (Lipophilic, ละลายในน้ำมันได้ดีกว่า, HLB ต่ำ) ➔ จะได้ W/O emulsion<br> ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::36",
+      "itemNo": "19",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": " สรุป 3 รูปแบบของ Interfacial Film ที่สารทำอิมัลชันสร้างขึ้นเพื่อป้องกัน Coalescence?",
+      "questionImage": "",
+      "answer": "▶ 1. Monomolecular Film (ฟิล์มชั้นเดี่ยว):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจาก Surfactants ขนาดโมเลกุลเล็ก เรียงตัวที่ผิวประจันเพื่อลดแรงตึงผิว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ให้ทั้งแรงผลักทางไฟฟ้า (กรณี Ionic) หรือ Steric barrier (กรณี Non-ionic)<br> <br> ▶ 2. Multimolecular Film (ฟิล์มหลายชั้น):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจาก Hydrophilic polymers / Hydrocolloids (Acacia, Tragacanth, Gelatin)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ฟิล์มมีความหนา ยืดหยุ่นเหนียวคล้ายเจล (Viscoelastic film) ขวางกั้นการชนกัน ไม่ค่อยลดแรงตึงผิว<br> <br> ▶ 3. Solid Particle Film (ฟิล์มอนุภาคของแข็ง):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากผงของแข็งขนาดละเอียดมาก (Finely divided solids เช่น Bentonite, Mg(OH)2)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไปดูดซับล้อมรอบผิวหยดอนุภาค เป็นเกราะป้องกันเชิงกล (Mechanical barrier) เรียกว่า Pickering emulsion",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::37",
+      "itemNo": "20",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[8] Steric Stabilization ทำงานอย่างไร และสารกลุ่มใดที่ให้ผลนี้เด่นชัด?",
+      "questionImage": "",
+      "answer": "▶ กลไก Steric Stabilization<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดขึ้นเมื่อสารทำอิมัลชันสายยาวถูกดูดซับที่ผิวหยดน้ำมัน โดยส่วนหางสายโพลีเมอร์ที่ชอบน้ำจะยื่นยาวออกไปในเฟสต่อเนื่อง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อหยดอนุภาคเคลื่อนที่เข้ามาใกล้กัน โซ่โพลีเมอร์จะซ้อนทับกัน (Chain overlap) และเกิดการผลักัน<br> <br> ▶ สารกลุ่มที่ให้ผลนี้เด่นชัด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Non-ionic surfactants โมเลกุลใหญ่ เช่น Polysorbates (Tweens), PEG esters<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Polymeric surfactants เช่น Poloxamer 188 (Pluronic F-68)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::38",
+      "itemNo": "21",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[10] Primary Emulsifier ต่างจาก Secondary Emulsifier (Stabilizer) อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ 1. Primary Emulsifier (สารทำอิมัลชันแท้):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สามารถทำให้เกิดอิมัลชันได้ด้วยตัวเอง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ลดแรงตึงระหว่างผิว หรือสร้างฟิล์มหุ้มรอบหยดเฟสภายในโดยตรง เช่น Acacia, Surfactants, Purified Lecithin<br> <br> ▶ 2. Secondary Emulsifier / Emulsion Stabilizer (สารทำอิมัลชันเสริม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไม่สามารถทำให้เกิดอิมัลชันได้ดีเมื่อใช้เดี่ยวๆ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ส่งเสริมความคงตัว โดยการเพิ่มความหนืดของเฟสภายนอก (Thickener) หรือร่วมสร้างฟิล์มเชิงซ้อนที่ผิวประจัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตัวอย่าง: Tragacanth (ใช้เสริม Acacia), Cetyl alcohol, Stearyl alcohol, Carbomer, Methylcellulose",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::39",
+      "itemNo": "22",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[11] เปรียบเทียบข้อดี-ข้อจำกัดระหว่าง Acacia และ Tragacanth ในตำรับอิมัลชัน?",
+      "questionImage": "",
+      "answer": "▶ 1. Acacia <br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดี: สารทำอิมัลชันแท้ที่ดีที่สุดสำหรับยาน้ำรับประทาน รสชาติดี ปลอดภัย ไม่เป็นพิษ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อจำกัด: ความหนืดต่ำมาก เกิด Creaming ได้ง่าย และเหนียวเหนอะหนะจึงไม่นิยมใช้ในยาทาภายนอก<br> <br> ▶ 2. Tragacanth:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดี: ให้ความหนืดสูงกว่า Acacia ประมาณ 10 เท่า ใช้ได้ทั้งยาน้ำรับประทานและยาทาภายนอก นิยมใช้เป็น Secondary EA ร่วมกับ Acacia เพื่อป้องกัน Creaming<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อจำกัด: หากใช้เดี่ยวๆ จะได้หยดอิมัลชันที่ค่อนข้างหยาบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::40",
+      "itemNo": "23",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[12] Cellulose Derivatives (MC, Na CMC, HPMC) มีจุดเด่นเหนือกว่า Natural Gums อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ จุดเด่นของ Cellulose Derivatives:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ความบริสุทธิ์สม่ำเสมอ: เป็นสารกึ่งสังเคราะห์ (Semi-synthetic) คุณภาพคงที่ในทุกล็อตผลิต<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ทนทานต่อสภาวะกรด-ด่าง: ไม่ตกตะกอนง่ายในช่วง pH กว้าง และทนต่อ Electrolytes ได้ดีกว่า Acacia<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. ไม่เป็นแหล่งอาหารของจุลินทรีย์: โอกาสบูดเสียหรือขึ้นราน้อยกว่า Natural gums อย่างมาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารกลุ่มไม่มีประจุ (Non-ionic เช่น MC, HPMC): เข้ากันได้กับสารอื่นหลากหลาย ไม่เกิดอันตรกิริยากับประจุตรงข้าม<br> ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::41",
+      "itemNo": "24",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[14] Phospholipids (Lecithin) มีคุณสมบัติเด่นอย่างไร และทำไมจึงเป็นสารหลักใน IV Fat Emulsion?",
+      "questionImage": "",
+      "answer": "▶ คุณสมบัติเด่นของ Lecithin (Phosphatidylcholine):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารจากธรรมชาติ สกัดได้จากไข่แดง (Egg yolk) หรือถั่วเหลือง (Soybean)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารลดแรงตึงผิวชนิด Amphoteric (Zwitterion) มีทั้งขั้วบวกและลบในโมเลกุล ปลอดภัย ไม่ระคายเคือง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ย่อยสลายได้ทางชีวภาพ (Biodegradable) และร่างกายนำไปเผาผลาญในกระบวนการทางสรีรวิทยาได้ตามปกติ<br> <br> ▶ เหตุผลที่ได้รับเลือกในยาฉีดทางหลอดเลือดดำ (IV Fat Emulsion):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เป็นสารทำอิมัลชันที่ผ่านการรับรองจาก US FDA ให้ใช้ฉีดเข้าหลอดเลือดดำได้<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ให้หยดไขมันขนาดเล็กสม่ำเสมอ (&lt; 0.5 ไมโครเมตร) ไม่ทำให้เม็ดเลือดแตก (Non-hemolytic)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::42",
+      "itemNo": "25",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[15] Pickering Emulsion คืออะไร มีสารตัวอย่างอะไรบ้าง และชนิดของอิมัลชันขึ้นกับอะไร?",
+      "questionImage": "",
+      "answer": "▶ Pickering Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>อิมัลชันที่ทำให้คงตัวด้วย &quot;ผงของแข็งขนาดเล็กละเอียดมาก&quot; (Finely divided solids) โดยไม่มีสารลดแรงตึงผิว (Surfactant-free emulsion)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลไก: ผงของแข็งไปเรียงตัวที่ผิวประจัน กลายเป็น Mechanical barrier แข็งแกร่งขวางการรวมตัว<br> <br> ▶ ชนิดของอิมัลชันขึ้นกับมุมสัมผัส (Contact angle: θ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผงของแข็งที่ชอบน้ำ (Hydrophilic, มุมสัมผัส θ &lt; 90°) ➔ ให้ O/W emulsion<br>  ✦ ตัวอย่าง: Magnesium hydroxide, Aluminum hydroxide, Bentonite, Veegum, Kaolin<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผงของแข็งที่ชอบน้ำมัน (Lipophilic, มุมสัมผัส θ &gt; 90°) ➔ ให้ W/O emulsion<br>  ✦ ตัวอย่าง: Carbon black, Talc, Hydrophobic silica",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::43",
+      "itemNo": "26",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[16] เปรียบเทียบสบู่โลหะประจุเดี่ยว (Monovalent soaps) กับสบู่โลหะประจุคู่ (Polyvalent soaps)?",
+      "questionImage": "",
+      "answer": "▶ 1. Monovalent Soaps (สบู่ประจุเดี่ยว):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากกรดไขมันทำปฏิกิริยากับเบสประจุเดี่ยว (Na+, K+, Triethanolamine [TEA]) เช่น Sodium stearate, Potassium oleate<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W emulsion (เนื่องจากชอบน้ำมากกว่า)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ล้างน้ำออกง่าย pH เป็นด่าง ไม่ทนต่อกรด<br> <br> ▶ 2. Polyvalent / Metallic Soaps (สบู่ประจุคู่หรือหลายประจุ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เกิดจากกรดไขมันทำปฏิกิริยากับเบสประจุคู่ (Ca2+, Mg2+, Zn2+, Al3+) เช่น Calcium oleate, Zinc stearate<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: W/O emulsion (เนื่องจากชอบน้ำมันมากกว่า)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ทนน้ำ ไม่ลอกหลุดง่าย นิยมในยาทาแผลไฟไหม้ ครีมกันน้ำ (Water-resistant creams)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::44",
+      "itemNo": "27",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[17] Non-ionic Surfactants กลุ่ม Spans และ Tweens ต่างกันอย่างไรทั้งชื่อเคมีและชนิดอิมัลชันที่ได้?",
+      "questionImage": "",
+      "answer": "▶ 1. กลุ่ม Spans (Sorbitan Fatty Acid Esters):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ชอบน้ำมัน (Lipophilic), ค่า HLB ต่ำ (1.8 - 8.6)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: W/O emulsifier (เช่น Span 20, Span 60, Span 80)<br> <br> ▶ 2. กลุ่ม Tweens / Polysorbates (Polyoxyethylene Sorbitan Esters):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>คุณสมบัติ: ชอบน้ำ (Hydrophilic), ค่า HLB สูง (9.6 - 16.7)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W emulsifier (เช่น Tween 20, Tween 60, Tween 80)<br> <br> ✦ ข้อดีร่วมกัน: ปลอดภัย ไม่ระคายเคือง ไม่แตกตัวเป็นไอออน ทนต่อการเปลี่ยนแปลง pH และเกลือได้ดีเยี่ยม",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::45",
+      "itemNo": "28",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[21] เหตุใดการใช้ Mixed Emulsifiers (เช่น Tween คู่กับ Span) จึงให้ผลดีกว่าการใช้ Surfactant เดี่ยว?",
+      "questionImage": "",
+      "answer": "▶ ประโยชน์ของการใช้ Mixed Emulsifiers:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. เกิด Complex Film ที่แน่นหนา: ส่วนชอบน้ำมันของ Span และ Tween จะแทรกสลับกันที่รอยต่อ ทำให้อนุภาคเรียงตัวชิดกันอย่างแน่นหนา (Rigid &amp; tightly packed film)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ลดแรงตึงผิวประจันได้ต่ำกว่าการใช้ตัวเดียวเดี่ยวๆ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. เกิดชั้น Liquid crystalline lamellar layers ที่ช่วยเสริมความคงตัว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. ป้องกันการแพร่ออก (Desorption) ของสารทำอิมัลชันออกจากผิวประจัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>5. ปรับค่าความหนืดและความคงตัวต่ออุณหภูมิและการเติมเกลือได้ดีกว่า",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::46",
+      "itemNo": "29",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[23] สัดส่วน Primary Emulsion (Oil : Water : Gum) ของน้ำมันประเภท Fixed oil, Mineral oil และ Volatile oil คือเท่าใด?",
+      "questionImage": "",
+      "answer": "▶ สัดส่วนทองคำ Primary Emulsion (น้ำมัน : น้ำ : กัม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Fixed Vegetable Oils (เช่น Castor oil, Almond oil, Cod liver oil): 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Mineral Oil (Liquid Paraffin): 3 : 2 : 1 หรือ 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. Volatile Oils / Essential Oils (เช่น Peppermint oil, Turpentine oil): 2 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. Oleoresin: 1 : 2 : 1<br> <br> ✦ ข้อสังเกต: ปริมาณ Gum จะแปรผันตามพื้นที่ผิวและความยากง่ายในการกระจายตัวของน้ำมัน ยิ่งน้ำมันหนืดต่ำหรือระเหยง่ายต้องใช้กัมสัดส่วนสูงขึ้น",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::47",
+      "itemNo": "30",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[24] อธิบายขั้นตอนและเทคนิคสำคัญของ Dry Gum Method (Continental Method)?",
+      "questionImage": "",
+      "answer": "▶ ขั้นตอนของ Dry Gum Method:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ใช้โกรกและสากที่ แห้งสนิท 100% บดผสมผง Acacia กับ น้ำมัน ทั้งหมดในโกรกจนผงกระจายตัวทั่ว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. เติมน้ำส่วน Primary Emulsion ทั้งหมดในคราวเดียว (รวดเดียว ห้ามแบ่งเติม)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. บดอย่างเร็ว แรง และสม่ำเสมอใน ทิศทางเดียวตลอด ด้วยแรงเหวี่ยง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สังเกตเมื่อเกิด Primary Emulsion สมบูรณ์:<br>  ✦ เกิดเสียงดังคลิก/เปรี๊ยะ (Clicking sound) ชัดเจน<br>  ✦ เนื้อตำรับข้นเหนียวและเปลี่ยนเป็นสีขาวขุ่นทึบ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>5. เติมสารอื่นๆ ที่ละลายน้ำหรือเจือจางน้ำแล้วลงไปทีละน้อย บดปรับปริมาตรจนครบ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::48",
+      "itemNo": "31",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[25] อธิบายขั้นตอน Wet Gum Method (English Method) และปรากฏการณ์ &quot;Ropy&quot; พร้อมวิธีแก้ไข?",
+      "questionImage": "",
+      "answer": "▶ ขั้นตอนของ Wet Gum Method:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. บดผง Acacia กับน้ำส่วน Primary Emulsion จนได้เนื้อ Mucilage เนียนพองตัวเต็มที่<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ค่อยๆ รินน้ำมันลงตรงกลาง ทีละน้อย (Portion-wise) บดให้เข้ากันเป็นเนื้อเดียวก่อนเติมส่วนต่อไป<br> <br> ▶ ปรากฏการณ์ &quot;Ropy&quot; (ข้อสอบออกบ่อย):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ลักษณะ: อิมัลชันข้นเหนียวจัด เนื้อขาดๆ หรือผิวด้าน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สาเหตุ: หยดน้ำมันแตกตัวละเอียดมากจนพื้นที่ผิวสูงเกินไป ทำให้อิมัลชันขาดน้ำหล่อเลี้ยง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>วิธีแก้ไข: หยุดบดทันที ➔ เติมน้ำลงไปเล็กน้อย (2-3 หยด) แล้วบดต่อ เนื้ออิมัลชันจะกลับมาเนียนนุ่มทันที",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::49",
+      "itemNo": "32",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[30] Creaming คืออะไร มีกี่แบบ และแตกต่างจาก Coalescence อย่างไรในแง่การคืนสภาพ?",
+      "questionImage": "",
+      "answer": "▶ Creaming:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การเคลื่อนที่แยกชั้นของหยดเฟสภายในตามแรงโน้มถ่วง (ความหนาแน่นต่างกัน)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Upward Creaming: หยดน้ำมันลอยขึ้นด้านบน (พบบ่อยใน O/W เพราะน้ำมันเบากว่าน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Downward Creaming (Sedimentation): หยดจมลงด้านล่าง (พบบ่อยใน W/O หรือน้ำมันหนักกว่าน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การคืนสภาพ: ผันกลับได้ (Reversible) โดยการเขย่าขวดเบาๆ เพราะฟิล์มหุ้มหยดยังคงสมบูรณ์<br> <br> ▶ จุดต่างจาก Coalescence / Breaking:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Coalescence ฟิล์ม interfacial แตกทำลาย หยดน้ำมันหลอมรวมเป็นเนื้อเดียวกันอย่างถาวร ผันกลับไม่ได้ (Irreversible) เขย่าอย่างไรก็ไม่รวมตัว ต้องทิ้งตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::50",
+      "itemNo": "33",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[32] Flocculation ในอิมัลชันเกิดจากอะไร และส่งผลดีหรือผลเสียต่อตำรับอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ สาเหตุการเกิด Flocculation:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หยดอนุภาคเคลื่อนที่เข้ามาเกาะกลุ่มกันหลวมๆ โดยยังมีชั้นฟิล์มกั้นอยู่ ไม่ได้รวมเนื้อกัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในทางทฤษฎี DLVO เกิดขึ้นเมื่ออนุภาคตกอยู่ในหลุมพลังงานดึงดูดขั้นที่สอง (Secondary minimum)<br> <br> ▶ ผลต่อตำรับ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผลเสีย: การเกาะกลุ่มทำให้ขนาดกลุ่มก้อน (Cluster size) ใหญ่ขึ้น ส่งผลให้อัตราเร็วในการเกิด Creaming เร็วขึ้นอย่างมาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ผลดี/การคืนสภาพ: อนุภาคไม่หลอมรวมกัน (No coalescence) สามารถเขย่าให้กระจายตัวกลับเป็นเนื้อเดียวกันได้ง่าย (Reversible)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::51",
+      "itemNo": "34",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[33] Phase Inversion คืออะไร มีสาเหตุเกิดจากปัจจัยใดได้บ้าง?",
+      "questionImage": "",
+      "answer": "▶ Phase Inversion (การกลับเฟส):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปรากฏการณ์ที่ชนิดของอิมัลชันพลิกกลับขั้ว เช่น จาก O/W กลายเป็น W/O หรือกลับกัน<br> <br> ▶ ปัจจัยที่ทำให้เกิด Phase Inversion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. อุณหภูมิเปลี่ยนแปลงผ่าน Phase Inversion Temperature (PIT): การเพิ่มอุณหภูมิทำให้ Non-ionic surfactant สูญเสีย Hydrogen bond กับน้ำ กลายเป็นชอบน้ำมันมากขึ้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. การเติม Electrolyte ที่เปลี่ยนประจุสบู่: เช่น เติม CaCl2 ลงใน O/W emulsion ที่ใช้ Sodium stearate สบู่จะเปลี่ยนเป็น Calcium stearate กลายเป็น W/O ทันที<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สัดส่วนเฟสภายในเกินจุดวิกฤต (Critical Phase Volume Ratio): หากปริมาตรเฟสภายในเกิน 74% หยดอนุภาคจะอัดแน่นจนระบบถูกบีบให้กลับเฟส",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::52",
+      "itemNo": "35",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[36] อธิบายหลักการและการแปลผล Dilution Test และ Dye Solubility Test ในการทดสอบชนิดอิมัลชัน?",
+      "questionImage": "",
+      "answer": "▶ 1. Dilution Test (การทดสอบการเจือจาง):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลักการ: อิมัลชันจะเจือจางเข้ากันได้เป็นเนื้อเดียวกับของเหลวที่เป็น External phase เท่านั้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การแปลผล: หยดน้ำลงไปแล้วผสมกลืนเนียน = O/W emulsion (ถ้าหยดน้ำมันจะแยกชั้น) / ในทางกลับกัน ถ้าหยดน้ำมันแล้วผสมเนียน = W/O emulsion<br> <br> ▶ 2. Dye Solubility Test (การทดสอบด้วยสีย้อม):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สีย้อมละลายน้ำ (Water-soluble dye เช่น Amaranth, Methylene blue): กระจายสีสม่ำเสมอทั่วตำรับ = O/W / ถ้ารวมตัวเป็นหยดสี = W/O<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สีย้อมละลายน้ำมัน (Oil-soluble dye เช่น Sudan III, Scarlet red): กระจายสีสม่ำเสมอทั่วตำรับ = W/O / ถ้ารวมตัวเป็นหยดสี = O/W",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::53",
+      "itemNo": "36",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[39] พฤติกรรมการไหล (Rheological properties) ในอิมัลชันที่ดีควรเป็นแบบใด และมีผลต่อการใช้งานอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ พฤติกรรมการไหลที่ต้องการ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ควรมีการไหลแบบ Non-Newtonian Flow โดยเฉพาะแบบ Pseudoplastic ร่วมกับ Thixotropy<br> <br> ▶ ผลดีต่อการใช้งาน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในสภาวะตั้งนิ่ง: มีความหนืดสูง ป้องกันไม่ให้อนุภาคเคลื่อนที่แยกชั้น (ลด Creaming)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อออกแรงเขย่าหรือบีบหลอด (Shear stress): ความหนืดจะลดลงอย่างรวดเร็ว ทำให้เทยาออกจากขวดหรือบีบยาครีมได้ง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อทาลงบนผิวหนัง: เกลี่ยง่าย เรียบเนียน ไม่เหนอะหนะ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อหยุดให้แรง: ความหนืดจะค่อยๆ คืนกลับมาอย่างช้าๆ (Thixotropic recovery)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::54",
+      "itemNo": "37",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[41] ข้อกำหนดมาตรฐานที่เคร่งครัดของ IV Fat Emulsion (เช่น Intralipid®) ตาม USP มีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "▶ ข้อกำหนดมาตรฐาน IV Fat Emulsion (USP &lt;729&gt;):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ชนิดของอิมัลชัน: ต้องเป็น O/W emulsion เท่านั้น (ห้ามฉีด W/O เข้าหลอดเลือดดำเด็ดขาด เพราะทำให้เกิด Fat embolism ปิดกั้นการไหลเวียนเลือด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ขนาดหยดไขมันเฉลี่ย (Mean droplet size): ต้องน้อยกว่า 0.5 ไมโครเมตร<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. ปริมาณหยดขนาดใหญ่ (PFAT5): ปริมาณหยดไขมันขนาดเกิน 5 ไมโครเมตร ต้องมีไม่เกิน 0.05% เพื่อไม่ให้อุดตันหลอดเลือดฝอยปอด (Pulmonary capillaries)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารช่วยปรับความดันออสโมติก: ต้องใช้น้ำตาลกลีเซอรอล (Glycerol 2.5%) ปรับให้ Isotonic <b style=\"color:#dc2626;\">ห้ามใช้</b> Electrolytes ปริมาณสูงเพราะบดบังประจุทำให้ไขมันแตกตัว",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::55",
+      "itemNo": "38",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[42] ฉลากยาช่วย (Auxiliary Labels) และข้อแนะนำในการเลือกภาชนะบรรจุอิมัลชันมีอะไรบ้าง?",
+      "questionImage": "",
+      "answer": "▶ ฉลากช่วยบังคับที่ขาดไม่ได้:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. &quot;เขย่าขวดก่อนใช้ยาทุกครั้ง&quot; (SHAKE WELL BEFORE USE): สำคัญที่สุด เพื่อกระจายเฟสภายในให้สม่ำเสมอหากเกิด Creaming เล็กน้อย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. &quot;ยาใช้ภายนอก ห้ามรับประทาน&quot; (FOR EXTERNAL USE ONLY): ติดเด่นชัดด้วยตัวอักษรสีแดงสำหรับยาทา ครีม โลชัน<br> <br> ▶ การเลือกภาชนะบรรจุ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ยาน้ำรับประทาน: บรรจุในขวดแก้วหรือพลาสติกปากกว้างพอสมควร (Wide-mouth bottle) เพื่อให้เทยาที่มีความหนืดได้สะดวก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลีกเลี่ยงขวดทรงสูงแคบเพราะเทยาก<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ยาภายนอก: บรรจุในหลอดบีบ (Collapsible tube) หรือขวดหัวปั๊ม เพื่อป้องกันการปนเปื้อน",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::56",
+      "itemNo": "39",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[43] Beyond-Use Date (BUD) สำหรับตำรับอิมัลชันที่ปรุงเฉพาะราย (Extemporaneous Compounding) ตาม USP กำหนดไว้อย่างไร?",
+      "questionImage": "",
+      "answer": "▶ กำหนดอายุการใช้งาน (BUD) ตาม USP Compounding Standards:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. Water-containing Oral Formulations (ยาน้ำอิมัลชันรับประทานที่มีน้ำในตำรับ):<br>  ✦ กำหนด BUD ไม่เกิน 14 วัน<br>  ✦ ต้องเก็บในตู้เย็น (Controlled Cold Temperature 2 - 8 °C) เท่านั้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. Water-containing Topical / Dermal Formulations (ยาครีมหรือโลชันทาภายนอกที่มีน้ำ):<br>  ✦ กำหนด BUD ไม่เกิน 30 วัน<br>  ✦ เก็บที่อุณหภูมิห้องควบคุม (Controlled Room Temperature 20 - 25 °C)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::57",
+      "itemNo": "40",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[44] เทคนิคการเติมตัวยาสำคัญ (Active Ingredients) ลงในตำรับอิมัลชันแต่ละประเภททำอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ เทคนิคการเติมตัวยาสำคัญตามคุณสมบัติ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. สารทนความร้อนและละลายได้: ละลายลงในเฟสน้ำหรือเฟสน้ำมันโดยตรงตั้งแต่ก่อนให้ความร้อน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ของเหลวระเหยง่ายหรือสารไวความร้อน (Volatile oils, Fragrance): เติมลงในตำรับหลังจากกวนอิมัลชันจนอุณหภูมิลดลงต่ำกว่า 40 °C<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. สารของแข็งที่ละลายได้แต่ไม่ทนความร้อน: ละลายในน้ำปริมาณเล็กน้อย แล้วค่อยๆ บดผสมเข้ากับอิมัลชันที่เย็นตัวแล้ว<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>4. สารของแข็งที่ไม่ละลาย (Insoluble solids): ต้องบดลดขนาดผงยาให้ละเอียด (Levigation) ร่วมกับอิมัลชันเล็กน้อยบนแผ่นกระจกหรือในโกรกก่อนผสมรวม",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::58",
+      "itemNo": "41",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 1: Liquid Paraffin Emulsion HF 2542]<br> Rx<br>  Liquid paraffin 50.0 mL<br>  Acacia 7.5 g<br>  Tragacanth 1.0 g<br>  Glycerin 10.0 mL<br>  Citric acid 0.05 g<br>  Sodium chloride 0.30 g<br>  Paraben concentrate 2.0 mL<br>  Vanillin tincture 0.4 mL<br>  Purified water to 100.0 mL<br> <br> จงระบุ: 1. ชนิดของอิมัลชัน 2. บทบาทหน้าที่ของสารแต่ละตัว 3. วิเคราะห์สัดส่วน Primary Emulsion ที่ใช้จริงว่าสอดคล้องกับทฤษฎีอย่างไร?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: O/W Emulsion (ยาน้ำรับประทาน)<br> <br> ▶ 2. บทบาทหน้าที่ของสารแต่ละตัว:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Liquid paraffin: ตัวยาสำคัญ (Active ingredient / Lubricating cathartic ยาระบายหล่อลื่น)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Acacia: สารทำอิมัลชันหลัก (Primary emulsifier) ให้ฟิล์ม Multimolecular film หุ้มหยดน้ำมัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Tragacanth: สารทำอิมัลชันเสริม (Secondary emulsifier / Thickener) เพิ่มความหนืด ลดการเกิด Creaming<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Glycerin: สารให้ความชื้นและรสหวาน (Sweetener / Viscosity enhancer)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Citric acid: สารปรับ pH (Acidifying agent / Buffer) ให้สารกันเสียพาราเบนออกฤทธิ์ได้ดี<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Sodium chloride: สารปรับสมดุลและลดแรงผลักประจุส่วนเกินอย่างพอเหมาะ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Paraben concentrate: สารกันเสียต้านจุลินทรีย์ (Antimicrobial preservative)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Vanillin tincture: สารแต่งกลิ่นรส (Flavoring agent) กลบกลิ่นน้ำมัน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Purified water: กระสายยาเฟสภายนอก (Continuous phase / Vehicle)<br> <br> ▶ 3. วิเคราะห์สัดส่วน Primary Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตามทฤษฎี Mineral oil ใช้ O : W : G = 4 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปริมาณกัมรวม = Acacia (7.5 g) + Tragacanth (1.0 g) = 8.5 g<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>น้ำมัน 50 mL คิดกัมตามทฤษฎีต้องใช้ 12.5 g แต่ตำรับนี้ใช้กัม 8.5 g และคำนวณน้ำส่วนทำ Primary = (7.5 + 1) × 2 = 17 mL<br>  ✦ จุดสำคัญ: การมี Tragacanth ช่วยเสริมความหนืดสูงมาก ทำให้สามารถลดสัดส่วนกัม Acacia ลงได้โดยที่ตำรับยังคงตัวดี",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::59",
+      "itemNo": "42",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 2: Calamine Liniment / Lime Water Soap]<br> Rx<br>  Calamine 3 g<br>  Zinc oxide 2 g<br>  Olive oil 30 mL<br>  Lime water (Calcium hydroxide solution) 30 mL<br> <br> จงระบุ: 1. ชนิดของอิมัลชันที่เกิดขึ้น 2. สารทำอิมัลชันในตำรับนี้คืออะไร เกิดขึ้นได้อย่างไร 3. ข้อบ่งใช้และคุณสมบัติเด่นของตำรับ?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: W/O Emulsion (Water-in-Oil)<br> <br> ▶ 2. การเกิดสารทำอิมัลชัน (In-Situ Soap Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันไม่ได้เติมลงไปโดยตรง แต่เกิดจากปฏิกิริยาสดขณะผสม (In-situ soap)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ปฏิกิริยา: กรดไขมันอิสระ Oleic acid (ใน Olive oil) ทำปฏิกิริยากับ Calcium hydroxide (Ca(OH)2 ใน Lime water)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ได้เกลือสบู่: แคลเซียมโอเลเอต (Calcium oleate) ซึ่งเป็น Metallic / Polyvalent soap (สบู่ประจุคู่ Ca2+)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ตามกฎ Bancroft&#039;s Rule: สบู่ประจุคู่ชอบน้ำมันมากกว่าน้ำ จึงเหนี่ยวนำให้เกิดอิมัลชันชนิด W/O เสมอ!<br> <br> ▶ 3. หน้าที่ของสารอื่นๆ และคุณสมบัติเด่น:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Calamine + Zinc oxide: สารฝาดสมาน (Astringent), ลดการคันระคายเคือง (Antipruritic), ป้องกันความเปียกชื้น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อบ่งใช้: ยาทาภายนอกบรรเทาผื่นคัน แผลไฟไหม้ น้ำร้อนลวก แผลกดทับ<br>  ✦ คุณสมบัติเด่น: เนื่องจากเป็น W/O จึงมีคุณสมบัติกันน้ำ (Water-resistant) เคลือบผิวได้ทนนาน ไม่ถูกล้างออกง่ายด้วยเหงื่อหรือน้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::60",
+      "itemNo": "43",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 3: Topical Lotion (Tween 80 &amp; Span 80 / Beaker Method)]<br> Rx<br>  Mineral oil 35 %<br>  Lanolin 1 %<br>  Cetyl alcohol 1 %<br>  Span 80 1.9 %<br>  Tween 80 5.1 %<br>  Glycerin 5 %<br>  Paraben concentrate 1 %<br>  Purified water 50 %<br>  M.ft. Lotions 100 mL<br> <br> จงระบุ: 1. ตำรับนี้เป็นอิมัลชันชนิดใด เพราะเหตุใด (ชี้แจง 2 ปัจจัย) 2. แยกองค์ประกอบเข้า Oil Phase และ Water Phase 3. การควบคุมอุณหภูมิในการเตรียม Beaker Method?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดของอิมัลชัน: O/W Emulsion (Oil-in-Water)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ 1: สัดส่วนสารทำอิมัลชัน Tween 80 (HLB 15.0, ชอบน้ำ) มีถึง 5.1% ซึ่งมากกว่า Span 80 (HLB 4.3, 1.9%) อย่างมาก ทำให้ค่า HLB รวมค่อนไปทางสูง (~12) เหนี่ยวนำให้เกิด O/W<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ 2: ปริมาณเฟสน้ำ (Purified water 50% + Glycerin 5%) สูงกว่าเฟสน้ำมัน<br> <br> ▶ 2. การแยกเฟสสำหรับเตรียม:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Oil Phase: Mineral oil (35%), Lanolin (1%), Cetyl alcohol (1%), Span 80 (1.9%)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Water Phase: Tween 80 (5.1%), Glycerin (5%), Paraben concentrate (1%), Purified water (50%)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>บทบาท Cetyl alcohol &amp; Lanolin: ทำหน้าที่เป็น Secondary emulsifiers / Thickeners / Emollients ช่วยเสริมความคงตัว<br> <br> ▶ 3. การควบคุมอุณหภูมิ (Beaker Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หลอม Oil phase ที่อุณหภูมิ 60 - 70 °C (จน Cetyl alcohol และ Lanolin ละลายหมด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>อุ่น Water phase ที่อุณหภูมิ 65 - 75 °C (ต้องสูงกว่าเฟสน้ำมัน 3 - 5 °C เสมอ เพื่อป้องกันสารกลุ่มแวกซ์จับเป็นก้อนแข็งขณะเทผสม)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ค่อยๆ เท Oil phase (เฟสภายใน) ลงใน Water phase (เฟสภายนอก) เป็นสายพร้อมคนผสมสม่ำเสมอ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::61",
+      "itemNo": "44",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 4: Lipomul IV Fat Emulsion]<br> Rx<br>  Cottonseed oil 15 %<br>  Dextrose 4 %<br>  Poloxamer 188 0.3 %<br>  Lecithin 1.2 %<br>  Water for injection qs 100 mL<br> <br> จงระบุ: 1. ข้อกำหนดสำคัญที่สุดของยาฉีด IV Emulsion 2. บทบาทของ Lecithin และ Poloxamer 188 3. เหตุใดจึงใช้ Dextrose ในตำรับนี้แทนที่จะใช้ NaCl?",
+      "questionImage": "",
+      "answer": "▶ 1. ข้อกำหนดสำคัญที่สุดของ IV Fat Emulsion:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ต้องเป็น O/W Emulsion เท่านั้น (ห้ามเป็น W/O เด็ดขาดเพราะทำให้เกิด Fat embolism ปิดกั้นหลอดเลือด เสียชีวิตทันที)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ขนาดหยดไขมันเฉลี่ยต้อง &lt; 0.5 ไมโครเมตร และไม่มีหยดขนาด &gt; 5 ไมโครเมตร (PFAT5 &lt; 0.05%) เพื่อไม่ให้อุดตันหลอดเลือดฝอยปอด<br> <br> ▶ 2. บทบาทของสารทำอิมัลชันคู่:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Lecithin (1.2%): Primary emulsifier สารลดแรงตึงผิวชนิด Amphoteric จากธรรมชาติ เข้ากับร่างกายได้ดีเยี่ยม ไม่ทำลายเม็ดเลือดแดง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Poloxamer 188 (Pluronic F-68, 0.3%): Co-emulsifier ให้ผล Steric stabilization ขวางไม่ให้อนุภาคชนกัน<br> <br> ▶ 3. เหตุผลที่ใช้ Dextrose (หรือ Glycerol) แทน NaCl:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่ปรับความดันออสโมติกให้เป็น Isotonic (ป้องกันเม็ดเลือดแดงแตก Hemolysis)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>🚨 จุดตัดข้อสอบ: ห้ามใช้สารอิเล็กโทรไลต์อย่าง NaCl ปริมาณสูงเด็ดขาด! เพราะประจุ Na+ และ Cl- จะไปบดบังประจุ (Compress electrical double layer) ทำให้ค่า Zeta potential ลดลง ส่งผลให้อิมัลชันเกิด Flocculation และ Coalescence แยกชั้นทันที!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::62",
+      "itemNo": "45",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 5: Concentrated Peppermint Emulsion BP 1999]<br> Rx<br>  Peppermint oil 20 mL<br>  Polysorbate 20 (Tween 20) 1 mL<br>  Double-strength chloroform water 500 mL<br>  Purified water, freshly boiled and cooled to 1000 mL<br> <br> จงระบุ: 1. น้ำมันเปปเปอร์มิ้นต์จัดเป็นน้ำมันประเภทใด 2. วิธีการเตรียมที่เหมาะสมที่สุดในระดับ Extemporaneous คือวิธีใด 3. บทบาทของ Polysorbate 20 และ Double-strength chloroform water?",
+      "questionImage": "",
+      "answer": "▶ 1. ประเภทของน้ำมัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Peppermint oil จัดเป็น Volatile oil (น้ำมันหอมระเหย / น้ำมันระเหยง่าย ความหนืดต่ำ)<br> <br> ▶ 2. วิธีการเตรียมที่เหมาะสมที่สุด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Forbes Bottle Method (หรือเตรียมด้วยวิธีบดในขวดแห้งสนิท)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สัดส่วนทองคำหากใช้กัม Acacia: Oil : Water : Gum = 2 : 2 : 1<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เหตุผลที่ใช้ขวด: ป้องกันการระเหยสูญเสียตัวยาสำคัญและกลิ่นหอมออกสู่อากาศระหว่างบดในโกรก<br> <br> ▶ 3. บทบาทของสารในสูตรตำรับ BP:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Polysorbate 20 (Tween 20): สารลดแรงตึงผิวชนิด Non-ionic (HLB สูง 16.7) ทำหน้าที่เป็น O/W emulsifier และช่วยละลายน้ำมันหอมระเหย (Solubilizer) ทำให้ตำรับมีความคงตัวดีและหยดน้ำมันละเอียด<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Double-strength chloroform water: สารกันเสียต้านจุลินทรีย์ (Preservative) และช่วยแต่งรสหวานปร่าสดชื่น<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Freshly boiled and cooled purified water: ใช้น้ำต้มสุกที่ทิ้งให้เย็นเพื่อไล่ออกซิเจนและกำจัดเชื้อจุลินทรีย์ ป้องกันการออกซิเดชันของน้ำมันหอมระเหย",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::63",
+      "itemNo": "46",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 6: Liquid Paraffin Oral Emulsion BP 2010 (Auxiliary Method)]<br> Rx<br>  Liquid paraffin 500 mL<br>  Vanillin 500 mg<br>  Chloroform 2.5 mL<br>  Benzoic acid solution 20 mL<br>  Methylcellulose 20 20 g<br>  Saccharin sodium 50 mg<br>  Water qs 1000 mL<br> <br> จงระบุ: 1. สารทำอิมัลชันในตำรับนี้คือสารใด และมีข้อดีเหนือกว่า Acacia อย่างไร 2. ตำรับนี้เตรียมด้วยเทคนิคใด 3. คำแนะนำการใช้ยาทางคลินิกแก่ผู้ป่วย?",
+      "questionImage": "",
+      "answer": "▶ 1. สารทำอิมัลชันและข้อดี:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันคือ Methylcellulose 20 (Cellulose derivative, Semi-synthetic polymer)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อดีเหนือกว่า Acacia:<br>  ✦ เป็นสารไม่มีประจุ (Non-ionic) ทนทานต่อการเปลี่ยนแปลง pH และอิเล็กโทรไลต์ได้ดีกว่า<br>  ✦ ไม่บูดเสียง่ายและไม่เป็นแหล่งเพาะพันธุ์ของเชื้อรา/แบคทีเรียเหมือนกัมธรรมชาติ<br>  ✦ ควบคุมความบริสุทธิ์และระดับความหนืดได้สม่ำเสมอกว่าในทุกล็อตผลิต<br> <br> ▶ 2. เทคนิคการเตรียม (Auxiliary Method):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เนื่องจาก Methylcellulose ไม่ได้ลดแรงตึงผิวโดยตรงเหมือน Surfactants แต่สร้าง Viscous protective film<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การเตรียมจึงต้องผสมให้เข้ากันก่อน แล้วนำไปผ่านเครื่องมือช่วยลดขนาด เช่น Homogenizer หรือ Colloid mill เพื่อบดรีดหยดน้ำมันให้แตกตัวละเอียดและคงตัว<br> <br> ▶ 3. คำแนะนำการใช้ยาทางคลินิก (Patient Counseling Pearls):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เขย่าขวดก่อนรินยาทุกครั้ง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ห้ามรับประทานก่อนนอนทันที (ให้รับประทานก่อนนอนอย่างน้อย 1-2 ชั่วโมง หรือตอนเช้า) เพื่อป้องกันการสำลักน้ำมันเข้าปอดจนเกิดโรคปอดอักเสบจากไขมัน (Lipoid pneumonia)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ไม่ควรใช้ติดต่อกันเป็นเวลานานเกิน 1 สัปดาห์ เพราะจะขัดขวางการดูดซึมวิตามินที่ละลายในไขมัน (A, D, E, K)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::64",
+      "itemNo": "47",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 7: Triethanolamine Stearate Lotion (Amine Soap)]<br> Rx<br>  Menthol 0.04 g<br>  Stearic acid 2.40 g<br>  Cetyl alcohol 1.20 g<br>  Wool fat (Lanolin) 0.80 g<br>  Liquid petrolatum (Mineral oil) 4.00 g<br>  Triethanolamine (TEA) 1.20 mL<br>  Water 88.00 mL<br>  Perfume qs<br> <br> จงระบุ: 1. สารทำอิมัลชันหลักเกิดขึ้นจากปฏิกิริยาระหว่างสารใด และได้อิมัลชันชนิดใด 2. เหตุใดจึงใส่ Stearic acid เกินปริมาณสัดส่วนทำปฏิกิริยาพอดี?",
+      "questionImage": "",
+      "answer": "▶ 1. การเกิดสารทำอิมัลชัน (Amine Soap In-Situ):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>สารทำอิมัลชันเกิดจากปฏิกิริยาสะปอนนิฟิเคชันระหว่าง Stearic acid (ในเฟสน้ำมัน) กับ Triethanolamine (TEA ในเฟสน้ำ)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ได้เกลือสบู่เอมีน: ไตรเอทานอลเอมีนสเตียเรต (Triethanolamine stearate)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W Emulsion (เนื่องจากเป็นสบู่ประจุเดี่ยว Monovalent amine soap ที่ละลายน้ำได้ดี และให้ pH อ่อนโยนประมาณ 7.5 - 8.0 ไม่ระคายเคืองผิวเท่าสบู่โซเดียม/โพแทสเซียม)<br> <br> ▶ 2. เหตุผลที่ใส่ Stearic acid มากเกินพอ (Excess Stearic Acid):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในตำรับมี Stearic acid ส่วนเกินที่ไม่ได้ทำปฏิกิริยากับ TEA<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กรดสเตียริกส่วนเกินนี้จะทำหน้าที่เป็น:<br>  ✦ สารเพิ่มความหนืด (Thickener &amp; Consistency agent) ช่วยให้โลชันข้นเนียน<br>  ✦ สารให้ความเหลือบมุข (Pearlescent effect) ทำให้เนื้อโลชันมีความแวววาว สวยงาม น่าใช้<br>  ✦ สารเคลือบผิวให้ความนุ่มชุ่มชื้น (Emollient) ร่วมกับ Cetyl alcohol และ Wool fat",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::65",
+      "itemNo": "48",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[วิเคราะห์สูตรตำรับที่ 8: Cetrimide Antiseptic Cream / Emulsifying Wax]<br> Rx<br>  Cetrimide 5 g<br>  Cetostearyl alcohol 50 g<br>  Liquid paraffin 500 g<br>  Purified water to 1000 g<br> <br> จงระบุ: 1. ชนิดของสารทำอิมัลชันและประจุไฟฟ้า 2. บทบาทหน้าที่ของ Cetostearyl alcohol 3. 🚨 ข้อห้ามใช้และสารที่เข้ากันไม่ได้เด็ดขาด (Incompatibility) ของตำรับนี้?",
+      "questionImage": "",
+      "answer": "▶ 1. ชนิดและประจุของสารทำอิมัลชัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Cetrimide (Cetrimonium bromide): สารลดแรงตึงผิวชนิดประจุบวก (Cationic surfactant)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ชนิดอิมัลชัน: O/W Emulsion (มีคุณสมบัติเป็นทั้ง O/W emulsifier และยาฆ่าเชื้อแบคทีเรีย Antiseptic ในตัว)<br> <br> ▶ 2. บทบาทของ Cetostearyl alcohol:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ทำหน้าที่เป็น Non-ionic emulsion stabilizer และ Thickening agent<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อใช้ร่วมกับ Cetrimide จะเกิดเป็น Cetrimide Emulsifying Wax ก่อให้เกิด Complex viscoelastic film หุ้มหยดน้ำมัน ทำให้เนื้อครีมข้นเนียนและคงตัวสูง<br> <br> ▶ 3. 🚨 ข้อห้ามและสารที่เข้ากันไม่ได้เด็ดขาด (Fatal Incompatibilities):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. ห้ามผสมกับสารที่มีประจุลบ (Anionic substances) เด็ดขาด: เช่น สบู่โซเดียม/โพแทสเซียม, Sodium lauryl sulfate (SLS), กัมธรรมชาติที่มีประจุลบ (Acacia, Tragacanth, Sodium alginate, Carbomer)<br>  ✦ ผลกระทบ: ประจุบวกของ Cetrimide จะจับกับประจุลบ เกิดการตกตะกอน (Insoluble complex) ทำให้สูญเสียฤทธิ์ฆ่าเชื้อและอิมัลชันแตกตัวทันที<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. ข้อควรระวัง: ห้ามใช้กับดวงตาหรือเนื้อเยื่ออ่อนที่บอบบางเพราะสารประจุบวกระคายเคืองสูง",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::66",
+      "itemNo": "49",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 1 - Slide 1 หน้า 15]<br> ข้อใด &quot;ไม่ใช่&quot; ประโยชน์ของ O/W Emulsion?<br> A. ใช้เตรียมยารับประทานได้<br> B. เพิ่มความคงตัวของตัวยาที่ละลายในน้ำมัน<br> C. ควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ<br> D. กลบกลิ่นรสของตัวยาที่ชอบน้ำมัน<br> E. ทุกข้อเป็นประโยชน์",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ C. ควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในอิมัลชันชนิด O/W นั้น &quot;น้ำเป็นเฟสภายนอก (Continuous / External phase)&quot;<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หากตัวยาละลายในน้ำ (Water-soluble drug) ตัวยาจะกระจายตัวอยู่อย่างอิสระในเฟสน้ำภายนอก เมื่อรับประทานหรือสัมผัสร่างกาย ยาจะถูกดูดซึมและปลดปล่อยออกมาทันที ไม่สามารถชะลอหรือควบคุมการปลดปล่อยได้!<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>หากต้องการควบคุมการปลดปล่อยตัวยาที่ละลายในน้ำ ต้องใช้ระบบ W/O หรือ Multiple emulsion แบบ W/O/W (โดยกักเก็บตัวยาไว้ในหยดน้ำชั้นในสุด แล้วให้น้ำมันทำหน้าที่เป็นแผงกั้นชะลอการแพร่ออก)<br> <br> ▶ วิเคราะห์ตัวเลือกอื่นๆ (ซึ่งเป็นประโยชน์จริงของ O/W):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A: ถูกต้อง O/W เป็นชนิดเดียวที่เหมาะกับยาน้ำรับประทานเพราะไม่มันเลี่ยนและกลืนง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ B: ถูกต้อง ช่วยปกป้องตัวยาในน้ำมันจากการสัมผัสอากาศภายนอกโดยตรง<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D: ถูกต้อง หยดน้ำมันที่มีกลิ่นรสแย่จะถูกเฟสน้ำภายนอกห่อหุ้มไว้ ทำให้ลิ้นสัมผัสเฉพาะรสหวาน/แต่งกลิ่นของเฟสน้ำ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::67",
+      "itemNo": "50",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 2 - Slide 1 หน้า 30]<br> กลไกข้อใดที่สารทำอิมัลชัน &quot;ทุกชนิด&quot; ต้องทำให้เกิดขึ้นเพื่อให้เกิดอิมัลชันที่คงตัวดี?<br> A. ลดแรงตึงที่ผิวประจันระหว่างน้ำและน้ำมัน<br> B. เกิดฟิล์มที่ผิวประจันหุ้มรอบหยดเฟสภายใน<br> C. เกิดการกีดขวางเนื่องจากขนาดของสารทำอิมัลชัน (Steric effect)<br> D. เกิดแรงผลักทางไฟฟ้าระหว่างหยดเฟสภายใน (Electrostatic repulsion)<br> E. เพิ่มความข้นหนืดของอิมัลชัน",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. เกิดฟิล์มที่ผิวประจันหุ้มรอบหยดเฟสภายใน (Interfacial film formation)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลไกการเกิดฟิล์มกั้นทางกลที่ผิวรอยต่อ (Interfacial film / Mechanical barrier) เป็น &quot;กลไกสากลเพียงข้อเดียวที่สารทำอิมัลชันทุกประเภทต้องมี&quot; ไม่ว่าจะเป็น Monomolecular, Multimolecular หรือ Solid particle film เพื่อขัดขวางไม่ให้หยดอนุภาคเกิดการหลอมรวมตัวกัน (Coalescence)<br> <br> ▶ เหตุผลที่ตัวเลือกอื่นไม่ใช่สารทุกชนิด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A: ผิด เพราะสารกลุ่ม Hydrocolloids (Acacia, Gelatin) และ Finely divided solids แทบจะไม่ลดแรงตึงผิวประจันเลย (มีเฉพาะ Surfactants เท่านั้นที่ลดแรงตึงผิวเด่นชัด)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ C: ผิด มีเฉพาะ Non-ionic surfactants สายยาวหรือ Polymers เท่านั้นที่ให้ Steric effect<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D: ผิด มีเฉพาะ Ionic surfactants หรือสารที่มีประจุเท่านั้น สารกลุ่ม Non-ionic ไม่มีแรงผลักทางไฟฟ้า<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ E: ผิด สารลดแรงตึงผิวโมเลกุลเล็กหลายตัวไม่ได้เพิ่มความหนืดของตำรับ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::68",
+      "itemNo": "51",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 3 - Slide 1 หน้า 63]<br> สารทำอิมัลชันในข้อใด &quot;ทนกรดได้น้อยที่สุด&quot; (สลายตัวง่ายที่สุดเมื่อเจอสภาวะกรด)?<br> A. Sodium stearate<br> B. Calcium stearate<br> C. Sorbitan monostearate<br> D. Triethanolamine stearate<br> E. Polyoxyethylene sorbitan monostearate",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ A. Sodium stearate (สบู่อัลคาไลประจุเดี่ยว)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Sodium stearate จัดเป็น Alkali metal soap (สบู่โลหะแอลคาไลประจุเดี่ยว) เมื่ออยู่ในสภาวะกรด (pH ต่ำ) ไอออน H+ ในกรดจะเข้าไปจับกับ Stearate ion ทันที ทำให้เปลี่ยนรูปกลับไปเป็น Free stearic acid (กรดไขมันอิสระที่ไม่ละลายน้ำและไม่มีฤทธิ์ลดแรงตึงผิว) ส่งผลให้อิมัลชันแตกตัวทันที จึงทนกรดได้ต่ำที่สุดในบรรดาตัวเลือกทั้งหมด!<br> <br> ▶ ลำดับความทนกรดของสารทำอิมัลชัน:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กลุ่ม Non-ionic (ข้อ C: Span 60, ข้อ E: Tween 60) ➔ ทนกรดได้ดีที่สุด เพราะไม่มีประจุ ไม่แตกตัวเป็นไอออน<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Amine soap (ข้อ D: Triethanolamine stearate) ➔ ทนกรดได้ปานกลาง (ทนกว่า Alkali soaps)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Metallic soap (ข้อ B: Calcium stearate) ➔ ทนกรดได้มากกว่าสบู่โซเดียม<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Alkali soap (ข้อ A: Sodium stearate) ➔ ไวต่อกรดมากที่สุด (ทนกรดน้อยที่สุด)",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::69",
+      "itemNo": "52",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 4 - Slide 1 หน้า 64]<br> สารทำอิมัลชันในข้อใด &quot;เข้ากันไม่ได้กับสารที่มีประจุลบ&quot; (Incompatible with Anionic substances)?<br> A. Acacia<br> B. Cetrimide<br> C. Sodium stearate<br> D. Sorbitan monostearate<br> E. Polyoxyethylene sorbitan monostearate",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. Cetrimide (เซทริไมด์)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>Cetrimide เป็นสารลดแรงตึงผิวกลุ่ม Cationic surfactant (Quaternary ammonium salt) ซึ่งแตกตัวให้ประจุบวก (+) ในสารละลาย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>🚨 Fatal Incompatibility: เมื่อนำสารประจุบวกมาเจอกับสารประจุลบ (Anionic substances เช่น สบู่, SLS, กัม Acacia/Tragacanth, Sodium alginate, Carbomer) ประจุบวกและลบจะดึงดูดกันทันที เกิดเป็นสารประกอบเชิงซ้อนที่ไม่ละลายน้ำและตกตะกอน (Precipitation / Insoluble complex) ทำให้สูญเสียฤทธิ์ฆ่าเชื้อและอิมัลชันแตกตัวทันที<br> <br> ▶ วิเคราะห์ตัวเลือกอื่น:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ A (Acacia) &amp; ข้อ C (Sodium stearate): เป็นสารที่มีประจุลบ จึงเข้ากับสารประจุลบได้<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ข้อ D (Sorbitan monostearate / Span) &amp; ข้อ E (Polysorbate / Tween): เป็นสารไม่มีประจุ (Non-ionic) เข้ากันได้กับสารเกือบทุกประจุ",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::70",
+      "itemNo": "53",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz 5 - Slide 1 หน้า 65]<br> สารทำอิมัลชันในข้อใด นิยมนำมาใช้ร่วมกับ &quot;High HLB Surfactant&quot; มากที่สุด เพื่อเสริมความคงตัวของอิมัลชัน?<br> A. Polysorbate<br> B. Fatty alcohol (เช่น Cetyl alcohol, Stearyl alcohol)<br> C. Sodium lauryl sulfate<br> D. Sodium stearate<br> E. Polyoxyethylene (21) stearyl ether",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. Fatty alcohol (เช่น Cetyl alcohol, Stearyl alcohol, Cetostearyl alcohol)<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>High HLB Surfactant (เช่น Polysorbates, SLS, สบู่) จะชอบน้ำมาก มีส่วนหัวชอบน้ำขนาดใหญ่ เมื่ออยู่เดี่ยวๆ ฟิล์มที่ผิวรอยต่ออาจหลวมและถูกชะล้างหลุดง่าย<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>การใส่ Fatty alcohol (ซึ่งมี HLB ต่ำ ชอบน้ำมันมาก มีสายไฮโดรคาร์บอนยาวและหัวขั้ว OH เล็ก) จะเข้าไปแทรกสลับระหว่างโมเลกุลของ High HLB Surfactant ที่ผิวรอยต่อ<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ก่อให้เกิด &quot;Complex Condensed Interfacial Film&quot; ที่อัดแน่นและยืดหยุ่นสูง (Rigid &amp; tightly packed film) และสร้างชั้นผลึกเหลว (Liquid crystalline lamellar phase) พร้อมทั้งช่วยเพิ่มความหนืด (Viscosity builder) ทำให้ตำรับคงตัวสูงสุด นิยมใช้ในสูตรครีมและโลชันเกือบทุกชนิด!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::71",
+      "itemNo": "54",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz Slide 2 หน้า 42]<br> พิจารณาสูตรตำรับต่อไปนี้:<br> Rx<br>  Mineral oil 35 %<br>  Lanolin 1 %<br>  Cetyl alcohol 1 %<br>  Span 80 1.9 %<br>  Tween 80 5.1 %<br>  Glycerin 5 %<br>  Paraben concentrate 1 %<br>  Purified water 50 %<br>  M.ft. Lotions 100 mL<br> <br> ตำรับนี้จัดเป็นอิมัลชันชนิดใด เพราะเหตุใด?<br> A. W/O เพราะปริมาณเฟสน้ำมันมาก<br> B. W/O เพราะปริมาณ Span 80 มาก<br> C. O/W เพราะปริมาณเฟสน้ำมาก<br> D. O/W เพราะปริมาณ Tween 80 มาก",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ D. O/W เพราะปริมาณ Tween 80 มาก<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ (อาจารย์ดักจุดตาย!):<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>กฎของแบนครอฟต์ (Bancroft&#039;s Rule) ระบุชัดเจนว่า ชนิดของอิมัลชันขึ้นอยู่กับ &quot;คุณสมบัติของสารทำอิมัลชัน&quot; ไม่ได้ขึ้นกับปริมาตรของน้ำหรือน้ำมันเป็นหลัก!<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ในตำรับนี้มีสารทำอิมัลชันผสมกัน 2 ชนิด:<br>  ✦ Tween 80 (ชอบน้ำ, High HLB = 15.0) มีปริมาณถึง 5.1%<br>  ✦ Span 80 (ชอบน้ำมัน, Low HLB = 4.3) มีปริมาณเพียง 1.9%<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>เมื่อคำนวณ HLB รวมของสารทำอิมัลชันผสม:<br>  [(5.1 × 15.0) + (1.9 × 4.3)] / (5.1 + 1.9) = (76.5 + 8.17) / 7.0 = 12.09<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>ค่า HLB รวมเท่ากับ 12.09 ซึ่งอยู่ในช่วง HLB 8 - 16 (O/W emulsifier) ทำให้สารทำอิมัลชันละลายในน้ำได้ดีกว่า จึงเหนี่ยวนำให้เกิด O/W Emulsion เสมอ!",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::72",
+      "itemNo": "55",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz คำนวณ Slide 2 หน้า 19 &amp; 21: Required HLB ของน้ำมันผสม]<br> พิจารณาสูตรตำรับต่อไปนี้:<br> Rx<br>  Mineral oil (RHLB = 12) 35 %<br>  Lanolin (RHLB = 10) 1 %<br>  Cetyl alcohol (RHLB = 15) 1 %<br>  Emulsifiers 7 %<br>  Purified water 56 %<br>  M.ft. O/W emulsions 100 g<br> <br> ค่า Required HLB (RHLB) ที่เหมาะสมที่สุดของตำรับนี้คือข้อใด?<br> A. 10.50<br> B. 11.35<br> C. 12.03<br> D. 12.85<br> E. 13.50",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ C. 12.03<br> <br> ▶ ขั้นตอนการแสดงวิธีคิดอย่างละเอียด:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. หาปริมาณรวมของเฟสน้ำมันทั้งหมด (Total Oil Phase):<br>  ✦ Mineral oil (35%) + Lanolin (1%) + Cetyl alcohol (1%) = 37% (หรือ 37 g ใน 100 g)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. หาสัดส่วนน้ำหนัก (Weight fraction) ของน้ำมันแต่ละชนิด:<br>  ✦ สัดส่วน Mineral oil = 35 / 37<br>  ✦ สัดส่วน Lanolin = 1 / 37<br>  ✦ สัดส่วน Cetyl alcohol = 1 / 37<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>3. คำนวณแบบถ่วงน้ำหนัก (Weight-averaged RHLB):<br>  ✦ RHLB รวม = (35/37 × 12) + (1/37 × 10) + (1/37 × 15)<br>  ✦ RHLB รวม = 11.35 + 0.27 + 0.41 = 12.03<br>  ✦ สรุป: เพื่อให้อิมัลชันตำรับนี้มีความคงตัวสูงสุด ต้องเลือกคู่สารทำอิมัลชันที่ผสมกันแล้วได้ค่า HLB เท่ากับ 12.03",
+      "answerImage": "",
+      "note": ""
+    },
+    {
+      "id": "7. Liquid & Semisolids::73",
+      "itemNo": "56",
+      "group": "7. Liquid & Semisolids",
+      "subTopic": "emulsion",
+      "track": "Product",
+      "question": "[Quiz เทคนิคตั้งตำรับ Slide 2 หน้า 30 &amp; 31: Primary Emulsion กรณีพิเศษ]<br> หากเภสัชกรต้องการเตรียม Primary Emulsion ของตำรับที่มี &quot;น้ำมันน้อยกว่า 20%&quot; (เช่น Calciferol solution 3%) หรือมี &quot;ตัวยาของแข็งละลายในน้ำมัน&quot; (เช่น Salol 2 g) ข้อใดกล่าวถูกต้องที่สุด?<br> A. ปริมาณน้ำมันน้อยกว่า 20% ให้เพิ่มปริมาณน้ำเป็น 2 เท่าทันที<br> B. ปริมาณน้ำมันน้อยกว่า 20% ให้เติม Bland oil (เช่น Arachis oil) เพิ่มจนสัดส่วนน้ำมันเพียงพอต่อการเกิด Primary emulsion<br> C. ตัวยาของแข็งละลายในน้ำมัน ให้ลดปริมาณกัม Acacia ลงครึ่งหนึ่งเพื่อป้องกันไม่ให้ตำรับเหนียวเกินไป<br> D. ตัวยาของแข็งละลายในน้ำมัน สามารถบดผสมกับน้ำโดยตรงได้โดยไม่ต้องใช้น้ำมันช่วย<br> E. ทั้งสองกรณีใช้สัดส่วน Oil:Water:Gum = 4:2:1 ตามปกติโดยไม่ต้องปรับสูตร",
+      "questionImage": "",
+      "answer": "▶ เฉลยคำตอบ: ข้อ B. ปริมาณน้ำมันน้อยกว่า 20% ให้เติม Bland oil (เช่น Arachis oil) เพิ่มจนสัดส่วนน้ำมันเพียงพอต่อการเกิด Primary emulsion<br> <br> ▶ เหตุผลและการวิเคราะห์ข้อสอบ:<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>1. กรณีน้ำมันน้อยกว่า 20% (Low Oil Content):<br>  ✦ หากปริมาณน้ำมันน้อยเกินไป หยดน้ำมันจะไม่สามารถอัดแน่นพอที่จะเกิด Primary Emulsion ที่เสถียรได้<br>  ✦ วิธีแก้ไขที่ถูกต้อง: ต้องเติมน้ำมันพืชที่ไม่มีฤทธิ์ทางยา (Bland oil เช่น Arachis oil หรือ Almond oil) เพิ่มเข้าไปในตำรับ เพื่อปรับให้ปริมาณน้ำมันรวมเพิ่มขึ้นจนเพียงพอต่อการฟอร์มตัว แล้วจึงคำนวณตามสัดส่วน Fixed oil (4 : 2 : 1)<br>  <span style=\"color:#64748b; font-weight:bold; margin-right:4px;\">↳</span>2. กรณีตัวยาของแข็งละลายในน้ำมัน (Salol 2 g):<br>  ✦ ข้อ C &amp; D ผิด เพราะต้องละลายตัวยาใน Bland oil ก่อน และต้อง &quot;บวกเพิ่มผง Acacia และน้ำขึ้นอีก 50% ของที่คำนวณได้&quot; (กฎ 4:3:1.5) เพื่อให้ฟิล์มแข็งแรงพอพยุงอนุภาคตัวยาไว้ได้โดยไม่แยกชั้น",
+      "answerImage": "",
+      "note": ""
     },
     {
       "id": "10. Biotech Products::3",
