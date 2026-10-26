@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E7490"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0F9FF"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E7490"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#082F49" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle inner border highlight -->
+  <rect x="6" y="6" width="500" height="500" rx="106" fill="none" stroke="#38BDF8" stroke-width="4" stroke-opacity="0.4"/>
+
+  <!-- Medicine Bottle Group with Shadow -->
+  <g filter="url(#dropShadow)">
+    <!-- Bottle Cap -->
+    <rect x="166" y="96" width="180" height="52" rx="14" fill="url(#capGrad)"/>
+    <!-- Cap Ridges -->
+    <line x1="196" y1="108" x2="196" y2="136" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+    <line x1="226" y1="108" x2="226" y2="136" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+    <line x1="256" y1="108" x2="256" y2="136" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+    <line x1="286" y1="108" x2="286" y2="136" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+    <line x1="316" y1="108" x2="316" y2="136" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Bottle Neck -->
+    <rect x="186" y="146" width="140" height="26" fill="#F1F5F9"/>
+
+    <!-- Bottle Body -->
+    <rect x="136" y="170" width="240" height="240" rx="36" fill="url(#bottleGrad)"/>
+
+    <!-- Bottle Label -->
+    <rect x="160" y="206" width="192" height="168" rx="18" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="3"/>
+
+    <!-- Medical Cross on Label -->
+    <!-- Vertical bar -->
+    <rect x="238" y="234" width="36" height="80" rx="9" fill="url(#crossGrad)"/>
+    <!-- Horizontal bar -->
+    <rect x="216" y="256" width="80" height="36" rx="9" fill="url(#crossGrad)"/>
+
+    <!-- Label detail lines (prescription dosing indicator) -->
+    <rect x="186" y="336" width="140" height="8" rx="4" fill="#0284C7" fill-opacity="0.7"/>
+    <rect x="210" y="352" width="92" height="6" rx="3" fill="#0284C7" fill-opacity="0.4"/>
+  </g>
+</svg>
