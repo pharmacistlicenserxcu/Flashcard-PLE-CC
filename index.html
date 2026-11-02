@@ -1423,9 +1423,12 @@
       </div>
     </div>
 
-    <div id="randomBanner" style="display:none; background:var(--clinic); color:#fff; padding:7px 14px; font-size:12.5px; font-weight:700; align-items:center; justify-content:space-between; margin:4px 12px 0; border-radius:10px;">
+    <div id="randomBanner" style="display:none; background:var(--clinic); color:#fff; padding:7px 14px; font-size:12.5px; font-weight:700; align-items:center; justify-content:space-between; gap:8px; margin:4px 12px 0; border-radius:10px;">
       <span id="randomBannerText">โหมดสุ่มโจทย์</span>
-      <button onclick="exitRandomMode()" style="background:rgba(255,255,255,0.2); border:none; color:#fff; border-radius:6px; padding:3px 8px; font-size:11.5px; font-weight:700; cursor:pointer;">จบการสุ่ม</button>
+      <div style="display:flex; align-items:center; gap:6px; flex-shrink:0;">
+        <button onclick="rerollRandomStudy()" style="background:rgba(255,255,255,0.22); border:1px solid rgba(255,255,255,0.35); color:#fff; border-radius:6px; padding:3px 9px; font-size:11.5px; font-weight:700; cursor:pointer;">สุ่มชุดใหม่</button>
+        <button onclick="exitRandomMode(true)" style="background:rgba(15,23,42,0.25); border:none; color:#fff; border-radius:6px; padding:3px 9px; font-size:11.5px; font-weight:700; cursor:pointer;">จบการสุ่ม</button>
+      </div>
     </div>
 
     <!-- CLEAN CENTERED STUDY VIEWPORT (NO LEFT RAIL) -->
@@ -2603,6 +2606,41 @@ window.google.script.run = (function() {
           if (successFn) successFn(list);
         }, 10);
       },
+
+      getFlashcardsMulti: function(selections, count) {
+        setTimeout(function() {
+          if (typeof applyAdminFCLocalOverrides === 'function') applyAdminFCLocalOverrides();
+          var cardsMap = window.OFFLINE_CARDS || {};
+          var allList = (window.OFFLINE_ALL_CARDS_BY_TRACK && window.OFFLINE_ALL_CARDS_BY_TRACK['all']) || [];
+          var pool = [];
+          (selections || []).forEach(function(sel) {
+            var groupCards = cardsMap[sel.group];
+            if (!groupCards || !groupCards.length) {
+              groupCards = allList.filter(function(c) { return c && c.group === sel.group; });
+            }
+            if (sel.subTopics && sel.subTopics.length > 0) {
+              pool = pool.concat(groupCards.filter(function(c) {
+                return c && sel.subTopics.some(function(st) {
+                  return typeof matchSubTopic === 'function'
+                    ? matchSubTopic(c.subTopic, st)
+                    : (c.subTopic === st);
+                });
+              }));
+            } else {
+              pool = pool.concat(groupCards);
+            }
+          });
+          if (successFn) successFn(pool);
+        }, 10);
+      },
+
+      forceSyncLatest: function() {
+        setTimeout(function() {
+          if (typeof applyAdminFCLocalOverrides === 'function') applyAdminFCLocalOverrides();
+          var cats = window.OFFLINE_CATEGORIES || [];
+          if (successFn) successFn(cats);
+        }, 15);
+      },
       
       saveProgress: function(cardId, group, question, status, token, track) {
         try {
@@ -3594,7 +3632,7 @@ window.google.script.run = (function() {
   }
 
   function selectCategory(catName, subTopic = null, track = null) {
-    if (isRandomMode) exitRandomMode();
+    if (isRandomMode) exitRandomMode(false);
     currentCategory = catName;
     currentSubTopic = subTopic;
     isReviewFinished = false;
@@ -3728,6 +3766,7 @@ window.google.script.run = (function() {
           <div class="celebration-sub">ประเมิน "มั่นใจ" ครบทั้งชุดเรียบร้อย</div>
           <div class="celebration-actions">
             <button class="submit-btn" onclick="initSmartLearningQueue()" style="font-size:13px; padding:10px;">เริ่มรอบใหม่</button>
+            ${isRandomMode ? `<button class="lobby-tool-btn" onclick="rerollRandomStudy()" style="font-size:13px; padding:10px;">สุ่มชุดใหม่</button>` : ''}
             <button class="lobby-tool-btn" onclick="showLobby()" style="font-size:13px; padding:10px;">กลับหน้าหลัก</button>
           </div>
         </div>`;
@@ -3756,6 +3795,7 @@ window.google.script.run = (function() {
           </div>
           <div class="celebration-actions">
             <button class="submit-btn" onclick="restartReview()" style="font-size:13px; padding:10px;">ทบทวนอีกครั้ง</button>
+            ${isRandomMode ? `<button class="lobby-tool-btn" onclick="rerollRandomStudy()" style="font-size:13px; padding:10px;">สุ่มชุดใหม่</button>` : ''}
             <button class="lobby-tool-btn smart-btn" onclick="switchStudyMethod('smart')" style="font-size:13px; padding:10px;">ฝึกต่อด้วย Smart Mode</button>
             <button class="lobby-tool-btn" onclick="showLobby()" style="font-size:13px; padding:10px;">กลับหน้าหลัก</button>
           </div>
@@ -4286,18 +4326,23 @@ window.google.script.run = (function() {
   }
 
   // ─── RANDOM STUDY MODAL ───
+  let lastRandomConfig = null;
+
   function openRandomModal() {
+    if ((!categories || !categories.length) && window.OFFLINE_CATEGORIES) {
+      categories = window.OFFLINE_CATEGORIES;
+    }
     const tree = document.getElementById('catCheckList');
     tree.innerHTML = '';
     isTreeExpanded = false;
-    document.getElementById('btnToggleTreeExpand').textContent = '▼ ขยาย/ยุบทั้งหมด';
+    document.getElementById('btnToggleTreeExpand').textContent = 'ขยาย/ยุบรายการ';
 
     // 1. Clinic Track
     const clinicCats = categories.filter(c => normalizeTrack(c.track) === 'clinic');
     if (clinicCats.length) {
       const hClinic = document.createElement('div');
       hClinic.className = 'random-section-header clinic';
-      hClinic.innerHTML = `<span>🩺 กลุ่มวิชา Clinical Pharmacy (PLE-CC)</span><span style="font-size:11px;">${clinicCats.length} กลุ่มโรค</span>`;
+      hClinic.innerHTML = `<span>Clinic (PLE-CC)</span><span style="font-size:11px;">${clinicCats.length} หมวด</span>`;
       tree.appendChild(hClinic);
       clinicCats.forEach((cat, idx) => renderRandomTreeNode(tree, cat, `c_${idx}`));
     }
@@ -4307,7 +4352,7 @@ window.google.script.run = (function() {
     if (prodCats.length) {
       const hProd = document.createElement('div');
       hProd.className = 'random-section-header product';
-      hProd.innerHTML = `<span>🧪 กลุ่มวิชา Pharmaceutical Sciences (PLE-Product)</span><span style="font-size:11px;">${prodCats.length} กลุ่มวิชา</span>`;
+      hProd.innerHTML = `<span>Product (PLE-Product)</span><span style="font-size:11px;">${prodCats.length} หมวด</span>`;
       tree.appendChild(hProd);
       prodCats.forEach((cat, idx) => renderRandomTreeNode(tree, cat, `p_${idx}`));
     }
@@ -4317,7 +4362,7 @@ window.google.script.run = (function() {
     if (sapCats.length) {
       const hSap = document.createElement('div');
       hSap.className = 'random-section-header sap';
-      hSap.innerHTML = `<span>💼 กลุ่มวิชา Social & Administrative Pharmacy (SAP)</span><span style="font-size:11px;">${sapCats.length} หมวด</span>`;
+      hSap.innerHTML = `<span>SAP</span><span style="font-size:11px;">${sapCats.length} หมวด</span>`;
       tree.appendChild(hSap);
       sapCats.forEach((cat, idx) => renderRandomTreeNode(tree, cat, `s_${idx}`));
     }
@@ -4330,12 +4375,14 @@ window.google.script.run = (function() {
     const node = document.createElement('div');
     node.className = 'random-tree-node';
     node.id = `rtNode_${idKey}`;
+    const safeCat = escapeAttr(cat.name);
+    const safeTrack = escapeAttr(cat.track);
 
     let headHtml = `
       <div class="random-tree-head" onclick="toggleRandomCatNode(this.parentElement, event)">
         <div class="random-tree-head-left">
-          <input type="checkbox" class="random-cat-cb" data-cat="${cat.name}" data-track="${cat.track}" checked onclick="onRandomCatCbClick(this, '${cat.name}', event)" style="width:15px; height:15px; accent-color:var(--clinic);">
-          <span style="font-size:13px; font-weight:700; color:var(--ink);">${cat.name}</span>
+          <input type="checkbox" class="random-cat-cb" data-cat="${safeCat}" data-track="${safeTrack}" checked onclick="onRandomCatCbClick(this, '${cat.name.replace(/'/g, "\\'")}', event)" style="width:15px; height:15px; accent-color:var(--clinic);">
+          <span style="font-size:13px; font-weight:700; color:var(--ink);">${escapeHtml(cat.name)}</span>
         </div>
         <div style="display:flex; align-items:center; gap:6px;">
           <span style="font-size:11.5px; color:var(--ink-faint); font-family:'IBM Plex Mono'; font-weight:700;">${cat.count} ข้อ</span>
@@ -4350,8 +4397,8 @@ window.google.script.run = (function() {
         subListHtml += `
           <div class="random-sub-item">
             <label style="display:flex; align-items:center; gap:6px; cursor:pointer; flex:1; min-width:0;">
-              <input type="checkbox" class="random-sub-cb" data-cat="${cat.name}" data-track="${cat.track}" value="${sub}" checked onchange="onRandomSubCbChange('${cat.name}')" style="width:13px; height:13px; accent-color:var(--clinic);">
-              <span style="color:var(--ink); font-weight:600;">• ${sub}</span>
+              <input type="checkbox" class="random-sub-cb" data-cat="${safeCat}" data-track="${safeTrack}" value="${escapeAttr(sub)}" checked onchange="onRandomSubCbChange('${cat.name.replace(/'/g, "\\'")}')" style="width:13px; height:13px; accent-color:var(--clinic);">
+              <span style="color:var(--ink); font-weight:600;">• ${escapeHtml(sub)}</span>
             </label>
           </div>`;
       });
@@ -4372,13 +4419,13 @@ window.google.script.run = (function() {
   function onRandomCatCbClick(cb, catName, e) {
     e.stopPropagation();
     const isChecked = cb.checked;
-    const subCbs = document.querySelectorAll(`.random-sub-cb[data-cat="${catName}"]`);
+    const subCbs = [...document.querySelectorAll('.random-sub-cb')].filter(el => el.getAttribute('data-cat') === catName);
     subCbs.forEach(subCb => subCb.checked = isChecked);
   }
 
   function onRandomSubCbChange(catName) {
-    const subCbs = [...document.querySelectorAll(`.random-sub-cb[data-cat="${catName}"]`)];
-    const catCb  = document.querySelector(`.random-cat-cb[data-cat="${catName}"]`);
+    const subCbs = [...document.querySelectorAll('.random-sub-cb')].filter(el => el.getAttribute('data-cat') === catName);
+    const catCb  = [...document.querySelectorAll('.random-cat-cb')].find(el => el.getAttribute('data-cat') === catName);
     if (!subCbs.length || !catCb) return;
 
     const checkedCount = subCbs.filter(c => c.checked).length;
@@ -4407,17 +4454,101 @@ window.google.script.run = (function() {
     document.querySelectorAll('.random-tree-node').forEach(node => {
       node.classList.toggle('expanded', isTreeExpanded);
     });
-    document.getElementById('btnToggleTreeExpand').textContent = isTreeExpanded ? '▲ ยุบทั้งหมด' : '▼ ขยายทั้งหมด';
+    document.getElementById('btnToggleTreeExpand').textContent = isTreeExpanded ? 'ยุบรายการ' : 'ขยายรายการ';
+  }
+
+  function collectOfflineCardsForSelections(selections) {
+    if (typeof applyAdminFCLocalOverrides === 'function') applyAdminFCLocalOverrides();
+    const cardsMap = window.OFFLINE_CARDS || {};
+    const allList = (window.OFFLINE_ALL_CARDS_BY_TRACK && window.OFFLINE_ALL_CARDS_BY_TRACK['all']) || browseCardsCache || [];
+    let pool = [];
+    (selections || []).forEach(sel => {
+      let groupCards = cardsMap[sel.group];
+      if (!groupCards || !groupCards.length) {
+        groupCards = allList.filter(c => c && c.group === sel.group);
+      }
+      if (sel.subTopics && sel.subTopics.length > 0) {
+        pool = pool.concat(groupCards.filter(c => c && sel.subTopics.some(st => matchSubTopic(c.subTopic, st))));
+      } else {
+        pool = pool.concat(groupCards);
+      }
+    });
+    return pool;
+  }
+
+  function runRandomSampling(config) {
+    if (!config || !config.selections || !config.selections.length) return;
+    const { selections, count, selectedSubCount } = config;
+
+    document.getElementById('questionText').innerHTML = 'กำลังสุ่มชุดข้อสอบ...';
+    document.getElementById('lobbyView').style.display  = 'none';
+    document.getElementById('studyView').style.display  = 'flex';
+    document.getElementById('browseView').style.display = 'none';
+    currentAppMode = 'study';
+    isReviewFinished = false;
+    currentSubTopic = null;
+
+    document.getElementById('subtopicSelectorRow').style.display = 'none';
+
+    function handleRandomCards(cards) {
+      if (!cards || !cards.length) {
+        document.getElementById('questionText').innerHTML = '<span style="color:var(--unsure)">ไม่พบการ์ดในหัวข้อย่อยที่เลือก</span>';
+        return;
+      }
+
+      const balanced = sampleStratifiedFair(cards, count, selections);
+      allCards = balanced;
+      isRandomMode = true;
+      currentCategory = null;
+      studyMethod = 'standard';
+      updateStudyMethodUI();
+
+      const numGroups = selections.length;
+      document.getElementById('studyDeckName').textContent = `สุ่มโจทย์ ${allCards.length} ข้อ`;
+      document.getElementById('studyDeckSub').textContent  = `จาก ${numGroups} หมวดวิชา (${selectedSubCount} หัวข้อย่อย)`;
+      document.getElementById('randomBanner').style.display = 'flex';
+      document.getElementById('randomBannerText').textContent = `โหมดสุ่มโจทย์ ${allCards.length} ข้อ (${numGroups} หมวด)`;
+      currentIndex = 0;
+      applyFilter('all', true);
+      showToast(`สุ่มโจทย์ ${allCards.length} ข้อแล้ว`);
+    }
+
+    // 1. Direct 0ms Instant Sampling from Offline Database (Primary)
+    const directPool = collectOfflineCardsForSelections(selections);
+    if (directPool && directPool.length > 0) {
+      handleRandomCards(directPool);
+      return;
+    }
+
+    // 2. Fallback to GAS / Adapter getFlashcardsMulti
+    try {
+      if (window.google && google.script && google.script.run && typeof google.script.run.getFlashcardsMulti === 'function') {
+        google.script.run
+          .withSuccessHandler(handleRandomCards)
+          .withFailureHandler(err => onCardLoadError(err))
+          .getFlashcardsMulti(selections, count);
+      } else {
+        handleRandomCards([]);
+      }
+    } catch (err) {
+      console.error('Random study error:', err);
+      onCardLoadError(err);
+    }
   }
 
   function startRandomStudy() {
+    if ((!categories || !categories.length) && window.OFFLINE_CATEGORIES) {
+      categories = window.OFFLINE_CATEGORIES;
+    }
     const selections = [];
     let selectedSubCount = 0;
+    const allCatCbs = [...document.querySelectorAll('.random-cat-cb')];
+    const allSubCbs = [...document.querySelectorAll('.random-sub-cb')];
 
     categories.forEach(cat => {
       const hasSubs = cat.subtopics && cat.subtopics.length > 0;
-      const catCb   = document.querySelector(`.random-cat-cb[data-cat="${cat.name}"]`);
-      const subCbs  = [...document.querySelectorAll(`.random-sub-cb[data-cat="${cat.name}"]:checked`)];
+      const catCb   = allCatCbs.find(el => el.getAttribute('data-cat') === cat.name);
+      const subCbs  = allSubCbs.filter(el => el.getAttribute('data-cat') === cat.name && el.checked);
 
       if (hasSubs) {
         if (subCbs.length > 0) {
@@ -4439,70 +4570,32 @@ window.google.script.run = (function() {
     });
 
     if (!selections.length) {
-      showToast('⚠️ กรุณาเลือกอย่างน้อย 1 หมวดหรือหัวข้อย่อย');
+      showToast('กรุณาเลือกอย่างน้อย 1 หมวดหรือหัวข้อย่อย');
       return;
     }
 
     const count = parseInt(document.getElementById('randomCountInput').value) || 20;
     closeRandomModal();
 
-    document.getElementById('questionText').innerHTML = '🎲 กำลังสุ่ม Flashcard แบบเฉลี่ยน้ำหนักเท่ากันทุกกลุ่ม...';
-    document.getElementById('lobbyView').style.display  = 'none';
-    document.getElementById('studyView').style.display  = 'flex';
-    document.getElementById('browseView').style.display = 'none';
-    currentAppMode = 'study';
-    isReviewFinished = false;
-
-    document.getElementById('subtopicSelectorRow').style.display = 'none';
-
-    function handleRandomCards(cards) {
-      if (!cards || !cards.length) {
-        document.getElementById('questionText').innerHTML = '<span style="color:var(--unsure)">📭 ไม่พบ Flashcard ในหัวข้อย่อยที่เลือก</span>';
-        return;
-      }
-
-      const balanced = sampleStratifiedFair(cards, count, selections);
-      allCards = balanced;
-      isRandomMode = true;
-      studyMethod = 'standard';
-      updateStudyMethodUI();
-
-      const numGroups = selections.length;
-      document.getElementById('studyDeckName').textContent = `สุ่มโจทย์ ${allCards.length} ข้อ`;
-      document.getElementById('studyDeckSub').textContent  = `จาก ${numGroups} หมวดวิชา (${selectedSubCount} หัวข้อย่อย)`;
-      document.getElementById('randomBanner').style.display = 'flex';
-      document.getElementById('randomBannerText').textContent = `โหมดสุ่มโจทย์ ${allCards.length} ข้อ (${numGroups} หมวด)`;
-      currentIndex = 0;
-      applyFilter('all', true);
-      showToast(`สุ่มโจทย์ ${allCards.length} ข้อแล้ว`);
-    }
-
-    google.script.run
-      .withSuccessHandler(handleRandomCards)
-      .withFailureHandler(err => {
-        if (browseCardsCache && browseCardsCache.length) {
-          let pool = [];
-          selections.forEach(sel => {
-            const groupCards = browseCardsCache.filter(c => c.group === sel.group);
-            if (sel.subTopics && sel.subTopics.length > 0) {
-              pool = pool.concat(groupCards.filter(c => sel.subTopics.some(st => matchSubTopic(c.subTopic, st))));
-            } else {
-              pool = pool.concat(groupCards);
-            }
-          });
-          handleRandomCards(pool);
-        } else {
-          onCardLoadError(err);
-        }
-      })
-      .getFlashcardsMulti(selections, count);
+    lastRandomConfig = { selections, count, selectedSubCount };
+    runRandomSampling(lastRandomConfig);
   }
 
-  function exitRandomMode() {
+  function rerollRandomStudy() {
+    if (lastRandomConfig && lastRandomConfig.selections && lastRandomConfig.selections.length > 0) {
+      runRandomSampling(lastRandomConfig);
+    } else {
+      openRandomModal();
+    }
+  }
+
+  function exitRandomMode(goHome = true) {
     isRandomMode = false;
     document.getElementById('randomBanner').style.display = 'none';
-    document.getElementById('subtopicSelectorRow').style.display = 'block';
-    showLobby();
+    document.getElementById('subtopicSelectorRow').style.display = 'flex';
+    if (goHome !== false) {
+      showLobby();
+    }
   }
 
   // ─── EXPORT CSV ───
